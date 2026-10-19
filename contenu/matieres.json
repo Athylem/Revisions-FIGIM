@@ -424,35 +424,35 @@
         },
         {
           "id": "ex1-borne-superieure",
-          "nom": "Borne supérieure (exercice du DS)",
+          "nom": "Borne supérieure : forgeage du test 2015 + exemples du cours",
           "genre": "exercices",
           "fichier": "mise-en-forme/ex1-borne-superieure.json",
           "questions": 5
         },
         {
           "id": "ex2-calculs-td",
-          "nom": "Calculs des TD (flexion, volant, striction, critères)",
+          "nom": "Calculs des TD (hors annales, plus durs que le test)",
           "genre": "exercices",
           "fichier": "mise-en-forme/ex2-calculs-td.json",
           "questions": 10
         },
         {
           "id": "ex3-borne-sup-variantes",
-          "nom": "Borne supérieure : variantes chiffrées",
+          "nom": "Borne supérieure : variantes chiffrées (forgeage = test 2015)",
           "genre": "exercices",
           "fichier": "mise-en-forme/ex3-borne-sup-variantes.json",
           "questions": 10
         },
         {
           "id": "ex4-flexion-volant-variantes",
-          "nom": "Flexion et volant : variantes chiffrées",
+          "nom": "Flexion et volant : variantes des TD (hors annales)",
           "genre": "exercices",
           "fichier": "mise-en-forme/ex4-flexion-volant-variantes.json",
           "questions": 7
         },
         {
           "id": "ex5-traction-criteres-variantes",
-          "nom": "Traction, Hollomon, critères, déformations : entraînement",
+          "nom": "Traction, critères, déformations : entraînement TD (hors annales)",
           "genre": "exercices",
           "fichier": "mise-en-forme/ex5-traction-criteres-variantes.json",
           "questions": 17
