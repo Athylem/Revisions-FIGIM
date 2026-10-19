@@ -36,6 +36,20 @@
           "genre": "cours",
           "fichier": "alliages-non-ferreux/ch4-fluage-aluminium.json",
           "questions": 16
+        },
+        {
+          "id": "ch5-questions-ouvertes",
+          "nom": "Questions ouvertes du DS",
+          "genre": "cours",
+          "fichier": "alliages-non-ferreux/ch5-questions-ouvertes.json",
+          "questions": 7
+        },
+        {
+          "id": "ex1-calculs-ds",
+          "nom": "Calculs type DS (fractions, Orowan, résistivité, LMP, Faraday)",
+          "genre": "exercices",
+          "fichier": "alliages-non-ferreux/ex1-calculs-ds.json",
+          "questions": 12
         }
       ]
     },

@@ -1,0 +1,500 @@
+{
+  "chapitre": "Calculs type DS (fractions, Orowan, résistivité, LMP, Faraday)",
+  "genre": "exercices",
+  "questions": [
+    {
+      "id": "anf-ds-001",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**DS, Ex. 1 Q1.** Alliage Ag–20 at.% Mn, à 300 K après recuit (équilibre). Solvus : $x_\\alpha=0{,}03$ ; phase β = α-Mn quasi pur ($x_\\beta\\approx1$). Données : $M_{Ag}=107{,}87$, $M_{Mn}=54{,}94$ g/mol ; $\\rho_{Ag}=10\\,490$, $\\rho_{Mn}=7\\,210$ kg/m³.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Fraction **molaire** de β (règle des leviers) ?",
+          "reponse": 0.175258,
+          "tolerance": 0.02,
+          "explication": "$f_\\beta=\\frac{0.2-0{,}03}{1-0{,}03}$"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Fraction **massique** de β ?",
+          "reponse": 0.098975,
+          "tolerance": 0.03,
+          "explication": "$m_\\alpha=f_\\alpha M_\\alpha$ avec $M_\\alpha=0{,}97M_{Ag}+0{,}03M_{Mn}$, $m_\\beta=f_\\beta M_{Mn}$."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Fraction **volumique** de β ?",
+          "reponse": 0.137796,
+          "tolerance": 0.03,
+          "explication": "$\\%V_\\beta=\\frac{w_\\beta}{w_\\beta+\\frac{\\rho_{Mn}}{\\rho_{Ag}}w_\\alpha}$ : plus grande que $w_\\beta$ car Mn est moins dense."
+        }
+      ],
+      "source": "Cours/Alliage non fereux/DS Alliages non ferreux - Sujet & corrigé.md"
+    },
+    {
+      "id": "anf-ds-002",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**Variante.** Alliage Ag–15 at.% Mn, à 300 K après recuit (équilibre). Solvus : $x_\\alpha=0{,}03$ ; phase β = α-Mn quasi pur ($x_\\beta\\approx1$). Données : $M_{Ag}=107{,}87$, $M_{Mn}=54{,}94$ g/mol ; $\\rho_{Ag}=10\\,490$, $\\rho_{Mn}=7\\,210$ kg/m³.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Fraction **molaire** de β (règle des leviers) ?",
+          "reponse": 0.123711,
+          "tolerance": 0.02,
+          "explication": "$f_\\beta=\\frac{0.15-0{,}03}{1-0{,}03}$"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Fraction **massique** de β ?",
+          "reponse": 0.068014,
+          "tolerance": 0.03,
+          "explication": "$m_\\alpha=f_\\alpha M_\\alpha$ avec $M_\\alpha=0{,}97M_{Ag}+0{,}03M_{Mn}$, $m_\\beta=f_\\beta M_{Mn}$."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Fraction **volumique** de β ?",
+          "reponse": 0.095986,
+          "tolerance": 0.03,
+          "explication": "$\\%V_\\beta=\\frac{w_\\beta}{w_\\beta+\\frac{\\rho_{Mn}}{\\rho_{Ag}}w_\\alpha}$ : plus grande que $w_\\beta$ car Mn est moins dense."
+        }
+      ],
+      "source": "Cours/Alliage non fereux/DS Alliages non ferreux - Sujet & corrigé.md"
+    },
+    {
+      "id": "anf-ds-003",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**Durcissement Ag-Mn.** Précipités de rayon $r=10$ nm, $f_v=0{,}138$. CFC $a=0{,}4086$ nm, $G=30$ GPa, $\\tau_0=15$ MPa, $K=0{,}85$. Modèle $L=r\\sqrt{\\pi/f_v}$.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Vecteur de Burgers $b$ ?",
+          "reponse": 0.288924,
+          "tolerance": 0.02,
+          "unite": "nm",
+          "explication": "$b=a/\\sqrt2$ (glissement ⟨110⟩)."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Espace libre $L-2r$ entre précipités ?",
+          "reponse": 27.712854,
+          "tolerance": 0.03,
+          "unite": "nm"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Durcissement d'Orowan $\\Delta\\tau=\\frac{Gb}{L-2r}$ ?",
+          "reponse": 312.76876,
+          "tolerance": 0.03,
+          "unite": "MPa"
+        },
+        {
+          "type": "qcm",
+          "enonce": "Le cisaillement donnerait ≈ 55730 MPa. Quel mécanisme opère ?",
+          "choix": [
+            "Orowan (le plus petit des deux)",
+            "Le cisaillement (le plus grand)",
+            "Les deux s'additionnent",
+            "Aucun"
+          ],
+          "reponse": 0,
+          "explication": "La dislocation prend le chemin le plus facile : $\\Delta\\tau=\\min$."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Cission critique $\\tau_y=\\tau_0+\\Delta\\tau$ ?",
+          "reponse": 327.76876,
+          "tolerance": 0.03,
+          "unite": "MPa"
+        }
+      ],
+      "source": "Cours/Alliage non fereux/DS Alliages non ferreux - Sujet & corrigé.md"
+    },
+    {
+      "id": "anf-ds-004",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**Durcissement Ag-Mn.** Précipités de rayon $r=5$ nm, $f_v=0{,}138$. CFC $a=0{,}4086$ nm, $G=30$ GPa, $\\tau_0=15$ MPa, $K=0{,}85$. Modèle $L=r\\sqrt{\\pi/f_v}$.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Vecteur de Burgers $b$ ?",
+          "reponse": 0.288924,
+          "tolerance": 0.02,
+          "unite": "nm",
+          "explication": "$b=a/\\sqrt2$ (glissement ⟨110⟩)."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Espace libre $L-2r$ entre précipités ?",
+          "reponse": 13.856427,
+          "tolerance": 0.03,
+          "unite": "nm"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Durcissement d'Orowan $\\Delta\\tau=\\frac{Gb}{L-2r}$ ?",
+          "reponse": 625.537521,
+          "tolerance": 0.03,
+          "unite": "MPa"
+        },
+        {
+          "type": "qcm",
+          "enonce": "Le cisaillement donnerait ≈ 39407 MPa. Quel mécanisme opère ?",
+          "choix": [
+            "Orowan (le plus petit des deux)",
+            "Le cisaillement (le plus grand)",
+            "Les deux s'additionnent",
+            "Aucun"
+          ],
+          "reponse": 0,
+          "explication": "La dislocation prend le chemin le plus facile : $\\Delta\\tau=\\min$."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Cission critique $\\tau_y=\\tau_0+\\Delta\\tau$ ?",
+          "reponse": 640.537521,
+          "tolerance": 0.03,
+          "unite": "MPa"
+        }
+      ],
+      "source": "Cours/Alliage non fereux/DS Alliages non ferreux - Sujet & corrigé.md"
+    },
+    {
+      "id": "anf-ds-005",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**Résistivité après laminage.** Ag–20 at.% Mn. T1 = trempe (solution solide) ; T2 = précipités en aiguilles dans le sens de laminage, $f_v=0{,}138$, matrice Ag–3 % Mn. $\\rho_{Ag}=1{,}59\\cdot10^{-8}$, $\\rho_{Mn}=2{,}5\\cdot10^{-7}$ Ω·m, $\\alpha=8\\cdot10^{-8}$ Ω·m.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Résistivité de T1 (Nordheim avec la composition globale) ?",
+          "reponse": 2.8700000000000002e-08,
+          "tolerance": 0.02,
+          "unite": "Ω·m"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Résistivité de la matrice de T2 (Nordheim avec $x=0{,}03$) ?",
+          "reponse": 1.8228e-08,
+          "tolerance": 0.02,
+          "unite": "Ω·m",
+          "explication": "Piège : prendre la composition **de la matrice**, pas la globale."
+        },
+        {
+          "type": "numerique",
+          "enonce": "T2, courant **parallèle** aux aiguilles : $\\rho_\\parallel$ ?",
+          "reponse": 2.0897661627376437e-08,
+          "tolerance": 0.03,
+          "unite": "Ω·m",
+          "explication": "On additionne les **conductivités**."
+        },
+        {
+          "type": "numerique",
+          "enonce": "T2, courant **perpendiculaire** : $\\rho_\\perp$ ?",
+          "reponse": 5.016532479474061e-08,
+          "tolerance": 0.03,
+          "unite": "Ω·m",
+          "explication": "On additionne les **résistivités** (borne supérieure)."
+        },
+        {
+          "type": "qcm",
+          "enonce": "Quel traitement pour une plaque conductrice ?",
+          "choix": [
+            "T2, avec le courant dans le sens de laminage",
+            "T1, car il est monophasé",
+            "T2, avec le courant en travers",
+            "Peu importe"
+          ],
+          "reponse": 0,
+          "explication": "La précipitation purifie la matrice : T2 conduit mieux **et** il est durci."
+        }
+      ],
+      "source": "Cours/Alliage non fereux/DS Alliages non ferreux - Sujet & corrigé.md"
+    },
+    {
+      "id": "anf-ds-006",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**Résistivité après laminage.** Ag–10 at.% Mn. T1 = trempe (solution solide) ; T2 = précipités en aiguilles dans le sens de laminage, $f_v=0{,}055$, matrice Ag–3 % Mn. $\\rho_{Ag}=1{,}59\\cdot10^{-8}$, $\\rho_{Mn}=2{,}5\\cdot10^{-7}$ Ω·m, $\\alpha=8\\cdot10^{-8}$ Ω·m.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Résistivité de T1 (Nordheim avec la composition globale) ?",
+          "reponse": 2.3100000000000002e-08,
+          "tolerance": 0.02,
+          "unite": "Ω·m"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Résistivité de la matrice de T2 (Nordheim avec $x=0{,}03$) ?",
+          "reponse": 1.8228e-08,
+          "tolerance": 0.02,
+          "unite": "Ω·m",
+          "explication": "Piège : prendre la composition **de la matrice**, pas la globale."
+        },
+        {
+          "type": "numerique",
+          "enonce": "T2, courant **parallèle** aux aiguilles : $\\rho_\\parallel$ ?",
+          "reponse": 1.9212319109469475e-08,
+          "tolerance": 0.03,
+          "unite": "Ω·m",
+          "explication": "On additionne les **conductivités**."
+        },
+        {
+          "type": "numerique",
+          "enonce": "T2, courant **perpendiculaire** : $\\rho_\\perp$ ?",
+          "reponse": 3.10364369182729e-08,
+          "tolerance": 0.03,
+          "unite": "Ω·m",
+          "explication": "On additionne les **résistivités** (borne supérieure)."
+        },
+        {
+          "type": "qcm",
+          "enonce": "Quel traitement pour une plaque conductrice ?",
+          "choix": [
+            "T2, avec le courant dans le sens de laminage",
+            "T1, car il est monophasé",
+            "T2, avec le courant en travers",
+            "Peu importe"
+          ],
+          "reponse": 0,
+          "explication": "La précipitation purifie la matrice : T2 conduit mieux **et** il est durci."
+        }
+      ],
+      "source": "Cours/Alliage non fereux/DS Alliages non ferreux - Sujet & corrigé.md"
+    },
+    {
+      "id": "anf-ds-007",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**Fluage d'une aube de turbine.** À la contrainte de service, LMP = 24{,}0 pour l'alliage de référence ; un nouvel alliage a une LMP plus haute de 0{,}1. Température nominale 800 °C. $\\text{LMP}=T(20+\\log t_r)\\times10^{-3}$, T en K, t en h.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Temps de rupture de l'alliage de référence ?",
+          "reponse": 232.913564,
+          "tolerance": 0.04,
+          "unite": "h",
+          "explication": "$\\log t_r=\\frac{24000}{1073}-20$. Penser à +273 !"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Temps de rupture du nouvel alliage ?",
+          "reponse": 288.663203,
+          "tolerance": 0.04,
+          "unite": "h"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Température maximale (en K) pour tenir 5000 h, alliage de référence ?",
+          "reponse": 1012.70224,
+          "tolerance": 0.005,
+          "unite": "K",
+          "explication": "$T=\\frac{\\text{LMP}\\times10^3}{20+\\log 5000}$."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Gain de température permis par le nouvel alliage pour 5000 h ?",
+          "reponse": 4.219593,
+          "tolerance": 0.05,
+          "unite": "K",
+          "explication": "$\\Delta T=\frac{\\Delta\text{LMP}\times10^3}{20+\\log t}$."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Gain de rendement de Carnot (en points de %) avec $T_c=300$ K ?",
+          "reponse": 0.12292,
+          "tolerance": 0.08,
+          "unite": "points",
+          "explication": "$\\Delta\\eta\\approx\\frac{T_c\\,\\Delta T}{T_h^2}$."
+        }
+      ],
+      "source": "Cours/Alliage non fereux/DS Alliages non ferreux - Sujet & corrigé.md"
+    },
+    {
+      "id": "anf-ds-008",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**Fluage d'une aube de turbine.** À la contrainte de service, LMP = 24{,}7 pour l'alliage de référence ; un nouvel alliage a une LMP plus haute de 0{,}1. Température nominale 750 °C. $\\text{LMP}=T(20+\\log t_r)\\times10^{-3}$, T en K, t en h.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Temps de rupture de l'alliage de référence ?",
+          "reponse": 13953.158634,
+          "tolerance": 0.04,
+          "unite": "h",
+          "explication": "$\\log t_r=\\frac{24700}{1023}-20$. Penser à +273 !"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Temps de rupture du nouvel alliage ?",
+          "reponse": 17475.284,
+          "tolerance": 0.04,
+          "unite": "h"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Température maximale (en K) pour tenir 5000 h, alliage de référence ?",
+          "reponse": 1042.239388,
+          "tolerance": 0.005,
+          "unite": "K",
+          "explication": "$T=\\frac{\\text{LMP}\\times10^3}{20+\\log 5000}$."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Gain de température permis par le nouvel alliage pour 5000 h ?",
+          "reponse": 4.219593,
+          "tolerance": 0.05,
+          "unite": "K",
+          "explication": "$\\Delta T=\frac{\\Delta\text{LMP}\times10^3}{20+\\log t}$."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Gain de rendement de Carnot (en points de %) avec $T_c=300$ K ?",
+          "reponse": 0.116065,
+          "tolerance": 0.08,
+          "unite": "points",
+          "explication": "$\\Delta\\eta\\approx\\frac{T_c\\,\\Delta T}{T_h^2}$."
+        }
+      ],
+      "source": "Cours/Alliage non fereux/DS Alliages non ferreux - Sujet & corrigé.md"
+    },
+    {
+      "id": "anf-ds-009",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**Électrolyse de l'aluminium.** Anode en graphite de 5{,}5 t, tension 4{,}5 V, courant 250 kA, intensité carbone de l'électricité 400 kg CO₂/MWh. $2\\text{Al}_2\\text{O}_3+3\\text{C}\\rightarrow4\\text{Al}+3\\text{CO}_2$, $F=96\\,500$ C/mol, $\\rho_{Al}=2700$ kg/m³.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Masse d'aluminium produite ?",
+          "reponse": 16.474049,
+          "tolerance": 0.02,
+          "unite": "t",
+          "explication": "$n_{Al}=\\frac43n_C$."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Volume d'aluminium ?",
+          "reponse": 6.1015,
+          "tolerance": 0.02,
+          "unite": "m³"
+        },
+        {
+          "type": "numerique",
+          "enonce": "CO₂ **direct** (combustion de l'anode) ?",
+          "reponse": 20.154455,
+          "tolerance": 0.02,
+          "unite": "t",
+          "explication": "$n_{CO_2}=n_C$, $M_{CO_2}=44{,}01$ g/mol."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Durée de l'électrolyse ?",
+          "reponse": 196.410399,
+          "tolerance": 0.03,
+          "unite": "h",
+          "explication": "$Q=3Fn_{Al}$ puis $t=Q/I$."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Énergie électrique consommée ?",
+          "reponse": 220.961699,
+          "tolerance": 0.03,
+          "unite": "MWh",
+          "explication": "$E=UQ$ ; 1 MWh = 3,6·10⁹ J."
+        },
+        {
+          "type": "numerique",
+          "enonce": "CO₂ **indirect** ?",
+          "reponse": 88.384679,
+          "tolerance": 0.03,
+          "unite": "t",
+          "explication": "Énergie × intensité carbone."
+        }
+      ],
+      "source": "Cours/Alliage non fereux/DS Alliages non ferreux - Sujet & corrigé.md"
+    },
+    {
+      "id": "anf-ds-010",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**Électrolyse de l'aluminium.** Anode en graphite de 3{,}0 t, tension 4{,}2 V, courant 300 kA, intensité carbone de l'électricité 50 kg CO₂/MWh. $2\\text{Al}_2\\text{O}_3+3\\text{C}\\rightarrow4\\text{Al}+3\\text{CO}_2$, $F=96\\,500$ C/mol, $\\rho_{Al}=2700$ kg/m³.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Masse d'aluminium produite ?",
+          "reponse": 8.985845,
+          "tolerance": 0.02,
+          "unite": "t",
+          "explication": "$n_{Al}=\\frac43n_C$."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Volume d'aluminium ?",
+          "reponse": 3.328091,
+          "tolerance": 0.02,
+          "unite": "m³"
+        },
+        {
+          "type": "numerique",
+          "enonce": "CO₂ **direct** (combustion de l'anode) ?",
+          "reponse": 10.993339,
+          "tolerance": 0.02,
+          "unite": "t",
+          "explication": "$n_{CO_2}=n_C$, $M_{CO_2}=44{,}01$ g/mol."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Durée de l'électrolyse ?",
+          "reponse": 89.277454,
+          "tolerance": 0.03,
+          "unite": "h",
+          "explication": "$Q=3Fn_{Al}$ puis $t=Q/I$."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Énergie électrique consommée ?",
+          "reponse": 112.489592,
+          "tolerance": 0.03,
+          "unite": "MWh",
+          "explication": "$E=UQ$ ; 1 MWh = 3,6·10⁹ J."
+        },
+        {
+          "type": "numerique",
+          "enonce": "CO₂ **indirect** ?",
+          "reponse": 5.62448,
+          "tolerance": 0.03,
+          "unite": "t",
+          "explication": "Énergie × intensité carbone."
+        }
+      ],
+      "source": "Cours/Alliage non fereux/DS Alliages non ferreux - Sujet & corrigé.md"
+    },
+    {
+      "id": "anf-ds-011",
+      "type": "numerique",
+      "difficulte": 2,
+      "enonce": "Composition Ag–20 at.% Mn exprimée en **pourcentage massique** de Mn ?",
+      "reponse": 11.3,
+      "unite": "wt.%",
+      "tolerance": 0.02,
+      "explication": "$\\frac{0{,}2\\times54{,}94}{0{,}8\\times107{,}87+0{,}2\\times54{,}94}=\\frac{10{,}99}{97{,}28}$.",
+      "source": "Cours/Alliage non fereux/DS Alliages non ferreux - Sujet & corrigé.md"
+    },
+    {
+      "id": "anf-ds-012",
+      "type": "numerique",
+      "difficulte": 2,
+      "enonce": "Turbine : $T_h=1100$ K, $T_c=300$ K. Rendement de Carnot (en %) ?",
+      "reponse": 72.73,
+      "unite": "%",
+      "tolerance": 0.01,
+      "explication": "$\\eta=1-\\frac{300}{1100}$.",
+      "source": "Cours/Alliage non fereux/DS Alliages non ferreux - Sujet & corrigé.md"
+    }
+  ]
+}
