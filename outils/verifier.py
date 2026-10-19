@@ -15,6 +15,7 @@ sys.stdout.reconfigure(encoding="utf-8")
 RACINE = Path(__file__).resolve().parent.parent
 CONTENU = RACINE / "contenu"
 TYPES = {"qcm", "vrai-faux", "texte-a-trous", "numerique", "carte", "probleme"}
+CONTROLE = "\f\t\b\v\a\r"  # caractères de contrôle interdits dans les textes
 TYPES_ETAPE = {"qcm", "vrai-faux", "numerique", "carte"}
 
 erreurs = []
@@ -38,8 +39,23 @@ def verifier_reponse(q, ou):
         erreurs.append(f"{ou} : reponse doit être un texte")
 
 
+def textes(valeur):
+    """Toutes les chaînes contenues dans une question (récursif)."""
+    if isinstance(valeur, str):
+        yield valeur
+    elif isinstance(valeur, list):
+        for v in valeur:
+            yield from textes(v)
+    elif isinstance(valeur, dict):
+        for v in valeur.values():
+            yield from textes(v)
+
+
 def verifier_question(q, fichier):
     ou = f"{fichier.name} / {q.get('id', '?')}"
+    # \frac, \times, \bar… écrits sans r'' dans un générateur Python deviennent \f, \t, \b
+    if any(c in t for t in textes(q) for c in CONTROLE):
+        erreurs.append(f"{ou} : caractère de contrôle (formule LaTeX mal échappée ?)")
     obligatoires = ("id", "type", "difficulte", "enonce") + (("etapes",) if q.get("type") == "probleme" else ("reponse",))
     for champ in obligatoires:
         if champ not in q:
