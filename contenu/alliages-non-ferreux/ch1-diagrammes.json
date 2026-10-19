@@ -1,0 +1,179 @@
+{
+  "chapitre": "Diagrammes de phases et fractions",
+  "questions": [
+    {
+      "id": "anf-diagrammes-001",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Dans un diagramme calculé, FCC_A1 désigne :",
+      "choix": [
+        "une structure cubique faces centrées (CFC)",
+        "une structure cubique centrée (CC)",
+        "la phase α-Mn",
+        "une lacune de miscibilité liquide"
+      ],
+      "reponse": 0,
+      "explication": "BCC_A2 = CC ; CBCC_A12 = α-Mn (58 atomes/maille) ; LIQUID#2 = lacune de miscibilité.",
+      "source": "Cours/Alliage non fereux/Cours Alliages non ferreux - Synthèse complète.md"
+    },
+    {
+      "id": "anf-diagrammes-002",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "La notation LIQUID + LIQUID#2 indique :",
+      "choix": [
+        "une lacune de miscibilité liquide (2 liquides non miscibles)",
+        "un eutectique",
+        "deux phases solides",
+        "un liquide sursaturé"
+      ],
+      "reponse": 0,
+      "explication": "Dans Ag-Mn, un dôme vers 0,5–0,9 Mn.",
+      "source": "Cours/Alliage non fereux/Cours Alliages non ferreux - Synthèse complète.md"
+    },
+    {
+      "id": "anf-diagrammes-003",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Le solvus est :",
+      "choix": [
+        "la limite de solubilité à l'état solide",
+        "la ligne au-dessus de laquelle tout est liquide",
+        "la ligne en dessous de laquelle tout est solide",
+        "un palier eutectique"
+      ],
+      "reponse": 0,
+      "explication": "Liquidus : tout liquide au-dessus. Solidus : tout solide en dessous.",
+      "source": "Cours/Alliage non fereux/Cours Alliages non ferreux - Synthèse complète.md"
+    },
+    {
+      "id": "anf-diagrammes-004",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Un palier horizontal sur un diagramme de phases correspond à :",
+      "choix": [
+        "une réaction invariante (eutectique, péritectique…)",
+        "une solution solide",
+        "un domaine monophasé",
+        "une lacune de miscibilité"
+      ],
+      "reponse": 0,
+      "explication": "Eutectique, péritectique, eutectoïde, monotectique… se font à température fixe.",
+      "source": "Cours/Alliage non fereux/Cours Alliages non ferreux - Synthèse complète.md"
+    },
+    {
+      "id": "anf-diagrammes-005",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Règle des leviers : la fraction de la phase β vaut",
+      "choix": [
+        "$f_\\beta=\\frac{x_0-x_\\alpha}{x_\\beta-x_\\alpha}$",
+        "$f_\\beta=\\frac{x_\\beta-x_0}{x_\\beta-x_\\alpha}$",
+        "$f_\\beta=\\frac{x_0}{x_\\beta}$",
+        "$f_\\beta=x_\\beta-x_0$"
+      ],
+      "reponse": 0,
+      "explication": "« Segments inverses » : $f_\\beta$ est le segment du côté de α. $\\frac{x_\\beta-x_0}{x_\\beta-x_\\alpha}$ est $f_\\alpha$.",
+      "source": "Cours/Alliage non fereux/Cours Alliages non ferreux - Synthèse complète.md"
+    },
+    {
+      "id": "anf-diagrammes-006",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Si l'axe du diagramme est en at.%, la règle des leviers donne des fractions :",
+      "choix": [
+        "molaires",
+        "massiques",
+        "volumiques",
+        "surfaciques"
+      ],
+      "reponse": 0,
+      "explication": "Axe en wt.% → fractions massiques. Il faut ensuite convertir pour obtenir les fractions volumiques.",
+      "source": "Cours/Alliage non fereux/Cours Alliages non ferreux - Synthèse complète.md"
+    },
+    {
+      "id": "anf-diagrammes-007",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Quelle fraction compte pour la mécanique (espacement des précipités) et la résistivité ?",
+      "choix": [
+        "la fraction volumique",
+        "la fraction molaire",
+        "la fraction massique",
+        "aucune"
+      ],
+      "reponse": 0,
+      "explication": "Piège classique : utiliser la fraction molaire ou massique à la place de $f_v$.",
+      "source": "Cours/Alliage non fereux/Cours Alliages non ferreux - Synthèse complète.md"
+    },
+    {
+      "id": "anf-diagrammes-008",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Mn ($\\rho=7210$) précipité dans Ag ($\\rho=10\\,490$). La fraction volumique de Mn est :",
+      "choix": [
+        "plus grande que sa fraction massique",
+        "plus petite que sa fraction massique",
+        "égale à sa fraction massique",
+        "nulle"
+      ],
+      "reponse": 0,
+      "explication": "La phase **la moins dense** occupe plus de volume. Ag-20Mn : 0,099 en masse, 0,138 en volume.",
+      "source": "Cours/Alliage non fereux/Cours Alliages non ferreux - Synthèse complète.md"
+    },
+    {
+      "id": "anf-diagrammes-009",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Une trempe rapide après mise en solution donne :",
+      "choix": [
+        "une solution solide sursaturée, monophasée, de composition globale",
+        "deux phases à l'équilibre",
+        "des précipités coalescés",
+        "un liquide figé"
+      ],
+      "reponse": 0,
+      "explication": "La diffusion n'a pas le temps d'agir : la phase de haute température est figée, hors équilibre.",
+      "source": "Cours/Alliage non fereux/Cours Alliages non ferreux - Synthèse complète.md"
+    },
+    {
+      "id": "anf-diagrammes-010",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Un recuit trop long provoque :",
+      "choix": [
+        "la coalescence (mûrissement d'Ostwald) : sur-vieillissement",
+        "la dissolution des précipités",
+        "une trempe",
+        "un durcissement continu"
+      ],
+      "reponse": 0,
+      "explication": "Les gros précipités grossissent au détriment des petits : $r$ ↑, nombre ↓, durcissement ↓.",
+      "source": "Cours/Alliage non fereux/Cours Alliages non ferreux - Synthèse complète.md"
+    },
+    {
+      "id": "anf-diagrammes-011",
+      "type": "vrai-faux",
+      "difficulte": 1,
+      "enonce": "Après laminage, des précipités sphériques peuvent s'allonger en aiguilles et rendre le matériau anisotrope.",
+      "reponse": true,
+      "explication": "Vrai : aiguilles alignées dans la direction de laminage.",
+      "source": "Cours/Alliage non fereux/Cours Alliages non ferreux - Synthèse complète.md"
+    },
+    {
+      "id": "anf-diagrammes-012",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "La DRX permet :",
+      "choix": [
+        "d'identifier les phases cristallines présentes",
+        "de mesurer la résistivité",
+        "de mesurer la dureté",
+        "de calculer la LMP"
+      ],
+      "reponse": 0,
+      "explication": "Un jeu de pics = une phase.",
+      "source": "Cours/Alliage non fereux/Cours Alliages non ferreux - Synthèse complète.md"
+    }
+  ]
+}

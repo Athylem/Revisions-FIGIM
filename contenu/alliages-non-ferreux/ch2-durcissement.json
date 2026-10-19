@@ -1,0 +1,194 @@
+{
+  "chapitre": "Durcissement par précipitation",
+  "questions": [
+    {
+      "id": "anf-durcissement-001",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Durcir un alliage métallique, c'est :",
+      "choix": [
+        "gêner le mouvement des dislocations",
+        "augmenter le module d'Young",
+        "supprimer les joints de grains",
+        "augmenter la densité"
+      ],
+      "reponse": 0,
+      "explication": "La déformation plastique = glissement de dislocations.",
+      "source": "Cours/Alliage non fereux/Cours Alliages non ferreux - Synthèse complète.md"
+    },
+    {
+      "id": "anf-durcissement-002",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Vecteur de Burgers dans un CFC de paramètre de maille $a$ :",
+      "choix": [
+        "$b=\\frac{a}{\\sqrt2}$",
+        "$b=a$",
+        "$b=a\\sqrt2$",
+        "$b=\\frac{a}{2}$"
+      ],
+      "reponse": 0,
+      "explication": "Glissement selon ⟨110⟩. Pour Ag : $b=0{,}4086/\\sqrt2=0{,}289$ nm.",
+      "source": "Cours/Alliage non fereux/Cours Alliages non ferreux - Synthèse complète.md"
+    },
+    {
+      "id": "anf-durcissement-003",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Facteur de Taylor $M$ pour un polycristal CFC ($\\sigma_y=M\\tau_y$) :",
+      "choix": [
+        "≈ 3,06",
+        "≈ 1",
+        "≈ 0,5",
+        "≈ 10"
+      ],
+      "reponse": 0,
+      "explication": "≈ 2 si on raisonne avec Tresca dans les approches simplifiées.",
+      "source": "Cours/Alliage non fereux/Cours Alliages non ferreux - Synthèse complète.md"
+    },
+    {
+      "id": "anf-durcissement-004",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Quel mécanisme de durcissement est le plus néfaste pour la conductivité électrique ?",
+      "choix": [
+        "la solution solide",
+        "la précipitation",
+        "l'écrouissage",
+        "la taille de grain"
+      ],
+      "reponse": 0,
+      "explication": "Les atomes en solution diffusent fortement les électrons. La précipitation purifie au contraire la matrice.",
+      "source": "Cours/Alliage non fereux/Cours Alliages non ferreux - Synthèse complète.md"
+    },
+    {
+      "id": "anf-durcissement-005",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Pour un conducteur à la fois très conducteur ET résistant, on préfère :",
+      "choix": [
+        "précipiter le soluté",
+        "garder le soluté en solution solide",
+        "écrouir fortement uniquement",
+        "augmenter la taille de grain"
+      ],
+      "reponse": 0,
+      "explication": "Idée clé du DS : matrice purifiée + durcissement par les précipités (Cu-Cr, Cu-Be, Ag-Mn…).",
+      "source": "Cours/Alliage non fereux/Cours Alliages non ferreux - Synthèse complète.md"
+    },
+    {
+      "id": "anf-durcissement-006",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Loi de Hall-Petch :",
+      "choix": [
+        "$\\sigma=\\sigma_0+\\frac{k}{\\sqrt d}$",
+        "$\\sigma=\\sigma_0+k\\sqrt d$",
+        "$\\sigma=\\sigma_0\\,d$",
+        "$\\sigma=\\frac{Gb}{d}$"
+      ],
+      "reponse": 0,
+      "explication": "Plus les grains sont petits, plus le matériau est dur.",
+      "source": "Cours/Alliage non fereux/Cours Alliages non ferreux - Synthèse complète.md"
+    },
+    {
+      "id": "anf-durcissement-007",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Mécanisme de cisaillement des précipités : $\\Delta\\tau_{cis}=KG\\left(\\frac{f_vr}{b}\\right)^{1/2}$. Quand $r$ augmente :",
+      "choix": [
+        "$\\Delta\\tau_{cis}$ augmente (∝ $\\sqrt r$)",
+        "$\\Delta\\tau_{cis}$ diminue (∝ $1/r$)",
+        "il ne change pas",
+        "il s'annule"
+      ],
+      "reponse": 0,
+      "explication": "Concerne les **petits** précipités cohérents.",
+      "source": "Cours/Alliage non fereux/Cours Alliages non ferreux - Synthèse complète.md"
+    },
+    {
+      "id": "anf-durcissement-008",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Mécanisme d'Orowan $\\Delta\\tau_{Or}=\\frac{Gb}{L-2r}$ (à $f_v$ fixée). Quand $r$ augmente :",
+      "choix": [
+        "$\\Delta\\tau_{Or}$ diminue",
+        "$\\Delta\\tau_{Or}$ augmente",
+        "il ne change pas",
+        "il diverge"
+      ],
+      "reponse": 0,
+      "explication": "Les particules sont plus grosses mais plus espacées. Concerne les **gros** précipités incohérents.",
+      "source": "Cours/Alliage non fereux/Cours Alliages non ferreux - Synthèse complète.md"
+    },
+    {
+      "id": "anf-durcissement-009",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Dans Orowan, $L-2r$ représente :",
+      "choix": [
+        "l'espace libre entre deux précipités",
+        "la distance centre à centre",
+        "le diamètre d'un précipité",
+        "la taille de grain"
+      ],
+      "reponse": 0,
+      "explication": "$L$ est la distance centre à centre dans le plan de glissement.",
+      "source": "Cours/Alliage non fereux/Cours Alliages non ferreux - Synthèse complète.md"
+    },
+    {
+      "id": "anf-durcissement-010",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Distance entre précipités à fraction volumique $f_v$ fixée (modèle du cours) :",
+      "choix": [
+        "$L=r\\sqrt{\\frac{\\pi}{f_v}}$",
+        "$L=r\\,f_v$",
+        "$L=\\frac{r}{f_v}$",
+        "$L=r\\sqrt{f_v}$"
+      ],
+      "reponse": 0,
+      "explication": "Une section $\\pi r^2$ par carré $L^2$ : $\\frac{\\pi r^2}{L^2}=f_v$.",
+      "source": "Cours/Alliage non fereux/Cours Alliages non ferreux - Synthèse complète.md"
+    },
+    {
+      "id": "anf-durcissement-011",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Entre cisaillement et Orowan, le durcissement effectif est :",
+      "choix": [
+        "$\\Delta\\tau=\\min(\\Delta\\tau_{cis},\\Delta\\tau_{Or})$",
+        "$\\max(\\Delta\\tau_{cis},\\Delta\\tau_{Or})$",
+        "leur somme",
+        "leur moyenne"
+      ],
+      "reponse": 0,
+      "explication": "La dislocation prend le chemin le **plus facile**. Prendre le max est un piège classique.",
+      "source": "Cours/Alliage non fereux/Cours Alliages non ferreux - Synthèse complète.md"
+    },
+    {
+      "id": "anf-durcissement-012",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Le pic de vieillissement (durcissement maximal) est atteint quand :",
+      "choix": [
+        "$\\Delta\\tau_{cis}(r^*)=\\Delta\\tau_{Or}(r^*)$",
+        "$r=0$",
+        "$r\\to\\infty$",
+        "$f_v=1$"
+      ],
+      "reponse": 0,
+      "explication": "$r<r^*$ : sous-vieilli (cisaillement) ; $r>r^*$ : sur-vieilli (Orowan).",
+      "source": "Cours/Alliage non fereux/Cours Alliages non ferreux - Synthèse complète.md"
+    },
+    {
+      "id": "anf-durcissement-013",
+      "type": "vrai-faux",
+      "difficulte": 1,
+      "enonce": "Augmenter la fraction volumique de précipités augmente les deux contributions (cisaillement et Orowan).",
+      "reponse": true,
+      "explication": "Vrai : $f_v$ apparaît au numérateur du cisaillement et réduit $L$ dans Orowan.",
+      "source": "Cours/Alliage non fereux/Cours Alliages non ferreux - Synthèse complète.md"
+    }
+  ]
+}

@@ -1,0 +1,245 @@
+{
+  "chapitre": "Fluage, superalliages, aluminium",
+  "questions": [
+    {
+      "id": "anf-fluage-001",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Le fluage apparaît typiquement pour :",
+      "choix": [
+        "$T>0{,}4\\,T_f$ (en K), sous contrainte constante",
+        "les basses températures",
+        "des chargements cycliques uniquement",
+        "$T<0{,}1\\,T_f$"
+      ],
+      "reponse": 0,
+      "explication": "Déformation lente et irréversible.",
+      "source": "Cours/Alliage non fereux/Cours Alliages non ferreux - Synthèse complète.md"
+    },
+    {
+      "id": "anf-fluage-002",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Le stade secondaire du fluage est caractérisé par :",
+      "choix": [
+        "une vitesse constante minimale (équilibre écrouissage / restauration)",
+        "une vitesse décroissante",
+        "une accélération jusqu'à la rupture",
+        "aucune déformation"
+      ],
+      "reponse": 0,
+      "explication": "Primaire : vitesse décroissante ; tertiaire : accélération, cavités, rupture.",
+      "source": "Cours/Alliage non fereux/Cours Alliages non ferreux - Synthèse complète.md"
+    },
+    {
+      "id": "anf-fluage-003",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Paramètre de Larson-Miller (cours) :",
+      "choix": [
+        "$\\text{LMP}=T(20+\\log_{10}t_r)\\times10^{-3}$, $T$ en K, $t_r$ en h",
+        "$T$ en °C, $t_r$ en s",
+        "$\\text{LMP}=t_r(20+\\log T)$",
+        "$\\text{LMP}=\\frac{T}{t_r}$"
+      ],
+      "reponse": 0,
+      "explication": "Piège : oublier +273 pour passer en kelvin.",
+      "source": "Cours/Alliage non fereux/Cours Alliages non ferreux - Synthèse complète.md"
+    },
+    {
+      "id": "anf-fluage-004",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "LMP = 24 à 1073 K. Durée de vie environ :",
+      "choix": [
+        "233 h",
+        "24 h",
+        "2 370 h",
+        "10 h"
+      ],
+      "reponse": 0,
+      "explication": "$\\log t=\\frac{24000}{1073}-20=2{,}37$ donc $t\\approx233$ h.",
+      "source": "Cours/Alliage non fereux/Cours Alliages non ferreux - Synthèse complète.md"
+    },
+    {
+      "id": "anf-fluage-005",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Plus la contrainte appliquée est grande, plus la LMP admissible est :",
+      "choix": [
+        "petite",
+        "grande",
+        "inchangée",
+        "négative"
+      ],
+      "reponse": 0,
+      "explication": "Une grande contrainte réduit le couple temps / température admissible.",
+      "source": "Cours/Alliage non fereux/Cours Alliages non ferreux - Synthèse complète.md"
+    },
+    {
+      "id": "anf-fluage-006",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Superalliages base nickel : les précipités durcissants γ' sont :",
+      "choix": [
+        "Ni₃(Al,Ti), cohérents avec la matrice γ",
+        "des carbures de fer",
+        "des oxydes d'aluminium",
+        "du rhénium pur"
+      ],
+      "reponse": 0,
+      "explication": "Matrice γ CFC + γ' : durcissement qui se maintient à haute température.",
+      "source": "Cours/Alliage non fereux/Cours Alliages non ferreux - Synthèse complète.md"
+    },
+    {
+      "id": "anf-fluage-007",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Pourquoi fabrique-t-on des aubes de turbine monocristallines ?",
+      "choix": [
+        "Pour supprimer les joints de grains, points faibles en fluage",
+        "Pour réduire la masse",
+        "Pour améliorer la conductivité",
+        "Parce que c'est moins cher"
+      ],
+      "reponse": 0,
+      "explication": "Évolution : équiaxe → solidification dirigée → monocristal.",
+      "source": "Cours/Alliage non fereux/Cours Alliages non ferreux - Synthèse complète.md"
+    },
+    {
+      "id": "anf-fluage-008",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Rôle du rhénium dans les superalliages :",
+      "choix": [
+        "il diffuse très lentement et ralentit la coalescence de γ' et le fluage",
+        "il abaisse la densité",
+        "il augmente la conductivité",
+        "il remplace le nickel"
+      ],
+      "reponse": 0,
+      "explication": "Inconvénients : très dense (21 g/cm³), phases TCP fragilisantes, coût.",
+      "source": "Cours/Alliage non fereux/Cours Alliages non ferreux - Synthèse complète.md"
+    },
+    {
+      "id": "anf-fluage-009",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Pourquoi le rhénium est-il une matière première critique ?",
+      "choix": [
+        "Très rare, sous-produit du Mo/Cu, concentré au Chili, prix volatil",
+        "Il est toxique",
+        "Il est radioactif",
+        "Il est trop abondant"
+      ],
+      "reponse": 0,
+      "explication": "On n'ouvre pas une mine pour le Re : l'offre ne peut pas suivre la demande.",
+      "source": "Cours/Alliage non fereux/Cours Alliages non ferreux - Synthèse complète.md"
+    },
+    {
+      "id": "anf-fluage-010",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Rendement de Carnot avec $T_h=1500$ K et $T_c=300$ K :",
+      "choix": [
+        "0,80",
+        "0,20",
+        "0,50",
+        "5"
+      ],
+      "reponse": 0,
+      "explication": "$\\eta=1-\\frac{T_c}{T_h}=1-0{,}2$. Monter $T_h$ améliore le rendement : d'où les matériaux résistants au fluage.",
+      "source": "Cours/Alliage non fereux/Cours Alliages non ferreux - Synthèse complète.md"
+    },
+    {
+      "id": "anf-fluage-011",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Électrolyse de l'aluminium : nom du procédé et électrolyte",
+      "choix": [
+        "Hall-Héroult, alumine dissoute dans la cryolithe fondue",
+        "Bayer, bauxite dans la soude",
+        "Hall-Héroult, bauxite dans l'eau",
+        "Bessemer, fonte liquide"
+      ],
+      "reponse": 0,
+      "explication": "Le procédé **Bayer** transforme la bauxite en alumine, avant l'électrolyse.",
+      "source": "Cours/Alliage non fereux/Cours Alliages non ferreux - Synthèse complète.md"
+    },
+    {
+      "id": "anf-fluage-012",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Réaction globale : $2\\,\\text{Al}_2\\text{O}_3+3\\,\\text{C}\\rightarrow4\\,\\text{Al}+3\\,\\text{CO}_2$. Donc $n_{Al}=$",
+      "choix": [
+        "$\\frac43n_C$",
+        "$\\frac34n_C$",
+        "$n_C$",
+        "$2n_C$"
+      ],
+      "reponse": 0,
+      "explication": "3 mol de C donnent 4 mol d'Al ; $n_{CO_2}=n_C$.",
+      "source": "Cours/Alliage non fereux/Cours Alliages non ferreux - Synthèse complète.md"
+    },
+    {
+      "id": "anf-fluage-013",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Charge électrique pour produire $n$ moles d'aluminium :",
+      "choix": [
+        "$Q=3Fn$",
+        "$Q=Fn$",
+        "$Q=2Fn$",
+        "$Q=\\frac{Fn}{3}$"
+      ],
+      "reponse": 0,
+      "explication": "Al³⁺ + 3e⁻ → Al : 3 électrons par atome.",
+      "source": "Cours/Alliage non fereux/Cours Alliages non ferreux - Synthèse complète.md"
+    },
+    {
+      "id": "anf-fluage-014",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Énergie électrique consommée par l'électrolyse :",
+      "choix": [
+        "$E=UIt=UQ$",
+        "$E=UI^2t$",
+        "$E=RI$",
+        "$E=\\frac{Q}{U}$"
+      ],
+      "reponse": 0,
+      "explication": "Puissance $P=UI=RI^2$, **pas** $UI^2$. 1 MWh = 3,6·10⁹ J.",
+      "source": "Cours/Alliage non fereux/Cours Alliages non ferreux - Synthèse complète.md"
+    },
+    {
+      "id": "anf-fluage-015",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "CO₂ « indirect » de la production d'aluminium :",
+      "choix": [
+        "celui de la production de l'électricité consommée",
+        "celui de la combustion de l'anode",
+        "celui du transport de la bauxite",
+        "celui du recyclage"
+      ],
+      "reponse": 0,
+      "explication": "L'indirect domine avec un mix fossile ; le direct (anode) vaut ≈ 1,22 t CO₂/t Al.",
+      "source": "Cours/Alliage non fereux/Cours Alliages non ferreux - Synthèse complète.md"
+    },
+    {
+      "id": "anf-fluage-016",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Refondre de l'aluminium recyclé consomme environ … de l'énergie de production primaire :",
+      "choix": [
+        "5 %",
+        "50 %",
+        "100 %",
+        "0,1 %"
+      ],
+      "reponse": 0,
+      "explication": "Autres leviers : électricité décarbonée, anodes inertes (dégagent O₂).",
+      "source": "Cours/Alliage non fereux/Cours Alliages non ferreux - Synthèse complète.md"
+    }
+  ]
+}

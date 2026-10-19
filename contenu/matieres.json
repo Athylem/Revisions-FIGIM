@@ -8,7 +8,32 @@
       "groupe": "Matériaux",
       "ds": null,
       "notes": true,
-      "chapitres": []
+      "chapitres": [
+        {
+          "id": "ch1-diagrammes",
+          "nom": "Diagrammes de phases et fractions",
+          "fichier": "alliages-non-ferreux/ch1-diagrammes.json",
+          "questions": 12
+        },
+        {
+          "id": "ch2-durcissement",
+          "nom": "Durcissement par précipitation",
+          "fichier": "alliages-non-ferreux/ch2-durcissement.json",
+          "questions": 13
+        },
+        {
+          "id": "ch3-resistivite",
+          "nom": "Résistivité des alliages",
+          "fichier": "alliages-non-ferreux/ch3-resistivite.json",
+          "questions": 8
+        },
+        {
+          "id": "ch4-fluage-aluminium",
+          "nom": "Fluage, superalliages, aluminium",
+          "fichier": "alliages-non-ferreux/ch4-fluage-aluminium.json",
+          "questions": 16
+        }
+      ]
     },
     {
       "id": "alliages-ferreux",

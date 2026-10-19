@@ -1,0 +1,119 @@
+{
+  "chapitre": "Résistivité des alliages",
+  "questions": [
+    {
+      "id": "anf-resistivite-001",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "La règle de Matthiessen dit que :",
+      "choix": [
+        "les contributions à la résistivité (thermique, impuretés, défauts) s'additionnent",
+        "la résistivité est proportionnelle à la dureté",
+        "la conductivité est maximale à $x=0{,}5$",
+        "la résistivité ne dépend pas de la température"
+      ],
+      "reponse": 0,
+      "explication": "Les mécanismes de diffusion des électrons sont indépendants.",
+      "source": "Cours/Alliage non fereux/Cours Alliages non ferreux - Synthèse complète.md"
+    },
+    {
+      "id": "anf-resistivite-002",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Loi de Nordheim (solution solide) :",
+      "choix": [
+        "$\\rho=\\rho_0+\\alpha\\,x(1-x)$",
+        "$\\rho=\\rho_0\\,x$",
+        "$\\rho=\\rho_0+\\alpha x^2$",
+        "$\\rho=\\frac{\\rho_0}{1-x}$"
+      ],
+      "reponse": 0,
+      "explication": "Maximum à $x=0{,}5$ ; pour de faibles teneurs $\\rho\\approx\\rho_0+\\alpha x$.",
+      "source": "Cours/Alliage non fereux/Cours Alliages non ferreux - Synthèse complète.md"
+    },
+    {
+      "id": "anf-resistivite-003",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Dans Nordheim, après précipitation, quelle composition $x$ utiliser ?",
+      "choix": [
+        "celle de la matrice (solution solide), lue sur le solvus",
+        "la composition globale de l'alliage",
+        "celle des précipités",
+        "$x=0{,}5$"
+      ],
+      "reponse": 0,
+      "explication": "Piège classique : prendre $x_0$ au lieu de $x_\\alpha$. Ag-20Mn : la matrice ne contient plus que ~3 % Mn.",
+      "source": "Cours/Alliage non fereux/Cours Alliages non ferreux - Synthèse complète.md"
+    },
+    {
+      "id": "anf-resistivite-004",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Courant **parallèle** aux lamelles d'un biphasé :",
+      "choix": [
+        "on additionne les conductivités : $\\sigma_\\parallel=(1-f_v)\\sigma_\\alpha+f_v\\sigma_\\beta$",
+        "on additionne les résistivités",
+        "on prend la plus petite résistivité",
+        "$\\rho_\\parallel=\\rho_\\alpha\\rho_\\beta$"
+      ],
+      "reponse": 0,
+      "explication": "Résistances en parallèle → conductivités qui s'ajoutent.",
+      "source": "Cours/Alliage non fereux/Cours Alliages non ferreux - Synthèse complète.md"
+    },
+    {
+      "id": "anf-resistivite-005",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Courant **perpendiculaire** aux lamelles :",
+      "choix": [
+        "on additionne les résistivités : $\\rho_\\perp=(1-f_v)\\rho_\\alpha+f_v\\rho_\\beta$",
+        "on additionne les conductivités",
+        "$\\rho_\\perp=\\min(\\rho_\\alpha,\\rho_\\beta)$",
+        "$\\rho_\\perp=0$"
+      ],
+      "reponse": 0,
+      "explication": "Résistances en série.",
+      "source": "Cours/Alliage non fereux/Cours Alliages non ferreux - Synthèse complète.md"
+    },
+    {
+      "id": "anf-resistivite-006",
+      "type": "vrai-faux",
+      "difficulte": 1,
+      "enonce": "Pour un biphasé, on a toujours $\\rho_\\parallel\\le\\rho_\\perp$.",
+      "reponse": true,
+      "explication": "Vrai : ce sont les bornes inférieure et supérieure ; des précipités sphériques donnent une valeur intermédiaire, isotrope.",
+      "source": "Cours/Alliage non fereux/Cours Alliages non ferreux - Synthèse complète.md"
+    },
+    {
+      "id": "anf-resistivite-007",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Pourquoi l'alliage précipité conduit-il mieux que la solution solide sursaturée ?",
+      "choix": [
+        "La matrice s'est appauvrie en soluté et les précipités n'occupent qu'une petite fraction du volume",
+        "Les précipités sont meilleurs conducteurs que la matrice",
+        "La trempe a supprimé les défauts",
+        "La densité a augmenté"
+      ],
+      "reponse": 0,
+      "explication": "Ag-Mn : T1 (trempé) $2{,}87\\cdot10^{-8}$ Ω·m ; T2 ∥ $2{,}09\\cdot10^{-8}$ Ω·m.",
+      "source": "Cours/Alliage non fereux/Cours Alliages non ferreux - Synthèse complète.md"
+    },
+    {
+      "id": "anf-resistivite-008",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Le meilleur conducteur électrique parmi les métaux :",
+      "choix": [
+        "l'argent",
+        "le cuivre",
+        "l'aluminium",
+        "l'or"
+      ],
+      "reponse": 0,
+      "explication": "Ag : $1{,}59\\cdot10^{-8}$ Ω·m, juste devant le cuivre.",
+      "source": "Cours/Alliage non fereux/Cours Alliages non ferreux - Synthèse complète.md"
+    }
+  ]
+}
