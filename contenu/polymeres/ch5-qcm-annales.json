@@ -1,0 +1,366 @@
+{
+  "chapitre": "QCM des annales 2013 / 2015",
+  "genre": "cours",
+  "questions": [
+    {
+      "id": "poly-qcm-001",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "EQS : au cours de la réaction, la vitesse de propagation…",
+      "choix": [
+        "reste constante",
+        "augmente",
+        "diminue",
+        "s'annule"
+      ],
+      "reponse": 0,
+      "explication": "Réponse notée juste en 2015.",
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+    },
+    {
+      "id": "poly-qcm-002",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Polymérisation vivante : quelle(s) réaction(s) n'ont pas lieu ?",
+      "choix": [
+        "terminaison et transfert",
+        "amorçage",
+        "propagation",
+        "aucune"
+      ],
+      "reponse": 0,
+      "explication": "C'est ce qui permet de contrôler les masses.",
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+    },
+    {
+      "id": "poly-qcm-003",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Polymérisation vinylique : quelle réaction n'a pas lieu ?",
+      "choix": [
+        "aromatisation",
+        "amorçage",
+        "propagation",
+        "terminaison"
+      ],
+      "reponse": 0,
+      "explication": "Question piège des annales.",
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+    },
+    {
+      "id": "poly-qcm-004",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "PRC : une chaîne dormante est une chaîne…",
+      "choix": [
+        "isolée de la propagation en cours, par désactivation réversible",
+        "morte définitivement",
+        "en cours de propagation rapide",
+        "réticulée"
+      ],
+      "reponse": 0,
+      "explication": "Elle peut être réactivée.",
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+    },
+    {
+      "id": "poly-qcm-005",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "L'amorçage d'une polymérisation en chaîne se fait via…",
+      "choix": [
+        "un radical, un carbocation ou un carbanion",
+        "un groupe fonctionnel",
+        "une petite molécule éliminée",
+        "un tensioactif"
+      ],
+      "reponse": 0,
+      "explication": "Pas de groupe fonctionnel : c'est la polymérisation par étapes.",
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+    },
+    {
+      "id": "poly-qcm-006",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "L'ébonite est un polymère…",
+      "choix": [
+        "thermodurcissable",
+        "thermoplastique",
+        "élastomère",
+        "semi-cristallin"
+      ],
+      "reponse": 0,
+      "explication": "Vulcanisation très poussée.",
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+    },
+    {
+      "id": "poly-qcm-007",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Premier élastomère synthétique, breveté en 1909 :",
+      "choix": [
+        "le polyisoprène",
+        "le polyéthylène",
+        "le PVC",
+        "le polystyrène"
+      ],
+      "reponse": 0,
+      "explication": "Annale 2013.",
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+    },
+    {
+      "id": "poly-qcm-008",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Polymère obtenu par polyaddition :",
+      "choix": [
+        "polyuréthane",
+        "PET",
+        "PC",
+        "PS"
+      ],
+      "reponse": 0,
+      "explication": "PET et PC : polycondensation ; PS : en chaîne.",
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+    },
+    {
+      "id": "poly-qcm-009",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "La terminaison par dismutation induit…",
+      "choix": [
+        "un échange de proton entre 2 chaînes en croissance",
+        "un doublement de la masse",
+        "une réticulation",
+        "la formation d'un radical persistant"
+      ],
+      "reponse": 0,
+      "explication": "Le doublement de masse, c'est la recombinaison.",
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+    },
+    {
+      "id": "poly-qcm-010",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Un copolymère greffé résulte de la répétition de…",
+      "choix": [
+        "au moins 2 monomères différents",
+        "exactement 2 monomères",
+        "un seul monomère",
+        "monomères et solvant"
+      ],
+      "reponse": 0,
+      "explication": "⚠️ Cocher « 2 monomères » a valu 0 en 2015.",
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+    },
+    {
+      "id": "poly-qcm-011",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Les liaisons de Van der Waals résultent d'interactions…",
+      "choix": [
+        "électrostatiques",
+        "covalentes",
+        "métalliques",
+        "nucléaires"
+      ],
+      "reponse": 0,
+      "explication": "",
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+    },
+    {
+      "id": "poly-qcm-012",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "L'angle de valence caractérise…",
+      "choix": [
+        "l'angle entre 2 liaisons C–C adjacentes",
+        "l'angle dièdre",
+        "l'angle de torsion",
+        "l'angle entre 2 chaînes"
+      ],
+      "reponse": 0,
+      "explication": "L'angle de torsion est l'angle **dièdre**.",
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+    },
+    {
+      "id": "poly-qcm-013",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Morphologies rencontrées dans un polymère :",
+      "choix": [
+        "lamellaire, fibrillaire, sphérolitique",
+        "colonnaire, plaquettaire",
+        "dendritique, équiaxe",
+        "cubique, hexagonale"
+      ],
+      "reponse": 0,
+      "explication": "",
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+    },
+    {
+      "id": "poly-qcm-014",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Taille typique d'un sphérolite :",
+      "choix": [
+        "100 µm",
+        "1 nm",
+        "10 Å",
+        "1 m"
+      ],
+      "reponse": 0,
+      "explication": "Lamelle ≈ 10 nm, sphérolite µm → mm.",
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+    },
+    {
+      "id": "poly-qcm-015",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Quand la longueur des chaînes augmente, $T_g$…",
+      "choix": [
+        "augmente",
+        "diminue",
+        "ne change pas",
+        "disparaît"
+      ],
+      "reponse": 0,
+      "explication": "",
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+    },
+    {
+      "id": "poly-qcm-016",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Le plateau de module **avant** $T_g$ s'appelle :",
+      "choix": [
+        "plateau vitreux",
+        "plateau caoutchoutique",
+        "zone d'écoulement",
+        "zone de cristallisation"
+      ],
+      "reponse": 0,
+      "explication": "Module ~1 GPa (caoutchoutique ~1 MPa).",
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+    },
+    {
+      "id": "poly-qcm-017",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Si la masse molaire augmente, le plateau caoutchoutique…",
+      "choix": [
+        "s'allonge",
+        "raccourcit",
+        "disparaît",
+        "monte d'une décade"
+      ],
+      "reponse": 0,
+      "explication": "Plus d'enchevêtrements : l'écoulement est repoussé.",
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+    },
+    {
+      "id": "poly-qcm-018",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "$T_g$ augmente si la structure présente…",
+      "choix": [
+        "des groupements rigides et des liaisons H",
+        "des groupements latéraux peu encombrants",
+        "des chaînes très courtes",
+        "un plastifiant"
+      ],
+      "reponse": 0,
+      "explication": "",
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+    },
+    {
+      "id": "poly-qcm-019",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Zone qui n'appartient **pas** au comportement viscoélastique d'un amorphe :",
+      "choix": [
+        "zone de cristallisation",
+        "plateau vitreux",
+        "zone de transition",
+        "zone d'écoulement"
+      ],
+      "reponse": 0,
+      "explication": "Les 4 zones : vitreux, transition, caoutchoutique, écoulement.",
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+    },
+    {
+      "id": "poly-qcm-020",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Sphérolites au microscope entre polariseurs croisés :",
+      "choix": [
+        "croix de Malte",
+        "anneaux de Newton",
+        "franges d'interférence",
+        "rien de visible"
+      ],
+      "reponse": 0,
+      "explication": "",
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+    },
+    {
+      "id": "poly-qcm-021",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Le pic de fusion en DSC est…",
+      "choix": [
+        "endothermique",
+        "exothermique",
+        "une marche",
+        "absent pour un semi-cristallin"
+      ],
+      "reponse": 0,
+      "explication": "La cristallisation, elle, est exothermique.",
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+    },
+    {
+      "id": "poly-qcm-022",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Plus le refroidissement est rapide…",
+      "choix": [
+        "plus $T_f$ et $X_c$ sont faibles",
+        "plus $X_c$ est élevé",
+        "plus les lamelles sont épaisses",
+        "rien ne change"
+      ],
+      "reponse": 0,
+      "explication": "Lamelles plus fines, cristaux moins parfaits.",
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+    },
+    {
+      "id": "poly-qcm-023",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Polymère transparent :",
+      "choix": [
+        "PMMA",
+        "PE",
+        "PVC chargé TiO₂",
+        "PP"
+      ],
+      "reponse": 0,
+      "explication": "",
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+    },
+    {
+      "id": "poly-qcm-024",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Quand $X_c$ augmente, le matériau devient…",
+      "choix": [
+        "plus rigide (et moins ductile)",
+        "plus souple",
+        "transparent",
+        "amorphe"
+      ],
+      "reponse": 0,
+      "explication": "",
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+    }
+  ]
+}

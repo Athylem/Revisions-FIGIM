@@ -90,6 +90,34 @@
           "genre": "cours",
           "fichier": "polymeres/ch3-morphologie.json",
           "questions": 18
+        },
+        {
+          "id": "ch4-questions-recurrentes",
+          "nom": "Questions de cours récurrentes (à rédiger)",
+          "genre": "cours",
+          "fichier": "polymeres/ch4-questions-recurrentes.json",
+          "questions": 14
+        },
+        {
+          "id": "ch5-qcm-annales",
+          "nom": "QCM des annales 2013 / 2015",
+          "genre": "cours",
+          "fichier": "polymeres/ch5-qcm-annales.json",
+          "questions": 24
+        },
+        {
+          "id": "ex1-td1-synthese",
+          "nom": "TD1 : cinétique, masses, longueurs de chaîne",
+          "genre": "exercices",
+          "fichier": "polymeres/ex1-td1-synthese.json",
+          "questions": 12
+        },
+        {
+          "id": "ex2-td2-cristallinite",
+          "nom": "TD2 et test final : cristallinité, DSC, DRX",
+          "genre": "exercices",
+          "fichier": "polymeres/ex2-td2-cristallinite.json",
+          "questions": 7
         }
       ]
     },

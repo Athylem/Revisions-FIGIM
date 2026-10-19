@@ -1,0 +1,139 @@
+{
+  "chapitre": "TD2 et test final : cristallinité, DSC, DRX",
+  "genre": "exercices",
+  "questions": [
+    {
+      "id": "poly-td2-001",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**TD2.** PEHD de masse volumique $\\rho=0{,}951$ g/cm³ ($\\rho_a=0{,}85$ ; $\\rho_c=0{,}995$).",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Taux de cristallinité **volumique** $\\frac{\\rho-\\rho_a}{\\rho_c-\\rho_a}$ (en %) ?",
+          "reponse": 69.6552,
+          "tolerance": 0.02,
+          "unite": "%"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Taux de cristallinité **massique** $\\frac{\\rho_c(\\rho-\\rho_a)}{\\rho(\\rho_c-\\rho_a)}$ (en %) ?",
+          "reponse": 72.8779,
+          "tolerance": 0.02,
+          "unite": "%"
+        }
+      ],
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+    },
+    {
+      "id": "poly-td2-002",
+      "type": "numerique",
+      "difficulte": 1,
+      "enonce": "PP en DSC : $\\Delta H_f=115{,}2$ J/g, $\\Delta H_f^0=165$ J/g. $X_c$ (en %) ?",
+      "reponse": 69.81818181818181,
+      "unite": "%",
+      "tolerance": 0.02,
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+    },
+    {
+      "id": "poly-td2-003",
+      "type": "numerique",
+      "difficulte": 1,
+      "enonce": "PP injecté en DRX : aire amorphe $8\\,912$, aire cristalline $18\\,410$. $X_c$ (en %) ?",
+      "reponse": 67.38159724763926,
+      "unite": "%",
+      "tolerance": 0.02,
+      "explication": "$X_c=\\frac{A_c}{A_c+A_a}$.",
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+    },
+    {
+      "id": "poly-td2-004",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**TD2.** PET injecté : $P=2$, $\\overline{M_w}=51\\,000$ ; $T_g=75$ °C, cristallisation froide 155 °C, fusion 240 °C ; $\\Delta H_c=\\Delta H_f=46$ J/g ; $\\Delta H_f^0=117{,}6$ J/g.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "$\\overline{DP_n}$ ($M_0=192$) ?",
+          "reponse": 132.812,
+          "tolerance": 0.02
+        },
+        {
+          "type": "numerique",
+          "enonce": "$X_c$ initial de la pièce (en %) ?",
+          "reponse": 0.0,
+          "tolerance": 0.01,
+          "unite": "%",
+          "explication": "$\\Delta H_f=\\Delta H_{cc}$ : la pièce était **amorphe** (trempée dans le moule)."
+        },
+        {
+          "type": "numerique",
+          "enonce": "$X_c$ après la cristallisation froide (en %) ?",
+          "reponse": 39.1156,
+          "tolerance": 0.02,
+          "unite": "%"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Gibbs-Thomson ($\\sigma_e=0{,}12$ J/m², $\\rho_c=1455$ kg/m³, $T_m^0=564$ K) : épaisseur des lamelles qui fondent à 240 °C ?",
+          "reponse": 15.5114,
+          "tolerance": 0.04,
+          "unite": "nm",
+          "explication": "$L_c=\\frac{2\\sigma_e}{\\rho_c\\Delta H_m^0(1-T_m/T_m^0)}$, en unités SI et T en K."
+        }
+      ],
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+    },
+    {
+      "id": "poly-td2-005",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**Test final 2013.** Styrène + AIBN : on obtient 0,437 g de PS de $\\overline{M_n}=29\\,713$ g/mol ; 376 mm³ de N₂ se sont dégagés (22,4 L/mol). Terminaison par recombinaison.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Nombre de moles de chaînes ?",
+          "reponse": 1.47074e-05,
+          "tolerance": 0.02,
+          "unite": "mol"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Moles d'AIBN décomposé ($=n(N_2)$) ?",
+          "reponse": 1.67857e-05,
+          "tolerance": 0.02,
+          "unite": "mol"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Efficacité $f$ de l'amorceur ?",
+          "reponse": 0.876184,
+          "tolerance": 0.03,
+          "explication": "Recombinaison : 2 fragments R par chaîne, 1 AIBN donne 2 R°. Oublier ce facteur 2 donnait 0,44."
+        }
+      ],
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+    },
+    {
+      "id": "poly-td2-006",
+      "type": "numerique",
+      "difficulte": 2,
+      "enonce": "Mark-Houwink, polyisobutène : $[\\eta]=70$ mL/g, $K=4{,}3\\cdot10^{-2}$ mL/g, $a=0{,}6$. $\\overline{M_v}$ ?",
+      "reponse": 225276.54354302783,
+      "unite": "g/mol",
+      "tolerance": 0.03,
+      "explication": "$\\overline{M_v}=([\\eta]/K)^{1/a}$.",
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+    },
+    {
+      "id": "poly-td2-007",
+      "type": "numerique",
+      "difficulte": 3,
+      "enonce": "Maille monoclinique du PP : $a=0{,}666$, $b=2{,}078$, $c=0{,}65$ nm, $\\beta=99{,}62°$, $\\rho_c=0{,}946$ g/cm³. Nombre d'unités monomères (42 g/mol) par maille ?",
+      "reponse": 12,
+      "tolerance": 0.05,
+      "explication": "$V=abc\\sin\\beta=0{,}887$ nm³ ; masse de la maille × $N_A$ ≈ 505 g/mol ; 505/42 ≈ 12.",
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+    }
+  ]
+}

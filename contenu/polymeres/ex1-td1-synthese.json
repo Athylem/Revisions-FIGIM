@@ -1,0 +1,371 @@
+{
+  "chapitre": "TD1 : cinétique, masses, longueurs de chaîne",
+  "genre": "exercices",
+  "questions": [
+    {
+      "id": "poly-td1-001",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**TD1 Ex2.** Styrène + AIBN, on passe de 60 à 70 °C. $E_d=126$, $E_p=34$, $E_t=10$ kJ/mol.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Facteur multiplicatif sur $k_d$ ?",
+          "reponse": 3.76916,
+          "tolerance": 0.02,
+          "explication": "$\\exp\\left[\\frac ER\\left(\\frac1{333}-\\frac1{343}\\right)\\right]$, T en **kelvin**."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Facteur sur $k_p$ ?",
+          "reponse": 1.43052,
+          "tolerance": 0.02
+        },
+        {
+          "type": "numerique",
+          "enonce": "Facteur sur $v_p\\propto k_p\\sqrt{k_d/k_t}$ ?",
+          "reponse": 2.63481,
+          "tolerance": 0.03
+        },
+        {
+          "type": "numerique",
+          "enonce": "Facteur sur $\\overline{DP_n}\\propto\\frac{k_p}{\\sqrt{k_dk_t}}$ ?",
+          "reponse": 0.699046,
+          "tolerance": 0.03,
+          "explication": "Chauffer accélère mais **raccourcit** les chaînes."
+        }
+      ],
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+    },
+    {
+      "id": "poly-td1-002",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**TD1 Ex3.** $k_d=4{,}4\\cdot10^{-6}$ s⁻¹, $k_p=145$, $k_t=7\\cdot10^7$ L/mol/s, $f=0{,}85$, $[R]_0=5\\cdot10^{-3}$ mol/L. Temps pour 2,5 % de conversion ?",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Constante apparente $K=k_p\\sqrt{fk_d[R]/k_t}$ ?",
+          "reponse": 2.36995e-06,
+          "tolerance": 0.03,
+          "unite": "s⁻¹",
+          "explication": "Ordre 1 en monomère : $\\ln\\frac{[M]_0}{[M]}=Kt$."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Temps pour 2,5 % de conversion ?",
+          "reponse": 2.96745,
+          "tolerance": 0.03,
+          "unite": "h",
+          "explication": "$t=\\frac{\\ln(1/0{,}975)}K$."
+        }
+      ],
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+    },
+    {
+      "id": "poly-td1-003",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**TD1 Ex4.** Polymérisation anionique du styrène : 5 mL de styrène ($d=0{,}91$, $M_0=104$), 1,4 mL de n-BuLi à 1 mol/L, conversion totale.",
+      "etapes": [
+        {
+          "type": "qcm",
+          "enonce": "Type de polymérisation ?",
+          "choix": [
+            "anionique vivante (en chaîne)",
+            "radicalaire",
+            "polycondensation",
+            "cationique"
+          ],
+          "reponse": 0
+        },
+        {
+          "type": "numerique",
+          "enonce": "Masse de polymère attendue ?",
+          "reponse": 4.55,
+          "tolerance": 0.02,
+          "unite": "g"
+        },
+        {
+          "type": "numerique",
+          "enonce": "$\\overline{DP_n}$ ?",
+          "reponse": 31.25,
+          "tolerance": 0.03,
+          "explication": "$\\frac{n(\\text{styrène})}{n(\\text{BuLi})}=\\frac{4{,}55/104}{1{,}4\\cdot10^{-3}}$."
+        },
+        {
+          "type": "numerique",
+          "enonce": "$\\overline{M_n}$ ?",
+          "reponse": 3250.0,
+          "tolerance": 0.03,
+          "unite": "g/mol"
+        },
+        {
+          "type": "numerique",
+          "enonce": "On récupère 4 g (rendement 88 %). Nouveau $\\overline{DP_n}$ ?",
+          "reponse": 27.5,
+          "tolerance": 0.03
+        },
+        {
+          "type": "qcm",
+          "enonce": "Rôle du THF ?",
+          "choix": [
+            "solvant polaire qui sépare la paire d'ions : carbanion plus réactif",
+            "amorceur",
+            "agent de terminaison",
+            "tensioactif"
+          ],
+          "reponse": 0
+        }
+      ],
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+    },
+    {
+      "id": "poly-td1-004",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**TD1 Ex5.** PMMA : $[MMA]=200$ g/L ($M_0=100$), $[AIBN]=1{,}64\\cdot10^{-2}$ g/L ($M=164$), $k_d=8{,}5\\cdot10^{-6}$ s⁻¹, $k_p=367$, $k_t=9{,}3\\cdot10^6$ L/mol/s, $f=0{,}7$.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "$[R]$ ?",
+          "reponse": 0.0001,
+          "tolerance": 0.02,
+          "unite": "mol/L"
+        },
+        {
+          "type": "numerique",
+          "enonce": "$[M°]$ ?",
+          "reponse": 7.99866e-09,
+          "tolerance": 0.03,
+          "unite": "mol/L"
+        },
+        {
+          "type": "numerique",
+          "enonce": "$v_p$ ?",
+          "reponse": 5.87101e-06,
+          "tolerance": 0.03,
+          "unite": "mol/L/s"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Longueur de chaîne cinétique $\\lambda=v_p/v_a$ ?",
+          "reponse": 4933.62,
+          "tolerance": 0.03
+        },
+        {
+          "type": "numerique",
+          "enonce": "$\\overline{M_n}$ si la terminaison est par dismutation ($DP_n=\\lambda$) ?",
+          "reponse": 493362.0,
+          "tolerance": 0.03,
+          "unite": "g/mol",
+          "explication": "Par recombinaison : $DP_n=2\\lambda$."
+        }
+      ],
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+    },
+    {
+      "id": "poly-td1-005",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**TD1 Ex6.** Chaîne de PE de $M=10^6$ g/mol, $l=0{,}154$ nm.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Nombre de liaisons C–C $n$ ?",
+          "reponse": 71428.6,
+          "tolerance": 0.02,
+          "explication": "Une liaison par motif CH₂ (14 g/mol)."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Longueur étirée $n\\,l$ ?",
+          "reponse": 11.0,
+          "tolerance": 0.03,
+          "unite": "µm"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Pelote en enchaînement libre, $l\\sqrt n$ ?",
+          "reponse": 41.1582,
+          "tolerance": 0.03,
+          "unite": "nm"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Pelote avec θ fixé, rotation libre ($\\langle r^2\\rangle=2nl^2$) ?",
+          "reponse": 58.2065,
+          "tolerance": 0.03,
+          "unite": "nm"
+        }
+      ],
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+    },
+    {
+      "id": "poly-td1-006",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**TD1 Ex7.** Mélange de deux polymères monodisperses : 33 % en masse à $M_1=10\\,000$ et 67 % à $M_2=40\\,000$ g/mol.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "$\\overline{M_w}=\\sum w_iM_i$ ?",
+          "reponse": 30100.0,
+          "tolerance": 0.02,
+          "unite": "g/mol"
+        },
+        {
+          "type": "numerique",
+          "enonce": "$\\overline{M_n}=1/\\sum(w_i/M_i)$ ?",
+          "reponse": 20100.5,
+          "tolerance": 0.02,
+          "unite": "g/mol"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Indice de polymolécularité $P$ ?",
+          "reponse": 1.49748,
+          "tolerance": 0.02
+        }
+      ],
+      "explication": "Avec des fractions **massiques**, les formules changent : ne pas utiliser $\\sum n_iM_i$.",
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+    },
+    {
+      "id": "poly-td1-007",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**TD1 Ex8.** Osmométrie du PS dans le benzène ($\\rho=880$ kg/m³, 25 °C). La droite $h/c=f(c)$ a pour ordonnée à l'origine $2\\cdot10^{-3}$ m⁴/kg.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "$\\overline{M_n}=\\frac{RT}{\\rho g\\times\\text{ordonnée}}$ ?",
+          "reponse": 143.498,
+          "tolerance": 0.03,
+          "unite": "kg/mol"
+        },
+        {
+          "type": "numerique",
+          "enonce": "$\\overline{DP_n}$ ?",
+          "reponse": 1379.78,
+          "tolerance": 0.03
+        }
+      ],
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+    },
+    {
+      "id": "poly-td1-008",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**Cinétique radicalaire (fiche).** Styrène $[M]=5$ mol/L, $[R]=10^{-2}$ mol/L, $f=0{,}5$, $k_d=10^{-5}$ s⁻¹, $k_p=10^3$, $k_t=10^7$ L/mol/s.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "$[M°]$ ?",
+          "reponse": 7.07107e-08,
+          "tolerance": 0.03,
+          "unite": "mol/L"
+        },
+        {
+          "type": "numerique",
+          "enonce": "$v_p$ ?",
+          "reponse": 0.000353553,
+          "tolerance": 0.03,
+          "unite": "mol/L/s"
+        },
+        {
+          "type": "numerique",
+          "enonce": "$v_a=2fk_d[R]$ ?",
+          "reponse": 1e-07,
+          "tolerance": 0.02,
+          "unite": "mol/L/s"
+        },
+        {
+          "type": "numerique",
+          "enonce": "$\\lambda$ ?",
+          "reponse": 3535.53,
+          "tolerance": 0.03
+        },
+        {
+          "type": "qcm",
+          "enonce": "On double $[R]$ :",
+          "choix": [
+            "$v_p\\times\\sqrt2$, $\\lambda\\div\\sqrt2$",
+            "$v_p\\times2$, $\\lambda\\times2$",
+            "$v_p\\times\\sqrt2$, $\\lambda$ inchangée",
+            "rien ne change"
+          ],
+          "reponse": 0
+        }
+      ],
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+    },
+    {
+      "id": "poly-td1-009",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**Masses moyennes (fiche).** 10 mol de chaînes à 10 000 g/mol, 20 mol à 50 000 et 10 mol à 100 000. Polystyrène ($M_0=104$).",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "$\\overline{M_n}$ ?",
+          "reponse": 52500.0,
+          "tolerance": 0.01,
+          "unite": "g/mol"
+        },
+        {
+          "type": "numerique",
+          "enonce": "$\\overline{M_w}$ ?",
+          "reponse": 71904.8,
+          "tolerance": 0.02,
+          "unite": "g/mol"
+        },
+        {
+          "type": "numerique",
+          "enonce": "$P$ ?",
+          "reponse": 1.36961,
+          "tolerance": 0.02
+        },
+        {
+          "type": "numerique",
+          "enonce": "$\\overline{DP_n}$ ?",
+          "reponse": 504.808,
+          "tolerance": 0.02
+        }
+      ],
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+    },
+    {
+      "id": "poly-td1-010",
+      "type": "numerique",
+      "difficulte": 2,
+      "enonce": "Polymérisation vivante : $[M]_0=2$ mol/L, $[R]_0=10^{-3}$ mol/L, conversion 80 %, styrène. $\\overline{M_n}$ ?",
+      "reponse": 166400,
+      "unite": "g/mol",
+      "tolerance": 0.02,
+      "explication": "$\\overline{DP_n}=2000\\times0{,}8=1600$, puis $\\times104$.",
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+    },
+    {
+      "id": "poly-td1-011",
+      "type": "numerique",
+      "difficulte": 2,
+      "enonce": "Ordre 1, $k=2\\cdot10^{-3}$ s⁻¹ : temps pour consommer 90 % du réactif ?",
+      "reponse": 1151.2925464970228,
+      "unite": "s",
+      "tolerance": 0.02,
+      "explication": "$\\ln10=kt$.",
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+    },
+    {
+      "id": "poly-td1-012",
+      "type": "numerique",
+      "difficulte": 3,
+      "enonce": "Arrhenius, $E_a=50$ kJ/mol : facteur sur $k$ entre 25 °C et 50 °C ?",
+      "reponse": 4.7683514452746145,
+      "tolerance": 0.03,
+      "explication": "$\\ln\\frac{k_2}{k_1}=\\frac{E_a}R\\left(\\frac1{298}-\\frac1{323}\\right)$.",
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+    }
+  ]
+}
