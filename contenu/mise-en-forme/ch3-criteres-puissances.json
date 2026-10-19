@@ -1,0 +1,335 @@
+{
+  "chapitre": "Critères, loi d'écoulement, borne sup.",
+  "questions": [
+    {
+      "id": "mef-criteres-001",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Sur la surface d'écoulement, on a $f=0$. L'état de contrainte est alors :",
+      "choix": [
+        "plastique",
+        "élastique",
+        "interdit",
+        "indéterminé"
+      ],
+      "reponse": 0,
+      "explication": "$f<0$ : élastique ; $f=0$ : plastique ; $f>0$ : interdit.",
+      "source": "Cours/Mise en forme/Mise en forme - Fiche de révision.md"
+    },
+    {
+      "id": "mef-criteres-002",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "La surface d'écoulement (Von Mises ou Tresca) est un cylindre d'axe :",
+      "choix": [
+        "(1,1,1)",
+        "(1,0,0)",
+        "(1,1,0)",
+        "(0,0,1)"
+      ],
+      "reponse": 0,
+      "explication": "La pression hydrostatique ne joue pas : ajouter $p$ aux trois contraintes principales laisse l'état plastique.",
+      "source": "Cours/Mise en forme/Mise en forme - Fiche de révision.md"
+    },
+    {
+      "id": "mef-criteres-003",
+      "type": "vrai-faux",
+      "difficulte": 1,
+      "enonce": "Si $(\\sigma_I,\\sigma_{II},\\sigma_{III})$ est un état plastique, alors $(\\sigma_I+p,\\sigma_{II}+p,\\sigma_{III}+p)$ en est un aussi.",
+      "reponse": true,
+      "explication": "Vrai : on se déplace le long de l'axe (1,1,1) du cylindre.",
+      "source": "Cours/Mise en forme/Mise en forme - Fiche de révision.md"
+    },
+    {
+      "id": "mef-criteres-004",
+      "type": "vrai-faux",
+      "difficulte": 1,
+      "enonce": "Le principe du travail maximal impose que la surface d'écoulement soit convexe.",
+      "reponse": true,
+      "explication": "Vrai, et il donne aussi la normalité de $d\\varepsilon_p$ à la surface.",
+      "source": "Cours/Mise en forme/Mise en forme - Fiche de révision.md"
+    },
+    {
+      "id": "mef-criteres-005",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "La section du cylindre de Von Mises est :",
+      "choix": [
+        "un cercle de rayon $\\sqrt{2/3}\\,\\sigma_0$",
+        "un hexagone",
+        "un cercle de rayon $\\sigma_0$",
+        "une ellipse"
+      ],
+      "reponse": 0,
+      "explication": "En contraintes planes, on voit une **ellipse** ; mais dans le plan déviatorique c'est un cercle. Tresca = hexagone.",
+      "source": "Cours/Mise en forme/Mise en forme - Fiche de révision.md"
+    },
+    {
+      "id": "mef-criteres-006",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Interprétation physique du critère de Von Mises :",
+      "choix": [
+        "l'énergie de distorsion atteint un seuil",
+        "le cisaillement maximal atteint $\\sigma_0/2$",
+        "la contrainte normale maximale atteint $\\sigma_0$",
+        "la pression hydrostatique atteint $\\sigma_0$"
+      ],
+      "reponse": 0,
+      "explication": "Von Mises est un critère **énergétique** (énergie de distorsion).",
+      "source": "Cours/Mise en forme/Mise en forme - Fiche de révision.md"
+    },
+    {
+      "id": "mef-criteres-007",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Critère de Tresca (avec $\\sigma_I>\\sigma_{II}>\\sigma_{III}$) :",
+      "choix": [
+        "$\\sigma_I-\\sigma_{III}=\\sigma_0$",
+        "$\\sigma_I-\\sigma_{II}=\\sigma_0$",
+        "$\\sigma_I=\\sigma_0$",
+        "$(\\sigma_I-\\sigma_{III})^2=2\\sigma_0^2$"
+      ],
+      "reponse": 0,
+      "explication": "Plastification quand $\\tau_{max}=\\frac{\\sigma_I-\\sigma_{III}}2$ atteint $\\frac{\\sigma_0}2$.",
+      "source": "Cours/Mise en forme/Mise en forme - Fiche de révision.md"
+    },
+    {
+      "id": "mef-criteres-008",
+      "type": "vrai-faux",
+      "difficulte": 1,
+      "enonce": "Tresca est un critère énergétique.",
+      "reponse": false,
+      "explication": "Faux : c'est Von Mises qui est énergétique. Tresca est un critère en **cisaillement maximal**.",
+      "source": "Cours/Mise en forme/Mise en forme - Fiche de révision.md"
+    },
+    {
+      "id": "mef-criteres-009",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Point fort de Von Mises par rapport à Tresca :",
+      "choix": [
+        "il s'écrit dans n'importe quel repère, avec une expression unique et dérivable",
+        "il est toujours plus prudent",
+        "il dépend de la pression hydrostatique",
+        "il ne demande pas de connaître $\\sigma_0$"
+      ],
+      "reponse": 0,
+      "explication": "Tresca nécessite les contraintes principales **ordonnées**.",
+      "source": "Cours/Mise en forme/Mise en forme - Fiche de révision.md"
+    },
+    {
+      "id": "mef-criteres-010",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Écart maximal entre Tresca et Von Mises :",
+      "choix": [
+        "≈ 15 %",
+        "≈ 5 %",
+        "≈ 50 %",
+        "aucun écart"
+      ],
+      "reponse": 0,
+      "explication": "En cisaillement pur : $\\frac{\\sigma_0}{\\sqrt3}$ (VM) contre $\\frac{\\sigma_0}2$ (Tresca), rapport $\\frac2{\\sqrt3}\\approx1{,}155$.",
+      "source": "Cours/Mise en forme/Mise en forme - Fiche de révision.md"
+    },
+    {
+      "id": "mef-criteres-011",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Torsion pure (cisaillement $\\tau$) : selon Von Mises, on plastifie quand $\\tau=$",
+      "choix": [
+        "$\\frac{\\sigma_0}{\\sqrt3}$",
+        "$\\frac{\\sigma_0}{2}$",
+        "$\\sigma_0$",
+        "$\\sqrt3\\,\\sigma_0$"
+      ],
+      "reponse": 0,
+      "explication": "Von Mises : $\\tau=\\sigma_0/\\sqrt3$ ; Tresca : $\\tau=\\sigma_0/2$.",
+      "source": "Cours/Mise en forme/Mise en forme - Fiche de révision.md"
+    },
+    {
+      "id": "mef-criteres-012",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Lors d'un écrouissage isotrope, la surface d'écoulement :",
+      "choix": [
+        "se dilate (homothétie)",
+        "se translate",
+        "rétrécit",
+        "ne change pas"
+      ],
+      "reponse": 0,
+      "explication": "Sa taille est pilotée par la **déformation plastique généralisée** : $\\sigma_0=g(\\bar\\varepsilon_p)$.",
+      "source": "Cours/Mise en forme/Mise en forme - Fiche de révision.md"
+    },
+    {
+      "id": "mef-criteres-013",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Le pendant de la loi de Hooke en plasticité est :",
+      "choix": [
+        "la loi d'écoulement (incrémentale)",
+        "la loi d'Holomon",
+        "le critère de Von Mises",
+        "la loi de Prandtl"
+      ],
+      "reponse": 0,
+      "explication": "Loi d'écoulement : $d\\varepsilon^p_{ij}=s_{ij}\\,d\\lambda$.",
+      "source": "Cours/Mise en forme/Mise en forme - Fiche de révision.md"
+    },
+    {
+      "id": "mef-criteres-014",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Caractéristiques de la loi d'écoulement (corps de Von Mises) :",
+      "choix": [
+        "incrémentale, et $d\\bar{\\bar\\varepsilon}_p$ colinéaire au déviateur",
+        "biunivoque entre σ et ε",
+        "indépendante du chemin suivi",
+        "valable uniquement en élasticité"
+      ],
+      "reponse": 0,
+      "explication": "En plasticité, pas de relation biunivoque σ ↔ ε : il faut suivre le chemin pas à pas.",
+      "source": "Cours/Mise en forme/Mise en forme - Fiche de révision.md"
+    },
+    {
+      "id": "mef-criteres-015",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Pour un matériau RPP, dans $d\\varepsilon^p_{ij}=s_{ij}\\,d\\lambda$ :",
+      "choix": [
+        "$d\\lambda$ est indéterminé (seule la direction est connue)",
+        "$d\\lambda=0$",
+        "$d\\lambda=\\frac{3\\,d\\bar\\varepsilon_p}{2\\sigma_0}$ est connu",
+        "$d\\lambda=1$"
+      ],
+      "reponse": 0,
+      "explication": "Pour un matériau écrouissable, $d\\lambda=\\frac{3\\,d\\bar\\varepsilon_p}{2\\sigma_0}$ ; pour un RPP il reste indéterminé.",
+      "source": "Cours/Mise en forme/Mise en forme - Fiche de révision.md"
+    },
+    {
+      "id": "mef-criteres-016",
+      "type": "vrai-faux",
+      "difficulte": 2,
+      "enonce": "La puissance dissipée par déformation plastique par unité de volume vaut $\\sigma_0$ × déformation généralisée.",
+      "reponse": false,
+      "explication": "Faux : $\\sigma_0\\times$ **vitesse** de déformation généralisée, $\\dot W_i=\\iiint\\sigma_0\\dot{\\bar\\varepsilon}\\,dV$.",
+      "source": "Cours/Mise en forme/Mise en forme - Fiche de révision.md"
+    },
+    {
+      "id": "mef-criteres-017",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Dans le modèle de couche limite $\\dot W_f=\\iint m\\frac{\\sigma_0}{\\sqrt3}|\\Delta v|\\,d\\Sigma$, $m=1$ correspond à :",
+      "choix": [
+        "un contact collant",
+        "un contact parfaitement lubrifié",
+        "l'absence de contact",
+        "un matériau rigide"
+      ],
+      "reponse": 0,
+      "explication": "$m\\in[0,1]$ : $0$ = parfaitement lubrifié, $1$ = collant.",
+      "source": "Cours/Mise en forme/Mise en forme - Fiche de révision.md"
+    },
+    {
+      "id": "mef-criteres-018",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "La méthode de la borne supérieure donne une estimation de l'effort :",
+      "choix": [
+        "par excès",
+        "par défaut",
+        "exacte",
+        "sans rapport avec l'effort réel"
+      ],
+      "reponse": 0,
+      "explication": "$\\dot W_e\\le\\dot W_i+\\dot W_S+\\dot W_f$ avec un champ de vitesse incompressible (blocs rigides) : on surestime.",
+      "source": "Cours/Mise en forme/Mise en forme - Fiche de révision.md"
+    },
+    {
+      "id": "mef-criteres-019",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "À une discontinuité de vitesse entre deux blocs rigides :",
+      "choix": [
+        "la composante normale est continue, la tangentielle peut sauter",
+        "la composante tangentielle est continue, la normale peut sauter",
+        "les deux composantes sont continues",
+        "les deux peuvent sauter"
+      ],
+      "reponse": 0,
+      "explication": "La continuité de la composante normale garantit la conservation de la matière ; le saut tangentiel dissipe $\\dot W_S$.",
+      "source": "Cours/Mise en forme/Mise en forme - Fiche de révision.md"
+    },
+    {
+      "id": "mef-criteres-020",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Poinçonnement (exemple du cours) : la borne supérieure donne $P\\le$",
+      "choix": [
+        "$\\frac{6\\sigma_0}{\\sqrt3}\\approx3{,}46\\,\\sigma_0$",
+        "$\\sigma_0$",
+        "$\\frac{\\sigma_0}{\\sqrt3}$",
+        "$2\\sigma_0$"
+      ],
+      "reponse": 0,
+      "explication": "Résultat du cours pour le poinçonnement.",
+      "source": "Cours/Mise en forme/Mise en forme - Fiche de révision.md"
+    },
+    {
+      "id": "mef-criteres-021",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Pour obtenir un rayon final $R_f$ en flexion, il faut fléchir avec un rayon $R$ :",
+      "choix": [
+        "$R<R_f$",
+        "$R>R_f$",
+        "$R=R_f$",
+        "peu importe"
+      ],
+      "reponse": 0,
+      "explication": "À cause du retour élastique : $\\frac1{R_f}=\\frac1R-\\frac1\\rho$, il faut donc plier plus fort.",
+      "source": "Cours/Mise en forme/Mise en forme - Fiche de révision.md"
+    },
+    {
+      "id": "mef-criteres-022",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Deux tôles de même module $E$ ; laquelle a le plus de retour élastique ?",
+      "choix": [
+        "celle qui a la plus haute limite d'élasticité",
+        "celle qui a la plus basse limite d'élasticité",
+        "les deux autant",
+        "celle qui est la plus épaisse, quelle que soit $\\sigma_0$"
+      ],
+      "reponse": 0,
+      "explication": "$\\sigma_0\\uparrow$ ⇒ retour élastique ↑.",
+      "source": "Cours/Mise en forme/Mise en forme - Fiche de révision.md"
+    },
+    {
+      "id": "mef-criteres-023",
+      "type": "vrai-faux",
+      "difficulte": 2,
+      "enonce": "Une éprouvette plate très large rompt perpendiculairement à la direction de traction.",
+      "reponse": false,
+      "explication": "Faux : striction en bande inclinée d'environ **35°** par rapport à la direction transverse.",
+      "source": "Cours/Mise en forme/Mise en forme - Fiche de révision.md"
+    },
+    {
+      "id": "mef-criteres-024",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Forgeage (DS 2015) : avec $a/h=8$ et $\\sigma_0=220$ MPa, la borne supérieure donne $P\\le$ environ :",
+      "choix": [
+        "2040 MPa",
+        "220 MPa",
+        "127 MPa",
+        "8000 MPa"
+      ],
+      "reponse": 0,
+      "explication": "$P\\le\\frac{\\sigma_0}{\\sqrt3}\\left(\\frac{2a}h+\\frac h{2a}\\right)=\\frac{220}{\\sqrt3}\\left(16+\\frac1{16}\\right)\\approx2040$ MPa.",
+      "source": "Cours/Mise en forme/Mise en forme - Fiche de révision.md"
+    }
+  ]
+}

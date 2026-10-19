@@ -69,9 +69,28 @@
       "nom": "Mise en forme",
       "prof": "B. Lenoir",
       "groupe": "Procédés",
-      "ds": null,
+      "ds": "2026-10-20",
       "notes": true,
-      "chapitres": []
+      "chapitres": [
+        {
+          "id": "ch1-procedes-elasticite",
+          "nom": "Procédés et rappels d'élasticité",
+          "fichier": "mise-en-forme/ch1-procedes-elasticite.json",
+          "questions": 14
+        },
+        {
+          "id": "ch2-plasticite",
+          "nom": "Plasticité et essai de traction",
+          "fichier": "mise-en-forme/ch2-plasticite.json",
+          "questions": 25
+        },
+        {
+          "id": "ch3-criteres-puissances",
+          "nom": "Critères, loi d'écoulement, borne sup.",
+          "fichier": "mise-en-forme/ch3-criteres-puissances.json",
+          "questions": 24
+        }
+      ]
     },
     {
       "id": "fonderie",

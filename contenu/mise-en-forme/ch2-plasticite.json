@@ -1,0 +1,326 @@
+{
+  "chapitre": "Plasticité et essai de traction",
+  "questions": [
+    {
+      "id": "mef-plasticite-001",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Pourquoi la déformation plastique se fait-elle à volume constant ?",
+      "choix": [
+        "Elle se fait par glissement de plans atomiques (dislocations) les uns sur les autres",
+        "Parce que le matériau est élastique",
+        "Parce que la pression hydrostatique est nulle",
+        "Parce que la température reste constante"
+      ],
+      "reponse": 0,
+      "explication": "Le glissement de plans atomiques ne crée pas de vide : la déformation plastique est **incompressible**.",
+      "source": "Cours/Mise en forme/Mise en forme - Cours.md"
+    },
+    {
+      "id": "mef-plasticite-002",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Quelle partie du tenseur des contraintes fait plastifier le matériau ?",
+      "choix": [
+        "le déviateur",
+        "la partie sphérique (pression hydrostatique)",
+        "la trace",
+        "la diagonale"
+      ],
+      "reponse": 0,
+      "explication": "$\\bar{\\bar\\sigma}=\\sigma_m\\bar{\\bar I}+\\bar{\\bar s}$ : une pression hydrostatique seule **ne plastifie pas**, c'est le déviateur $\\bar{\\bar s}$ qui compte.",
+      "source": "Cours/Mise en forme/Mise en forme - Cours.md"
+    },
+    {
+      "id": "mef-plasticite-003",
+      "type": "vrai-faux",
+      "difficulte": 1,
+      "enonce": "La trace du tenseur déviateur est toujours nulle.",
+      "reponse": true,
+      "explication": "Vrai : $s_{ij}=\\sigma_{ij}-\\sigma_m\\delta_{ij}$ avec $\\sigma_m=\\frac{\\operatorname{tr}\\bar{\\bar\\sigma}}3$.",
+      "source": "Cours/Mise en forme/Mise en forme - Cours.md"
+    },
+    {
+      "id": "mef-plasticite-004",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "La courbe conventionnelle de traction trace :",
+      "choix": [
+        "$R=F/S_0$ en fonction de $e=(L-L_0)/L_0$",
+        "$\\sigma=F/S$ en fonction de $\\varepsilon=\\ln(L/L_0)$",
+        "$\\sigma_0$ en fonction de $\\varepsilon_p$",
+        "$F$ en fonction du temps"
+      ],
+      "reponse": 0,
+      "explication": "Conventionnelle = grandeurs **initiales** ($S_0$, $L_0$). La rationnelle utilise la section et la longueur actuelles.",
+      "source": "Cours/Mise en forme/Mise en forme - Cours.md"
+    },
+    {
+      "id": "mef-plasticite-005",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Passage de la courbe conventionnelle à la rationnelle :",
+      "choix": [
+        "$\\sigma=R(1+e)$ et $\\varepsilon=\\ln(1+e)$",
+        "$\\sigma=R/(1+e)$ et $\\varepsilon=\\ln(1+e)$",
+        "$\\sigma=R(1+e)$ et $\\varepsilon=e$",
+        "$\\sigma=R$ et $\\varepsilon=\\ln(1+e)$"
+      ],
+      "reponse": 0,
+      "explication": "Conservation du volume $S_0L_0=SL$ : $\\sigma=\\frac FS=\\frac F{S_0}\\frac L{L_0}=R(1+e)$ ; $\\varepsilon=\\int\\frac{dL}L=\\ln(1+e)$.",
+      "source": "Cours/Mise en forme/Mise en forme - Cours.md"
+    },
+    {
+      "id": "mef-plasticite-006",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Quelle courbe est intrinsèque au matériau ?",
+      "choix": [
+        "la courbe rationnelle",
+        "la courbe conventionnelle",
+        "les deux",
+        "aucune"
+      ],
+      "reponse": 0,
+      "explication": "La conventionnelle dépend de la géométrie de l'éprouvette et ignore la diminution de section.",
+      "source": "Cours/Mise en forme/Mise en forme - Cours.md"
+    },
+    {
+      "id": "mef-plasticite-007",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Les trois zones de la courbe de traction sont :",
+      "choix": [
+        "élastique, plastique homogène, striction",
+        "élastique, striction, plastique homogène",
+        "élastique, écrouissage, adoucissement",
+        "rigide, plastique, rupture"
+      ],
+      "reponse": 0,
+      "explication": "Puis rupture. C'est le domaine plastique **homogène** qu'on exploite en mise en forme.",
+      "source": "Cours/Mise en forme/Mise en forme - Cours.md"
+    },
+    {
+      "id": "mef-plasticite-008",
+      "type": "vrai-faux",
+      "difficulte": 1,
+      "enonce": "Après la striction, la déformation plastique est homogène.",
+      "reponse": false,
+      "explication": "Faux : la striction est une déformation **localisée** (réduction locale de section), qui débute au maximum de charge $R_m$.",
+      "source": "Cours/Mise en forme/Mise en forme - Cours.md"
+    },
+    {
+      "id": "mef-plasticite-009",
+      "type": "vrai-faux",
+      "difficulte": 1,
+      "enonce": "C'est le domaine plastique homogène qu'on exploite en mise en forme.",
+      "reponse": true,
+      "explication": "Vrai : la striction mène à la rupture.",
+      "source": "Cours/Mise en forme/Mise en forme - Cours.md"
+    },
+    {
+      "id": "mef-plasticite-010",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Quelles grandeurs maintient-on constantes pendant l'essai de traction ?",
+      "choix": [
+        "la vitesse de déformation et la température",
+        "la force et la température",
+        "la section et la vitesse",
+        "la contrainte et la longueur"
+      ],
+      "reponse": 0,
+      "explication": "$T$ et $\\dot\\varepsilon$ sont les deux paramètres externes qui influencent la courbe.",
+      "source": "Cours/Mise en forme/Mise en forme - Cours.md"
+    },
+    {
+      "id": "mef-plasticite-011",
+      "type": "vrai-faux",
+      "difficulte": 1,
+      "enonce": "Une hausse de température a le même effet qu'une hausse de vitesse de déformation.",
+      "reponse": false,
+      "explication": "Faux, effets **inverses** : $T\\uparrow$ abaisse la courbe, $\\dot\\varepsilon\\uparrow$ la relève.",
+      "source": "Cours/Mise en forme/Mise en forme - Cours.md"
+    },
+    {
+      "id": "mef-plasticite-012",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Si la vitesse de déformation augmente, la courbe contrainte-déformation :",
+      "choix": [
+        "monte (contrainte d'écoulement plus élevée)",
+        "descend",
+        "ne change pas",
+        "devient linéaire"
+      ],
+      "reponse": 0,
+      "explication": "$\\dot\\varepsilon\\uparrow$ ⇒ $\\sigma$ ↑. À l'inverse, $T\\uparrow$ ⇒ $\\sigma$ ↓.",
+      "source": "Cours/Mise en forme/Mise en forme - Cours.md"
+    },
+    {
+      "id": "mef-plasticite-013",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "La ténacité correspond à :",
+      "choix": [
+        "l'aire sous la courbe (σ, ε) : le travail par m³ pour rompre",
+        "la pente élastique",
+        "la contrainte maximale $R_m$",
+        "l'allongement à la rupture"
+      ],
+      "reponse": 0,
+      "explication": "Ténacité = énergie par unité de volume nécessaire pour provoquer la rupture.",
+      "source": "Cours/Mise en forme/Mise en forme - Cours.md"
+    },
+    {
+      "id": "mef-plasticite-014",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Construction de la courbe d'écrouissage : quelle est la bonne étape après la courbe rationnelle ?",
+      "choix": [
+        "Retirer la part élastique : $\\varepsilon_p=\\varepsilon-\\sigma/E$",
+        "Diviser par $S_0$",
+        "Prendre $\\varepsilon_p=\\ln(1+e)$",
+        "Garder uniquement la zone de striction"
+      ],
+      "reponse": 0,
+      "explication": "traction → $(R,e)$ → $(\\sigma,\\varepsilon)$ → $\\varepsilon_p=\\varepsilon-\\sigma/E$ → $\\sigma_0=g(\\varepsilon_p)$ (jusqu'à la striction).",
+      "source": "Cours/Mise en forme/Mise en forme - Cours.md"
+    },
+    {
+      "id": "mef-plasticite-015",
+      "type": "vrai-faux",
+      "difficulte": 2,
+      "enonce": "On ne peut pas construire la courbe d'écrouissage à partir de la seule courbe conventionnelle.",
+      "reponse": false,
+      "explication": "Faux : grâce à la conservation du volume on passe à la rationnelle, puis à $g(\\varepsilon_p)$.",
+      "source": "Cours/Mise en forme/Mise en forme - Cours.md"
+    },
+    {
+      "id": "mef-plasticite-016",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "La loi d'Holomon $\\sigma=\\sigma_0\\varepsilon_p^{\\,n}$ relie :",
+      "choix": [
+        "la contrainte d'écoulement à la déformation plastique",
+        "la contrainte à la déformation élastique",
+        "la contrainte à la vitesse de déformation",
+        "la température à la contrainte"
+      ],
+      "reponse": 0,
+      "explication": "$n$ est le coefficient d'écrouissage (la striction débute pour $\\varepsilon=n$).",
+      "source": "Cours/Mise en forme/Mise en forme - Cours.md"
+    },
+    {
+      "id": "mef-plasticite-017",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Qu'est-ce que l'écrouissage ?",
+      "choix": [
+        "L'augmentation de la contrainte d'écoulement avec la déformation plastique",
+        "La diminution de la contrainte d'écoulement avec la déformation",
+        "La rupture fragile du matériau",
+        "Le retour élastique après décharge"
+      ],
+      "reponse": 0,
+      "explication": "Il n'y a pas un seuil de plasticité mais **une infinité** : $\\sigma_0=g(\\varepsilon_p)$. Le phénomène inverse est l'**adoucissement**.",
+      "source": "Cours/Mise en forme/Mise en forme - Cours.md"
+    },
+    {
+      "id": "mef-plasticite-018",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Comment appelle-t-on la décroissance de la contrainte d'écoulement avec la déformation ?",
+      "choix": [
+        "l'adoucissement",
+        "l'écrouissage",
+        "l'effet Bauschinger",
+        "la striction"
+      ],
+      "reponse": 0,
+      "explication": "C'est le phénomène inverse de l'écrouissage.",
+      "source": "Cours/Mise en forme/Mise en forme - Cours.md"
+    },
+    {
+      "id": "mef-plasticite-019",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "L'effet Bauschinger, c'est :",
+      "choix": [
+        "une limite d'écoulement différente en traction et en compression",
+        "une contrainte qui diminue avec la déformation",
+        "une déformation localisée",
+        "une dépendance à la température"
+      ],
+      "reponse": 0,
+      "explication": "Après pré-déformation en traction, la limite en compression est abaissée. Exemples : béton, fonte.",
+      "source": "Cours/Mise en forme/Mise en forme - Cours.md"
+    },
+    {
+      "id": "mef-plasticite-020",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Un matériau RPP (rigide parfaitement plastique) :",
+      "choix": [
+        "n'a pas d'élasticité et reste à $\\sigma=\\sigma_0$ dès qu'il plastifie",
+        "suit $\\sigma=E\\varepsilon$ puis un palier à $\\sigma_0$",
+        "s'écrouit sans élasticité",
+        "est élastique et s'écrouit"
+      ],
+      "reponse": 0,
+      "explication": "EPP = élastique puis palier ; RPE = rigide écrouissable ; EPE = élastique écrouissable.",
+      "source": "Cours/Mise en forme/Mise en forme - Cours.md"
+    },
+    {
+      "id": "mef-plasticite-021",
+      "type": "vrai-faux",
+      "difficulte": 1,
+      "enonce": "Un matériau RPP présente un retour élastique important.",
+      "reponse": false,
+      "explication": "Faux : **aucun** retour élastique, il est rigide ($\\varepsilon=0$ tant que $\\sigma<\\sigma_0$).",
+      "source": "Cours/Mise en forme/Mise en forme - Cours.md"
+    },
+    {
+      "id": "mef-plasticite-022",
+      "type": "vrai-faux",
+      "difficulte": 1,
+      "enonce": "Un matériau fragile ne possède pas de domaine élastique.",
+      "reponse": false,
+      "explication": "Faux : il a un domaine élastique ; c'est le domaine **plastique** qui est quasi inexistant (ex. céramiques).",
+      "source": "Cours/Mise en forme/Mise en forme - Cours.md"
+    },
+    {
+      "id": "mef-plasticite-023",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Ordre de grandeur de la limite d'élasticité d'un métal (alliage courant) :",
+      "choix": [
+        "~ 10² MPa",
+        "~ 1 MPa",
+        "~ 10 GPa",
+        "~ 100 GPa"
+      ],
+      "reponse": 0,
+      "explication": "Quelques centaines de MPa (acier ~ 250 MPa, Al pur ~ 30 MPa). Ne pas confondre avec $E_{acier}=200$ GPa.",
+      "source": "Cours/Mise en forme/Mise en forme - Cours.md"
+    },
+    {
+      "id": "mef-plasticite-024",
+      "type": "vrai-faux",
+      "difficulte": 1,
+      "enonce": "La limite d'élasticité des polymères est comprise entre 0,1 et 1 GPa.",
+      "reponse": false,
+      "explication": "Faux, plutôt **10 – 100 MPa**.",
+      "source": "Cours/Mise en forme/Mise en forme - Cours.md"
+    },
+    {
+      "id": "mef-plasticite-025",
+      "type": "vrai-faux",
+      "difficulte": 1,
+      "enonce": "La limite d'élasticité d'une céramique est en général plus grande que celle d'un polymère.",
+      "reponse": true,
+      "explication": "Vrai : céramiques ≫ (de l'ordre du GPa), polymères 10 – 100 MPa.",
+      "source": "Cours/Mise en forme/Mise en forme - Cours.md"
+    }
+  ]
+}

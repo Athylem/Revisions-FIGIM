@@ -1,0 +1,185 @@
+{
+  "chapitre": "Procédés et rappels d'élasticité",
+  "questions": [
+    {
+      "id": "mef-procedes-001",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Qu'est-ce qu'un procédé thermomécanique ?",
+      "choix": [
+        "Un changement de forme important par déformation plastique, à volume et masse constants",
+        "Une mise en forme à partir du liquide",
+        "Un enlèvement de matière par outil coupant",
+        "Une consolidation de poudres sans changement de forme"
+      ],
+      "reponse": 0,
+      "explication": "C'est l'objet du cours : on exploite la **déformabilité plastique**. Liquide → fonderie ; enlèvement de matière → usinage ; poudres → frittage.",
+      "source": "Cours/Mise en forme/Mise en forme - Cours.md"
+    },
+    {
+      "id": "mef-procedes-002",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Le laminage sert surtout à fabriquer :",
+      "choix": [
+        "des produits plats (tôles)",
+        "des fils",
+        "des profilés",
+        "des canettes"
+      ],
+      "reponse": 0,
+      "explication": "Laminage → plats ; tréfilage → fils ; filage → profilés ; emboutissage → canettes.",
+      "source": "Cours/Mise en forme/Mise en forme - Cours.md"
+    },
+    {
+      "id": "mef-procedes-003",
+      "type": "vrai-faux",
+      "difficulte": 1,
+      "enonce": "Le tréfilage permet de fabriquer des produits plats.",
+      "reponse": false,
+      "explication": "Faux : le tréfilage (métal **tiré** à travers une filière) donne des **fils**. Les plats viennent du laminage.",
+      "source": "Cours/Mise en forme/Mise en forme - Cours.md"
+    },
+    {
+      "id": "mef-procedes-004",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Les profilés sont surtout issus du :",
+      "choix": [
+        "filage",
+        "laminage",
+        "tréfilage",
+        "forgeage"
+      ],
+      "reponse": 0,
+      "explication": "Filage (extrusion) : la billette est **poussée** à travers une filière.",
+      "source": "Cours/Mise en forme/Mise en forme - Cours.md"
+    },
+    {
+      "id": "mef-procedes-005",
+      "type": "vrai-faux",
+      "difficulte": 1,
+      "enonce": "Les fils d'acier sont fabriqués par filage.",
+      "reponse": false,
+      "explication": "Faux, par **tréfilage** (on tire le métal). Le filage (on pousse) donne des profilés.",
+      "source": "Cours/Mise en forme/Mise en forme - Cours.md"
+    },
+    {
+      "id": "mef-procedes-006",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Quelle est la différence entre filage et tréfilage ?",
+      "choix": [
+        "Filage : on pousse la billette dans la filière ; tréfilage : on tire le métal",
+        "Filage : on tire le métal ; tréfilage : on pousse la billette",
+        "Le filage se fait à froid, le tréfilage à chaud",
+        "Il n'y en a pas, ce sont deux noms du même procédé"
+      ],
+      "reponse": 0,
+      "explication": "Filage = extrusion (poussée) → profilés. Tréfilage = traction à travers la filière → fils.",
+      "source": "Cours/Mise en forme/Mise en forme - Cours.md"
+    },
+    {
+      "id": "mef-procedes-007",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Que signifie SPS ?",
+      "choix": [
+        "Spark Plasma Sintering : frittage flash par courant pulsé sous pression",
+        "Surface Plastic Strain : déformation plastique de surface",
+        "Simple Pressing System : pressage à froid des poudres",
+        "Steel Plate Shaping : laminage des tôles d'acier"
+      ],
+      "reponse": 0,
+      "explication": "Poudre dans une matrice sous pression uniaxiale, chauffée par un **courant électrique pulsé** qui traverse matrice et échantillon → frittage très rapide.",
+      "source": "Cours/Mise en forme/Mise en forme - Cours.md"
+    },
+    {
+      "id": "mef-procedes-008",
+      "type": "vrai-faux",
+      "difficulte": 1,
+      "enonce": "Le frittage est une étape de mise en forme des poudres.",
+      "reponse": true,
+      "explication": "Vrai : consolidation / densification des poudres, sans changement de forme appréciable.",
+      "source": "Cours/Mise en forme/Mise en forme - Cours.md"
+    },
+    {
+      "id": "mef-procedes-009",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Dans un procédé thermomécanique, la puissance à fournir s'écrit (en négligeant l'élastique) :",
+      "choix": [
+        "$\\dot W_e\\simeq\\dot W_i+\\dot W_f$",
+        "$\\dot W_e\\simeq\\dot W_i$",
+        "$\\dot W_e\\simeq\\dot W_f$",
+        "$\\dot W_e\\simeq\\dot W_{elas}+\\dot W_f$"
+      ],
+      "reponse": 0,
+      "explication": "$\\dot W_e=\\dot W_{elas}+\\dot W_f+\\dot W_i$ avec $\\dot W_{elas}\\ll\\dot W_i$ : il reste la déformation plastique **et** le frottement.",
+      "source": "Cours/Mise en forme/Mise en forme - Cours.md"
+    },
+    {
+      "id": "mef-procedes-010",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Le tenseur des contraintes est :",
+      "choix": [
+        "symétrique",
+        "antisymétrique",
+        "diagonal dans tout repère",
+        "de trace nulle"
+      ],
+      "reponse": 0,
+      "explication": "$\\sigma_{ij}=\\sigma_{ji}$. Il n'est diagonal que dans le repère principal ; c'est le **déviateur** qui a une trace nulle.",
+      "source": "Cours/Mise en forme/Mise en forme - Cours.md"
+    },
+    {
+      "id": "mef-procedes-011",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Traduction de l'incompressibilité sur le tenseur des vitesses de déformation :",
+      "choix": [
+        "$\\operatorname{tr}\\dot{\\bar{\\bar\\varepsilon}}=0$, soit $\\operatorname{div}\\vec v=0$",
+        "$\\dot\\varepsilon_{12}=0$",
+        "$\\det\\dot{\\bar{\\bar\\varepsilon}}=0$",
+        "$\\dot\\varepsilon_{11}=\\dot\\varepsilon_{22}=\\dot\\varepsilon_{33}$"
+      ],
+      "reponse": 0,
+      "explication": "$\\dot\\varepsilon_{11}+\\dot\\varepsilon_{22}+\\dot\\varepsilon_{33}=0$ : le volume ne change pas.",
+      "source": "Cours/Mise en forme/Mise en forme - Cours.md"
+    },
+    {
+      "id": "mef-procedes-012",
+      "type": "vrai-faux",
+      "difficulte": 2,
+      "enonce": "Le tenseur $\\begin{pmatrix}0{,}1&0{,}05&0{,}02\\\\0{,}05&0{,}15&-0{,}01\\\\0{,}02&-0{,}01&-0{,}25\\end{pmatrix}$ peut représenter une déformation plastique.",
+      "reponse": true,
+      "explication": "Vrai : il est symétrique et sa trace vaut $0{,}1+0{,}15-0{,}25=0$ (incompressible).",
+      "source": "Cours/Mise en forme/Mise en forme - Cours.md"
+    },
+    {
+      "id": "mef-procedes-013",
+      "type": "vrai-faux",
+      "difficulte": 1,
+      "enonce": "La déformation généralisée est un invariant.",
+      "reponse": true,
+      "explication": "Vrai : $\\bar\\varepsilon=\\sqrt{\\frac23\\varepsilon_{ij}\\varepsilon_{ij}}$ ne dépend pas du repère. Elle résume l'intensité de la déformation en un seul nombre.",
+      "source": "Cours/Mise en forme/Mise en forme - Cours.md"
+    },
+    {
+      "id": "mef-procedes-014",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "En traction uniaxiale incompressible $(\\varepsilon,-\\varepsilon/2,-\\varepsilon/2)$, la déformation généralisée $\\bar\\varepsilon$ vaut :",
+      "choix": [
+        "$\\varepsilon$",
+        "$\\frac32\\varepsilon$",
+        "$\\sqrt{\\frac23}\\,\\varepsilon$",
+        "$0$"
+      ],
+      "reponse": 0,
+      "explication": "$\\frac23\\left(\\varepsilon^2+\\frac{\\varepsilon^2}4+\\frac{\\varepsilon^2}4\\right)=\\varepsilon^2$ donc $\\bar\\varepsilon=\\varepsilon$. C'est fait pour : on retrouve l'essai de traction.",
+      "source": "Cours/Mise en forme/Mise en forme - Cours.md"
+    }
+  ]
+}
