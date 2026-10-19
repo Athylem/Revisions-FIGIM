@@ -1,0 +1,356 @@
+{
+  "chapitre": "Séries de Fourier",
+  "questions": [
+    {
+      "id": "maths-fourier-001",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Dans ce cours, $a_0(f)$ vaut :",
+      "choix": [
+        "$\\frac{1}{2\\pi}\\int_{-\\pi}^{\\pi}f(t)\\,dt$",
+        "$\\frac{1}{\\pi}\\int_{-\\pi}^{\\pi}f(t)\\,dt$",
+        "$\\frac{2}{\\pi}\\int_{0}^{\\pi}f(t)\\,dt$",
+        "$\\frac{1}{2\\pi}\\int_{-\\pi}^{\\pi}f(t)\\cos t\\,dt$"
+      ],
+      "reponse": 0,
+      "explication": "Déf. 15 : $a_0$ est directement la **moyenne** de $f$, et la série commence par $a_0$ (pas $\\frac{a_0}{2}$).",
+      "source": "Cours/Mathematique/Chapitre 2 - Séries de Fourier.md"
+    },
+    {
+      "id": "maths-fourier-002",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Pour $n\\ge1$, $b_n(f)$ vaut :",
+      "choix": [
+        "$\\frac1\\pi\\int_{-\\pi}^{\\pi}f(t)\\sin(nt)\\,dt$",
+        "$\\frac1{2\\pi}\\int_{-\\pi}^{\\pi}f(t)\\sin(nt)\\,dt$",
+        "$\\frac1\\pi\\int_{-\\pi}^{\\pi}f(t)\\cos(nt)\\,dt$",
+        "$\\frac2\\pi\\int_{-\\pi}^{\\pi}f(t)\\sin(nt)\\,dt$"
+      ],
+      "reponse": 0,
+      "explication": "Déf. 15 : facteur $\\frac1\\pi$ et intégrale sur une période complète.",
+      "source": "Cours/Mathematique/Chapitre 2 - Séries de Fourier.md"
+    },
+    {
+      "id": "maths-fourier-003",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Si $f$ est paire :",
+      "choix": [
+        "$b_n=0$ pour tout $n\\ge1$",
+        "$a_n=0$ pour tout $n\\ge1$",
+        "$a_0=0$",
+        "tous les coefficients sont nuls"
+      ],
+      "reponse": 0,
+      "explication": "Prop. 16 : $f(t)\\sin(nt)$ est impaire donc son intégrale sur $[-\\pi,\\pi]$ est nulle. Il ne reste que des cosinus.",
+      "source": "Cours/Mathematique/Chapitre 2 - Séries de Fourier.md"
+    },
+    {
+      "id": "maths-fourier-004",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Si $f$ est impaire, $b_n$ vaut :",
+      "choix": [
+        "$\\frac2\\pi\\int_0^\\pi f(t)\\sin(nt)\\,dt$",
+        "$\\frac1\\pi\\int_0^\\pi f(t)\\sin(nt)\\,dt$",
+        "$\\frac2\\pi\\int_0^\\pi f(t)\\cos(nt)\\,dt$",
+        "$0$"
+      ],
+      "reponse": 0,
+      "explication": "Prop. 16 (ii) : $f(t)\\sin(nt)$ est paire, on intègre sur $[0,\\pi]$ et on double.",
+      "source": "Cours/Mathematique/Chapitre 2 - Séries de Fourier.md"
+    },
+    {
+      "id": "maths-fourier-005",
+      "type": "vrai-faux",
+      "difficulte": 1,
+      "enonce": "Si $f$ est impaire, alors $a_0(f)=0$.",
+      "reponse": true,
+      "explication": "Vrai : la moyenne d'une fonction impaire sur $[-\\pi,\\pi]$ est nulle (Prop. 16).",
+      "source": "Cours/Mathematique/Chapitre 2 - Séries de Fourier.md"
+    },
+    {
+      "id": "maths-fourier-006",
+      "type": "vrai-faux",
+      "difficulte": 1,
+      "enonce": "La formule de $a_n$ obtenue après calcul marche aussi pour $n=0$.",
+      "reponse": false,
+      "explication": "Faux : on divise souvent par $n$ en cours de calcul. Il faut **toujours calculer $a_0$ à part**.",
+      "source": "Cours/Mathematique/Chapitre 2 - Séries de Fourier.md"
+    },
+    {
+      "id": "maths-fourier-007",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "$f$ impaire, $2\\pi$-périodique, $f(t)=t$ sur $]-\\pi,\\pi[$. $b_n$ vaut :",
+      "choix": [
+        "$\\frac{2(-1)^{n+1}}{n}$",
+        "$\\frac{2(-1)^n}{n}$",
+        "$\\frac{(-1)^{n+1}}{n}$",
+        "$\\frac{4(-1)^n}{n^2}$"
+      ],
+      "reponse": 0,
+      "explication": "IPP : $b_n=\\frac2\\pi\\left[-\\frac{t\\cos(nt)}{n}\\right]_0^\\pi=\\frac2\\pi\\cdot\\frac{-\\pi(-1)^n}{n}=\\frac{2(-1)^{n+1}}{n}$.",
+      "source": "Cours/Mathematique/Chapitre 2 - Séries de Fourier.md"
+    },
+    {
+      "id": "maths-fourier-008",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "$f(t)=t^2$ sur $[-\\pi,\\pi]$, $2\\pi$-périodique. $a_0(f)$ vaut :",
+      "choix": [
+        "$\\frac{\\pi^2}{3}$",
+        "$\\frac{2\\pi^2}{3}$",
+        "$\\frac{\\pi^2}{6}$",
+        "$0$"
+      ],
+      "reponse": 0,
+      "explication": "$a_0=\\frac1{2\\pi}\\int_{-\\pi}^{\\pi}t^2\\,dt=\\frac1{2\\pi}\\cdot\\frac{2\\pi^3}{3}=\\frac{\\pi^2}{3}$.",
+      "source": "Cours/Mathematique/Chapitre 2 - Séries de Fourier.md"
+    },
+    {
+      "id": "maths-fourier-009",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "$f(t)=t^2$ sur $[-\\pi,\\pi]$, $2\\pi$-périodique. Pour $n\\ge1$, $a_n$ vaut :",
+      "choix": [
+        "$\\frac{4(-1)^n}{n^2}$",
+        "$\\frac{4}{n^2}$",
+        "$\\frac{2(-1)^n}{n^2}$",
+        "$\\frac{(-1)^n}{n^2}$"
+      ],
+      "reponse": 0,
+      "explication": "Deux IPP. D'où $t^2=\\frac{\\pi^2}{3}+4\\sum\\frac{(-1)^n}{n^2}\\cos(nt)$.",
+      "source": "Cours/Mathematique/Chapitre 2 - Séries de Fourier.md"
+    },
+    {
+      "id": "maths-fourier-010",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "En plus de la $2\\pi$-périodicité, quelle hypothèse demande le théorème de Dirichlet ?",
+      "choix": [
+        "$f$ est $\\mathcal{C}^1$ par morceaux",
+        "$f$ est continue",
+        "$f$ est paire",
+        "$f$ est dérivable partout"
+      ],
+      "reponse": 0,
+      "explication": "Th. 19 : $f$ $2\\pi$-périodique et $\\mathcal{C}^1$ par morceaux. **À citer sur la copie.**",
+      "source": "Cours/Mathematique/Chapitre 2 - Séries de Fourier.md"
+    },
+    {
+      "id": "maths-fourier-011",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "En un point de discontinuité $t_0$, la série de Fourier de $f$ converge vers :",
+      "choix": [
+        "$\\frac{f(t_0^+)+f(t_0^-)}{2}$",
+        "$f(t_0)$",
+        "$f(t_0^+)$",
+        "elle diverge"
+      ],
+      "reponse": 0,
+      "explication": "Dirichlet : la somme est la moyenne des limites à gauche et à droite.",
+      "source": "Cours/Mathematique/Chapitre 2 - Séries de Fourier.md"
+    },
+    {
+      "id": "maths-fourier-012",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Créneau : $f=1$ sur $[0,\\pi[$, $f=0$ sur $[\\pi,2\\pi[$. Que vaut $Sf(0)$ ?",
+      "choix": [
+        "$\\frac12$",
+        "$1$",
+        "$0$",
+        "$\\frac\\pi4$"
+      ],
+      "reponse": 0,
+      "explication": "$f(0^+)=1$ et $f(0^-)=0$ donc $Sf(0)=\\frac12$. Écrire $f(0)=1$ est le piège classique.",
+      "source": "Cours/Mathematique/Chapitre 2 - Séries de Fourier.md"
+    },
+    {
+      "id": "maths-fourier-013",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Quelle est la bonne formule de Parseval (convention du cours) ?",
+      "choix": [
+        "$\\frac1{2\\pi}\\int_{-\\pi}^{\\pi}|f|^2=|a_0|^2+\\frac12\\sum_{n\\ge1}\\left(|a_n|^2+|b_n|^2\\right)$",
+        "$\\frac1{2\\pi}\\int_{-\\pi}^{\\pi}|f|^2=\\frac12|a_0|^2+\\frac12\\sum_{n\\ge1}\\left(|a_n|^2+|b_n|^2\\right)$",
+        "$\\frac1{2\\pi}\\int_{-\\pi}^{\\pi}|f|^2=|a_0|^2+\\sum_{n\\ge1}\\left(|a_n|^2+|b_n|^2\\right)$",
+        "$\\frac1{\\pi}\\int_{-\\pi}^{\\pi}|f|^2=|a_0|^2+\\frac12\\sum_{n\\ge1}\\left(|a_n|^2+|b_n|^2\\right)$"
+      ],
+      "reponse": 0,
+      "explication": "Th. 20 : $a_0^2$ **sans** $\\frac12$, les autres coefficients **avec** $\\frac12$.",
+      "source": "Cours/Mathematique/Chapitre 2 - Séries de Fourier.md"
+    },
+    {
+      "id": "maths-fourier-014",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "$\\displaystyle\\sum_{n\\ge1}\\frac1{n^2}=$",
+      "choix": [
+        "$\\frac{\\pi^2}{6}$",
+        "$\\frac{\\pi^2}{8}$",
+        "$\\frac{\\pi^2}{12}$",
+        "$\\frac{\\pi^4}{90}$"
+      ],
+      "reponse": 0,
+      "explication": "Dirichlet en $t=\\pi$ sur la série de $t^2$.",
+      "source": "Cours/Mathematique/Chapitre 2 - Séries de Fourier.md"
+    },
+    {
+      "id": "maths-fourier-015",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "$\\displaystyle\\sum_{n\\ge0}\\frac1{(2n+1)^2}=$",
+      "choix": [
+        "$\\frac{\\pi^2}{8}$",
+        "$\\frac{\\pi^2}{6}$",
+        "$\\frac{\\pi^2}{12}$",
+        "$\\frac{\\pi^4}{96}$"
+      ],
+      "reponse": 0,
+      "explication": "Astuce pair/impair : $\\left(1-\\frac14\\right)\\frac{\\pi^2}{6}=\\frac{\\pi^2}{8}$.",
+      "source": "Cours/Mathematique/Chapitre 2 - Séries de Fourier.md"
+    },
+    {
+      "id": "maths-fourier-016",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "$\\displaystyle\\sum_{n\\ge1}\\frac1{n^4}=$",
+      "choix": [
+        "$\\frac{\\pi^4}{90}$",
+        "$\\frac{\\pi^4}{96}$",
+        "$\\frac{\\pi^4}{48}$",
+        "$\\frac{\\pi^2}{6}$"
+      ],
+      "reponse": 0,
+      "explication": "Parseval sur la série de $t^2$ : $\\frac{\\pi^4}{9}+8\\sum\\frac1{n^4}=\\frac{\\pi^4}{5}$.",
+      "source": "Cours/Mathematique/Chapitre 2 - Séries de Fourier.md"
+    },
+    {
+      "id": "maths-fourier-017",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "$\\displaystyle\\sum_{n\\ge0}\\frac{(-1)^n}{2n+1}=$",
+      "choix": [
+        "$\\frac\\pi4$",
+        "$\\frac\\pi2$",
+        "$\\frac{\\pi^2}{8}$",
+        "$\\ln 2$"
+      ],
+      "reponse": 0,
+      "explication": "Série de Leibniz : Dirichlet en $t=\\frac\\pi2$ sur la série de $t$ (ou du créneau).",
+      "source": "Cours/Mathematique/Chapitre 2 - Séries de Fourier.md"
+    },
+    {
+      "id": "maths-fourier-018",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Les coefficients sont en $\\frac1{n^2}$ et on cherche une somme en $\\frac1{n^4}$. Quel outil utiliser ?",
+      "choix": [
+        "Parseval",
+        "Dirichlet en $t=0$",
+        "Dirichlet en $t=\\pi$",
+        "La réécriture pair/impair seule"
+      ],
+      "reponse": 0,
+      "explication": "Parseval met les coefficients au carré : la puissance de $n$ double.",
+      "source": "Cours/Mathematique/Chapitre 2 - Séries de Fourier.md"
+    },
+    {
+      "id": "maths-fourier-019",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Avec une série en sinus $\\sum b_n\\sin(nt)$, en quel point appliquer Dirichlet pour ne garder que les indices impairs, avec un signe alterné $(-1)^k$ ?",
+      "choix": [
+        "$t_0=\\frac\\pi2$",
+        "$t_0=0$",
+        "$t_0=\\pi$",
+        "$t_0=2\\pi$"
+      ],
+      "reponse": 0,
+      "explication": "$\\sin\\frac{n\\pi}{2}$ est nul pour $n$ pair et vaut $(-1)^k$ pour $n=2k+1$. En $0$, $\\pi$ ou $2\\pi$, tous les sinus s'annulent.",
+      "source": "Cours/Mathematique/Chapitre 2 - Séries de Fourier.md"
+    },
+    {
+      "id": "maths-fourier-020",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Astuce pair/impair : $\\displaystyle\\sum_{n\\ge0}\\frac{1}{(2n+1)^k}=$",
+      "choix": [
+        "$\\left(1-\\frac1{2^k}\\right)\\displaystyle\\sum_{n\\ge1}\\frac1{n^k}$",
+        "$\\frac12\\displaystyle\\sum_{n\\ge1}\\frac1{n^k}$",
+        "$\\frac1{2^k}\\displaystyle\\sum_{n\\ge1}\\frac1{n^k}$",
+        "$\\left(1+\\frac1{2^k}\\right)\\displaystyle\\sum_{n\\ge1}\\frac1{n^k}$"
+      ],
+      "reponse": 0,
+      "explication": "$S_k=\\sum\\frac1{(2n+1)^k}+\\frac1{2^k}S_k$ (les pairs $2n$ donnent $\\frac1{2^k}\\cdot\\frac1{n^k}$).",
+      "source": "Cours/Mathematique/Chapitre 2 - Séries de Fourier.md"
+    },
+    {
+      "id": "maths-fourier-021",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Créneau $f=1$ sur $[0,\\pi[$, $0$ sur $[\\pi,2\\pi[$. Le membre de gauche de Parseval $\\frac1{2\\pi}\\int_0^{2\\pi}f^2$ vaut :",
+      "choix": [
+        "$\\frac12$",
+        "$1$",
+        "$\\frac14$",
+        "$\\pi$"
+      ],
+      "reponse": 0,
+      "explication": "$f^2=f$ vaut $1$ sur une demi-période : $\\frac1{2\\pi}\\cdot\\pi=\\frac12$. À droite, ne pas oublier $a_0^2=\\frac14$.",
+      "source": "Cours/Mathematique/Chapitre 2 - Séries de Fourier.md"
+    },
+    {
+      "id": "maths-fourier-022",
+      "type": "vrai-faux",
+      "difficulte": 2,
+      "enonce": "Dans Parseval, $a_0$ apparaît avec un facteur $\\frac12$, comme les autres coefficients.",
+      "reponse": false,
+      "explication": "Faux : $|a_0|^2$ sans facteur, puis $\\frac12\\sum(|a_n|^2+|b_n|^2)$. Erreur classique au DS.",
+      "source": "Cours/Mathematique/Chapitre 2 - Séries de Fourier.md"
+    },
+    {
+      "id": "maths-fourier-023",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Avec les coefficients complexes, $a_n$ ($n\\ge1$) vaut :",
+      "choix": [
+        "$c_n+c_{-n}$",
+        "$c_n-c_{-n}$",
+        "$i(c_n-c_{-n})$",
+        "$\\frac{c_n+c_{-n}}{2}$"
+      ],
+      "reponse": 0,
+      "explication": "Déf. 17 : $a_n=c_n+c_{-n}$ et $b_n=i(c_n-c_{-n})$.",
+      "source": "Cours/Mathematique/Chapitre 2 - Séries de Fourier.md"
+    },
+    {
+      "id": "maths-fourier-024",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "$|\\sin t|$ a pour série $\\frac2\\pi-\\frac4\\pi\\sum_{n\\ge1}\\frac{\\cos(2nt)}{4n^2-1}$. Dirichlet en $t=0$ donne $\\displaystyle\\sum_{n\\ge1}\\frac1{4n^2-1}=$",
+      "choix": [
+        "$\\frac12$",
+        "$\\frac\\pi4$",
+        "$1$",
+        "$\\frac\\pi2-1$"
+      ],
+      "reponse": 0,
+      "explication": "$0=\\frac2\\pi-\\frac4\\pi S$ donc $S=\\frac12$. On le retrouve par télescopage : $\\frac1{4n^2-1}=\\frac12\\left(\\frac1{2n-1}-\\frac1{2n+1}\\right)$.",
+      "source": "Cours/Mathematique/Chapitre 2 - Séries de Fourier.md"
+    },
+    {
+      "id": "maths-fourier-025",
+      "type": "vrai-faux",
+      "difficulte": 1,
+      "enonce": "On peut calculer les coefficients de Fourier en intégrant sur $[0,2\\pi]$ au lieu de $[-\\pi,\\pi]$.",
+      "reponse": true,
+      "explication": "Vrai : tout intervalle de longueur $2\\pi$ convient, car tout est $2\\pi$-périodique.",
+      "source": "Cours/Mathematique/Chapitre 2 - Séries de Fourier.md"
+    }
+  ]
+}

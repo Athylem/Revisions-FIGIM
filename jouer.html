@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Entraînement — Révisions FIGIM</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
+</head>
+<body>
+  <header class="barre">
+    <a class="logo" href="./">Révisions <span>FIGIM</span></a>
+    <nav>
+      <a href="classement.html">Classement</a>
+    </nav>
+  </header>
+
+  <main>
+    <p><a href="./">← Matières</a></p>
+    <h1 id="titre-matiere">Chargement…</h1>
+
+    <!-- Réglages de la session -->
+    <section id="ecran-reglages" class="carte" hidden>
+      <h2>Chapitres</h2>
+      <div id="liste-chapitres" class="cases"></div>
+      <h2>Nombre de questions</h2>
+      <div class="filtres" role="radiogroup" id="choix-nombre">
+        <button data-nombre="10" class="actif">10</button>
+        <button data-nombre="20">20</button>
+        <button data-nombre="0">Toutes</button>
+      </div>
+      <p class="actions"><button id="commencer">Commencer</button></p>
+    </section>
+
+    <!-- Question en cours -->
+    <section id="ecran-question" hidden>
+      <div class="entete-quiz">
+        <span id="progression" class="discret"></span>
+        <span id="score-en-cours" class="score"></span>
+      </div>
+      <div class="barre-progression"><div id="remplissage"></div></div>
+      <article class="carte question">
+        <p class="meta"><span id="chapitre-question"></span> · <span id="difficulte"></span></p>
+        <p id="enonce" class="enonce"></p>
+        <div id="zone-reponse"></div>
+        <div id="retour" class="retour" hidden>
+          <p id="verdict" class="verdict"></p>
+          <p id="explication"></p>
+          <button id="suivante">Suivante</button>
+        </div>
+      </article>
+    </section>
+
+    <!-- Fin de session -->
+    <section id="ecran-fin" hidden>
+      <div class="carte centre">
+        <p class="discret">Session terminée</p>
+        <p id="score-final" class="score-final"></p>
+        <p id="bilan"></p>
+        <p class="actions">
+          <button id="rejouer">Rejouer</button>
+          <button id="revoir-erreurs" class="secondaire">Revoir mes erreurs</button>
+        </p>
+      </div>
+      <div id="bloc-erreurs" hidden>
+        <h2>À retravailler</h2>
+        <div id="liste-erreurs"></div>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="js/jouer.js"></script>
+</body>
+</html>

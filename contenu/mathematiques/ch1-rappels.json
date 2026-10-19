@@ -1,0 +1,161 @@
+{
+  "chapitre": "Rappels de première année",
+  "questions": [
+    {
+      "id": "maths-rappels-001",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Si la série $\\sum u_n$ converge, alors :",
+      "choix": [
+        "$(u_n)$ tend vers $0$",
+        "$(u_n)$ est décroissante",
+        "$\\sum |u_n|$ converge",
+        "$(u_n)$ est constante"
+      ],
+      "reponse": 0,
+      "explication": "Prop. 9 : une série convergente a son terme général qui tend vers $0$.",
+      "source": "Cours/Mathematique/Chapitre 1 - Rappels de première année.md"
+    },
+    {
+      "id": "maths-rappels-002",
+      "type": "vrai-faux",
+      "difficulte": 1,
+      "enonce": "Si $u_n \\to 0$, alors la série $\\sum u_n$ converge.",
+      "reponse": false,
+      "explication": "Faux : la série harmonique $\\sum \\frac1n$ diverge alors que $\\frac1n \\to 0$. La réciproque de la Prop. 9 est fausse.",
+      "source": "Cours/Mathematique/Chapitre 1 - Rappels de première année.md"
+    },
+    {
+      "id": "maths-rappels-003",
+      "type": "vrai-faux",
+      "difficulte": 1,
+      "enonce": "Toute suite bornée est convergente.",
+      "reponse": false,
+      "explication": "Faux : $((-1)^n)$ est bornée mais diverge. C'est le sens inverse qui est vrai : toute suite convergente est bornée (Prop. 3).",
+      "source": "Cours/Mathematique/Chapitre 1 - Rappels de première année.md"
+    },
+    {
+      "id": "maths-rappels-004",
+      "type": "vrai-faux",
+      "difficulte": 1,
+      "enonce": "Toute suite croissante et majorée converge.",
+      "reponse": true,
+      "explication": "Vrai, c'est la Prop. 6 (de même pour décroissante minorée).",
+      "source": "Cours/Mathematique/Chapitre 1 - Rappels de première année.md"
+    },
+    {
+      "id": "maths-rappels-005",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "En $+\\infty$, $\\dfrac{3n^3+n^2+1}{2n^5+n+2}$ est équivalent à :",
+      "choix": [
+        "$\\dfrac{3}{2n^2}$",
+        "$\\dfrac32 n^2$",
+        "$\\dfrac32$",
+        "$\\dfrac{1}{n^5}$"
+      ],
+      "reponse": 0,
+      "explication": "On garde le terme de plus haut degré en haut et en bas : $\\frac{3n^3}{2n^5}=\\frac{3}{2n^2}$.",
+      "source": "Cours/Mathematique/Chapitre 1 - Rappels de première année.md"
+    },
+    {
+      "id": "maths-rappels-006",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "$f$ est continue en $t_0$ si et seulement si :",
+      "choix": [
+        "$f(t_0)=f(t_0^+)=f(t_0^-)$",
+        "$f(t_0^+)=f(t_0^-)$",
+        "$f$ est dérivable en $t_0$",
+        "$f(t_0)=0$"
+      ],
+      "reponse": 0,
+      "explication": "Prop. 11 : il faut que les deux limites existent, soient égales **et** valent $f(t_0)$.",
+      "source": "Cours/Mathematique/Chapitre 1 - Rappels de première année.md"
+    },
+    {
+      "id": "maths-rappels-007",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Soit $f(t)=a$ si $t<0$ et $f(t)=e^{-t}$ si $t\\ge0$. $f$ est continue sur $\\mathbb{R}$ si et seulement si :",
+      "choix": [
+        "$a=1$",
+        "$a=0$",
+        "$a=e$",
+        "pour tout $a$"
+      ],
+      "reponse": 0,
+      "explication": "$f(0^+)=e^0=1$ et $f(0^-)=a$ : il faut $a=1$.",
+      "source": "Cours/Mathematique/Chapitre 1 - Rappels de première année.md"
+    },
+    {
+      "id": "maths-rappels-008",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Si tous les termes d'indice pair sont nuls, $\\displaystyle\\sum_{n=0}^{+\\infty}u_n$ est égale à :",
+      "choix": [
+        "$\\displaystyle\\sum_{n=0}^{+\\infty}u_{2n+1}$",
+        "$\\displaystyle\\sum_{n=1}^{+\\infty}u_{2n+1}$",
+        "$\\displaystyle\\sum_{n=0}^{+\\infty}u_{2n}$",
+        "$\\displaystyle 2\\sum_{n=0}^{+\\infty}u_{2n+1}$"
+      ],
+      "reponse": 0,
+      "explication": "Les impairs s'écrivent $2n+1$ avec $n\\ge0$ : la somme repart bien de $n=0$ (le premier impair, 1, correspond à $n=0$).",
+      "source": "Cours/Mathematique/Chapitre 1 - Rappels de première année.md"
+    },
+    {
+      "id": "maths-rappels-009",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Pour $n=2k+1$ impair, $\\sin\\left(\\frac{n\\pi}{2}\\right)$ vaut :",
+      "choix": [
+        "$(-1)^k$",
+        "$0$",
+        "$1$",
+        "$(-1)^n$"
+      ],
+      "reponse": 0,
+      "explication": "Sur le cercle trigo : $\\sin\\frac\\pi2=1$, $\\sin\\frac{3\\pi}2=-1$, $\\sin\\frac{5\\pi}2=1$… soit $(-1)^k$.",
+      "source": "Cours/Mathematique/Chapitre 1 - Rappels de première année.md"
+    },
+    {
+      "id": "maths-rappels-010",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Que vaut $1-(-1)^n$ ?",
+      "choix": [
+        "$0$ si $n$ pair, $2$ si $n$ impair",
+        "$2$ si $n$ pair, $0$ si $n$ impair",
+        "$0$ pour tout $n$",
+        "$(-1)^{n+1}$"
+      ],
+      "reponse": 0,
+      "explication": "$n$ pair : $1-1=0$ ; $n$ impair : $1-(-1)=2$. Ce facteur annule les termes pairs : penser à la réécriture pair/impair.",
+      "source": "Cours/Mathematique/Chapitre 1 - Rappels de première année.md"
+    },
+    {
+      "id": "maths-rappels-011",
+      "type": "vrai-faux",
+      "difficulte": 1,
+      "enonce": "La série harmonique $\\sum_{n\\ge1}\\frac1n$ converge.",
+      "reponse": false,
+      "explication": "Faux, elle diverge (alors que $\\sum\\frac1{n^2}$ converge).",
+      "source": "Cours/Mathematique/Chapitre 1 - Rappels de première année.md"
+    },
+    {
+      "id": "maths-rappels-012",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "$\\displaystyle\\sum_{n=1}^{+\\infty}\\frac{\\sin(n\\pi/2)}{n}$ se réécrit :",
+      "choix": [
+        "$\\displaystyle\\sum_{n=0}^{+\\infty}\\frac{(-1)^n}{2n+1}$",
+        "$\\displaystyle\\sum_{n=1}^{+\\infty}\\frac{(-1)^n}{2n+1}$",
+        "$\\displaystyle\\sum_{n=0}^{+\\infty}\\frac{1}{2n+1}$",
+        "$\\displaystyle\\sum_{n=0}^{+\\infty}\\frac{(-1)^n}{2n}$"
+      ],
+      "reponse": 0,
+      "explication": "Les termes pairs sont nuls ; pour $n=2k+1$, $\\sin\\frac{(2k+1)\\pi}{2}=(-1)^k$. Et la somme repart de $0$.",
+      "source": "Cours/Mathematique/Chapitre 1 - Rappels de première année.md"
+    }
+  ]
+}

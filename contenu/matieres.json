@@ -1,31 +1,222 @@
 {
   "annee": "FIGIM 2A — 2026-2027",
   "matieres": [
-    { "id": "alliages-non-ferreux", "nom": "Alliages non ferreux", "prof": "E. Bauer-Grosse", "groupe": "Matériaux", "ds": null, "notes": true, "chapitres": [] },
-    { "id": "alliages-ferreux", "nom": "Alliages ferreux", "prof": "D. Dalloz", "groupe": "Matériaux", "ds": null, "notes": false, "chapitres": [] },
-    { "id": "polymeres", "nom": "Polymères", "prof": "M. Ponçot", "groupe": "Matériaux", "ds": null, "notes": true, "chapitres": [] },
-    { "id": "transformation-de-phase", "nom": "Transformation de phase", "prof": "S. Barrat", "groupe": "Matériaux", "ds": null, "notes": false, "chapitres": [] },
-    { "id": "thermodynamique", "nom": "Thermodynamique", "prof": "J.-F. Pierson", "groupe": "Matériaux", "ds": null, "notes": false, "chapitres": [] },
-    { "id": "methodes-d-analyse", "nom": "Méthodes d'analyse", "prof": "J. Dulcy", "groupe": "Matériaux", "ds": null, "notes": false, "chapitres": [] },
-    { "id": "tp-metallurgie", "nom": "TP Métallurgie", "prof": "J. Dulcy", "groupe": "Matériaux", "ds": null, "notes": false, "chapitres": [] },
-
-    { "id": "mise-en-forme", "nom": "Mise en forme", "prof": "B. Lenoir", "groupe": "Procédés", "ds": null, "notes": true, "chapitres": [] },
-    { "id": "fonderie", "nom": "Fonderie", "prof": "O. Kubler", "groupe": "Procédés", "ds": null, "notes": false, "chapitres": [] },
-    { "id": "qualite-en-production", "nom": "Qualité en production", "prof": "S. Dauvergne", "groupe": "Procédés", "ds": null, "notes": false, "chapitres": [] },
-
-    { "id": "mathematiques", "nom": "Mathématiques", "prof": "P. Charton", "groupe": "Sciences de l'ingénieur", "ds": null, "notes": true, "chapitres": [] },
-    { "id": "electrotechnique", "nom": "Électrotechnique", "prof": "Ch. Neumann & P. Jamey", "groupe": "Sciences de l'ingénieur", "ds": null, "notes": false, "chapitres": [] },
-    { "id": "automatisme-industriel", "nom": "Automatisme industriel", "prof": "P. Hénaff", "groupe": "Sciences de l'ingénieur", "ds": null, "notes": false, "chapitres": [] },
-    { "id": "informatique-excel", "nom": "Informatique — Excel", "prof": "F. Thomarat", "groupe": "Sciences de l'ingénieur", "ds": null, "notes": false, "chapitres": [] },
-    { "id": "informatique-sql", "nom": "Informatique — SQL / Access", "prof": "D. Benmouffek & F. Thomarat", "groupe": "Sciences de l'ingénieur", "ds": null, "notes": false, "chapitres": [] },
-
-    { "id": "gestion-industrielle", "nom": "Gestion industrielle", "prof": "P. Babel, Dubail, Omond", "groupe": "Gestion & management", "ds": null, "notes": false, "chapitres": [] },
-    { "id": "methode-gestion-indus", "nom": "Méthodes de gestion industrielle", "prof": "J. Renaud", "groupe": "Gestion & management", "ds": null, "notes": false, "chapitres": [] },
-    { "id": "mrpg", "nom": "MRPG", "prof": "Ganash", "groupe": "Gestion & management", "ds": null, "notes": false, "chapitres": [] },
-    { "id": "analyse-financiere", "nom": "Analyse financière", "prof": "I. Leroyer", "groupe": "Gestion & management", "ds": null, "notes": false, "chapitres": [] },
-    { "id": "marketing", "nom": "Marketing", "prof": "S. Heitz-Spahn", "groupe": "Gestion & management", "ds": null, "notes": false, "chapitres": [] },
-    { "id": "facteur-humain", "nom": "Facteurs organisationnels & humains", "prof": "P. Bernaudin", "groupe": "Gestion & management", "ds": null, "notes": false, "chapitres": [] },
-
-    { "id": "anglais", "nom": "Anglais", "prof": "P. Norroy & M. Ropars", "groupe": "Langues", "ds": null, "notes": true, "chapitres": [] }
+    {
+      "id": "alliages-non-ferreux",
+      "nom": "Alliages non ferreux",
+      "prof": "E. Bauer-Grosse",
+      "groupe": "Matériaux",
+      "ds": null,
+      "notes": true,
+      "chapitres": []
+    },
+    {
+      "id": "alliages-ferreux",
+      "nom": "Alliages ferreux",
+      "prof": "D. Dalloz",
+      "groupe": "Matériaux",
+      "ds": null,
+      "notes": false,
+      "chapitres": []
+    },
+    {
+      "id": "polymeres",
+      "nom": "Polymères",
+      "prof": "M. Ponçot",
+      "groupe": "Matériaux",
+      "ds": null,
+      "notes": true,
+      "chapitres": []
+    },
+    {
+      "id": "transformation-de-phase",
+      "nom": "Transformation de phase",
+      "prof": "S. Barrat",
+      "groupe": "Matériaux",
+      "ds": null,
+      "notes": false,
+      "chapitres": []
+    },
+    {
+      "id": "thermodynamique",
+      "nom": "Thermodynamique",
+      "prof": "J.-F. Pierson",
+      "groupe": "Matériaux",
+      "ds": null,
+      "notes": false,
+      "chapitres": []
+    },
+    {
+      "id": "methodes-d-analyse",
+      "nom": "Méthodes d'analyse",
+      "prof": "J. Dulcy",
+      "groupe": "Matériaux",
+      "ds": null,
+      "notes": false,
+      "chapitres": []
+    },
+    {
+      "id": "tp-metallurgie",
+      "nom": "TP Métallurgie",
+      "prof": "J. Dulcy",
+      "groupe": "Matériaux",
+      "ds": null,
+      "notes": false,
+      "chapitres": []
+    },
+    {
+      "id": "mise-en-forme",
+      "nom": "Mise en forme",
+      "prof": "B. Lenoir",
+      "groupe": "Procédés",
+      "ds": null,
+      "notes": true,
+      "chapitres": []
+    },
+    {
+      "id": "fonderie",
+      "nom": "Fonderie",
+      "prof": "O. Kubler",
+      "groupe": "Procédés",
+      "ds": null,
+      "notes": false,
+      "chapitres": []
+    },
+    {
+      "id": "qualite-en-production",
+      "nom": "Qualité en production",
+      "prof": "S. Dauvergne",
+      "groupe": "Procédés",
+      "ds": null,
+      "notes": false,
+      "chapitres": []
+    },
+    {
+      "id": "mathematiques",
+      "nom": "Mathématiques",
+      "prof": "B. Frénais",
+      "groupe": "Sciences de l'ingénieur",
+      "ds": null,
+      "notes": true,
+      "chapitres": [
+        {
+          "id": "ch1-rappels",
+          "nom": "Rappels de première année",
+          "fichier": "mathematiques/ch1-rappels.json",
+          "questions": 12
+        },
+        {
+          "id": "ch2-fourier",
+          "nom": "Séries de Fourier",
+          "fichier": "mathematiques/ch2-fourier.json",
+          "questions": 25
+        },
+        {
+          "id": "ch3-laplace",
+          "nom": "Transformation de Laplace",
+          "fichier": "mathematiques/ch3-laplace.json",
+          "questions": 20
+        }
+      ]
+    },
+    {
+      "id": "electrotechnique",
+      "nom": "Électrotechnique",
+      "prof": "Ch. Neumann & P. Jamey",
+      "groupe": "Sciences de l'ingénieur",
+      "ds": null,
+      "notes": false,
+      "chapitres": []
+    },
+    {
+      "id": "automatisme-industriel",
+      "nom": "Automatisme industriel",
+      "prof": "P. Hénaff",
+      "groupe": "Sciences de l'ingénieur",
+      "ds": null,
+      "notes": false,
+      "chapitres": []
+    },
+    {
+      "id": "informatique-excel",
+      "nom": "Informatique — Excel",
+      "prof": "F. Thomarat",
+      "groupe": "Sciences de l'ingénieur",
+      "ds": null,
+      "notes": false,
+      "chapitres": []
+    },
+    {
+      "id": "informatique-sql",
+      "nom": "Informatique — SQL / Access",
+      "prof": "D. Benmouffek & F. Thomarat",
+      "groupe": "Sciences de l'ingénieur",
+      "ds": null,
+      "notes": false,
+      "chapitres": []
+    },
+    {
+      "id": "gestion-industrielle",
+      "nom": "Gestion industrielle",
+      "prof": "P. Babel, Dubail, Omond",
+      "groupe": "Gestion & management",
+      "ds": null,
+      "notes": false,
+      "chapitres": []
+    },
+    {
+      "id": "methode-gestion-indus",
+      "nom": "Méthodes de gestion industrielle",
+      "prof": "J. Renaud",
+      "groupe": "Gestion & management",
+      "ds": null,
+      "notes": false,
+      "chapitres": []
+    },
+    {
+      "id": "mrpg",
+      "nom": "MRPG",
+      "prof": "Ganash",
+      "groupe": "Gestion & management",
+      "ds": null,
+      "notes": false,
+      "chapitres": []
+    },
+    {
+      "id": "analyse-financiere",
+      "nom": "Analyse financière",
+      "prof": "I. Leroyer",
+      "groupe": "Gestion & management",
+      "ds": null,
+      "notes": false,
+      "chapitres": []
+    },
+    {
+      "id": "marketing",
+      "nom": "Marketing",
+      "prof": "S. Heitz-Spahn",
+      "groupe": "Gestion & management",
+      "ds": null,
+      "notes": false,
+      "chapitres": []
+    },
+    {
+      "id": "facteur-humain",
+      "nom": "Facteurs organisationnels & humains",
+      "prof": "P. Bernaudin",
+      "groupe": "Gestion & management",
+      "ds": null,
+      "notes": false,
+      "chapitres": []
+    },
+    {
+      "id": "anglais",
+      "nom": "Anglais",
+      "prof": "P. Norroy & M. Ropars",
+      "groupe": "Langues",
+      "ds": null,
+      "notes": true,
+      "chapitres": []
+    }
   ]
 }

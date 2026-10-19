@@ -1,0 +1,293 @@
+{
+  "chapitre": "Transformation de Laplace",
+  "questions": [
+    {
+      "id": "maths-laplace-001",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "La transformée de Laplace de $f$ est :",
+      "choix": [
+        "$F(p)=\\int_0^{+\\infty}f(t)\\,e^{-pt}\\,dt$",
+        "$F(p)=\\int_{-\\infty}^{+\\infty}f(t)\\,e^{-pt}\\,dt$",
+        "$F(p)=\\int_0^{+\\infty}f(t)\\,e^{pt}\\,dt$",
+        "$F(p)=\\int_0^{+\\infty}f(t)\\,e^{-ipt}\\,dt$"
+      ],
+      "reponse": 0,
+      "explication": "Déf. 21 : on intègre de $0$ à $+\\infty$ (fonctions causales) contre $e^{-pt}$.",
+      "source": "Cours/Mathematique/Chapitre 3 - Transformation de Laplace.md"
+    },
+    {
+      "id": "maths-laplace-002",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "$\\mathcal{L}H(p)$ (échelon de Heaviside) vaut :",
+      "choix": [
+        "$\\frac1p$",
+        "$1$",
+        "$\\frac1{p^2}$",
+        "$p$"
+      ],
+      "reponse": 0,
+      "explication": "$\\int_0^{+\\infty}e^{-pt}\\,dt=\\frac1p$.",
+      "source": "Cours/Mathematique/Chapitre 3 - Transformation de Laplace.md"
+    },
+    {
+      "id": "maths-laplace-003",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "$\\mathcal{L}[t^n](p)$ vaut :",
+      "choix": [
+        "$\\frac{n!}{p^{n+1}}$",
+        "$\\frac{n!}{p^n}$",
+        "$\\frac{n}{p^{n+1}}$",
+        "$\\frac{1}{p^{n+1}}$"
+      ],
+      "reponse": 0,
+      "explication": "Table : $t^n\\mapsto\\frac{n!}{p^{n+1}}$ (pour $n=0$ on retrouve $\\frac1p$).",
+      "source": "Cours/Mathematique/Chapitre 3 - Transformation de Laplace.md"
+    },
+    {
+      "id": "maths-laplace-004",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "$\\mathcal{L}[\\cos(\\alpha t)](p)$ vaut :",
+      "choix": [
+        "$\\frac{p}{p^2+\\alpha^2}$",
+        "$\\frac{\\alpha}{p^2+\\alpha^2}$",
+        "$\\frac{p}{p^2-\\alpha^2}$",
+        "$\\frac1{p-\\alpha}$"
+      ],
+      "reponse": 0,
+      "explication": "Table : cosinus → $p$ au numérateur, sinus → $\\alpha$ au numérateur.",
+      "source": "Cours/Mathematique/Chapitre 3 - Transformation de Laplace.md"
+    },
+    {
+      "id": "maths-laplace-005",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "$\\mathcal{L}[\\sin(\\alpha t)](p)$ vaut :",
+      "choix": [
+        "$\\frac{\\alpha}{p^2+\\alpha^2}$",
+        "$\\frac{p}{p^2+\\alpha^2}$",
+        "$\\frac{1}{p^2+\\alpha^2}$",
+        "$\\frac{\\alpha}{p^2-\\alpha^2}$"
+      ],
+      "reponse": 0,
+      "explication": "Table : sinus → $\\alpha$ au numérateur.",
+      "source": "Cours/Mathematique/Chapitre 3 - Transformation de Laplace.md"
+    },
+    {
+      "id": "maths-laplace-006",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "$\\mathcal{L}[e^{\\alpha t}](p)$ vaut :",
+      "choix": [
+        "$\\frac1{p-\\alpha}$",
+        "$\\frac1{p+\\alpha}$",
+        "$\\frac{\\alpha}{p-\\alpha}$",
+        "$e^{-\\alpha p}$"
+      ],
+      "reponse": 0,
+      "explication": "$\\int_0^{+\\infty}e^{-(p-\\alpha)t}\\,dt=\\frac1{p-\\alpha}$.",
+      "source": "Cours/Mathematique/Chapitre 3 - Transformation de Laplace.md"
+    },
+    {
+      "id": "maths-laplace-007",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Retard : $\\mathcal{L}[f(t-\\alpha)H(t-\\alpha)](p)$ vaut :",
+      "choix": [
+        "$e^{-\\alpha p}F(p)$",
+        "$F(p-\\alpha)$",
+        "$e^{\\alpha p}F(p)$",
+        "$F(p)-\\alpha$"
+      ],
+      "reponse": 0,
+      "explication": "Prop. 23 (i) : un retard en temps devient un facteur $e^{-\\alpha p}$.",
+      "source": "Cours/Mathematique/Chapitre 3 - Transformation de Laplace.md"
+    },
+    {
+      "id": "maths-laplace-008",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Modulation : $\\mathcal{L}[e^{-\\beta t}f(t)](p)$ vaut :",
+      "choix": [
+        "$F(p+\\beta)$",
+        "$F(p-\\beta)$",
+        "$e^{-\\beta p}F(p)$",
+        "$\\frac{F(p)}{p+\\beta}$"
+      ],
+      "reponse": 0,
+      "explication": "Prop. 23 (ii) : multiplier par une exponentielle décale la variable $p$. Laplace échange translation et modulation.",
+      "source": "Cours/Mathematique/Chapitre 3 - Transformation de Laplace.md"
+    },
+    {
+      "id": "maths-laplace-009",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Changement d'échelle : $\\mathcal{L}[f(\\gamma t)](p)$ vaut :",
+      "choix": [
+        "$\\frac1\\gamma F\\left(\\frac p\\gamma\\right)$",
+        "$\\gamma F(\\gamma p)$",
+        "$F\\left(\\frac p\\gamma\\right)$",
+        "$\\frac1\\gamma F(\\gamma p)$"
+      ],
+      "reponse": 0,
+      "explication": "Prop. 23 (iii) : changement de variable $u=\\gamma t$.",
+      "source": "Cours/Mathematique/Chapitre 3 - Transformation de Laplace.md"
+    },
+    {
+      "id": "maths-laplace-010",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "$\\mathcal{L}[f'](p)$ vaut :",
+      "choix": [
+        "$pF(p)-f(0^+)$",
+        "$pF(p)$",
+        "$pF(p)+f(0^+)$",
+        "$\\frac{F(p)}{p}$"
+      ],
+      "reponse": 0,
+      "explication": "Prop. 24. Ne pas oublier la condition initiale.",
+      "source": "Cours/Mathematique/Chapitre 3 - Transformation de Laplace.md"
+    },
+    {
+      "id": "maths-laplace-011",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "$\\mathcal{L}[f''](p)$ vaut :",
+      "choix": [
+        "$p^2F(p)-pf(0^+)-f'(0^+)$",
+        "$p^2F(p)-f(0^+)-pf'(0^+)$",
+        "$p^2F(p)$",
+        "$p^2F(p)+pf(0^+)+f'(0^+)$"
+      ],
+      "reponse": 0,
+      "explication": "Prop. 25 : c'est $f(0^+)$ qui est multiplié par $p$, pas $f'(0^+)$.",
+      "source": "Cours/Mathematique/Chapitre 3 - Transformation de Laplace.md"
+    },
+    {
+      "id": "maths-laplace-012",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "$\\mathcal{L}\\left[e^{t-2}H(t-2)\\right](p)$ vaut :",
+      "choix": [
+        "$\\frac{e^{-2p}}{p-1}$",
+        "$\\frac{e^{2p}}{p-1}$",
+        "$\\frac{e^{-2p}}{p+1}$",
+        "$\\frac{e^{-2}}{p-1}$"
+      ],
+      "reponse": 0,
+      "explication": "C'est $g_0(t-2)$ avec $g_0(t)=e^tH(t)$, $\\mathcal{L}g_0=\\frac1{p-1}$, puis le retard donne $e^{-2p}$.",
+      "source": "Cours/Mathematique/Chapitre 3 - Transformation de Laplace.md"
+    },
+    {
+      "id": "maths-laplace-013",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "$\\mathcal{L}\\left[\\sin\\left(t-\\frac\\pi2\\right)H\\left(t-\\frac\\pi2\\right)\\right](p)$ vaut :",
+      "choix": [
+        "$\\frac{e^{-\\pi p/2}}{p^2+1}$",
+        "$\\frac{p\\,e^{-\\pi p/2}}{p^2+1}$",
+        "$\\frac{e^{\\pi p/2}}{p^2+1}$",
+        "$\\frac{1}{p^2+1}-\\frac\\pi2$"
+      ],
+      "reponse": 0,
+      "explication": "Retard de $\\frac\\pi2$ appliqué à $\\mathcal{L}\\sin=\\frac1{p^2+1}$.",
+      "source": "Cours/Mathematique/Chapitre 3 - Transformation de Laplace.md"
+    },
+    {
+      "id": "maths-laplace-014",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "$\\mathcal{L}\\left[t\\,e^{-3t}\\right](p)$ vaut :",
+      "choix": [
+        "$\\frac{1}{(p+3)^2}$",
+        "$\\frac{1}{(p-3)^2}$",
+        "$\\frac{1}{p^2+3}$",
+        "$\\frac{e^{-3p}}{p^2}$"
+      ],
+      "reponse": 0,
+      "explication": "$\\mathcal{L}[t]=\\frac1{p^2}$, puis modulation par $e^{-3t}$ : $p\\to p+3$.",
+      "source": "Cours/Mathematique/Chapitre 3 - Transformation de Laplace.md"
+    },
+    {
+      "id": "maths-laplace-015",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "$\\mathcal{L}^{-1}\\left[\\frac{3}{p^2+9}\\right]$ vaut :",
+      "choix": [
+        "$\\sin(3t)$",
+        "$\\cos(3t)$",
+        "$3\\sin(3t)$",
+        "$\\sin(9t)$"
+      ],
+      "reponse": 0,
+      "explication": "$\\frac{\\alpha}{p^2+\\alpha^2}$ avec $\\alpha=3$ : c'est $\\sin(3t)$.",
+      "source": "Cours/Mathematique/Chapitre 3 - Transformation de Laplace.md"
+    },
+    {
+      "id": "maths-laplace-016",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Circuit RC : $\\tau s'+s=e$ avec $s(0)=0$. La fonction de transfert $\\frac{S(p)}{E(p)}$ vaut :",
+      "choix": [
+        "$\\frac{1}{\\tau p+1}$",
+        "$\\tau p+1$",
+        "$\\frac{\\tau}{p+1}$",
+        "$\\frac{1}{\\tau p}$"
+      ],
+      "reponse": 0,
+      "explication": "$\\tau(pS-0)+S=E$, donc $S=\\frac{1}{\\tau p+1}E$.",
+      "source": "Cours/Mathematique/Chapitre 3 - Transformation de Laplace.md"
+    },
+    {
+      "id": "maths-laplace-017",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Résoudre $y'+2y=e^{-t}$ avec $y(0)=0$ :",
+      "choix": [
+        "$y(t)=e^{-t}-e^{-2t}$",
+        "$y(t)=e^{-2t}-e^{-t}$",
+        "$y(t)=t\\,e^{-t}$",
+        "$y(t)=\\frac12e^{-t}$"
+      ],
+      "reponse": 0,
+      "explication": "$pY+2Y=\\frac1{p+1}$, donc $Y=\\frac1{(p+1)(p+2)}=\\frac1{p+1}-\\frac1{p+2}$.",
+      "source": "Cours/Mathematique/Chapitre 3 - Transformation de Laplace.md"
+    },
+    {
+      "id": "maths-laplace-018",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "$y''+y=\\sin(2t)$, $y(0)=0$, $y'(0)=1$. Avec $Y=\\mathcal{L}y$, on obtient $Y(p)=$",
+      "choix": [
+        "$\\frac{p^2+6}{(p^2+4)(p^2+1)}$",
+        "$\\frac{2}{(p^2+4)(p^2+1)}$",
+        "$\\frac{p^2+5}{(p^2+4)(p^2+1)}$",
+        "$\\frac{p^2+6}{(p^2+4)(p^2-1)}$"
+      ],
+      "reponse": 0,
+      "explication": "$p^2Y-1+Y=\\frac{2}{p^2+4}$, donc $(p^2+1)Y=\\frac{p^2+6}{p^2+4}$. Au final $y=\\frac53\\sin t-\\frac13\\sin(2t)$.",
+      "source": "Cours/Mathematique/Chapitre 3 - Transformation de Laplace.md"
+    },
+    {
+      "id": "maths-laplace-019",
+      "type": "vrai-faux",
+      "difficulte": 1,
+      "enonce": "Laplace sert surtout aux phénomènes transitoires, Fourier aux phénomènes périodiques.",
+      "reponse": true,
+      "explication": "Vrai, c'est la distinction faite en introduction du chapitre 3.",
+      "source": "Cours/Mathematique/Chapitre 3 - Transformation de Laplace.md"
+    },
+    {
+      "id": "maths-laplace-020",
+      "type": "vrai-faux",
+      "difficulte": 1,
+      "enonce": "La transformée de Laplace inverse est unique.",
+      "reponse": true,
+      "explication": "Vrai, Prop. 27 (i). C'est ce qui permet de lire le résultat dans la table.",
+      "source": "Cours/Mathematique/Chapitre 3 - Transformation de Laplace.md"
+    }
+  ]
+}

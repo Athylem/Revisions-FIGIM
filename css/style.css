@@ -7,6 +7,10 @@
   --accent: #4f5bd5;
   --accent-texte: #ffffff;
   --verrou: #eef0f5;
+  --bon: #1f8a4c;
+  --bon-fond: #e5f6ec;
+  --faux: #c4373a;
+  --faux-fond: #fbe9e9;
   color-scheme: light dark;
 }
 
@@ -20,6 +24,10 @@
     --accent: #8c95ff;
     --accent-texte: #13151c;
     --verrou: #181a22;
+    --bon: #5fd08f;
+    --bon-fond: #173326;
+    --faux: #ff8a8c;
+    --faux-fond: #3a1d20;
   }
 }
 
@@ -123,3 +131,47 @@ a.matiere:hover { border-color: var(--accent); transform: translateY(-2px); }
 .matiere.verrouillee .etat { color: var(--discret); font-weight: 500; }
 
 #liste-ds { margin: 0; padding-left: 1.2rem; }
+
+/* ---------- Entraînement ---------- */
+.cases { display: grid; gap: 0.5rem; }
+.cases label { display: flex; align-items: center; gap: 0.4rem; cursor: pointer; }
+.cases input { flex: none; width: 1.1rem; height: 1.1rem; accent-color: var(--accent); }
+.actions { display: flex; gap: 0.5rem; flex-wrap: wrap; justify-content: center; margin: 1.5rem 0 0; }
+#ecran-reglages .actions { justify-content: flex-start; }
+button.secondaire { background: var(--surface); color: var(--texte); border: 1px solid var(--bord); }
+
+.entete-quiz { display: flex; justify-content: space-between; align-items: baseline; margin-top: 1rem; }
+.score { font-weight: 700; color: var(--accent); }
+.barre-progression { height: 6px; background: var(--bord); border-radius: 999px; margin-top: 0.5rem; overflow: hidden; }
+#remplissage { height: 100%; width: 0; background: var(--accent); transition: width 0.3s; }
+
+.question .meta { margin: 0; font-size: 0.85rem; color: var(--discret); }
+.enonce { font-size: 1.15rem; margin: 0.6rem 0 1rem; overflow-x: auto; }
+
+.choix { display: grid; gap: 0.6rem; }
+.choix.deux { grid-template-columns: 1fr 1fr; }
+.choix-bouton {
+  text-align: left;
+  font-weight: 500;
+  background: var(--fond);
+  color: var(--texte);
+  border: 2px solid var(--bord);
+  padding: 0.8rem 1rem;
+  overflow-x: auto;
+}
+.choix.deux .choix-bouton { text-align: center; }
+.choix-bouton:not(:disabled):hover { border-color: var(--accent); }
+.choix-bouton:disabled { cursor: default; opacity: 0.6; }
+.choix-bouton.bon { border-color: var(--bon); background: var(--bon-fond); opacity: 1; }
+.choix-bouton.faux { border-color: var(--faux); background: var(--faux-fond); opacity: 1; }
+
+.retour { margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--bord); }
+.verdict { font-weight: 700; margin: 0 0 0.4rem; }
+.verdict.ok { color: var(--bon); }
+.verdict.ko { color: var(--faux); }
+#explication { overflow-x: auto; }
+
+.score-final { font-size: 2.6rem; font-weight: 800; color: var(--accent); margin: 0.2rem 0; }
+.erreur { margin-top: 0.75rem; }
+.erreur .enonce { font-size: 1rem; margin-top: 0; }
+.solution { margin: 0 0 0.4rem; color: var(--bon); }
