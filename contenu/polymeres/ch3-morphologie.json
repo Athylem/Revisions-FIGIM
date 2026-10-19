@@ -1,0 +1,263 @@
+{
+  "chapitre": "Morphologie, transitions, propriétés",
+  "questions": [
+    {
+      "id": "poly-morpho-001",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "La température de transition vitreuse $T_g$ correspond au passage :",
+      "choix": [
+        "vitreux (rigide) ↔ caoutchoutique de la phase amorphe",
+        "solide ↔ liquide des cristaux",
+        "amorphe ↔ cristallin",
+        "liquide ↔ gaz"
+      ],
+      "reponse": 0,
+      "explication": "La fusion $T_f$ concerne les lamelles cristallines, donc seulement les semi-cristallins.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-morpho-002",
+      "type": "vrai-faux",
+      "difficulte": 1,
+      "enonce": "Un polymère amorphe possède une température de fusion $T_f$.",
+      "reponse": false,
+      "explication": "Faux : un amorphe n'a qu'une $T_g$.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-morpho-003",
+      "type": "vrai-faux",
+      "difficulte": 1,
+      "enonce": "Un polymère semi-cristallin peut atteindre 100 % de cristallinité.",
+      "reponse": false,
+      "explication": "Faux : il reste toujours une phase amorphe interlamellaire.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-morpho-004",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Sur la courbe volume spécifique – température, $T_g$ se repère par :",
+      "choix": [
+        "un changement de pente",
+        "un saut brutal",
+        "un pic",
+        "rien de visible"
+      ],
+      "reponse": 0,
+      "explication": "$T_c$ / $T_f$ : saut brutal du volume (semi-cristallins seulement).",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-morpho-005",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Une trempe depuis l'état fondu donne plutôt un polymère :",
+      "choix": [
+        "amorphe",
+        "semi-cristallin",
+        "100 % cristallin",
+        "réticulé"
+      ],
+      "reponse": 0,
+      "explication": "Refroidissement lent → semi-cristallin.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-morpho-006",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Thermogramme DSC (endo vers le haut) : un pic vers le bas correspond à :",
+      "choix": [
+        "une cristallisation (exothermique)",
+        "une fusion (endothermique)",
+        "la transition vitreuse",
+        "une dégradation"
+      ],
+      "reponse": 0,
+      "explication": "Marche = $T_g$ ; pic vers le haut = fusion. Toujours vérifier le sens « endo up ».",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-morpho-007",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "DSC d'un PET : $T_g$ 80 °C, pic exo 158 °C (35 J/g), pic endo 240 °C (35 J/g). L'échantillon initial était :",
+      "choix": [
+        "amorphe ($X_c=0$)",
+        "100 % cristallin",
+        "semi-cristallin à 50 %",
+        "réticulé"
+      ],
+      "reponse": 0,
+      "explication": "$\\Delta H_f=\\Delta H_{cc}$ : tout ce qui fond a cristallisé pendant la chauffe (cristallisation froide). Obtenu par trempe.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-morpho-008",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "En diffraction des rayons X, un halo large indique :",
+      "choix": [
+        "une phase amorphe",
+        "des cristaux",
+        "un métal",
+        "une porosité"
+      ],
+      "reponse": 0,
+      "explication": "Pics fins = cristaux.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-morpho-009",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Pourquoi un semi-cristallin est-il souvent opaque ?",
+      "choix": [
+        "Zones cristallines et amorphes d'indices de réfraction différents : la lumière est diffusée",
+        "Il contient des charges",
+        "Il est réticulé",
+        "Il est au-dessus de sa $T_g$"
+      ],
+      "reponse": 0,
+      "explication": "Les amorphes, eux, sont transparents.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-morpho-010",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Qu'est-ce qu'une sphérolite ?",
+      "choix": [
+        "Une organisation radiale de lamelles cristallines autour d'un germe (µm à mm)",
+        "Une bulle de gaz dans le polymère",
+        "Une pelote statistique",
+        "Un nœud de réticulation"
+      ],
+      "reponse": 0,
+      "explication": "Échelles : maille (Å) → lamelle (~10 nm) → sphérolite (µm–mm).",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-morpho-011",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Propriété typique d'un polymère amorphe :",
+      "choix": [
+        "transparent, faible retrait",
+        "opaque, fort retrait",
+        "a une $T_f$ nette",
+        "imperméable aux gaz"
+      ],
+      "reponse": 0,
+      "explication": "Inconvénients des amorphes : perméabilité et vieillissement physique.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-morpho-012",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Module d'un amorphe à la $T_g$ :",
+      "choix": [
+        "chute d'environ 3 décades",
+        "augmente fortement",
+        "ne change pas",
+        "chute de 10 %"
+      ],
+      "reponse": 0,
+      "explication": "Pour un semi-cristallin la chute à $T_g$ est modérée (selon $X_c$), l'effondrement a lieu à $T_f$.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-morpho-013",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "PEHD : $X_c=0{,}4$, $E_c=3000$ MPa, $E_a=1$ MPa. Module (loi des mélanges) ≈",
+      "choix": [
+        "1 200 MPa",
+        "3 000 MPa",
+        "1 800 MPa",
+        "400 MPa"
+      ],
+      "reponse": 0,
+      "explication": "$E=X_cE_c+(1-X_c)E_a=1200+0{,}6$.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-morpho-014",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "PEHD de $\\rho=0{,}955$ ($\\rho_a=0{,}85$, $\\rho_c=1{,}00$). Cristallinité en fraction volumique :",
+      "choix": [
+        "0,70",
+        "0,955",
+        "0,50",
+        "0,85"
+      ],
+      "reponse": 0,
+      "explication": "$\\frac{\\rho-\\rho_a}{\\rho_c-\\rho_a}=\\frac{0{,}105}{0{,}15}$.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-morpho-015",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Ordre de grandeur de la $T_g$ du PE :",
+      "choix": [
+        "−120 °C",
+        "100 °C",
+        "−5 °C",
+        "150 °C"
+      ],
+      "reponse": 0,
+      "explication": "PP −5 °C, PS 100 °C, PC 150 °C. Le PE est caoutchoutique à température ambiante dans sa phase amorphe.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-morpho-016",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Ordre de grandeur de la $T_g$ du PS :",
+      "choix": [
+        "100 °C",
+        "−120 °C",
+        "250 °C",
+        "0 °C"
+      ],
+      "reponse": 0,
+      "explication": "PS, PMMA (105 °C) et PVC (80 °C) sont vitreux à température ambiante.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-morpho-017",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Dans les polyamides, les liaisons hydrogène entre chaînes entraînent :",
+      "choix": [
+        "une $T_f$ élevée et une reprise d'humidité",
+        "une transparence parfaite",
+        "une $T_g$ très basse",
+        "une absence de cristallinité"
+      ],
+      "reponse": 0,
+      "explication": "Liaisons N–H···O=C (~10× VdW).",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-morpho-018",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Mécanismes d'endommagement d'un polymère amorphe :",
+      "choix": [
+        "craquelures (⊥ à la traction) et bandes de cisaillement (~45°)",
+        "striction à 35°",
+        "fissuration intergranulaire",
+        "corrosion"
+      ],
+      "reponse": 0,
+      "explication": "Les craquelures sont perpendiculaires à la direction de traction.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    }
+  ]
+}

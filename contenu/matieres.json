@@ -26,7 +26,26 @@
       "groupe": "Matériaux",
       "ds": null,
       "notes": true,
-      "chapitres": []
+      "chapitres": [
+        {
+          "id": "ch1-structure",
+          "nom": "Structure et masses molaires",
+          "fichier": "polymeres/ch1-structure.json",
+          "questions": 22
+        },
+        {
+          "id": "ch2-synthese",
+          "nom": "Synthèse et cinétique",
+          "fichier": "polymeres/ch2-synthese.json",
+          "questions": 19
+        },
+        {
+          "id": "ch3-morphologie",
+          "nom": "Morphologie, transitions, propriétés",
+          "fichier": "polymeres/ch3-morphologie.json",
+          "questions": 18
+        }
+      ]
     },
     {
       "id": "transformation-de-phase",

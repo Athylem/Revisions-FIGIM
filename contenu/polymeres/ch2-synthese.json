@@ -1,0 +1,284 @@
+{
+  "chapitre": "Synthèse et cinétique",
+  "questions": [
+    {
+      "id": "poly-synthese-001",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "La polycondensation :",
+      "choix": [
+        "fait réagir des groupes fonctionnels complémentaires, souvent avec élimination de petites molécules",
+        "nécessite des centres actifs (radicaux)",
+        "fait croître très vite une chaîne active",
+        "donne des hautes masses dès le début"
+      ],
+      "reponse": 0,
+      "explication": "Sans sous-produit, on parle de **polyaddition**. Les hautes masses n'arrivent qu'en **fin** de réaction.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-synthese-002",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Lequel est obtenu par polymérisation en chaîne (radicalaire) ?",
+      "choix": [
+        "PS",
+        "PA 6-6",
+        "PET",
+        "PC"
+      ],
+      "reponse": 0,
+      "explication": "Par chaîne : PE, PP, PVC, PS, PMMA, PTFE. Par étapes : PET, PA, PC, PU.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-synthese-003",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Lequel est obtenu par polycondensation ?",
+      "choix": [
+        "PET",
+        "PE",
+        "PVC",
+        "PMMA"
+      ],
+      "reponse": 0,
+      "explication": "PET, PA, PC, PU, phénoplastes.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-synthese-004",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Dans une polymérisation en chaîne, les hautes masses molaires apparaissent :",
+      "choix": [
+        "dès le début de la réaction",
+        "seulement en fin de réaction",
+        "jamais",
+        "uniquement après recuit"
+      ],
+      "reponse": 0,
+      "explication": "La croissance est rapide : le monomère s'ajoute à la chaîne active.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-synthese-005",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Les 3 étapes de la polymérisation radicalaire, avec leurs vitesses :",
+      "choix": [
+        "amorçage (lent), propagation (rapide), terminaison (très rapide)",
+        "amorçage (rapide), propagation (lente), terminaison (lente)",
+        "propagation, amorçage, terminaison",
+        "amorçage, transfert, cristallisation"
+      ],
+      "reponse": 0,
+      "explication": "Amorçage : R–R → 2R°, puis R° + M → RM°.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-synthese-006",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Terminaison par recombinaison :",
+      "choix": [
+        "2 chaînes actives en donnent 1 de masse doublée",
+        "2 chaînes mortes de masse inchangée",
+        "la chaîne reste vivante",
+        "le monomère est régénéré"
+      ],
+      "reponse": 0,
+      "explication": "La **dismutation** (transfert d'H) donne 2 chaînes mortes de masse inchangée.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-synthese-007",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Hypothèse de l'état quasi stationnaire (EQS) :",
+      "choix": [
+        "$\\frac{d[M°]}{dt}=0$ : autant de centres actifs créés que détruits",
+        "$[M]$ reste constant",
+        "$v_p=0$",
+        "$k_p=k_t$"
+      ],
+      "reponse": 0,
+      "explication": "Elle donne $v_a=v_t$ puis $[M°]=\\sqrt{f k_d[R]/k_t}$.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-synthese-008",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Vitesse de polymérisation radicalaire :",
+      "choix": [
+        "$v_p=k_p[M]\\sqrt{\\frac{f k_d[R]}{k_t}}$",
+        "$v_p=k_p[M][R]$",
+        "$v_p=2fk_d[R]$",
+        "$v_p=k_p[M]^2\\sqrt{[R]}$"
+      ],
+      "reponse": 0,
+      "explication": "Ordre 1 en monomère, ordre $\\frac12$ en amorceur.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-synthese-009",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "On double la concentration d'amorceur. Effet :",
+      "choix": [
+        "$v_p\\times\\sqrt2$ et longueur cinétique $\\lambda\\div\\sqrt2$",
+        "$v_p\\times2$ et $\\lambda\\times2$",
+        "$v_p\\times\\sqrt2$ et $\\lambda$ inchangée",
+        "$v_p$ inchangée et $\\lambda\\div2$"
+      ],
+      "reponse": 0,
+      "explication": "$v_p\\propto[R]^{1/2}$ et $v_a\\propto[R]$, donc $\\lambda=v_p/v_a\\propto[R]^{-1/2}$ : plus vite mais chaînes plus courtes.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-synthese-010",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Vitesse d'amorçage global :",
+      "choix": [
+        "$v_a=2fk_d[R]$",
+        "$v_a=k_d[R]$",
+        "$v_a=fk_d[R]$",
+        "$v_a=2k_t[M°]^2$"
+      ],
+      "reponse": 0,
+      "explication": "Le facteur 2 : une molécule d'amorceur donne 2 radicaux. $2k_t[M°]^2$ est la vitesse de terminaison.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-synthese-011",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "La longueur de chaîne cinétique $\\lambda$ vaut :",
+      "choix": [
+        "$\\frac{v_p}{v_a}$",
+        "$\\frac{v_a}{v_p}$",
+        "$v_p\\times v_a$",
+        "$\\frac{[M]}{[R]}$"
+      ],
+      "reponse": 0,
+      "explication": "Nombre de monomères ajoutés par un centre actif pendant sa durée de vie.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-synthese-012",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Polymérisation vivante : $[M]_0=2$ mol/L, $[R]_0=10^{-3}$ mol/L, conversion 80 %. $\\overline{DP_n}$ =",
+      "choix": [
+        "1 600",
+        "2 000",
+        "800",
+        "16 000"
+      ],
+      "reponse": 0,
+      "explication": "$\\overline{DP_n}=\\frac{[M]_0}{[R]_0}\\times\\text{conversion}=2000\\times0{,}8$.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-synthese-013",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Pourquoi les polymérisations ioniques sont-elles souvent « vivantes » ?",
+      "choix": [
+        "Deux centres actifs de même charge se repoussent : pas de terminaison",
+        "Elles sont très exothermiques",
+        "Elles utilisent un solvant",
+        "Les chaînes sont recyclables"
+      ],
+      "reponse": 0,
+      "explication": "Avec $k_a\\gg k_p$, toutes les chaînes démarrent ensemble : masses prévisibles, $P\\approx1$, copolymères à blocs possibles.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-synthese-014",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Un monomère avec un substituant accepteur d'électrons (CN, COOR) se polymérise plutôt par voie :",
+      "choix": [
+        "anionique (carbanion)",
+        "cationique (carbocation)",
+        "polycondensation",
+        "aucune"
+      ],
+      "reponse": 0,
+      "explication": "Substituant **donneur** → cationique.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-synthese-015",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Le PVC est surtout produit par polymérisation en :",
+      "choix": [
+        "suspension",
+        "masse",
+        "émulsion",
+        "solution"
+      ],
+      "reponse": 0,
+      "explication": "70 % du PVC : gouttelettes de monomère dans l'eau, bonne dissipation de chaleur, perles faciles à récupérer.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-synthese-016",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Principal inconvénient de la polymérisation en masse :",
+      "choix": [
+        "l'évacuation de la chaleur",
+        "la contamination par le tensioactif",
+        "le solvant à éliminer",
+        "la lenteur"
+      ],
+      "reponse": 0,
+      "explication": "Avantage : polymère pur, sans solvant.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-synthese-017",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Avantage majeur de la polymérisation en émulsion :",
+      "choix": [
+        "rapide et hautes masses à la fois",
+        "polymère parfaitement pur",
+        "pas besoin d'eau",
+        "pas d'amorceur"
+      ],
+      "reponse": 0,
+      "explication": "Inconvénient : contamination par le tensioactif. Exemples : ABS, latex.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-synthese-018",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Réaction d'ordre 1, $k=2\\cdot10^{-3}$ s⁻¹. Temps de demi-réaction :",
+      "choix": [
+        "≈ 347 s",
+        "≈ 250 s",
+        "≈ 1 151 s",
+        "≈ 500 s"
+      ],
+      "reponse": 0,
+      "explication": "$t_{1/2}=\\frac{\\ln2}k=\\frac{0{,}693}{2\\cdot10^{-3}}$.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-synthese-019",
+      "type": "vrai-faux",
+      "difficulte": 1,
+      "enonce": "Dans la loi d'Arrhenius, la température doit être exprimée en °C.",
+      "reponse": false,
+      "explication": "Faux, en **kelvin** : $k=A\\,e^{-E_a/RT}$.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    }
+  ]
+}

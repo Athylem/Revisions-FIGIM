@@ -1,0 +1,329 @@
+{
+  "chapitre": "Structure et masses molaires",
+  "questions": [
+    {
+      "id": "poly-structure-001",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Dans un matériau polymère, les chaînes sont liées entre elles par :",
+      "choix": [
+        "des liaisons faibles (Van der Waals, hydrogène)",
+        "des liaisons covalentes",
+        "des liaisons métalliques",
+        "des liaisons ioniques"
+      ],
+      "reponse": 0,
+      "explication": "Dans une chaîne : liaisons **covalentes** de haute énergie. Entre les chaînes : liaisons électrostatiques **faibles** (VdW, H).",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-structure-002",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Pour le PE, le motif constitutif est :",
+      "choix": [
+        "–CH₂–",
+        "–CH₂–CH₂–",
+        "CH₂=CH₂",
+        "–CH₂–CH(CH₃)–"
+      ],
+      "reponse": 0,
+      "explication": "Motif constitutif = **plus petite** unité répétée (–CH₂–). L'unité monomère (plus grande unité issue d'un seul monomère) est –CH₂–CH₂–.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-structure-003",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "L'unité monomère du PTFE est :",
+      "choix": [
+        "–CF₂–CF₂–",
+        "–CF₂–",
+        "CF₂=CF₂",
+        "–CH₂–CF₂–"
+      ],
+      "reponse": 0,
+      "explication": "Son motif constitutif, plus petit, est –CF₂– ; CF₂=CF₂ est le monomère.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-structure-004",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Quel est le motif du PP (polypropylène) ?",
+      "choix": [
+        "–CH₂–CH(CH₃)–",
+        "–CH₂–CHCl–",
+        "–CH₂–CH(C₆H₅)–",
+        "–CH₂–CH₂–"
+      ],
+      "reponse": 0,
+      "explication": "PVC : –CH₂–CHCl– ; PS : –CH₂–CH(C₆H₅)– ; PE : –CH₂–CH₂–.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-structure-005",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Quel est le motif du PVC ?",
+      "choix": [
+        "–CH₂–CHCl–",
+        "–CF₂–CF₂–",
+        "–CH₂–CH(CH₃)–",
+        "–CH₂–C(CH₃)(COOCH₃)–"
+      ],
+      "reponse": 0,
+      "explication": "Polychlorure de vinyle, monomère chlorure de vinyle CH₂=CHCl.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-structure-006",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Masse molaire du motif du PS (C₈H₈) :",
+      "choix": [
+        "104 g/mol",
+        "28 g/mol",
+        "62,5 g/mol",
+        "100 g/mol"
+      ],
+      "reponse": 0,
+      "explication": "8×12 + 8×1 = 104. PE 28, PVC 62,5, PMMA et PTFE 100.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-structure-007",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Masse molaire du motif du PVC (C₂H₃Cl) :",
+      "choix": [
+        "62,5 g/mol",
+        "42 g/mol",
+        "28 g/mol",
+        "100 g/mol"
+      ],
+      "reponse": 0,
+      "explication": "24 + 3 + 35,5 = 62,5 g/mol.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-structure-008",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Le PA 6-6 est obtenu à partir de :",
+      "choix": [
+        "hexaméthylène diamine + acide adipique",
+        "éthylène glycol + acide téréphtalique",
+        "caprolactame seul",
+        "styrène + butadiène"
+      ],
+      "reponse": 0,
+      "explication": "Éthylène glycol + acide téréphtalique donnent le **PET**.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-structure-009",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Lequel de ces polymères est amorphe ?",
+      "choix": [
+        "PS",
+        "PE",
+        "PP",
+        "PA 6-6"
+      ],
+      "reponse": 0,
+      "explication": "Amorphes : **PS, PVC, PMMA, PC** (transparents, pas de $T_f$). PE, PP, PET, PA, PTFE sont semi-cristallins.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-structure-010",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Lequel de ces polymères est semi-cristallin ?",
+      "choix": [
+        "PET",
+        "PMMA",
+        "PC",
+        "PVC"
+      ],
+      "reponse": 0,
+      "explication": "PMMA, PC et PVC sont amorphes.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-structure-011",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Un thermodurcissable est :",
+      "choix": [
+        "un réseau 3D réticulé, insoluble et infusible",
+        "un ensemble de chaînes linéaires recyclables",
+        "un réseau faiblement réticulé utilisé au-dessus de $T_g$",
+        "un polymère semi-cristallin"
+      ],
+      "reponse": 0,
+      "explication": "Thermoplastique = chaînes linéaires/ramifiées, recyclable ; élastomère = réseau **faiblement** réticulé, au-dessus de $T_g$.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-structure-012",
+      "type": "vrai-faux",
+      "difficulte": 1,
+      "enonce": "Un thermodurcissable peut être refondu puis recyclé.",
+      "reponse": false,
+      "explication": "Faux : réseau 3D de liaisons covalentes ($\\bar f>2$), il ne fond pas et le chauffer le dégrade.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-structure-013",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Un mélange de 2 mol de diacide ($f=2$) et 1 mol de triol ($f=3$) a une fonctionnalité moyenne :",
+      "choix": [
+        "$\\bar f\\approx2{,}33$ → réseau 3D",
+        "$\\bar f=2$ → chaînes linéaires",
+        "$\\bar f=2{,}5$ → réseau 3D",
+        "$\\bar f\\approx1{,}67$ → oligomères"
+      ],
+      "reponse": 0,
+      "explication": "$\\bar f=\\frac{2\\times2+1\\times3}{3}=\\frac73$. $\\bar f>2$ donne un réseau (thermodurcissable).",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-structure-014",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Un polymère isotactique a ses substituants :",
+      "choix": [
+        "tous du même côté du zig-zag plan",
+        "alternés d'un côté et de l'autre",
+        "répartis au hasard",
+        "sur des chaînes latérales greffées"
+      ],
+      "reponse": 0,
+      "explication": "Syndiotactique = alterné ; atactique = aléatoire.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-structure-015",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Quelle forme de PP cristallise le moins ?",
+      "choix": [
+        "atactique",
+        "isotactique",
+        "syndiotactique",
+        "elles cristallisent toutes autant"
+      ],
+      "reponse": 0,
+      "explication": "Substituants aléatoires → pas de régularité → pas d'empilement. Le PP atactique est amorphe et collant.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-structure-016",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Passer d'une conformation à une autre demande :",
+      "choix": [
+        "une simple rotation autour des liaisons",
+        "la rupture d'une liaison",
+        "une réaction chimique",
+        "un changement de tacticité"
+      ],
+      "reponse": 0,
+      "explication": "La **configuration** (tacticité, cis/trans) nécessite au contraire une rupture de liaison.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-structure-017",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Indice de polymolécularité $P=\\overline{M_w}/\\overline{M_n}$ :",
+      "choix": [
+        "toujours $\\ge1$, et $=1$ pour un polymère monodisperse",
+        "toujours $\\le1$",
+        "toujours égal à 2",
+        "peut être négatif"
+      ],
+      "reponse": 0,
+      "explication": "$\\overline{M_n}\\le\\overline{M_v}\\le\\overline{M_w}$.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-structure-018",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "$\\overline{M_w}$ se calcule par :",
+      "choix": [
+        "$\\frac{\\sum n_iM_i^2}{\\sum n_iM_i}$",
+        "$\\frac{\\sum n_iM_i^2}{\\sum n_i}$",
+        "$\\frac{\\sum n_iM_i}{\\sum n_i}$",
+        "$\\frac{\\sum n_iM_i}{\\sum M_i}$"
+      ],
+      "reponse": 0,
+      "explication": "Piège fréquent : mettre $\\sum n_i$ au dénominateur. $\\overline{M_n}=\\frac{\\sum n_iM_i}{\\sum n_i}$.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-structure-019",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "10 mol à 10 000 g/mol, 20 mol à 50 000, 10 mol à 100 000. $\\overline{M_n}$ vaut :",
+      "choix": [
+        "52 500 g/mol",
+        "71 900 g/mol",
+        "53 300 g/mol",
+        "40 000 g/mol"
+      ],
+      "reponse": 0,
+      "explication": "$\\sum n_iM_i=2{,}1\\cdot10^6$ et $\\sum n_i=40$. ($\\overline{M_w}\\approx71\\,900$ et $P\\approx1{,}37$.)",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-structure-020",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "PE de $DP_n=1000$ (unités –CH₂–CH₂–). Combien de liaisons C–C $n$ dans $\\langle r^2\\rangle=nl^2$ ?",
+      "choix": [
+        "2 000",
+        "1 000",
+        "500",
+        "4 000"
+      ],
+      "reponse": 0,
+      "explication": "2 liaisons C–C par unité. Piège : $n$ compte les **liaisons**, pas les unités.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-structure-021",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Pour $\\theta=109{,}5°$ et rotation libre, $\\langle r^2\\rangle$ vaut :",
+      "choix": [
+        "$2nl^2$",
+        "$nl^2$",
+        "$4nl^2$",
+        "$\\frac{nl^2}{6}$"
+      ],
+      "reponse": 0,
+      "explication": "$\\cos\\theta=-\\frac13$ donne $\\frac{1-\\cos\\theta}{1+\\cos\\theta}=2$ ; rotation libre : facteur 1. Rayon de giration : $\\langle s^2\\rangle=\\frac{\\langle r^2\\rangle}6$.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    },
+    {
+      "id": "poly-structure-022",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Une liaison hydrogène est environ … fois plus forte qu'une liaison de Van der Waals :",
+      "choix": [
+        "10",
+        "2",
+        "100",
+        "1 000"
+      ],
+      "reponse": 0,
+      "explication": "H : 3–7 kcal/mol ; VdW : 0,5–2 ; covalente C–C : 83.",
+      "source": "Cours/Polymeres/1 - Révision/Fiche de révision - Contrôle Polymères.md"
+    }
+  ]
+}
