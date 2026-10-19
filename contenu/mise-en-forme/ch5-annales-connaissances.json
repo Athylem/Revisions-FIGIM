@@ -1,0 +1,598 @@
+{
+  "chapitre": "Tests de connaissances 2005-2015 (QCM, vrai/faux, trous)",
+  "genre": "cours",
+  "questions": [
+    {
+      "id": "mef-ann-001",
+      "type": "vrai-faux",
+      "difficulte": 1,
+      "enonce": "(2005) La déformation plastique est incompressible.",
+      "reponse": true,
+      "explication": "Glissement de plans atomiques : volume constant, $\\operatorname{tr}\\dot{\\bar{\\bar\\varepsilon}}=0$.",
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+    },
+    {
+      "id": "mef-ann-002",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "(2005) Ordre de grandeur de la limite d'élasticité des **métaux purs** :",
+      "choix": [
+        "10 à 100 MPa (Al pur ≈ 28 MPa)",
+        "1 à 10 GPa",
+        "0,1 à 1 MPa",
+        "10 à 100 GPa"
+      ],
+      "reponse": 0,
+      "explication": "Alliages : 10² à 10³ MPa (aciers 250 MPa à > 1 GPa). Piège : beaucoup de copies répondent 400 MPa.",
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+    },
+    {
+      "id": "mef-ann-003",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "(2005) Citer trois procédés de mise en forme :",
+      "choix": [
+        "laminage, forgeage, filage (aussi tréfilage, emboutissage, pliage…)",
+        "usinage, perçage, fraisage",
+        "frittage, fonderie, soudage",
+        "trempe, revenu, recuit"
+      ],
+      "reponse": 0,
+      "explication": "Procédés thermomécaniques : changement de forme à volume constant.",
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+    },
+    {
+      "id": "mef-ann-004",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "(2005, 2008) La **ténacité** est :",
+      "choix": [
+        "l'aire sous la courbe rationnelle $(\\sigma,\\varepsilon)$ : énergie par m³ nécessaire pour rompre",
+        "la limite d'élasticité",
+        "la pente élastique",
+        "l'allongement à rupture"
+      ],
+      "reponse": 0,
+      "explication": "",
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+    },
+    {
+      "id": "mef-ann-005",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "(2006) La **contrainte d'écoulement** est :",
+      "choix": [
+        "la limite élastique actuelle du matériau écroui, $\\sigma_0=g(\\varepsilon_p)$",
+        "la contrainte à rupture",
+        "la contrainte au début de la striction",
+        "la pression hydrostatique"
+      ],
+      "reponse": 0,
+      "explication": "Il n'y a pas un seuil de plasticité mais une infinité.",
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+    },
+    {
+      "id": "mef-ann-006",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "(2006) La **surface de charge** est définie par :",
+      "choix": [
+        "$f(\\sigma_{ij})=0$ : frontière entre états élastiques ($f<0$) et états interdits ($f>0$)",
+        "$f=1$",
+        "le maximum de la courbe de traction",
+        "la surface de l'éprouvette"
+      ],
+      "reponse": 0,
+      "explication": "",
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+    },
+    {
+      "id": "mef-ann-007",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "(2006) Un procédé **thermomécanique** est :",
+      "choix": [
+        "un procédé qui change fortement la forme à volume et masse constants, par déformation plastique (à froid ou à chaud)",
+        "un procédé avec enlèvement de matière",
+        "un traitement thermique sans déformation",
+        "un procédé de fonderie"
+      ],
+      "reponse": 0,
+      "explication": "Par opposition à l'usinage (perte de masse) et au frittage.",
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+    },
+    {
+      "id": "mef-ann-008",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "(2006) L'incompressibilité impose sur une discontinuité de vitesse entre deux blocs :",
+      "choix": [
+        "la continuité de la composante **normale** ; seule la composante tangentielle saute",
+        "la continuité de la composante tangentielle",
+        "l'égalité des vitesses",
+        "rien"
+      ],
+      "reponse": 0,
+      "explication": "",
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+    },
+    {
+      "id": "mef-ann-009",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "(2006) La **striction** est :",
+      "choix": [
+        "une réduction **localisée** de section qui débute au maximum de la courbe conventionnelle",
+        "une réduction homogène de section",
+        "le début de la plasticité",
+        "la rupture fragile"
+      ],
+      "reponse": 0,
+      "explication": "",
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+    },
+    {
+      "id": "mef-ann-010",
+      "type": "vrai-faux",
+      "difficulte": 1,
+      "enonce": "(2006) La limite d'élasticité d'une céramique est en général plus grande que celle d'un polymère.",
+      "reponse": true,
+      "explication": "Céramiques : plusieurs GPa (mais fragiles) ; polymères : 10-100 MPa.",
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+    },
+    {
+      "id": "mef-ann-011",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "(2007) Comportement **RPP** : comment évolue la contrainte avec la déformation ?",
+      "choix": [
+        "σ = σ₀ constante dès le début (pas d'élasticité, pas d'écrouissage)",
+        "linéaire puis palier",
+        "croissante sans palier",
+        "décroissante"
+      ],
+      "reponse": 0,
+      "explication": "Courbe : segment vertical sur l'axe σ jusqu'à σ₀ puis palier horizontal.",
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+    },
+    {
+      "id": "mef-ann-012",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "(2007) Lors de l'écrouissage (isotrope), la surface d'écoulement :",
+      "choix": [
+        "se dilate (homothétie) ; sa taille est fixée par $\\sigma_0=g(\\bar\\varepsilon_p)$",
+        "se translate",
+        "rétrécit",
+        "ne change pas"
+      ],
+      "reponse": 0,
+      "explication": "(2009) Le paramètre qui fixe la surface de charge : la **déformation plastique généralisée** $\\bar\\varepsilon_p$ (via $\\sigma_0$).",
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+    },
+    {
+      "id": "mef-ann-013",
+      "type": "vrai-faux",
+      "difficulte": 1,
+      "enonce": "(2007) La méthode de la borne supérieure permet, à partir d'un champ de vitesse, d'estimer la puissance des forces extérieures.",
+      "reponse": true,
+      "explication": "Par excès, à condition que le champ soit incompressible et respecte les conditions aux limites.",
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+    },
+    {
+      "id": "mef-ann-014",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "(2007) Deux tôles de même E, la première a une limite d'élasticité plus élevée. Retour élastique le plus important ?",
+      "choix": [
+        "la tôle de limite d'élasticité la plus élevée",
+        "la tôle de limite la plus faible",
+        "identique",
+        "aucune"
+      ],
+      "reponse": 0,
+      "explication": "$R_c=eE/\\sigma_0$ plus petit, la tôle reste davantage élastique.",
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+    },
+    {
+      "id": "mef-ann-015",
+      "type": "vrai-faux",
+      "difficulte": 1,
+      "enonce": "(2007) Les caractéristiques mécaniques d'un matériau ne dépendent pas de la vitesse de déformation.",
+      "reponse": false,
+      "explication": "Elles dépendent de $\\dot\\varepsilon$ et de T : $\\dot\\varepsilon\\uparrow$ relève la courbe, $T\\uparrow$ l'abaisse.",
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+    },
+    {
+      "id": "mef-ann-016",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "(2007) L'écrouissage est :",
+      "choix": [
+        "l'augmentation de la contrainte d'écoulement avec la déformation plastique",
+        "la diminution de la limite élastique",
+        "la rupture par fatigue",
+        "un traitement thermique"
+      ],
+      "reponse": 0,
+      "explication": "Le phénomène inverse est l'**adoucissement** (2008).",
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+    },
+    {
+      "id": "mef-ann-017",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "(2008) Deux méthodes (parmi trois du cours) de mise en forme à partir du **solide** :",
+      "choix": [
+        "frittage et usinage (le troisième : les procédés thermomécaniques)",
+        "fonderie et moulage",
+        "soudage et collage",
+        "trempe et revenu"
+      ],
+      "reponse": 0,
+      "explication": "À partir du liquide : fonderie.",
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+    },
+    {
+      "id": "mef-ann-018",
+      "type": "vrai-faux",
+      "difficulte": 1,
+      "enonce": "(2008) Le béton est un matériau où l'effet Bauschinger se manifeste.",
+      "reponse": true,
+      "explication": "Comportement différent en traction et en compression (aussi la fonte).",
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+    },
+    {
+      "id": "mef-ann-019",
+      "type": "vrai-faux",
+      "difficulte": 1,
+      "enonce": "(2008) Le critère de Tresca est un critère énergétique.",
+      "reponse": false,
+      "explication": "C'est un critère en **contrainte** (cisaillement maximal). Von Mises est énergétique (énergie de distorsion).",
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+    },
+    {
+      "id": "mef-ann-020",
+      "type": "vrai-faux",
+      "difficulte": 1,
+      "enonce": "(2008) La température influe sur les propriétés mécaniques.",
+      "reponse": true,
+      "explication": "T↑ abaisse la courbe de traction (effet opposé à celui de la vitesse).",
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+    },
+    {
+      "id": "mef-ann-021",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "(2009) Les deux paramètres externes dont dépendent les caractéristiques mécaniques :",
+      "choix": [
+        "la température et la vitesse de déformation",
+        "la masse et le volume",
+        "la couleur et la forme",
+        "la pression et l'humidité"
+      ],
+      "reponse": 0,
+      "explication": "",
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+    },
+    {
+      "id": "mef-ann-022",
+      "type": "vrai-faux",
+      "difficulte": 1,
+      "enonce": "(2009) La grandeur technologique déterminée par la borne supérieure est toujours inférieure à la valeur réelle.",
+      "reponse": false,
+      "explication": "Toujours **supérieure** : estimation par excès.",
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+    },
+    {
+      "id": "mef-ann-023",
+      "type": "vrai-faux",
+      "difficulte": 1,
+      "enonce": "(2009) Un matériau fragile présente une zone de déformation plastique homogène importante.",
+      "reponse": false,
+      "explication": "Fragile : fissuration puis rupture dans le domaine élastique (céramiques), quasiment pas de plasticité.",
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+    },
+    {
+      "id": "mef-ann-024",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "(2010) Quel tenseur est responsable de la déformation plastique ?",
+      "choix": [
+        "le **déviateur** des contraintes $\\bar{\\bar s}$",
+        "la partie sphérique $\\sigma_m\\bar{\\bar I}$",
+        "le tenseur des déformations élastiques",
+        "le tenseur d'inertie"
+      ],
+      "reponse": 0,
+      "explication": "Une pression hydrostatique ne fait pas plastifier.",
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+    },
+    {
+      "id": "mef-ann-025",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "(2010) Forme générale de la surface d'écoulement dans l'espace des contraintes principales :",
+      "choix": [
+        "surface **convexe et fermée** (en section), cylindre d'axe (1,1,1)",
+        "sphère centrée à l'origine",
+        "plan",
+        "surface concave"
+      ],
+      "reponse": 0,
+      "explication": "",
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+    },
+    {
+      "id": "mef-ann-026",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "(2010) Dans un découpage en blocs rigides, la vitesse dans chaque bloc est :",
+      "choix": [
+        "constante (uniforme)",
+        "nulle",
+        "linéaire en x",
+        "aléatoire"
+      ],
+      "reponse": 0,
+      "explication": "D'où $\\dot{\\bar{\\bar\\varepsilon}}=0$ et $\\dot W_i=0$ dans les blocs.",
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+    },
+    {
+      "id": "mef-ann-027",
+      "type": "vrai-faux",
+      "difficulte": 1,
+      "enonce": "(2011) La puissance dissipée par unité de volume est le produit de la contrainte d'écoulement par la déformation généralisée.",
+      "reponse": false,
+      "explication": "Par la **vitesse** de déformation généralisée : $\\sigma_0\\,\\dot{\\bar\\varepsilon}$.",
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+    },
+    {
+      "id": "mef-ann-028",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "(2011) La méthode de la borne supérieure est introduite dans le cours à partir de l'exemple :",
+      "choix": [
+        "du poinçonnement",
+        "du laminage",
+        "de l'emboutissage",
+        "du tréfilage"
+      ],
+      "reponse": 0,
+      "explication": "$P\\le6\\sigma_0/\\sqrt3\\approx3{,}46\\sigma_0$.",
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+    },
+    {
+      "id": "mef-ann-029",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "(2011) Quelle courbe de traction dépend de la géométrie de l'éprouvette ?",
+      "choix": [
+        "la courbe conventionnelle $(R,e)$",
+        "la courbe rationnelle",
+        "la courbe d'écrouissage",
+        "aucune"
+      ],
+      "reponse": 0,
+      "explication": "",
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+    },
+    {
+      "id": "mef-ann-030",
+      "type": "texte-a-trous",
+      "difficulte": 1,
+      "enonce": "(2014) La ___ en plasticité est le pendant de la loi de Hooke en élasticité.",
+      "reponse": [
+        "loi d'écoulement",
+        "loi incrémentale",
+        "loi d'écoulement plastique"
+      ],
+      "explication": "Loi incrémentale $d\\varepsilon^p_{ij}=s_{ij}\\,d\\lambda$.",
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+    },
+    {
+      "id": "mef-ann-031",
+      "type": "vrai-faux",
+      "difficulte": 1,
+      "enonce": "(2014) Un matériau RPP a un domaine élastique.",
+      "reponse": false,
+      "explication": "Rigide parfaitement plastique : pas de domaine élastique.",
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+    },
+    {
+      "id": "mef-ann-032",
+      "type": "texte-a-trous",
+      "difficulte": 1,
+      "enonce": "(2014) La surface d'écoulement de Tresca est un cylindre dont l'axe pointe suivant la direction ___ dans le repère des contraintes principales.",
+      "reponse": [
+        "(1,1,1)",
+        "111",
+        "[111]",
+        "(1;1;1)",
+        "1,1,1"
+      ],
+      "explication": "Trissectrice des axes principaux (piège : la copie de 2014 a répondu « II »).",
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+    },
+    {
+      "id": "mef-ann-033",
+      "type": "texte-a-trous",
+      "difficulte": 1,
+      "enonce": "(2014) La loi d'Holomon relie la contrainte d'___ à la déformation plastique.",
+      "reponse": [
+        "écoulement",
+        "ecoulement"
+      ],
+      "explication": "$\\sigma_0=K\\varepsilon_p^{\\,n}$ : **contrainte d'écoulement** et **déformation plastique** (il faut être précis).",
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+    },
+    {
+      "id": "mef-ann-034",
+      "type": "vrai-faux",
+      "difficulte": 1,
+      "enonce": "(2015) Un état de contrainte qui se situe sur la surface d'écoulement est un état élastique.",
+      "reponse": false,
+      "explication": "$f=0$ : état **plastique**.",
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+    },
+    {
+      "id": "mef-ann-035",
+      "type": "vrai-faux",
+      "difficulte": 1,
+      "enonce": "(2015) Le modèle de couche limite permet de calculer la puissance dissipée aux interfaces métal-outil.",
+      "reponse": true,
+      "explication": "$\\dot W_f=\\iint m\\frac{\\sigma_0}{\\sqrt3}|\\Delta\\vec v|\\,d\\Sigma$.",
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+    },
+    {
+      "id": "mef-ann-036",
+      "type": "texte-a-trous",
+      "difficulte": 1,
+      "enonce": "(2015) Un matériau EPP est un matériau élastique ___ plastique.",
+      "reponse": [
+        "parfaitement"
+      ],
+      "explication": "Palier σ = σ₀ après le domaine élastique, pas d'écrouissage.",
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+    },
+    {
+      "id": "mef-ann-037",
+      "type": "texte-a-trous",
+      "difficulte": 1,
+      "enonce": "(2015) Le phénomène de déformation localisée qui apparaît lors d'un essai de traction s'appelle la ___.",
+      "reponse": [
+        "striction"
+      ],
+      "explication": "",
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+    },
+    {
+      "id": "mef-ann-038",
+      "type": "texte-a-trous",
+      "difficulte": 1,
+      "enonce": "(2012) Selon le critère de Tresca, la plastification se produit quand le ___ maximal atteint une valeur critique.",
+      "reponse": [
+        "cisaillement",
+        "cission",
+        "scission"
+      ],
+      "explication": "$\\tau_{max}=\\frac{\\sigma_I-\\sigma_{III}}2=\\frac{\\sigma_0}2$.",
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+    },
+    {
+      "id": "mef-ann-039",
+      "type": "vrai-faux",
+      "difficulte": 1,
+      "enonce": "(2012) La puissance des forces extérieures est égale à la puissance dissipée par déformation plastique.",
+      "reponse": false,
+      "explication": "$\\dot W_e=\\dot W_i+\\dot W_f+\\dot W_{elas}$ : il faut ajouter le frottement (l'élastique est négligeable).",
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+    },
+    {
+      "id": "mef-ann-040",
+      "type": "vrai-faux",
+      "difficulte": 1,
+      "enonce": "(2012) La déformation généralisée est un invariant.",
+      "reponse": true,
+      "explication": "Elle ne dépend pas du repère : c'est ce qui permet de résumer l'état de déformation en un nombre.",
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+    },
+    {
+      "id": "mef-ann-041",
+      "type": "texte-a-trous",
+      "difficulte": 1,
+      "enonce": "(2012) Pour obtenir un rayon final $R_f$, on fléchit la tôle avec un rayon $R$ ___ $R_f$ (« plus petit que » / « plus grand que »).",
+      "reponse": [
+        "plus petit que",
+        "inférieur à",
+        "<"
+      ],
+      "explication": "Le retour élastique augmente le rayon : $1/R_f=1/R-1/\\rho$.",
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+    },
+    {
+      "id": "mef-ann-042",
+      "type": "texte-a-trous",
+      "difficulte": 1,
+      "enonce": "(2013) La méthode de la borne supérieure peut s'appliquer dès que l'on connaît le champ des ___.",
+      "reponse": [
+        "vitesses",
+        "vitesse"
+      ],
+      "explication": "Champ cinématiquement admissible (incompressible + CL).",
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+    },
+    {
+      "id": "mef-ann-043",
+      "type": "texte-a-trous",
+      "difficulte": 1,
+      "enonce": "(2013) Le frittage est une étape de mise en forme des ___.",
+      "reponse": [
+        "poudres",
+        "poudre"
+      ],
+      "explication": "HP, SPS.",
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+    },
+    {
+      "id": "mef-ann-044",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "(2013) Le domaine plastique de la courbe de traction se scinde en :",
+      "choix": [
+        "déformation plastique homogène puis striction (déformation localisée)",
+        "élasticité puis plasticité",
+        "écrouissage puis adoucissement",
+        "traction puis compression"
+      ],
+      "reponse": 0,
+      "explication": "",
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+    },
+    {
+      "id": "mef-ann-045",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "(2009) Pour quelle raison la déformation plastique s'effectue-t-elle à volume constant ?",
+      "choix": [
+        "elle se fait par glissement de plans atomiques (mouvement de dislocations), qui ne change pas le volume",
+        "parce que la température est constante",
+        "parce que le module d'Young est constant",
+        "parce que la pression est nulle"
+      ],
+      "reponse": 0,
+      "explication": "",
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+    },
+    {
+      "id": "mef-ann-046",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Torsion pure $\\tau$ : selon **Tresca**, plastification pour $\\tau=$",
+      "choix": [
+        "$\\sigma_0/2$",
+        "$\\sigma_0/\\sqrt3$",
+        "$\\sigma_0$",
+        "$2\\sigma_0$"
+      ],
+      "reponse": 0,
+      "explication": "Valeurs propres τ, 0, −τ ⇒ 2τ = σ₀. Von Mises : σ₀/√3.",
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+    },
+    {
+      "id": "mef-ann-047",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Quel est l'état de contrainte **le plus difficile** à plastifier ?",
+      "choix": [
+        "compression triaxiale égale (hydrostatique) : jamais",
+        "traction uniaxiale",
+        "cisaillement pur",
+        "compression uniaxiale"
+      ],
+      "reponse": 0,
+      "explication": "Classement TD3 : cisaillement pur = traction/compression > compression + cisaillement > uniaxial = biaxial égal > hydrostatique.",
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+    }
+  ]
+}

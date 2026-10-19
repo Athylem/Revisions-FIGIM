@@ -16,6 +16,6 @@ Site d'entraînement aux cours de FIGIM 2A (QCM, questions de cours, exercices) 
 - Types (js/types/) : qcm, vrai-faux, texte-a-trous, numerique (tolérance relative, unité), carte (auto-évaluation 1 / ½ / 0), probleme (étapes qcm/numerique/carte/vrai-faux, note partielle).
 - Chaque banque a un `genre` : "cours" (fichiers ch*) ou "exercices" (fichiers ex*, exercices type DS). Types choisis par matière selon le format de son DS.
 - Générateurs Python : écrire les formules LaTeX en chaînes r"..." (sinon , 	… deviennent des caractères de contrôle ; le vérificateur les détecte).
-- Banques : Maths, Mise en forme, Polymères, Alliages non ferreux, Thermodynamique, Anglais (converti depuis ~/Projets/english-tenses-quiz/data.js). 593 questions.
+- Banques : Maths, Mise en forme, Polymères, Alliages non ferreux et ferreux, Thermodynamique, Transformation de phase, Méthodes d analyse, TP Métallurgie, Fonderie, Qualité, Anglais (converti depuis ~/Projets/english-tenses-quiz/data.js). 909 questions.
 - Après tout ajout de questions : `python outils/verifier.py` (valide + met à jour les chapitres dans matieres.json).
 - À faire : étape 3 (classement Supabase), autres matières (sources dans le vault `Cours/2A FIGIM/`, surtout des PDF d'annales).

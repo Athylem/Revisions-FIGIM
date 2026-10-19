@@ -409,6 +409,20 @@
           "questions": 19
         },
         {
+          "id": "ch5-annales-connaissances",
+          "nom": "Tests de connaissances 2005-2015 (QCM, vrai/faux, trous)",
+          "genre": "cours",
+          "fichier": "mise-en-forme/ch5-annales-connaissances.json",
+          "questions": 47
+        },
+        {
+          "id": "ch6-annales-a-rediger",
+          "nom": "Tests de connaissances : questions à rédiger",
+          "genre": "cours",
+          "fichier": "mise-en-forme/ch6-annales-a-rediger.json",
+          "questions": 15
+        },
+        {
           "id": "ex1-borne-superieure",
           "nom": "Borne supérieure (exercice du DS)",
           "genre": "exercices",
@@ -421,6 +435,27 @@
           "genre": "exercices",
           "fichier": "mise-en-forme/ex2-calculs-td.json",
           "questions": 10
+        },
+        {
+          "id": "ex3-borne-sup-variantes",
+          "nom": "Borne supérieure : variantes chiffrées",
+          "genre": "exercices",
+          "fichier": "mise-en-forme/ex3-borne-sup-variantes.json",
+          "questions": 10
+        },
+        {
+          "id": "ex4-flexion-volant-variantes",
+          "nom": "Flexion et volant : variantes chiffrées",
+          "genre": "exercices",
+          "fichier": "mise-en-forme/ex4-flexion-volant-variantes.json",
+          "questions": 7
+        },
+        {
+          "id": "ex5-traction-criteres-variantes",
+          "nom": "Traction, Hollomon, critères, déformations : entraînement",
+          "genre": "exercices",
+          "fichier": "mise-en-forme/ex5-traction-criteres-variantes.json",
+          "questions": 17
         }
       ]
     },

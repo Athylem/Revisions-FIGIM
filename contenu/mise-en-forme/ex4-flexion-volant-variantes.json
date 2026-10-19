@@ -1,0 +1,334 @@
+{
+  "chapitre": "Flexion et volant : variantes chiffrées",
+  "genre": "exercices",
+  "questions": [
+    {
+      "id": "mef-flv-001",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**Flexion élasto-plastique (variante TD2).** Tôle EPP, $E=200$ GPa, $\\sigma_0=300$ MPa, demi-épaisseur $e=1{,}5$ mm, rayon imposé $R=0{,}15$ m.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Rayon critique $R_c$ ?",
+          "reponse": 1.0,
+          "tolerance": 0.02,
+          "explication": "$R_c=eE/\\sigma_0$",
+          "unite": "m"
+        },
+        {
+          "type": "qcm",
+          "enonce": "La tôle plastifie-t-elle ?",
+          "choix": [
+            "oui (R < Rc)",
+            "non (R > Rc)"
+          ],
+          "reponse": 0,
+          "explication": "R/Rc = 0.15."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Demi-épaisseur de la zone élastique $e_1$ ?",
+          "reponse": 0.225,
+          "tolerance": 0.02,
+          "explication": "$e_1=e\\,R/R_c$",
+          "unite": "mm"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Rapport $M/M_e$ ?",
+          "reponse": 1.48875,
+          "tolerance": 0.02,
+          "explication": "$M=L\\sigma_0e^2[1-\\frac13(R/R_c)^2]$ et $M_e=\\frac23L\\sigma_0e^2$"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Rayon final après décharge $R_f$ ?",
+          "reponse": 0.193128,
+          "tolerance": 0.03,
+          "explication": "$\\rho=\\dfrac{2R_c}{3-(R/R_c)^2}$ puis $\\dfrac1{R_f}=\\dfrac1R-\\dfrac1\\rho$",
+          "unite": "m"
+        }
+      ]
+    },
+    {
+      "id": "mef-flv-002",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**Flexion élasto-plastique (variante TD2).** Tôle EPP, $E=200$ GPa, $\\sigma_0=800$ MPa, demi-épaisseur $e=2{,}0$ mm, rayon imposé $R=0{,}3$ m.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Rayon critique $R_c$ ?",
+          "reponse": 0.5,
+          "tolerance": 0.02,
+          "explication": "$R_c=eE/\\sigma_0$",
+          "unite": "m"
+        },
+        {
+          "type": "qcm",
+          "enonce": "La tôle plastifie-t-elle ?",
+          "choix": [
+            "oui (R < Rc)",
+            "non (R > Rc)"
+          ],
+          "reponse": 0,
+          "explication": "R/Rc = 0.60."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Demi-épaisseur de la zone élastique $e_1$ ?",
+          "reponse": 1.2,
+          "tolerance": 0.02,
+          "explication": "$e_1=e\\,R/R_c$",
+          "unite": "mm"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Rapport $M/M_e$ ?",
+          "reponse": 1.32,
+          "tolerance": 0.02,
+          "explication": "$M=L\\sigma_0e^2[1-\\frac13(R/R_c)^2]$ et $M_e=\\frac23L\\sigma_0e^2$"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Rayon final après décharge $R_f$ ?",
+          "reponse": 1.44231,
+          "tolerance": 0.03,
+          "explication": "$\\rho=\\dfrac{2R_c}{3-(R/R_c)^2}$ puis $\\dfrac1{R_f}=\\dfrac1R-\\dfrac1\\rho$",
+          "unite": "m"
+        }
+      ]
+    },
+    {
+      "id": "mef-flv-003",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**Flexion élasto-plastique (variante TD2).** Tôle EPP, $E=200$ GPa, $\\sigma_0=250$ MPa, demi-épaisseur $e=3{,}0$ mm, rayon imposé $R=0{,}5$ m.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Rayon critique $R_c$ ?",
+          "reponse": 2.4,
+          "tolerance": 0.02,
+          "explication": "$R_c=eE/\\sigma_0$",
+          "unite": "m"
+        },
+        {
+          "type": "qcm",
+          "enonce": "La tôle plastifie-t-elle ?",
+          "choix": [
+            "oui (R < Rc)",
+            "non (R > Rc)"
+          ],
+          "reponse": 0,
+          "explication": "R/Rc = 0.21."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Demi-épaisseur de la zone élastique $e_1$ ?",
+          "reponse": 0.625,
+          "tolerance": 0.02,
+          "explication": "$e_1=e\\,R/R_c$",
+          "unite": "mm"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Rapport $M/M_e$ ?",
+          "reponse": 1.4783,
+          "tolerance": 0.02,
+          "explication": "$M=L\\sigma_0e^2[1-\\frac13(R/R_c)^2]$ et $M_e=\\frac23L\\sigma_0e^2$"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Rayon final après décharge $R_f$ ?",
+          "reponse": 0.722521,
+          "tolerance": 0.03,
+          "explication": "$\\rho=\\dfrac{2R_c}{3-(R/R_c)^2}$ puis $\\dfrac1{R_f}=\\dfrac1R-\\dfrac1\\rho$",
+          "unite": "m"
+        }
+      ]
+    },
+    {
+      "id": "mef-flv-004",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**Flexion élasto-plastique (variante TD2).** Tôle EPP, $E=200$ GPa, $\\sigma_0=1200$ MPa, demi-épaisseur $e=1{,}0$ mm, rayon imposé $R=0{,}05$ m.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Rayon critique $R_c$ ?",
+          "reponse": 0.166667,
+          "tolerance": 0.02,
+          "explication": "$R_c=eE/\\sigma_0$",
+          "unite": "m"
+        },
+        {
+          "type": "qcm",
+          "enonce": "La tôle plastifie-t-elle ?",
+          "choix": [
+            "oui (R < Rc)",
+            "non (R > Rc)"
+          ],
+          "reponse": 0,
+          "explication": "R/Rc = 0.30."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Demi-épaisseur de la zone élastique $e_1$ ?",
+          "reponse": 0.3,
+          "tolerance": 0.02,
+          "explication": "$e_1=e\\,R/R_c$",
+          "unite": "mm"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Rapport $M/M_e$ ?",
+          "reponse": 1.455,
+          "tolerance": 0.02,
+          "explication": "$M=L\\sigma_0e^2[1-\\frac13(R/R_c)^2]$ et $M_e=\\frac23L\\sigma_0e^2$"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Rayon final après décharge $R_f$ ?",
+          "reponse": 0.0887311,
+          "tolerance": 0.03,
+          "explication": "$\\rho=\\dfrac{2R_c}{3-(R/R_c)^2}$ puis $\\dfrac1{R_f}=\\dfrac1R-\\dfrac1\\rho$",
+          "unite": "m"
+        }
+      ]
+    },
+    {
+      "id": "mef-flv-005",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**Volant en rotation (variante TD3).** Disque mince en alliage de titane : $\\sigma_0=900$ MPa, $\\rho=4500$ kg/m³, $\\nu=0{,}33$, $R=0{,}3$ m.",
+      "etapes": [
+        {
+          "type": "qcm",
+          "enonce": "Où commence la plastification ?",
+          "choix": [
+            "au centre (r = 0)",
+            "à la périphérie",
+            "à mi-rayon",
+            "partout en même temps"
+          ],
+          "reponse": 0,
+          "explication": "$\\sigma_{\\theta\\theta}$ et $\\sigma_{rr}$ sont maximales en r = 0."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Vitesse angulaire critique ?",
+          "reponse": 2310.56,
+          "tolerance": 0.02,
+          "explication": "$\\omega_c=\\dfrac1R\\sqrt{\\dfrac{8\\sigma_0}{(3+\\nu)\\rho}}$",
+          "unite": "rad/s"
+        },
+        {
+          "type": "numerique",
+          "enonce": "En tours par minute ?",
+          "reponse": 22064.2,
+          "tolerance": 0.02,
+          "explication": "$N=60\\omega/(2\\pi)$",
+          "unite": "tr/min"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Énergie maximale stockable par kg ?",
+          "reponse": 120.12,
+          "tolerance": 0.02,
+          "explication": "$E_c/m=\\dfrac{2\\sigma_0}{(3+\\nu)\\rho}$ : critère $\\sigma_0/\\rho$",
+          "unite": "kJ/kg"
+        }
+      ]
+    },
+    {
+      "id": "mef-flv-006",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**Volant en rotation (variante TD3).** Disque mince en acier à haute limite : $\\sigma_0=1000$ MPa, $\\rho=7800$ kg/m³, $\\nu=0{,}29$, $R=0{,}4$ m.",
+      "etapes": [
+        {
+          "type": "qcm",
+          "enonce": "Où commence la plastification ?",
+          "choix": [
+            "au centre (r = 0)",
+            "à la périphérie",
+            "à mi-rayon",
+            "partout en même temps"
+          ],
+          "reponse": 0,
+          "explication": "$\\sigma_{\\theta\\theta}$ et $\\sigma_{rr}$ sont maximales en r = 0."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Vitesse angulaire critique ?",
+          "reponse": 1395.85,
+          "tolerance": 0.02,
+          "explication": "$\\omega_c=\\dfrac1R\\sqrt{\\dfrac{8\\sigma_0}{(3+\\nu)\\rho}}$",
+          "unite": "rad/s"
+        },
+        {
+          "type": "numerique",
+          "enonce": "En tours par minute ?",
+          "reponse": 13329.4,
+          "tolerance": 0.02,
+          "explication": "$N=60\\omega/(2\\pi)$",
+          "unite": "tr/min"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Énergie maximale stockable par kg ?",
+          "reponse": 77.9362,
+          "tolerance": 0.02,
+          "explication": "$E_c/m=\\dfrac{2\\sigma_0}{(3+\\nu)\\rho}$ : critère $\\sigma_0/\\rho$",
+          "unite": "kJ/kg"
+        }
+      ]
+    },
+    {
+      "id": "mef-flv-007",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**Volant en rotation (variante TD3).** Disque mince en alliage d'aluminium 7075 : $\\sigma_0=450$ MPa, $\\rho=2800$ kg/m³, $\\nu=0{,}33$, $R=0{,}5$ m.",
+      "etapes": [
+        {
+          "type": "qcm",
+          "enonce": "Où commence la plastification ?",
+          "choix": [
+            "au centre (r = 0)",
+            "à la périphérie",
+            "à mi-rayon",
+            "partout en même temps"
+          ],
+          "reponse": 0,
+          "explication": "$\\sigma_{\\theta\\theta}$ et $\\sigma_{rr}$ sont maximales en r = 0."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Vitesse angulaire critique ?",
+          "reponse": 1242.74,
+          "tolerance": 0.02,
+          "explication": "$\\omega_c=\\dfrac1R\\sqrt{\\dfrac{8\\sigma_0}{(3+\\nu)\\rho}}$",
+          "unite": "rad/s"
+        },
+        {
+          "type": "numerique",
+          "enonce": "En tours par minute ?",
+          "reponse": 11867.3,
+          "tolerance": 0.02,
+          "explication": "$N=60\\omega/(2\\pi)$",
+          "unite": "tr/min"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Énergie maximale stockable par kg ?",
+          "reponse": 96.5251,
+          "tolerance": 0.02,
+          "explication": "$E_c/m=\\dfrac{2\\sigma_0}{(3+\\nu)\\rho}$ : critère $\\sigma_0/\\rho$",
+          "unite": "kJ/kg"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,522 @@
+{
+  "chapitre": "Traction, Hollomon, critères, déformations : entraînement",
+  "genre": "exercices",
+  "questions": [
+    {
+      "id": "mef-tcv-001",
+      "type": "probleme",
+      "difficulte": 1,
+      "enonce": "**Traction : conventionnelle → rationnelle → écrouissage.** Point mesuré : $R=350$ MPa, $e=0{,}12$ ; $E=70$ GPa.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Contrainte rationnelle σ ?",
+          "reponse": 392.0,
+          "tolerance": 0.01,
+          "explication": "$\\sigma=R(1+e)$",
+          "unite": "MPa"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Déformation rationnelle ε ?",
+          "reponse": 0.113329,
+          "tolerance": 0.01,
+          "explication": "$\\varepsilon=\\ln(1+e)$"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Déformation plastique $\\varepsilon_p$ ?",
+          "reponse": 0.107729,
+          "tolerance": 0.02,
+          "explication": "$\\varepsilon_p=\\varepsilon-\\sigma/E$"
+        }
+      ]
+    },
+    {
+      "id": "mef-tcv-002",
+      "type": "probleme",
+      "difficulte": 1,
+      "enonce": "**Traction : conventionnelle → rationnelle → écrouissage.** Point mesuré : $R=520$ MPa, $e=0{,}25$ ; $E=200$ GPa.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Contrainte rationnelle σ ?",
+          "reponse": 650.0,
+          "tolerance": 0.01,
+          "explication": "$\\sigma=R(1+e)$",
+          "unite": "MPa"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Déformation rationnelle ε ?",
+          "reponse": 0.223144,
+          "tolerance": 0.01,
+          "explication": "$\\varepsilon=\\ln(1+e)$"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Déformation plastique $\\varepsilon_p$ ?",
+          "reponse": 0.219894,
+          "tolerance": 0.02,
+          "explication": "$\\varepsilon_p=\\varepsilon-\\sigma/E$"
+        }
+      ]
+    },
+    {
+      "id": "mef-tcv-003",
+      "type": "probleme",
+      "difficulte": 1,
+      "enonce": "**Traction : conventionnelle → rationnelle → écrouissage.** Point mesuré : $R=180$ MPa, $e=0{,}08$ ; $E=110$ GPa.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Contrainte rationnelle σ ?",
+          "reponse": 194.4,
+          "tolerance": 0.01,
+          "explication": "$\\sigma=R(1+e)$",
+          "unite": "MPa"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Déformation rationnelle ε ?",
+          "reponse": 0.076961,
+          "tolerance": 0.01,
+          "explication": "$\\varepsilon=\\ln(1+e)$"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Déformation plastique $\\varepsilon_p$ ?",
+          "reponse": 0.0751938,
+          "tolerance": 0.02,
+          "explication": "$\\varepsilon_p=\\varepsilon-\\sigma/E$"
+        }
+      ]
+    },
+    {
+      "id": "mef-tcv-004",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**Loi d'Hollomon.** $\\sigma_0=K\\varepsilon_p^{\\,n}$ avec $K=530$ MPa et $n=0{,}26$ (élasticité négligée).",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Déformation rationnelle au début de la striction ?",
+          "reponse": 0.26,
+          "tolerance": 0.01,
+          "explication": "La striction débute pour $\\varepsilon=n$ (critère de Considère $d\\sigma/d\\varepsilon=\\sigma$)."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Contrainte vraie à la striction ?",
+          "reponse": 373.395,
+          "tolerance": 0.02,
+          "explication": "$K n^n$",
+          "unite": "MPa"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Résistance à la traction conventionnelle Rm ?",
+          "reponse": 287.907,
+          "tolerance": 0.02,
+          "explication": "$R_m=\\sigma/(1+e)=Kn^ne^{-n}$",
+          "unite": "MPa"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Allongement conventionnel uniforme A ?",
+          "reponse": 29.693,
+          "tolerance": 0.02,
+          "explication": "$e=e^{n}-1$",
+          "unite": "%"
+        }
+      ]
+    },
+    {
+      "id": "mef-tcv-005",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**Loi d'Hollomon.** $\\sigma_0=K\\varepsilon_p^{\\,n}$ avec $K=900$ MPa et $n=0{,}15$ (élasticité négligée).",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Déformation rationnelle au début de la striction ?",
+          "reponse": 0.15,
+          "tolerance": 0.01,
+          "explication": "La striction débute pour $\\varepsilon=n$ (critère de Considère $d\\sigma/d\\varepsilon=\\sigma$)."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Contrainte vraie à la striction ?",
+          "reponse": 677.105,
+          "tolerance": 0.02,
+          "explication": "$K n^n$",
+          "unite": "MPa"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Résistance à la traction conventionnelle Rm ?",
+          "reponse": 582.79,
+          "tolerance": 0.02,
+          "explication": "$R_m=\\sigma/(1+e)=Kn^ne^{-n}$",
+          "unite": "MPa"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Allongement conventionnel uniforme A ?",
+          "reponse": 16.1834,
+          "tolerance": 0.02,
+          "explication": "$e=e^{n}-1$",
+          "unite": "%"
+        }
+      ]
+    },
+    {
+      "id": "mef-tcv-006",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**Critères.** État de contraintes principales $(200,\\ -100,\\ 0)$ MPa (traction + compression), matériau de $\\sigma_0=250$ MPa.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Contrainte équivalente de Von Mises ?",
+          "reponse": 264.575,
+          "tolerance": 0.01,
+          "explication": "$\\sqrt{\\tfrac12[(\\sigma_I-\\sigma_{II})^2+(\\sigma_{II}-\\sigma_{III})^2+(\\sigma_{III}-\\sigma_I)^2]}$",
+          "unite": "MPa"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Contrainte équivalente de Tresca ?",
+          "reponse": 300.0,
+          "tolerance": 0.01,
+          "explication": "$\\sigma_I-\\sigma_{III}$",
+          "unite": "MPa"
+        },
+        {
+          "type": "qcm",
+          "enonce": "Selon Von Mises, l'état est :",
+          "choix": [
+            "plastique ou interdit",
+            "élastique"
+          ],
+          "reponse": 0,
+          "explication": "σ_eq = 265 MPa ≥ 250 MPa."
+        }
+      ]
+    },
+    {
+      "id": "mef-tcv-007",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**Critères.** État de contraintes principales $(300,\\ 300,\\ 0)$ MPa (biaxiale égale), matériau de $\\sigma_0=250$ MPa.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Contrainte équivalente de Von Mises ?",
+          "reponse": 300.0,
+          "tolerance": 0.01,
+          "explication": "$\\sqrt{\\tfrac12[(\\sigma_I-\\sigma_{II})^2+(\\sigma_{II}-\\sigma_{III})^2+(\\sigma_{III}-\\sigma_I)^2]}$",
+          "unite": "MPa"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Contrainte équivalente de Tresca ?",
+          "reponse": 300.0,
+          "tolerance": 0.01,
+          "explication": "$\\sigma_I-\\sigma_{III}$",
+          "unite": "MPa"
+        },
+        {
+          "type": "qcm",
+          "enonce": "Selon Von Mises, l'état est :",
+          "choix": [
+            "plastique ou interdit",
+            "élastique"
+          ],
+          "reponse": 0,
+          "explication": "σ_eq = 300 MPa ≥ 250 MPa."
+        }
+      ]
+    },
+    {
+      "id": "mef-tcv-008",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**Critères.** État de contraintes principales $(250,\\ 100,\\ -50)$ MPa (triaxial quelconque), matériau de $\\sigma_0=250$ MPa.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Contrainte équivalente de Von Mises ?",
+          "reponse": 259.808,
+          "tolerance": 0.01,
+          "explication": "$\\sqrt{\\tfrac12[(\\sigma_I-\\sigma_{II})^2+(\\sigma_{II}-\\sigma_{III})^2+(\\sigma_{III}-\\sigma_I)^2]}$",
+          "unite": "MPa"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Contrainte équivalente de Tresca ?",
+          "reponse": 300.0,
+          "tolerance": 0.01,
+          "explication": "$\\sigma_I-\\sigma_{III}$",
+          "unite": "MPa"
+        },
+        {
+          "type": "qcm",
+          "enonce": "Selon Von Mises, l'état est :",
+          "choix": [
+            "plastique ou interdit",
+            "élastique"
+          ],
+          "reponse": 0,
+          "explication": "σ_eq = 260 MPa ≥ 250 MPa."
+        }
+      ]
+    },
+    {
+      "id": "mef-tcv-009",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**Critères.** État de contraintes principales $(-150,\\ -150,\\ -150)$ MPa (hydrostatique), matériau de $\\sigma_0=250$ MPa.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Contrainte équivalente de Von Mises ?",
+          "reponse": 0.0,
+          "tolerance": 0.01,
+          "explication": "$\\sqrt{\\tfrac12[(\\sigma_I-\\sigma_{II})^2+(\\sigma_{II}-\\sigma_{III})^2+(\\sigma_{III}-\\sigma_I)^2]}$",
+          "unite": "MPa"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Contrainte équivalente de Tresca ?",
+          "reponse": 0.0,
+          "tolerance": 0.01,
+          "explication": "$\\sigma_I-\\sigma_{III}$",
+          "unite": "MPa"
+        },
+        {
+          "type": "qcm",
+          "enonce": "Selon Von Mises, l'état est :",
+          "choix": [
+            "élastique",
+            "plastique ou interdit"
+          ],
+          "reponse": 0,
+          "explication": "σ_eq = 0 MPa < 250 MPa."
+        }
+      ]
+    },
+    {
+      "id": "mef-tcv-010",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**Critères.** État de contraintes principales $(400,\\ 200,\\ 100)$ MPa (triaxial de traction), matériau de $\\sigma_0=250$ MPa.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Contrainte équivalente de Von Mises ?",
+          "reponse": 264.575,
+          "tolerance": 0.01,
+          "explication": "$\\sqrt{\\tfrac12[(\\sigma_I-\\sigma_{II})^2+(\\sigma_{II}-\\sigma_{III})^2+(\\sigma_{III}-\\sigma_I)^2]}$",
+          "unite": "MPa"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Contrainte équivalente de Tresca ?",
+          "reponse": 300.0,
+          "tolerance": 0.01,
+          "explication": "$\\sigma_I-\\sigma_{III}$",
+          "unite": "MPa"
+        },
+        {
+          "type": "qcm",
+          "enonce": "Selon Von Mises, l'état est :",
+          "choix": [
+            "plastique ou interdit",
+            "élastique"
+          ],
+          "reponse": 0,
+          "explication": "σ_eq = 265 MPa ≥ 250 MPa."
+        }
+      ]
+    },
+    {
+      "id": "mef-tcv-011",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**Déformation plastique.** Incréments principaux $\\varepsilon_{11}=0{,}02$, $\\varepsilon_{22}=-0{,}01$.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "$\\varepsilon_{33}$ pour que la déformation soit plastique ?",
+          "reponse": -0.01,
+          "tolerance": 0.01,
+          "explication": "Incompressibilité : trace nulle."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Déformation généralisée ?",
+          "reponse": 0.02,
+          "tolerance": 0.02,
+          "explication": "$\\bar\\varepsilon=\\sqrt{\\tfrac23\\sum\\varepsilon_{ij}^2}$"
+        }
+      ]
+    },
+    {
+      "id": "mef-tcv-012",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**Déformation plastique.** Incréments principaux $\\varepsilon_{11}=0{,}03$, $\\varepsilon_{22}=0{,}01$.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "$\\varepsilon_{33}$ pour que la déformation soit plastique ?",
+          "reponse": -0.04,
+          "tolerance": 0.01,
+          "explication": "Incompressibilité : trace nulle."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Déformation généralisée ?",
+          "reponse": 0.0416333,
+          "tolerance": 0.02,
+          "explication": "$\\bar\\varepsilon=\\sqrt{\\tfrac23\\sum\\varepsilon_{ij}^2}$"
+        }
+      ]
+    },
+    {
+      "id": "mef-tcv-013",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**Déformation plastique.** Incréments principaux $\\varepsilon_{11}=-0{,}04$, $\\varepsilon_{22}=0{,}01$.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "$\\varepsilon_{33}$ pour que la déformation soit plastique ?",
+          "reponse": 0.03,
+          "tolerance": 0.01,
+          "explication": "Incompressibilité : trace nulle."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Déformation généralisée ?",
+          "reponse": 0.0416333,
+          "tolerance": 0.02,
+          "explication": "$\\bar\\varepsilon=\\sqrt{\\tfrac23\\sum\\varepsilon_{ij}^2}$"
+        }
+      ]
+    },
+    {
+      "id": "mef-tcv-014",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**Compression plane homogène (TD1).** $\\vec v=\\frac{v_0}h(x,-y,0)$ avec $v_0=0{,}05$ m/s et $h=0{,}02$ m.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "$\\dot\\varepsilon_{xx}$ ?",
+          "reponse": 2.5,
+          "tolerance": 0.01,
+          "explication": "$\\partial v_x/\\partial x=v_0/h$",
+          "unite": "s⁻¹"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Vitesse de déformation généralisée ?",
+          "reponse": 2.88675,
+          "tolerance": 0.02,
+          "explication": "$\\dot{\\bar\\varepsilon}=\\frac2{\\sqrt3}\\frac{v_0}h$",
+          "unite": "s⁻¹"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Puissance plastique par m³ si $\\sigma_0=200$ MPa ?",
+          "reponse": 577.35,
+          "tolerance": 0.02,
+          "explication": "$\\sigma_0\\dot{\\bar\\varepsilon}$ (MPa·s⁻¹ = MW/m³)",
+          "unite": "MW/m³"
+        }
+      ]
+    },
+    {
+      "id": "mef-tcv-015",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**Compression plane homogène (TD1).** $\\vec v=\\frac{v_0}h(x,-y,0)$ avec $v_0=0{,}2$ m/s et $h=0{,}1$ m.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "$\\dot\\varepsilon_{xx}$ ?",
+          "reponse": 2.0,
+          "tolerance": 0.01,
+          "explication": "$\\partial v_x/\\partial x=v_0/h$",
+          "unite": "s⁻¹"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Vitesse de déformation généralisée ?",
+          "reponse": 2.3094,
+          "tolerance": 0.02,
+          "explication": "$\\dot{\\bar\\varepsilon}=\\frac2{\\sqrt3}\\frac{v_0}h$",
+          "unite": "s⁻¹"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Puissance plastique par m³ si $\\sigma_0=200$ MPa ?",
+          "reponse": 461.88,
+          "tolerance": 0.02,
+          "explication": "$\\sigma_0\\dot{\\bar\\varepsilon}$ (MPa·s⁻¹ = MW/m³)",
+          "unite": "MW/m³"
+        }
+      ]
+    },
+    {
+      "id": "mef-tcv-016",
+      "type": "probleme",
+      "difficulte": 1,
+      "enonce": "**Élasticité : coefficients de Lamé.** $E=210$ GPa, $\\nu=0{,}3$.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "μ ?",
+          "reponse": 80.7692,
+          "tolerance": 0.01,
+          "explication": "$\\mu=\\dfrac{E}{2(1+\\nu)}$",
+          "unite": "GPa"
+        },
+        {
+          "type": "numerique",
+          "enonce": "λ ?",
+          "reponse": 121.154,
+          "tolerance": 0.01,
+          "explication": "$\\lambda=\\dfrac{E\\nu}{(1+\\nu)(1-2\\nu)}$",
+          "unite": "GPa"
+        }
+      ]
+    },
+    {
+      "id": "mef-tcv-017",
+      "type": "probleme",
+      "difficulte": 1,
+      "enonce": "**Élasticité : coefficients de Lamé.** $E=70$ GPa, $\\nu=0{,}33$.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "μ ?",
+          "reponse": 26.3158,
+          "tolerance": 0.01,
+          "explication": "$\\mu=\\dfrac{E}{2(1+\\nu)}$",
+          "unite": "GPa"
+        },
+        {
+          "type": "numerique",
+          "enonce": "λ ?",
+          "reponse": 51.0836,
+          "tolerance": 0.01,
+          "explication": "$\\lambda=\\dfrac{E\\nu}{(1+\\nu)(1-2\\nu)}$",
+          "unite": "GPa"
+        }
+      ]
+    }
+  ]
+}

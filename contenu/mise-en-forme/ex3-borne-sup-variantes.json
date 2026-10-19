@@ -1,0 +1,349 @@
+{
+  "chapitre": "Borne supérieure : variantes chiffrées",
+  "genre": "exercices",
+  "questions": [
+    {
+      "id": "mef-bsv-001",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**Forgeage d'un lopin (variante DS 2015).** $\\sigma_0=180$ MPa, $a/h=4$, 4 blocs triangulaires, deux matrices à $v_0$.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Vitesse horizontale $u$ des blocs latéraux, en unités de $v_0$ ?",
+          "reponse": 8.0,
+          "tolerance": 0.01,
+          "explication": "$u=\\dfrac{2a}{h}v_0$ (continuité de la composante normale sur la diagonale)"
+        },
+        {
+          "type": "numerique",
+          "enonce": "$|\\Delta\\vec v_{12}|/v_0$ ?",
+          "reponse": 8.06226,
+          "tolerance": 0.01,
+          "explication": "$\\sqrt{u^2+v_0^2}/v_0=\\sqrt{(2a/h)^2+1}$"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Pression de forgeage P (borne supérieure) ?",
+          "reponse": 844.375,
+          "tolerance": 0.02,
+          "explication": "$P\\le\\dfrac{\\sigma_0}{\\sqrt3}\\left(\\dfrac{2a}h+\\dfrac h{2a}\\right)$",
+          "unite": "MPa"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Rapport P / (P minimal possible avec ce découpage) ?",
+          "reponse": 4.0625,
+          "tolerance": 0.02,
+          "explication": "Minimum en $2a/h=1$ : $P_{min}=2\\sigma_0/\\sqrt3$. Plus le lopin est plat, plus le découpage en 4 blocs surestime."
+        }
+      ]
+    },
+    {
+      "id": "mef-bsv-002",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**Forgeage d'un lopin (variante DS 2015).** $\\sigma_0=250$ MPa, $a/h=2$, 4 blocs triangulaires, deux matrices à $v_0$.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Vitesse horizontale $u$ des blocs latéraux, en unités de $v_0$ ?",
+          "reponse": 4.0,
+          "tolerance": 0.01,
+          "explication": "$u=\\dfrac{2a}{h}v_0$ (continuité de la composante normale sur la diagonale)"
+        },
+        {
+          "type": "numerique",
+          "enonce": "$|\\Delta\\vec v_{12}|/v_0$ ?",
+          "reponse": 4.12311,
+          "tolerance": 0.01,
+          "explication": "$\\sqrt{u^2+v_0^2}/v_0=\\sqrt{(2a/h)^2+1}$"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Pression de forgeage P (borne supérieure) ?",
+          "reponse": 613.435,
+          "tolerance": 0.02,
+          "explication": "$P\\le\\dfrac{\\sigma_0}{\\sqrt3}\\left(\\dfrac{2a}h+\\dfrac h{2a}\\right)$",
+          "unite": "MPa"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Rapport P / (P minimal possible avec ce découpage) ?",
+          "reponse": 2.125,
+          "tolerance": 0.02,
+          "explication": "Minimum en $2a/h=1$ : $P_{min}=2\\sigma_0/\\sqrt3$. Plus le lopin est plat, plus le découpage en 4 blocs surestime."
+        }
+      ]
+    },
+    {
+      "id": "mef-bsv-003",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**Forgeage d'un lopin (variante DS 2015).** $\\sigma_0=300$ MPa, $a/h=5$, 4 blocs triangulaires, deux matrices à $v_0$.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Vitesse horizontale $u$ des blocs latéraux, en unités de $v_0$ ?",
+          "reponse": 10.0,
+          "tolerance": 0.01,
+          "explication": "$u=\\dfrac{2a}{h}v_0$ (continuité de la composante normale sur la diagonale)"
+        },
+        {
+          "type": "numerique",
+          "enonce": "$|\\Delta\\vec v_{12}|/v_0$ ?",
+          "reponse": 10.0499,
+          "tolerance": 0.01,
+          "explication": "$\\sqrt{u^2+v_0^2}/v_0=\\sqrt{(2a/h)^2+1}$"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Pression de forgeage P (borne supérieure) ?",
+          "reponse": 1749.37,
+          "tolerance": 0.02,
+          "explication": "$P\\le\\dfrac{\\sigma_0}{\\sqrt3}\\left(\\dfrac{2a}h+\\dfrac h{2a}\\right)$",
+          "unite": "MPa"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Rapport P / (P minimal possible avec ce découpage) ?",
+          "reponse": 5.05,
+          "tolerance": 0.02,
+          "explication": "Minimum en $2a/h=1$ : $P_{min}=2\\sigma_0/\\sqrt3$. Plus le lopin est plat, plus le découpage en 4 blocs surestime."
+        }
+      ]
+    },
+    {
+      "id": "mef-bsv-004",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**Forgeage d'un lopin (variante DS 2015).** $\\sigma_0=150$ MPa, $a/h=10$, 4 blocs triangulaires, deux matrices à $v_0$.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Vitesse horizontale $u$ des blocs latéraux, en unités de $v_0$ ?",
+          "reponse": 20.0,
+          "tolerance": 0.01,
+          "explication": "$u=\\dfrac{2a}{h}v_0$ (continuité de la composante normale sur la diagonale)"
+        },
+        {
+          "type": "numerique",
+          "enonce": "$|\\Delta\\vec v_{12}|/v_0$ ?",
+          "reponse": 20.025,
+          "tolerance": 0.01,
+          "explication": "$\\sqrt{u^2+v_0^2}/v_0=\\sqrt{(2a/h)^2+1}$"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Pression de forgeage P (borne supérieure) ?",
+          "reponse": 1736.38,
+          "tolerance": 0.02,
+          "explication": "$P\\le\\dfrac{\\sigma_0}{\\sqrt3}\\left(\\dfrac{2a}h+\\dfrac h{2a}\\right)$",
+          "unite": "MPa"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Rapport P / (P minimal possible avec ce découpage) ?",
+          "reponse": 10.025,
+          "tolerance": 0.02,
+          "explication": "Minimum en $2a/h=1$ : $P_{min}=2\\sigma_0/\\sqrt3$. Plus le lopin est plat, plus le découpage en 4 blocs surestime."
+        }
+      ]
+    },
+    {
+      "id": "mef-bsv-005",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**Forgeage d'un lopin (variante DS 2015).** $\\sigma_0=400$ MPa, $a/h=1{,}5$, 4 blocs triangulaires, deux matrices à $v_0$.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Vitesse horizontale $u$ des blocs latéraux, en unités de $v_0$ ?",
+          "reponse": 3.0,
+          "tolerance": 0.01,
+          "explication": "$u=\\dfrac{2a}{h}v_0$ (continuité de la composante normale sur la diagonale)"
+        },
+        {
+          "type": "numerique",
+          "enonce": "$|\\Delta\\vec v_{12}|/v_0$ ?",
+          "reponse": 3.16228,
+          "tolerance": 0.01,
+          "explication": "$\\sqrt{u^2+v_0^2}/v_0=\\sqrt{(2a/h)^2+1}$"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Pression de forgeage P (borne supérieure) ?",
+          "reponse": 769.8,
+          "tolerance": 0.02,
+          "explication": "$P\\le\\dfrac{\\sigma_0}{\\sqrt3}\\left(\\dfrac{2a}h+\\dfrac h{2a}\\right)$",
+          "unite": "MPa"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Rapport P / (P minimal possible avec ce découpage) ?",
+          "reponse": 1.66667,
+          "tolerance": 0.02,
+          "explication": "Minimum en $2a/h=1$ : $P_{min}=2\\sigma_0/\\sqrt3$. Plus le lopin est plat, plus le découpage en 4 blocs surestime."
+        }
+      ]
+    },
+    {
+      "id": "mef-bsv-006",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**Poinçonnement.** Massif de $\\sigma_0=250$ MPa, poinçon plan de largeur $2a=20$ mm (déformation plane, profondeur 1 m), découpage en triangles isocèles.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Pression limite (borne supérieure) ?",
+          "reponse": 866.025,
+          "tolerance": 0.02,
+          "explication": "$P\\le\\dfrac{6\\sigma_0}{\\sqrt3}$",
+          "unite": "MPa"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Force par mètre de profondeur ?",
+          "reponse": 17.3205,
+          "tolerance": 0.02,
+          "explication": "$F=P\\cdot2a\\cdot1\\ \\mathrm{m}$ (MPa × m² = MN)",
+          "unite": "MN/m"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Écart relatif avec la solution exacte de Prandtl $(2+\\pi)\\sigma_0/\\sqrt3$ ?",
+          "reponse": 16.6954,
+          "tolerance": 0.02,
+          "explication": "La borne est au-dessus de la valeur exacte, comme prévu.",
+          "unite": "%"
+        }
+      ]
+    },
+    {
+      "id": "mef-bsv-007",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**Poinçonnement.** Massif de $\\sigma_0=400$ MPa, poinçon plan de largeur $2a=10$ mm (déformation plane, profondeur 1 m), découpage en triangles isocèles.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Pression limite (borne supérieure) ?",
+          "reponse": 1385.64,
+          "tolerance": 0.02,
+          "explication": "$P\\le\\dfrac{6\\sigma_0}{\\sqrt3}$",
+          "unite": "MPa"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Force par mètre de profondeur ?",
+          "reponse": 13.8564,
+          "tolerance": 0.02,
+          "explication": "$F=P\\cdot2a\\cdot1\\ \\mathrm{m}$ (MPa × m² = MN)",
+          "unite": "MN/m"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Écart relatif avec la solution exacte de Prandtl $(2+\\pi)\\sigma_0/\\sqrt3$ ?",
+          "reponse": 16.6954,
+          "tolerance": 0.02,
+          "explication": "La borne est au-dessus de la valeur exacte, comme prévu.",
+          "unite": "%"
+        }
+      ]
+    },
+    {
+      "id": "mef-bsv-008",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**Filage plan de rapport 2.** Alliage d'aluminium à chaud, $\\sigma_0=120$ MPa, conteneur de hauteur $2h=40$ mm, filière plate, lubrification parfaite. Le piston avance à $v$.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Vitesse de sortie du profilé, en unités de v ?",
+          "reponse": 2.0,
+          "tolerance": 0.001,
+          "explication": "Conservation du débit : $v\\cdot2h=v_s\\cdot h$"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Somme $\\sum S|\\Delta v|$ sur toutes les lignes, en unités de $hv$ ?",
+          "reponse": 6.0,
+          "tolerance": 0.001,
+          "explication": "3hv par moitié (TE, TL, LE, LB, BE), ×2."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Pression de filage (borne supérieure) ?",
+          "reponse": 207.846,
+          "tolerance": 0.02,
+          "explication": "$P\\cdot2hv\\le\\frac{\\sigma_0}{\\sqrt3}6hv$ ⇒ $P\\le\\sqrt3\\,\\sigma_0$",
+          "unite": "MPa"
+        }
+      ]
+    },
+    {
+      "id": "mef-bsv-009",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**Filage plan de rapport 2.** Alliage d'aluminium à chaud, $\\sigma_0=60$ MPa, conteneur de hauteur $2h=100$ mm, filière plate, lubrification parfaite. Le piston avance à $v$.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Vitesse de sortie du profilé, en unités de v ?",
+          "reponse": 2.0,
+          "tolerance": 0.001,
+          "explication": "Conservation du débit : $v\\cdot2h=v_s\\cdot h$"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Somme $\\sum S|\\Delta v|$ sur toutes les lignes, en unités de $hv$ ?",
+          "reponse": 6.0,
+          "tolerance": 0.001,
+          "explication": "3hv par moitié (TE, TL, LE, LB, BE), ×2."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Pression de filage (borne supérieure) ?",
+          "reponse": 103.923,
+          "tolerance": 0.02,
+          "explication": "$P\\cdot2hv\\le\\frac{\\sigma_0}{\\sqrt3}6hv$ ⇒ $P\\le\\sqrt3\\,\\sigma_0$",
+          "unite": "MPa"
+        }
+      ]
+    },
+    {
+      "id": "mef-bsv-010",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**Discontinuités et hodographe.** Deux blocs rigides séparés par une ligne inclinée à 45°. Le bloc 1 descend verticalement à $v_0$, le bloc 2 se déplace horizontalement.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Vitesse du bloc 2, en unités de $v_0$ ?",
+          "reponse": 1.0,
+          "tolerance": 0.01,
+          "explication": "Normale à la ligne $\\vec n=(1,1)/\\sqrt2$ : $\\vec v_1\\cdot\\vec n=-v_0/\\sqrt2=\\vec v_2\\cdot\\vec n=-u/\\sqrt2$ ⇒ $u=v_0$ (bloc 2 vers $-x$)."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Saut de vitesse $|\\Delta\\vec v|/v_0$ ?",
+          "reponse": 1.41421,
+          "tolerance": 0.01,
+          "explication": "$\\sqrt{v_0^2+v_0^2}$, parallèle à la ligne."
+        },
+        {
+          "type": "qcm",
+          "enonce": "Puissance dissipée par unité de longueur de la ligne :",
+          "choix": [
+            "$\\dfrac{\\sigma_0}{\\sqrt3}\\,v_0\\sqrt2$",
+            "$\\sigma_0 v_0$",
+            "$\\dfrac{\\sigma_0}{\\sqrt3}v_0$",
+            "0"
+          ],
+          "reponse": 0,
+          "explication": "$\\dot W_S=\\frac{\\sigma_0}{\\sqrt3}|\\Delta v|\\,S$."
+        }
+      ]
+    }
+  ]
+}
