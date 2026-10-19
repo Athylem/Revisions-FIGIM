@@ -1,0 +1,204 @@
+{
+  "chapitre": "Laplace : équations différentielles",
+  "genre": "exercices",
+  "questions": [
+    {
+      "id": "maths-exl-001",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**EDL d'ordre 1.** Résoudre $y'+2y=e^{-t}$, $y(0)=0$.",
+      "etapes": [
+        {
+          "type": "qcm",
+          "enonce": "Transformée de l'équation :",
+          "choix": [
+            "$pY+2Y=\\frac1{p+1}$",
+            "$pY-1+2Y=\\frac1{p+1}$",
+            "$pY+2Y=\\frac1{p-1}$",
+            "$Y+2pY=\\frac1{p+1}$"
+          ],
+          "reponse": 0
+        },
+        {
+          "type": "qcm",
+          "enonce": "Décomposition de $Y=\\frac1{(p+1)(p+2)}$ :",
+          "choix": [
+            "$\\frac1{p+1}-\\frac1{p+2}$",
+            "$\\frac1{p+2}-\\frac1{p+1}$",
+            "$\\frac12\\left(\\frac1{p+1}+\\frac1{p+2}\\right)$",
+            "$\\frac1{p+1}+\\frac1{p+2}$"
+          ],
+          "reponse": 0
+        },
+        {
+          "type": "numerique",
+          "enonce": "Valeur de $y(1)$ ? Donne une valeur décimale (ex. 1,2337).",
+          "reponse": 0.232544,
+          "tolerance": 0.01,
+          "explication": "$y=e^{-t}-e^{-2t}$."
+        }
+      ],
+      "source": "Cours/Mathematique/Fiche de révision DS.md"
+    },
+    {
+      "id": "maths-exl-002",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**Problème de Cauchy (cours).** $y''+y=\\sin(2t)$, $y(0)=0$, $y'(0)=1$.",
+      "etapes": [
+        {
+          "type": "qcm",
+          "enonce": "Transformée de l'équation :",
+          "choix": [
+            "$p^2Y-1+Y=\\frac2{p^2+4}$",
+            "$p^2Y+Y=\\frac2{p^2+4}$",
+            "$p^2Y-p+Y=\\frac2{p^2+4}$",
+            "$p^2Y-1+Y=\\frac{p}{p^2+4}$"
+          ],
+          "reponse": 0,
+          "explication": "$\\mathcal Ly''=p^2Y-py(0)-y'(0)=p^2Y-1$."
+        },
+        {
+          "type": "qcm",
+          "enonce": "Décomposition de $Y=\\frac{p^2+6}{(p^2+4)(p^2+1)}$ :",
+          "choix": [
+            "$\\frac53\\frac1{p^2+1}-\\frac23\\frac1{p^2+4}$",
+            "$\\frac1{p^2+1}+\\frac1{p^2+4}$",
+            "$\\frac23\\frac1{p^2+1}-\\frac53\\frac1{p^2+4}$",
+            "$\\frac{5}{p^2+1}-\\frac{2}{p^2+4}$"
+          ],
+          "reponse": 0
+        },
+        {
+          "type": "qcm",
+          "enonce": "Solution :",
+          "choix": [
+            "$y=\\frac53\\sin t-\\frac13\\sin(2t)$",
+            "$y=\\frac53\\sin t-\\frac23\\sin(2t)$",
+            "$y=\\sin t$",
+            "$y=\\frac53\\cos t-\\frac13\\cos(2t)$"
+          ],
+          "reponse": 0,
+          "explication": "$\\mathcal L^{-1}\\left[\\frac2{p^2+4}\\right]=\\sin(2t)$, donc $\\frac23\\frac1{p^2+4}\\to\\frac13\\sin(2t)$."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Valeur de $y(\\frac\\pi2)$ ? Donne une valeur décimale (ex. 1,2337).",
+          "reponse": 1.66667,
+          "tolerance": 0.01
+        }
+      ],
+      "source": "Cours/Mathematique/Fiche de révision DS.md"
+    },
+    {
+      "id": "maths-exl-003",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**EDL d'ordre 2 homogène.** $y''-3y'+2y=0$, $y(0)=0$, $y'(0)=1$.",
+      "etapes": [
+        {
+          "type": "qcm",
+          "enonce": "$Y(p)$ vaut :",
+          "choix": [
+            "$\\frac1{p^2-3p+2}$",
+            "$\\frac{p}{p^2-3p+2}$",
+            "$\\frac{p-3}{p^2-3p+2}$",
+            "$\\frac1{p^2+3p+2}$"
+          ],
+          "reponse": 0,
+          "explication": "$p^2Y-1-3pY+2Y=0$."
+        },
+        {
+          "type": "qcm",
+          "enonce": "Décomposition :",
+          "choix": [
+            "$\\frac1{p-2}-\\frac1{p-1}$",
+            "$\\frac1{p-1}-\\frac1{p-2}$",
+            "$\\frac1{p-1}+\\frac1{p-2}$",
+            "$\\frac2{p-2}-\\frac1{p-1}$"
+          ],
+          "reponse": 0
+        },
+        {
+          "type": "numerique",
+          "enonce": "Valeur de $y(1)$ ? Donne une valeur décimale (ex. 1,2337).",
+          "reponse": 4.67077,
+          "tolerance": 0.01,
+          "explication": "$y=e^{2t}-e^{t}$."
+        }
+      ],
+      "source": "Cours/Mathematique/Fiche de révision DS.md"
+    },
+    {
+      "id": "maths-exl-004",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**Réponse à un échelon (RC).** $s'+s=H(t)$, $s(0)=0$ (τ = 1).",
+      "etapes": [
+        {
+          "type": "qcm",
+          "enonce": "$S(p)$ vaut :",
+          "choix": [
+            "$\\frac1{p(p+1)}$",
+            "$\\frac1{p+1}$",
+            "$\\frac{p}{p+1}$",
+            "$\\frac1{p^2(p+1)}$"
+          ],
+          "reponse": 0,
+          "explication": "$\\mathcal LH=\\frac1p$, fonction de transfert $\\frac1{p+1}$."
+        },
+        {
+          "type": "qcm",
+          "enonce": "Solution :",
+          "choix": [
+            "$s=1-e^{-t}$",
+            "$s=e^{-t}$",
+            "$s=1+e^{-t}$",
+            "$s=t\\,e^{-t}$"
+          ],
+          "reponse": 0
+        },
+        {
+          "type": "numerique",
+          "enonce": "Instant où $s=\\frac12$ ? Donne une valeur décimale (ex. 1,2337).",
+          "reponse": 0.693147,
+          "tolerance": 0.01,
+          "explication": "$e^{-t}=\\frac12$."
+        }
+      ],
+      "source": "Cours/Mathematique/Fiche de révision DS.md"
+    },
+    {
+      "id": "maths-exl-005",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**Transformées avec retard (cours).** $\\phi(t)=t\\,e^{2t}H(t-1)$.",
+      "etapes": [
+        {
+          "type": "qcm",
+          "enonce": "On réécrit $\\phi$ comme :",
+          "choix": [
+            "$e^2\\left((t-1)e^{2(t-1)}+e^{2(t-1)}\\right)H(t-1)$",
+            "$(t-1)e^{2t}H(t-1)$",
+            "$t\\,e^{2(t-1)}H(t-1)$",
+            "$e^{-2}(t-1)e^{2t}H(t)$"
+          ],
+          "reponse": 0
+        },
+        {
+          "type": "qcm",
+          "enonce": "$\\mathcal L\\phi(p)$ vaut :",
+          "choix": [
+            "$\\frac{p-1}{(p-2)^2}e^{-(p-2)}$",
+            "$\\frac{1}{(p-2)^2}e^{-p}$",
+            "$\\frac{p-1}{(p-2)^2}e^{-p}$",
+            "$\\frac{e^{-(p-2)}}{p-2}$"
+          ],
+          "reponse": 0,
+          "explication": "$e^2e^{-p}\\left(\\frac1{(p-2)^2}+\\frac1{p-2}\\right)$."
+        }
+      ],
+      "source": "Cours/Mathematique/Fiche de révision DS.md"
+    }
+  ]
+}

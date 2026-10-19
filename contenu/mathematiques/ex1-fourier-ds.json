@@ -1,0 +1,229 @@
+{
+  "chapitre": "Fourier : séries, Dirichlet, Parseval",
+  "genre": "exercices",
+  "questions": [
+    {
+      "id": "maths-exf-001",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**$|t|$ (TD1 Ex2 / TD2 Ex1).** $f$ $2\\pi$-périodique, $f(t)=|t|$ sur $[-\\pi,\\pi]$.",
+      "etapes": [
+        {
+          "type": "qcm",
+          "enonce": "Parité de $f$ et conséquence :",
+          "choix": [
+            "paire : $b_n=0$",
+            "impaire : $a_n=0$",
+            "ni paire ni impaire",
+            "paire : $a_n=0$"
+          ],
+          "reponse": 0
+        },
+        {
+          "type": "numerique",
+          "enonce": "Valeur de $a_0$ ? Donne une valeur décimale (ex. 1,2337).",
+          "reponse": 1.5708,
+          "tolerance": 0.01,
+          "explication": "$a_0=\\frac1\\pi\\int_0^\\pi t\\,dt=\\frac\\pi2$."
+        },
+        {
+          "type": "qcm",
+          "enonce": "Pour $n\\ge1$, $a_n=\\frac2\\pi\\int_0^\\pi t\\cos(nt)\\,dt$ vaut :",
+          "choix": [
+            "$\\frac{2((-1)^n-1)}{\\pi n^2}$ : $0$ si $n$ pair, $-\\frac4{\\pi n^2}$ si $n$ impair",
+            "$\\frac{2(-1)^n}{n^2}$",
+            "$\\frac{4}{\\pi n^2}$ pour tout $n$",
+            "$0$ pour tout $n$"
+          ],
+          "reponse": 0,
+          "explication": "IPP avec $\\int_0^\\pi t\\cos(nt)\\,dt=\\frac{(-1)^n-1}{n^2}$."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Dirichlet en $t=0$ : $\\sum_{n\\ge0}\\frac1{(2n+1)^2}=$ ? Donne une valeur décimale (ex. 1,2337).",
+          "reponse": 1.2337,
+          "tolerance": 0.01,
+          "explication": "$0=\\frac\\pi2-\\frac4\\pi\\sum\\frac1{(2n+1)^2}$ ⇒ $\\frac{\\pi^2}8$."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Parseval : $\\sum_{n\\ge0}\\frac1{(2n+1)^4}=$ ? Donne une valeur décimale (ex. 1,2337).",
+          "reponse": 1.01468,
+          "tolerance": 0.01,
+          "explication": "$\\frac{\\pi^2}3=\\frac{\\pi^2}4+\\frac8{\\pi^2}S$ ⇒ $S=\\frac{\\pi^4}{96}$."
+        }
+      ],
+      "source": "Cours/Mathematique/Fiche de révision DS.md"
+    },
+    {
+      "id": "maths-exf-002",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**Créneau (TD1 Ex1).** $f=1$ sur $[0,\\pi[$, $f=0$ sur $[\\pi,2\\pi[$, $2\\pi$-périodique.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Valeur de $a_0$ ?",
+          "reponse": 0.5,
+          "tolerance": 0.01,
+          "explication": "Moyenne de $f$."
+        },
+        {
+          "type": "qcm",
+          "enonce": "Coefficients non nuls ($n\\ge1$) :",
+          "choix": [
+            "$b_{2n+1}=\\frac{2}{\\pi(2n+1)}$ (les $a_n$ sont nuls)",
+            "$a_{2n+1}=\\frac{2}{\\pi(2n+1)}$",
+            "$b_n=\\frac1n$",
+            "$b_{2n}=\\frac{2}{\\pi n}$"
+          ],
+          "reponse": 0,
+          "explication": "$b_n=\\frac1\\pi\\int_0^\\pi\\sin(nt)\\,dt=\\frac{1-(-1)^n}{\\pi n}$."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Que vaut $Sf(0)$ ?",
+          "reponse": 0.5,
+          "tolerance": 0.01,
+          "explication": "Discontinuité : $\\frac{f(0^+)+f(0^-)}2=\\frac{1+0}2$. **Pas** $f(0)=1$."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Dirichlet en $t=\\frac\\pi2$ : $\\sum_{n\\ge0}\\frac{(-1)^n}{2n+1}=$ ? Donne une valeur décimale (ex. 1,2337).",
+          "reponse": 0.785398,
+          "tolerance": 0.01,
+          "explication": "$1=\\frac12+\\frac2\\pi\\sum\\frac{(-1)^n}{2n+1}$."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Parseval : $\\sum_{n\\ge0}\\frac1{(2n+1)^2}=$ ? Donne une valeur décimale (ex. 1,2337).",
+          "reponse": 1.2337,
+          "tolerance": 0.01,
+          "explication": "$\\frac12=\\frac14+\\frac2{\\pi^2}\\sum\\frac1{(2n+1)^2}$ (ne pas oublier $a_0^2$)."
+        }
+      ],
+      "source": "Cours/Mathematique/Fiche de révision DS.md"
+    },
+    {
+      "id": "maths-exf-003",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**Dent de scie.** $f$ impaire, $2\\pi$-périodique, $f(t)=t$ sur $]-\\pi,\\pi[$.",
+      "etapes": [
+        {
+          "type": "qcm",
+          "enonce": "$b_n$ vaut :",
+          "choix": [
+            "$\\frac{2(-1)^{n+1}}{n}$",
+            "$\\frac{2(-1)^n}{n}$",
+            "$\\frac{(-1)^{n+1}}{n}$",
+            "$\\frac{4}{n^2}$"
+          ],
+          "reponse": 0
+        },
+        {
+          "type": "numerique",
+          "enonce": "Dirichlet en $\\frac\\pi2$ : $\\sum_{k\\ge0}\\frac{(-1)^k}{2k+1}=$ ? Donne une valeur décimale (ex. 1,2337).",
+          "reponse": 0.785398,
+          "tolerance": 0.01
+        },
+        {
+          "type": "numerique",
+          "enonce": "Parseval : $\\sum_{n\\ge1}\\frac1{n^2}=$ ? Donne une valeur décimale (ex. 1,2337).",
+          "reponse": 1.64493,
+          "tolerance": 0.01,
+          "explication": "$\\frac{\\pi^2}3=\\frac12\\sum\\frac4{n^2}$."
+        },
+        {
+          "type": "qcm",
+          "enonce": "Que vaut $Sf(\\pi)$ ?",
+          "choix": [
+            "$0$",
+            "$\\pi$",
+            "$-\\pi$",
+            "$\\frac\\pi2$"
+          ],
+          "reponse": 0,
+          "explication": "Saut de $\\pi$ à $-\\pi$ : la moyenne vaut 0 (tous les sinus sont nuls en $\\pi$)."
+        }
+      ],
+      "source": "Cours/Mathematique/Fiche de révision DS.md"
+    },
+    {
+      "id": "maths-exf-004",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**$t^2$ (cours).** $t^2=\\frac{\\pi^2}3+4\\sum_{n\\ge1}\\frac{(-1)^n}{n^2}\\cos(nt)$ sur $[-\\pi,\\pi]$.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Dirichlet en $t=\\pi$ : $\\sum_{n\\ge1}\\frac1{n^2}=$ ? Donne une valeur décimale (ex. 1,2337).",
+          "reponse": 1.64493,
+          "tolerance": 0.01
+        },
+        {
+          "type": "numerique",
+          "enonce": "Dirichlet en $t=0$ : $\\sum_{n\\ge1}\\frac{(-1)^n}{n^2}=$ ? Donne une valeur décimale (ex. 1,2337).",
+          "reponse": -0.822467,
+          "tolerance": 0.01
+        },
+        {
+          "type": "numerique",
+          "enonce": "Parseval : $\\sum_{n\\ge1}\\frac1{n^4}=$ ? Donne une valeur décimale (ex. 1,2337).",
+          "reponse": 1.08232,
+          "tolerance": 0.01,
+          "explication": "$\\frac{\\pi^4}9+8\\sum\\frac1{n^4}=\\frac{\\pi^4}5$."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Astuce pair/impair : $\\sum_{n\\ge0}\\frac1{(2n+1)^4}=$ ? Donne une valeur décimale (ex. 1,2337).",
+          "reponse": 1.01468,
+          "tolerance": 0.01,
+          "explication": "$\\left(1-\\frac1{16}\\right)\\frac{\\pi^4}{90}$."
+        }
+      ],
+      "source": "Cours/Mathematique/Fiche de révision DS.md"
+    },
+    {
+      "id": "maths-exf-005",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**$|\\sin t|$ (TD1 Ex3).** $Sf(t)=\\frac2\\pi-\\frac4\\pi\\sum_{n\\ge1}\\frac{\\cos(2nt)}{4n^2-1}$.",
+      "etapes": [
+        {
+          "type": "qcm",
+          "enonce": "Hypothèses pour appliquer Dirichlet partout :",
+          "choix": [
+            "$f$ est $2\\pi$-périodique, $\\mathcal C^1$ par morceaux et continue",
+            "$f$ est dérivable partout",
+            "$f$ est impaire",
+            "$f$ est bornée"
+          ],
+          "reponse": 0
+        },
+        {
+          "type": "numerique",
+          "enonce": "Dirichlet en $t=0$ : $\\sum_{n\\ge1}\\frac1{4n^2-1}=$ ?",
+          "reponse": 0.5,
+          "tolerance": 0.01,
+          "explication": "Se retrouve par télescopage."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Dirichlet en $t=\\frac\\pi2$ : $\\sum_{n\\ge1}\\frac{(-1)^n}{4n^2-1}=$ ? Donne une valeur décimale (ex. 1,2337).",
+          "reponse": -0.285398,
+          "tolerance": 0.01,
+          "explication": "$\\cos(n\\pi)=(-1)^n$ : $1=\\frac2\\pi-\\frac4\\pi S$."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Parseval : $\\sum_{n\\ge1}\\frac1{(4n^2-1)^2}=$ ? Donne une valeur décimale (ex. 1,2337).",
+          "reponse": 0.11685,
+          "tolerance": 0.01,
+          "explication": "$\\frac12=\\frac4{\\pi^2}+\\frac8{\\pi^2}S$."
+        }
+      ],
+      "source": "Cours/Mathematique/Fiche de révision DS.md"
+    }
+  ]
+}

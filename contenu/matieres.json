@@ -255,6 +255,27 @@
           "genre": "cours",
           "fichier": "mathematiques/ch3-laplace.json",
           "questions": 20
+        },
+        {
+          "id": "ch4-enonces-methodes",
+          "nom": "Énoncés et méthodes à savoir rédiger",
+          "genre": "cours",
+          "fichier": "mathematiques/ch4-enonces-methodes.json",
+          "questions": 7
+        },
+        {
+          "id": "ex1-fourier-ds",
+          "nom": "Fourier : séries, Dirichlet, Parseval",
+          "genre": "exercices",
+          "fichier": "mathematiques/ex1-fourier-ds.json",
+          "questions": 5
+        },
+        {
+          "id": "ex2-laplace-ds",
+          "nom": "Laplace : équations différentielles",
+          "genre": "exercices",
+          "fichier": "mathematiques/ex2-laplace-ds.json",
+          "questions": 5
         }
       ]
     },
