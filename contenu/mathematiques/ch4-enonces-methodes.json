@@ -4,59 +4,108 @@
   "questions": [
     {
       "id": "maths-cartes-001",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "Énoncer le théorème de Dirichlet (hypothèses comprises).",
-      "reponse": "Si $f$ est $2\\pi$-périodique et **$\\mathcal C^1$ par morceaux**, sa série de Fourier converge simplement sur $\\mathbb R$ et $Sf(t)=\\frac{f(t^+)+f(t^-)}2$. En un point de **continuité**, $Sf(t)=f(t)$.",
-      "source": "Cours/Mathematique/Fiche de révision DS.md"
+      "source": "Cours/Mathematique/Fiche de révision DS.md",
+      "choix": [
+        "$f$ $2\\pi$-périodique et $\\mathcal C^1$ par morceaux ⇒ $Sf(t)=\\frac{f(t^+)+f(t^-)}2$ partout, et $Sf(t)=f(t)$ aux points de continuité",
+        "$f$ continue ⇒ $Sf(t)=f(t)$ pour tout $t$",
+        "$f$ $2\\pi$-périodique et intégrable ⇒ $Sf=f$ partout",
+        "$f$ $\\mathcal C^1$ par morceaux ⇒ $Sf(t)=f(t^+)$ aux discontinuités"
+      ],
+      "reponse": 0,
+      "modele": "Si $f$ est $2\\pi$-périodique et **$\\mathcal C^1$ par morceaux**, sa série de Fourier converge simplement sur $\\mathbb R$ et $Sf(t)=\\frac{f(t^+)+f(t^-)}2$. En un point de **continuité**, $Sf(t)=f(t)$."
     },
     {
       "id": "maths-cartes-002",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "Énoncer la formule de Parseval (convention du cours).",
-      "reponse": "$f$ $2\\pi$-périodique et $\\mathcal C^1$ par morceaux : $\\frac1{2\\pi}\\int_{-\\pi}^{\\pi}|f|^2=|a_0|^2+\\frac12\\sum_{n\\ge1}(|a_n|^2+|b_n|^2)$. $a_0^2$ **sans** ½.",
-      "source": "Cours/Mathematique/Fiche de révision DS.md"
+      "source": "Cours/Mathematique/Fiche de révision DS.md",
+      "choix": [
+        "$\\frac1{2\\pi}\\int_{-\\pi}^{\\pi}|f|^2=|a_0|^2+\\frac12\\sum_{n\\ge1}(|a_n|^2+|b_n|^2)$",
+        "$\\frac1{2\\pi}\\int_{-\\pi}^{\\pi}|f|^2=\\frac{|a_0|^2}2+\\sum_{n\\ge1}(|a_n|^2+|b_n|^2)$",
+        "$\\frac1{\\pi}\\int_{-\\pi}^{\\pi}|f|^2=|a_0|^2+\\sum_{n\\ge1}(|a_n|^2+|b_n|^2)$",
+        "$\\frac1{2\\pi}\\int_{-\\pi}^{\\pi}|f|^2=\\frac12\\sum_{n\\ge0}(|a_n|^2+|b_n|^2)$"
+      ],
+      "reponse": 0,
+      "modele": "$f$ $2\\pi$-périodique et $\\mathcal C^1$ par morceaux : $\\frac1{2\\pi}\\int_{-\\pi}^{\\pi}|f|^2=|a_0|^2+\\frac12\\sum_{n\\ge1}(|a_n|^2+|b_n|^2)$. $a_0^2$ **sans** ½."
     },
     {
       "id": "maths-cartes-003",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "Donner les formules de $a_0$, $a_n$, $b_n$, et leurs simplifications si $f$ est paire ou impaire.",
-      "reponse": "$a_0=\\frac1{2\\pi}\\int_{-\\pi}^{\\pi}f$ (moyenne), $a_n=\\frac1\\pi\\int f\\cos(nt)$, $b_n=\\frac1\\pi\\int f\\sin(nt)$.\nPaire : $b_n=0$, $a_n=\\frac2\\pi\\int_0^\\pi f\\cos(nt)$.\nImpaire : $a_n=0$, $b_n=\\frac2\\pi\\int_0^\\pi f\\sin(nt)$.",
-      "source": "Cours/Mathematique/Fiche de révision DS.md"
+      "source": "Cours/Mathematique/Fiche de révision DS.md",
+      "choix": [
+        "$a_0=\\frac1{2\\pi}\\int_{-\\pi}^{\\pi}f$, $a_n=\\frac1\\pi\\int f\\cos nt$, $b_n=\\frac1\\pi\\int f\\sin nt$ ; paire : $b_n=0$ ; impaire : $a_n=0$",
+        "$a_0=\\frac1\\pi\\int_{-\\pi}^{\\pi}f$, $a_n=\\frac1{2\\pi}\\int f\\cos nt$ ; paire : $a_n=0$",
+        "$a_0=\\frac1{2\\pi}\\int f$ ; paire : $a_n=0$ et $b_n=\\frac2\\pi\\int_0^\\pi f\\sin nt$",
+        "$a_n=\\frac1\\pi\\int f\\sin nt$, $b_n=\\frac1\\pi\\int f\\cos nt$ ; impaire : $b_n=0$"
+      ],
+      "reponse": 0,
+      "modele": "$a_0=\\frac1{2\\pi}\\int_{-\\pi}^{\\pi}f$ (moyenne), $a_n=\\frac1\\pi\\int f\\cos(nt)$, $b_n=\\frac1\\pi\\int f\\sin(nt)$.\nPaire : $b_n=0$, $a_n=\\frac2\\pi\\int_0^\\pi f\\cos(nt)$.\nImpaire : $a_n=0$, $b_n=\\frac2\\pi\\int_0^\\pi f\\sin(nt)$."
     },
     {
       "id": "maths-cartes-004",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "Méthode pour calculer une somme numérique avec Fourier : quel outil choisir ?",
-      "reponse": "Même puissance de $n$ que les coefficients → **Dirichlet** en un point bien choisi ($0$, $\\pi$, $\\frac\\pi2$).\nPuissance doublée ($\\frac1{n^2}$ → $\\frac1{n^4}$) → **Parseval**.\nPuis réécriture pair/impair et astuce $S_k=\\sum\\frac1{(2n+1)^k}+\\frac1{2^k}S_k$.",
-      "source": "Cours/Mathematique/Fiche de révision DS.md"
+      "source": "Cours/Mathematique/Fiche de révision DS.md",
+      "choix": [
+        "Même puissance de $n$ que les coefficients → Dirichlet en un point bien choisi ; puissance doublée → Parseval",
+        "Toujours Parseval, quelle que soit la somme",
+        "Puissance doublée → Dirichlet ; même puissance → Parseval",
+        "Dirichlet uniquement en un point de discontinuité"
+      ],
+      "reponse": 0,
+      "modele": "Même puissance de $n$ que les coefficients → **Dirichlet** en un point bien choisi ($0$, $\\pi$, $\\frac\\pi2$).\nPuissance doublée ($\\frac1{n^2}$ → $\\frac1{n^4}$) → **Parseval**.\nPuis réécriture pair/impair et astuce $S_k=\\sum\\frac1{(2n+1)^k}+\\frac1{2^k}S_k$."
     },
     {
       "id": "maths-cartes-005",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "Méthode pour résoudre une équation différentielle linéaire avec Laplace.",
-      "reponse": "1. Appliquer $\\mathcal L$ (linéarité + $\\mathcal Lf'=pF-f(0)$, $\\mathcal Lf''=p^2F-pf(0)-f'(0)$).\n2. Isoler $Y(p)$.\n3. Décomposer en éléments simples.\n4. Lire chaque terme dans la table.\n5. Vérifier (conditions initiales + équation).",
-      "source": "Cours/Mathematique/Fiche de révision DS.md"
+      "source": "Cours/Mathematique/Fiche de révision DS.md",
+      "choix": [
+        "Appliquer $\\mathcal L$ ($\\mathcal Lf'=pF-f(0)$…), isoler $Y(p)$, décomposer en éléments simples, lire la table, vérifier",
+        "Résoudre d'abord l'équation homogène puis appliquer $\\mathcal L$ à la solution",
+        "Appliquer $\\mathcal L$ avec $\\mathcal Lf'=pF$ (sans condition initiale), puis dériver $Y(p)$",
+        "Décomposer $f$ en série de Fourier puis identifier les coefficients"
+      ],
+      "reponse": 0,
+      "modele": "1. Appliquer $\\mathcal L$ (linéarité + $\\mathcal Lf'=pF-f(0)$, $\\mathcal Lf''=p^2F-pf(0)-f'(0)$).\n2. Isoler $Y(p)$.\n3. Décomposer en éléments simples.\n4. Lire chaque terme dans la table.\n5. Vérifier (conditions initiales + équation)."
     },
     {
       "id": "maths-cartes-006",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "Citer les 5 pièges classiques du DS de maths.",
-      "reponse": "• $\\frac{a_0}2$ au lieu de $a_0$, ou oublier $a_0^2$ dans Parseval.\n• Oublier le ½ devant $\\sum(a_n^2+b_n^2)$.\n• Dirichlet en un point de discontinuité sans prendre la moyenne.\n• Ne pas citer les hypothèses ($2\\pi$-périodique, $\\mathcal C^1$ par morceaux, continuité en $t_0$).\n• Somme des impairs qui démarre à $n=1$ au lieu de $n=0$.\n• Laplace : oublier les conditions initiales.",
-      "source": "Cours/Mathematique/Fiche de révision DS.md"
+      "source": "Cours/Mathematique/Fiche de révision DS.md",
+      "choix": [
+        "$a_0/2$ au lieu de $a_0$, oubli du ½ devant $\\sum(a_n^2+b_n^2)$, Dirichlet en un point de discontinuité sans la moyenne, hypothèses non citées, somme des impairs commençant à $n=1$",
+        "Oubli de la constante d'intégration et erreurs de signe uniquement",
+        "Confondre série et transformée de Fourier ; oublier les unités",
+        "Utiliser $\\mathcal C^1$ par morceaux au lieu de continue ; démarrer les sommes à $n=0$"
+      ],
+      "reponse": 0,
+      "modele": "• $\\frac{a_0}2$ au lieu de $a_0$, ou oublier $a_0^2$ dans Parseval.\n• Oublier le ½ devant $\\sum(a_n^2+b_n^2)$.\n• Dirichlet en un point de discontinuité sans prendre la moyenne.\n• Ne pas citer les hypothèses ($2\\pi$-périodique, $\\mathcal C^1$ par morceaux, continuité en $t_0$).\n• Somme des impairs qui démarre à $n=1$ au lieu de $n=0$.\n• Laplace : oublier les conditions initiales."
     },
     {
       "id": "maths-cartes-007",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 1,
       "enonce": "Rédiger : « On applique Dirichlet en $t_0=0$ » pour $f(t)=|t|$. Que faut-il écrire ?",
-      "reponse": "« $f$ est $2\\pi$-périodique, $\\mathcal C^1$ par morceaux et **continue en 0**, donc d'après le théorème de Dirichlet $Sf(0)=f(0)=0$. » Puis on remplace dans la série.",
-      "source": "Cours/Mathematique/Fiche de révision DS.md"
+      "source": "Cours/Mathematique/Fiche de révision DS.md",
+      "choix": [
+        "« $f$ est $2\\pi$-périodique, $\\mathcal C^1$ par morceaux et continue en 0, donc d'après Dirichlet $Sf(0)=f(0)=0$ »",
+        "« D'après Dirichlet, $Sf(0)=f(0)$ » sans autre justification",
+        "« $f$ est paire donc $Sf(0)=a_0$ »",
+        "« $f$ est discontinue en 0 donc $Sf(0)=\\frac{f(0^+)+f(0^-)}2$ »"
+      ],
+      "reponse": 0,
+      "modele": "« $f$ est $2\\pi$-périodique, $\\mathcal C^1$ par morceaux et **continue en 0**, donc d'après le théorème de Dirichlet $Sf(0)=f(0)=0$. » Puis on remplace dans la série."
     }
   ]
 }

@@ -1,14 +1,15 @@
 // Problème type DS : un énoncé commun puis des étapes successives (chacune est une question
 // numérique, QCM ou carte). Chaque étape est corrigée avant de passer à la suivante ;
-// la note finale est la fraction d'étapes réussies.
+// la note finale est la fraction d'étapes réussies. Les étapes QCM se font en rédaction
+// d'abord (on écrit sa réponse avant de voir les propositions).
 
 import { ecrire } from "../texte.js";
-import * as qcm from "./qcm.js";
 import * as numerique from "./numerique.js";
 import * as carte from "./carte.js";
 import * as vraiFaux from "./vrai-faux.js";
+import * as redaction from "./redaction.js";
 
-const ETAPES = { "qcm": qcm, "numerique": numerique, "carte": carte, "vrai-faux": vraiFaux };
+const ETAPES = { "qcm": redaction, "redaction": redaction, "numerique": numerique, "carte": carte, "vrai-faux": vraiFaux };
 
 export function afficher(question, zone, repondre) {
   const total = question.etapes.length;

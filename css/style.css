@@ -77,7 +77,7 @@ h2 { margin: 2rem 0 0.75rem; font-size: 1.05rem; text-transform: uppercase; lett
 .centre { max-width: 440px; margin: 3rem auto 0; text-align: center; }
 
 form { display: flex; gap: 0.5rem; margin-top: 1rem; flex-wrap: wrap; }
-input {
+input, .brouillon {
   flex: 1 1 180px;
   font: inherit;
   padding: 0.65rem 0.8rem;
@@ -201,3 +201,6 @@ button.secondaire { background: var(--surface); color: var(--texte); border: 1px
 .etape-titre { margin: 0 0 0.6rem; overflow-x: auto; }
 .etape > .discret { margin-top: 0.6rem; }
 .etape > button { margin-top: 0.8rem; }
+
+.brouillon { display: block; width: 100%; box-sizing: border-box; resize: vertical; margin-bottom: 0.6rem; }
+.brouillon[readonly] { opacity: 0.8; }

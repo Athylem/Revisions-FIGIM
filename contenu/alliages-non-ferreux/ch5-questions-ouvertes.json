@@ -4,59 +4,108 @@
   "questions": [
     {
       "id": "anf-cartes-001",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 1,
       "enonce": "T1 = trempe rapide, T2 = trempe + recuit court. Que voit-on en DRX et pourquoi ?",
-      "reponse": "T1 : **une seule phase** = solution solide sursaturée (la trempe fige la phase de haute température, hors équilibre).\nT2 : **deux phases** = la diffusion pendant le recuit fait précipiter le soluté (vers l'équilibre du diagramme).",
-      "source": "Cours/Alliage non fereux/DS Alliages non ferreux - Sujet & corrigé.md"
+      "source": "Cours/Alliage non fereux/DS Alliages non ferreux - Sujet & corrigé.md",
+      "choix": [
+        "T1 : une seule phase (solution solide sursaturée figée par la trempe) ; T2 : deux phases (précipitation pendant le recuit)",
+        "T1 : deux phases ; T2 : une seule phase car le recuit redissout les précipités",
+        "Les deux montrent les mêmes pics : la DRX ne voit pas les précipités",
+        "T1 : phase amorphe (pas de pics) ; T2 : une phase cristalline"
+      ],
+      "reponse": 0,
+      "modele": "T1 : **une seule phase** = solution solide sursaturée (la trempe fige la phase de haute température, hors équilibre).\nT2 : **deux phases** = la diffusion pendant le recuit fait précipiter le soluté (vers l'équilibre du diagramme)."
     },
     {
       "id": "anf-cartes-002",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 1,
       "enonce": "Pourquoi les précipités sont-ils sphériques ? Que deviennent-ils après laminage ?",
-      "reponse": "La sphère minimise l'énergie d'interface (isotrope). Après laminage, ils s'allongent en **aiguilles** dans la direction de laminage → matériau **anisotrope**.",
-      "source": "Cours/Alliage non fereux/DS Alliages non ferreux - Sujet & corrigé.md"
+      "source": "Cours/Alliage non fereux/DS Alliages non ferreux - Sujet & corrigé.md",
+      "choix": [
+        "La sphère minimise l'énergie d'interface ; après laminage, ils s'allongent en aiguilles dans le sens de laminage (matériau anisotrope)",
+        "La sphère minimise l'énergie élastique ; après laminage, ils se dissolvent",
+        "Ils sont sphériques à cause de la gravité ; le laminage les aplatit en disques perpendiculaires au sens de laminage",
+        "Par hasard de la germination ; le laminage ne les modifie pas"
+      ],
+      "reponse": 0,
+      "modele": "La sphère minimise l'énergie d'interface (isotrope). Après laminage, ils s'allongent en **aiguilles** dans la direction de laminage → matériau **anisotrope**."
     },
     {
       "id": "anf-cartes-003",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "Pourquoi le traitement T2 conduit-il mieux que T1 dans le sens de laminage ?",
-      "reponse": "Le Mn a précipité : la matrice ne contient plus que ~3 % Mn (Nordheim ↓). Les aiguilles de Mn résistif n'occupent que ~14 % du volume et sont « en parallèle ». En plus, les précipités durcissent.",
-      "source": "Cours/Alliage non fereux/DS Alliages non ferreux - Sujet & corrigé.md"
+      "source": "Cours/Alliage non fereux/DS Alliages non ferreux - Sujet & corrigé.md",
+      "choix": [
+        "La matrice est appauvrie en Mn (Nordheim : résistivité plus faible) et les aiguilles résistives, peu nombreuses, sont en parallèle dans le sens du courant",
+        "Le recuit augmente la teneur en Mn de la matrice, qui conduit mieux",
+        "Les précipités de Mn conduisent mieux que la matrice d'aluminium",
+        "T2 a plus de dislocations, qui facilitent le passage des électrons"
+      ],
+      "reponse": 0,
+      "modele": "Le Mn a précipité : la matrice ne contient plus que ~3 % Mn (Nordheim ↓). Les aiguilles de Mn résistif n'occupent que ~14 % du volume et sont « en parallèle ». En plus, les précipités durcissent."
     },
     {
       "id": "anf-cartes-004",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "Le rhénium des superalliages : y a-t-il un risque ? (DS Q2.4)",
-      "reponse": "Oui, **matière première critique** : très rare (~1 ppb, ~50 t/an), **sous-produit** du Mo/Cu (production non pilotable), offre concentrée (Chili ~50 %), **prix volatil**, ~80 % de la demande = superalliages. Techniquement : très dense, phases TCP. Parades : alliages pauvres en Re, recyclage.",
-      "source": "Cours/Alliage non fereux/DS Alliages non ferreux - Sujet & corrigé.md"
+      "source": "Cours/Alliage non fereux/DS Alliages non ferreux - Sujet & corrigé.md",
+      "choix": [
+        "Oui : matière première critique, très rare, sous-produit du Mo/Cu, offre concentrée (Chili), prix volatil ; parades : alliages pauvres en Re, recyclage",
+        "Non : le rhénium est abondant et produit en grande quantité pour les superalliages",
+        "Oui, uniquement parce qu'il est radioactif",
+        "Non, car on peut toujours le remplacer par du fer sans perte de propriétés"
+      ],
+      "reponse": 0,
+      "modele": "Oui, **matière première critique** : très rare (~1 ppb, ~50 t/an), **sous-produit** du Mo/Cu (production non pilotable), offre concentrée (Chili ~50 %), **prix volatil**, ~80 % de la demande = superalliages. Techniquement : très dense, phases TCP. Parades : alliages pauvres en Re, recyclage."
     },
     {
       "id": "anf-cartes-005",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 1,
       "enonce": "Pourquoi chercher des alliages qui résistent au fluage à plus haute température ?",
-      "reponse": "Carnot : $\\eta=1-T_c/T_h$ augmente avec $T_h$ → moins de carburant et de CO₂ (même +0,1 point compte sur une flotte et 20 ans).",
-      "source": "Cours/Alliage non fereux/DS Alliages non ferreux - Sujet & corrigé.md"
+      "source": "Cours/Alliage non fereux/DS Alliages non ferreux - Sujet & corrigé.md",
+      "choix": [
+        "Carnot : $\\eta=1-T_c/T_h$ augmente avec $T_h$ ⇒ moins de carburant et de CO₂",
+        "Pour réduire la masse des pièces de turbine",
+        "Car le rendement baisse quand $T_h$ augmente, il faut donc compenser",
+        "Pour diminuer le bruit des moteurs"
+      ],
+      "reponse": 0,
+      "modele": "Carnot : $\\eta=1-T_c/T_h$ augmente avec $T_h$ → moins de carburant et de CO₂ (même +0,1 point compte sur une flotte et 20 ans)."
     },
     {
       "id": "anf-cartes-006",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 1,
       "enonce": "Citer les leviers pour réduire le CO₂ de la production d'aluminium.",
-      "reponse": "Électricité décarbonée (l'**indirect** domine, ~80 %), **anodes inertes** (dégagent O₂), **recyclage** (5 % de l'énergie primaire).",
-      "source": "Cours/Alliage non fereux/DS Alliages non ferreux - Sujet & corrigé.md"
+      "source": "Cours/Alliage non fereux/DS Alliages non ferreux - Sujet & corrigé.md",
+      "choix": [
+        "Électricité décarbonée (l'indirect domine), anodes inertes (dégagent O₂), recyclage (5 % de l'énergie primaire)",
+        "Remplacer l'électrolyse par une réduction au carbone en haut fourneau",
+        "Augmenter la température de l'électrolyse et utiliser plus d'anodes en carbone",
+        "Réduire uniquement le transport de la bauxite"
+      ],
+      "reponse": 0,
+      "modele": "Électricité décarbonée (l'**indirect** domine, ~80 %), **anodes inertes** (dégagent O₂), **recyclage** (5 % de l'énergie primaire)."
     },
     {
       "id": "anf-cartes-007",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 1,
       "enonce": "Les trois stades du fluage et les mécanismes.",
-      "reponse": "Primaire (vitesse décroissante, écrouissage), secondaire (vitesse constante, équilibre écrouissage/restauration), tertiaire (cavités, striction, rupture). Mécanismes : montée des dislocations, diffusion (Nabarro-Herring, Coble), glissement aux joints.",
-      "source": "Cours/Alliage non fereux/DS Alliages non ferreux - Sujet & corrigé.md"
+      "source": "Cours/Alliage non fereux/DS Alliages non ferreux - Sujet & corrigé.md",
+      "choix": [
+        "Primaire (vitesse décroissante), secondaire (vitesse constante, écrouissage = restauration), tertiaire (cavités, rupture) ; montée des dislocations, diffusion (Nabarro-Herring, Coble), glissement aux joints",
+        "Élastique, plastique, rupture ; mécanisme : maclage uniquement",
+        "Primaire (vitesse constante), secondaire (vitesse croissante), tertiaire (vitesse nulle)",
+        "Un seul stade à vitesse constante, dû à la précipitation"
+      ],
+      "reponse": 0,
+      "modele": "Primaire (vitesse décroissante, écrouissage), secondaire (vitesse constante, équilibre écrouissage/restauration), tertiaire (cavités, striction, rupture). Mécanismes : montée des dislocations, diffusion (Nabarro-Herring, Coble), glissement aux joints."
     }
   ]
 }

@@ -4,123 +4,228 @@
   "questions": [
     {
       "id": "mef-annc-001",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "(2015) Sur un schéma simple, montrer qu'à un état de contrainte plastique on peut associer plusieurs états de déformation.",
-      "reponse": "Courbe EPP (ou RPP) : sur le palier σ = σ₀, **tous les points** ont la même contrainte mais des déformations différentes (A, B, C…). Connaître σ ne permet pas de connaître ε : il n'y a pas de relation biunivoque, d'où la loi **incrémentale** qui suit le chemin de chargement.",
-      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx",
+      "choix": [
+        "Sur le palier d'une courbe EPP/RPP, tous les points ont la même contrainte σ₀ mais des déformations différentes ⇒ pas de relation biunivoque, loi incrémentale",
+        "Sur la partie élastique, une contrainte donne plusieurs déformations selon la vitesse",
+        "C'est faux : une contrainte plastique donne toujours une seule déformation",
+        "Sur une courbe EPE, la contrainte décroît après la striction"
+      ],
+      "reponse": 0,
+      "modele": "Courbe EPP (ou RPP) : sur le palier σ = σ₀, **tous les points** ont la même contrainte mais des déformations différentes (A, B, C…). Connaître σ ne permet pas de connaître ε : il n'y a pas de relation biunivoque, d'où la loi **incrémentale** qui suit le chemin de chargement."
     },
     {
       "id": "mef-annc-002",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "(2008) Matériau EPP chargé jusqu'au point A sur le palier : préciser la déformation élastique et la déformation plastique.",
-      "reponse": "Au point A ($\\sigma=\\sigma_0$, $\\varepsilon_A$) : $\\varepsilon_e=\\sigma_0/E$ (ce qui est récupéré à la décharge, parallèle à la pente élastique) et $\\varepsilon_p=\\varepsilon_A-\\sigma_0/E$ (allongement résiduel après décharge).",
-      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx",
+      "choix": [
+        "$\\varepsilon_e=\\sigma_0/E$ (récupérée à la décharge, parallèle à la pente élastique) et $\\varepsilon_p=\\varepsilon_A-\\sigma_0/E$ (résiduelle)",
+        "$\\varepsilon_e=\\varepsilon_A$ et $\\varepsilon_p=0$ tant qu'on reste sur le palier",
+        "$\\varepsilon_e=\\varepsilon_A-\\sigma_0/E$ et $\\varepsilon_p=\\sigma_0/E$",
+        "$\\varepsilon_p=\\varepsilon_A$ : la déformation élastique disparaît sur le palier"
+      ],
+      "reponse": 0,
+      "modele": "Au point A ($\\sigma=\\sigma_0$, $\\varepsilon_A$) : $\\varepsilon_e=\\sigma_0/E$ (ce qui est récupéré à la décharge, parallèle à la pente élastique) et $\\varepsilon_p=\\varepsilon_A-\\sigma_0/E$ (allongement résiduel après décharge)."
     },
     {
       "id": "mef-annc-003",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "(2012, 2015) Quelle influence a la vitesse de déformation sur la courbe de traction (σ, ε) ?",
-      "reponse": "Une **augmentation** de $\\dot\\varepsilon$ **relève** la courbe (contrainte d'écoulement plus élevée) ; une diminution l'abaisse. Effet **opposé** à celui de la température (T↑ abaisse la courbe). C'est pourquoi on maintient $\\dot\\varepsilon$ et T constants pendant l'essai.",
-      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx",
+      "choix": [
+        "Augmenter $\\dot\\varepsilon$ relève la courbe (contrainte d'écoulement plus élevée) ; effet opposé à celui de la température",
+        "Augmenter $\\dot\\varepsilon$ abaisse la courbe, comme une hausse de température",
+        "Aucune influence : la courbe ne dépend que du matériau",
+        "Augmenter $\\dot\\varepsilon$ ne change que le module d'Young"
+      ],
+      "reponse": 0,
+      "modele": "Une **augmentation** de $\\dot\\varepsilon$ **relève** la courbe (contrainte d'écoulement plus élevée) ; une diminution l'abaisse. Effet **opposé** à celui de la température (T↑ abaisse la courbe). C'est pourquoi on maintient $\\dot\\varepsilon$ et T constants pendant l'essai."
     },
     {
       "id": "mef-annc-004",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "(2009) Représenter la courbe d'écrouissage d'un matériau.",
-      "reponse": "Axes : $\\sigma_0$ (contrainte d'écoulement) en fonction de $\\varepsilon_p$ (déformation plastique). Courbe partant de $\\sigma_0(0)$ = limite d'élasticité initiale, croissante et concave (écrouissage), type Hollomon $\\sigma_0=K\\varepsilon_p^n$ ; valable jusqu'à la striction.",
-      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx",
+      "choix": [
+        "$\\sigma_0$ en fonction de $\\varepsilon_p$ : part de la limite d'élasticité initiale, croissante et concave (Hollomon $K\\varepsilon_p^n$), jusqu'à la striction",
+        "$R$ en fonction de $e$ : passe par un maximum $R_m$ puis décroît",
+        "$\\sigma$ en fonction de $\\varepsilon$ élastique : droite de pente E",
+        "$\\sigma_0$ en fonction de $\\varepsilon_p$ : décroissante (adoucissement)"
+      ],
+      "reponse": 0,
+      "modele": "Axes : $\\sigma_0$ (contrainte d'écoulement) en fonction de $\\varepsilon_p$ (déformation plastique). Courbe partant de $\\sigma_0(0)$ = limite d'élasticité initiale, croissante et concave (écrouissage), type Hollomon $\\sigma_0=K\\varepsilon_p^n$ ; valable jusqu'à la striction."
     },
     {
       "id": "mef-annc-005",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "(2007, 2011) Représenter la courbe rationnelle issue d'un essai de traction, en précisant abscisse et ordonnée.",
-      "reponse": "Ordonnée : $\\sigma=F/S=R(1+e)$ (contrainte vraie). Abscisse : $\\varepsilon=\\ln(L/L_0)=\\ln(1+e)$ (déformation vraie). Elle reste **croissante** jusqu'à la rupture (pas de maximum à la striction comme la conventionnelle) et elle est **intrinsèque** au matériau.",
-      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx",
+      "choix": [
+        "Ordonnée $\\sigma=F/S=R(1+e)$, abscisse $\\varepsilon=\\ln(1+e)$ ; croissante jusqu'à la rupture et intrinsèque",
+        "Ordonnée $R=F/S_0$, abscisse $e=\\Delta L/L_0$ ; maximum à la striction",
+        "Ordonnée $\\sigma=R(1-e)$, abscisse $\\varepsilon=e$ ; décroissante après $R_m$",
+        "Ordonnée $F$, abscisse $\\Delta L$ ; dépend de la géométrie"
+      ],
+      "reponse": 0,
+      "modele": "Ordonnée : $\\sigma=F/S=R(1+e)$ (contrainte vraie). Abscisse : $\\varepsilon=\\ln(L/L_0)=\\ln(1+e)$ (déformation vraie). Elle reste **croissante** jusqu'à la rupture (pas de maximum à la striction comme la conventionnelle) et elle est **intrinsèque** au matériau."
     },
     {
       "id": "mef-annc-006",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "(2010, 2011) Représenter les courbes RPE et RPP.",
-      "reponse": "**RPE** : pas de partie élastique ; σ monte verticalement jusqu'à σ₀ puis croît avec ε (écrouissage). **RPP** : σ monte verticalement à σ₀ puis palier horizontal. Pertinent quand $\\varepsilon_e$ (< 0,5 %) ≪ $\\varepsilon_p$ (≈ 10 % et plus) en mise en forme.",
-      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx",
+      "choix": [
+        "RPE : pas d'élasticité, σ monte verticalement à σ₀ puis croît ; RPP : vertical à σ₀ puis palier ; pertinent car εe ≪ εp en mise en forme",
+        "RPE : droite élastique puis croissante ; RPP : droite élastique puis palier",
+        "RPE : vertical puis palier ; RPP : vertical puis croissante",
+        "RPE et RPP : droites de pente E sans seuil"
+      ],
+      "reponse": 0,
+      "modele": "**RPE** : pas de partie élastique ; σ monte verticalement jusqu'à σ₀ puis croît avec ε (écrouissage). **RPP** : σ monte verticalement à σ₀ puis palier horizontal. Pertinent quand $\\varepsilon_e$ (< 0,5 %) ≪ $\\varepsilon_p$ (≈ 10 % et plus) en mise en forme."
     },
     {
       "id": "mef-annc-007",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "(2006) Établir le bilan des puissances dans un procédé de mise en forme.",
-      "reponse": "$\\dot W_e=\\dot W_{elas}+\\dot W_i+\\dot W_f$ avec $\\dot W_{elas}\\ll\\dot W_i$ ⇒ $\\dot W_e\\simeq\\dot W_i+\\dot W_f$.\n$\\dot W_i=\\iiint\\sigma_0\\dot{\\bar\\varepsilon}\\,dV$ (déformation plastique) ; $\\dot W_f=\\iint m\\frac{\\sigma_0}{\\sqrt3}|\\Delta\\vec v|d\\Sigma$ (frottement, $0\\le m\\le1$).",
-      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx",
+      "choix": [
+        "$\\dot W_e=\\dot W_{elas}+\\dot W_i+\\dot W_f\\simeq\\dot W_i+\\dot W_f$, $\\dot W_i=\\iiint\\sigma_0\\dot{\\bar\\varepsilon}\\,dV$, $\\dot W_f=\\iint m\\frac{\\sigma_0}{\\sqrt3}|\\Delta\\vec v|d\\Sigma$",
+        "$\\dot W_e=\\dot W_{elas}$ car la puissance plastique est négligeable",
+        "$\\dot W_e=\\dot W_i\\cdot\\dot W_f$ avec $m>1$",
+        "$\\dot W_e=\\dot W_i+\\dot W_f$ avec $\\dot W_i=\\iiint\\sigma_0\\bar\\varepsilon\\,dV$ (déformation et non vitesse)"
+      ],
+      "reponse": 0,
+      "modele": "$\\dot W_e=\\dot W_{elas}+\\dot W_i+\\dot W_f$ avec $\\dot W_{elas}\\ll\\dot W_i$ ⇒ $\\dot W_e\\simeq\\dot W_i+\\dot W_f$.\n$\\dot W_i=\\iiint\\sigma_0\\dot{\\bar\\varepsilon}\\,dV$ (déformation plastique) ; $\\dot W_f=\\iint m\\frac{\\sigma_0}{\\sqrt3}|\\Delta\\vec v|d\\Sigma$ (frottement, $0\\le m\\le1$)."
     },
     {
       "id": "mef-annc-008",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "(2008) Un jeune ingénieur affirme qu'en construisant un champ de vitesse il est possible d'estimer la puissance des forces extérieures. Qu'en pensez-vous ?",
-      "reponse": "Il a raison : c'est le principe de la **borne supérieure**. Si le champ est **incompressible** et respecte les **conditions aux limites**, la puissance qu'il dissipe ($\\dot W_i+\\dot W_S+\\dot W_f$) est un **majorant** de $\\dot W_e$. L'estimation est par excès ; le meilleur champ est celui qui donne la borne la plus basse.",
-      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx",
+      "choix": [
+        "Il a raison (borne supérieure) : un champ incompressible respectant les conditions aux limites donne un majorant de la puissance extérieure, estimation par excès",
+        "Il a tort : un champ de vitesse ne permet aucune estimation de puissance",
+        "Il a raison, et l'estimation est exacte quel que soit le champ",
+        "Il a raison, mais l'estimation est un minorant (par défaut)"
+      ],
+      "reponse": 0,
+      "modele": "Il a raison : c'est le principe de la **borne supérieure**. Si le champ est **incompressible** et respecte les **conditions aux limites**, la puissance qu'il dissipe ($\\dot W_i+\\dot W_S+\\dot W_f$) est un **majorant** de $\\dot W_e$. L'estimation est par excès ; le meilleur champ est celui qui donne la borne la plus basse."
     },
     {
       "id": "mef-annc-009",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "(2008) Définir une déformation incompressible.",
-      "reponse": "Déformation **sans variation de volume** : $\\varepsilon_{11}+\\varepsilon_{22}+\\varepsilon_{33}=0$, soit $\\operatorname{tr}\\dot{\\bar{\\bar\\varepsilon}}=0\\Leftrightarrow\\operatorname{div}\\vec v=0$. C'est le cas de la déformation plastique (glissement de plans).",
-      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx",
+      "choix": [
+        "Déformation sans variation de volume : $\\varepsilon_{11}+\\varepsilon_{22}+\\varepsilon_{33}=0$, soit $\\operatorname{div}\\vec v=0$",
+        "Déformation sans changement de forme : $\\varepsilon_{12}=\\varepsilon_{13}=\\varepsilon_{23}=0$",
+        "Déformation purement élastique : $\\sigma=E\\varepsilon$",
+        "Déformation pour laquelle $\\varepsilon_{11}=\\varepsilon_{22}=\\varepsilon_{33}$"
+      ],
+      "reponse": 0,
+      "modele": "Déformation **sans variation de volume** : $\\varepsilon_{11}+\\varepsilon_{22}+\\varepsilon_{33}=0$, soit $\\operatorname{tr}\\dot{\\bar{\\bar\\varepsilon}}=0\\Leftrightarrow\\operatorname{div}\\vec v=0$. C'est le cas de la déformation plastique (glissement de plans)."
     },
     {
       "id": "mef-annc-010",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "(2015) Quelle(s) grandeur(s) maintient-on constante(s) au cours d'un essai de traction ? Pourquoi ?",
-      "reponse": "La **vitesse de déformation** et la **température**, car les caractéristiques mécaniques en dépendent : sinon la courbe mélangerait plusieurs comportements.",
-      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx",
+      "choix": [
+        "La vitesse de déformation et la température, car les caractéristiques mécaniques en dépendent",
+        "La force appliquée, pour avoir une contrainte constante",
+        "La section de l'éprouvette, pour éviter la striction",
+        "La longueur de l'éprouvette"
+      ],
+      "reponse": 0,
+      "modele": "La **vitesse de déformation** et la **température**, car les caractéristiques mécaniques en dépendent : sinon la courbe mélangerait plusieurs comportements."
     },
     {
       "id": "mef-annc-011",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "(2015) Le tenseur des déformations définit-il un état de déformation plastique ? Méthode.",
-      "reponse": "Calculer sa **trace** : une déformation plastique est incompressible, donc $\\varepsilon_{11}+\\varepsilon_{22}+\\varepsilon_{33}=0$. Trace non nulle ⇒ ce n'est **pas** une déformation purement plastique (il y a une variation de volume).",
-      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx",
+      "choix": [
+        "Calculer sa trace : une déformation plastique est incompressible, trace non nulle ⇒ pas purement plastique",
+        "Vérifier que le tenseur est diagonal",
+        "Calculer son déterminant : il doit être nul",
+        "Vérifier que tous les termes sont positifs"
+      ],
+      "reponse": 0,
+      "modele": "Calculer sa **trace** : une déformation plastique est incompressible, donc $\\varepsilon_{11}+\\varepsilon_{22}+\\varepsilon_{33}=0$. Trace non nulle ⇒ ce n'est **pas** une déformation purement plastique (il y a une variation de volume)."
     },
     {
       "id": "mef-annc-012",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "(2005) Interprétation physique du critère de Tresca (formulation de copie attendue).",
-      "reponse": "Le glissement des dislocations se produit sur le plan le plus défavorablement orienté quand la **cission (cisaillement) maximale** atteint une valeur critique : $\\tau_{max}=\\frac{\\sigma_I-\\sigma_{III}}2=\\frac{\\sigma_0}2$. Critère en contrainte, non énergétique. Géométrie : prisme à base hexagonale d'axe (1,1,1).",
-      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx",
+      "choix": [
+        "Glissement sur le plan le plus défavorable quand la cission maximale $\\tau_{max}=\\frac{\\sigma_I-\\sigma_{III}}2$ atteint $\\sigma_0/2$ ; critère en contrainte, prisme hexagonal d'axe (1,1,1)",
+        "Plastification quand l'énergie de distorsion atteint un seuil ; cylindre circulaire",
+        "Plastification quand la contrainte normale maximale $\\sigma_I$ atteint $\\sigma_0$",
+        "Critère énergétique fondé sur l'énergie élastique totale"
+      ],
+      "reponse": 0,
+      "modele": "Le glissement des dislocations se produit sur le plan le plus défavorablement orienté quand la **cission (cisaillement) maximale** atteint une valeur critique : $\\tau_{max}=\\frac{\\sigma_I-\\sigma_{III}}2=\\frac{\\sigma_0}2$. Critère en contrainte, non énergétique. Géométrie : prisme à base hexagonale d'axe (1,1,1)."
     },
     {
       "id": "mef-annc-013",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "(2010) Citer deux caractéristiques majeures de la loi d'écoulement (réponse attendue).",
-      "reponse": "1) Elle est **incrémentale** : elle relie l'incrément de déformation plastique à l'état de contrainte (et à son incrément) ⇒ dépend du chemin. 2) L'incrément de déformation plastique est **colinéaire au déviateur** ($d\\varepsilon^p_{ij}=s_{ij}d\\lambda$), donc **incompressible** (et normal à la surface de charge). *(Piège : « dépend de la température » n'est pas la réponse attendue.)*",
-      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx",
+      "choix": [
+        "Incrémentale (dépend du chemin) ; incrément de déformation plastique colinéaire au déviateur $d\\varepsilon^p_{ij}=s_{ij}d\\lambda$, donc incompressible",
+        "Elle dépend de la température et de la vitesse de déformation",
+        "Elle est linéaire et réversible comme la loi de Hooke",
+        "Elle relie directement la contrainte totale à la déformation totale"
+      ],
+      "reponse": 0,
+      "modele": "1) Elle est **incrémentale** : elle relie l'incrément de déformation plastique à l'état de contrainte (et à son incrément) ⇒ dépend du chemin. 2) L'incrément de déformation plastique est **colinéaire au déviateur** ($d\\varepsilon^p_{ij}=s_{ij}d\\lambda$), donc **incompressible** (et normal à la surface de charge). *(Piège : « dépend de la température » n'est pas la réponse attendue.)*"
     },
     {
       "id": "mef-annc-014",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "(2006) Définir l'hodographe.",
-      "reponse": "Le **plan des vitesses** : à chaque point matériel (ou bloc rigide) M on associe un point homologue m dont les coordonnées sont celles de la vitesse de M. Le segment entre deux points = saut de vitesse $\\Delta\\vec v$, parallèle à la frontière entre les blocs.",
-      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx",
+      "choix": [
+        "Plan des vitesses : à chaque point/bloc M on associe un point m de coordonnées celles de sa vitesse ; le segment entre deux points = $\\Delta\\vec v$, parallèle à la frontière",
+        "Représentation des contraintes principales dans un repère (σI, σII)",
+        "Courbe donnant la vitesse en fonction du temps pendant l'essai",
+        "Plan des déplacements, où $\\Delta\\vec u$ est perpendiculaire à la frontière"
+      ],
+      "reponse": 0,
+      "modele": "Le **plan des vitesses** : à chaque point matériel (ou bloc rigide) M on associe un point homologue m dont les coordonnées sont celles de la vitesse de M. Le segment entre deux points = saut de vitesse $\\Delta\\vec v$, parallèle à la frontière entre les blocs."
     },
     {
       "id": "mef-annc-015",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "(2005) Citer une caractéristique de la loi de comportement en plasticité qui la distingue de l'élasticité.",
-      "reponse": "Pas de relation **biunivoque** entre contrainte et déformation : à un état de contrainte plastique correspondent plusieurs déformations. On écrit donc une loi en **incréments**, qui suit le chemin de chargement (≠ Hooke, réversible, qui ne dépend que des états initial et final).",
-      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx"
+      "source": "Cours/Mise en forme/Annales/partie cours 05-15resume.docx",
+      "choix": [
+        "Pas de relation biunivoque entre contrainte et déformation : loi en incréments, qui suit le chemin de chargement",
+        "Elle est linéaire, comme Hooke, mais avec un module plus faible",
+        "Elle ne dépend que des états initial et final",
+        "Elle est réversible à la décharge"
+      ],
+      "reponse": 0,
+      "modele": "Pas de relation **biunivoque** entre contrainte et déformation : à un état de contrainte plastique correspondent plusieurs déformations. On écrit donc une loi en **incréments**, qui suit le chemin de chargement (≠ Hooke, réversible, qui ne dépend que des états initial et final)."
     }
   ]
 }

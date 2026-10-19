@@ -4,115 +4,213 @@
   "questions": [
     {
       "id": "poly-cours-001",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "Définir un matériau polymère (avec le schéma) et distinguer thermoplastique / thermodurcissable. *(2012, 2015)*",
-      "reponse": "**Matériau polymère** : ensemble de chaînes macromoléculaires associées par des **liaisons de faible énergie** (VdW, H). Une macromolécule = répétition de motifs liés par des **liaisons covalentes**.\nSchéma : pelote de chaînes enchevêtrées, légendes « covalentes » le long des chaînes et « VdW / H » entre les chaînes.\n**Thermoplastique** : linéaire/ramifié, enchevêtrements, recyclable (PE, PP, PS, PVC).\n**Thermodurcissable** : réseau 3D réticulé ($\\bar f>2$), insoluble, infusible (bakélite, époxy, ébonite).",
-      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md",
+      "choix": [
+        "Chaînes macromoléculaires (motifs liés par covalence) associées par des liaisons faibles (VdW, H) ; thermoplastique : linéaire/ramifié, refondable ; thermodurcissable : réseau 3D réticulé, infusible",
+        "Chaînes liées entre elles par des liaisons covalentes uniquement ; thermoplastique : réticulé ; thermodurcissable : linéaire",
+        "Assemblage d'atomes métalliques en chaîne ; thermoplastique et thermodurcissable sont synonymes",
+        "Molécules de faible masse liées par covalence ; thermodurcissable : refondable à volonté"
+      ],
+      "reponse": 0,
+      "modele": "**Matériau polymère** : ensemble de chaînes macromoléculaires associées par des **liaisons de faible énergie** (VdW, H). Une macromolécule = répétition de motifs liés par des **liaisons covalentes**.\nSchéma : pelote de chaînes enchevêtrées, légendes « covalentes » le long des chaînes et « VdW / H » entre les chaînes.\n**Thermoplastique** : linéaire/ramifié, enchevêtrements, recyclable (PE, PP, PS, PVC).\n**Thermodurcissable** : réseau 3D réticulé ($\\bar f>2$), insoluble, infusible (bakélite, époxy, ébonite)."
     },
     {
       "id": "poly-cours-002",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 3,
       "enonce": "Polymérisation radicalaire : famille, étapes et équations généralisées. *(2012 : 5 pts)*",
-      "reponse": "Famille : **en chaîne**.\nAmorçage (lent) : R–R → 2R° (homolytique) ; R° + M → RM°\nPropagation (rapide) : R–[M]ₙ–M° + M → R–[M]ₙ₊₁–M°\nTerminaison (très rapide) : **recombinaison** (2 chaînes → 1, masse doublée) ou **dismutation** (échange d'un H, une chaîne saturée + une insaturée).\nDéfinir : R–R amorceur, R° radical, M monomère, M° centre actif.",
-      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md",
+      "choix": [
+        "En chaîne : amorçage R–R → 2R°, R° + M → RM° ; propagation RMₙ° + M → RMₙ₊₁° ; terminaison par recombinaison ou dismutation",
+        "Par étapes : condensation de deux fonctions avec élimination d'eau",
+        "En chaîne : amorçage par un carbocation, sans terminaison",
+        "Par étapes : addition d'un diisocyanate sur un diol"
+      ],
+      "reponse": 0,
+      "modele": "Famille : **en chaîne**.\nAmorçage (lent) : R–R → 2R° (homolytique) ; R° + M → RM°\nPropagation (rapide) : R–[M]ₙ–M° + M → R–[M]ₙ₊₁–M°\nTerminaison (très rapide) : **recombinaison** (2 chaînes → 1, masse doublée) ou **dismutation** (échange d'un H, une chaîne saturée + une insaturée).\nDéfinir : R–R amorceur, R° radical, M monomère, M° centre actif."
     },
     {
       "id": "poly-cours-003",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 3,
       "enonce": "Définir l'EQS et en déduire $[M°]$ et $v_p$. *(2012 : 3 pts)*",
-      "reponse": "EQS : autant de centres actifs créés que détruits, $d[M°]/dt=0$ ⇔ $v_a=v_t$.\n$2fk_d[R]=2k_t[M°]^2$ ⇒ $[M°]=\\sqrt{\\frac{fk_d[R]}{k_t}}$\n$v_p=k_p[M][M°]=k_p[M]\\sqrt{\\frac{fk_d[R]}{k_t}}$\nDéfinir $k_d,k_p,k_t$, $f$ (efficacité 0,3–0,8), $[R]$, $[M]$, $[M°]$.",
-      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md",
+      "choix": [
+        "Autant de centres actifs créés que détruits ($v_a=v_t$) ⇒ $[M°]=\\sqrt{fk_d[R]/k_t}$ et $v_p=k_p[M]\\sqrt{fk_d[R]/k_t}$",
+        "Concentration en monomère constante ⇒ $[M°]=k_d[R]/k_t$ et $v_p=k_p[M]^2$",
+        "Vitesse de propagation nulle ⇒ $[M°]=0$",
+        "$v_p=v_t$ ⇒ $[M°]=\\sqrt{k_p/k_t}$"
+      ],
+      "reponse": 0,
+      "modele": "EQS : autant de centres actifs créés que détruits, $d[M°]/dt=0$ ⇔ $v_a=v_t$.\n$2fk_d[R]=2k_t[M°]^2$ ⇒ $[M°]=\\sqrt{\\frac{fk_d[R]}{k_t}}$\n$v_p=k_p[M][M°]=k_p[M]\\sqrt{\\frac{fk_d[R]}{k_t}}$\nDéfinir $k_d,k_p,k_t$, $f$ (efficacité 0,3–0,8), $[R]$, $[M]$, $[M°]$."
     },
     {
       "id": "poly-cours-004",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "Polymérisation radicalaire contrôlée (PRC) et polymérisation vivante : principes et polymères obtenus. *(2012 : 3 pts)*",
-      "reponse": "**PRC** : un radical persistant (agent de contrôle) **désactive réversiblement** les chaînes (chaînes « dormantes ») → $v_t$ fortement réduite.\n**Vivante** (ionique) : ni terminaison ni transfert, amorceur 100 % efficace, $k_a\\gg k_p$.\nPolymères : masses **contrôlées** ($\\overline{DP_n}=\\frac{[M]_0}{[R]_0}\\times$conversion), $P\\approx1$, reprise possible avec un 2ᵉ monomère (copolymères à blocs).",
-      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md",
+      "choix": [
+        "PRC : désactivation réversible des chaînes (dormantes) par un radical persistant ; vivante : ni terminaison ni transfert ; masses contrôlées, P ≈ 1, reprise possible (copolymères à blocs)",
+        "PRC : terminaison accélérée ; vivante : polymérisation à très haute température ; masses très dispersées",
+        "PRC et vivante : polycondensations avec élimination d'eau",
+        "Vivante : chaînes qui se dégradent à l'air ; polymères à P très grand"
+      ],
+      "reponse": 0,
+      "modele": "**PRC** : un radical persistant (agent de contrôle) **désactive réversiblement** les chaînes (chaînes « dormantes ») → $v_t$ fortement réduite.\n**Vivante** (ionique) : ni terminaison ni transfert, amorceur 100 % efficace, $k_a\\gg k_p$.\nPolymères : masses **contrôlées** ($\\overline{DP_n}=\\frac{[M]_0}{[R]_0}\\times$conversion), $P\\approx1$, reprise possible avec un 2ᵉ monomère (copolymères à blocs)."
     },
     {
       "id": "poly-cours-005",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "Qu'est-ce qu'une polyaddition ? Un exemple. Les types de terminaison. *(2012)*",
-      "reponse": "Polymérisation **par étapes sans élimination** de petite molécule. Exemple : **polyuréthane** (diisocyanate + diol).\nTerminaisons : **physique** (viscosité trop élevée) ou **chimique** (fonctions consommées/détruites).\n⚠️ Ne pas citer le PS, ni recombinaison/dismutation (c'est le radicalaire).",
-      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md",
+      "choix": [
+        "Polymérisation par étapes sans élimination de petite molécule ; ex. polyuréthane (diisocyanate + diol) ; terminaison physique (viscosité) ou chimique (fonctions consommées)",
+        "Polymérisation en chaîne radicalaire ; ex. polystyrène ; terminaison par recombinaison ou dismutation",
+        "Polymérisation par étapes avec élimination d'eau ; ex. PET",
+        "Polymérisation ionique vivante ; ex. PMMA ; pas de terminaison"
+      ],
+      "reponse": 0,
+      "modele": "Polymérisation **par étapes sans élimination** de petite molécule. Exemple : **polyuréthane** (diisocyanate + diol).\nTerminaisons : **physique** (viscosité trop élevée) ou **chimique** (fonctions consommées/détruites).\n⚠️ Ne pas citer le PS, ni recombinaison/dismutation (c'est le radicalaire)."
     },
     {
       "id": "poly-cours-006",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "Polymérisation en solution : principe, avantages, inconvénients. *(2012)*",
-      "reponse": "Monomère dissous dans un **solvant** qui évacue la chaleur. Utile si le polymère précipite, ou si on garde le solvant (colles, peintures). Ex. PAN, PVA, PA 6-6 interfacial.\n✅ dissipation thermique, maîtrise de T.\n❌ solvant à éliminer, coût, toxicité, lent, masses limitées.",
-      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md",
+      "choix": [
+        "Monomère dissous dans un solvant qui évacue la chaleur ; avantages : maîtrise de T ; inconvénients : solvant à éliminer, coût, toxicité, masses limitées",
+        "Monomère pur sans solvant ; avantage : polymère très pur ; inconvénient : forte exothermie",
+        "Gouttelettes de monomère dans l'eau avec amorceur organosoluble (suspension)",
+        "Micelles de tensioactif dans l'eau ; avantage : rapide et hautes masses"
+      ],
+      "reponse": 0,
+      "modele": "Monomère dissous dans un **solvant** qui évacue la chaleur. Utile si le polymère précipite, ou si on garde le solvant (colles, peintures). Ex. PAN, PVA, PA 6-6 interfacial.\n✅ dissipation thermique, maîtrise de T.\n❌ solvant à éliminer, coût, toxicité, lent, masses limitées."
     },
     {
       "id": "poly-cours-007",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "Polymérisation en émulsion : principe, avantages, inconvénients. *(2012)*",
-      "reponse": "Micelles de **tensioactif** (~5 nm) dans l'eau, gouttelettes de monomère (~10 µm) = réservoirs, **amorceur hydrosoluble** : la polymérisation a lieu dans les micelles.\n✅ **rapide ET hautes masses**, maîtrise de T, latex utilisable tel quel.\n❌ contamination par le tensioactif.\n⚠️ Ne pas écrire « non exothermique ».",
-      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md",
+      "choix": [
+        "Micelles de tensioactif dans l'eau, gouttelettes de monomère réservoirs, amorceur hydrosoluble ; rapide ET hautes masses, maîtrise de T ; contamination par le tensioactif",
+        "Monomère dissous dans un solvant organique ; lent, masses limitées",
+        "Réaction non exothermique dans des gouttelettes sans tensioactif",
+        "Monomère pur en masse ; latex impossible à obtenir"
+      ],
+      "reponse": 0,
+      "modele": "Micelles de **tensioactif** (~5 nm) dans l'eau, gouttelettes de monomère (~10 µm) = réservoirs, **amorceur hydrosoluble** : la polymérisation a lieu dans les micelles.\n✅ **rapide ET hautes masses**, maîtrise de T, latex utilisable tel quel.\n❌ contamination par le tensioactif.\n⚠️ Ne pas écrire « non exothermique »."
     },
     {
       "id": "poly-cours-008",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "Formule, application, masse de l'unité monomère et du motif constitutif : PTFE et PVC. *(2015)*",
-      "reponse": "**PTFE** –[CF₂–CF₂]ₙ– : poêles, Gore-Tex, joints. Unité monomère **100**, motif constitutif **CF₂ = 50** g/mol.\n**PVC** –[CH₂–CHCl]ₙ– : tuyaux, fenêtres. **62** avec Cl = 35 (62,5 si Cl = 35,5), motif = unité monomère.\n⚠️ Utiliser les masses atomiques **données dans le sujet**.",
-      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md",
+      "choix": [
+        "PTFE –[CF₂–CF₂]ₙ– (poêles, joints) : unité monomère 100, motif CF₂ = 50 g/mol ; PVC –[CH₂–CHCl]ₙ– (tuyaux) : 62 (62,5 avec Cl = 35,5), motif = unité monomère",
+        "PTFE –[CH₂–CH₂]ₙ– : 28 g/mol ; PVC –[CF₂–CHCl]ₙ– : 98 g/mol",
+        "PTFE : motif = unité monomère = 100 ; PVC : motif CH₂ = 14",
+        "PTFE –[CF₂]ₙ– : unité monomère 50 ; PVC –[CHCl]ₙ– : 48"
+      ],
+      "reponse": 0,
+      "modele": "**PTFE** –[CF₂–CF₂]ₙ– : poêles, Gore-Tex, joints. Unité monomère **100**, motif constitutif **CF₂ = 50** g/mol.\n**PVC** –[CH₂–CHCl]ₙ– : tuyaux, fenêtres. **62** avec Cl = 35 (62,5 si Cl = 35,5), motif = unité monomère.\n⚠️ Utiliser les masses atomiques **données dans le sujet**."
     },
     {
       "id": "poly-cours-009",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 1,
       "enonce": "Isomérie de X–CH=CH–Y : noms, et laquelle est la plus stable ? *(2012, 2015)*",
-      "reponse": "Même côté : **cis** ; de part et d'autre : **trans**. **Trans** est la plus stable (moins de gêne stérique).",
-      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md",
+      "choix": [
+        "Même côté : cis ; de part et d'autre : trans ; trans est la plus stable (moins de gêne stérique)",
+        "Même côté : trans ; de part et d'autre : cis ; cis est la plus stable",
+        "Même côté : cis ; de part et d'autre : trans ; cis est la plus stable (liaisons plus courtes)",
+        "Isotactique et syndiotactique ; les deux sont aussi stables"
+      ],
+      "reponse": 0,
+      "modele": "Même côté : **cis** ; de part et d'autre : **trans**. **Trans** est la plus stable (moins de gêne stérique)."
     },
     {
       "id": "poly-cours-010",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "Vulcanisation : principe, découvreur, et l'ébonite. *(2012, souvent mal traité)*",
-      "reponse": "Réticulation du caoutchouc naturel (polyisoprène) **par le soufre** à chaud : ponts S–S → réseau 3D, élastomère. **Goodyear, 1839**.\n**Ébonite** : vulcanisation très poussée (25–30 % de S) → rigide, infusible, insoluble : **thermodurcissable**.",
-      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md",
+      "choix": [
+        "Réticulation du caoutchouc naturel par le soufre à chaud (ponts S–S) ; Goodyear, 1839 ; ébonite : vulcanisation très poussée (25-30 % S) → thermodurcissable rigide",
+        "Polymérisation du styrène par l'oxygène ; Nylon, 1935 ; ébonite : thermoplastique souple",
+        "Dissolution du caoutchouc dans le soufre liquide ; Baekeland, 1907 ; ébonite : élastomère très souple",
+        "Réticulation par rayonnement UV ; Staudinger, 1920 ; ébonite : caoutchouc non vulcanisé"
+      ],
+      "reponse": 0,
+      "modele": "Réticulation du caoutchouc naturel (polyisoprène) **par le soufre** à chaud : ponts S–S → réseau 3D, élastomère. **Goodyear, 1839**.\n**Ébonite** : vulcanisation très poussée (25–30 % de S) → rigide, infusible, insoluble : **thermodurcissable**."
     },
     {
       "id": "poly-cours-011",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "Formules de $\\overline{M_n}$, $\\overline{M_w}$, $P$, $\\overline{DP_n}$, et position sur une distribution.",
-      "reponse": "$\\overline{M_n}=\\frac{\\sum n_iM_i}{\\sum n_i}$ ; $\\overline{M_w}=\\frac{\\sum n_iM_i^2}{\\sum n_iM_i}$ ; $P=\\frac{\\overline{M_w}}{\\overline{M_n}}\\ge1$ ; $\\overline{DP_n}=\\frac{\\overline{M_n}}{M_0}$.\nSur la courbe : $\\overline{M_n}$ au sommet, puis $\\overline{M_v}$, puis $\\overline{M_w}$ vers les hautes masses.",
-      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md",
+      "choix": [
+        "$\\overline{M_n}=\\frac{\\sum n_iM_i}{\\sum n_i}$, $\\overline{M_w}=\\frac{\\sum n_iM_i^2}{\\sum n_iM_i}$, $P=\\overline{M_w}/\\overline{M_n}\\ge1$, $\\overline{DP_n}=\\overline{M_n}/M_0$ ; $\\overline{M_n}$ au sommet, puis $\\overline{M_v}$, puis $\\overline{M_w}$",
+        "$\\overline{M_n}=\\frac{\\sum n_iM_i^2}{\\sum n_iM_i}$, $\\overline{M_w}=\\frac{\\sum n_iM_i}{\\sum n_i}$, $P\\le1$",
+        "$P=\\overline{M_n}/\\overline{M_w}\\ge1$ ; $\\overline{M_w}$ au sommet, $\\overline{M_n}$ vers les hautes masses",
+        "$\\overline{DP_n}=M_0/\\overline{M_n}$ ; $\\overline{M_n}=\\overline{M_w}$ pour tout polymère"
+      ],
+      "reponse": 0,
+      "modele": "$\\overline{M_n}=\\frac{\\sum n_iM_i}{\\sum n_i}$ ; $\\overline{M_w}=\\frac{\\sum n_iM_i^2}{\\sum n_iM_i}$ ; $P=\\frac{\\overline{M_w}}{\\overline{M_n}}\\ge1$ ; $\\overline{DP_n}=\\frac{\\overline{M_n}}{M_0}$.\nSur la courbe : $\\overline{M_n}$ au sommet, puis $\\overline{M_v}$, puis $\\overline{M_w}$ vers les hautes masses."
     },
     {
       "id": "poly-cours-012",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "Principe de la chromatographie d'exclusion stérique (GPC). *(2012 : 0/2 pour l'élève)*",
-      "reponse": "Polymère dissous injecté dans une colonne de **gel microporeux** étalonnée. Séparation selon la **taille** : les **grosses chaînes sortent en premier** (n'entrent pas dans les pores), les petites plus tard. Détecteur (réfractomètre) → concentration en fonction du temps ; **étalonnage** (étalons PS) → masse. On obtient la distribution, puis $\\overline{M_n}$, $\\overline{M_w}$, $P$.",
-      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md",
+      "choix": [
+        "Colonne de gel microporeux étalonnée : séparation selon la taille, les grosses chaînes sortent en premier ; détecteur + étalonnage (étalons PS) → distribution des masses",
+        "Séparation selon la polarité : les petites chaînes sortent en premier car elles ne rentrent pas dans les pores",
+        "Mesure de la viscosité d'une solution diluée pour obtenir Mv",
+        "Séparation par charge électrique dans un champ électrique"
+      ],
+      "reponse": 0,
+      "modele": "Polymère dissous injecté dans une colonne de **gel microporeux** étalonnée. Séparation selon la **taille** : les **grosses chaînes sortent en premier** (n'entrent pas dans les pores), les petites plus tard. Détecteur (réfractomètre) → concentration en fonction du temps ; **étalonnage** (étalons PS) → masse. On obtient la distribution, puis $\\overline{M_n}$, $\\overline{M_w}$, $P$."
     },
     {
       "id": "poly-cours-013",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 1,
       "enonce": "Homopolymère, copolymère, et schémas « à blocs » / « aléatoire ».",
-      "reponse": "Homopolymère : un seul motif (–A–A–A–). Copolymère : **au moins 2** motifs différents.\nÀ blocs : –AAAA–BBBB–AAAA– ; aléatoire : –A–B–B–A–B–A– ; (alterné –A–B–A–B– ; greffé : chaîne A + greffons B).",
-      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md",
+      "choix": [
+        "Homopolymère : un seul motif ; copolymère : au moins 2 motifs ; à blocs : AAAA–BBBB–AAAA ; aléatoire : A–B–B–A–B–A",
+        "Homopolymère : 2 motifs alternés ; copolymère : un seul motif",
+        "À blocs : A–B–A–B ; aléatoire : AAAA–BBBB",
+        "Copolymère : mélange de deux homopolymères sans liaison entre eux"
+      ],
+      "reponse": 0,
+      "modele": "Homopolymère : un seul motif (–A–A–A–). Copolymère : **au moins 2** motifs différents.\nÀ blocs : –AAAA–BBBB–AAAA– ; aléatoire : –A–B–B–A–B–A– ; (alterné –A–B–A–B– ; greffé : chaîne A + greffons B)."
     },
     {
       "id": "poly-cours-014",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "Les 2 familles de polymérisation et leurs sous-familles.",
-      "reponse": "**En chaîne** (centres actifs, sur C=C) : radicalaire (R°), anionique (carbanion, substituant accepteur CN, COOR), cationique (carbocation, substituant donneur).\n**Par étapes** (groupes fonctionnels complémentaires) : polycondensation (avec sous-produit : PA, PET, PC) et polyaddition (sans : PU).",
-      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md"
+      "source": "Cours/Polymeres/1 - Révision/Révision Polymères v2 - Annales & TD corrigés.md",
+      "choix": [
+        "En chaîne (radicalaire, anionique, cationique, sur C=C) et par étapes (polycondensation avec sous-produit, polyaddition sans)",
+        "En chaîne (polycondensation, polyaddition) et par étapes (radicalaire, ionique)",
+        "Thermoplastique et thermodurcissable",
+        "En masse, en solution, en émulsion, en suspension"
+      ],
+      "reponse": 0,
+      "modele": "**En chaîne** (centres actifs, sur C=C) : radicalaire (R°), anionique (carbanion, substituant accepteur CN, COOR), cationique (carbocation, substituant donneur).\n**Par étapes** (groupes fonctionnels complémentaires) : polycondensation (avec sous-produit : PA, PET, PC) et polyaddition (sans : PU)."
     }
   ]
 }

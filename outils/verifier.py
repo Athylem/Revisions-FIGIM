@@ -14,9 +14,9 @@ sys.stdout.reconfigure(encoding="utf-8")
 
 RACINE = Path(__file__).resolve().parent.parent
 CONTENU = RACINE / "contenu"
-TYPES = {"qcm", "vrai-faux", "texte-a-trous", "numerique", "carte", "probleme"}
+TYPES = {"qcm", "vrai-faux", "texte-a-trous", "numerique", "carte", "probleme", "redaction"}
 CONTROLE = "\f\t\b\v\a\r"  # caractères de contrôle interdits dans les textes
-TYPES_ETAPE = {"qcm", "vrai-faux", "numerique", "carte"}
+TYPES_ETAPE = {"qcm", "vrai-faux", "numerique", "carte", "redaction"}
 
 erreurs = []
 ids_vus = {}
@@ -25,7 +25,7 @@ ids_vus = {}
 def verifier_reponse(q, ou):
     """Contrôles propres à chaque type (questions et étapes de problème)."""
     t = q.get("type")
-    if t == "qcm":
+    if t in ("qcm", "redaction"):
         choix = q.get("choix", [])
         if len(choix) < 2 or not isinstance(q.get("reponse"), int) or not 0 <= q["reponse"] < len(choix):
             erreurs.append(f"{ou} : choix / reponse incohérents")

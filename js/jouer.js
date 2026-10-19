@@ -8,10 +8,11 @@ import * as texteATrous from "./types/texte-a-trous.js";
 import * as numerique from "./types/numerique.js";
 import * as carte from "./types/carte.js";
 import * as probleme from "./types/probleme.js";
+import * as redaction from "./types/redaction.js";
 
 const TYPES = {
   "qcm": qcm, "vrai-faux": vraiFaux, "texte-a-trous": texteATrous,
-  "numerique": numerique, "carte": carte, "probleme": probleme,
+  "numerique": numerique, "carte": carte, "probleme": probleme, "redaction": redaction,
 };
 const ETOILES = { 1: "★☆☆", 2: "★★☆", 3: "★★★" };
 
@@ -119,7 +120,8 @@ function suivante() {
 
 function texteSolution(q) {
   switch (q.type) {
-    case "qcm": return q.choix[q.reponse];
+    case "qcm":
+    case "redaction": return q.choix[q.reponse];
     case "texte-a-trous": return q.reponse[0];
     case "numerique": return numerique.formater(q);
     case "carte": return q.reponse;

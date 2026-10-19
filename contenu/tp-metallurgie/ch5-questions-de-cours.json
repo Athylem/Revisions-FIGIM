@@ -4,38 +4,73 @@
   "questions": [
     {
       "id": "tpm-cartes-001",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "Décrire le principe d'un essai de traction et les grandeurs mesurées.",
-      "reponse": "Éprouvette normalisée ($S_0$, $L_0$) étirée à vitesse constante. Courbe conventionnelle $R=F/S_0$ en fonction de $e=\\Delta L/L_0$. On mesure : **E** (pente élastique), **Re / Rp0,2** (limite d'élasticité), **Rm** = $F_{max}/S_0$ (début de striction), **A %** (allongement après rupture), **Z %** (striction)."
+      "choix": [
+        "Éprouvette normalisée étirée à vitesse constante ; R = F/S₀ en fonction de e = ΔL/L₀ ; on mesure E, Re/Rp0,2, Rm, A %, Z %",
+        "Éprouvette écrasée entre deux plateaux ; on mesure la dureté HV",
+        "Éprouvette entaillée frappée par un mouton-pendule ; on mesure l'énergie absorbée",
+        "Éprouvette chargée à contrainte constante ; on mesure la vitesse de fluage"
+      ],
+      "reponse": 0,
+      "modele": "Éprouvette normalisée ($S_0$, $L_0$) étirée à vitesse constante. Courbe conventionnelle $R=F/S_0$ en fonction de $e=\\Delta L/L_0$. On mesure : **E** (pente élastique), **Re / Rp0,2** (limite d'élasticité), **Rm** = $F_{max}/S_0$ (début de striction), **A %** (allongement après rupture), **Z %** (striction)."
     },
     {
       "id": "tpm-cartes-002",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "Expliquer l'allure d'une courbe d'analyse thermique simple pour un alliage Pb–Sn hypoeutectique.",
-      "reponse": "Refroidissement du liquide (pente régulière) → au **liquidus**, germination de (Pb) : la chaleur latente ralentit le refroidissement (changement de pente) → solidification de (Pb) proeutectique dans l'intervalle → à **183 °C**, palier eutectique : le liquide restant (61,9 % Sn) donne (Pb) + (Sn) à T constante → refroidissement du solide."
+      "choix": [
+        "Refroidissement du liquide, changement de pente au liquidus (chaleur latente de (Pb)), solidification de (Pb) proeutectique, palier eutectique à 183 °C, puis refroidissement du solide",
+        "Un seul palier à la température de fusion du plomb (327 °C)",
+        "Palier eutectique à 183 °C d'abord, puis changement de pente au liquidus",
+        "Pente constante du début à la fin : pas de chaleur latente"
+      ],
+      "reponse": 0,
+      "modele": "Refroidissement du liquide (pente régulière) → au **liquidus**, germination de (Pb) : la chaleur latente ralentit le refroidissement (changement de pente) → solidification de (Pb) proeutectique dans l'intervalle → à **183 °C**, palier eutectique : le liquide restant (61,9 % Sn) donne (Pb) + (Sn) à T constante → refroidissement du solide."
     },
     {
       "id": "tpm-cartes-003",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "Décrire les trois stades du refroidissement d'une pièce dans un liquide de trempe et l'influence du liquide.",
-      "reponse": "1) **Caléfaction** : film de vapeur isolant, refroidissement lent. 2) **Ébullition nucléée** : le film se rompt, bulles, échanges très intenses (vitesse maximale). 3) **Convection** : sous la température d'ébullition, refroidissement lent. Eau froide : caléfaction courte, trempe sévère (risque de tapures). Eau chaude : caléfaction longue. Polymère, huile : sévérité moindre, moins de déformations."
+      "choix": [
+        "Caléfaction (film de vapeur, lent), ébullition nucléée (échanges maximaux), convection (lent) ; eau froide : trempe sévère, eau chaude : caléfaction longue",
+        "Convection, puis caléfaction, puis ébullition ; l'eau chaude trempe plus sévèrement",
+        "Un seul stade de conduction ; le liquide n'a pas d'influence",
+        "Ébullition, puis solidification du liquide de trempe à la surface"
+      ],
+      "reponse": 0,
+      "modele": "1) **Caléfaction** : film de vapeur isolant, refroidissement lent. 2) **Ébullition nucléée** : le film se rompt, bulles, échanges très intenses (vitesse maximale). 3) **Convection** : sous la température d'ébullition, refroidissement lent. Eau froide : caléfaction courte, trempe sévère (risque de tapures). Eau chaude : caléfaction longue. Polymère, huile : sévérité moindre, moins de déformations."
     },
     {
       "id": "tpm-cartes-004",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "Principe et exploitation de l'essai Jominy.",
-      "reponse": "Éprouvette cylindrique austénitisée, trempée **par une seule extrémité** (jet d'eau normalisé). Chaque distance à l'extrémité correspond à une vitesse de refroidissement différente. On trace la dureté en fonction de la distance : la courbe caractérise la **trempabilité** (aptitude à former de la martensite à cœur). Les éléments d'alliage aplatissent la courbe."
+      "choix": [
+        "Éprouvette austénitisée trempée par une seule extrémité ; chaque distance = une vitesse de refroidissement ; la courbe dureté-distance caractérise la trempabilité",
+        "Éprouvette trempée entièrement puis cassée ; on mesure la résilience",
+        "Éprouvette chauffée par une extrémité pour mesurer la conductivité thermique",
+        "Essai de dureté à différentes températures de revenu"
+      ],
+      "reponse": 0,
+      "modele": "Éprouvette cylindrique austénitisée, trempée **par une seule extrémité** (jet d'eau normalisé). Chaque distance à l'extrémité correspond à une vitesse de refroidissement différente. On trace la dureté en fonction de la distance : la courbe caractérise la **trempabilité** (aptitude à former de la martensite à cœur). Les éléments d'alliage aplatissent la courbe."
     },
     {
       "id": "tpm-cartes-005",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "Interpréter les courbes de dureté après revenu d'un acier fortement allié austénitisé à 1150 °C (eau) et 950 °C (huile).",
-      "reponse": "1150 °C : carbures dissous ⇒ austénite très alliée ⇒ Ms bas, beaucoup d'**austénite résiduelle** ⇒ dureté brute modérée. Au revenu vers 500-600 °C : **durcissement secondaire** (carbures alliés fins + transformation de l'austénite résiduelle en martensite au refroidissement). 950 °C : dissolution partielle ⇒ peu d'austénite résiduelle, dureté brute élevée qui décroît de façon monotone avec la température de revenu."
+      "choix": [
+        "1150 °C : carbures dissous, Ms bas, beaucoup d'austénite résiduelle, dureté brute modérée puis durcissement secondaire vers 500-600 °C ; 950 °C : dissolution partielle, dureté brute élevée, pic secondaire moindre",
+        "Les deux courbes sont identiques : la température d'austénitisation n'a pas d'effet",
+        "950 °C donne plus d'austénite résiduelle et un durcissement secondaire plus fort",
+        "La dureté décroît toujours avec la température de revenu, sans durcissement secondaire"
+      ],
+      "reponse": 0,
+      "modele": "1150 °C : carbures dissous ⇒ austénite très alliée ⇒ Ms bas, beaucoup d'**austénite résiduelle** ⇒ dureté brute modérée. Au revenu vers 500-600 °C : **durcissement secondaire** (carbures alliés fins + transformation de l'austénite résiduelle en martensite au refroidissement). 950 °C : dissolution partielle ⇒ peu d'austénite résiduelle, dureté brute élevée qui décroît de façon monotone avec la température de revenu."
     }
   ]
 }

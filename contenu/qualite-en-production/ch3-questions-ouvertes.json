@@ -4,31 +4,59 @@
   "questions": [
     {
       "id": "qual-cartes-001",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "Qu'est-ce qu'une opération standard et à quoi sert-elle ?",
-      "reponse": "Séquence opérationnelle **optimale et documentée** d'un processus, qui réduit la variabilité du temps de cycle et définit la meilleure façon de travailler (QCDSM : qualité, coût, délai, sécurité, moral). Elle assure la sécurité des opérateurs, la qualité des produits, l'efficacité du processus ; sert à la **formation** des nouveaux ; définit la responsabilité de l'opérateur ; c'est la base de l'identification des gaspillages et du **Kaizen** (« pas d'amélioration sans standard »)."
+      "choix": [
+        "Séquence optimale et documentée d'un processus : réduit la variabilité du temps de cycle, meilleure façon de travailler (QCDSM), base de la formation et du Kaizen",
+        "Opération réalisée uniquement par un robot pour éliminer l'erreur humaine",
+        "Procédure administrative imposée par la direction, sans lien avec l'amélioration",
+        "Contrôle final des pièces avant expédition"
+      ],
+      "reponse": 0,
+      "modele": "Séquence opérationnelle **optimale et documentée** d'un processus, qui réduit la variabilité du temps de cycle et définit la meilleure façon de travailler (QCDSM : qualité, coût, délai, sécurité, moral). Elle assure la sécurité des opérateurs, la qualité des produits, l'efficacité du processus ; sert à la **formation** des nouveaux ; définit la responsabilité de l'opérateur ; c'est la base de l'identification des gaspillages et du **Kaizen** (« pas d'amélioration sans standard »)."
     },
     {
       "id": "qual-cartes-002",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "Étapes pour renseigner une fiche SOI.",
-      "reponse": "1) Sélectionner le processus. 2) Observer les opérateurs (visuel, vidéo). 3) Documenter l'environnement de travail à l'échelle. 4) Diviser le processus en tâches élémentaires. 5) Documenter les étapes. 6) Les remettre en cause avec les opérateurs. 7) Confirmer avec le responsable. 8) Photos/illustrations. 9) Attribuer un temps à chaque étape. 10) Identifier les points clés sécurité et qualité. 11) Documenter sur la fiche SOI. 12) Confirmer avec le responsable/l'équipe. Application obligatoire."
+      "choix": [
+        "Sélectionner le processus, observer les opérateurs, découper en tâches élémentaires, remettre en cause avec eux, chronométrer, identifier les points clés sécurité/qualité, faire valider",
+        "Rédiger la fiche seul au bureau à partir du plan de la pièce, puis l'afficher",
+        "Acheter une nouvelle machine, puis former les opérateurs",
+        "Mesurer uniquement le temps total du poste, sans découper"
+      ],
+      "reponse": 0,
+      "modele": "1) Sélectionner le processus. 2) Observer les opérateurs (visuel, vidéo). 3) Documenter l'environnement de travail à l'échelle. 4) Diviser le processus en tâches élémentaires. 5) Documenter les étapes. 6) Les remettre en cause avec les opérateurs. 7) Confirmer avec le responsable. 8) Photos/illustrations. 9) Attribuer un temps à chaque étape. 10) Identifier les points clés sécurité et qualité. 11) Documenter sur la fiche SOI. 12) Confirmer avec le responsable/l'équipe. Application obligatoire."
     },
     {
       "id": "qual-cartes-003",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "Décrire le PDCA et le rôle du standard.",
-      "reponse": "**Plan** : analyser, fixer l'objectif, plan d'action. **Do** : mettre en œuvre (à petite échelle). **Check** : mesurer, comparer à l'objectif. **Act** : standardiser si c'est efficace, sinon corriger, puis relancer un cycle. Le **standard** joue le rôle de cale qui empêche la roue de redescendre."
+      "choix": [
+        "Plan (analyser, objectif, plan d'action), Do (mise en œuvre), Check (mesurer, comparer), Act (standardiser ou corriger) ; le standard est la cale qui empêche la roue de redescendre",
+        "Prepare, Deliver, Control, Archive ; le standard sert à archiver",
+        "Plan, Do, Check, Act ; le standard est supprimé à chaque cycle",
+        "Define, Measure, Analyze, Improve, Control ; pas de rôle du standard"
+      ],
+      "reponse": 0,
+      "modele": "**Plan** : analyser, fixer l'objectif, plan d'action. **Do** : mettre en œuvre (à petite échelle). **Check** : mesurer, comparer à l'objectif. **Act** : standardiser si c'est efficace, sinon corriger, puis relancer un cycle. Le **standard** joue le rôle de cale qui empêche la roue de redescendre."
     },
     {
       "id": "qual-cartes-004",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "Présenter la démarche AMDEC.",
-      "reponse": "Analyse des Modes de Défaillance, de leurs Effets et de leur Criticité. Pour chaque fonction/étape : mode de défaillance, cause, effet, cotation **G** (gravité), **O** (occurrence), **D** (non-détection), criticité $C=G\\times O\\times D$. Actions correctives sur les C élevés, puis recotation. Préventive : produit (AMDEC produit) ou procédé."
+      "choix": [
+        "Analyse des modes de défaillance, effets et criticité : pour chaque mode, cotation G, O, D, criticité C = G × O × D, actions sur les C élevés puis recotation",
+        "Audit qualité annuel, sans cotation",
+        "Analyse des coûts : C = coût × délai",
+        "Méthode de résolution de problème par les 5 pourquoi"
+      ],
+      "reponse": 0,
+      "modele": "Analyse des Modes de Défaillance, de leurs Effets et de leur Criticité. Pour chaque fonction/étape : mode de défaillance, cause, effet, cotation **G** (gravité), **O** (occurrence), **D** (non-détection), criticité $C=G\\times O\\times D$. Actions correctives sur les C élevés, puis recotation. Préventive : produit (AMDEC produit) ou procédé."
     }
   ]
 }

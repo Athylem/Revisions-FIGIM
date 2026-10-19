@@ -4,101 +4,199 @@
   "questions": [
     {
       "id": "thermo-cartes-001",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "À partir de la loi de Van't Hoff, redémontrer comment évolue K quand la température **diminue** pour une réaction exothermique.",
-      "reponse": "$\\dfrac{d\\ln K}{dT}=\\dfrac{\\Delta_rH^\\circ}{RT^2}$. Exothermique : $\\Delta_rH^\\circ<0$ ⇒ $\\ln K$ décroît quand T croît ⇒ **K augmente quand T diminue** (l'équilibre se déplace dans le sens direct, qui dégage de la chaleur — cohérent avec Le Chatelier)."
+      "choix": [
+        "$d\\ln K/dT=\\Delta_rH^\\circ/RT^2$ ; exothermique ($\\Delta_rH^\\circ<0$) ⇒ K augmente quand T diminue",
+        "$d\\ln K/dT=\\Delta_rH^\\circ/RT^2$ ; exothermique ⇒ K diminue quand T diminue",
+        "$d\\ln K/dT=-\\Delta_rS^\\circ/R$ ; K ne dépend pas de T",
+        "$d\\ln K/dT=\\Delta_rG^\\circ/RT$ ; exothermique ⇒ K augmente avec T"
+      ],
+      "reponse": 0,
+      "modele": "$\\dfrac{d\\ln K}{dT}=\\dfrac{\\Delta_rH^\\circ}{RT^2}$. Exothermique : $\\Delta_rH^\\circ<0$ ⇒ $\\ln K$ décroît quand T croît ⇒ **K augmente quand T diminue** (l'équilibre se déplace dans le sens direct, qui dégage de la chaleur — cohérent avec Le Chatelier)."
     },
     {
       "id": "thermo-cartes-002",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "Rappeler les hypothèses d'Ellingham et la forme de $\\Delta_rG^\\circ(T)$ qui en découle.",
-      "reponse": "- Réactions d'oxydation écrites pour **1 mol de O₂**.\\n- $\\Delta_rH^\\circ$ et $\\Delta_rS^\\circ$ **indépendants de T** entre deux changements d'état.\\n⇒ $\\Delta_rG^\\circ=\\Delta_rH^\\circ-T\\Delta_rS^\\circ$ : segments de droite, avec rupture de pente à chaque changement d'état."
+      "choix": [
+        "Réactions écrites pour 1 mol d'O₂, $\\Delta_rH^\\circ$ et $\\Delta_rS^\\circ$ indépendants de T ⇒ $\\Delta_rG^\\circ=\\Delta_rH^\\circ-T\\Delta_rS^\\circ$ : segments de droite, rupture de pente aux changements d'état",
+        "Réactions écrites pour 1 mol de métal ; $\\Delta_rG^\\circ$ indépendant de T (droites horizontales)",
+        "$\\Delta_rH^\\circ$ proportionnel à T ⇒ paraboles",
+        "Réactions pour 1 mol d'O₂ ; $\\Delta_rS^\\circ$ dépend de T ⇒ courbes exponentielles"
+      ],
+      "reponse": 0,
+      "modele": "- Réactions d'oxydation écrites pour **1 mol de O₂**.\\n- $\\Delta_rH^\\circ$ et $\\Delta_rS^\\circ$ **indépendants de T** entre deux changements d'état.\\n⇒ $\\Delta_rG^\\circ=\\Delta_rH^\\circ-T\\Delta_rS^\\circ$ : segments de droite, avec rupture de pente à chaque changement d'état."
     },
     {
       "id": "thermo-cartes-003",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "Expliquer la signification du **point C** du diagramme d'Ellingham et son utilité pour la réduction des oxydes.",
-      "reponse": "Intersection des droites $\\mathrm{2C+O_2\\to2CO}$ (pente négative) et $\\mathrm{C+O_2\\to CO_2}$ (quasi horizontale), vers 700 °C : au-dessus, le produit stable de l'oxydation du carbone est **CO** (équilibre de Boudouard $\\mathrm{C+CO_2\\rightleftarrows 2CO}$). La droite C/CO descend : à haute T le carbone (ou CO) réduit de plus en plus d'oxydes ⇒ base de la **carboréduction** (haut fourneau : réduction des oxydes de fer par CO)."
+      "choix": [
+        "Intersection des droites C/CO (pente négative) et C/CO₂ : au-dessus (~700 °C), CO est stable (Boudouard) ; la droite C/CO descend, le carbone réduit de plus en plus d'oxydes à haute T",
+        "Point de fusion du carbone ; au-dessus, le carbone ne réduit plus aucun oxyde",
+        "Intersection de CO/CO₂ avec ΔG = 0 : au-dessus, CO₂ est seul stable",
+        "Point où tous les oxydes métalliques se décomposent spontanément"
+      ],
+      "reponse": 0,
+      "modele": "Intersection des droites $\\mathrm{2C+O_2\\to2CO}$ (pente négative) et $\\mathrm{C+O_2\\to CO_2}$ (quasi horizontale), vers 700 °C : au-dessus, le produit stable de l'oxydation du carbone est **CO** (équilibre de Boudouard $\\mathrm{C+CO_2\\rightleftarrows 2CO}$). La droite C/CO descend : à haute T le carbone (ou CO) réduit de plus en plus d'oxydes ⇒ base de la **carboréduction** (haut fourneau : réduction des oxydes de fer par CO)."
     },
     {
       "id": "thermo-cartes-004",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "Quelle est la particularité de l'oxyde d'argent Ag₂O par rapport aux autres oxydes métalliques ?",
-      "reponse": "Sa droite d'Ellingham coupe $\\Delta_rG^\\circ=0$ à basse température (≈ 460 K) : au-dessus, **Ag₂O se décompose spontanément** par simple chauffage, sans réducteur. Autres exemples : HgO, oxydes d'or et de platine."
+      "choix": [
+        "Sa droite coupe ΔrG° = 0 vers 460 K : au-dessus, Ag₂O se décompose spontanément par simple chauffage (comme HgO, oxydes d'or et de platine)",
+        "C'est l'oxyde le plus stable : sa droite est tout en bas du diagramme",
+        "Sa droite a une pente négative, contrairement aux autres oxydes",
+        "Il ne se forme jamais, même à température ambiante"
+      ],
+      "reponse": 0,
+      "modele": "Sa droite d'Ellingham coupe $\\Delta_rG^\\circ=0$ à basse température (≈ 460 K) : au-dessus, **Ag₂O se décompose spontanément** par simple chauffage, sans réducteur. Autres exemples : HgO, oxydes d'or et de platine."
     },
     {
       "id": "thermo-cartes-005",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "Pourquoi une feuille d'aluminium ne se corrode-t-elle pas à l'air alors qu'Ellingham montre que Al est très avide de O₂ ?",
-      "reponse": "Ellingham = **thermodynamique**, pas cinétique. Al s'oxyde bien, mais forme une couche d'**Al₂O₃ compacte, adhérente et continue** (rapport de Pilling-Bedworth ≈ 1,3) qui empêche l'oxygène d'atteindre le métal : **passivation**."
+      "choix": [
+        "Ellingham est thermodynamique, pas cinétique : Al s'oxyde mais forme une couche d'Al₂O₃ compacte et adhérente (Pilling-Bedworth ≈ 1,3) qui le passive",
+        "Ellingham montre en réalité que Al ne s'oxyde pas à température ambiante",
+        "L'alumine est poreuse et laisse passer l'oxygène, mais la réaction est réversible",
+        "L'aluminium du commerce est recouvert d'une peinture protectrice"
+      ],
+      "reponse": 0,
+      "modele": "Ellingham = **thermodynamique**, pas cinétique. Al s'oxyde bien, mais forme une couche d'**Al₂O₃ compacte, adhérente et continue** (rapport de Pilling-Bedworth ≈ 1,3) qui empêche l'oxygène d'atteindre le métal : **passivation**."
     },
     {
       "id": "thermo-cartes-006",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "Comment maintenir une pression partielle d'oxygène de $10^{-10}$ atm dans un réacteur à 1250 °C ?",
-      "reponse": "Imposer un **mélange tampon** CO/CO₂ ou H₂/H₂O dont le rapport fixe $P_{O_2}$ (lu sur les échelles $P_{CO}/P_{CO_2}$ ou $P_{H_2}/P_{H_2O}$ du diagramme d'Ellingham), ou utiliser un couple **métal/oxyde** dont la $P_{O_2}$ d'équilibre vaut $10^{-10}$ atm à cette température."
+      "choix": [
+        "Imposer un mélange tampon CO/CO₂ ou H₂/H₂O dont le rapport fixe P(O₂) (échelles du diagramme), ou un couple métal/oxyde en équilibre à 10⁻¹⁰ atm",
+        "Pomper l'oxygène avec une pompe à vide jusqu'à 10⁻¹⁰ atm",
+        "Ajouter de l'argon à pression constante",
+        "Chauffer davantage : P(O₂) diminue toujours avec T"
+      ],
+      "reponse": 0,
+      "modele": "Imposer un **mélange tampon** CO/CO₂ ou H₂/H₂O dont le rapport fixe $P_{O_2}$ (lu sur les échelles $P_{CO}/P_{CO_2}$ ou $P_{H_2}/P_{H_2O}$ du diagramme d'Ellingham), ou utiliser un couple **métal/oxyde** dont la $P_{O_2}$ d'équilibre vaut $10^{-10}$ atm à cette température."
     },
     {
       "id": "thermo-cartes-007",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "Démontrer que l'ajout d'un gaz inerte **à volume constant** ne modifie pas un équilibre gazeux.",
-      "reponse": "$P_i=\\dfrac{n_iRT}{V}$ : à T et V constants, l'inerte ne change ni les $n_i$ ni les $P_i$ des espèces réactives ⇒ $Q=\\prod (P_i/P^\\circ)^{\\nu_i}$ inchangé, reste égal à K ⇒ **pas de déplacement**. (À P constante en revanche, la dilution baisse les $P_i$ et déplace vers le côté qui a le plus de moles de gaz.)"
+      "choix": [
+        "$P_i=n_iRT/V$ : à T et V constants, l'inerte ne change ni les $n_i$ ni les $P_i$ ⇒ Q inchangé, égal à K ⇒ pas de déplacement",
+        "L'inerte augmente la pression totale donc déplace vers le côté qui a le moins de moles de gaz",
+        "L'inerte diminue K car il dilue le mélange",
+        "L'inerte réagit faiblement avec les espèces et déplace l'équilibre"
+      ],
+      "reponse": 0,
+      "modele": "$P_i=\\dfrac{n_iRT}{V}$ : à T et V constants, l'inerte ne change ni les $n_i$ ni les $P_i$ des espèces réactives ⇒ $Q=\\prod (P_i/P^\\circ)^{\\nu_i}$ inchangé, reste égal à K ⇒ **pas de déplacement**. (À P constante en revanche, la dilution baisse les $P_i$ et déplace vers le côté qui a le plus de moles de gaz.)"
     },
     {
       "id": "thermo-cartes-008",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "Pourquoi exprime-t-on les pressions en atmosphères plutôt qu'en pascals dans le calcul des constantes d'équilibre ?",
-      "reponse": "K s'écrit avec les **activités** $a_i=P_i/P^\\circ$, $P^\\circ=1$ bar ≈ 1 atm. En exprimant $P_i$ en atm (bar), sa valeur numérique est directement l'activité et K est sans dimension. En Pa il faudrait diviser chaque pression par $10^5$ (sinon K est faux d'un facteur $10^{5\\Delta n}$)."
+      "choix": [
+        "K s'écrit avec les activités $a_i=P_i/P^\\circ$, $P^\\circ$ = 1 bar ≈ 1 atm : en atm la valeur est directement l'activité ; en Pa, K serait faux d'un facteur $10^{5\\Delta n}$",
+        "Parce que les tables thermodynamiques sont américaines",
+        "Parce qu'en pascals K serait toujours égal à 1",
+        "Cela n'a aucune importance : K est le même dans toutes les unités"
+      ],
+      "reponse": 0,
+      "modele": "K s'écrit avec les **activités** $a_i=P_i/P^\\circ$, $P^\\circ=1$ bar ≈ 1 atm. En exprimant $P_i$ en atm (bar), sa valeur numérique est directement l'activité et K est sans dimension. En Pa il faudrait diviser chaque pression par $10^5$ (sinon K est faux d'un facteur $10^{5\\Delta n}$)."
     },
     {
       "id": "thermo-cartes-009",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "À l'aide de courbes de Gibbs en fonction de la composition, comment différencier un palier **eutectique** d'un palier **péritectique** ?",
-      "reponse": "À la température du palier, **une seule tangente commune** touche les trois courbes.\\n- **Eutectique** ($L\\to\\alpha+\\beta$) : le point de contact du **liquide est au milieu**, entre α et β.\\n- **Péritectique** ($L+\\alpha\\to\\beta$) : c'est la **phase solide formée β** qui est au milieu ; le liquide est à une extrémité.\\nJuste en dessous, la courbe du liquide passe au-dessus de la tangente α–β (eutectique) / la courbe de β descend sous la tangente L–α (péritectique)."
+      "choix": [
+        "Une seule tangente commune touche les trois courbes ; eutectique : le contact du liquide est au milieu ; péritectique : la phase solide formée β est au milieu",
+        "Eutectique : deux tangentes communes distinctes ; péritectique : aucune tangente commune",
+        "Eutectique : le solide α est au milieu ; péritectique : le liquide est au milieu",
+        "On ne peut pas les différencier avec les courbes de Gibbs"
+      ],
+      "reponse": 0,
+      "modele": "À la température du palier, **une seule tangente commune** touche les trois courbes.\\n- **Eutectique** ($L\\to\\alpha+\\beta$) : le point de contact du **liquide est au milieu**, entre α et β.\\n- **Péritectique** ($L+\\alpha\\to\\beta$) : c'est la **phase solide formée β** qui est au milieu ; le liquide est à une extrémité.\\nJuste en dessous, la courbe du liquide passe au-dessus de la tangente α–β (eutectique) / la courbe de β descend sous la tangente L–α (péritectique)."
     },
     {
       "id": "thermo-cartes-010",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "Dans un binaire où le coefficient d'échange atomique est **négatif**, l'entropie de configuration est inférieure à celle d'un binaire où il est nul. Pourquoi ?",
-      "reponse": "$\\Delta\\varepsilon<0$ : les paires **A–B sont favorisées** ⇒ tendance à l'**ordre** (alternance A/B). Les atomes ne sont plus répartis au hasard : le nombre de configurations accessibles $W$ diminue, donc $S=k\\ln W$ est plus faible que l'entropie idéale du mélange aléatoire ($\\Delta\\varepsilon=0$)."
+      "choix": [
+        "Δε < 0 : les paires A–B sont favorisées ⇒ tendance à l'ordre ⇒ moins de configurations accessibles W ⇒ S = k ln W plus faible",
+        "Δε < 0 : les paires A–A sont favorisées ⇒ démixtion ⇒ plus de désordre",
+        "L'entropie de configuration ne dépend pas de Δε, c'est l'enthalpie qui change",
+        "Δε < 0 : la solution est idéale, donc S est maximale"
+      ],
+      "reponse": 0,
+      "modele": "$\\Delta\\varepsilon<0$ : les paires **A–B sont favorisées** ⇒ tendance à l'**ordre** (alternance A/B). Les atomes ne sont plus répartis au hasard : le nombre de configurations accessibles $W$ diminue, donc $S=k\\ln W$ est plus faible que l'entropie idéale du mélange aléatoire ($\\Delta\\varepsilon=0$)."
     },
     {
       "id": "thermo-cartes-011",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "Définir lacune de miscibilité et lacune de stabilité ; quelle microstructure obtient-on dans chacune ?",
-      "reponse": "- **Lacune de miscibilité** (binodale) : compositions des points de la **tangente commune** à $G(x)$ ; dedans, deux phases à l'équilibre.\\n- **Lacune de stabilité** (spinodale) : $\\dfrac{\\partial^2G}{\\partial x^2}<0$, entre les points d'inflexion, à l'intérieur de la binodale.\\nEntre les deux (métastable) : **germination-croissance**, précipités isolés. Dans la spinodale : **décomposition spinodale**, deux phases fines **interconnectées**."
+      "choix": [
+        "Miscibilité (binodale) : points de la tangente commune, deux phases ; stabilité (spinodale) : ∂²G/∂x² < 0 ; entre les deux germination-croissance, dans la spinodale décomposition spinodale (microstructure interconnectée)",
+        "Miscibilité : ∂²G/∂x² < 0 ; stabilité : tangente commune ; même microstructure dans les deux",
+        "Lacune de miscibilité : zone monophasée ; lacune de stabilité : zone liquide",
+        "Les deux termes sont synonymes et donnent des précipités isolés"
+      ],
+      "reponse": 0,
+      "modele": "- **Lacune de miscibilité** (binodale) : compositions des points de la **tangente commune** à $G(x)$ ; dedans, deux phases à l'équilibre.\\n- **Lacune de stabilité** (spinodale) : $\\dfrac{\\partial^2G}{\\partial x^2}<0$, entre les points d'inflexion, à l'intérieur de la binodale.\\nEntre les deux (métastable) : **germination-croissance**, précipités isolés. Dans la spinodale : **décomposition spinodale**, deux phases fines **interconnectées**."
     },
     {
       "id": "thermo-cartes-012",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "Quelle est l'application industrielle des alliages Nb–Zr ?",
-      "reponse": "**Fils supraconducteurs** (Nb–Zr, avant Nb–Ti) et **gainage de combustible nucléaire** (alliages Zr–1 % Nb type M5/E110 : faible absorption des neutrons, bonne tenue à la corrosion)."
+      "choix": [
+        "Fils supraconducteurs et gainage de combustible nucléaire (Zr–1 % Nb : faible absorption des neutrons, bonne tenue à la corrosion)",
+        "Ustensiles de cuisine et carrosseries automobiles",
+        "Électrodes de soudage à l'arc",
+        "Pigments blancs pour peintures"
+      ],
+      "reponse": 0,
+      "modele": "**Fils supraconducteurs** (Nb–Zr, avant Nb–Ti) et **gainage de combustible nucléaire** (alliages Zr–1 % Nb type M5/E110 : faible absorption des neutrons, bonne tenue à la corrosion)."
     },
     {
       "id": "thermo-cartes-013",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "Énoncer la règle des phases de Gibbs et l'appliquer à un point eutectique d'un binaire à pression fixée.",
-      "reponse": "$v=c+2-\\varphi$ ; à P fixée $v=c+1-\\varphi$. Binaire ($c=2$), eutectique : 3 phases (L, α, β) ⇒ $v=0$ : **invariant**, température et compositions fixées ⇒ palier."
+      "choix": [
+        "$v=c+2-\\varphi$, à P fixée $v=c+1-\\varphi$ ; eutectique binaire : 3 phases ⇒ $v=0$, invariant (palier)",
+        "$v=c-\\varphi+1$ ; eutectique binaire : 2 phases ⇒ $v=1$",
+        "$v=\\varphi-c+2$ ; eutectique : $v=3$",
+        "$v=c+2-\\varphi$ ; eutectique binaire à P fixée : $v=1$, la température varie"
+      ],
+      "reponse": 0,
+      "modele": "$v=c+2-\\varphi$ ; à P fixée $v=c+1-\\varphi$. Binaire ($c=2$), eutectique : 3 phases (L, α, β) ⇒ $v=0$ : **invariant**, température et compositions fixées ⇒ palier."
     },
     {
       "id": "thermo-cartes-014",
-      "type": "carte",
+      "type": "redaction",
       "difficulte": 2,
       "enonce": "Énoncer la relation de Clapeyron et dire ce que le signe de la pente $dP/dT$ de la frontière solide/liquide indique.",
-      "reponse": "$\\dfrac{dP}{dT}=\\dfrac{\\Delta H}{T\\Delta V}$. À la fusion $\\Delta H>0$ : la pente a le signe de $\\Delta V=V_L-V_S$. Pente positive : liquide moins dense (cas général). Pente négative : liquide plus dense que le solide (eau, Si, Bi… ; carbone à haute pression)."
+      "choix": [
+        "$dP/dT=\\Delta H/(T\\Delta V)$ ; à la fusion ΔH > 0, la pente a le signe de $\\Delta V=V_L-V_S$ (négative si le liquide est plus dense : eau, Si, Bi)",
+        "$dP/dT=T\\Delta V/\\Delta H$ ; pente toujours positive",
+        "$dP/dT=\\Delta S\\cdot\\Delta V$ ; pente négative si le solide est plus dense",
+        "$dP/dT=\\Delta H/(RT^2)$ ; le signe dépend de ΔH seulement"
+      ],
+      "reponse": 0,
+      "modele": "$\\dfrac{dP}{dT}=\\dfrac{\\Delta H}{T\\Delta V}$. À la fusion $\\Delta H>0$ : la pente a le signe de $\\Delta V=V_L-V_S$. Pente positive : liquide moins dense (cas général). Pente négative : liquide plus dense que le solide (eau, Si, Bi… ; carbone à haute pression)."
     }
   ]
 }
