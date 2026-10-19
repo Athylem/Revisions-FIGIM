@@ -1,0 +1,455 @@
+{
+  "chapitre": "Révision mixte",
+  "questions": [
+    {
+      "id": "ang-v-001",
+      "difficulte": 1,
+      "consigne": "Ex. V — Read the conversation. Then look at the answers below and write the correct answer in each space.",
+      "enonce": "Robert: Hello, Tessa. Great to see you. What have you _____ doing lately?",
+      "explication": "« What have you been doing lately? » : present perfect continuous (have + been + -ing) → been.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "qcm",
+      "choix": [
+        "been",
+        "had",
+        "has",
+        "was"
+      ],
+      "reponse": 0
+    },
+    {
+      "id": "ang-v-002",
+      "difficulte": 1,
+      "consigne": "Ex. V — Read the conversation. Then look at the answers below and write the correct answer in each space.",
+      "enonce": "Tessa: _____ just started a new job in computer software.",
+      "explication": "just + participe passé (started), résultat présent → present perfect : I've just started.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "qcm",
+      "choix": [
+        "I'd",
+        "I'll",
+        "I'm",
+        "I've"
+      ],
+      "reponse": 3
+    },
+    {
+      "id": "ang-v-003",
+      "difficulte": 1,
+      "consigne": "Ex. V — Read the conversation. Then look at the answers below and write the correct answer in each space.",
+      "enonce": "Robert: You _____ working for Tuffex Plastics when we last met.",
+      "explication": "Action en cours au moment passé « when we last met » → past continuous : you were working.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "qcm",
+      "choix": [
+        "did",
+        "had",
+        "have",
+        "were"
+      ],
+      "reponse": 3
+    },
+    {
+      "id": "ang-v-004",
+      "difficulte": 1,
+      "consigne": "Ex. V — Read the conversation. Then look at the answers below and write the correct answer in each space.",
+      "enonce": "Tessa: That's right. I hadn't _____ working there long before I got fed up.",
+      "explication": "Durée avant un moment passé (before I got fed up) → past perfect continuous : hadn't been working.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "qcm",
+      "choix": [
+        "be",
+        "been",
+        "done",
+        "had"
+      ],
+      "reponse": 1
+    },
+    {
+      "id": "ang-v-005",
+      "difficulte": 1,
+      "consigne": "Ex. V — Read the conversation. Then look at the answers below and write the correct answer in each space.",
+      "enonce": "Tessa: _____ realized what a horrible job it would be.",
+      "explication": "Avant de commencer, elle ne savait pas : antérieur à un moment passé → past perfect négatif : I hadn't realized.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "qcm",
+      "choix": [
+        "I didn't",
+        "I hadn't",
+        "I haven't",
+        "I wasn't"
+      ],
+      "reponse": 1
+    },
+    {
+      "id": "ang-v-006",
+      "difficulte": 1,
+      "consigne": "Ex. V — Read the conversation. Then look at the answers below and write the correct answer in each space.",
+      "enonce": "Tessa: But what about you? _____ you found a job?",
+      "explication": "Question sur la situation actuelle, sans date → present perfect : Have you found a job?",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "qcm",
+      "choix": [
+        "Did",
+        "Had",
+        "Have",
+        "Were"
+      ],
+      "reponse": 2
+    },
+    {
+      "id": "ang-v-007",
+      "difficulte": 1,
+      "consigne": "Ex. V — Read the conversation. Then look at the answers below and write the correct answer in each space.",
+      "enonce": "Robert: Well, six months ago I _____ working for a car hire company,",
+      "explication": "« six months ago » = moment précis du passé, action en cours à ce moment → past continuous : I was working.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "qcm",
+      "choix": [
+        "been",
+        "had",
+        "have",
+        "was"
+      ],
+      "reponse": 3
+    },
+    {
+      "id": "ang-v-008",
+      "difficulte": 1,
+      "consigne": "Ex. V — Read the conversation. Then look at the answers below and write the correct answer in each space.",
+      "enonce": "Robert: but then they _____ bankrupt. So I'm out of work now.",
+      "explication": "Événement ponctuel fini (but then…) → past simple : they went bankrupt.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "qcm",
+      "choix": [
+        "go",
+        "going",
+        "gone",
+        "went"
+      ],
+      "reponse": 3
+    },
+    {
+      "id": "ang-v-009",
+      "difficulte": 1,
+      "consigne": "Ex. V — Read the conversation. Then look at the answers below and write the correct answer in each space.",
+      "enonce": "Robert: _____ been looking around for another job.\nTessa: Well, I'm sure you'll find one soon.",
+      "explication": "Action qui dure jusqu'à maintenant → present perfect continuous : I've been looking.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "qcm",
+      "choix": [
+        "I'd",
+        "I'll",
+        "I'm",
+        "I've"
+      ],
+      "reponse": 3
+    },
+    {
+      "id": "ang-vi-001",
+      "difficulte": 3,
+      "consigne": "Ex. VI — Write the sentences correctly. (La partie barrée est fausse : réécris-la en entier avec le bon temps.)",
+      "enonce": "It was my first day back at work. ~~I was on holiday.~~\n_____",
+      "explication": "Les vacances sont antérieures à ce premier jour de retour (passé) → past perfect : I'd been on holiday.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "I'd been on holiday."
+      ]
+    },
+    {
+      "id": "ang-vi-002",
+      "difficulte": 3,
+      "consigne": "Ex. VI — Write the sentences correctly. (La partie barrée est fausse : réécris-la en entier avec le bon temps.)",
+      "enonce": "I'm quite tired now. ~~I play badminton.~~\n_____",
+      "explication": "Activité récente et prolongée qui explique l'état présent (tired now) → present perfect continuous.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "I've been playing badminton."
+      ]
+    },
+    {
+      "id": "ang-vi-003",
+      "difficulte": 3,
+      "consigne": "Ex. VI — Write the sentences correctly. (La partie barrée est fausse : réécris-la en entier avec le bon temps.)",
+      "enonce": "I had to sit down. ~~I'd been having a shock.~~\n_____",
+      "explication": "Un choc est un événement ponctuel, pas une action qui dure → past perfect simple : I'd had a shock.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "I'd had a shock."
+      ]
+    },
+    {
+      "id": "ang-vi-004",
+      "difficulte": 3,
+      "consigne": "Ex. VI — Write the sentences correctly. (La partie barrée est fausse : réécris-la en entier avec le bon temps.)",
+      "enonce": "You need a rest. ~~How much have you been working?~~\n_____",
+      "explication": "On demande une durée → How long + present perfect continuous (How much porte sur une quantité).",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "How long have you been working?"
+      ]
+    },
+    {
+      "id": "ang-vi-005",
+      "difficulte": 3,
+      "consigne": "Ex. VI — Write the sentences correctly. (La partie barrée est fausse : réécris-la en entier avec le bon temps.)",
+      "enonce": "The robbery happened at midday. ~~Lots of people walked along the street outside.~~\n_____",
+      "explication": "Décor, action en cours au moment du vol → past continuous.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "Lots of people were walking along the street outside."
+      ]
+    },
+    {
+      "id": "ang-vi-006",
+      "difficulte": 3,
+      "consigne": "Ex. VI — Write the sentences correctly. (La partie barrée est fausse : réécris-la en entier avec le bon temps.)",
+      "enonce": "My sister speaks good English. ~~She is practising her English since last summer.~~\n_____",
+      "explication": "since + point de départ, action qui dure jusqu'à maintenant → present perfect continuous (jamais le présent avec since).",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "She's been practising her English since last summer.",
+        "She's been practicing her English since last summer."
+      ]
+    },
+    {
+      "id": "ang-vi-007",
+      "difficulte": 3,
+      "consigne": "Ex. VI — Write the sentences correctly. (La partie barrée est fausse : réécris-la en entier avec le bon temps.)",
+      "enonce": "At last I have my qualification. ~~I've been passing my exam.~~\n_____",
+      "explication": "Action unique terminée, résultat présent (j'ai mon diplôme) → present perfect simple, pas continuous.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "I've passed my exam."
+      ]
+    },
+    {
+      "id": "ang-vi-008",
+      "difficulte": 3,
+      "consigne": "Ex. VI — Write the sentences correctly. (La partie barrée est fausse : réécris-la en entier avec le bon temps.)",
+      "enonce": "Michelle looked really sunburnt. ~~She'd lie in the sun for too long.~~\n_____",
+      "explication": "Action qui a duré avant un moment passé et en explique le résultat (looked sunburnt) → past perfect continuous.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "She'd been lying in the sun for too long.",
+        "She'd been lying in the sun too long."
+      ]
+    },
+    {
+      "id": "ang-vi-009",
+      "difficulte": 3,
+      "consigne": "Ex. VI — Write the sentences correctly. (La partie barrée est fausse : réécris-la en entier avec le bon temps.)",
+      "enonce": "We got to the coach stop at nine yesterday. ~~But the coach has already gone.~~\n_____",
+      "explication": "Le car est parti avant notre arrivée (passé) → past perfect : had already gone. Pas de present perfect dans un récit au passé.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "But the coach had already gone.",
+        "The coach had already gone."
+      ]
+    },
+    {
+      "id": "ang-xi-001",
+      "difficulte": 2,
+      "consigne": "Ex. XI — Complete the conversations. Put in the correct form of each verb.",
+      "enonce": "A: Could you tell me your address?\nB: Well, _____ (I / live) in a friend's house at the moment. Luckily **I've found** a place of my own now, but I can't move in until next week.",
+      "explication": "Situation temporaire (« at the moment ») → present continuous.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "I'm living"
+      ]
+    },
+    {
+      "id": "ang-xi-002",
+      "difficulte": 2,
+      "consigne": "Ex. XI — Complete the conversations. Put in the correct form of each verb.",
+      "enonce": "A: Could you tell me your address?\nB: Well, **I'm living** in a friend's house at the moment. Luckily _____ (I / find) a place of my own now, but I can't move in until next week.",
+      "explication": "Résultat présent (j'ai maintenant un logement) → present perfect.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "I've found"
+      ]
+    },
+    {
+      "id": "ang-xi-003",
+      "difficulte": 2,
+      "consigne": "Ex. XI — Complete the conversations. Put in the correct form of each verb.",
+      "enonce": "A: Is this your CD?\nB: No, it isn't mine. _____ (I / think) **it belongs** to Peter.",
+      "explication": "think = opinion → verbe d'état → present simple.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "I think"
+      ]
+    },
+    {
+      "id": "ang-xi-004",
+      "difficulte": 2,
+      "consigne": "Ex. XI — Complete the conversations. Put in the correct form of each verb.",
+      "enonce": "A: Is this your CD?\nB: No, it isn't mine. **I think** _____ (it / belong) to Peter.",
+      "explication": "belong = verbe d'état → present simple.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "it belongs"
+      ]
+    },
+    {
+      "id": "ang-xi-005",
+      "difficulte": 2,
+      "consigne": "Ex. XI — Complete the conversations. Put in the correct form of each verb.",
+      "enonce": "A: Can I borrow your calculator, please?\nB: Well, _____ (I / use) it to work out these figures at the moment. **I want** to finish doing them, now that **I've started**.",
+      "explication": "Action en cours en ce moment / situation temporaire → present continuous (am/is/are + -ing).",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "I'm using"
+      ]
+    },
+    {
+      "id": "ang-xi-006",
+      "difficulte": 2,
+      "consigne": "Ex. XI — Complete the conversations. Put in the correct form of each verb.",
+      "enonce": "A: Can I borrow your calculator, please?\nB: Well, **I'm using** it to work out these figures at the moment. _____ (I / want) to finish doing them, now that **I've started**.",
+      "explication": "Verbe d'état (think = opinion, know, like, need, want, hate, understand, belong…) → present simple, pas de -ing.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "I want"
+      ]
+    },
+    {
+      "id": "ang-xi-007",
+      "difficulte": 2,
+      "consigne": "Ex. XI — Complete the conversations. Put in the correct form of each verb.",
+      "enonce": "A: Can I borrow your calculator, please?\nB: Well, **I'm using** it to work out these figures at the moment. **I want** to finish doing them, now that _____ (I / start).",
+      "explication": "« now that » + résultat présent → present perfect.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "I've started"
+      ]
+    },
+    {
+      "id": "ang-xi-008",
+      "difficulte": 2,
+      "consigne": "Ex. XI — Complete the conversations. Put in the correct form of each verb.",
+      "enonce": "A: Why can't you wash your dirty plates sometimes? _____ (you / leave) them in the sink most of the time.\nB: OK, sorry. The last few weeks **I've had** so little time. **I've been rushing** around all the time.",
+      "explication": "« most of the time » = habitude → present simple.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "You leave"
+      ]
+    },
+    {
+      "id": "ang-xi-009",
+      "difficulte": 2,
+      "consigne": "Ex. XI — Complete the conversations. Put in the correct form of each verb.",
+      "enonce": "A: Why can't you wash your dirty plates sometimes? **You leave** them in the sink most of the time.\nB: OK, sorry. The last few weeks _____ (I / have) so little time. **I've been rushing** around all the time.",
+      "explication": "« the last few weeks » : période qui va jusqu'à maintenant → present perfect.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "I've had"
+      ]
+    },
+    {
+      "id": "ang-xi-010",
+      "difficulte": 2,
+      "consigne": "Ex. XI — Complete the conversations. Put in the correct form of each verb.",
+      "enonce": "A: Why can't you wash your dirty plates sometimes? **You leave** them in the sink most of the time.\nB: OK, sorry. The last few weeks **I've had** so little time. _____ (I / rush) around all the time.",
+      "explication": "Activité répétée qui dure jusqu'à maintenant (« all the time ») → present perfect continuous.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "I've been rushing"
+      ]
+    },
+    {
+      "id": "ang-xii-001",
+      "difficulte": 1,
+      "consigne": "Ex. XII — Write the correct answer in each space.",
+      "enonce": "I've got my key. I found it when _____ for something else.",
+      "explication": "Action en cours, interrompue par « I found it » → past continuous.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "qcm",
+      "choix": [
+        "I looked",
+        "I've looked",
+        "I was looking"
+      ],
+      "reponse": 2
+    },
+    {
+      "id": "ang-xii-002",
+      "difficulte": 1,
+      "consigne": "Ex. XII — Write the correct answer in each space.",
+      "enonce": "Sorry, I can't stop now. _____ to an important meeting.",
+      "explication": "Action en cours en ce moment → present continuous.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "qcm",
+      "choix": [
+        "I go",
+        "I'm going",
+        "I've gone"
+      ],
+      "reponse": 1
+    },
+    {
+      "id": "ang-xii-003",
+      "difficulte": 1,
+      "consigne": "Ex. XII — Write the correct answer in each space.",
+      "enonce": "I can't get Tessa on the phone. _____ all afternoon.",
+      "explication": "Action répétée qui dure jusqu'à maintenant (all afternoon) → present perfect continuous.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "qcm",
+      "choix": [
+        "I'm trying",
+        "I try",
+        "I've been trying"
+      ],
+      "reponse": 2
+    },
+    {
+      "id": "ang-xii-004",
+      "difficulte": 1,
+      "consigne": "Ex. XII — Write the correct answer in each space.",
+      "enonce": "The bank told me last week there was no money in my account. _____ it all.",
+      "explication": "Dépenses antérieures au moment où la banque l'a dit (passé) → past perfect.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "qcm",
+      "choix": [
+        "I'd spent",
+        "I spent",
+        "I was spending"
+      ],
+      "reponse": 0
+    },
+    {
+      "id": "ang-xii-005",
+      "difficulte": 1,
+      "consigne": "Ex. XII — Write the correct answer in each space.",
+      "enonce": "There's a new road to the motorway. _____ it yesterday.",
+      "explication": "ago / yesterday / last… = moment précis du passé → past simple, jamais present perfect.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "qcm",
+      "choix": [
+        "They'd opened",
+        "They opened",
+        "They've opened"
+      ],
+      "reponse": 1
+    }
+  ]
+}

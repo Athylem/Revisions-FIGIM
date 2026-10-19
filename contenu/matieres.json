@@ -279,7 +279,32 @@
       "groupe": "Langues",
       "ds": null,
       "notes": true,
-      "chapitres": []
+      "chapitres": [
+        {
+          "id": "ch1-present",
+          "nom": "Présents et present perfect",
+          "fichier": "anglais/ch1-present.json",
+          "questions": 58
+        },
+        {
+          "id": "ch2-passe",
+          "nom": "Temps du passé",
+          "fichier": "anglais/ch2-passe.json",
+          "questions": 50
+        },
+        {
+          "id": "ch3-futur",
+          "nom": "Le futur",
+          "fichier": "anglais/ch3-futur.json",
+          "questions": 26
+        },
+        {
+          "id": "ch4-mixte",
+          "nom": "Révision mixte",
+          "fichier": "anglais/ch4-mixte.json",
+          "questions": 33
+        }
+      ]
     }
   ]
 }

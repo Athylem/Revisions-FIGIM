@@ -1,0 +1,611 @@
+{
+  "chapitre": "Temps du passé",
+  "questions": [
+    {
+      "id": "ang-ii-001",
+      "difficulte": 1,
+      "consigne": "Ex. II — Complete the sentences. Put in the correct form of each verb. Use the past continuous or past simple.",
+      "enonce": "I _____ (lie) in the bath when the phone **rang**. It **stopped** after a few rings.",
+      "explication": "Action en cours à un moment du passé (souvent interrompue par une autre) → past continuous (was/were + -ing).",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "was lying"
+      ]
+    },
+    {
+      "id": "ang-ii-002",
+      "difficulte": 1,
+      "consigne": "Ex. II — Complete the sentences. Put in the correct form of each verb. Use the past continuous or past simple.",
+      "enonce": "I **was lying** in the bath when the phone _____ (ring). It **stopped** after a few rings.",
+      "explication": "Action courte qui vient interrompre une action en cours → past simple.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "rang"
+      ]
+    },
+    {
+      "id": "ang-ii-003",
+      "difficulte": 1,
+      "consigne": "Ex. II — Complete the sentences. Put in the correct form of each verb. Use the past continuous or past simple.",
+      "enonce": "I **was lying** in the bath when the phone **rang**. It _____ (stop) after a few rings.",
+      "explication": "Action finie à un moment précis du passé → past simple.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "stopped"
+      ]
+    },
+    {
+      "id": "ang-ii-004",
+      "difficulte": 1,
+      "consigne": "Ex. II — Complete the sentences. Put in the correct form of each verb. Use the past continuous or past simple.",
+      "enonce": "It _____ (be) cold when we **left** the house that day, and a light snow **was falling**.",
+      "explication": "État passé terminé (be) → past simple.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "was"
+      ]
+    },
+    {
+      "id": "ang-ii-005",
+      "difficulte": 1,
+      "consigne": "Ex. II — Complete the sentences. Put in the correct form of each verb. Use the past continuous or past simple.",
+      "enonce": "It **was** cold when we _____ (leave) the house that day, and a light snow **was falling**.",
+      "explication": "Action finie à un moment précis du passé → past simple.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "left"
+      ]
+    },
+    {
+      "id": "ang-ii-006",
+      "difficulte": 1,
+      "consigne": "Ex. II — Complete the sentences. Put in the correct form of each verb. Use the past continuous or past simple.",
+      "enonce": "It **was** cold when we **left** the house that day, and a light snow _____ (fall).",
+      "explication": "Action en cours qui plante le décor de la scène → past continuous.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "was falling"
+      ]
+    },
+    {
+      "id": "ang-ii-007",
+      "difficulte": 1,
+      "consigne": "Ex. II — Complete the sentences. Put in the correct form of each verb. Use the past continuous or past simple.",
+      "enonce": "Your friend who _____ (come) here the other day **seemed** very nice. I **enjoyed** meeting her.",
+      "explication": "Action finie à un moment précis du passé → past simple. (« the other day »)",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "came"
+      ]
+    },
+    {
+      "id": "ang-ii-008",
+      "difficulte": 1,
+      "consigne": "Ex. II — Complete the sentences. Put in the correct form of each verb. Use the past continuous or past simple.",
+      "enonce": "Your friend who **came** here the other day _____ (seem) very nice. I **enjoyed** meeting her.",
+      "explication": "seem = verbe d'état → past simple.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "seemed"
+      ]
+    },
+    {
+      "id": "ang-ii-009",
+      "difficulte": 1,
+      "consigne": "Ex. II — Complete the sentences. Put in the correct form of each verb. Use the past continuous or past simple.",
+      "enonce": "Your friend who **came** here the other day **seemed** very nice. I _____ (enjoy) meeting her.",
+      "explication": "Action finie à un moment précis du passé → past simple.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "enjoyed"
+      ]
+    },
+    {
+      "id": "ang-ii-010",
+      "difficulte": 1,
+      "consigne": "Ex. II — Complete the sentences. Put in the correct form of each verb. Use the past continuous or past simple.",
+      "enonce": "When I _____ (see) the man, he **was standing** outside the bank. He **had** a black baseball cap on.",
+      "explication": "Action finie à un moment précis du passé → past simple.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "saw"
+      ]
+    },
+    {
+      "id": "ang-ii-011",
+      "difficulte": 1,
+      "consigne": "Ex. II — Complete the sentences. Put in the correct form of each verb. Use the past continuous or past simple.",
+      "enonce": "When I **saw** the man, he _____ (stand) outside the bank. He **had** a black baseball cap on.",
+      "explication": "Action en cours à un moment du passé (souvent interrompue par une autre) → past continuous (was/were + -ing).",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "was standing"
+      ]
+    },
+    {
+      "id": "ang-ii-012",
+      "difficulte": 1,
+      "consigne": "Ex. II — Complete the sentences. Put in the correct form of each verb. Use the past continuous or past simple.",
+      "enonce": "When I **saw** the man, he **was standing** outside the bank. He _____ (have) a black baseball cap on.",
+      "explication": "have = porter / posséder : verbe d'état → past simple, pas de -ing.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "had"
+      ]
+    },
+    {
+      "id": "ang-ii-013",
+      "difficulte": 1,
+      "consigne": "Ex. II — Complete the sentences. Put in the correct form of each verb. Use the past continuous or past simple.",
+      "enonce": "When I _____ (open) the cupboard door, a pile of books **fell** out.",
+      "explication": "Action finie à un moment précis du passé → past simple.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "opened"
+      ]
+    },
+    {
+      "id": "ang-ii-014",
+      "difficulte": 1,
+      "consigne": "Ex. II — Complete the sentences. Put in the correct form of each verb. Use the past continuous or past simple.",
+      "enonce": "When I **opened** the cupboard door, a pile of books _____ (fall) out.",
+      "explication": "Les deux actions se succèdent (j'ouvre, puis ça tombe) → past simple pour les deux.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "fell"
+      ]
+    },
+    {
+      "id": "ang-ii-015",
+      "difficulte": 1,
+      "consigne": "Ex. II — Complete the sentences. Put in the correct form of each verb. Use the past continuous or past simple.",
+      "enonce": "I _____ (walk) along the street when I suddenly **felt** something hit me in the back. I **didn't know** what it was.",
+      "explication": "Action en cours à un moment du passé (souvent interrompue par une autre) → past continuous (was/were + -ing).",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "was walking"
+      ]
+    },
+    {
+      "id": "ang-ii-016",
+      "difficulte": 1,
+      "consigne": "Ex. II — Complete the sentences. Put in the correct form of each verb. Use the past continuous or past simple.",
+      "enonce": "I **was walking** along the street when I suddenly _____ (feel) something hit me in the back. I **didn't know** what it was.",
+      "explication": "Action soudaine (suddenly) qui interrompt → past simple.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "felt"
+      ]
+    },
+    {
+      "id": "ang-ii-017",
+      "difficulte": 1,
+      "consigne": "Ex. II — Complete the sentences. Put in the correct form of each verb. Use the past continuous or past simple.",
+      "enonce": "I **was walking** along the street when I suddenly **felt** something hit me in the back. I _____ (not / know) what it was.",
+      "explication": "know = verbe d'état → past simple.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "didn't know"
+      ]
+    },
+    {
+      "id": "ang-ii-018",
+      "difficulte": 1,
+      "consigne": "Ex. II — Complete the sentences. Put in the correct form of each verb. Use the past continuous or past simple.",
+      "enonce": "We _____ (go) to London yesterday, but on the way we **heard** about a bomb scare in Oxford Street. So we **drove** back home straightaway.",
+      "explication": "« on the way » : le trajet était en cours et a été interrompu → past continuous (« went » accepté).",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "were going",
+        "went"
+      ]
+    },
+    {
+      "id": "ang-ii-019",
+      "difficulte": 1,
+      "consigne": "Ex. II — Complete the sentences. Put in the correct form of each verb. Use the past continuous or past simple.",
+      "enonce": "We **were going** to London yesterday, but on the way we _____ (hear) about a bomb scare in Oxford Street. So we **drove** back home straightaway.",
+      "explication": "Action courte qui vient interrompre une action en cours → past simple.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "heard"
+      ]
+    },
+    {
+      "id": "ang-ii-020",
+      "difficulte": 1,
+      "consigne": "Ex. II — Complete the sentences. Put in the correct form of each verb. Use the past continuous or past simple.",
+      "enonce": "We **were going** to London yesterday, but on the way we **heard** about a bomb scare in Oxford Street. So we _____ (drive) back home straightaway.",
+      "explication": "Action finie à un moment précis du passé → past simple.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "drove"
+      ]
+    },
+    {
+      "id": "ang-ii-021",
+      "difficulte": 1,
+      "consigne": "Ex. II — Complete the sentences. Put in the correct form of each verb. Use the past continuous or past simple.",
+      "enonce": "Something very strange _____ (happen) to me on my way home from work yesterday afternoon. I **was driving** along the bypass at the time. Suddenly I **saw** my mother in the seat beside me. But she died three years ago.",
+      "explication": "Action finie à un moment précis du passé → past simple.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "happened"
+      ]
+    },
+    {
+      "id": "ang-ii-022",
+      "difficulte": 1,
+      "consigne": "Ex. II — Complete the sentences. Put in the correct form of each verb. Use the past continuous or past simple.",
+      "enonce": "Something very strange **happened** to me on my way home from work yesterday afternoon. I _____ (drive) along the bypass at the time. Suddenly I **saw** my mother in the seat beside me. But she died three years ago.",
+      "explication": "« at the time » : action en cours à ce moment-là → past continuous.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "was driving"
+      ]
+    },
+    {
+      "id": "ang-ii-023",
+      "difficulte": 1,
+      "consigne": "Ex. II — Complete the sentences. Put in the correct form of each verb. Use the past continuous or past simple.",
+      "enonce": "Something very strange **happened** to me on my way home from work yesterday afternoon. I **was driving** along the bypass at the time. Suddenly I _____ (see) my mother in the seat beside me. But she died three years ago.",
+      "explication": "Action soudaine (Suddenly) → past simple.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "saw"
+      ]
+    },
+    {
+      "id": "ang-vii-001",
+      "difficulte": 2,
+      "consigne": "Ex. VII — Complete the conversations. Put in the correct form of each verb.",
+      "enonce": "A: Are you still copying those addresses?\nB: No, that's all of them. _____ (I / finish) now.",
+      "explication": "Résultat maintenant (c'est terminé, « now ») → present perfect.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "I've finished"
+      ]
+    },
+    {
+      "id": "ang-vii-002",
+      "difficulte": 2,
+      "consigne": "Ex. VII — Complete the conversations. Put in the correct form of each verb.",
+      "enonce": "A: The train is never going to get here.\nB: How long _____ (we / wait) now?\nA: At least half an hour. **We've been** here since ten to five.",
+      "explication": "How long + durée d'une action jusqu'à maintenant → present perfect continuous.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "have we been waiting"
+      ]
+    },
+    {
+      "id": "ang-vii-003",
+      "difficulte": 2,
+      "consigne": "Ex. VII — Complete the conversations. Put in the correct form of each verb.",
+      "enonce": "A: The train is never going to get here.\nB: How long **have we been waiting** now?\nA: At least half an hour. _____ (we / be) here since ten to five.",
+      "explication": "« since ten to five » : état qui dure jusqu'à maintenant → present perfect (be n'a pas de forme continue ici).",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "We've been"
+      ]
+    },
+    {
+      "id": "ang-vii-004",
+      "difficulte": 2,
+      "consigne": "Ex. VII — Complete the conversations. Put in the correct form of each verb.",
+      "enonce": "A: Did you have a nice chat with Tessa?\nB: No, not really. When _____ (we / drink) our coffee, **she hurried** off home.",
+      "explication": "Action en cours, interrompue → past continuous.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "we were drinking"
+      ]
+    },
+    {
+      "id": "ang-vii-005",
+      "difficulte": 2,
+      "consigne": "Ex. VII — Complete the conversations. Put in the correct form of each verb.",
+      "enonce": "A: Did you have a nice chat with Tessa?\nB: No, not really. When **we were drinking** our coffee, _____ (she / hurry) off home.",
+      "explication": "Action courte qui vient interrompre une action en cours → past simple.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "she hurried"
+      ]
+    },
+    {
+      "id": "ang-vii-006",
+      "difficulte": 2,
+      "consigne": "Ex. VII — Complete the conversations. Put in the correct form of each verb.",
+      "enonce": "A: It's terrible about that plane crash, isn't it?\nB: Yes, awful. _____ (I / have) breakfast when **I heard** the news.",
+      "explication": "Action en cours quand j'ai appris la nouvelle → past continuous (have breakfast = action, donc -ing possible).",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "I was having"
+      ]
+    },
+    {
+      "id": "ang-vii-007",
+      "difficulte": 2,
+      "consigne": "Ex. VII — Complete the conversations. Put in the correct form of each verb.",
+      "enonce": "A: It's terrible about that plane crash, isn't it?\nB: Yes, awful. **I was having** breakfast when _____ (I / hear) the news.",
+      "explication": "Action courte qui vient interrompre une action en cours → past simple.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "I heard"
+      ]
+    },
+    {
+      "id": "ang-vii-008",
+      "difficulte": 2,
+      "consigne": "Ex. VII — Complete the conversations. Put in the correct form of each verb.",
+      "enonce": "A: So you sing in a rock band, do you? How long _____ (you / do) that?\nB: Oh, since I was sixteen. **We've done** about a dozen concerts.",
+      "explication": "Activité qui dure depuis un moment jusqu'à maintenant → present perfect continuous (have/has been + -ing).",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "have you been doing"
+      ]
+    },
+    {
+      "id": "ang-vii-009",
+      "difficulte": 2,
+      "consigne": "Ex. VII — Complete the conversations. Put in the correct form of each verb.",
+      "enonce": "A: So you sing in a rock band, do you? How long **have you been doing** that?\nB: Oh, since I was sixteen. _____ (we / do) about a dozen concerts.",
+      "explication": "Résultat chiffré (a dozen concerts) → present perfect simple, pas continuous.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "We've done"
+      ]
+    },
+    {
+      "id": "ang-vii-010",
+      "difficulte": 2,
+      "consigne": "Ex. VII — Complete the conversations. Put in the correct form of each verb.",
+      "enonce": "A: Do you know what Polly was so upset about yesterday?\nB: No, I don't. But I'm sure _____ (she / cry). Her eyes looked red.\nA: Perhaps **she'd had** some bad news.",
+      "explication": "Action qui a duré juste avant un moment passé (ses yeux étaient rouges) → past perfect continuous.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "she'd been crying",
+        "she had been crying"
+      ]
+    },
+    {
+      "id": "ang-vii-011",
+      "difficulte": 2,
+      "consigne": "Ex. VII — Complete the conversations. Put in the correct form of each verb.",
+      "enonce": "A: Do you know what Polly was so upset about yesterday?\nB: No, I don't. But I'm sure **she'd been crying**. Her eyes looked red.\nA: Perhaps _____ (she / have) some bad news.",
+      "explication": "Événement antérieur à son état d'hier → past perfect.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "she'd had",
+        "she had had"
+      ]
+    },
+    {
+      "id": "ang-vii-012",
+      "difficulte": 2,
+      "consigne": "Ex. VII — Complete the conversations. Put in the correct form of each verb.",
+      "enonce": "A: The shooting was very frightening, I suppose.\nB: It certainly was. When _____ (we / hear) the shot, we all **threw** ourselves to the floor.",
+      "explication": "Action finie à un moment précis du passé → past simple.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "we heard"
+      ]
+    },
+    {
+      "id": "ang-vii-013",
+      "difficulte": 2,
+      "consigne": "Ex. VII — Complete the conversations. Put in the correct form of each verb.",
+      "enonce": "A: The shooting was very frightening, I suppose.\nB: It certainly was. When **we heard** the shot, we all _____ (throw) ourselves to the floor.",
+      "explication": "Actions qui se succèdent (on entend, puis on se jette) → past simple.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "threw"
+      ]
+    },
+    {
+      "id": "ang-ix-001",
+      "difficulte": 2,
+      "consigne": "Ex. IX — Put in a pronoun and the correct form of the verb. Use the past continuous (was doing), the past simple (did) or the present perfect continuous (have been doing).",
+      "enonce": "David: You look tired.\nMelanie: Yes, I expect I do. _____ (work) all day.",
+      "explication": "Action qui dure jusqu'à maintenant (all day) et explique la fatigue → present perfect continuous.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "I've been working"
+      ]
+    },
+    {
+      "id": "ang-ix-002",
+      "difficulte": 2,
+      "consigne": "Ex. IX — Put in a pronoun and the correct form of the verb. Use the past continuous (was doing), the past simple (did) or the present perfect continuous (have been doing).",
+      "enonce": "Sarah: Is Laura at home?\nTrevor: No, _____ (go) out about half an hour ago.",
+      "explication": "ago / yesterday / last… = moment précis du passé → past simple, jamais present perfect.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "she went"
+      ]
+    },
+    {
+      "id": "ang-ix-003",
+      "difficulte": 2,
+      "consigne": "Ex. IX — Put in a pronoun and the correct form of the verb. Use the past continuous (was doing), the past simple (did) or the present perfect continuous (have been doing).",
+      "enonce": "Vicky: I haven't finished this letter yet.\nRachel: It must be a long letter. _____ (write) it since lunch-time.",
+      "explication": "since + point de départ, action toujours en cours → present perfect continuous. (Attention : writing, un seul t.)",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "You've been writing"
+      ]
+    },
+    {
+      "id": "ang-ix-004",
+      "difficulte": 2,
+      "consigne": "Ex. IX — Put in a pronoun and the correct form of the verb. Use the past continuous (was doing), the past simple (did) or the present perfect continuous (have been doing).",
+      "enonce": "Harriet: I see you've got some new neighbours.\nTom: Yes, a young couple. _____ (move) in last month.",
+      "explication": "« last month » = moment précis du passé → past simple.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "They moved"
+      ]
+    },
+    {
+      "id": "ang-ix-005",
+      "difficulte": 2,
+      "consigne": "Ex. IX — Put in a pronoun and the correct form of the verb. Use the past continuous (was doing), the past simple (did) or the present perfect continuous (have been doing).",
+      "enonce": "David: Did Tom drive you home?\nMelanie: Yes, _____ (stop) and offered me a lift\nwhile **I was waiting** for a bus outside the town hall.",
+      "explication": "Actions courtes qui se suivent (s'arrêter, proposer) → past simple.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "he stopped"
+      ]
+    },
+    {
+      "id": "ang-ix-006",
+      "difficulte": 2,
+      "consigne": "Ex. IX — Put in a pronoun and the correct form of the verb. Use the past continuous (was doing), the past simple (did) or the present perfect continuous (have been doing).",
+      "enonce": "David: Did Tom drive you home?\nMelanie: Yes, **he stopped** and offered me a lift\nwhile _____ (wait) for a bus outside the town hall.",
+      "explication": "while + action en cours, interrompue → past continuous.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "I was waiting"
+      ]
+    },
+    {
+      "id": "ang-x-001",
+      "difficulte": 2,
+      "consigne": "Ex. X — Complete the radio news report. Put in the correct forms of the verbs.",
+      "enonce": "Hello. This is Kitty Beamish. _____ (I / speak) to you from Oxford, where the finals of the World Quiz Championships will be held tomorrow.",
+      "explication": "Action en cours au moment où elle parle à la radio → present continuous.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "I'm speaking"
+      ]
+    },
+    {
+      "id": "ang-x-002",
+      "difficulte": 2,
+      "consigne": "Ex. X — Complete the radio news report. Put in the correct forms of the verbs.",
+      "enonce": "The favourite is Claude Jennings of Cornwall, the man who _____ (know) everything.",
+      "explication": "Verbe d'état (think = opinion, know, like, need, want, hate, understand, belong…) → present simple, pas de -ing.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "knows"
+      ]
+    },
+    {
+      "id": "ang-x-003",
+      "difficulte": 2,
+      "consigne": "Ex. X — Complete the radio news report. Put in the correct forms of the verbs.",
+      "enonce": "Twelve months ago no one _____ (hear) of Claude Jennings, although **he had been taking** part in quiz competitions for years.",
+      "explication": "Antérieur à « twelve months ago » (personne n'avait entendu parler de lui jusque-là) → past perfect (past simple accepté).",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "had heard",
+        "heard"
+      ]
+    },
+    {
+      "id": "ang-x-004",
+      "difficulte": 2,
+      "consigne": "Ex. X — Complete the radio news report. Put in the correct forms of the verbs.",
+      "enonce": "Twelve months ago no one **had heard** of Claude Jennings, although _____ (he / take) part in quiz competitions for years.",
+      "explication": "Durée (« for years ») avant ce moment passé → past perfect continuous.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "he had been taking",
+        "he'd been taking"
+      ]
+    },
+    {
+      "id": "ang-x-005",
+      "difficulte": 2,
+      "consigne": "Ex. X — Complete the radio news report. Put in the correct forms of the verbs.",
+      "enonce": "Now suddenly he is a big star. So far this year _____ (he / answer) every single question correctly.",
+      "explication": "« So far this year » : période pas terminée → present perfect.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "he has answered",
+        "he's answered"
+      ]
+    },
+    {
+      "id": "ang-x-006",
+      "difficulte": 2,
+      "consigne": "Ex. X — Complete the radio news report. Put in the correct forms of the verbs.",
+      "enonce": "And he is popular, too. When _____ (he / arrive) here two days ago, hundreds of fans **were waiting** at the station to welcome him.",
+      "explication": "Moment précis (« two days ago ») → past simple.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "he arrived"
+      ]
+    },
+    {
+      "id": "ang-x-007",
+      "difficulte": 2,
+      "consigne": "Ex. X — Complete the radio news report. Put in the correct forms of the verbs.",
+      "enonce": "And he is popular, too. When **he arrived** here two days ago, hundreds of fans _____ (wait) at the station to welcome him.",
+      "explication": "Action déjà en cours quand il est arrivé → past continuous.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "were waiting"
+      ]
+    },
+    {
+      "id": "ang-x-008",
+      "difficulte": 2,
+      "consigne": "Ex. X — Complete the radio news report. Put in the correct forms of the verbs.",
+      "enonce": "Since his arrival Claude _____ (read) encyclopedias in his hotel bedroom. He is clearly the man to watch.",
+      "explication": "« Since » + activité qui dure jusqu'à maintenant → present perfect continuous.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "has been reading"
+      ]
+    }
+  ]
+}

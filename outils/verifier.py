@@ -14,7 +14,7 @@ sys.stdout.reconfigure(encoding="utf-8")
 
 RACINE = Path(__file__).resolve().parent.parent
 CONTENU = RACINE / "contenu"
-TYPES = {"qcm", "vrai-faux"}
+TYPES = {"qcm", "vrai-faux", "texte-a-trous"}
 
 erreurs = []
 ids_vus = {}
@@ -38,6 +38,8 @@ def verifier_question(q, fichier):
             erreurs.append(f"{ou} : choix / reponse incohérents")
     if q.get("type") == "vrai-faux" and not isinstance(q.get("reponse"), bool):
         erreurs.append(f"{ou} : reponse doit valoir true ou false")
+    if q.get("type") == "texte-a-trous" and not (isinstance(q.get("reponse"), list) and q["reponse"]):
+        erreurs.append(f"{ou} : reponse doit être une liste de réponses acceptées")
 
 
 chemin_matieres = CONTENU / "matieres.json"

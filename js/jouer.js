@@ -4,8 +4,9 @@ import { chargerMatieres, chargerQuestions, melanger, points } from "./moteur.js
 import { ecrire } from "./texte.js";
 import * as qcm from "./types/qcm.js";
 import * as vraiFaux from "./types/vrai-faux.js";
+import * as texteATrous from "./types/texte-a-trous.js";
 
-const TYPES = { "qcm": qcm, "vrai-faux": vraiFaux };
+const TYPES = { "qcm": qcm, "vrai-faux": vraiFaux, "texte-a-trous": texteATrous };
 const ETOILES = { 1: "★☆☆", 2: "★★☆", 3: "★★★" };
 
 const $ = (sel) => document.querySelector(sel);
@@ -58,6 +59,8 @@ function afficherQuestion() {
   $("#remplissage").style.width = `${(position / session.length) * 100}%`;
   $("#chapitre-question").textContent = q.chapitre;
   $("#difficulte").textContent = ETOILES[q.difficulte];
+  $("#consigne").hidden = !q.consigne;
+  ecrire($("#consigne"), q.consigne ?? "");
   ecrire($("#enonce"), q.enonce);
   $("#retour").hidden = true;
 
@@ -91,6 +94,12 @@ function suivante() {
   else afficherFin();
 }
 
+function texteSolution(q) {
+  if (q.type === "qcm") return q.choix[q.reponse];
+  if (q.type === "texte-a-trous") return q.reponse[0];
+  return q.reponse ? "Vrai" : "Faux";
+}
+
 function afficherFin() {
   const bonnes = session.length - erreurs.length;
   $("#score-final").textContent = `${score} pts`;
@@ -106,7 +115,7 @@ function afficherFin() {
     ecrire(enonce, q.enonce);
     const solution = document.createElement("p");
     solution.className = "solution";
-    ecrire(solution, "**Réponse :** " + (q.type === "qcm" ? q.choix[q.reponse] : q.reponse ? "Vrai" : "Faux"));
+    ecrire(solution, "**Réponse :** " + texteSolution(q));
     const explication = document.createElement("p");
     explication.className = "discret";
     ecrire(explication, q.explication);

@@ -175,3 +175,11 @@ button.secondaire { background: var(--surface); color: var(--texte); border: 1px
 .erreur { margin-top: 0.75rem; }
 .erreur .enonce { font-size: 1rem; margin-top: 0; }
 .solution { margin: 0 0 0.4rem; color: var(--bon); }
+
+.consigne { margin: 0.4rem 0 0; font-size: 0.85rem; color: var(--discret); font-style: italic; }
+.enonce { white-space: pre-line; }
+.saisie { margin-top: 0; }
+.saisie input:disabled { opacity: 1; }
+.saisie input.bon { border: 2px solid var(--bon); background: var(--bon-fond); }
+.saisie input.faux { border: 2px solid var(--faux); background: var(--faux-fond); }
+.saisie + .solution { margin-top: 0.6rem; font-weight: 600; }

@@ -1,0 +1,339 @@
+{
+  "chapitre": "Le futur",
+  "questions": [
+    {
+      "id": "ang-xiii-001",
+      "difficulte": 2,
+      "consigne": "Ex. XIII — Put in the missing words. Use one word only in each space.",
+      "enonce": "There's a fireworks display tomorrow. Janet is _____ (1 mot) to watch it.",
+      "explication": "Intention déjà décidée → be going to.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "going"
+      ]
+    },
+    {
+      "id": "ang-xiii-002",
+      "difficulte": 2,
+      "consigne": "Ex. XIII — Put in the missing words. Use one word only in each space.",
+      "enonce": "We're at that table in the corner. _____ (1 mot) you join us?",
+      "explication": "Invitation → Will you…? (« Would » a été compté faux sur la copie corrigée.)",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "Will",
+        "Won't"
+      ]
+    },
+    {
+      "id": "ang-xiii-003",
+      "difficulte": 2,
+      "consigne": "Ex. XIII — Put in the missing words. Use one word only in each space.",
+      "enonce": "I'm seeing the boss this afternoon. But I must study this report before I _____ (1 mot) her.",
+      "explication": "Après before / when / if, on utilise le present simple pour parler du futur.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "see",
+        "meet"
+      ]
+    },
+    {
+      "id": "ang-xiii-004",
+      "difficulte": 2,
+      "consigne": "Ex. XIII — Put in the missing words. Use one word only in each space.",
+      "enonce": "There will be drinks at the reception, but there will _____ (1 mot) be any food.",
+      "explication": "Futur négatif : will not (won't) + base ; « any » appelle une phrase négative.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "not"
+      ]
+    },
+    {
+      "id": "ang-xiii-005",
+      "difficulte": 2,
+      "consigne": "Ex. XIII — Put in the missing words. Use one word only in each space.",
+      "enonce": "The European heads of state are _____ (1 mot) meet in Brussels on 3 October.",
+      "explication": "be to + base = programme officiel, arrangement formel (are to meet).",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "to"
+      ]
+    },
+    {
+      "id": "ang-xiii-006",
+      "difficulte": 2,
+      "consigne": "Ex. XIII — Put in the missing words. Use one word only in each space.",
+      "enonce": "It's a lovely day. _____ (1 mot) we go for a walk?",
+      "explication": "Suggestion avec I / we → Shall we…?",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "Shall"
+      ]
+    },
+    {
+      "id": "ang-xiii-007",
+      "difficulte": 2,
+      "consigne": "Ex. XIII — Put in the missing words. Use one word only in each space.",
+      "enonce": "My birthday _____ (1 mot) on a Sunday next year.",
+      "explication": "Fait fixé par le calendrier → present simple (is / falls).",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "is",
+        "falls"
+      ]
+    },
+    {
+      "id": "ang-xiii-008",
+      "difficulte": 2,
+      "consigne": "Ex. XIII — Put in the missing words. Use one word only in each space.",
+      "enonce": "My brother is engaged. He's _____ (1 mot) married in June.",
+      "explication": "Arrangement futur déjà organisé → present continuous : he's getting married.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "getting"
+      ]
+    },
+    {
+      "id": "ang-xiii-009",
+      "difficulte": 2,
+      "consigne": "Ex. XIII — Put in the missing words. Use one word only in each space.",
+      "enonce": "You won't be allowed to go to your seat after the play _____ (1 mot) started.",
+      "explication": "Après after / when, une action future terminée s'exprime au present perfect : after the play has started.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "has"
+      ]
+    },
+    {
+      "id": "ang-xiii-010",
+      "difficulte": 2,
+      "consigne": "Ex. XIII — Put in the missing words. Use one word only in each space.",
+      "enonce": "Martin's got his coat on. I think he's _____ (1 mot) to go out.",
+      "explication": "Il a déjà son manteau : imminent → be about to (« going » est aussi grammatical).",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "about",
+        "going"
+      ]
+    },
+    {
+      "id": "ang-xiv-001",
+      "difficulte": 2,
+      "consigne": "Ex. XIV — Read the news report and write the missing words. Use one word only in each space.",
+      "enonce": "The Maxi-Shop company is going to build a huge new shopping centre on the edge of Millingham, it was announced yesterday. There _____ (1 mot) be at least three hundred shops, including some big department stores.",
+      "explication": "Prédiction sur le futur → will + base verbale.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "will"
+      ]
+    },
+    {
+      "id": "ang-xiv-002",
+      "difficulte": 2,
+      "consigne": "Ex. XIV — Read the news report and write the missing words. Use one word only in each space.",
+      "enonce": "When the project _____ (1 mot) complete, there **will** be hundreds of new jobs for local people.",
+      "explication": "Après « when », on utilise le present simple pour parler du futur : when the project is complete.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "is"
+      ]
+    },
+    {
+      "id": "ang-xiv-003",
+      "difficulte": 2,
+      "consigne": "Ex. XIV — Read the news report and write the missing words. Use one word only in each space.",
+      "enonce": "When the project **is** complete, there _____ (1 mot) be hundreds of new jobs for local people.",
+      "explication": "Prédiction sur le futur → will + base verbale.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "will"
+      ]
+    },
+    {
+      "id": "ang-xiv-004",
+      "difficulte": 2,
+      "consigne": "Ex. XIV — Read the news report and write the missing words. Use one word only in each space.",
+      "enonce": "But not everyone is happy. 'We're _____ (1 mot) to fight this plan,' said a spokesperson for the local Environment Group.",
+      "explication": "Intention déjà décidée → be going to.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "going"
+      ]
+    },
+    {
+      "id": "ang-xiv-005",
+      "difficulte": 2,
+      "consigne": "Ex. XIV — Read the news report and write the missing words. Use one word only in each space.",
+      "enonce": "'Just think what is going _____ (1 mot) happen to our countryside.",
+      "explication": "be going to + base verbale.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "to"
+      ]
+    },
+    {
+      "id": "ang-xiv-006",
+      "difficulte": 2,
+      "consigne": "Ex. XIV — Read the news report and write the missing words. Use one word only in each space.",
+      "enonce": "When shopping malls _____ (1 mot) covered the whole country, there **will** be no green fields left.",
+      "explication": "Après « when » + action terminée avant l'autre → present perfect : when malls have covered…",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "have"
+      ]
+    },
+    {
+      "id": "ang-xiv-007",
+      "difficulte": 2,
+      "consigne": "Ex. XIV — Read the news report and write the missing words. Use one word only in each space.",
+      "enonce": "When shopping malls **have** covered the whole country, there _____ (1 mot) be no green fields left.",
+      "explication": "Prédiction sur le futur → will + base verbale.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "will"
+      ]
+    },
+    {
+      "id": "ang-xiv-008",
+      "difficulte": 2,
+      "consigne": "Ex. XIV — Read the news report and write the missing words. Use one word only in each space.",
+      "enonce": "So we're _____ (1 mot) a protest meeting tomorrow evening at the town hall. It **starts** at half past seven.'",
+      "explication": "Arrangement futur déjà organisé (« tomorrow evening ») → present continuous.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "having"
+      ]
+    },
+    {
+      "id": "ang-xiv-009",
+      "difficulte": 2,
+      "consigne": "Ex. XIV — Read the news report and write the missing words. Use one word only in each space.",
+      "enonce": "So we're **having** a protest meeting tomorrow evening at the town hall. It _____ (1 mot) at half past seven.'",
+      "explication": "Programme / horaire → present simple.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "starts"
+      ]
+    },
+    {
+      "id": "ang-xiv-010",
+      "difficulte": 2,
+      "consigne": "Ex. XIV — Read the news report and write the missing words. Use one word only in each space.",
+      "enonce": "Owners of shops in the town centre are also unhappy. 'The new centre _____ (1 mot) take our customers away,' said one of them.",
+      "explication": "Prédiction sur le futur → will + base verbale.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "will"
+      ]
+    },
+    {
+      "id": "ang-xv-001",
+      "difficulte": 1,
+      "consigne": "Ex. XV — Look at the answers below and write the correct answer in each space.",
+      "enonce": "A: Could I have a word with you, please?\nB: Sorry, I'm in a big hurry. My train _____ in fifteen minutes.",
+      "explication": "Horaire de transport → present simple.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "qcm",
+      "choix": [
+        "is going to leave",
+        "leaves",
+        "will leave"
+      ],
+      "reponse": 1
+    },
+    {
+      "id": "ang-xv-002",
+      "difficulte": 1,
+      "consigne": "Ex. XV — Look at the answers below and write the correct answer in each space.",
+      "enonce": "A: Have you decided about the course?\nB: Yes, I decided last weekend. _____ for a place.",
+      "explication": "Décision déjà prise avant de parler (« I decided last weekend ») → be going to.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "qcm",
+      "choix": [
+        "I apply",
+        "I am to apply",
+        "I'm going to apply"
+      ],
+      "reponse": 2
+    },
+    {
+      "id": "ang-xv-003",
+      "difficulte": 1,
+      "consigne": "Ex. XV — Look at the answers below and write the correct answer in each space.",
+      "enonce": "A: I'm trying to move this cupboard, but it's very heavy.\nB: Well, _____ you, then.",
+      "explication": "Offre spontanée, décidée sur le moment → will.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "qcm",
+      "choix": [
+        "I help",
+        "I'll help",
+        "I'm going to help"
+      ],
+      "reponse": 1
+    },
+    {
+      "id": "ang-xv-004",
+      "difficulte": 1,
+      "consigne": "Ex. XV — Look at the answers below and write the correct answer in each space.",
+      "enonce": "A: Is the shop open yet?\nB: No, but there's someone inside. I think _____.",
+      "explication": "Quelqu'un est déjà à l'intérieur : événement imminent → be about to.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "qcm",
+      "choix": [
+        "it opens",
+        "it's about to open",
+        "it will open"
+      ],
+      "reponse": 1
+    },
+    {
+      "id": "ang-xv-005",
+      "difficulte": 1,
+      "consigne": "Ex. XV — Look at the answers below and write the correct answer in each space.",
+      "enonce": "A: Do you mind not leaving your papers all over the table?\nB: Oh, sorry. I'll take them all with me when _____.",
+      "explication": "Après « when », on utilise le present simple pour parler du futur.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "qcm",
+      "choix": [
+        "I go",
+        "I'll go",
+        "I'm going"
+      ],
+      "reponse": 0
+    },
+    {
+      "id": "ang-xv-006",
+      "difficulte": 1,
+      "consigne": "Ex. XV — Look at the answers below and write the correct answer in each space.",
+      "enonce": "A: It's a public holiday next Monday.\nB: Yes, I know. _____ anything special?",
+      "explication": "On demande ce qui est prévu / organisé → present continuous (arrangement futur).",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "qcm",
+      "choix": [
+        "Are you doing",
+        "Do you do",
+        "Will you do"
+      ],
+      "reponse": 0
+    }
+  ]
+}

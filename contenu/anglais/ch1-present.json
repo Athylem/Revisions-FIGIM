@@ -1,0 +1,704 @@
+{
+  "chapitre": "Présents et present perfect",
+  "questions": [
+    {
+      "id": "ang-i-001",
+      "difficulte": 1,
+      "consigne": "Ex. I — Complete the conversations. Put in the correct form of each verb. Use the present continuous or the present simple.",
+      "enonce": "A: _____ (I / think) of buying a new computer.\nB: But computers **cost** so much money. What's wrong with the one we've got?\nA: **It's getting** out of date now.",
+      "explication": "« think of + -ing » = envisager : c'est une activité mentale en cours, pas une opinion → present continuous.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "I'm thinking"
+      ]
+    },
+    {
+      "id": "ang-i-002",
+      "difficulte": 1,
+      "consigne": "Ex. I — Complete the conversations. Put in the correct form of each verb. Use the present continuous or the present simple.",
+      "enonce": "A: **I'm thinking** of buying a new computer.\nB: But computers _____ (cost) so much money. What's wrong with the one we've got?\nA: **It's getting** out of date now.",
+      "explication": "Fait général ou habitude → present simple.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "cost"
+      ]
+    },
+    {
+      "id": "ang-i-003",
+      "difficulte": 1,
+      "consigne": "Ex. I — Complete the conversations. Put in the correct form of each verb. Use the present continuous or the present simple.",
+      "enonce": "A: **I'm thinking** of buying a new computer.\nB: But computers **cost** so much money. What's wrong with the one we've got?\nA: _____ (it / get) out of date now.",
+      "explication": "Changement progressif en cours (get + adjectif = devenir) → present continuous.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "It's getting"
+      ]
+    },
+    {
+      "id": "ang-i-004",
+      "difficulte": 1,
+      "consigne": "Ex. I — Complete the conversations. Put in the correct form of each verb. Use the present continuous or the present simple.",
+      "enonce": "A: Your new trousers _____ (look) nice.\nB: Thank you. The trouble is **they don't fit** properly. **I don't know** why I bought them, really.",
+      "explication": "look = avoir l'air : verbe d'état → present simple.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "look"
+      ]
+    },
+    {
+      "id": "ang-i-005",
+      "difficulte": 1,
+      "consigne": "Ex. I — Complete the conversations. Put in the correct form of each verb. Use the present continuous or the present simple.",
+      "enonce": "A: Your new trousers **look** nice.\nB: Thank you. The trouble is _____ (they / not / fit) properly. **I don't know** why I bought them, really.",
+      "explication": "Fait général (ils ne vont pas bien), pas une action en cours → present simple négatif.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "they don't fit"
+      ]
+    },
+    {
+      "id": "ang-i-006",
+      "difficulte": 1,
+      "consigne": "Ex. I — Complete the conversations. Put in the correct form of each verb. Use the present continuous or the present simple.",
+      "enonce": "A: Your new trousers **look** nice.\nB: Thank you. The trouble is **they don't fit** properly. _____ (I / not / know) why I bought them, really.",
+      "explication": "Verbe d'état (think = opinion, know, like, need, want, hate, understand, belong…) → present simple, pas de -ing.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "I don't know"
+      ]
+    },
+    {
+      "id": "ang-i-007",
+      "difficulte": 1,
+      "consigne": "Ex. I — Complete the conversations. Put in the correct form of each verb. Use the present continuous or the present simple.",
+      "enonce": "A: What _____ (you / do)?\nB: **I'm weighing** this letter. **I need** to know how many stamps to put on it.",
+      "explication": "B répond « I'm weighing this letter » : A demande ce qu'il est en train de faire → present continuous. (La fiche corrigée donne « do you do », mais ça demande le métier ; les deux sont acceptés.)",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "are you doing",
+        "do you do"
+      ]
+    },
+    {
+      "id": "ang-i-008",
+      "difficulte": 1,
+      "consigne": "Ex. I — Complete the conversations. Put in the correct form of each verb. Use the present continuous or the present simple.",
+      "enonce": "A: What **are you doing**?\nB: _____ (I / weigh) this letter. **I need** to know how many stamps to put on it.",
+      "explication": "weigh = peser, c'est ici une action, en cours maintenant → present continuous.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "I'm weighing"
+      ]
+    },
+    {
+      "id": "ang-i-009",
+      "difficulte": 1,
+      "consigne": "Ex. I — Complete the conversations. Put in the correct form of each verb. Use the present continuous or the present simple.",
+      "enonce": "A: What **are you doing**?\nB: **I'm weighing** this letter. _____ (I / need) to know how many stamps to put on it.",
+      "explication": "Verbe d'état (think = opinion, know, like, need, want, hate, understand, belong…) → present simple, pas de -ing.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "I need"
+      ]
+    },
+    {
+      "id": "ang-i-010",
+      "difficulte": 1,
+      "consigne": "Ex. I — Complete the conversations. Put in the correct form of each verb. Use the present continuous or the present simple.",
+      "enonce": "A: _____ (I / think) this road is really dangerous. Look how fast that lorry **is going**.\nB: **I agree**. People shouldn't go so fast.",
+      "explication": "think = avoir une opinion → verbe d'état → present simple.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "I think"
+      ]
+    },
+    {
+      "id": "ang-i-011",
+      "difficulte": 1,
+      "consigne": "Ex. I — Complete the conversations. Put in the correct form of each verb. Use the present continuous or the present simple.",
+      "enonce": "A: **I think** this road is really dangerous. Look how fast that lorry _____ (go).\nB: **I agree**. People shouldn't go so fast.",
+      "explication": "Action visible en ce moment (« Look! ») → present continuous.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "is going"
+      ]
+    },
+    {
+      "id": "ang-i-012",
+      "difficulte": 1,
+      "consigne": "Ex. I — Complete the conversations. Put in the correct form of each verb. Use the present continuous or the present simple.",
+      "enonce": "A: **I think** this road is really dangerous. Look how fast that lorry **is going**.\nB: _____ (I / agree). People shouldn't go so fast.",
+      "explication": "agree = opinion, verbe d'état → present simple.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "I agree"
+      ]
+    },
+    {
+      "id": "ang-i-013",
+      "difficulte": 1,
+      "consigne": "Ex. I — Complete the conversations. Put in the correct form of each verb. Use the present continuous or the present simple.",
+      "enonce": "A: _____ (I / like) musicals. And this is a great show, isn't it? **Are you enjoying** it?\nB: Yes, I am. **I'm loving** every minute of it.",
+      "explication": "Verbe d'état (think = opinion, know, like, need, want, hate, understand, belong…) → present simple, pas de -ing.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "I like"
+      ]
+    },
+    {
+      "id": "ang-i-014",
+      "difficulte": 1,
+      "consigne": "Ex. I — Complete the conversations. Put in the correct form of each verb. Use the present continuous or the present simple.",
+      "enonce": "A: **I like** musicals. And this is a great show, isn't it? _____ (you / enjoy) it?\nB: Yes, I am. **I'm loving** every minute of it.",
+      "explication": "enjoy = action en cours pendant le spectacle → present continuous (et la réponse « Yes, I am » le confirme).",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "Are you enjoying"
+      ]
+    },
+    {
+      "id": "ang-i-015",
+      "difficulte": 1,
+      "consigne": "Ex. I — Complete the conversations. Put in the correct form of each verb. Use the present continuous or the present simple.",
+      "enonce": "A: **I like** musicals. And this is a great show, isn't it? **Are you enjoying** it?\nB: Yes, I am. _____ (I / love) every minute of it.",
+      "explication": "« I'm loving » = je suis en plein dedans, en ce moment (usage expressif du continuous) ; « I love » est aussi accepté.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "I'm loving",
+        "I love"
+      ]
+    },
+    {
+      "id": "ang-i-016",
+      "difficulte": 1,
+      "consigne": "Ex. I — Complete the conversations. Put in the correct form of each verb. Use the present continuous or the present simple.",
+      "enonce": "A: _____ (I / always / fall) asleep. I just can't keep awake.\nB: What time **do you go** to bed?\nA: About ten o'clock usually. But **it doesn't make** any difference.",
+      "explication": "always + present continuous = répétition qui agace (« I always fall » est aussi possible).",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "I'm always falling",
+        "I always fall"
+      ]
+    },
+    {
+      "id": "ang-i-017",
+      "difficulte": 1,
+      "consigne": "Ex. I — Complete the conversations. Put in the correct form of each verb. Use the present continuous or the present simple.",
+      "enonce": "A: **I'm always falling** asleep. I just can't keep awake.\nB: What time _____ (you / go) to bed?\nA: About ten o'clock usually. But **it doesn't make** any difference.",
+      "explication": "Question sur une habitude (usually) → present simple.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "do you go"
+      ]
+    },
+    {
+      "id": "ang-i-018",
+      "difficulte": 1,
+      "consigne": "Ex. I — Complete the conversations. Put in the correct form of each verb. Use the present continuous or the present simple.",
+      "enonce": "A: **I'm always falling** asleep. I just can't keep awake.\nB: What time **do you go** to bed?\nA: About ten o'clock usually. But _____ (it / not / make) any difference.",
+      "explication": "Fait général ou habitude → present simple.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "it doesn't make"
+      ]
+    },
+    {
+      "id": "ang-i-019",
+      "difficulte": 1,
+      "consigne": "Ex. I — Complete the conversations. Put in the correct form of each verb. Use the present continuous or the present simple.",
+      "enonce": "A: Could you post the goods to me, please?\nB: Yes, certainly.\nA: _____ (I / live) at a guest house at the moment as **I'm looking** for a flat. So could you send it to my work address?\nB: Yes, of course. And you'll have the goods by the end of the week, **I promise**.",
+      "explication": "Situation temporaire (« at the moment ») → present continuous.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "I'm living"
+      ]
+    },
+    {
+      "id": "ang-i-020",
+      "difficulte": 1,
+      "consigne": "Ex. I — Complete the conversations. Put in the correct form of each verb. Use the present continuous or the present simple.",
+      "enonce": "A: Could you post the goods to me, please?\nB: Yes, certainly.\nA: **I'm living** at a guest house at the moment as _____ (I / look) for a flat. So could you send it to my work address?\nB: Yes, of course. And you'll have the goods by the end of the week, **I promise**.",
+      "explication": "Action en cours en ce moment / situation temporaire → present continuous (am/is/are + -ing).",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "I'm looking"
+      ]
+    },
+    {
+      "id": "ang-i-021",
+      "difficulte": 1,
+      "consigne": "Ex. I — Complete the conversations. Put in the correct form of each verb. Use the present continuous or the present simple.",
+      "enonce": "A: Could you post the goods to me, please?\nB: Yes, certainly.\nA: **I'm living** at a guest house at the moment as **I'm looking** for a flat. So could you send it to my work address?\nB: Yes, of course. And you'll have the goods by the end of the week, _____ (I / promise).",
+      "explication": "promise est un verbe performatif : l'action est accomplie en le disant → present simple.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "I promise"
+      ]
+    },
+    {
+      "id": "ang-i-022",
+      "difficulte": 1,
+      "consigne": "Ex. I — Complete the conversations. Put in the correct form of each verb. Use the present continuous or the present simple.",
+      "enonce": "A: Why _____ (you / want) to change the whole plan?\nB: I'm just not happy with it.\nA: And **I don't understand** why **you're being** so difficult about it.",
+      "explication": "Verbe d'état (think = opinion, know, like, need, want, hate, understand, belong…) → present simple, pas de -ing.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "do you want"
+      ]
+    },
+    {
+      "id": "ang-i-023",
+      "difficulte": 1,
+      "consigne": "Ex. I — Complete the conversations. Put in the correct form of each verb. Use the present continuous or the present simple.",
+      "enonce": "A: Why **do you want** to change the whole plan?\nB: I'm just not happy with it.\nA: And _____ (I / not / understand) why **you're being** so difficult about it.",
+      "explication": "Verbe d'état (think = opinion, know, like, need, want, hate, understand, belong…) → present simple, pas de -ing.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "I don't understand"
+      ]
+    },
+    {
+      "id": "ang-i-024",
+      "difficulte": 1,
+      "consigne": "Ex. I — Complete the conversations. Put in the correct form of each verb. Use the present continuous or the present simple.",
+      "enonce": "A: Why **do you want** to change the whole plan?\nB: I'm just not happy with it.\nA: And **I don't understand** why _____ (you / be) so difficult about it.",
+      "explication": "be + adjectif de comportement (difficult) = tu te comportes ainsi en ce moment → present continuous.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "you're being"
+      ]
+    },
+    {
+      "id": "ang-iii-001",
+      "difficulte": 2,
+      "consigne": "Ex. III — Some of these sentences are correct, and some have a word which should not be there. If the sentence is correct, write « ok ». If it is incorrect, write the unnecessary have or has.",
+      "enonce": "The directors have arrived half an hour ago, but they didn't stay long. → _____ (ok / have / has)",
+      "explication": "« half an hour ago » : ago = moment précis du passé → past simple : « The directors arrived… ».",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "have"
+      ]
+    },
+    {
+      "id": "ang-iii-002",
+      "difficulte": 2,
+      "consigne": "Ex. III — Some of these sentences are correct, and some have a word which should not be there. If the sentence is correct, write « ok ». If it is incorrect, write the unnecessary have or has.",
+      "enonce": "It's raining, and Peter has left his umbrella behind, look. → _____ (ok / have / has)",
+      "explication": "Correct : résultat présent (il n'a pas son parapluie maintenant, « look ») → present perfect.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "ok"
+      ]
+    },
+    {
+      "id": "ang-iii-003",
+      "difficulte": 2,
+      "consigne": "Ex. III — Some of these sentences are correct, and some have a word which should not be there. If the sentence is correct, write « ok ». If it is incorrect, write the unnecessary have or has.",
+      "enonce": "It's a long time since your friends have last visited us. → _____ (ok / have / has)",
+      "explication": "« It's a long time since + past simple » : since your friends last visited us.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "have"
+      ]
+    },
+    {
+      "id": "ang-iii-004",
+      "difficulte": 2,
+      "consigne": "Ex. III — Some of these sentences are correct, and some have a word which should not be there. If the sentence is correct, write « ok ». If it is incorrect, write the unnecessary have or has.",
+      "enonce": "None of you have called me for weeks. Aren't we friends any more? → _____ (ok / have / has)",
+      "explication": "Correct : « for weeks » jusqu'à maintenant → present perfect.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "ok"
+      ]
+    },
+    {
+      "id": "ang-iii-005",
+      "difficulte": 2,
+      "consigne": "Ex. III — Some of these sentences are correct, and some have a word which should not be there. If the sentence is correct, write « ok ». If it is incorrect, write the unnecessary have or has.",
+      "enonce": "We can play tennis now. The others have finished. → _____ (ok / have / has)",
+      "explication": "Correct : résultat présent (le court est libre maintenant) → present perfect.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "ok"
+      ]
+    },
+    {
+      "id": "ang-iii-006",
+      "difficulte": 2,
+      "consigne": "Ex. III — Some of these sentences are correct, and some have a word which should not be there. If the sentence is correct, write « ok ». If it is incorrect, write the unnecessary have or has.",
+      "enonce": "The company has bought some land, but then it sold it. → _____ (ok / have / has)",
+      "explication": "La suite (« but then it sold it ») raconte un passé terminé : « The company bought some land… » → past simple.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "has"
+      ]
+    },
+    {
+      "id": "ang-iii-007",
+      "difficulte": 2,
+      "consigne": "Ex. III — Some of these sentences are correct, and some have a word which should not be there. If the sentence is correct, write « ok ». If it is incorrect, write the unnecessary have or has.",
+      "enonce": "The computer isn't on now. Someone has turned it off. → _____ (ok / have / has)",
+      "explication": "Correct : résultat présent (il est éteint maintenant) → present perfect.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "ok"
+      ]
+    },
+    {
+      "id": "ang-iii-008",
+      "difficulte": 2,
+      "consigne": "Ex. III — Some of these sentences are correct, and some have a word which should not be there. If the sentence is correct, write « ok ». If it is incorrect, write the unnecessary have or has.",
+      "enonce": "Tessa has posted the parcel. It's on its way to you. → _____ (ok / have / has)",
+      "explication": "Correct : résultat présent (le colis est en route) → present perfect.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "ok"
+      ]
+    },
+    {
+      "id": "ang-iii-009",
+      "difficulte": 2,
+      "consigne": "Ex. III — Some of these sentences are correct, and some have a word which should not be there. If the sentence is correct, write « ok ». If it is incorrect, write the unnecessary have or has.",
+      "enonce": "Several bombs have gone off in the city centre. It has happened an hour ago. → _____ (ok / have / has)",
+      "explication": "« an hour ago » → past simple : « It happened an hour ago ».",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "has"
+      ]
+    },
+    {
+      "id": "ang-iii-010",
+      "difficulte": 2,
+      "consigne": "Ex. III — Some of these sentences are correct, and some have a word which should not be there. If the sentence is correct, write « ok ». If it is incorrect, write the unnecessary have or has.",
+      "enonce": "Simon has left. He and Oliver have left after lunch. → _____ (ok / have / has)",
+      "explication": "« after lunch » = moment précis → « He and Oliver left after lunch » (past simple).",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "have"
+      ]
+    },
+    {
+      "id": "ang-iv-001",
+      "difficulte": 2,
+      "consigne": "Ex. IV — Put in the present perfect or past simple of the verbs in brackets.",
+      "enonce": "The last time I _____ (go) to Brighton was in August.",
+      "explication": "« The last time… was in August » : moment précis du passé → past simple.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "went"
+      ]
+    },
+    {
+      "id": "ang-iv-002",
+      "difficulte": 2,
+      "consigne": "Ex. IV — Put in the present perfect or past simple of the verbs in brackets.",
+      "enonce": "I'd like to meet a ghost, but I _____ (never / see) one.",
+      "explication": "never = jamais de toute ma vie (expérience jusqu'à maintenant) → present perfect.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "have never seen"
+      ]
+    },
+    {
+      "id": "ang-iv-003",
+      "difficulte": 2,
+      "consigne": "Ex. IV — Put in the present perfect or past simple of the verbs in brackets.",
+      "enonce": "I've finished my homework. I _____ (do) it before tea.",
+      "explication": "« before tea » = moment précis du passé → past simple.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "did"
+      ]
+    },
+    {
+      "id": "ang-iv-004",
+      "difficulte": 2,
+      "consigne": "Ex. IV — Put in the present perfect or past simple of the verbs in brackets.",
+      "enonce": "And the race is over! And Micky Simpson _____ (win) in a record time!",
+      "explication": "Nouvelle toute récente liée au présent (la course vient de finir) → present perfect.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "has won"
+      ]
+    },
+    {
+      "id": "ang-iv-005",
+      "difficulte": 2,
+      "consigne": "Ex. IV — Put in the present perfect or past simple of the verbs in brackets.",
+      "enonce": "I _____ (work) for a computer company for a year. That was after college.",
+      "explication": "Période terminée (« That was after college ») → past simple.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "worked"
+      ]
+    },
+    {
+      "id": "ang-iv-006",
+      "difficulte": 2,
+      "consigne": "Ex. IV — Put in the present perfect or past simple of the verbs in brackets.",
+      "enonce": "What time _____ (you / get) to work this morning?",
+      "explication": "« What time » demande un moment précis du passé → past simple.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "did you get"
+      ]
+    },
+    {
+      "id": "ang-iv-007",
+      "difficulte": 2,
+      "consigne": "Ex. IV — Put in the present perfect or past simple of the verbs in brackets.",
+      "enonce": "Martin _____ (be) to Greece five times. He loves the place.",
+      "explication": "« five times » = expérience jusqu'à maintenant → present perfect.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "has been"
+      ]
+    },
+    {
+      "id": "ang-iv-008",
+      "difficulte": 2,
+      "consigne": "Ex. IV — Put in the present perfect or past simple of the verbs in brackets.",
+      "enonce": "The President _____ (come) out of the building and is going to make a speech.",
+      "explication": "Action récente au résultat visible (il vient de sortir) → present perfect.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "has come"
+      ]
+    },
+    {
+      "id": "ang-iv-009",
+      "difficulte": 2,
+      "consigne": "Ex. IV — Put in the present perfect or past simple of the verbs in brackets.",
+      "enonce": "You won't believe this, but I've got some tickets for the concert. ~ Oh, well done. How _____ (you / get) them?",
+      "explication": "« How » porte sur les détails d'une action passée terminée → past simple.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "did you get"
+      ]
+    },
+    {
+      "id": "ang-iv-010",
+      "difficulte": 2,
+      "consigne": "Ex. IV — Put in the present perfect or past simple of the verbs in brackets.",
+      "enonce": "Of course I can ride a bike. But I _____ (not / ride) one for years.",
+      "explication": "« for years » jusqu'à maintenant → present perfect.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "haven't ridden"
+      ]
+    },
+    {
+      "id": "ang-iv-011",
+      "difficulte": 2,
+      "consigne": "Ex. IV — Put in the present perfect or past simple of the verbs in brackets.",
+      "enonce": "Marilyn Monroe _____ (be) in about thirty films.",
+      "explication": "Elle est morte : période terminée → past simple.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "was"
+      ]
+    },
+    {
+      "id": "ang-iv-012",
+      "difficulte": 2,
+      "consigne": "Ex. IV — Put in the present perfect or past simple of the verbs in brackets.",
+      "enonce": "_____ (you / ever / bake) your own bread? ~ No, but I might try it some time.",
+      "explication": "ever = expérience de vie → present perfect.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "Have you ever baked"
+      ]
+    },
+    {
+      "id": "ang-iv-013",
+      "difficulte": 2,
+      "consigne": "Ex. IV — Put in the present perfect or past simple of the verbs in brackets.",
+      "enonce": "Janet _____ (be) very ill three years ago.",
+      "explication": "ago / yesterday / last… = moment précis du passé → past simple, jamais present perfect.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "was"
+      ]
+    },
+    {
+      "id": "ang-iv-014",
+      "difficulte": 2,
+      "consigne": "Ex. IV — Put in the present perfect or past simple of the verbs in brackets.",
+      "enonce": "Rupert has left a message for you. He _____ (ring) last night.",
+      "explication": "« last night » = moment précis → past simple.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "rang"
+      ]
+    },
+    {
+      "id": "ang-iv-015",
+      "difficulte": 2,
+      "consigne": "Ex. IV — Put in the present perfect or past simple of the verbs in brackets.",
+      "enonce": "_____ (you / see) the news today? ~ No, not yet. I'll watch it at ten.",
+      "explication": "« today » : la journée n'est pas finie → present perfect.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "Have you seen"
+      ]
+    },
+    {
+      "id": "ang-iv-016",
+      "difficulte": 2,
+      "consigne": "Ex. IV — Put in the present perfect or past simple of the verbs in brackets.",
+      "enonce": "We moved here in 1993. We _____ (be) here a long time now.",
+      "explication": "Situation qui dure jusqu'à maintenant → present perfect.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "have been"
+      ]
+    },
+    {
+      "id": "ang-viii-001",
+      "difficulte": 2,
+      "consigne": "Ex. VIII — Complete the sentences using the notes in brackets. The verbs can be present continuous (am doing), present simple (do) or present perfect (have done).",
+      "enonce": "Sarah finds her mobile phone very useful. _____ (she / use / it) all the time.",
+      "explication": "Habitude (« all the time ») → present simple.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "She uses it"
+      ]
+    },
+    {
+      "id": "ang-viii-002",
+      "difficulte": 2,
+      "consigne": "Ex. VIII — Complete the sentences using the notes in brackets. The verbs can be present continuous (am doing), present simple (do) or present perfect (have done).",
+      "enonce": "Vicky doesn't know where her watch is. _____ (she / lose / it).",
+      "explication": "Résultat présent (elle ne sait pas où est sa montre) → present perfect.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "She's lost it"
+      ]
+    },
+    {
+      "id": "ang-viii-003",
+      "difficulte": 2,
+      "consigne": "Ex. VIII — Complete the sentences using the notes in brackets. The verbs can be present continuous (am doing), present simple (do) or present perfect (have done).",
+      "enonce": "We're in the middle of decorating our kitchen, so we can't cook any meals. _____ (we / get / them) from a take-away restaurant this week.",
+      "explication": "Arrangement temporaire (« this week ») → present continuous.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "We're getting them"
+      ]
+    },
+    {
+      "id": "ang-viii-004",
+      "difficulte": 2,
+      "consigne": "Ex. VIII — Complete the sentences using the notes in brackets. The verbs can be present continuous (am doing), present simple (do) or present perfect (have done).",
+      "enonce": "Claire is on a skiing holiday. _____ (she / enjoy / it), she says on her postcard.",
+      "explication": "Action en cours en ce moment / situation temporaire → present continuous (am/is/are + -ing).",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "She's enjoying it"
+      ]
+    },
+    {
+      "id": "ang-viii-005",
+      "difficulte": 2,
+      "consigne": "Ex. VIII — Complete the sentences using the notes in brackets. The verbs can be present continuous (am doing), present simple (do) or present perfect (have done).",
+      "enonce": "The colour of this paint is absolutely awful. _____ (I / hate / it).",
+      "explication": "Verbe d'état (think = opinion, know, like, need, want, hate, understand, belong…) → present simple, pas de -ing.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "I hate it"
+      ]
+    },
+    {
+      "id": "ang-viii-006",
+      "difficulte": 2,
+      "consigne": "Ex. VIII — Complete the sentences using the notes in brackets. The verbs can be present continuous (am doing), present simple (do) or present perfect (have done).",
+      "enonce": "These figures certainly add up. _____ (I / check / them) several times already.",
+      "explication": "« several times already » → present perfect.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "I've checked them"
+      ]
+    },
+    {
+      "id": "ang-viii-007",
+      "difficulte": 2,
+      "consigne": "Ex. VIII — Complete the sentences using the notes in brackets. The verbs can be present continuous (am doing), present simple (do) or present perfect (have done).",
+      "enonce": "Trevor and Laura like Scrabble. _____ (they / play / it) most evenings.",
+      "explication": "Habitude (« most evenings ») → present simple.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "They play it"
+      ]
+    },
+    {
+      "id": "ang-viii-008",
+      "difficulte": 2,
+      "consigne": "Ex. VIII — Complete the sentences using the notes in brackets. The verbs can be present continuous (am doing), present simple (do) or present perfect (have done).",
+      "enonce": "These flowers are dying. _____ (you / not / water / them) for ages.",
+      "explication": "« for ages » jusqu'à maintenant → present perfect.",
+      "source": "Cours/Anglais/Tenses Revision Test.md",
+      "type": "texte-a-trous",
+      "reponse": [
+        "You haven't watered them"
+      ]
+    }
+  ]
+}
