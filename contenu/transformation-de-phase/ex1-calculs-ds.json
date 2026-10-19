@@ -1,0 +1,275 @@
+{
+  "chapitre": "Exercices type DS (μ*, diffusion, germination, diagrammes)",
+  "genre": "exercices",
+  "questions": [
+    {
+      "id": "tp-ds-001",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**Test 2014 — Au–Ni.** On veut placer $\\mu^*_{Ni}(L)$ en prenant $\\mu^*_{Ni}(\\alpha)=0$. Données : $T_f(\\mathrm{Ni})=1728$ K, $\\Delta H_f(\\mathrm{Ni})=4210$ cal/mol, $C_p^L-C_p^{\\alpha}=3{,}20-1{,}8\\cdot10^{-3}T$ (cal/K/mol), 1 cal = 4,184 J.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Valeur **simplifiée** ($\\Delta C_p=0$) de $\\mu^*_{Ni}(L)$ à 800 K ?",
+          "reponse": 9459.71,
+          "tolerance": 0.02,
+          "explication": "$\\Delta H_f(1-T/T_f)=17\\,615\\times(1-800/1728)$",
+          "unite": "J/mol"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Valeur **exacte** (avec $\\Delta C_p$) à 800 K ?",
+          "reponse": 8526.44,
+          "tolerance": 0.03,
+          "explication": "$\\Delta G=\\Delta H_f+\\int_{T_f}^T\\Delta C_p\\,dT-T\\left[\\frac{\\Delta H_f}{T_f}+\\int_{T_f}^T\\frac{\\Delta C_p}{T}dT\\right]$",
+          "unite": "J/mol"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Même calcul exact à 1200 K ?",
+          "reponse": 5221.31,
+          "tolerance": 0.03,
+          "explication": "On reste sous $T_f$ : valeur positive, plus petite qu'à 800 K.",
+          "unite": "J/mol"
+        },
+        {
+          "type": "qcm",
+          "enonce": "Signe de $\\mu^*_{Ni}(L)$ sous $T_f$ et conséquence sur la courbe du liquide :",
+          "choix": [
+            "positif : la courbe du liquide démarre au-dessus de celle de α côté Ni",
+            "négatif : le liquide est stable côté Ni",
+            "nul",
+            "dépend de la composition"
+          ],
+          "reponse": 0,
+          "explication": "Sous sa température de fusion, le Ni liquide est moins stable que le solide."
+        }
+      ],
+      "source": "Cours/2A FIGIM/Transformation de phase - S.Barrat/Annales/Test 1/test_22_01_2014.pdf"
+    },
+    {
+      "id": "tp-ds-002",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**Test 2013 — Al–Ca.** Composé CD1 : maille quadratique centrée I4/mmm, $a=b=0{,}435$ nm, $c=1{,}107$ nm, $\\rho=2{,}346$ g/cm³. $M_{Al}=27$, $M_{Ca}=40$ g/mol. $\\Delta H_f(\\mathrm{Al})=10{,}8$ kJ/mol, $T_f(\\mathrm{Al})=933$ K.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Masse contenue dans une maille, ramenée à une mole de mailles ($\\rho V N_A$) ?",
+          "reponse": 295.983,
+          "tolerance": 0.01,
+          "explication": "$V=a^2c=2{,}095\\cdot10^{-22}$ cm³ ; $\\rho V N_A\\approx296$ g/mol.",
+          "unite": "g/mol"
+        },
+        {
+          "type": "qcm",
+          "enonce": "Stœchiométrie de CD1 ?",
+          "choix": [
+            "CaAl₄ (2 motifs par maille)",
+            "CaAl₂",
+            "Ca₃Al",
+            "CaAl"
+          ],
+          "reponse": 0,
+          "explication": "$M(\\mathrm{CaAl_4})=148$ g/mol ⇒ $Z=2.00\\approx2$ (type BaAl₄, centré ⇒ Z pair)."
+        },
+        {
+          "type": "numerique",
+          "enonce": "$\\mu^*_{Al}(L)$ à $T_1=800$ K (référence $\\mu^*_{Al}(\\alpha)=0$, $\\Delta C_p=0$) ?",
+          "reponse": 1539.55,
+          "tolerance": 0.02,
+          "explication": "$10\\,800\\times(1-800/933)$",
+          "unite": "J/mol"
+        },
+        {
+          "type": "numerique",
+          "enonce": "$\\mu^*_{Al}(L)$ à $T_2=973$ K ?",
+          "reponse": -463.023,
+          "tolerance": 0.03,
+          "explication": "Négatif : au-dessus de $T_f$, l'Al liquide est stable.",
+          "unite": "J/mol"
+        },
+        {
+          "type": "numerique",
+          "enonce": "À 973 K avec $C_p^L=29{,}3$ et $C_p^{sol}=20{,}67+12{,}39\\cdot10^{-3}T$ (J/K/mol) : $\\mu^*_{Al}(L)$ ?",
+          "reponse": -460.407,
+          "tolerance": 0.05,
+          "explication": "Écart de 0.6 % avec le calcul simplifié : l'hypothèse $\\Delta C_p=0$ est justifiée près de $T_f$.",
+          "unite": "J/mol"
+        }
+      ],
+      "source": "Cours/2A FIGIM/Transformation de phase - S.Barrat/Annales/Test 1/2013/Transformation de phases 1 - 2013.pdf"
+    },
+    {
+      "id": "tp-ds-003",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**Carburation d'un acier** (exemple du cours). Acier à $C_0=0{,}2$ % C, atmosphère imposant $C_s=1{,}2$ % C en surface. On veut 0,6 % C à 1 mm. Carbone dans l'austénite : $D_0=2{,}3\\cdot10^{-5}$ m²/s, $Q=148$ kJ/mol.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Valeur de $\\mathrm{erf}(u)$ à atteindre ?",
+          "reponse": 0.6,
+          "tolerance": 0.01,
+          "explication": "$\\dfrac{C_s-C}{C_s-C_0}=\\dfrac{1{,}2-0{,}6}{1{,}2-0{,}2}$"
+        },
+        {
+          "type": "numerique",
+          "enonce": "$u=\\dfrac{x}{2\\sqrt{Dt}}$ correspondant ?",
+          "reponse": 0.595116,
+          "tolerance": 0.03,
+          "explication": "Table de erf : erf(0,595) ≈ 0,60."
+        },
+        {
+          "type": "numerique",
+          "enonce": "D à 900 °C ?",
+          "reponse": 5.90106e-12,
+          "tolerance": 0.03,
+          "explication": "$D=D_0\\exp(-Q/RT)$ avec T = 1173 K",
+          "unite": "m²/s"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Durée du traitement à 900 °C ?",
+          "reponse": 33.228,
+          "tolerance": 0.05,
+          "explication": "$t=\\dfrac{x^2}{4u^2D}$",
+          "unite": "h"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Durée à 950 °C ?",
+          "reponse": 17.867,
+          "tolerance": 0.05,
+          "explication": "D est multiplié par ~1,7 pour +50 °C : le temps diminue d'autant.",
+          "unite": "h"
+        }
+      ],
+      "source": "Cours/2A FIGIM/Transformation de phase - S.Barrat/Cours/Cours n°3 et 4.pdf"
+    },
+    {
+      "id": "tp-ds-004",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**Germination homogène** de cuivre solide dans le liquide. $\\gamma=0{,}177$ J/m², $\\Delta H_f=1{,}88\\cdot10^{9}$ J/m³, $T_f=1358$ K, surfusion $\\Delta T=230$ K.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "$\\Delta G_v$ ?",
+          "reponse": -318409000.0,
+          "tolerance": 0.02,
+          "explication": "$\\Delta G_v\\approx-\\Delta H_f\\,\\Delta T/T_f$",
+          "unite": "J/m³"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Rayon critique $r^*$ ?",
+          "reponse": 1.11178,
+          "tolerance": 0.02,
+          "explication": "$r^*=-2\\gamma/\\Delta G_v$",
+          "unite": "nm"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Barrière $\\Delta G^*$ ?",
+          "reponse": 9.16424e-19,
+          "tolerance": 0.03,
+          "explication": "$\\Delta G^*=\\dfrac{16\\pi\\gamma^3}{3\\Delta G_v^2}$",
+          "unite": "J"
+        },
+        {
+          "type": "qcm",
+          "enonce": "Si la surfusion double, $\\Delta G^*$ est :",
+          "choix": [
+            "divisé par 4",
+            "divisé par 2",
+            "multiplié par 2",
+            "inchangé"
+          ],
+          "reponse": 0,
+          "explication": "$\\Delta G^*\\propto1/\\Delta G_v^2\\propto1/\\Delta T^2$."
+        }
+      ]
+    },
+    {
+      "id": "tp-ds-005",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**Test 2008 — Acier à 1,2 % C** maintenu à 720 °C puis trempé à 25 °C. Solubilité du C dans la ferrite : 0,028 % ; cémentite Fe₃C : 6,67 % C.",
+      "etapes": [
+        {
+          "type": "qcm",
+          "enonce": "Phases présentes à 720 °C (sous A1 = 727 °C) ?",
+          "choix": [
+            "ferrite α + cémentite Fe₃C",
+            "austénite + cémentite",
+            "austénite seule",
+            "martensite"
+          ],
+          "reponse": 0,
+          "explication": "Sous l'eutectoïde, plus d'austénite."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Fraction massique de ferrite ?",
+          "reponse": 0.823547,
+          "tolerance": 0.01,
+          "explication": "$f_\\alpha=\\dfrac{6{,}67-1{,}2}{6{,}67-0{,}028}$"
+        },
+        {
+          "type": "qcm",
+          "enonce": "Après trempe depuis 720 °C, obtient-on de la martensite ?",
+          "choix": [
+            "non : il n'y a pas d'austénite à transformer",
+            "oui, 100 %",
+            "oui, en proportion de la cémentite",
+            "oui, en proportion de la ferrite"
+          ],
+          "reponse": 0,
+          "explication": "La martensite ne se forme qu'à partir de l'austénite. Austénitisé à 800 °C (γ + Fe₃C), la trempe donnerait martensite + cémentite."
+        }
+      ],
+      "source": "Cours/2A FIGIM/Transformation de phase - S.Barrat/Annales/Test 2/2008/Test Transfo 2008 test 2.pdf"
+    },
+    {
+      "id": "tp-ds-006",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**Test 2012 — Diagramme Ti–Cu** (en % massique). $M_{Ti}=47{,}87$ ; $M_{Cu}=63{,}55$ g/mol. Le composé Ti₂Cu est à ~40 % mass. Cu ; un composé se forme par une réaction à 925 °C vers 57 % mass. Cu.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Fraction massique de Cu dans Ti₂Cu ?",
+          "reponse": 0.398958,
+          "tolerance": 0.01,
+          "explication": "$\\dfrac{63{,}55}{63{,}55+2\\times47{,}87}$"
+        },
+        {
+          "type": "qcm",
+          "enonce": "Stœchiométrie du composé vers 57 % mass. Cu ?",
+          "choix": [
+            "TiCu",
+            "Ti₂Cu",
+            "TiCu₂",
+            "Ti₃Cu₄"
+          ],
+          "reponse": 0,
+          "explication": "$\\dfrac{63{,}55}{63{,}55+47{,}87}=0{,}570$."
+        },
+        {
+          "type": "qcm",
+          "enonce": "Réaction à 790 °C côté Ti :",
+          "choix": [
+            "eutectoïde $\\beta Ti\\to\\alpha Ti+Ti_2Cu$",
+            "eutectique $L\\to\\alpha+\\beta$",
+            "péritectique",
+            "monotectique"
+          ],
+          "reponse": 0,
+          "explication": "Une phase solide (β, CC) donne deux solides : eutectoïde ⇒ précipitation de type **duplex** (lamellaire)."
+        }
+      ],
+      "source": "Cours/2A FIGIM/Transformation de phase - S.Barrat/Annales/Test 2/2012"
+    }
+  ]
+}

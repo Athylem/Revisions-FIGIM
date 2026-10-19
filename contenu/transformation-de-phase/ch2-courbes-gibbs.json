@@ -1,0 +1,132 @@
+{
+  "chapitre": "Courbes d'énergie de Gibbs et états de référence",
+  "genre": "cours",
+  "questions": [
+    {
+      "id": "tp-gib-001",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Modèle de **solution idéale** :",
+      "choix": [
+        "$\\Delta H_{mel}=0$ et $\\Delta S_{mel}=-R[x_A\\ln x_A+x_B\\ln x_B]$",
+        "$\\Delta S_{mel}=0$",
+        "$\\Delta H_{mel}=\\Omega x_Ax_B$ et $\\Delta S_{mel}=0$",
+        "$\\Delta G_{mel}>0$"
+      ],
+      "reponse": 0,
+      "explication": "D'où $g=x_A\\mu_A^*+x_B\\mu_B^*+RT[x_A\\ln x_A+x_B\\ln x_B]$."
+    },
+    {
+      "id": "tp-gib-002",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Pour lire $\\mu_A$ et $\\mu_B$ d'une phase de composition $x_1$ sur la courbe $g(x_B)$ :",
+      "choix": [
+        "on trace la **tangente** en $x_1$ : ses intersections avec les axes $x_B=0$ et $x_B=1$ donnent $\\mu_A$ et $\\mu_B$",
+        "on lit le minimum de la courbe",
+        "on prend la valeur de g en $x_1$",
+        "on trace la corde entre les corps purs"
+      ],
+      "reponse": 0,
+      "explication": "Méthode des tangentes : $g=x_A\\mu_A+x_B\\mu_B$, la tangente coupe l'axe A en $\\mu_A$ et l'axe B en $\\mu_B$."
+    },
+    {
+      "id": "tp-gib-003",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Combien d'**états de référence** faut-il fixer sur un diagramme $g(x_B)$ à deux phases ?",
+      "choix": [
+        "un par axe (un pour A, un pour B) : on pose arbitrairement un $\\mu^*$ à zéro sur chaque axe",
+        "un seul pour tout le diagramme",
+        "aucun",
+        "un par phase et par axe (4)"
+      ],
+      "reponse": 0,
+      "explication": "Ex. $\\mu_A^*(\\alpha)=0$ ; alors $\\mu_A^*(L)=\\Delta G^*_{m,A}(\\alpha\\to L)$ se calcule. Changer de référence ne modifie **pas** les points de tangence (Lupis)."
+    },
+    {
+      "id": "tp-gib-004",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Avec $\\Delta C_p$ négligé, l'écart $\\mu^*_A(L)-\\mu^*_A(\\alpha)$ à la température $T$ vaut :",
+      "choix": [
+        "$\\Delta H_f\\left(1-\\dfrac{T}{T_f}\\right)$",
+        "$\\Delta H_f\\left(\\dfrac{T}{T_f}-1\\right)$",
+        "$\\Delta H_f\\,T/T_f$",
+        "$-\\Delta H_f$"
+      ],
+      "reponse": 0,
+      "explication": "$\\Delta G=\\Delta H_f-T\\Delta S_f$ avec $\\Delta S_f=\\Delta H_f/T_f$ : positif sous $T_f$ (le solide est stable), négatif au-dessus."
+    },
+    {
+      "id": "tp-gib-005",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Avec $\\Delta C_p\\ne0$, l'expression exacte est :",
+      "choix": [
+        "$\\Delta G(T)=\\Delta H_f+\\int_{T_f}^{T}\\Delta C_p\\,dT-T\\left[\\dfrac{\\Delta H_f}{T_f}+\\int_{T_f}^{T}\\dfrac{\\Delta C_p}{T}dT\\right]$",
+        "$\\Delta G(T)=\\Delta H_f-T\\Delta C_p$",
+        "$\\Delta G(T)=\\Delta C_p(T-T_f)$",
+        "$\\Delta G(T)=\\Delta H_f\\ln(T/T_f)$"
+      ],
+      "reponse": 0,
+      "explication": "$dH=C_p\\,dT$ et $dS=C_p\\,dT/T$ appliqués entre $T_f$ (référence) et $T$."
+    },
+    {
+      "id": "tp-gib-006",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Dans un domaine biphasé α + β, la proportion de β pour une composition globale $x$ est donnée par :",
+      "choix": [
+        "la règle des segments inverses : $f_\\beta=\\dfrac{x-x_\\alpha}{x_\\beta-x_\\alpha}$",
+        "$f_\\beta=\\dfrac{x_\\beta-x}{x_\\beta-x_\\alpha}$",
+        "$f_\\beta=x$",
+        "$f_\\beta=x_\\beta/x_\\alpha$"
+      ],
+      "reponse": 0,
+      "explication": "Bras de levier : on lit la longueur du segment **opposé** à la phase."
+    },
+    {
+      "id": "tp-gib-007",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "À la température exacte d'un palier **péritectique** $L+\\alpha\\to\\beta$, sur les courbes $g(x)$ :",
+      "choix": [
+        "une tangente commune touche L, α et β, avec β entre α et L",
+        "L est au milieu",
+        "les trois courbes se coupent en un point",
+        "β est au-dessus de la tangente"
+      ],
+      "reponse": 0,
+      "explication": "Eutectique : liquide au milieu ; péritectique : phase formée au milieu."
+    },
+    {
+      "id": "tp-gib-008",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Si l'on « descend » toutes les conodes passant par un point de fusion congruente jusqu'à créer un palier, on obtient en général :",
+      "choix": [
+        "un palier eutectique ou péritectique (trois phases en équilibre)",
+        "un point critique",
+        "une transformation martensitique",
+        "rien"
+      ],
+      "reponse": 0,
+      "explication": "Question 6 du test 2014 (Au-Ni) : trois phases sur une même tangente ⇒ invariant."
+    },
+    {
+      "id": "tp-gib-009",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Un composé défini AₓBᵧ cristallise dans une maille de volume $V$, masse volumique ρ. Le nombre de motifs par maille $Z$ vaut :",
+      "choix": [
+        "$Z=\\dfrac{\\rho\\,V\\,N_A}{M_{A_xB_y}}$",
+        "$Z=\\dfrac{M}{\\rho V}$",
+        "$Z=\\rho V$",
+        "$Z=\\dfrac{\\rho N_A}{MV}$"
+      ],
+      "reponse": 0,
+      "explication": "Méthode du test 2013 (Al-Ca) pour trouver la stœchiométrie du composé à partir de la maille."
+    }
+  ]
+}

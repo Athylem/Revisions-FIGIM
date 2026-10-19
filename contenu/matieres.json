@@ -59,8 +59,37 @@
       "prof": "D. Dalloz",
       "groupe": "Matériaux",
       "ds": null,
-      "notes": false,
-      "chapitres": []
+      "notes": true,
+      "chapitres": [
+        {
+          "id": "ch1-diagramme-fe-c",
+          "nom": "Diagramme Fe-C, phases et constituants",
+          "genre": "cours",
+          "fichier": "alliages-ferreux/ch1-diagramme-fe-c.json",
+          "questions": 11
+        },
+        {
+          "id": "ch2-transformations-traitements",
+          "nom": "TTT/TRC, martensite, bainite, revenu",
+          "genre": "cours",
+          "fichier": "alliages-ferreux/ch2-transformations-traitements.json",
+          "questions": 12
+        },
+        {
+          "id": "ch3-questions-de-cours",
+          "nom": "Questions de cours des examens (à rédiger)",
+          "genre": "cours",
+          "fichier": "alliages-ferreux/ch3-questions-de-cours.json",
+          "questions": 8
+        },
+        {
+          "id": "ex1-calculs-ds",
+          "nom": "Exercices type DS (bras de levier, martensite, volumes)",
+          "genre": "exercices",
+          "fichier": "alliages-ferreux/ex1-calculs-ds.json",
+          "questions": 4
+        }
+      ]
     },
     {
       "id": "polymeres",
@@ -127,8 +156,51 @@
       "prof": "S. Barrat",
       "groupe": "Matériaux",
       "ds": null,
-      "notes": false,
-      "chapitres": []
+      "notes": true,
+      "chapitres": [
+        {
+          "id": "ch1-classification-stabilite",
+          "nom": "Classification des transformations, stabilité, potentiel chimique",
+          "genre": "cours",
+          "fichier": "transformation-de-phase/ch1-classification-stabilite.json",
+          "questions": 10
+        },
+        {
+          "id": "ch2-courbes-gibbs",
+          "nom": "Courbes d'énergie de Gibbs et états de référence",
+          "genre": "cours",
+          "fichier": "transformation-de-phase/ch2-courbes-gibbs.json",
+          "questions": 9
+        },
+        {
+          "id": "ch3-diffusion",
+          "nom": "Diffusion (Fick, Einstein, Arrhenius, carburation)",
+          "genre": "cours",
+          "fichier": "transformation-de-phase/ch3-diffusion.json",
+          "questions": 10
+        },
+        {
+          "id": "ch4-germination",
+          "nom": "Germination et croissance",
+          "genre": "cours",
+          "fichier": "transformation-de-phase/ch4-germination.json",
+          "questions": 8
+        },
+        {
+          "id": "ch5-questions-de-cours",
+          "nom": "Questions de cours (à rédiger)",
+          "genre": "cours",
+          "fichier": "transformation-de-phase/ch5-questions-de-cours.json",
+          "questions": 8
+        },
+        {
+          "id": "ex1-calculs-ds",
+          "nom": "Exercices type DS (μ*, diffusion, germination, diagrammes)",
+          "genre": "exercices",
+          "fichier": "transformation-de-phase/ex1-calculs-ds.json",
+          "questions": 6
+        }
+      ]
     },
     {
       "id": "thermodynamique",

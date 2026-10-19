@@ -1,0 +1,62 @@
+{
+  "chapitre": "Questions de cours (à rédiger)",
+  "genre": "cours",
+  "questions": [
+    {
+      "id": "tp-cartes-001",
+      "type": "carte",
+      "difficulte": 2,
+      "enonce": "Classer les transformations de phases selon le mode de déplacement des atomes (organigramme du cours).",
+      "reponse": "- **Thermoactivées** (avec diffusion) :\n  - longue distance : réaction eutectoïde, précipitation continue, discontinue, duplex ;\n  - courte distance : recristallisation, transformations allotropiques/polymorphiques, ordre/désordre.\n- **Athermiques** (sans diffusion) : déplacement coordonné des atomes = **transformation martensitique**."
+    },
+    {
+      "id": "tp-cartes-002",
+      "type": "carte",
+      "difficulte": 2,
+      "enonce": "Différencier précipitation continue, discontinue et duplex ; donner un exemple dans le système Ti–Cu.",
+      "reponse": "- **Continue** : $\\alpha'\\to\\alpha+\\beta$, précipités répartis dans tout le grain, la matrice s'appauvrit progressivement (ex. Ti₂Cu précipitant dans αTi sursaturé).\n- **Discontinue** (cellulaire) : front de réaction qui balaie le grain depuis les joints, α' → α (même structure, appauvrie) + β en lamelles.\n- **Duplex** : morphologie cellulaire mais les deux phases produites ont une structure différente de la mère (ex. eutectoïde $\\beta Ti\\to\\alpha Ti+Ti_2Cu$ à 790 °C, comme la perlite)."
+    },
+    {
+      "id": "tp-cartes-003",
+      "type": "carte",
+      "difficulte": 2,
+      "enonce": "Expliquer comment placer les potentiels chimiques des corps purs μ* sur un diagramme g(x) à une température T donnée.",
+      "reponse": "1. Choisir **un état de référence par axe** : $\\mu^*=0$ pour la phase stable du corps pur à T (ex. $\\mu^*_{Ni}(\\alpha)=0$).\n2. L'autre phase du même corps pur est décalée de $\\Delta G^*_m(\\alpha\\to L)=\\Delta H_f(1-T/T_f)$ (ou la forme exacte avec $\\Delta C_p$) : > 0 sous $T_f$, < 0 au-dessus.\n3. Tracer les courbes $g=x_A\\mu_A^*+x_B\\mu_B^*+RT[\\ldots]$ (+ terme d'interaction) et les tangentes communes. Les points de tangence ne dépendent pas des références choisies."
+    },
+    {
+      "id": "tp-cartes-004",
+      "type": "carte",
+      "difficulte": 2,
+      "enonce": "Démontrer la relation d'Einstein et l'expression de D pour un réseau cubique centré.",
+      "reponse": "Marche au hasard : $\\langle X\\rangle=0$ mais $\\langle X^2\\rangle=\\sum\\Gamma_i t\\,x_i^2$. En CC, 8 sauts de projection $\\pm a/2$ : $\\langle X^2\\rangle=\\Gamma t\\,a^2/4$. Einstein : $\\langle X^2\\rangle=2Dt$ ⇒ $D=\\Gamma a^2/8$. (Diamant : 4 voisins, $\\pm a/4$ ⇒ $D=\\Gamma a^2/32$.)"
+    },
+    {
+      "id": "tp-cartes-005",
+      "type": "carte",
+      "difficulte": 2,
+      "enonce": "Établir la deuxième loi de Fick à partir de la première.",
+      "reponse": "Bilan sur un volume $S\\,dx$ (S = 1) : ce qui entre moins ce qui sort pendant dt, $[J(x)-J(x+dx)]dt=-\\dfrac{\\partial J}{\\partial x}dx\\,dt$, égale la variation $\\dfrac{\\partial C}{\\partial t}dt\\,dx$. Donc $\\dfrac{\\partial C}{\\partial t}=-\\dfrac{\\partial J}{\\partial x}$ et avec $J=-D\\,\\partial C/\\partial x$ (D constant) : $\\dfrac{\\partial C}{\\partial t}=D\\dfrac{\\partial^2C}{\\partial x^2}$."
+    },
+    {
+      "id": "tp-cartes-006",
+      "type": "carte",
+      "difficulte": 2,
+      "enonce": "Décrire l'effet Kirkendall.",
+      "reponse": "Dans un couple de diffusion A/B, si $D_A>D_B$, le flux d'atomes A vers B dépasse le flux de B vers A. Un **flux de lacunes** compense ($J_l=-(J_A+J_B)$) : création de plans côté B, annihilation côté A (montée de dislocations, ou **pores**). Des marqueurs inertes placés à l'interface **se déplacent** vers A. L'interface de Matano (aires égales) ne coïncide plus avec l'interface initiale."
+    },
+    {
+      "id": "tp-cartes-007",
+      "type": "carte",
+      "difficulte": 2,
+      "enonce": "Établir le rayon critique et la barrière de germination homogène.",
+      "reponse": "$\\Delta G(r)=\\frac43\\pi r^3\\Delta G_v+4\\pi r^2\\gamma$ avec $\\Delta G_v<0$. $\\dfrac{d\\Delta G}{dr}=0$ ⇒ $r^*=-\\dfrac{2\\gamma}{\\Delta G_v}$ ; en reportant : $\\Delta G^*=\\dfrac{16\\pi\\gamma^3}{3\\Delta G_v^2}$. Avec $\\Delta G_v\\approx\\Delta H_v\\Delta T/T_f$ : plus la surfusion est grande, plus $r^*$ et $\\Delta G^*$ sont petits."
+    },
+    {
+      "id": "tp-cartes-008",
+      "type": "carte",
+      "difficulte": 2,
+      "enonce": "Pourquoi la température est-elle le paramètre clé d'un traitement de carburation ?",
+      "reponse": "D suit Arrhenius $D=D_0e^{-Q/RT}$ : quelques dizaines de degrés changent D d'un facteur 2 à 5. La profondeur atteinte varie comme $\\sqrt{Dt}$, donc pour une même profondeur le temps varie comme $1/D$ (exemple du cours : 74 h à 900 °C contre 14 h à 950 °C). Limite haute : grossissement du grain austénitique."
+    }
+  ]
+}

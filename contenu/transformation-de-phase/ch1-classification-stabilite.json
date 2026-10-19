@@ -1,0 +1,140 @@
+{
+  "chapitre": "Classification des transformations, stabilité, potentiel chimique",
+  "genre": "cours",
+  "questions": [
+    {
+      "id": "tp-cla-001",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Une transformation **hétérogène** (au sens de Gibbs) se décompose en :",
+      "choix": [
+        "une étape de **germination** (embryons → germes) puis une étape de **croissance**",
+        "une seule étape homogène dans tout le volume",
+        "une diffusion puis une fusion",
+        "une trempe puis un revenu"
+      ],
+      "reponse": 0,
+      "explication": "Germination : formation de petits domaines de quelques atomes ; croissance : développement jusqu'à épuisement de la phase mère."
+    },
+    {
+      "id": "tp-cla-002",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Une transformation **athermique** (sans diffusion) est typiquement :",
+      "choix": [
+        "la transformation martensitique (déplacement coordonné des atomes)",
+        "la précipitation continue",
+        "la réaction eutectoïde",
+        "la recristallisation"
+      ],
+      "reponse": 0,
+      "explication": "Organigramme du cours : transformations thermoactivées (diffusion longue ou courte distance) vs athermiques (martensite)."
+    },
+    {
+      "id": "tp-cla-003",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "La **réaction eutectoïde** et la **précipitation continue** reposent sur :",
+      "choix": [
+        "une diffusion à **longue distance**",
+        "une diffusion à courte distance",
+        "un cisaillement sans diffusion",
+        "aucune diffusion"
+      ],
+      "reponse": 0,
+      "explication": "Il faut redistribuer le soluté entre phases de compositions différentes. Diffusion à courte distance : recristallisation, allotropie, ordre/désordre."
+    },
+    {
+      "id": "tp-cla-004",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "**Précipitation discontinue** (cellulaire) :",
+      "choix": [
+        "$\\alpha' \\to \\alpha + \\beta$ derrière un front qui avance (souvent depuis les joints de grains), α de **même structure** que la phase mère",
+        "précipitation uniforme dans tout le grain",
+        "précipitation sans diffusion",
+        "fusion partielle aux joints"
+      ],
+      "reponse": 0,
+      "explication": "Précipitation **duplex** : même morphologie cellulaire mais les deux phases produites ont des **structures différentes** de la phase mère (ex. eutectoïde, perlite)."
+    },
+    {
+      "id": "tp-cla-005",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Un équilibre **métastable** est :",
+      "choix": [
+        "un minimum local de G : stable vis-à-vis des petites perturbations, mais pas le minimum absolu",
+        "un maximum de G",
+        "le minimum absolu de G",
+        "un état qui évolue spontanément sans barrière"
+      ],
+      "reponse": 0,
+      "explication": "Analogie de la bille : creux secondaire (métastable), creux le plus bas (stable), sommet (instable)."
+    },
+    {
+      "id": "tp-cla-006",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Critère d'évolution spontanée à T et P constants :",
+      "choix": [
+        "$dG \\le 0$",
+        "$dG \\ge 0$",
+        "$dS \\le 0$",
+        "$dH = 0$"
+      ],
+      "reponse": 0,
+      "explication": "Inégalité de Clausius : $dU + P\\,dV - T\\,dS \\le 0$, soit $dG\\le0$ à T et P fixés."
+    },
+    {
+      "id": "tp-cla-007",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Variation du potentiel chimique d'une phase avec la température :",
+      "choix": [
+        "$(\\partial\\mu/\\partial T)_P=-S_m<0$ et courbe concave ($\\partial^2\\mu/\\partial T^2=-C_p/T$)",
+        "$(\\partial\\mu/\\partial T)_P=+S_m$",
+        "$(\\partial\\mu/\\partial T)_P=V_m$",
+        "$\\mu$ ne dépend pas de T"
+      ],
+      "reponse": 0,
+      "explication": "μ diminue quand T augmente, d'autant plus vite que la phase est désordonnée (vapeur > liquide > solide)."
+    },
+    {
+      "id": "tp-cla-008",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Variation du potentiel chimique avec la pression :",
+      "choix": [
+        "$(\\partial\\mu/\\partial P)_T=V_m>0$ : la phase la plus dense est favorisée par la pression",
+        "$(\\partial\\mu/\\partial P)_T=-V_m$",
+        "$(\\partial\\mu/\\partial P)_T=-S_m$",
+        "nulle pour les solides"
+      ],
+      "reponse": 0,
+      "explication": "Comme $V_v\\gg V_l>V_s$ (en général), la pression favorise les phases condensées."
+    },
+    {
+      "id": "tp-cla-009",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Relation de **Gibbs-Duhem** à T et P constants :",
+      "choix": [
+        "$\\sum_i n_i\\,d\\mu_i=0$",
+        "$\\sum_i \\mu_i\\,dn_i=0$",
+        "$dG=V\\,dP-S\\,dT$",
+        "$G=\\sum_i n_i\\mu_i^2$"
+      ],
+      "reponse": 0,
+      "explication": "Obtenue en différentiant $G=\\sum n_i\\mu_i$ (théorème d'Euler) et en comparant avec $dG=V\\,dP-S\\,dT+\\sum\\mu_i\\,dn_i$."
+    },
+    {
+      "id": "tp-cla-010",
+      "type": "vrai-faux",
+      "difficulte": 1,
+      "enonce": "Le fer présente plusieurs phases allotropiques (α, γ, δ, ε) dont la stabilité relative se lit sur les courbes μ(T) et μ(P).",
+      "reponse": true,
+      "explication": "ε (hexagonal) est stable sous haute pression ; γ (CFC) entre 912 et 1394 °C ; α/δ (CC) aux autres températures."
+    }
+  ]
+}

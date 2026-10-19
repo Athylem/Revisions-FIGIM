@@ -1,0 +1,174 @@
+{
+  "chapitre": "TTT/TRC, martensite, bainite, revenu",
+  "genre": "cours",
+  "questions": [
+    {
+      "id": "af-cin-001",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Pourquoi les courbes **TTT** présentent-elles un « nez » ?",
+      "choix": [
+        "compétition entre la force motrice (croît avec la surfusion) et la diffusion (décroît quand T baisse)",
+        "à cause de la martensite",
+        "parce que la ferrite fond",
+        "à cause de l'écrouissage"
+      ],
+      "reponse": 0,
+      "explication": "Près de A1 : peu de force motrice ⇒ germination lente. À basse T : diffusion lente. Le temps d'incubation est minimal au nez (~500-550 °C)."
+    },
+    {
+      "id": "af-cin-002",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Taux de germination en fonction de la surfusion :",
+      "choix": [
+        "nul à l'équilibre, passe par un maximum, puis diminue (diffusion bloquée)",
+        "croît indéfiniment",
+        "décroît toujours",
+        "constant"
+      ],
+      "reponse": 0,
+      "explication": "Même compétition que pour le nez des TTT."
+    },
+    {
+      "id": "af-cin-003",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "La transformation **martensitique** est :",
+      "choix": [
+        "displacive (sans diffusion), athermique : la fraction transformée ne dépend que de T sous Ms",
+        "diffusionnelle et isotherme",
+        "une précipitation de carbures",
+        "une recristallisation"
+      ],
+      "reponse": 0,
+      "explication": "Cisaillement coordonné : la martensite α' (quadratique centrée) a la même teneur en C que l'austénite mère."
+    },
+    {
+      "id": "af-cin-004",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Loi de **Koistinen-Marburger** :",
+      "choix": [
+        "$f_{\\alpha'}=1-\\exp[-0{,}011(M_s-T)]$",
+        "$f_{\\alpha'}=\\exp[-0{,}011(M_s-T)]$",
+        "$f_{\\alpha'}=0{,}011(M_s-T)$",
+        "$f_{\\alpha'}=1-(T/M_s)^n$"
+      ],
+      "reponse": 0,
+      "explication": "T : température de fin de trempe. Le reste est de l'austénite résiduelle."
+    },
+    {
+      "id": "af-cin-005",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Facteurs qui **abaissent Ms** :",
+      "choix": [
+        "teneur en carbone et éléments d'alliage en solution dans γ (sauf Co, Al)",
+        "la taille de grain fine uniquement",
+        "une vitesse de refroidissement lente",
+        "rien, Ms est une constante du fer"
+      ],
+      "reponse": 0,
+      "explication": "Ms ≈ 539 − 423 %C − 30,4 %Mn − 17,7 %Ni − 12,1 %Cr − 7,5 %Mo (Andrews). Une austénite écrouie ou un grain très fin la modifient aussi."
+    },
+    {
+      "id": "af-cin-006",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Si l'on austénitise un acier plus longtemps ou plus chaud avant la trempe, Ms :",
+      "choix": [
+        "peut baisser : plus de carbures dissous ⇒ austénite plus riche en C et éléments",
+        "monte toujours",
+        "ne change pas",
+        "devient égal à A1"
+      ],
+      "reponse": 0,
+      "explication": "Explication des résultats de l'examen 2010 (acier 0,2 % C maintenu 1 h à différentes T)."
+    },
+    {
+      "id": "af-cin-007",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "**Vitesse critique de trempe** martensitique :",
+      "choix": [
+        "la plus faible vitesse de refroidissement qui donne 100 % de martensite (tangente au nez des TRC)",
+        "la vitesse qui donne de la perlite",
+        "la vitesse maximale du four",
+        "une vitesse fixée à 100 °C/s"
+      ],
+      "reponse": 0,
+      "explication": "Les éléments d'alliage décalent les nez vers la droite ⇒ vitesse critique plus faible ⇒ meilleure **trempabilité**."
+    },
+    {
+      "id": "af-cin-008",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Différence entre diagrammes **TTT** et **TRC** :",
+      "choix": [
+        "TTT : maintien isotherme après refroidissement brutal ; TRC : refroidissements continus (lois de refroidissement)",
+        "TTT : chauffage ; TRC : refroidissement",
+        "ils sont identiques",
+        "TRC n'existe que pour les fontes"
+      ],
+      "reponse": 0,
+      "explication": "On lit sur un TRC les constituants et la dureté finale le long de chaque courbe."
+    },
+    {
+      "id": "af-cin-009",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "La **bainite** se forme :",
+      "choix": [
+        "entre le nez perlitique et Ms, par un mécanisme mixte (cisaillement + diffusion du carbone)",
+        "au-dessus de A1",
+        "sous Mf",
+        "par fusion partielle"
+      ],
+      "reponse": 0,
+      "explication": "Bainite supérieure (plumes) vers 400-550 °C, inférieure (aciculaire, carbures dans les lattes) près de Ms."
+    },
+    {
+      "id": "af-cin-010",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Le **revenu** d'un acier trempé :",
+      "choix": [
+        "chauffage sous A1 qui fait précipiter les carbures de la martensite : baisse de dureté, gain de ténacité",
+        "chauffage au-dessus de A3 pour réausténitiser",
+        "trempe à l'huile",
+        "refroidissement très lent depuis la fusion"
+      ],
+      "reponse": 0,
+      "explication": "Stades : carbure ε (100-200 °C), décomposition de l'austénite résiduelle (200-300 °C), cémentite (> 300 °C) ; durcissement secondaire avec Mo, V, W."
+    },
+    {
+      "id": "af-cin-011",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "**Austénitisation en condition isotherme** : une pièce y est réellement si :",
+      "choix": [
+        "elle est assez fine pour que toute la section atteigne la température quasi instantanément",
+        "elle est très massive",
+        "elle est chauffée à 2000 °C",
+        "elle est trempée"
+      ],
+      "reponse": 0,
+      "explication": "Sinon peau et cœur se transforment à des instants différents ⇒ contraintes (exercice 2 de 2010)."
+    },
+    {
+      "id": "af-cin-012",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Lors d'une austénitisation rapide d'une pièce massive, au moment où la **peau** se transforme en γ (contraction) alors que le cœur est encore α :",
+      "choix": [
+        "la peau est mise en traction, le cœur en compression",
+        "la peau est en compression",
+        "aucune contrainte",
+        "la pièce fond"
+      ],
+      "reponse": 0,
+      "explication": "La peau se contracte sur un cœur qui ne bouge pas encore ; les rôles s'inversent quand le cœur se transforme à son tour."
+    }
+  ]
+}

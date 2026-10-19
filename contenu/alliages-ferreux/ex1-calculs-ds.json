@@ -1,0 +1,221 @@
+{
+  "chapitre": "Exercices type DS (bras de levier, martensite, volumes)",
+  "genre": "exercices",
+  "questions": [
+    {
+      "id": "af-ds-001",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**Examen 2005, Ex. 1.** Un acier au carbone de teneur inconnue, refroidi lentement depuis 850 °C, contient à l'ambiante **91,3 % de ferrite et 8,7 % de cémentite** (en masse). On prend : eutectoïde 0,8 % C à 723 °C, ferrite 0,02 % C, Fe₃C 6,67 % C ; solubilité du C dans α à l'ambiante négligeable.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Teneur en carbone de l'acier ?",
+          "reponse": 0.58029,
+          "tolerance": 0.02,
+          "explication": "$C=0{,}087\\times6{,}67+0{,}913\\times0$",
+          "unite": "% C"
+        },
+        {
+          "type": "qcm",
+          "enonce": "Type d'acier :",
+          "choix": [
+            "hypoeutectoïde",
+            "hypereutectoïde",
+            "eutectoïde",
+            "fonte"
+          ],
+          "reponse": 0,
+          "explication": "0,58 % < 0,8 %."
+        },
+        {
+          "type": "numerique",
+          "enonce": "À 724 °C (juste **au-dessus** de A1 = 723 °C) : fraction d'austénite ?",
+          "reponse": 0.718321,
+          "tolerance": 0.03,
+          "explication": "Domaine α + γ : $f_\\gamma=\\dfrac{0{,}58-0{,}02}{0{,}8-0{,}02}$, avec γ à 0,8 % C et α à 0,02 %."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Fraction massique de **perlite** à l'ambiante ?",
+          "reponse": 0.718321,
+          "tolerance": 0.03,
+          "explication": "Toute l'austénite présente juste au-dessus de A1 devient perlite."
+        },
+        {
+          "type": "qcm",
+          "enonce": "Trempe à l'eau à 20 °C après austénitisation complète à 850 °C :",
+          "choix": [
+            "martensite (+ un peu d'austénite résiduelle)",
+            "ferrite + perlite",
+            "bainite",
+            "perlite fine"
+          ],
+          "reponse": 0,
+          "explication": "Refroidissement plus rapide que la vitesse critique."
+        },
+        {
+          "type": "qcm",
+          "enonce": "Trempe à 700 °C, maintien 100 s, puis refroidissement au four :",
+          "choix": [
+            "ferrite + perlite (transformation diffusionnelle complète au-dessus du nez)",
+            "martensite",
+            "bainite",
+            "austénite"
+          ],
+          "reponse": 0,
+          "explication": "À 700 °C la transformation perlitique est lente mais se termine au four."
+        }
+      ],
+      "source": "Cours/2A FIGIM/Alliage Ferreux - D.Dalloz/Annales/Alliage Ferreux 2005-1.pdf"
+    },
+    {
+      "id": "af-ds-002",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**Examen 2005, Ex. 2.** Acier à 0,4 % C austénitisé à 740 °C puis trempé à l'eau jusqu'à 25 °C. À 740 °C on lit : ferrite 0,02 % C, austénite **0,7 % C**. On admet $M_s=539-423\\,\\%C$ (°C) et Koistinen-Marburger $f_{\\alpha'}=1-\\exp[-0{,}011(M_s-T)]$.",
+      "etapes": [
+        {
+          "type": "qcm",
+          "enonce": "Phases à 740 °C :",
+          "choix": [
+            "ferrite + austénite (domaine intercritique)",
+            "austénite seule",
+            "ferrite + cémentite",
+            "perlite"
+          ],
+          "reponse": 0,
+          "explication": "Entre A1 et A3."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Fraction d'austénite à 740 °C ?",
+          "reponse": 0.558824,
+          "tolerance": 0.02,
+          "explication": "$f_\\gamma=\\dfrac{0{,}4-0{,}02}{0{,}7-0{,}02}$"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Ms de cette austénite ?",
+          "reponse": 242.9,
+          "tolerance": 0.02,
+          "explication": "$539-423\\times0{,}7$ : c'est la teneur de γ (0,7 %) qui compte, pas celle de l'acier.",
+          "unite": "°C"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Fraction de martensite formée **dans l'austénite** à 25 °C ?",
+          "reponse": 0.909,
+          "tolerance": 0.02,
+          "explication": "$1-\\exp[-0{,}011(243-25)]$"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Fraction de martensite dans l'acier entier ?",
+          "reponse": 0.507971,
+          "tolerance": 0.03,
+          "explication": "$f_\\gamma\\times f_{\\alpha'}$ ; le reste : ferrite (44 %) et austénite résiduelle (~5 %)."
+        }
+      ],
+      "source": "Cours/2A FIGIM/Alliage Ferreux - D.Dalloz/Annales/Alliage Ferreux 2005-1.pdf"
+    },
+    {
+      "id": "af-ds-003",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**Examen 2010, Ex. 1.** 1 kg de fonte à 2,4 % C maintenu juste sous l'eutectique (1148 °C) jusqu'à l'équilibre. Austénite au point E : 2,11 % C ; Fe₃C : 6,67 % C.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Masse d'austénite ?",
+          "reponse": 936.404,
+          "tolerance": 0.02,
+          "explication": "$m_\\gamma=1000\\times\\dfrac{6{,}67-2{,}4}{6{,}67-2{,}11}$",
+          "unite": "g"
+        },
+        {
+          "type": "qcm",
+          "enonce": "La moitié F1 refroidie très lentement : nouvelles phases ?",
+          "choix": [
+            "oui : cémentite proeutectoïde (secondaire) puis perlite à l'eutectoïde (ferrite + cémentite)",
+            "non, rien ne change",
+            "oui : martensite",
+            "oui : graphite uniquement"
+          ],
+          "reponse": 0,
+          "explication": "L'austénite s'appauvrit le long de Acm puis se transforme à A1."
+        },
+        {
+          "type": "numerique",
+          "enonce": "F2 (500 g) : on retire par oxydation la moitié du carbone. Masse d'acier obtenue ?",
+          "reponse": 494.0,
+          "tolerance": 0.01,
+          "explication": "500 g contiennent 12 g de C ; on en retire 6 g.",
+          "unite": "g"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Teneur en carbone de cet acier ?",
+          "reponse": 1.21457,
+          "tolerance": 0.02,
+          "explication": "$6/494$",
+          "unite": "% C"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Juste sous A1 : masse de cémentite ?",
+          "reponse": 88.7398,
+          "tolerance": 0.03,
+          "explication": "$f=\\dfrac{1{,}215-0{,}02}{6{,}67-0{,}02}$",
+          "unite": "g"
+        },
+        {
+          "type": "qcm",
+          "enonce": "Cet acier stabilisé sous A1 peut-il donner de la martensite par trempe brutale ?",
+          "choix": [
+            "non : il n'y a plus d'austénite sous A1",
+            "oui",
+            "oui, seulement en surface",
+            "oui si la trempe est à l'huile"
+          ],
+          "reponse": 0,
+          "explication": "Il faudrait réausténitiser au-dessus de A1 (voire Acm)."
+        }
+      ],
+      "source": "Cours/2A FIGIM/Alliage Ferreux - D.Dalloz/Annales/Alliage Ferreux 2010.docx"
+    },
+    {
+      "id": "af-ds-004",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**Examens 2010 et 2013.** Paramètre du fer γ à 912 °C : 3,64 Å ; du fer α à la même température : 2,90 Å.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Volume par atome dans γ (CFC, 4 atomes/maille) ?",
+          "reponse": 12.0571,
+          "tolerance": 0.01,
+          "explication": "$3{,}64^3/4$",
+          "unite": "Å³"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Volume par atome dans α (CC, 2 atomes/maille) ?",
+          "reponse": 12.1945,
+          "tolerance": 0.01,
+          "explication": "$2{,}90^3/2$",
+          "unite": "Å³"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Variation relative de volume au passage α → γ ?",
+          "reponse": -1.12644,
+          "tolerance": 0.1,
+          "explication": "$\\dfrac{V_\\gamma-V_\\alpha}{V_\\alpha}$ **par atome**. Piège : comparer les volumes de maille (48 et 24 Å³) donne +97 %, ce qui est absurde.",
+          "unite": "%"
+        }
+      ],
+      "source": "Cours/2A FIGIM/Alliage Ferreux - D.Dalloz/Annales/2014"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "chapitre": "Questions de cours des examens (à rédiger)",
+  "genre": "cours",
+  "questions": [
+    {
+      "id": "af-cartes-001",
+      "type": "carte",
+      "difficulte": 2,
+      "enonce": "Exprimer la taille critique de germination en fonction de l'enthalpie libre de transformation et de l'énergie d'interface (germe sphérique, sans énergie élastique).",
+      "reponse": "$\\Delta G(r)=\\frac43\\pi r^3\\Delta g_v+4\\pi r^2\\gamma$ ⇒ $r^*=-\\dfrac{2\\gamma}{\\Delta g_v}$, $\\Delta G^*=\\dfrac{16\\pi\\gamma^3}{3\\Delta g_v^2}$. Plus l'énergie d'interface γ est grande, plus le germe critique est gros et la barrière haute. Sites de germination, du plus au moins efficace : **joints triples, joints de grains**, dislocations, inclusions, puis germination homogène (rare)."
+    },
+    {
+      "id": "af-cartes-002",
+      "type": "carte",
+      "difficulte": 2,
+      "enonce": "Représenter et commenter l'évolution du taux de germination en fonction de la surfusion.",
+      "reponse": "$I\\propto\\exp\\left(-\\dfrac{\\Delta G^*}{kT}\\right)\\exp\\left(-\\dfrac{Q}{kT}\\right)$. Nul à $\\Delta T=0$ ($\\Delta G^*$ infini), il croît avec la surfusion (force motrice), passe par un **maximum**, puis diminue quand la diffusion devient trop lente. C'est l'origine du « nez » des courbes TTT."
+    },
+    {
+      "id": "af-cartes-003",
+      "type": "carte",
+      "difficulte": 2,
+      "enonce": "Donner la signification physique de Ms et les facteurs qui la font varier.",
+      "reponse": "Ms : température de **début de transformation martensitique** au refroidissement (Mf : fin). En dessous, l'énergie de Gibbs libérée suffit à vaincre le cisaillement/l'énergie élastique. Facteurs : teneur en **C** et en éléments **en solution** dans γ (abaissent Ms), donc conditions d'austénitisation (dissolution des carbures), taille de grain γ, écrouissage de l'austénite, contraintes."
+    },
+    {
+      "id": "af-cartes-004",
+      "type": "carte",
+      "difficulte": 2,
+      "enonce": "Décrire la succession des transformations au cours du temps pour un acier à 1 % C austénitisé puis maintenu en condition isotherme sous A1 (TTT).",
+      "reponse": "Acier hypereutectoïde : après un temps d'incubation, germination de la **cémentite proeutectoïde** aux joints de grains γ, puis transformation du reste de l'austénite (à ~0,8 % C) en **perlite** (au-dessus du nez) ou en **bainite** (sous le nez), la courbe de fin marque 100 % transformé. Sous Ms : martensite athermique."
+    },
+    {
+      "id": "af-cartes-005",
+      "type": "carte",
+      "difficulte": 2,
+      "enonce": "Décrire 3 méthodes pour déterminer la teneur en carbone d'un acier hypoeutectoïde non allié.",
+      "reponse": "1. **Métallographie** : mesurer la fraction de perlite et appliquer les segments inverses ($\\%C\\approx0{,}8\\,f_{perlite}$).\n2. **Analyse chimique** : spectrométrie d'émission, analyseur carbone (combustion + IR).\n3. **Dilatométrie / analyse thermique** : mesurer Ac3 et la reporter sur le diagramme Fe-C. (Aussi : dureté après trempe, rayons X sur le paramètre de la martensite.)"
+    },
+    {
+      "id": "af-cartes-006",
+      "type": "carte",
+      "difficulte": 2,
+      "enonce": "Schématiser le profil de concentration en carbone autour d'un carbure de fer qui croît dans l'austénite (acier 1,4 % C trempé de 1100 à 800 °C) et écrire l'équation de croissance.",
+      "reponse": "Dans Fe₃C : 6,67 % C. À l'interface côté γ : teneur d'équilibre $C_{\\gamma/Fe_3C}$ (sur Acm à 800 °C, ~0,9 %). Loin du carbure : 1,4 %. Le profil remonte de $C_{\\gamma/Fe_3C}$ à 1,4 % (zone appauvrie). Bilan à l'interface : $(C_{Fe_3C}-C_{\\gamma/Fe_3C})\\dfrac{dr}{dt}=D\\left.\\dfrac{\\partial C}{\\partial x}\\right|_{interface}$ avec $\\dfrac{\\partial C}{\\partial t}=D\\dfrac{\\partial^2 C}{\\partial x^2}$ dans γ."
+    },
+    {
+      "id": "af-cartes-007",
+      "type": "carte",
+      "difficulte": 2,
+      "enonce": "Qu'est-ce que l'écrouissage et quel est son effet sur un diagramme de transformation (acier 18M5) ?",
+      "reponse": "Écrouissage : déformation plastique qui multiplie les dislocations (durcissement). Une **austénite écrouie** offre beaucoup plus de sites de germination ⇒ transformations ferritique et perlitique **accélérées** (courbes décalées vers la gauche, vers les temps courts) et grain final plus fin ; la trempabilité diminue. Ms peut baisser (stabilisation mécanique)."
+    },
+    {
+      "id": "af-cartes-008",
+      "type": "carte",
+      "difficulte": 2,
+      "enonce": "Le revenu des aciers : but et stades.",
+      "reponse": "But : redonner de la **ténacité** à la martensite (fragile) en sacrifiant une partie de la dureté. Stades : 1) 100-200 °C précipitation du carbure ε, martensite à bas C ; 2) 200-300 °C décomposition de l'austénite résiduelle ; 3) 250-700 °C cémentite puis coalescence (sorbite) ; 4) avec Cr, Mo, V, W : **durcissement secondaire** par carbures alliés vers 500-600 °C. Attention à la fragilité de revenu (300 °C et 500 °C)."
+    }
+  ]
+}

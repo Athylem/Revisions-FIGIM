@@ -1,0 +1,118 @@
+{
+  "chapitre": "Germination et croissance",
+  "genre": "cours",
+  "questions": [
+    {
+      "id": "tp-ger-001",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "**Germination homogène** vs **hétérogène** :",
+      "choix": [
+        "homogène : n'importe où dans la phase mère ; hétérogène : sur des défauts (joints, inclusions, parois) qui abaissent la barrière",
+        "homogène : sur les joints de grains",
+        "hétérogène : sans barrière d'énergie",
+        "il n'y a pas de différence"
+      ],
+      "reponse": 0,
+      "explication": "En pratique la germination est presque toujours hétérogène."
+    },
+    {
+      "id": "tp-ger-002",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Loi de **Laplace** pour une goutte sphérique de rayon r :",
+      "choix": [
+        "$P_l-P_g=\\dfrac{2\\gamma}{r}$",
+        "$P_l-P_g=\\gamma r$",
+        "$P_l-P_g=\\dfrac{\\gamma}{2r}$",
+        "$P_l=P_g$"
+      ],
+      "reponse": 0,
+      "explication": "La pression est plus forte du côté concave."
+    },
+    {
+      "id": "tp-ger-003",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Enthalpie libre de formation d'un germe sphérique de rayon r :",
+      "choix": [
+        "$\\Delta G(r)=\\frac43\\pi r^3\\Delta G_v+4\\pi r^2\\gamma$",
+        "$\\Delta G(r)=4\\pi r^2\\Delta G_v$",
+        "$\\Delta G(r)=\\frac43\\pi r^3\\gamma$",
+        "$\\Delta G(r)=\\Delta G_v-\\gamma/r$"
+      ],
+      "reponse": 0,
+      "explication": "Terme volumique < 0 (sous la température d'équilibre) + terme surfacique > 0."
+    },
+    {
+      "id": "tp-ger-004",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Rayon critique et barrière de germination homogène :",
+      "choix": [
+        "$r^*=-\\dfrac{2\\gamma}{\\Delta G_v}$ et $\\Delta G^*=\\dfrac{16\\pi\\gamma^3}{3\\Delta G_v^2}$",
+        "$r^*=\\dfrac{\\gamma}{\\Delta G_v}$ et $\\Delta G^*=\\gamma^3$",
+        "$r^*=-\\dfrac{3\\gamma}{\\Delta G_v}$ et $\\Delta G^*=\\dfrac{4\\pi\\gamma^3}{\\Delta G_v^2}$",
+        "$r^*=0$"
+      ],
+      "reponse": 0,
+      "explication": "Obtenus par $\\partial\\Delta G/\\partial r=0$. Le nombre de germes critiques suit $N^*=N\\exp(-\\Delta G^*/kT)$."
+    },
+    {
+      "id": "tp-ger-005",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Un **embryon** de rayon $r<r^*$ :",
+      "choix": [
+        "tend à se redissoudre (ΔG diminue quand r diminue)",
+        "croît spontanément",
+        "est un germe stable",
+        "n'existe pas"
+      ],
+      "reponse": 0,
+      "explication": "Au-delà de $r^*$, le germe croît spontanément. Les embryons proviennent des fluctuations d'hétérophase."
+    },
+    {
+      "id": "tp-ger-006",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Quand la surfusion ΔT augmente :",
+      "choix": [
+        "$|\\Delta G_v|$ augmente ⇒ $r^*$ et $\\Delta G^*$ diminuent ⇒ germination plus facile",
+        "$r^*$ augmente",
+        "la germination devient impossible",
+        "rien ne change"
+      ],
+      "reponse": 0,
+      "explication": "$\\Delta G_v\\approx\\Delta H_v\\,\\Delta T/T_f$ : $r^*\\propto1/\\Delta T$, $\\Delta G^*\\propto1/\\Delta T^2$."
+    },
+    {
+      "id": "tp-ger-007",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Pour un précipité **solide** dans une matrice solide, un terme supplémentaire s'ajoute à ΔG :",
+      "choix": [
+        "l'énergie élastique de déformation (dépend de la cohérence de l'interface)",
+        "la tension de vapeur",
+        "l'énergie cinétique des atomes",
+        "aucun"
+      ],
+      "reponse": 0,
+      "explication": "Précipité cohérent : faible γ mais forte énergie élastique ; incohérent : γ élevé mais peu de contraintes."
+    },
+    {
+      "id": "tp-ger-008",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Interface **cohérente** :",
+      "choix": [
+        "continuité des plans atomiques entre précipité et matrice (faible énergie d'interface)",
+        "aucune relation cristallographique",
+        "présence de dislocations d'accommodation uniquement",
+        "interface liquide/solide"
+      ],
+      "reponse": 0,
+      "explication": "Semi-cohérente : dislocations d'interface accommodant le désaccord ; incohérente : rupture totale."
+    }
+  ]
+}

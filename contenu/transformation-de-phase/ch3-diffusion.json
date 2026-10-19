@@ -1,0 +1,146 @@
+{
+  "chapitre": "Diffusion (Fick, Einstein, Arrhenius, carburation)",
+  "genre": "cours",
+  "questions": [
+    {
+      "id": "tp-dif-001",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Mécanisme de diffusion le plus fréquent dans les métaux (solution de substitution) :",
+      "choix": [
+        "lacunaire",
+        "échange direct",
+        "échange cyclique (Zener)",
+        "crowdion"
+      ],
+      "reponse": 0,
+      "explication": "L'échange direct a une barrière énorme dans une structure compacte ; l'échange cyclique n'a jamais été observé."
+    },
+    {
+      "id": "tp-dif-002",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Le carbone, l'azote et l'hydrogène dans le fer diffusent par :",
+      "choix": [
+        "mécanisme **interstitiel direct**",
+        "mécanisme lacunaire",
+        "échange direct",
+        "ils ne diffusent pas"
+      ],
+      "reponse": 0,
+      "explication": "Petits atomes en insertion : sauts de site interstitiel en site interstitiel (Q ≈ 1,5 eV pour C dans Fe)."
+    },
+    {
+      "id": "tp-dif-003",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Relation d'**Einstein** pour une marche au hasard à une dimension :",
+      "choix": [
+        "$\\langle X^2\\rangle=2Dt$",
+        "$\\langle X\\rangle=2Dt$",
+        "$\\langle X^2\\rangle=Dt$",
+        "$\\langle X\\rangle^2=6Dt$"
+      ],
+      "reponse": 0,
+      "explication": "$\\langle X\\rangle\\to0$ (sauts aléatoires) mais $\\langle X^2\\rangle$ croît linéairement avec t. Ordre de grandeur de la pénétration : $\\sqrt{Dt}$."
+    },
+    {
+      "id": "tp-dif-004",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "**Première loi de Fick** :",
+      "choix": [
+        "$J=-D\\dfrac{\\partial C}{\\partial x}$ (régime permanent)",
+        "$\\dfrac{\\partial C}{\\partial t}=D\\dfrac{\\partial^2C}{\\partial x^2}$",
+        "$J=D\\dfrac{\\partial C}{\\partial t}$",
+        "$J=-\\dfrac{\\partial D}{\\partial x}$"
+      ],
+      "reponse": 0,
+      "explication": "Le flux va dans le sens des concentrations décroissantes. D en m²/s."
+    },
+    {
+      "id": "tp-dif-005",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "**Deuxième loi de Fick** (régime transitoire, D constant) :",
+      "choix": [
+        "$\\dfrac{\\partial C}{\\partial t}=D\\dfrac{\\partial^2 C}{\\partial x^2}$",
+        "$J=-D\\dfrac{\\partial C}{\\partial x}$",
+        "$\\dfrac{\\partial^2C}{\\partial t^2}=D\\dfrac{\\partial C}{\\partial x}$",
+        "$\\dfrac{\\partial C}{\\partial x}=D\\,t$"
+      ],
+      "reponse": 0,
+      "explication": "Fick 1 + équation de continuité $\\partial C/\\partial t=-\\partial J/\\partial x$."
+    },
+    {
+      "id": "tp-dif-006",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Solution pour une concentration de surface $C_s$ constante dans un solide semi-infini de teneur initiale $C_0$ :",
+      "choix": [
+        "$\\dfrac{C_s-C(x,t)}{C_s-C_0}=\\mathrm{erf}\\left(\\dfrac{x}{2\\sqrt{Dt}}\\right)$",
+        "$C=C_s\\,e^{-x/\\sqrt{Dt}}$",
+        "$\\dfrac{C-C_0}{C_s-C_0}=\\mathrm{erf}\\left(\\dfrac{x}{2\\sqrt{Dt}}\\right)$",
+        "$C=C_0+C_s\\dfrac{x}{Dt}$"
+      ],
+      "reponse": 0,
+      "explication": "Changement de variable $u=x/(2\\sqrt{Dt})$. Cas de la cémentation (carburation) d'un acier."
+    },
+    {
+      "id": "tp-dif-007",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Dépendance de D avec la température :",
+      "choix": [
+        "loi d'Arrhenius $D=D_0\\exp(-Q/RT)$",
+        "$D=D_0\\,T$",
+        "$D=D_0/T^2$",
+        "D indépendant de T"
+      ],
+      "reponse": 0,
+      "explication": "$D_0$ entre $5\\cdot10^{-2}$ et 10 cm²/s pour les métaux ; $Q\\approx17RT_f$. D'où l'importance capitale de la température de traitement."
+    },
+    {
+      "id": "tp-dif-008",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "L'**effet Kirkendall** met en évidence :",
+      "choix": [
+        "des flux $J_A\\ne J_B$ dans un couple de diffusion, compensés par un flux de lacunes : l'interface (marqueurs) se déplace",
+        "la diffusion des isotopes radioactifs",
+        "l'égalité des flux de A et B",
+        "l'absence de lacunes dans les métaux"
+      ],
+      "reponse": 0,
+      "explication": "Les lacunes s'annihilent côté de l'élément le plus rapide (pores de Kirkendall possibles). L'interface de Matano (aires égales) se distingue de l'interface initiale."
+    },
+    {
+      "id": "tp-dif-009",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Intérêt industriel de la **carburation** (cémentation) d'un engrenage :",
+      "choix": [
+        "surface dure (usure) et contraintes de **compression** en surface (fatigue)",
+        "rendre l'acier plus ductile à cœur",
+        "diminuer la masse",
+        "protéger contre la corrosion"
+      ],
+      "reponse": 0,
+      "explication": "Création d'un gradient de propriétés : pignons de boîte de vitesses, réducteurs d'hélicoptère."
+    },
+    {
+      "id": "tp-dif-010",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Pour une structure cubique centrée (8 premiers voisins, projection ±a/2), le coefficient de diffusion selon x vaut :",
+      "choix": [
+        "$D=\\dfrac{\\Gamma a^2}{8}$",
+        "$D=\\dfrac{\\Gamma a^2}{32}$",
+        "$D=\\Gamma a^2$",
+        "$D=\\dfrac{\\Gamma a}{2}$"
+      ],
+      "reponse": 0,
+      "explication": "$\\langle X^2\\rangle=\\Gamma t\\,(a/2)^2$ et $\\langle X^2\\rangle=2Dt$ ⇒ $D=\\Gamma a^2/8$. Pour la structure diamant (4 voisins, ±a/4) : $D=\\Gamma a^2/32$."
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "chapitre": "Diagramme Fe-C, phases et constituants",
+  "genre": "cours",
+  "questions": [
+    {
+      "id": "af-dia-001",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Nature cristallographique de la ferrite α et de l'austénite γ :",
+      "choix": [
+        "α : cubique centré ; γ : cubique à faces centrées",
+        "α : CFC ; γ : CC",
+        "les deux CC",
+        "α : hexagonal ; γ : CFC"
+      ],
+      "reponse": 0,
+      "explication": "Fe α (CC) jusqu'à 912 °C (A3), γ (CFC) jusqu'à 1394 °C (A4), puis δ (CC) jusqu'à la fusion.",
+      "source": "Cours/2A FIGIM/Alliage Ferreux - D.Dalloz/Cours/Diagramme Fer-Carbone.pdf"
+    },
+    {
+      "id": "af-dia-002",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Le point **A2** (≈ 768 °C) correspond à :",
+      "choix": [
+        "la température de Curie (ferro → paramagnétique), pas un changement de phase",
+        "la transformation α → γ",
+        "l'eutectoïde",
+        "la fusion"
+      ],
+      "reponse": 0,
+      "explication": "",
+      "source": "Cours/2A FIGIM/Alliage Ferreux - D.Dalloz/Cours/Diagramme Fer-Carbone.pdf"
+    },
+    {
+      "id": "af-dia-003",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Un élément **gammagène** :",
+      "choix": [
+        "abaisse A3 et élève A4 : élargit le domaine austénitique (C, N, Ni, Mn)",
+        "élève A3 et abaisse A4",
+        "n'a pas d'effet sur A3",
+        "stabilise la ferrite"
+      ],
+      "reponse": 0,
+      "explication": "Alphagènes : Cr, Mo, Si, V, W, Ti… Le carbone est fortement gammagène.",
+      "source": "Cours/2A FIGIM/Alliage Ferreux - D.Dalloz/Cours/Diagramme Fer-Carbone.pdf"
+    },
+    {
+      "id": "af-dia-004",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Le carbone dans le fer occupe :",
+      "choix": [
+        "des sites interstitiels (solution d'insertion)",
+        "des sites de substitution",
+        "uniquement les joints de grains",
+        "des lacunes"
+      ],
+      "reponse": 0,
+      "explication": "Sa solubilité est bien plus grande dans γ (sites octaédriques plus gros) que dans α.",
+      "source": "Cours/2A FIGIM/Alliage Ferreux - D.Dalloz/Cours/Diagramme Fer-Carbone.pdf"
+    },
+    {
+      "id": "af-dia-005",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "La **cémentite** :",
+      "choix": [
+        "Fe₃C, 6,67 % C en masse, très dure (~700 HB) et fragile",
+        "solution solide de C dans Fe γ",
+        "graphite pur",
+        "Fe₂C à 2 % C"
+      ],
+      "reponse": 0,
+      "explication": "",
+      "source": "Cours/2A FIGIM/Alliage Ferreux - D.Dalloz/Cours/Diagramme Fer-Carbone.pdf"
+    },
+    {
+      "id": "af-dia-006",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "La **perlite** est :",
+      "choix": [
+        "un agrégat lamellaire ferrite + cémentite issu de l'eutectoïde (~0,8 % C)",
+        "une phase homogène",
+        "de la martensite revenue",
+        "une solution solide sursaturée"
+      ],
+      "reponse": 0,
+      "explication": "Elle contient toujours ~0,8 % C, quelle que soit la teneur de l'acier ; dureté ~200 HB.",
+      "source": "Cours/2A FIGIM/Alliage Ferreux - D.Dalloz/Cours/Diagramme Fer-Carbone.pdf"
+    },
+    {
+      "id": "af-dia-007",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Réaction **eutectoïde** du diagramme Fe–Fe₃C :",
+      "choix": [
+        "$\\gamma\\ (0{,}8\\%C)\\to\\alpha+\\mathrm{Fe_3C}$ à ~727 °C",
+        "$L\\to\\gamma+\\mathrm{Fe_3C}$ à 1148 °C",
+        "$L+\\delta\\to\\gamma$ à 1495 °C",
+        "$\\alpha\\to\\gamma$ à 912 °C"
+      ],
+      "reponse": 0,
+      "explication": "L'eutectique (lédéburite) est à 1148 °C, 4,3 % C ; le péritectique à 1495 °C.",
+      "source": "Cours/2A FIGIM/Alliage Ferreux - D.Dalloz/Cours/Diagramme Fer-Carbone.pdf"
+    },
+    {
+      "id": "af-dia-008",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Un acier **hypoeutectoïde** refroidi lentement contient à l'ambiante :",
+      "choix": [
+        "ferrite proeutectoïde + perlite",
+        "cémentite proeutectoïde + perlite",
+        "perlite seule",
+        "austénite résiduelle"
+      ],
+      "reponse": 0,
+      "explication": "Hypereutectoïde (> 0,8 % C) : cémentite proeutectoïde en liseré aux joints + perlite (fragilisant).",
+      "source": "Cours/2A FIGIM/Alliage Ferreux - D.Dalloz/Cours/Diagramme Fer-Carbone.pdf"
+    },
+    {
+      "id": "af-dia-009",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Frontière aciers / fontes sur le diagramme Fe–Fe₃C :",
+      "choix": [
+        "~2 % C (point E, solubilité max du C dans γ)",
+        "0,8 % C",
+        "4,3 % C",
+        "6,67 % C"
+      ],
+      "reponse": 0,
+      "explication": "Au-delà, il apparaît de l'eutectique (lédéburite) à la solidification.",
+      "source": "Cours/2A FIGIM/Alliage Ferreux - D.Dalloz/Cours/Diagramme Fer-Carbone.pdf"
+    },
+    {
+      "id": "af-dia-010",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Ferrite de **Widmanstätten** (aciculaire) :",
+      "choix": [
+        "apparaît pour des refroidissements rapides et un gros grain austénitique (zones surchauffées, soudures, aciers moulés)",
+        "apparaît pour un refroidissement très lent et un grain fin",
+        "est une forme de martensite",
+        "est une cémentite"
+      ],
+      "reponse": 0,
+      "explication": "Refroidissement lent + grain fin : ferrite polygonale aux joints de grains γ.",
+      "source": "Cours/2A FIGIM/Alliage Ferreux - D.Dalloz/Cours/Diagramme Fer-Carbone.pdf"
+    },
+    {
+      "id": "af-dia-011",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "En chauffant le fer pur au-delà de 912 °C, la dilatométrie montre :",
+      "choix": [
+        "une **contraction** (γ CFC plus compact que α CC)",
+        "une dilatation brutale",
+        "aucune variation",
+        "une fusion"
+      ],
+      "reponse": 0,
+      "explication": "Compacité 0,74 contre 0,68 ⇒ volume par atome ~1 % plus faible dans γ.",
+      "source": "Cours/2A FIGIM/Alliage Ferreux - D.Dalloz/Cours/Diagramme Fer-Carbone.pdf"
+    }
+  ]
+}
