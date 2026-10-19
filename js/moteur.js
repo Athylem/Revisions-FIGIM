@@ -22,7 +22,11 @@ export async function chargerQuestions(chapitres) {
   return banques.flatMap((b) => b.questions.map((q) => ({ ...q, chapitre: b.chapitre })));
 }
 
-// Bonne réponse : 10 points × difficulté, +10 % par bonne réponse d'affilée (max +50 %)
+// Bonne réponse : 10 points × difficulté, +10 % par bonne réponse d'affilée (max +50 %).
+// Carte auto-évaluée : moitié moins (on ne peut pas vérifier). Problème : ×2 (plusieurs étapes).
+const COEF_TYPE = { carte: 0.5, probleme: 2 };
+
 export function points(question, serie) {
-  return Math.round(10 * question.difficulte * (1 + 0.1 * Math.min(serie, 5)));
+  const coef = COEF_TYPE[question.type] ?? 1;
+  return Math.round(10 * question.difficulte * coef * (1 + 0.1 * Math.min(serie, 5)));
 }

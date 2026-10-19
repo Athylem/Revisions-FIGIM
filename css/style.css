@@ -11,6 +11,7 @@
   --bon-fond: #e5f6ec;
   --faux: #c4373a;
   --faux-fond: #fbe9e9;
+  --moyen: #b26a00;
   color-scheme: light dark;
 }
 
@@ -28,6 +29,7 @@
     --bon-fond: #173326;
     --faux: #ff8a8c;
     --faux-fond: #3a1d20;
+    --moyen: #f0b45a;
   }
 }
 
@@ -183,3 +185,19 @@ button.secondaire { background: var(--surface); color: var(--texte); border: 1px
 .saisie input.bon { border: 2px solid var(--bon); background: var(--bon-fond); }
 .saisie input.faux { border: 2px solid var(--faux); background: var(--faux-fond); }
 .saisie + .solution { margin-top: 0.6rem; font-weight: 600; }
+
+#liste-chapitres h3 { margin: 0.6rem 0 0.1rem; font-size: 0.95rem; }
+#liste-chapitres h3:first-child { margin-top: 0; }
+.choix.trois { grid-template-columns: repeat(3, 1fr); margin-top: 1rem; }
+.choix.trois .choix-bouton { text-align: center; }
+.choix-bouton.moyen { border-color: var(--moyen); opacity: 1; }
+.verdict.moyen { color: var(--moyen); }
+.verso { white-space: pre-line; padding: 0.9rem 1rem; border-radius: 10px; background: var(--fond); border: 1px solid var(--bord); overflow-x: auto; }
+.saisie { align-items: center; }
+.unite { color: var(--discret); font-weight: 600; }
+.aide { font-size: 0.85rem; margin-top: 0.4rem; }
+.etape { padding: 0.9rem 0; border-top: 1px dashed var(--bord); }
+.etape:first-child { border-top: 0; padding-top: 0; }
+.etape-titre { margin: 0 0 0.6rem; overflow-x: auto; }
+.etape > .discret { margin-top: 0.6rem; }
+.etape > button { margin-top: 0.8rem; }

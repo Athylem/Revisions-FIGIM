@@ -12,24 +12,28 @@
         {
           "id": "ch1-diagrammes",
           "nom": "Diagrammes de phases et fractions",
+          "genre": "cours",
           "fichier": "alliages-non-ferreux/ch1-diagrammes.json",
           "questions": 12
         },
         {
           "id": "ch2-durcissement",
           "nom": "Durcissement par précipitation",
+          "genre": "cours",
           "fichier": "alliages-non-ferreux/ch2-durcissement.json",
           "questions": 13
         },
         {
           "id": "ch3-resistivite",
           "nom": "Résistivité des alliages",
+          "genre": "cours",
           "fichier": "alliages-non-ferreux/ch3-resistivite.json",
           "questions": 8
         },
         {
           "id": "ch4-fluage-aluminium",
           "nom": "Fluage, superalliages, aluminium",
+          "genre": "cours",
           "fichier": "alliages-non-ferreux/ch4-fluage-aluminium.json",
           "questions": 16
         }
@@ -55,18 +59,21 @@
         {
           "id": "ch1-structure",
           "nom": "Structure et masses molaires",
+          "genre": "cours",
           "fichier": "polymeres/ch1-structure.json",
           "questions": 22
         },
         {
           "id": "ch2-synthese",
           "nom": "Synthèse et cinétique",
+          "genre": "cours",
           "fichier": "polymeres/ch2-synthese.json",
           "questions": 19
         },
         {
           "id": "ch3-morphologie",
           "nom": "Morphologie, transitions, propriétés",
+          "genre": "cours",
           "fichier": "polymeres/ch3-morphologie.json",
           "questions": 18
         }
@@ -119,18 +126,21 @@
         {
           "id": "ch1-procedes-elasticite",
           "nom": "Procédés et rappels d'élasticité",
+          "genre": "cours",
           "fichier": "mise-en-forme/ch1-procedes-elasticite.json",
           "questions": 14
         },
         {
           "id": "ch2-plasticite",
           "nom": "Plasticité et essai de traction",
+          "genre": "cours",
           "fichier": "mise-en-forme/ch2-plasticite.json",
           "questions": 25
         },
         {
           "id": "ch3-criteres-puissances",
           "nom": "Critères, loi d'écoulement, borne sup.",
+          "genre": "cours",
           "fichier": "mise-en-forme/ch3-criteres-puissances.json",
           "questions": 24
         }
@@ -165,18 +175,21 @@
         {
           "id": "ch1-rappels",
           "nom": "Rappels de première année",
+          "genre": "cours",
           "fichier": "mathematiques/ch1-rappels.json",
           "questions": 12
         },
         {
           "id": "ch2-fourier",
           "nom": "Séries de Fourier",
+          "genre": "cours",
           "fichier": "mathematiques/ch2-fourier.json",
           "questions": 25
         },
         {
           "id": "ch3-laplace",
           "nom": "Transformation de Laplace",
+          "genre": "cours",
           "fichier": "mathematiques/ch3-laplace.json",
           "questions": 20
         }
@@ -283,24 +296,28 @@
         {
           "id": "ch1-present",
           "nom": "Présents et present perfect",
+          "genre": "cours",
           "fichier": "anglais/ch1-present.json",
           "questions": 58
         },
         {
           "id": "ch2-passe",
           "nom": "Temps du passé",
+          "genre": "cours",
           "fichier": "anglais/ch2-passe.json",
           "questions": 50
         },
         {
           "id": "ch3-futur",
           "nom": "Le futur",
+          "genre": "cours",
           "fichier": "anglais/ch3-futur.json",
           "questions": 26
         },
         {
           "id": "ch4-mixte",
           "nom": "Révision mixte",
+          "genre": "cours",
           "fichier": "anglais/ch4-mixte.json",
           "questions": 33
         }

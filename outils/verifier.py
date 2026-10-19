@@ -14,15 +14,34 @@ sys.stdout.reconfigure(encoding="utf-8")
 
 RACINE = Path(__file__).resolve().parent.parent
 CONTENU = RACINE / "contenu"
-TYPES = {"qcm", "vrai-faux", "texte-a-trous"}
+TYPES = {"qcm", "vrai-faux", "texte-a-trous", "numerique", "carte", "probleme"}
+TYPES_ETAPE = {"qcm", "vrai-faux", "numerique", "carte"}
 
 erreurs = []
 ids_vus = {}
 
 
+def verifier_reponse(q, ou):
+    """Contrôles propres à chaque type (questions et étapes de problème)."""
+    t = q.get("type")
+    if t == "qcm":
+        choix = q.get("choix", [])
+        if len(choix) < 2 or not isinstance(q.get("reponse"), int) or not 0 <= q["reponse"] < len(choix):
+            erreurs.append(f"{ou} : choix / reponse incohérents")
+    elif t == "vrai-faux" and not isinstance(q.get("reponse"), bool):
+        erreurs.append(f"{ou} : reponse doit valoir true ou false")
+    elif t == "texte-a-trous" and not (isinstance(q.get("reponse"), list) and q["reponse"]):
+        erreurs.append(f"{ou} : reponse doit être une liste de réponses acceptées")
+    elif t == "numerique" and (isinstance(q.get("reponse"), bool) or not isinstance(q.get("reponse"), (int, float))):
+        erreurs.append(f"{ou} : reponse doit être un nombre")
+    elif t == "carte" and not isinstance(q.get("reponse"), str):
+        erreurs.append(f"{ou} : reponse doit être un texte")
+
+
 def verifier_question(q, fichier):
     ou = f"{fichier.name} / {q.get('id', '?')}"
-    for champ in ("id", "type", "difficulte", "enonce", "reponse", "explication"):
+    obligatoires = ("id", "type", "difficulte", "enonce") + (("etapes",) if q.get("type") == "probleme" else ("reponse",))
+    for champ in obligatoires:
         if champ not in q:
             erreurs.append(f"{ou} : champ « {champ} » manquant")
     if q.get("id") in ids_vus:
@@ -32,14 +51,13 @@ def verifier_question(q, fichier):
         erreurs.append(f"{ou} : type inconnu « {q.get('type')} »")
     if q.get("difficulte") not in (1, 2, 3):
         erreurs.append(f"{ou} : difficulte doit valoir 1, 2 ou 3")
-    if q.get("type") == "qcm":
-        choix = q.get("choix", [])
-        if len(choix) < 2 or not isinstance(q.get("reponse"), int) or not 0 <= q["reponse"] < len(choix):
-            erreurs.append(f"{ou} : choix / reponse incohérents")
-    if q.get("type") == "vrai-faux" and not isinstance(q.get("reponse"), bool):
-        erreurs.append(f"{ou} : reponse doit valoir true ou false")
-    if q.get("type") == "texte-a-trous" and not (isinstance(q.get("reponse"), list) and q["reponse"]):
-        erreurs.append(f"{ou} : reponse doit être une liste de réponses acceptées")
+    if q.get("type") == "probleme":
+        for i, e in enumerate(q.get("etapes", []), 1):
+            if e.get("type") not in TYPES_ETAPE or "enonce" not in e or "reponse" not in e:
+                erreurs.append(f"{ou} étape {i} : type, enonce ou reponse manquant/invalide")
+            verifier_reponse(e, f"{ou} étape {i}")
+    else:
+        verifier_reponse(q, ou)
 
 
 chemin_matieres = CONTENU / "matieres.json"
@@ -55,6 +73,7 @@ for matiere in donnees["matieres"]:
         chapitres.append({
             "id": fichier.stem,
             "nom": banque["chapitre"],
+            "genre": banque.get("genre", "cours"),
             "fichier": f"{matiere['id']}/{fichier.name}",
             "questions": len(banque["questions"]),
         })

@@ -5,8 +5,14 @@ import { ecrire } from "./texte.js";
 import * as qcm from "./types/qcm.js";
 import * as vraiFaux from "./types/vrai-faux.js";
 import * as texteATrous from "./types/texte-a-trous.js";
+import * as numerique from "./types/numerique.js";
+import * as carte from "./types/carte.js";
+import * as probleme from "./types/probleme.js";
 
-const TYPES = { "qcm": qcm, "vrai-faux": vraiFaux, "texte-a-trous": texteATrous };
+const TYPES = {
+  "qcm": qcm, "vrai-faux": vraiFaux, "texte-a-trous": texteATrous,
+  "numerique": numerique, "carte": carte, "probleme": probleme,
+};
 const ETOILES = { 1: "★☆☆", 2: "★★☆", 3: "★★★" };
 
 const $ = (sel) => document.querySelector(sel);
@@ -24,8 +30,24 @@ function montrer(ecran) {
   window.scrollTo(0, 0);
 }
 
+// Chapitres regroupés : questions de cours d'abord, exercices type DS ensuite
+const GENRES = { cours: "Questions de cours", exercices: "Exercices type DS" };
+
 function afficherReglages() {
-  const cases = matiere.chapitres.map((ch) => {
+  const blocs = [];
+  for (const [genre, titre] of Object.entries(GENRES)) {
+    const chapitres = matiere.chapitres.filter((ch) => (ch.genre ?? "cours") === genre);
+    if (chapitres.length === 0) continue;
+    const h = document.createElement("h3");
+    h.textContent = titre;
+    blocs.push(h, ...casesChapitres(chapitres));
+  }
+  $("#liste-chapitres").replaceChildren(...blocs);
+  montrer("ecran-reglages");
+}
+
+function casesChapitres(chapitres) {
+  return chapitres.map((ch) => {
     const label = document.createElement("label");
     const box = document.createElement("input");
     box.type = "checkbox";
@@ -38,8 +60,6 @@ function afficherReglages() {
     label.append(n);
     return label;
   });
-  $("#liste-chapitres").replaceChildren(...cases);
-  montrer("ecran-reglages");
 }
 
 async function commencer(questions) {
@@ -69,20 +89,23 @@ function afficherQuestion() {
   TYPES[q.type].afficher(q, zone, (correct) => corriger(q, correct));
 }
 
-function corriger(q, correct) {
-  if (correct) {
-    const gagne = points(q, serie);
-    score += gagne;
+// resultat : true/false, ou une note entre 0 et 1 (problème en étapes, carte « à moitié »)
+function corriger(q, resultat) {
+  const note = Number(resultat);
+  const gagne = Math.round(points(q, serie) * note);
+  score += gagne;
+  if (note === 1) {
     serie++;
     $("#verdict").textContent = `Bonne réponse ! +${gagne} pts${serie >= 3 ? ` · série de ${serie} 🔥` : ""}`;
   } else {
     serie = 0;
     erreurs.push(q);
-    $("#verdict").textContent = "Raté";
+    $("#verdict").textContent = note > 0 ? `En partie (${Math.round(note * 100)} %) · +${gagne} pts` : "Raté";
   }
-  $("#verdict").className = "verdict " + (correct ? "ok" : "ko");
+  $("#verdict").className = "verdict " + (note === 1 ? "ok" : note > 0 ? "moyen" : "ko");
   $("#score-en-cours").textContent = `${score} pts`;
-  ecrire($("#explication"), q.explication);
+  $("#explication").hidden = !q.explication;
+  ecrire($("#explication"), q.explication ?? "");
   $("#retour").hidden = false;
   $("#suivante").textContent = position + 1 < session.length ? "Suivante" : "Voir le bilan";
   $("#suivante").focus();
@@ -95,9 +118,14 @@ function suivante() {
 }
 
 function texteSolution(q) {
-  if (q.type === "qcm") return q.choix[q.reponse];
-  if (q.type === "texte-a-trous") return q.reponse[0];
-  return q.reponse ? "Vrai" : "Faux";
+  switch (q.type) {
+    case "qcm": return q.choix[q.reponse];
+    case "texte-a-trous": return q.reponse[0];
+    case "numerique": return numerique.formater(q);
+    case "carte": return q.reponse;
+    case "probleme": return probleme.solution(q, texteSolution);
+    default: return q.reponse ? "Vrai" : "Faux";
+  }
 }
 
 function afficherFin() {
