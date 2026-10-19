@@ -1,0 +1,171 @@
+{
+  "chapitre": "Techniques d'analyse : DRX, MEB, MET",
+  "genre": "cours",
+  "questions": [
+    {
+      "id": "ma-tec-001",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Loi de **Bragg** :",
+      "choix": [
+        "$2d_{hkl}\\sin\\theta=n\\lambda$",
+        "$d\\sin\\theta=2n\\lambda$",
+        "$2d\\cos\\theta=n\\lambda$",
+        "$\\lambda=2d\\tan\\theta$"
+      ],
+      "reponse": 0,
+      "explication": "θ : demi-angle de déviation (angle entre faisceau et plans).",
+      "source": "Cours/2A FIGIM/Méthodes d_analyse - J.Dulcy/Projets"
+    },
+    {
+      "id": "ma-tec-002",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "En diffraction X sur un cristal **CFC**, les réflexions observées sont celles où :",
+      "choix": [
+        "h, k, l sont de même parité (tous pairs ou tous impairs)",
+        "h + k + l est pair",
+        "h + k + l est impair",
+        "toutes les réflexions"
+      ],
+      "reponse": 0,
+      "explication": "CC : h + k + l pair. Les premières raies du CFC : 111, 200, 220, 311, 222.",
+      "source": "Cours/2A FIGIM/Méthodes d_analyse - J.Dulcy/Projets"
+    },
+    {
+      "id": "ma-tec-003",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "La DRX permet de déterminer :",
+      "choix": [
+        "les phases cristallines, les paramètres de maille, les contraintes résiduelles, la texture",
+        "la composition élémentaire en surface uniquement",
+        "la topographie en 3D",
+        "la dureté"
+      ],
+      "reponse": 0,
+      "explication": "Identification par comparaison avec la base ICDD (fiches PDF).",
+      "source": "Cours/2A FIGIM/Méthodes d_analyse - J.Dulcy/Projets"
+    },
+    {
+      "id": "ma-tec-004",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Mesure des contraintes résiduelles par DRX : méthode du",
+      "choix": [
+        "$\\sin^2\\psi$ : on trace $d_\\psi$ (ou $\\varepsilon$) en fonction de $\\sin^2\\psi$, la pente donne la contrainte",
+        "trou incrémental uniquement",
+        "contraste de phase",
+        "spectre EDS"
+      ],
+      "reponse": 0,
+      "explication": "ψ : angle entre la normale à l'échantillon et la bissectrice incident/diffracté. Ordonnée à l'origine liée à la trace du tenseur.",
+      "source": "Cours/2A FIGIM/Méthodes d_analyse - J.Dulcy/Projets"
+    },
+    {
+      "id": "ma-tec-005",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Une contrainte résiduelle de **compression** en surface d'une bague de roulement :",
+      "choix": [
+        "améliore la tenue en fatigue (retarde l'amorçage des fissures)",
+        "favorise la rupture",
+        "n'a aucun effet",
+        "provoque la corrosion"
+      ],
+      "reponse": 0,
+      "explication": "",
+      "source": "Cours/2A FIGIM/Méthodes d_analyse - J.Dulcy/Projets"
+    },
+    {
+      "id": "ma-tec-006",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Au MEB, le contraste **chimique** (numéro atomique) est donné par :",
+      "choix": [
+        "les électrons rétrodiffusés",
+        "les électrons secondaires",
+        "les électrons transmis",
+        "les photons visibles"
+      ],
+      "reponse": 0,
+      "explication": "Électrons secondaires : contraste topographique (relief). Rayons X (EDS/WDS) : analyse chimique élémentaire.",
+      "source": "Cours/2A FIGIM/Méthodes d_analyse - J.Dulcy/Projets"
+    },
+    {
+      "id": "ma-tec-007",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "En **MET**, le mode **champ clair** :",
+      "choix": [
+        "sélectionne le faisceau transmis direct : les zones qui diffractent fortement apparaissent sombres",
+        "sélectionne un faisceau diffracté",
+        "utilise les électrons secondaires",
+        "ne nécessite pas d'échantillon mince"
+      ],
+      "reponse": 0,
+      "explication": "Champ sombre : on sélectionne un faisceau diffracté, seules les zones qui diffractent apparaissent claires.",
+      "source": "Cours/2A FIGIM/Méthodes d_analyse - J.Dulcy/Projets"
+    },
+    {
+      "id": "ma-tec-008",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Épaisseur typique d'une lame mince pour le MET :",
+      "choix": [
+        "10 à 100 nm",
+        "1 µm à 1 mm",
+        "1 cm",
+        "1 nm exactement"
+      ],
+      "reponse": 0,
+      "explication": "Préparation : polissage électrolytique (métaux), amincissement ionique (céramiques), FIB (ciblage précis, implante du Ga).",
+      "source": "Cours/2A FIGIM/Méthodes d_analyse - J.Dulcy/Projets"
+    },
+    {
+      "id": "ma-tec-009",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Pourquoi faut-il un **vide poussé** dans la colonne d'un microscope électronique ?",
+      "choix": [
+        "pour éviter la diffusion des électrons par les molécules de gaz (et protéger le canon)",
+        "pour refroidir l'échantillon",
+        "pour augmenter la masse des électrons",
+        "pour éviter les rayons X"
+      ],
+      "reponse": 0,
+      "explication": "",
+      "source": "Cours/2A FIGIM/Méthodes d_analyse - J.Dulcy/Projets"
+    },
+    {
+      "id": "ma-tec-010",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "La résolution d'un microscope électronique est bien meilleure que celle d'un microscope optique car :",
+      "choix": [
+        "la longueur d'onde des électrons accélérés (de Broglie, ~pm) est bien plus faible que celle de la lumière",
+        "les lentilles électromagnétiques sont parfaites",
+        "le vide amplifie l'image",
+        "les électrons sont plus lents"
+      ],
+      "reponse": 0,
+      "explication": "Critère d'Abbe : $d\\approx0{,}61\\lambda/(n\\sin\\alpha)$. En pratique limitée par les aberrations des lentilles.",
+      "source": "Cours/2A FIGIM/Méthodes d_analyse - J.Dulcy/Projets"
+    },
+    {
+      "id": "ma-tec-011",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "La martensite α' d'un acier se distingue de la ferrite en DRX car :",
+      "choix": [
+        "sa maille est **quadratique** (c/a > 1 croissant avec %C) : dédoublement des pics",
+        "elle est amorphe",
+        "elle n'a aucun pic",
+        "elle est CFC"
+      ],
+      "reponse": 0,
+      "explication": "Rapport martensite (projet 2014) : c/a ≈ 1 + 0,045 %C.",
+      "source": "Cours/2A FIGIM/Méthodes d_analyse - J.Dulcy/Projets"
+    }
+  ]
+}

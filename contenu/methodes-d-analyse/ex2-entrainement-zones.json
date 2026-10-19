@@ -1,0 +1,342 @@
+{
+  "chapitre": "Entraînement : axes de zone et angles (généré)",
+  "genre": "exercices",
+  "questions": [
+    {
+      "id": "ma-zone-001",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**Entraînement.** Plans $(\\bar{1}\\,1\\,\\bar{1})$ et $(2\\,0\\,\\bar{1})$ d'un cristal cubique.",
+      "etapes": [
+        {
+          "type": "qcm",
+          "enonce": "Axe de zone de ces deux plans ?",
+          "choix": [
+            "$[\\bar{1}\\,\\bar{3}\\,\\bar{2}]$",
+            "$[\\bar{1}\\,3\\,\\bar{2}]$",
+            "$[1\\,1\\,\\bar{2}]$",
+            "$[\\bar{3}\\,1\\,0]$"
+          ],
+          "reponse": 0,
+          "explication": "Produit vectoriel des normales, puis réduction par le PGCD (le signe opposé est la même rangée)."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Angle entre ces deux plans ?",
+          "reponse": 104.963,
+          "tolerance": 0.01,
+          "explication": "$\\cos\\alpha=\\dfrac{h_1h_2+k_1k_2+l_1l_2}{\\sqrt{h_1^2+k_1^2+l_1^2}\\sqrt{h_2^2+k_2^2+l_2^2}}$",
+          "unite": "°"
+        }
+      ]
+    },
+    {
+      "id": "ma-zone-002",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**Entraînement.** Plans $(\\bar{1}\\,\\bar{1}\\,1)$ et $(\\bar{1}\\,2\\,\\bar{1})$ d'un cristal cubique.",
+      "etapes": [
+        {
+          "type": "qcm",
+          "enonce": "Axe de zone de ces deux plans ?",
+          "choix": [
+            "$[\\bar{1}\\,\\bar{2}\\,\\bar{3}]$",
+            "$[\\bar{2}\\,\\bar{1}\\,\\bar{3}]$",
+            "$[\\bar{1}\\,2\\,\\bar{3}]$",
+            "$[\\bar{2}\\,1\\,0]$"
+          ],
+          "reponse": 0,
+          "explication": "Produit vectoriel des normales, puis réduction par le PGCD (le signe opposé est la même rangée)."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Angle entre ces deux plans ?",
+          "reponse": 118.126,
+          "tolerance": 0.01,
+          "explication": "$\\cos\\alpha=\\dfrac{h_1h_2+k_1k_2+l_1l_2}{\\sqrt{h_1^2+k_1^2+l_1^2}\\sqrt{h_2^2+k_2^2+l_2^2}}$",
+          "unite": "°"
+        }
+      ]
+    },
+    {
+      "id": "ma-zone-003",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**Entraînement.** Plans $(2\\,1\\,0)$ et $(2\\,1\\,1)$ d'un cristal cubique.",
+      "etapes": [
+        {
+          "type": "qcm",
+          "enonce": "Axe de zone de ces deux plans ?",
+          "choix": [
+            "$[1\\,\\bar{2}\\,0]$",
+            "$[0\\,0\\,\\bar{1}]$",
+            "$[1\\,2\\,0]$",
+            "$[4\\,2\\,1]$"
+          ],
+          "reponse": 0,
+          "explication": "Produit vectoriel des normales, puis réduction par le PGCD (le signe opposé est la même rangée)."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Angle entre ces deux plans ?",
+          "reponse": 24.0948,
+          "tolerance": 0.01,
+          "explication": "$\\cos\\alpha=\\dfrac{h_1h_2+k_1k_2+l_1l_2}{\\sqrt{h_1^2+k_1^2+l_1^2}\\sqrt{h_2^2+k_2^2+l_2^2}}$",
+          "unite": "°"
+        }
+      ]
+    },
+    {
+      "id": "ma-zone-004",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**Entraînement.** Plans $(1\\,2\\,\\bar{1})$ et $(1\\,\\bar{1}\\,1)$ d'un cristal cubique.",
+      "etapes": [
+        {
+          "type": "qcm",
+          "enonce": "Axe de zone de ces deux plans ?",
+          "choix": [
+            "$[1\\,\\bar{2}\\,\\bar{3}]$",
+            "$[2\\,1\\,0]$",
+            "$[\\bar{2}\\,1\\,\\bar{3}]$",
+            "$[1\\,2\\,\\bar{3}]$"
+          ],
+          "reponse": 0,
+          "explication": "Produit vectoriel des normales, puis réduction par le PGCD (le signe opposé est la même rangée)."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Angle entre ces deux plans ?",
+          "reponse": 118.126,
+          "tolerance": 0.01,
+          "explication": "$\\cos\\alpha=\\dfrac{h_1h_2+k_1k_2+l_1l_2}{\\sqrt{h_1^2+k_1^2+l_1^2}\\sqrt{h_2^2+k_2^2+l_2^2}}$",
+          "unite": "°"
+        }
+      ]
+    },
+    {
+      "id": "ma-zone-005",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**Entraînement.** Plans $(1\\,2\\,0)$ et $(1\\,\\bar{1}\\,1)$ d'un cristal cubique.",
+      "etapes": [
+        {
+          "type": "qcm",
+          "enonce": "Axe de zone de ces deux plans ?",
+          "choix": [
+            "$[2\\,\\bar{1}\\,\\bar{3}]$",
+            "$[0\\,3\\,\\bar{1}]$",
+            "$[2\\,1\\,1]$",
+            "$[\\bar{1}\\,2\\,\\bar{3}]$"
+          ],
+          "reponse": 0,
+          "explication": "Produit vectoriel des normales, puis réduction par le PGCD (le signe opposé est la même rangée)."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Angle entre ces deux plans ?",
+          "reponse": 104.963,
+          "tolerance": 0.01,
+          "explication": "$\\cos\\alpha=\\dfrac{h_1h_2+k_1k_2+l_1l_2}{\\sqrt{h_1^2+k_1^2+l_1^2}\\sqrt{h_2^2+k_2^2+l_2^2}}$",
+          "unite": "°"
+        }
+      ]
+    },
+    {
+      "id": "ma-zone-006",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**Entraînement.** Plans $(1\\,2\\,2)$ et $(\\bar{1}\\,2\\,2)$ d'un cristal cubique.",
+      "etapes": [
+        {
+          "type": "qcm",
+          "enonce": "Axe de zone de ces deux plans ?",
+          "choix": [
+            "$[0\\,\\bar{1}\\,1]$",
+            "$[1\\,0\\,0]$",
+            "$[\\bar{1}\\,0\\,1]$",
+            "$[0\\,1\\,1]$"
+          ],
+          "reponse": 0,
+          "explication": "Produit vectoriel des normales, puis réduction par le PGCD (le signe opposé est la même rangée)."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Angle entre ces deux plans ?",
+          "reponse": 38.9424,
+          "tolerance": 0.01,
+          "explication": "$\\cos\\alpha=\\dfrac{h_1h_2+k_1k_2+l_1l_2}{\\sqrt{h_1^2+k_1^2+l_1^2}\\sqrt{h_2^2+k_2^2+l_2^2}}$",
+          "unite": "°"
+        }
+      ]
+    },
+    {
+      "id": "ma-zone-007",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**Entraînement.** Plans $(\\bar{1}\\,2\\,2)$ et $(2\\,1\\,2)$ d'un cristal cubique.",
+      "etapes": [
+        {
+          "type": "qcm",
+          "enonce": "Axe de zone de ces deux plans ?",
+          "choix": [
+            "$[2\\,6\\,\\bar{5}]$",
+            "$[\\bar{3}\\,1\\,0]$",
+            "$[6\\,2\\,\\bar{5}]$",
+            "$[2\\,\\bar{6}\\,\\bar{5}]$"
+          ],
+          "reponse": 0,
+          "explication": "Produit vectoriel des normales, puis réduction par le PGCD (le signe opposé est la même rangée)."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Angle entre ces deux plans ?",
+          "reponse": 63.6122,
+          "tolerance": 0.01,
+          "explication": "$\\cos\\alpha=\\dfrac{h_1h_2+k_1k_2+l_1l_2}{\\sqrt{h_1^2+k_1^2+l_1^2}\\sqrt{h_2^2+k_2^2+l_2^2}}$",
+          "unite": "°"
+        }
+      ]
+    },
+    {
+      "id": "ma-zone-008",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**Entraînement.** Plans $(2\\,\\bar{1}\\,0)$ et $(0\\,\\bar{1}\\,\\bar{1})$ d'un cristal cubique.",
+      "etapes": [
+        {
+          "type": "qcm",
+          "enonce": "Axe de zone de ces deux plans ?",
+          "choix": [
+            "$[1\\,2\\,\\bar{2}]$",
+            "$[2\\,0\\,1]$",
+            "$[2\\,1\\,\\bar{2}]$",
+            "$[2\\,\\bar{2}\\,\\bar{1}]$"
+          ],
+          "reponse": 0,
+          "explication": "Produit vectoriel des normales, puis réduction par le PGCD (le signe opposé est la même rangée)."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Angle entre ces deux plans ?",
+          "reponse": 71.5651,
+          "tolerance": 0.01,
+          "explication": "$\\cos\\alpha=\\dfrac{h_1h_2+k_1k_2+l_1l_2}{\\sqrt{h_1^2+k_1^2+l_1^2}\\sqrt{h_2^2+k_2^2+l_2^2}}$",
+          "unite": "°"
+        }
+      ]
+    },
+    {
+      "id": "ma-zone-009",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**Entraînement.** Plans $(2\\,0\\,\\bar{1})$ et $(2\\,2\\,1)$ d'un cristal cubique.",
+      "etapes": [
+        {
+          "type": "qcm",
+          "enonce": "Axe de zone de ces deux plans ?",
+          "choix": [
+            "$[1\\,\\bar{2}\\,2]$",
+            "$[2\\,1\\,0]$",
+            "$[0\\,\\bar{1}\\,\\bar{1}]$",
+            "$[1\\,2\\,2]$"
+          ],
+          "reponse": 0,
+          "explication": "Produit vectoriel des normales, puis réduction par le PGCD (le signe opposé est la même rangée)."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Angle entre ces deux plans ?",
+          "reponse": 63.4349,
+          "tolerance": 0.01,
+          "explication": "$\\cos\\alpha=\\dfrac{h_1h_2+k_1k_2+l_1l_2}{\\sqrt{h_1^2+k_1^2+l_1^2}\\sqrt{h_2^2+k_2^2+l_2^2}}$",
+          "unite": "°"
+        }
+      ]
+    },
+    {
+      "id": "ma-zone-010",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**Entraînement.** Plans $(2\\,1\\,2)$ et $(1\\,1\\,\\bar{1})$ d'un cristal cubique.",
+      "etapes": [
+        {
+          "type": "qcm",
+          "enonce": "Axe de zone de ces deux plans ?",
+          "choix": [
+            "$[\\bar{3}\\,4\\,1]$",
+            "$[3\\,2\\,1]$",
+            "$[1\\,0\\,3]$",
+            "$[\\bar{3}\\,\\bar{4}\\,1]$"
+          ],
+          "reponse": 0,
+          "explication": "Produit vectoriel des normales, puis réduction par le PGCD (le signe opposé est la même rangée)."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Angle entre ces deux plans ?",
+          "reponse": 78.9042,
+          "tolerance": 0.01,
+          "explication": "$\\cos\\alpha=\\dfrac{h_1h_2+k_1k_2+l_1l_2}{\\sqrt{h_1^2+k_1^2+l_1^2}\\sqrt{h_2^2+k_2^2+l_2^2}}$",
+          "unite": "°"
+        }
+      ]
+    },
+    {
+      "id": "ma-zone-011",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**Entraînement.** Plans $(\\bar{1}\\,0\\,2)$ et $(2\\,1\\,0)$ d'un cristal cubique.",
+      "etapes": [
+        {
+          "type": "qcm",
+          "enonce": "Axe de zone de ces deux plans ?",
+          "choix": [
+            "$[\\bar{2}\\,4\\,\\bar{1}]$",
+            "$[4\\,\\bar{2}\\,\\bar{1}]$",
+            "$[\\bar{2}\\,\\bar{4}\\,\\bar{1}]$",
+            "$[\\bar{3}\\,\\bar{1}\\,2]$"
+          ],
+          "reponse": 0,
+          "explication": "Produit vectoriel des normales, puis réduction par le PGCD (le signe opposé est la même rangée)."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Angle entre ces deux plans ?",
+          "reponse": 113.578,
+          "tolerance": 0.01,
+          "explication": "$\\cos\\alpha=\\dfrac{h_1h_2+k_1k_2+l_1l_2}{\\sqrt{h_1^2+k_1^2+l_1^2}\\sqrt{h_2^2+k_2^2+l_2^2}}$",
+          "unite": "°"
+        }
+      ]
+    },
+    {
+      "id": "ma-zone-012",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**Entraînement.** Plans $(1\\,2\\,2)$ et $(2\\,2\\,\\bar{1})$ d'un cristal cubique.",
+      "etapes": [
+        {
+          "type": "qcm",
+          "enonce": "Axe de zone de ces deux plans ?",
+          "choix": [
+            "$[\\bar{6}\\,5\\,\\bar{2}]$",
+            "$[5\\,\\bar{6}\\,\\bar{2}]$",
+            "$[\\bar{6}\\,\\bar{5}\\,\\bar{2}]$",
+            "$[3\\,4\\,1]$"
+          ],
+          "reponse": 0,
+          "explication": "Produit vectoriel des normales, puis réduction par le PGCD (le signe opposé est la même rangée)."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Angle entre ces deux plans ?",
+          "reponse": 63.6122,
+          "tolerance": 0.01,
+          "explication": "$\\cos\\alpha=\\dfrac{h_1h_2+k_1k_2+l_1l_2}{\\sqrt{h_1^2+k_1^2+l_1^2}\\sqrt{h_2^2+k_2^2+l_2^2}}$",
+          "unite": "°"
+        }
+      ]
+    }
+  ]
+}

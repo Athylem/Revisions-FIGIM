@@ -1,0 +1,146 @@
+{
+  "chapitre": "Outils qualité classiques (complément)",
+  "genre": "cours",
+  "questions": [
+    {
+      "id": "qual-out-001",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "La roue de **Deming** :",
+      "choix": [
+        "PDCA : Plan, Do, Check, Act",
+        "DMAIC",
+        "5S",
+        "QQOQCP"
+      ],
+      "reponse": 0,
+      "explication": "Le standard sert de cale anti-retour sur la pente de l'amélioration."
+    },
+    {
+      "id": "qual-out-002",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Les **5S** :",
+      "choix": [
+        "Seiri (trier), Seiton (ranger), Seiso (nettoyer), Seiketsu (standardiser), Shitsuke (respecter/faire progresser)",
+        "cinq étapes de contrôle final",
+        "cinq causes d'un défaut",
+        "cinq indicateurs financiers"
+      ],
+      "reponse": 0,
+      "explication": ""
+    },
+    {
+      "id": "qual-out-003",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Le diagramme d'**Ishikawa** classe les causes selon les **5M** :",
+      "choix": [
+        "Matière, Matériel, Méthode, Main-d'œuvre, Milieu",
+        "Marketing, Management, Moyens, Mesure, Monnaie",
+        "Machine, Moteur, Moule, Métal, Masse",
+        "Mois, Minute, Mètre, Masse, Mole"
+      ],
+      "reponse": 0,
+      "explication": "On ajoute parfois Mesure et Management (7M)."
+    },
+    {
+      "id": "qual-out-004",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Le diagramme de **Pareto** sert à :",
+      "choix": [
+        "hiérarchiser les causes/défauts pour traiter d'abord les ~20 % qui font ~80 % de l'effet",
+        "suivre un procédé dans le temps",
+        "représenter un processus",
+        "calculer une capabilité"
+      ],
+      "reponse": 0,
+      "explication": ""
+    },
+    {
+      "id": "qual-out-005",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Les **5 pourquoi** :",
+      "choix": [
+        "questionner successivement « pourquoi ? » pour remonter à la cause racine",
+        "un audit en 5 questions",
+        "cinq étapes du PDCA",
+        "cinq points d'un plan d'action"
+      ],
+      "reponse": 0,
+      "explication": ""
+    },
+    {
+      "id": "qual-out-006",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Un **poka-yoke** est :",
+      "choix": [
+        "un détrompeur qui rend l'erreur impossible ou immédiatement détectable",
+        "un indicateur financier",
+        "une méthode de planification",
+        "un type de contrôle statistique"
+      ],
+      "reponse": 0,
+      "explication": ""
+    },
+    {
+      "id": "qual-out-007",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Dans une **AMDEC**, la criticité vaut :",
+      "choix": [
+        "Gravité × Occurrence × Détection",
+        "Gravité + Occurrence",
+        "Coût × Délai",
+        "Occurrence / Détection"
+      ],
+      "reponse": 0,
+      "explication": "On traite en priorité les modes de défaillance dont la criticité dépasse un seuil."
+    },
+    {
+      "id": "qual-out-008",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Capabilité **Cp** d'un procédé :",
+      "choix": [
+        "$C_p=\\dfrac{TS-TI}{6\\sigma}$",
+        "$C_p=\\dfrac{TS-TI}{3\\sigma}$",
+        "$C_p=\\dfrac{6\\sigma}{TS-TI}$",
+        "$C_p=\\bar x/\\sigma$"
+      ],
+      "reponse": 0,
+      "explication": "$C_{pk}=\\min\\left(\\dfrac{TS-\\bar x}{3\\sigma},\\dfrac{\\bar x-TI}{3\\sigma}\\right)$ tient compte du centrage. Procédé capable si ≥ 1,33 en général."
+    },
+    {
+      "id": "qual-out-009",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "**QQOQCP** :",
+      "choix": [
+        "Qui, Quoi, Où, Quand, Comment, Pourquoi : méthode de description exhaustive d'un problème",
+        "un indicateur de qualité",
+        "une norme ISO",
+        "un type de carte de contrôle"
+      ],
+      "reponse": 0,
+      "explication": ""
+    },
+    {
+      "id": "qual-out-010",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Le **SMED** vise à :",
+      "choix": [
+        "réduire le temps de changement de série (convertir les opérations internes en externes)",
+        "réduire les accidents",
+        "trier les déchets",
+        "contrôler les fournisseurs"
+      ],
+      "reponse": 0,
+      "explication": ""
+    }
+  ]
+}

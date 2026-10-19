@@ -1,0 +1,96 @@
+{
+  "chapitre": "TP1 : essais mécaniques (traction, dureté)",
+  "genre": "cours",
+  "questions": [
+    {
+      "id": "tpm-ess-001",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Dureté **Vickers** : pénétrateur et formule",
+      "choix": [
+        "pyramide diamant à base carrée (136°) ; $HV=\\dfrac{1{,}8544\\,F}{d^2}$ (F en kgf, d en mm)",
+        "bille d'acier ; $HB=F/S$",
+        "cône diamant 120° ; profondeur",
+        "pyramide à base losange (Knoop)"
+      ],
+      "reponse": 0,
+      "explication": "d = moyenne des deux diagonales de l'empreinte. Brinell : bille ; Rockwell : profondeur de pénétration (cône ou bille).",
+      "source": "Cours/2A FIGIM/TP Métallurgie - J.Dulcy/2012/Compte rendu TP1 2012.doc"
+    },
+    {
+      "id": "tpm-ess-002",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Sur une courbe de traction conventionnelle, la **striction** commence :",
+      "choix": [
+        "au maximum de force (Rm)",
+        "à la limite d'élasticité",
+        "à la rupture",
+        "dès le début de l'essai"
+      ],
+      "reponse": 0,
+      "explication": "Au-delà de Rm la déformation se localise, la section diminue localement.",
+      "source": "Cours/2A FIGIM/TP Métallurgie - J.Dulcy/2012/Compte rendu TP1 2012.doc"
+    },
+    {
+      "id": "tpm-ess-003",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "$R_{p0,2}$ est :",
+      "choix": [
+        "la contrainte qui laisse 0,2 % de déformation plastique après décharge (limite conventionnelle d'élasticité)",
+        "la résistance à la rupture",
+        "l'allongement à rupture",
+        "le module d'Young"
+      ],
+      "reponse": 0,
+      "explication": "Utilisée quand il n'y a pas de palier de limite d'élasticité marqué.",
+      "source": "Cours/2A FIGIM/TP Métallurgie - J.Dulcy/2012/Compte rendu TP1 2012.doc"
+    },
+    {
+      "id": "tpm-ess-004",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Une fonte à graphite **lamellaire** a, par rapport à une fonte à graphite sphéroïdal :",
+      "choix": [
+        "un allongement quasi nul (les lamelles sont des amorces de fissures)",
+        "une meilleure ductilité",
+        "la même ductilité",
+        "une dureté nulle"
+      ],
+      "reponse": 0,
+      "explication": "Les sphéroïdes concentrent beaucoup moins les contraintes : FGS ductile (A jusqu'à 20 %).",
+      "source": "Cours/2A FIGIM/TP Métallurgie - J.Dulcy/2012/Compte rendu TP1 2012.doc"
+    },
+    {
+      "id": "tpm-ess-005",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Faciès de rupture **à cupules** :",
+      "choix": [
+        "rupture ductile",
+        "rupture fragile par clivage",
+        "rupture par fatigue",
+        "rupture intergranulaire fragile"
+      ],
+      "reponse": 0,
+      "explication": "Clivage : facettes planes brillantes (rivières).",
+      "source": "Cours/2A FIGIM/TP Métallurgie - J.Dulcy/2012/Compte rendu TP1 2012.doc"
+    },
+    {
+      "id": "tpm-ess-006",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Pour un même acier, la dureté et la résistance à la traction :",
+      "choix": [
+        "varient dans le même sens (Rm ≈ 3,3 HV en MPa pour les aciers)",
+        "varient en sens inverse",
+        "sont indépendantes",
+        "sont égales"
+      ],
+      "reponse": 0,
+      "explication": "Corrélation empirique utile pour estimer Rm à partir d'une mesure de dureté.",
+      "source": "Cours/2A FIGIM/TP Métallurgie - J.Dulcy/2012/Compte rendu TP1 2012.doc"
+    }
+  ]
+}

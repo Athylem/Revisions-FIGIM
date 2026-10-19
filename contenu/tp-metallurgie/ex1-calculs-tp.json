@@ -1,0 +1,151 @@
+{
+  "chapitre": "Exercices : exploitation des mesures de TP",
+  "genre": "exercices",
+  "questions": [
+    {
+      "id": "tpm-ex-001",
+      "type": "probleme",
+      "difficulte": 1,
+      "enonce": "**TP1 — Dureté Vickers.** Charge 30 kgf ; diagonales de l'empreinte 0,412 mm et 0,418 mm.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Diagonale moyenne ?",
+          "reponse": 0.415,
+          "tolerance": 0.005,
+          "explication": "Moyenne des deux diagonales.",
+          "unite": "mm"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Dureté HV30 ?",
+          "reponse": 323.019,
+          "tolerance": 0.02,
+          "explication": "$HV=1{,}8544\\,F/d^2$",
+          "unite": "HV"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Estimation de Rm (acier) ?",
+          "reponse": 1065.96,
+          "tolerance": 0.05,
+          "explication": "Rm ≈ 3,3 × HV (MPa).",
+          "unite": "MPa"
+        }
+      ]
+    },
+    {
+      "id": "tpm-ex-002",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**TP1 — Traction** d'un acier XC48 : éprouvette $\\varnothing$ 10 mm, $L_0=50$ mm ; force maximale 47,1 kN ; force à la limite d'élasticité 33,0 kN ; longueur après rupture 61,5 mm.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Section initiale ?",
+          "reponse": 78.5398,
+          "tolerance": 0.01,
+          "explication": "$S_0=\\pi D_0^2/4$",
+          "unite": "mm²"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Re ?",
+          "reponse": 420.169,
+          "tolerance": 0.02,
+          "explication": "$R_e=F_e/S_0$",
+          "unite": "MPa"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Rm ?",
+          "reponse": 599.696,
+          "tolerance": 0.02,
+          "explication": "$R_m=F_{max}/S_0$",
+          "unite": "MPa"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Allongement après rupture A % ?",
+          "reponse": 23.0,
+          "tolerance": 0.02,
+          "explication": "$A=(L_u-L_0)/L_0$",
+          "unite": "%"
+        }
+      ]
+    },
+    {
+      "id": "tpm-ex-003",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**TP3 — Analyse thermique Pb–Sn.** Alliage à 40 % mass. Sn. Eutectique : 183 °C, 61,9 % Sn ; à 183 °C, (Pb) contient 18,3 % Sn et (Sn) 97,8 % Sn.",
+      "etapes": [
+        {
+          "type": "qcm",
+          "enonce": "Allure de la courbe de refroidissement :",
+          "choix": [
+            "changement de pente vers 245 °C (liquidus) puis palier à 183 °C",
+            "un seul palier à 183 °C",
+            "un palier à 232 °C",
+            "aucun accident"
+          ],
+          "reponse": 0,
+          "explication": "Alliage hypoeutectique."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Fraction de liquide eutectique juste au-dessus de 183 °C ?",
+          "reponse": 0.497706,
+          "tolerance": 0.02,
+          "explication": "$\\dfrac{40-18{,}3}{61{,}9-18{,}3}$"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Fraction de phase (Sn) juste sous 183 °C ?",
+          "reponse": 0.272956,
+          "tolerance": 0.02,
+          "explication": "$\\dfrac{40-18{,}3}{97{,}8-18{,}3}$"
+        },
+        {
+          "type": "qcm",
+          "enonce": "Longueur relative du palier par rapport à celui de l'eutectique pur (même masse) :",
+          "choix": [
+            "environ la moitié (proportionnelle à la fraction de liquide eutectique)",
+            "identique",
+            "nulle",
+            "double"
+          ],
+          "reponse": 0,
+          "explication": "La durée du palier est proportionnelle à la chaleur latente dégagée, donc à la masse de liquide eutectique."
+        }
+      ]
+    },
+    {
+      "id": "tpm-ex-004",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**TP4 — Cinétique d'austénitisation (dilatométrie).** Éprouvette de 100C6 : $L_0=25{,}000$ mm au début du maintien, $L_f=25{,}030$ mm en fin de transformation, $L_t=25{,}012$ mm à l'instant t.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Taux de transformation X(t) ?",
+          "reponse": 0.4,
+          "tolerance": 0.02,
+          "explication": "$X=\\dfrac{L_t-L_0}{L_f-L_0}$"
+        },
+        {
+          "type": "qcm",
+          "enonce": "Pourquoi la longueur **augmente**-t-elle pendant le maintien isotherme alors que γ est plus compact ?",
+          "choix": [
+            "la dissolution des carbures enrichit l'austénite en C et en Cr, ce qui augmente son paramètre de maille",
+            "erreur de mesure",
+            "la ferrite se forme",
+            "l'échantillon fond"
+          ],
+          "reponse": 0,
+          "explication": "L'effet de composition l'emporte une fois la transformation α → γ achevée."
+        }
+      ]
+    }
+  ]
+}

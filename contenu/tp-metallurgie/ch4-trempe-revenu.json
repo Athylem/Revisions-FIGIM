@@ -1,0 +1,111 @@
+{
+  "chapitre": "TP5-TP6 : trempe, revenu, liquides de trempe, Jominy",
+  "genre": "cours",
+  "questions": [
+    {
+      "id": "tpm-tre-001",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Les trois étapes du refroidissement dans un liquide de trempe (eau) :",
+      "choix": [
+        "caléfaction (film de vapeur, lent) → ébullition nucléée (très rapide) → convection (lente)",
+        "convection → ébullition → caléfaction",
+        "une seule étape à vitesse constante",
+        "conduction → rayonnement → convection"
+      ],
+      "reponse": 0,
+      "explication": "La phase de caléfaction est isolante ; l'ajout de polymère ou l'agitation la raccourcit.",
+      "source": "Cours/2A FIGIM/TP Métallurgie - J.Dulcy/2024/TP5 - Trempe & revenu.pdf"
+    },
+    {
+      "id": "tpm-tre-002",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Eau à 90 °C par rapport à l'eau à 20 °C :",
+      "choix": [
+        "trempe moins sévère (caléfaction plus longue)",
+        "trempe plus sévère",
+        "identique",
+        "impossible"
+      ],
+      "reponse": 0,
+      "explication": "L'eau chaude est proche de l'ébullition : le film de vapeur est stable plus longtemps.",
+      "source": "Cours/2A FIGIM/TP Métallurgie - J.Dulcy/2024/TP5 - Trempe & revenu.pdf"
+    },
+    {
+      "id": "tpm-tre-003",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Intérêt d'une solution aqueuse de polymère comme liquide de trempe :",
+      "choix": [
+        "sévérité intermédiaire entre l'eau et l'huile, réglable par la concentration : moins de tapures et de déformations",
+        "trempe plus sévère que l'eau",
+        "aucun",
+        "éviter la martensite"
+      ],
+      "reponse": 0,
+      "explication": "",
+      "source": "Cours/2A FIGIM/TP Métallurgie - J.Dulcy/2024/TP5 - Trempe & revenu.pdf"
+    },
+    {
+      "id": "tpm-tre-004",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "L'**essai Jominy** mesure :",
+      "choix": [
+        "la trempabilité : dureté le long d'une éprouvette trempée par un jet d'eau en bout",
+        "la ténacité",
+        "la résistance à la fatigue",
+        "la conductivité"
+      ],
+      "reponse": 0,
+      "explication": "Plus la dureté reste élevée loin de l'extrémité trempée, plus l'acier est trempant (éléments d'alliage).",
+      "source": "Cours/2A FIGIM/TP Métallurgie - J.Dulcy/2024/TP5 - Trempe & revenu.pdf"
+    },
+    {
+      "id": "tpm-tre-005",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Durcissement **secondaire** observé au revenu vers 500-600 °C d'un acier fortement allié :",
+      "choix": [
+        "précipitation fine de carbures alliés (Cr, Mo, V, W) et transformation de l'austénite résiduelle",
+        "formation de perlite",
+        "recristallisation",
+        "dissolution de la martensite"
+      ],
+      "reponse": 0,
+      "explication": "Exploité pour les aciers à outils travaillant à chaud.",
+      "source": "Cours/2A FIGIM/TP Métallurgie - J.Dulcy/2024/TP5 - Trempe & revenu.pdf"
+    },
+    {
+      "id": "tpm-tre-006",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Austénitiser à **1150 °C** plutôt qu'à 950 °C un acier fortement allié :",
+      "choix": [
+        "dissout plus de carbures ⇒ austénite plus alliée ⇒ Ms plus bas, plus d'austénite résiduelle après trempe, durcissement secondaire au revenu",
+        "donne plus de dureté brute de trempe",
+        "n'a pas d'effet",
+        "empêche toute martensite"
+      ],
+      "reponse": 0,
+      "explication": "TP5 (2024) : sans dissolution suffisante (950 °C), pas de pic de durcissement secondaire.",
+      "source": "Cours/2A FIGIM/TP Métallurgie - J.Dulcy/2024/TP5 - Trempe & revenu.pdf"
+    },
+    {
+      "id": "tpm-tre-007",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Le revenu à basse température (100-200 °C) d'un acier trempé :",
+      "choix": [
+        "relaxe les contraintes et précipite le carbure ε : légère baisse de dureté",
+        "fait remonter fortement la dureté",
+        "réausténitise l'acier",
+        "forme de la perlite"
+      ],
+      "reponse": 0,
+      "explication": "",
+      "source": "Cours/2A FIGIM/TP Métallurgie - J.Dulcy/2024/TP5 - Trempe & revenu.pdf"
+    }
+  ]
+}

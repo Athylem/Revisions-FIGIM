@@ -1,0 +1,174 @@
+{
+  "chapitre": "Cristallographie : plans, rangées, sites",
+  "genre": "cours",
+  "questions": [
+    {
+      "id": "ma-cri-001",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Dans le système cubique, la direction $[hkl]$ et le plan $(hkl)$ de mêmes indices sont :",
+      "choix": [
+        "perpendiculaires",
+        "parallèles",
+        "à 45°",
+        "sans relation"
+      ],
+      "reponse": 0,
+      "explication": "Propriété propre au cubique (pas vraie en quadratique ou hexagonal)."
+    },
+    {
+      "id": "ma-cri-002",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Loi de zone de **Weiss** : une rangée $[uvw]$ est contenue dans le plan $(hkl)$ si :",
+      "choix": [
+        "$hu+kv+lw=0$",
+        "$hu+kv+lw=1$",
+        "$h/u+k/v+l/w=0$",
+        "$(h,k,l)=(u,v,w)$"
+      ],
+      "reponse": 0,
+      "explication": ""
+    },
+    {
+      "id": "ma-cri-003",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "L'axe de zone de deux plans $(h_1k_1l_1)$ et $(h_2k_2l_2)$ s'obtient par :",
+      "choix": [
+        "le produit vectoriel des deux normales",
+        "la somme des indices",
+        "le produit scalaire",
+        "la différence des indices"
+      ],
+      "reponse": 0,
+      "explication": "$[uvw]=(k_1l_2-l_1k_2,\\ l_1h_2-h_1l_2,\\ h_1k_2-k_1h_2)$."
+    },
+    {
+      "id": "ma-cri-004",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Équation d'un plan $(hkl)$ de la famille passant au plus près de l'origine :",
+      "choix": [
+        "$hX+kY+lZ=1$",
+        "$hX+kY+lZ=0$",
+        "$X/h+Y/k+Z/l=0$",
+        "$hX\\cdot kY\\cdot lZ=1$"
+      ],
+      "reponse": 0,
+      "explication": "Pour trouver le plan passant par 3 nœuds : on écrit l'équation pour chacun et on résout en h, k, l."
+    },
+    {
+      "id": "ma-cri-005",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Un plan coupe les axes en $1/2$, $1/3$ et $\\infty$. Ses indices de Miller :",
+      "choix": [
+        "(2 3 0)",
+        "(1/2 1/3 0)",
+        "(3 2 0)",
+        "(2 3 1)"
+      ],
+      "reponse": 0,
+      "explication": "Inverses des intersections, ramenés à des entiers : (2 3 0)."
+    },
+    {
+      "id": "ma-cri-006",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Trois rangées $\\vec u,\\vec v,\\vec w$ forment une maille **primitive** si :",
+      "choix": [
+        "le déterminant de leurs composantes vaut ±1",
+        "elles sont deux à deux perpendiculaires",
+        "leur déterminant est nul",
+        "elles ont la même norme"
+      ],
+      "reponse": 0,
+      "explication": "|det| = n > 1 : maille multiple d'ordre n ; det = 0 : rangées coplanaires."
+    },
+    {
+      "id": "ma-cri-007",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Distance interréticulaire dans un cristal cubique de paramètre a :",
+      "choix": [
+        "$d_{hkl}=\\dfrac{a}{\\sqrt{h^2+k^2+l^2}}$",
+        "$d_{hkl}=a\\sqrt{h^2+k^2+l^2}$",
+        "$d_{hkl}=\\dfrac{a}{h+k+l}$",
+        "$d_{hkl}=\\dfrac{a^2}{h^2+k^2+l^2}$"
+      ],
+      "reponse": 0,
+      "explication": ""
+    },
+    {
+      "id": "ma-cri-008",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Compacité d'un réseau CFC et d'un réseau CC :",
+      "choix": [
+        "0,74 et 0,68",
+        "0,68 et 0,74",
+        "0,52 et 0,74",
+        "1 et 0,5"
+      ],
+      "reponse": 0,
+      "explication": "CFC : contact selon $\\langle110\\rangle$, $a\\sqrt2=4R$ ; CC : contact selon $\\langle111\\rangle$, $a\\sqrt3=4R$."
+    },
+    {
+      "id": "ma-cri-009",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Nombre et position des sites **octaédriques** dans la maille CFC :",
+      "choix": [
+        "4 : centre du cube + milieux des 12 arêtes",
+        "8 : centres des 8 petits cubes",
+        "6 : centres des faces",
+        "2"
+      ],
+      "reponse": 0,
+      "explication": "Sites tétraédriques : 8, au centre des 8 petits cubes d'arête a/2."
+    },
+    {
+      "id": "ma-cri-010",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Rayon maximal d'un atome dans un site octaédrique du CFC (atomes du réseau de rayon R) :",
+      "choix": [
+        "$(\\sqrt2-1)R\\approx0{,}414R$",
+        "$0{,}225R$",
+        "$0{,}155R$",
+        "$R$"
+      ],
+      "reponse": 0,
+      "explication": "Tétraédrique CFC : $(\\sqrt{3/2}-1)R\\approx0{,}225R$. En CC : octa 0,155R, tétra 0,291R."
+    },
+    {
+      "id": "ma-cri-011",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Combien de nœuds compte une maille CFC ? une maille CC ?",
+      "choix": [
+        "4 et 2",
+        "8 et 9",
+        "14 et 9",
+        "1 et 2"
+      ],
+      "reponse": 0,
+      "explication": "CFC : 8×1/8 + 6×1/2 = 4 ; CC : 8×1/8 + 1 = 2."
+    },
+    {
+      "id": "ma-cri-012",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Directions denses du CFC et du CC :",
+      "choix": [
+        "⟨110⟩ (diagonales de face) et ⟨111⟩ (diagonales du cube)",
+        "⟨100⟩ et ⟨110⟩",
+        "⟨111⟩ et ⟨110⟩",
+        "⟨100⟩ pour les deux"
+      ],
+      "reponse": 0,
+      "explication": "Plans denses : {111} en CFC, {110} en CC."
+    }
+  ]
+}

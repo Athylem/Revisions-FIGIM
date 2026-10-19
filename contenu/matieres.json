@@ -274,8 +274,51 @@
       "prof": "J. Dulcy",
       "groupe": "Matériaux",
       "ds": null,
-      "notes": false,
-      "chapitres": []
+      "notes": true,
+      "chapitres": [
+        {
+          "id": "ch1-cristallographie",
+          "nom": "Cristallographie : plans, rangées, sites",
+          "genre": "cours",
+          "fichier": "methodes-d-analyse/ch1-cristallographie.json",
+          "questions": 12
+        },
+        {
+          "id": "ch2-techniques",
+          "nom": "Techniques d'analyse : DRX, MEB, MET",
+          "genre": "cours",
+          "fichier": "methodes-d-analyse/ch2-techniques.json",
+          "questions": 11
+        },
+        {
+          "id": "ch3-questions-de-cours",
+          "nom": "Méthodes et questions de cours (à rédiger)",
+          "genre": "cours",
+          "fichier": "methodes-d-analyse/ch3-questions-de-cours.json",
+          "questions": 5
+        },
+        {
+          "id": "ex1-test-2015",
+          "nom": "Exercices type DS : test 2015",
+          "genre": "exercices",
+          "fichier": "methodes-d-analyse/ex1-test-2015.json",
+          "questions": 3
+        },
+        {
+          "id": "ex2-entrainement-zones",
+          "nom": "Entraînement : axes de zone et angles (généré)",
+          "genre": "exercices",
+          "fichier": "methodes-d-analyse/ex2-entrainement-zones.json",
+          "questions": 12
+        },
+        {
+          "id": "ex3-drx",
+          "nom": "Entraînement : loi de Bragg",
+          "genre": "exercices",
+          "fichier": "methodes-d-analyse/ex3-drx.json",
+          "questions": 4
+        }
+      ]
     },
     {
       "id": "tp-metallurgie",
@@ -283,8 +326,51 @@
       "prof": "J. Dulcy",
       "groupe": "Matériaux",
       "ds": null,
-      "notes": false,
-      "chapitres": []
+      "notes": true,
+      "chapitres": [
+        {
+          "id": "ch1-essais-mecaniques",
+          "nom": "TP1 : essais mécaniques (traction, dureté)",
+          "genre": "cours",
+          "fichier": "tp-metallurgie/ch1-essais-mecaniques.json",
+          "questions": 6
+        },
+        {
+          "id": "ch2-micrographie",
+          "nom": "TP2 : micrographie des aciers et fontes",
+          "genre": "cours",
+          "fichier": "tp-metallurgie/ch2-micrographie.json",
+          "questions": 7
+        },
+        {
+          "id": "ch3-analyse-thermique-dilatometrie",
+          "nom": "TP3-TP4 : analyse thermique, ATD, dilatométrie",
+          "genre": "cours",
+          "fichier": "tp-metallurgie/ch3-analyse-thermique-dilatometrie.json",
+          "questions": 7
+        },
+        {
+          "id": "ch4-trempe-revenu",
+          "nom": "TP5-TP6 : trempe, revenu, liquides de trempe, Jominy",
+          "genre": "cours",
+          "fichier": "tp-metallurgie/ch4-trempe-revenu.json",
+          "questions": 7
+        },
+        {
+          "id": "ch5-questions-de-cours",
+          "nom": "Questions de compte rendu (à rédiger)",
+          "genre": "cours",
+          "fichier": "tp-metallurgie/ch5-questions-de-cours.json",
+          "questions": 5
+        },
+        {
+          "id": "ex1-calculs-tp",
+          "nom": "Exercices : exploitation des mesures de TP",
+          "genre": "exercices",
+          "fichier": "tp-metallurgie/ex1-calculs-tp.json",
+          "questions": 4
+        }
+      ]
     },
     {
       "id": "mise-en-forme",
@@ -344,8 +430,37 @@
       "prof": "O. Kubler",
       "groupe": "Procédés",
       "ds": null,
-      "notes": false,
-      "chapitres": []
+      "notes": true,
+      "chapitres": [
+        {
+          "id": "ch1-procedes",
+          "nom": "Procédés de moulage",
+          "genre": "cours",
+          "fichier": "fonderie/ch1-procedes.json",
+          "questions": 9
+        },
+        {
+          "id": "ch2-conception-defauts",
+          "nom": "Conception, défauts et métallurgie des pièces moulées",
+          "genre": "cours",
+          "fichier": "fonderie/ch2-conception-defauts.json",
+          "questions": 9
+        },
+        {
+          "id": "ch3-questions-ouvertes",
+          "nom": "Questions du test de connaissance (à rédiger)",
+          "genre": "cours",
+          "fichier": "fonderie/ch3-questions-ouvertes.json",
+          "questions": 6
+        },
+        {
+          "id": "ex1-cas-pratiques",
+          "nom": "Cas pratiques type test",
+          "genre": "exercices",
+          "fichier": "fonderie/ex1-cas-pratiques.json",
+          "questions": 2
+        }
+      ]
     },
     {
       "id": "qualite-en-production",
@@ -353,8 +468,37 @@
       "prof": "S. Dauvergne",
       "groupe": "Procédés",
       "ds": null,
-      "notes": false,
-      "chapitres": []
+      "notes": true,
+      "chapitres": [
+        {
+          "id": "ch1-operations-standard",
+          "nom": "Opérations standard et fiche SOI (cours)",
+          "genre": "cours",
+          "fichier": "qualite-en-production/ch1-operations-standard.json",
+          "questions": 8
+        },
+        {
+          "id": "ch2-outils-qualite",
+          "nom": "Outils qualité classiques (complément)",
+          "genre": "cours",
+          "fichier": "qualite-en-production/ch2-outils-qualite.json",
+          "questions": 10
+        },
+        {
+          "id": "ch3-questions-ouvertes",
+          "nom": "Questions de cours (à rédiger)",
+          "genre": "cours",
+          "fichier": "qualite-en-production/ch3-questions-ouvertes.json",
+          "questions": 4
+        },
+        {
+          "id": "ex1-calculs",
+          "nom": "Exercices : capabilité, Pareto, AMDEC",
+          "genre": "exercices",
+          "fichier": "qualite-en-production/ex1-calculs.json",
+          "questions": 3
+        }
+      ]
     },
     {
       "id": "mathematiques",

@@ -1,0 +1,41 @@
+{
+  "chapitre": "Méthodes et questions de cours (à rédiger)",
+  "genre": "cours",
+  "questions": [
+    {
+      "id": "ma-cartes-001",
+      "type": "carte",
+      "difficulte": 2,
+      "enonce": "Méthode : trouver les indices (hkl) du plan passant par trois nœuds donnés.",
+      "reponse": "Écrire $hX_i+kY_i+lZ_i=1$ pour chacun des trois nœuds ⇒ système linéaire 3×3 en (h, k, l). Le résoudre puis multiplier par le plus petit facteur rendant les indices entiers. Ex. (1/2, 1/2, 0), (−1/2, 1/2, 1/2), (1/2, −1/2, 1/2) ⇒ (1 1 2)."
+    },
+    {
+      "id": "ma-cartes-002",
+      "type": "carte",
+      "difficulte": 2,
+      "enonce": "Méthode : trouver un plan parallèle à l'axe x et en zone avec deux plans donnés.",
+      "reponse": "Parallèle à x ⇒ $h=0$. En zone avec $(h_1k_1l_1)$ et $(h_2k_2l_2)$ ⇒ il contient leur axe de zone $[uvw]=\\vec n_1\\wedge\\vec n_2$ ⇒ $ku'+lw'=0$ (loi de Weiss). Ex. (211) et (111) : axe $[0\\bar11]$ ⇒ plan (011)."
+    },
+    {
+      "id": "ma-cartes-003",
+      "type": "carte",
+      "difficulte": 2,
+      "enonce": "Positions et tailles des sites interstitiels du CFC.",
+      "reponse": "**Octaédriques** : 4 par maille (centre du cube, milieux des arêtes), $r_o=a/2-R=(\\sqrt2-1)R$ si les atomes se touchent selon ⟨110⟩.\n**Tétraédriques** : 8 par maille (centres des petits cubes a/2), $r_t=a\\sqrt3/4-R=(\\sqrt{3/2}-1)R$."
+    },
+    {
+      "id": "ma-cartes-004",
+      "type": "carte",
+      "difficulte": 2,
+      "enonce": "Principe de la mesure des contraintes résiduelles par DRX (méthode sin²ψ).",
+      "reponse": "Une contrainte modifie les distances $d_{hkl}$ ⇒ le pic de Bragg se décale. On mesure $d_\\psi$ pour plusieurs inclinaisons ψ de l'échantillon. En élasticité isotrope : $\\varepsilon_\\psi=\\dfrac{1+\\nu}{E}\\sigma_\\phi\\sin^2\\psi-\\dfrac{\\nu}{E}(\\sigma_{11}+\\sigma_{22})$ : droite en $\\sin^2\\psi$, la **pente** donne $\\sigma_\\phi$, l'ordonnée à l'origine la trace. Non destructif, en surface (quelques µm), matériau cristallin requis."
+    },
+    {
+      "id": "ma-cartes-005",
+      "type": "carte",
+      "difficulte": 2,
+      "enonce": "Comparer MEB et MET (principe, informations, préparation).",
+      "reponse": "**MEB** : balayage d'un faisceau sur la surface ; électrons secondaires (topographie), rétrodiffusés (contraste chimique), X (EDS). Échantillon massif conducteur (ou métallisé). Résolution ~nm.\n**MET** : électrons transmis à travers une lame de 10-100 nm ; champ clair/sombre, diffraction (structure, orientation), haute résolution (colonnes atomiques), EDS/EELS. Préparation lourde (électropolissage, ions, FIB), coût élevé."
+    }
+  ]
+}

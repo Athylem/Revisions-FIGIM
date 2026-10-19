@@ -1,0 +1,95 @@
+{
+  "chapitre": "Exercices : capabilité, Pareto, AMDEC",
+  "genre": "exercices",
+  "questions": [
+    {
+      "id": "qual-ex-001",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**Capabilité.** Cote 10,00 ± 0,05 mm ; sur un échantillon : moyenne 10,01 mm, écart-type 0,012 mm.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Cp ?",
+          "reponse": 1.38889,
+          "tolerance": 0.02,
+          "explication": "$C_p=\\dfrac{10{,}05-9{,}95}{6\\times0{,}012}$"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Cpk ?",
+          "reponse": 1.11111,
+          "tolerance": 0.02,
+          "explication": "$C_{pk}=\\dfrac{10{,}05-10{,}01}{3\\times0{,}012}$ (côté le plus proche)"
+        },
+        {
+          "type": "qcm",
+          "enonce": "Conclusion :",
+          "choix": [
+            "procédé capable en dispersion (Cp > 1,33) mais mal centré (Cpk < 1,33) : recentrer le réglage",
+            "procédé non capable en dispersion",
+            "procédé parfait",
+            "impossible à dire"
+          ],
+          "reponse": 0,
+          "explication": ""
+        }
+      ]
+    },
+    {
+      "id": "qual-ex-002",
+      "type": "probleme",
+      "difficulte": 1,
+      "enonce": "**Pareto.** Défauts relevés sur un mois : rayures 112, bavures 64, cotes hors tolérance 31, peinture 15, étiquetage 8, divers 5.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Part cumulée des deux premiers défauts ?",
+          "reponse": 74.8936,
+          "tolerance": 0.01,
+          "explication": "(112 + 64) / 235",
+          "unite": "%"
+        },
+        {
+          "type": "qcm",
+          "enonce": "Action prioritaire :",
+          "choix": [
+            "traiter les rayures puis les bavures (75 % des défauts)",
+            "traiter l'étiquetage",
+            "traiter tous les défauts en même temps",
+            "ne rien faire"
+          ],
+          "reponse": 0,
+          "explication": ""
+        }
+      ]
+    },
+    {
+      "id": "qual-ex-003",
+      "type": "probleme",
+      "difficulte": 1,
+      "enonce": "**AMDEC.** Mode de défaillance « vis mal serrée » : gravité 8, occurrence 4, détection 6 (sur 10). Seuil d'action : 100.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Criticité ?",
+          "reponse": 192.0,
+          "tolerance": 0.001,
+          "explication": "G × O × D"
+        },
+        {
+          "type": "qcm",
+          "enonce": "Action la plus efficace :",
+          "choix": [
+            "un poka-yoke / visseuse à contrôle de couple (détection 1-2)",
+            "former davantage sans changer le poste",
+            "ignorer car en dessous du seuil",
+            "baisser la gravité par décret"
+          ],
+          "reponse": 0,
+          "explication": "Avec D = 1 la criticité tombe à 32."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "chapitre": "Procédés de moulage",
+  "genre": "cours",
+  "questions": [
+    {
+      "id": "fon-pro-001",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Procédé adapté à **15 pièces de 1000 kg** en fonte :",
+      "choix": [
+        "moulage en sable (à vert ou à prise chimique), modèle bois",
+        "moulage sous pression",
+        "moulage en coquille",
+        "cire perdue"
+      ],
+      "reponse": 0,
+      "explication": "Petite série, grosses pièces : seul le sable est économique. 1000 corps de robinet de 15 kg : sable à vert sur chantier mécanisé.",
+      "source": "Cours/2A FIGIM/Fonderie - O.Kubler/Cours"
+    },
+    {
+      "id": "fon-pro-002",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Le moulage **sous pression** (500 à 1500 bar) est réservé :",
+      "choix": [
+        "aux grandes séries d'alliages à bas point de fusion (Al, Zn, Mg) : outillage très coûteux",
+        "aux pièces uniques",
+        "aux aciers",
+        "aux très grosses pièces"
+      ],
+      "reponse": 0,
+      "explication": "Chambre chaude (piston dans le bain : Zn, Mg) / chambre froide (métal versé dans un conteneur à chaque cycle : Al).",
+      "source": "Cours/2A FIGIM/Fonderie - O.Kubler/Cours"
+    },
+    {
+      "id": "fon-pro-003",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Moulage **basse pression** :",
+      "choix": [
+        "le métal monte dans le moule par un tube plongeur sous faible pression d'air (< 1 bar) : solidification dirigée vers le bas, bonne santé",
+        "le métal est injecté à 1000 bar",
+        "le métal est coulé par gravité dans du sable",
+        "le moule est en mousse"
+      ],
+      "reponse": 0,
+      "explication": "Typique des jantes et culasses en alliage d'aluminium.",
+      "source": "Cours/2A FIGIM/Fonderie - O.Kubler/Cours"
+    },
+    {
+      "id": "fon-pro-004",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Moulage en **coquille** (gravité, moule métallique) — avantage principal :",
+      "choix": [
+        "précision dimensionnelle, bon état de surface, structure fine ; rentable au-delà de ~10 000 pièces",
+        "pièces de plusieurs tonnes",
+        "outillage bon marché",
+        "adapté aux aciers"
+      ],
+      "reponse": 0,
+      "explication": "Noyaux en sable possibles ; pièces jusqu'à ~30 kg, épaisseur mini ~3 mm (Al, Mg, Cu, Zn).",
+      "source": "Cours/2A FIGIM/Fonderie - O.Kubler/Cours"
+    },
+    {
+      "id": "fon-pro-005",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "**Forgeage liquide** (squeeze casting) :",
+      "choix": [
+        "solidification sous forte pression qui compense le retrait : très bonne santé, caractéristiques proches du forgé",
+        "fonderie en sable à vert",
+        "moulage à la cire perdue",
+        "frittage de poudre"
+      ],
+      "reponse": 0,
+      "explication": "",
+      "source": "Cours/2A FIGIM/Fonderie - O.Kubler/Cours"
+    },
+    {
+      "id": "fon-pro-006",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Procédé **Lost Foam** (modèle perdu en polystyrène) :",
+      "choix": [
+        "modèle en PSE noyé dans du sable sec non lié, vaporisé par le métal : pas de plan de joint ni de noyau, formes complexes",
+        "moule métallique permanent",
+        "modèle en cire enrobé de céramique",
+        "injection sous pression"
+      ],
+      "reponse": 0,
+      "explication": "Inconvénients : modèle perdu à chaque pièce (outillage d'injection du PSE), défauts liés aux résidus de pyrolyse. Ex. : culasses, collecteurs.",
+      "source": "Cours/2A FIGIM/Fonderie - O.Kubler/Cours"
+    },
+    {
+      "id": "fon-pro-007",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Moulage à la **cire perdue** :",
+      "choix": [
+        "modèle en cire enrobé de céramique (carapace), cire fondue puis métal coulé : précision et formes complexes (aubes, prothèses)",
+        "modèle en bois réutilisable",
+        "moule en sable à vert",
+        "moule permanent en acier"
+      ],
+      "reponse": 0,
+      "explication": "",
+      "source": "Cours/2A FIGIM/Fonderie - O.Kubler/Cours"
+    },
+    {
+      "id": "fon-pro-008",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Le **sable à vert** est lié par :",
+      "choix": [
+        "de l'argile (bentonite) humidifiée",
+        "une résine furanique",
+        "du silicate de soude",
+        "du ciment"
+      ],
+      "reponse": 0,
+      "explication": "Peu coûteux, recyclable, adapté aux grandes séries de pièces petites/moyennes.",
+      "source": "Cours/2A FIGIM/Fonderie - O.Kubler/Cours"
+    },
+    {
+      "id": "fon-pro-009",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "**Sables à prise chimique** (auto-durcissants) :",
+      "choix": [
+        "résines furaniques, phénoliques, alcali-phénoliques, polyuréthanes, silicate de soude + CO₂ ou ester",
+        "argile + eau",
+        "plâtre uniquement",
+        "cire"
+      ],
+      "reponse": 0,
+      "explication": "Critères : temps de prise, résistance, débourrage, dégagements gazeux, coût, recyclage. Pièces moyennes/grosses et noyaux (cold box, hot box).",
+      "source": "Cours/2A FIGIM/Fonderie - O.Kubler/Cours"
+    }
+  ]
+}

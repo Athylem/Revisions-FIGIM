@@ -1,0 +1,111 @@
+{
+  "chapitre": "TP3-TP4 : analyse thermique, ATD, dilatométrie",
+  "genre": "cours",
+  "questions": [
+    {
+      "id": "tpm-the-001",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "**Analyse thermique simple** : sur la courbe T(t) de refroidissement d'un alliage hypoeutectique Pb–Sn, on voit :",
+      "choix": [
+        "un changement de pente au liquidus puis un palier à l'eutectique (183 °C)",
+        "un seul palier à la température de fusion",
+        "aucun changement",
+        "deux paliers"
+      ],
+      "reponse": 0,
+      "explication": "Corps pur ou eutectique : un palier ; alliage hors eutectique : changement de pente (liquidus) + palier eutectique.",
+      "source": "Cours/2A FIGIM/TP Métallurgie - J.Dulcy/2009"
+    },
+    {
+      "id": "tpm-the-002",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Le palier eutectique du système Pb–Sn est à :",
+      "choix": [
+        "183 °C, 61,9 % mass. Sn",
+        "232 °C, 100 % Sn",
+        "327,5 °C",
+        "250 °C, 50 % Sn"
+      ],
+      "reponse": 0,
+      "explication": "Sn fond à 232 °C, Pb à 327,5 °C.",
+      "source": "Cours/2A FIGIM/TP Métallurgie - J.Dulcy/2009"
+    },
+    {
+      "id": "tpm-the-003",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "**ATD** (analyse thermique différentielle) :",
+      "choix": [
+        "mesure la différence de température entre l'échantillon et un témoin inerte : pics aux transformations",
+        "mesure la masse de l'échantillon",
+        "mesure la longueur de l'échantillon",
+        "mesure la dureté à chaud"
+      ],
+      "reponse": 0,
+      "explication": "Aire du pic ∝ chaleur de transformation. Ex. : étalon nickel, point de Curie visible.",
+      "source": "Cours/2A FIGIM/TP Métallurgie - J.Dulcy/2009"
+    },
+    {
+      "id": "tpm-the-004",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "En dilatométrie, la transformation α → γ au chauffage se traduit par :",
+      "choix": [
+        "une **contraction** (γ plus compact)",
+        "une dilatation brusque",
+        "rien",
+        "une fusion"
+      ],
+      "reponse": 0,
+      "explication": "Au refroidissement, γ → martensite donne au contraire une **dilatation** (martensite moins compacte).",
+      "source": "Cours/2A FIGIM/TP Métallurgie - J.Dulcy/2009"
+    },
+    {
+      "id": "tpm-the-005",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Taux de transformation à partir d'une courbe dilatométrique :",
+      "choix": [
+        "$X(t)=\\dfrac{L_t-L_0}{L_f-L_0}$",
+        "$X=L_t/L_0$",
+        "$X=\\dfrac{L_f-L_t}{L_0}$",
+        "$X=\\Delta L\\cdot T$"
+      ],
+      "reponse": 0,
+      "explication": "TP4 (cinétique d'austénitisation de l'acier 100C6).",
+      "source": "Cours/2A FIGIM/TP Métallurgie - J.Dulcy/2009"
+    },
+    {
+      "id": "tpm-the-006",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Pourquoi l'austénitisation de l'acier 100C6 (1 % C, 1,5 % Cr) ne donne-t-elle pas de rupture nette de la courbe de dilatation ?",
+      "choix": [
+        "elle se fait progressivement dans un domaine triphasé α + γ + carbure",
+        "parce qu'il n'y a pas de transformation",
+        "parce que le chrome fond",
+        "parce que l'acier est hypoeutectoïde"
+      ],
+      "reponse": 0,
+      "explication": "Contrairement à un XC10 dont toute la ferrite se transforme au palier.",
+      "source": "Cours/2A FIGIM/TP Métallurgie - J.Dulcy/2009"
+    },
+    {
+      "id": "tpm-the-007",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Une température d'austénitisation trop élevée provoque :",
+      "choix": [
+        "la surchauffe (grossissement irréversible du grain γ), voire la brûlure (fusion aux joints)",
+        "un affinement du grain",
+        "la formation de perlite",
+        "rien de particulier"
+      ],
+      "reponse": 0,
+      "explication": "",
+      "source": "Cours/2A FIGIM/TP Métallurgie - J.Dulcy/2009"
+    }
+  ]
+}

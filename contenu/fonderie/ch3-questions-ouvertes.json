@@ -1,0 +1,54 @@
+{
+  "chapitre": "Questions du test de connaissance (à rédiger)",
+  "genre": "cours",
+  "questions": [
+    {
+      "id": "fon-cartes-001",
+      "type": "carte",
+      "difficulte": 2,
+      "enonce": "Décrire le procédé Lost Foam (principe, avantages, inconvénients, applications).",
+      "reponse": "**Principe** : modèle en polystyrène expansé (grappe collée), enduit d'un poteyage réfractaire, placé dans du **sable sec non lié** compacté par vibration ; le métal coulé **vaporise** le modèle et prend sa place.\n**Avantages** : pas de plan de joint ni de noyaux, formes très complexes, sable 100 % recyclable, peu de finition.\n**Inconvénients** : un modèle perdu par pièce (outillage d'injection du PSE, rentable en série), défauts de pyrolyse (plis, carbone brillant), maîtrise délicate.\n**Applications** : culasses, carters, collecteurs (Al, fonte).",
+      "source": "Cours/2A FIGIM/Fonderie - O.Kubler/Annales"
+    },
+    {
+      "id": "fon-cartes-002",
+      "type": "carte",
+      "difficulte": 2,
+      "enonce": "Lister les principaux postes du prix de revient d'une pièce de fonderie (du plus au moins coûteux).",
+      "reponse": "Main-d'œuvre ; énergie (fusion, maintien) ; matière première (métal, alliages) ; moulage et noyautage (sable, liants) ; parachèvement/ébarbage (décochage, meulage, grenaillage) ; traitement thermique ; outillages (modèles, boîtes à noyaux, amortis sur la série) ; contrôle et rebuts ; frais généraux.",
+      "source": "Cours/2A FIGIM/Fonderie - O.Kubler/Annales"
+    },
+    {
+      "id": "fon-cartes-003",
+      "type": "carte",
+      "difficulte": 2,
+      "enonce": "Quelles idées pour réduire le coût de fabrication d'une série de pièces moulées ?",
+      "reponse": "Augmenter le nombre de pièces par moule (mise en plaque), améliorer le **mise au mille** (rapport métal coulé / pièces bonnes) en optimisant masselottes et remplissage, automatiser le moulage, supprimer des noyaux par un meilleur plan de joint, réduire les surépaisseurs, réduire les rebuts (simulation), recycler le sable.",
+      "source": "Cours/2A FIGIM/Fonderie - O.Kubler/Annales"
+    },
+    {
+      "id": "fon-cartes-004",
+      "type": "carte",
+      "difficulte": 2,
+      "enonce": "Choix du procédé : 1000 corps de robinet de 15 kg en fonte, puis 15 pièces de 1000 kg.",
+      "reponse": "1000 × 15 kg : série moyenne, pièce moyenne ⇒ **moulage sable à vert** sur chantier mécanisé (modèle métal sur plaque, noyaux sable chimique). Coquille non adaptée à la fonte en série moyenne (usure, coût).\n15 × 1000 kg : très petite série, grosses pièces ⇒ **sable à prise chimique** (furanique ou alcali-phénolique) avec modèle bois, moulage manuel en fosse ou châssis.",
+      "source": "Cours/2A FIGIM/Fonderie - O.Kubler/Annales"
+    },
+    {
+      "id": "fon-cartes-005",
+      "type": "carte",
+      "difficulte": 2,
+      "enonce": "Retassures : où les attendre, pourquoi, et comment les éviter ?",
+      "reponse": "Dans les **zones massives** et jonctions de parois (points chauds) qui solidifient en dernier, isolées du reste du liquide. Le retrait de solidification n'y est plus compensé. Remèdes : **masselottes** (module > module de la zone, isolées ou exothermiques), **refroidisseurs** (solidification dirigée), modification du tracé (épaisseurs progressives vers la masselotte), choix du sens de moulage, alimentation par les zones épaisses.",
+      "source": "Cours/2A FIGIM/Fonderie - O.Kubler/Annales"
+    },
+    {
+      "id": "fon-cartes-006",
+      "type": "carte",
+      "difficulte": 2,
+      "enonce": "Les sables à prise chimique : types, critères de choix, domaines d'application.",
+      "reponse": "**Types** : résines furaniques (acide), phénoliques, alcali-phénoliques (ester), polyuréthane (« pep set », cold box à l'amine), silicate de soude (CO₂ ou ester), hot box/croning (résine thermodurcissable).\n**Critères** : temps de prise/démoulage, résistance, débourrage, dégagements gazeux et odeurs, compatibilité alliage (S pour la fonte GS, azote pour l'acier), régénération, coût.\n**Applications** : pièces moyennes à grosses, petites séries, et **noyaux**.",
+      "source": "Cours/2A FIGIM/Fonderie - O.Kubler/Annales"
+    }
+  ]
+}

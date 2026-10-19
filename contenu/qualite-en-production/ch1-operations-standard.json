@@ -1,0 +1,126 @@
+{
+  "chapitre": "Opérations standard et fiche SOI (cours)",
+  "genre": "cours",
+  "questions": [
+    {
+      "id": "qual-std-001",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Définition d'une **opération standard** (cours) :",
+      "choix": [
+        "elle réduit la variabilité du temps de cycle et définit la meilleure façon de travailler (QCDSM), base de la formation",
+        "une opération faite uniquement par un robot",
+        "une procédure administrative de l'entreprise",
+        "un contrôle final des pièces"
+      ],
+      "reponse": 0,
+      "explication": "QCDSM : Qualité, Coût, Délai, Sécurité, Moral.",
+      "source": "Cours/2A FIGIM/Qualité en production - Stéphane Dauvergne/02_PPS_standard.pdf"
+    },
+    {
+      "id": "qual-std-002",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "« Il n'y a pas d'amélioration sans standard » est une citation de :",
+      "choix": [
+        "Masaaki Imai (Kaizen)",
+        "Taylor",
+        "Deming",
+        "Ford"
+      ],
+      "reponse": 0,
+      "explication": "Le standard est le point de départ : savoir exactement où l'on est.",
+      "source": "Cours/2A FIGIM/Qualité en production - Stéphane Dauvergne/02_PPS_standard.pdf"
+    },
+    {
+      "id": "qual-std-003",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Les méthodes de travail standard doivent être :",
+      "choix": [
+        "transmissibles, répétables, contrôlables, mesurables, perfectibles",
+        "secrètes et figées",
+        "propres à chaque opérateur",
+        "écrites uniquement par la direction"
+      ],
+      "reponse": 0,
+      "explication": "",
+      "source": "Cours/2A FIGIM/Qualité en production - Stéphane Dauvergne/02_PPS_standard.pdf"
+    },
+    {
+      "id": "qual-std-004",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Avantages mesurables attendus des opérations standard :",
+      "choix": [
+        "moins d'accidents, bon du premier coup (moins de dérogations), réduction des cycles, meilleure efficacité (h·homme/produit)",
+        "plus de stocks",
+        "plus de contrôles finaux",
+        "aucun impact mesurable"
+      ],
+      "reponse": 0,
+      "explication": "",
+      "source": "Cours/2A FIGIM/Qualité en production - Stéphane Dauvergne/02_PPS_standard.pdf"
+    },
+    {
+      "id": "qual-std-005",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "La fiche **SOI** (Standard Operating Instruction) contient notamment :",
+      "choix": [
+        "les étapes du processus découpées en tâches élémentaires, leurs temps validés, les points clés sécurité/qualité, photos, signature du responsable",
+        "le salaire des opérateurs",
+        "uniquement le plan de la pièce",
+        "le bilan financier"
+      ],
+      "reponse": 0,
+      "explication": "",
+      "source": "Cours/2A FIGIM/Qualité en production - Stéphane Dauvergne/02_PPS_standard.pdf"
+    },
+    {
+      "id": "qual-std-006",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Première étape pour renseigner une fiche SOI :",
+      "choix": [
+        "sélectionner le processus, puis observer les mouvements des opérateurs (visuellement, vidéo)",
+        "rédiger seul au bureau",
+        "acheter une nouvelle machine",
+        "supprimer l'étape de contrôle"
+      ],
+      "reponse": 0,
+      "explication": "Puis documenter l'environnement, découper en tâches, remettre en cause avec les opérateurs, chronométrer, identifier les points clés, faire valider.",
+      "source": "Cours/2A FIGIM/Qualité en production - Stéphane Dauvergne/02_PPS_standard.pdf"
+    },
+    {
+      "id": "qual-std-007",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Les opérations standard définissent :",
+      "choix": [
+        "la responsabilité directe de l'opérateur et la base pour identifier et éliminer les gaspillages",
+        "uniquement la responsabilité du chef d'équipe",
+        "le prix de vente",
+        "les congés"
+      ],
+      "reponse": 0,
+      "explication": "Élément clé de l'amélioration continue (Kaizen).",
+      "source": "Cours/2A FIGIM/Qualité en production - Stéphane Dauvergne/02_PPS_standard.pdf"
+    },
+    {
+      "id": "qual-std-008",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Démarche Toyota décrite dans le cours :",
+      "choix": [
+        "culture portée par le haut, petites améliorations par beaucoup de personnes, observer, essayer puis valider par l'expérimentation",
+        "grandes réformes décidées par un expert externe",
+        "aucune implication des opérateurs",
+        "amélioration uniquement par l'investissement"
+      ],
+      "reponse": 0,
+      "explication": "« Une idée toutes les 22 minutes ».",
+      "source": "Cours/2A FIGIM/Qualité en production - Stéphane Dauvergne/02_PPS_standard.pdf"
+    }
+  ]
+}

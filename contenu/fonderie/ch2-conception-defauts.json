@@ -1,0 +1,141 @@
+{
+  "chapitre": "Conception, défauts et métallurgie des pièces moulées",
+  "genre": "cours",
+  "questions": [
+    {
+      "id": "fon-con-001",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Le **plan de joint** se choisit pour :",
+      "choix": [
+        "permettre le démoulage sans contre-dépouille, limiter les noyaux et les bavures sur les surfaces fonctionnelles",
+        "placer les masselottes",
+        "réduire la température de coulée",
+        "augmenter le retrait"
+      ],
+      "reponse": 0,
+      "explication": "Souvent le plan de plus grande section, plan de symétrie de la pièce.",
+      "source": "Cours/2A FIGIM/Fonderie - O.Kubler/Annales"
+    },
+    {
+      "id": "fon-con-002",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "La **dépouille** est :",
+      "choix": [
+        "une légère inclinaison des parois verticales pour extraire le modèle du moule",
+        "un défaut de surface",
+        "une surépaisseur d'usinage",
+        "un type de masselotte"
+      ],
+      "reponse": 0,
+      "explication": "",
+      "source": "Cours/2A FIGIM/Fonderie - O.Kubler/Annales"
+    },
+    {
+      "id": "fon-con-003",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Un **noyau** sert à :",
+      "choix": [
+        "réaliser les formes intérieures (cavités) de la pièce",
+        "alimenter la pièce en métal",
+        "évacuer les gaz",
+        "refroidir localement"
+      ],
+      "reponse": 0,
+      "explication": "Il repose dans le moule par ses portées.",
+      "source": "Cours/2A FIGIM/Fonderie - O.Kubler/Annales"
+    },
+    {
+      "id": "fon-con-004",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Une **retassure** est :",
+      "choix": [
+        "une cavité due au retrait de solidification non compensé, dans les zones qui solidifient en dernier (points chauds)",
+        "une bulle de gaz",
+        "une pièce incomplètement remplie",
+        "une fissure à froid"
+      ],
+      "reponse": 0,
+      "explication": "Remèdes : masselottes sur les points chauds, refroidisseurs, solidification dirigée vers la masselotte, modification des épaisseurs.",
+      "source": "Cours/2A FIGIM/Fonderie - O.Kubler/Annales"
+    },
+    {
+      "id": "fon-con-005",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Règle de **Chvorinov** : le temps de solidification d'une zone est proportionnel à",
+      "choix": [
+        "$(V/S)^2$, le carré de son module",
+        "son volume",
+        "sa surface",
+        "$\\sqrt{V/S}$"
+      ],
+      "reponse": 0,
+      "explication": "Une masselotte doit avoir un module supérieur (~×1,2) à celui de la zone qu'elle alimente pour solidifier après elle.",
+      "source": "Cours/2A FIGIM/Fonderie - O.Kubler/Annales"
+    },
+    {
+      "id": "fon-con-006",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Une **malvenue** (pièce incomplètement remplie) en alliage d'aluminium se corrige par :",
+      "choix": [
+        "augmentation de la température de coulée et/ou de la hauteur métallostatique, amélioration de l'évent du moule",
+        "baisse de la température de coulée",
+        "suppression des évents",
+        "un moule plus froid"
+      ],
+      "reponse": 0,
+      "explication": "Effets négatifs possibles : plus de gaz dissous (soufflures, porosités), retassures plus grosses, pénétration du métal dans le sable, grain plus grossier.",
+      "source": "Cours/2A FIGIM/Fonderie - O.Kubler/Annales"
+    },
+    {
+      "id": "fon-con-007",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Paramètres qui influencent la conception d'un **système de remplissage** :",
+      "choix": [
+        "masse et géométrie de la pièce, alliage (fluidité, oxydabilité), temps de remplissage visé, nature du moule",
+        "uniquement la couleur du moule",
+        "seulement le prix du métal",
+        "aucun"
+      ],
+      "reponse": 0,
+      "explication": "But : remplir vite sans turbulence (pas d'oxydes ni d'entraînement de sable), filtrer, alimenter dans le bon ordre.",
+      "source": "Cours/2A FIGIM/Fonderie - O.Kubler/Annales"
+    },
+    {
+      "id": "fon-con-008",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Fabrication de pièces en **fonte ductile** (GS) : traitements métallurgiques du bain",
+      "choix": [
+        "traitement au **magnésium** (sphéroïdisation du graphite) puis **inoculation** au FeSi (germes de graphite)",
+        "ajout de soufre",
+        "trempe à l'eau du liquide",
+        "aucun traitement"
+      ],
+      "reponse": 0,
+      "explication": "Le Mg s'évanouit avec le temps : couler rapidement après traitement.",
+      "source": "Cours/2A FIGIM/Fonderie - O.Kubler/Annales"
+    },
+    {
+      "id": "fon-con-009",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Surépaisseurs d'usinage :",
+      "choix": [
+        "prévues sur les surfaces fonctionnelles à usiner (portées, faces de brides, perçages)",
+        "sur toutes les surfaces",
+        "uniquement sur les noyaux",
+        "inutiles en fonderie"
+      ],
+      "reponse": 0,
+      "explication": "Plus importantes sur les faces en partie haute (inclusions, défauts remontent).",
+      "source": "Cours/2A FIGIM/Fonderie - O.Kubler/Annales"
+    }
+  ]
+}

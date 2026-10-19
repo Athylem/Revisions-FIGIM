@@ -1,0 +1,111 @@
+{
+  "chapitre": "TP2 : micrographie des aciers et fontes",
+  "genre": "cours",
+  "questions": [
+    {
+      "id": "tpm-mic-001",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Réactif d'attaque utilisé pour révéler la microstructure des aciers et fontes :",
+      "choix": [
+        "le **Nital** (acide nitrique dans l'éthanol)",
+        "l'eau régale",
+        "la soude",
+        "l'acide fluorhydrique pur"
+      ],
+      "reponse": 0,
+      "explication": "",
+      "source": "Cours/2A FIGIM/TP Métallurgie - J.Dulcy/2015 (note A)/TP2_Micrographie.docx"
+    },
+    {
+      "id": "tpm-mic-002",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Dans un acier hypereutectoïde (1,34 % C) refroidi lentement, on observe :",
+      "choix": [
+        "un liseré de cémentite proeutectoïde aux joints des anciens grains γ + nodules de perlite",
+        "de la ferrite polygonale et un peu de perlite",
+        "de la martensite",
+        "du graphite en lamelles"
+      ],
+      "reponse": 0,
+      "explication": "",
+      "source": "Cours/2A FIGIM/TP Métallurgie - J.Dulcy/2015 (note A)/TP2_Micrographie.docx"
+    },
+    {
+      "id": "tpm-mic-003",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Un acier à 0,048 % C laminé puis recuit présente :",
+      "choix": [
+        "des grains équiaxes de ferrite (perlite quasi invisible)",
+        "des grains allongés de perlite",
+        "de la martensite",
+        "de la cémentite en réseau"
+      ],
+      "reponse": 0,
+      "explication": "Les grains équiaxes (non allongés) montrent une recristallisation pendant le recuit.",
+      "source": "Cours/2A FIGIM/TP Métallurgie - J.Dulcy/2015 (note A)/TP2_Micrographie.docx"
+    },
+    {
+      "id": "tpm-mic-004",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "**Fonte blanche** :",
+      "choix": [
+        "le carbone est sous forme de cémentite (lédéburite) : dure, fragile, cassure blanche",
+        "le carbone est sous forme de graphite",
+        "c'est un acier inoxydable",
+        "elle ne contient pas de carbone"
+      ],
+      "reponse": 0,
+      "explication": "Fonte grise : graphite (cassure grise). Le Si favorise le graphite, un refroidissement rapide la cémentite.",
+      "source": "Cours/2A FIGIM/TP Métallurgie - J.Dulcy/2015 (note A)/TP2_Micrographie.docx"
+    },
+    {
+      "id": "tpm-mic-005",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Une **fonte malléable** s'obtient :",
+      "choix": [
+        "par un long recuit de graphitisation d'une fonte blanche (graphite en nodules/amas)",
+        "par ajout de magnésium dans le liquide",
+        "par trempe d'une fonte grise",
+        "par laminage"
+      ],
+      "reponse": 0,
+      "explication": "Fonte GS (sphéroïdale) : traitement du liquide au Mg (ou Ce).",
+      "source": "Cours/2A FIGIM/TP Métallurgie - J.Dulcy/2015 (note A)/TP2_Micrographie.docx"
+    },
+    {
+      "id": "tpm-mic-006",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "La martensite revenue se distingue de la martensite brute de trempe au microscope par :",
+      "choix": [
+        "des aiguilles moins nettes, plus sombres à l'attaque (carbures précipités)",
+        "des grains équiaxes de ferrite",
+        "des lamelles de perlite",
+        "aucune différence"
+      ],
+      "reponse": 0,
+      "explication": "",
+      "source": "Cours/2A FIGIM/TP Métallurgie - J.Dulcy/2015 (note A)/TP2_Micrographie.docx"
+    },
+    {
+      "id": "tpm-mic-007",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Le microscope optique métallographique fonctionne :",
+      "choix": [
+        "en **réflexion** : le contraste vient de la réflectivité des phases et du relief créé par l'attaque",
+        "en transmission à travers une lame mince",
+        "avec des électrons",
+        "en lumière polarisée uniquement"
+      ],
+      "reponse": 0,
+      "explication": "",
+      "source": "Cours/2A FIGIM/TP Métallurgie - J.Dulcy/2015 (note A)/TP2_Micrographie.docx"
+    }
+  ]
+}

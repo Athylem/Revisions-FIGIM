@@ -1,0 +1,157 @@
+{
+  "chapitre": "Exercices type DS : test 2015",
+  "genre": "exercices",
+  "questions": [
+    {
+      "id": "ma-ds-001",
+      "type": "probleme",
+      "difficulte": 1,
+      "enonce": "**Test 2015, Ex. 1.** Plan (hkl) contenant les nœuds $(\\frac12,\\frac12,0)$, $(-\\frac12,\\frac12,\\frac12)$ et $(\\frac12,-\\frac12,\\frac12)$.",
+      "etapes": [
+        {
+          "type": "qcm",
+          "enonce": "Indices du plan ?",
+          "choix": [
+            "(1 1 2)",
+            "(1 1 0)",
+            "(2 1 1)",
+            "(1 2 1)"
+          ],
+          "reponse": 0,
+          "explication": "$\\frac h2+\\frac k2=1$, $-\\frac h2+\\frac k2+\\frac l2=1$, $\\frac h2-\\frac k2+\\frac l2=1$ ⇒ l = 2, h = k = 1."
+        }
+      ],
+      "source": "Cours/2A FIGIM/Méthodes d_analyse - J.Dulcy/Annales"
+    },
+    {
+      "id": "ma-ds-002",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**Test 2015, Ex. 2.** Rangées et plans dans un cristal cubique.",
+      "etapes": [
+        {
+          "type": "qcm",
+          "enonce": "Axe de zone des plans (1 2 3) et (2 3 4) ?",
+          "choix": [
+            "$[\\bar{1}\\,2\\,\\bar{1}]$",
+            "[1 1 1]",
+            "[3 5 7]",
+            "[1 2 1]"
+          ],
+          "reponse": 0,
+          "explication": "Produit vectoriel : $(2\\cdot4-3\\cdot3,\\ 3\\cdot2-1\\cdot4,\\ 1\\cdot3-2\\cdot2)=(-1,2,-1)$."
+        },
+        {
+          "type": "qcm",
+          "enonce": "Axe de zone des plans $(1\\bar10)$ et $(111)$ ?",
+          "choix": [
+            "$[\\bar{1}\\,\\bar{1}\\,2]$",
+            "[1 1 0]",
+            "[0 0 1]",
+            "$[1\\,\\bar1\\,1]$"
+          ],
+          "reponse": 0,
+          "explication": "$(-1\\cdot1-0,\\ 0-1\\cdot1,\\ 1+1)=(-1,-1,2)$."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Angle entre les rangées $[\\bar12\\bar1]$ et $[11\\bar2]$ ?",
+          "reponse": 60.0,
+          "tolerance": 0.01,
+          "explication": "$\\cos\\alpha=\\dfrac{-1+2+2}{\\sqrt6\\sqrt6}=\\dfrac12$",
+          "unite": "°"
+        },
+        {
+          "type": "qcm",
+          "enonce": "Les rangées [110], $[1\\bar20]$, [001] forment-elles une maille primitive ?",
+          "choix": [
+            "non : maille multiple d'ordre 3 (|det| = 3)",
+            "oui (det = 1)",
+            "non : elles sont coplanaires",
+            "oui (det = −1)"
+          ],
+          "reponse": 0,
+          "explication": "$\\det\\begin{pmatrix}1&1&0\\\\1&-2&0\\\\0&0&1\\end{pmatrix}=-3$."
+        },
+        {
+          "type": "qcm",
+          "enonce": "Plan parallèle à l'axe x, en zone avec (211) et (111) ?",
+          "choix": [
+            "(0 1 1)",
+            "(1 0 0)",
+            "(0 1 0)",
+            "(0 1 \\bar1)"
+          ],
+          "reponse": 0,
+          "explication": "h = 0 ; axe de zone de (211) et (111) : $[0\\,\\bar{1}\\,1]$ ; Weiss : $-k+l=0$ ⇒ (011)."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Angle entre ce plan (011) et le plan (111) ?",
+          "reponse": 35.2644,
+          "tolerance": 0.01,
+          "explication": "$\\cos\\alpha=\\dfrac{0+1+1}{\\sqrt2\\sqrt3}$",
+          "unite": "°"
+        }
+      ],
+      "source": "Cours/2A FIGIM/Méthodes d_analyse - J.Dulcy/Annales"
+    },
+    {
+      "id": "ma-ds-003",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**Test 2015, Ex. 3 — Alliage $\\mathrm{Al_xNi_yTi_z}$** (aéronautique), CFC : Ti sur les nœuds, Al sur **tous** les sites octaédriques, Ni sur **tous** les sites tétraédriques. $a=0{,}589$ nm. Rayons : Ti 0,147 nm, Al 0,143 nm, Ni 0,125 nm.",
+      "etapes": [
+        {
+          "type": "qcm",
+          "enonce": "Formule chimique ?",
+          "choix": [
+            "$\\mathrm{AlNi_2Ti}$",
+            "$\\mathrm{AlNiTi}$",
+            "$\\mathrm{Al_2NiTi}$",
+            "$\\mathrm{AlNi_2Ti_2}$"
+          ],
+          "reponse": 0,
+          "explication": "Par maille : 4 Ti (nœuds), 4 Al (sites O), 8 Ni (sites T). Phase de Heusler Ni₂TiAl."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Paramètre de maille si Ti et Al sont tangents le long d'une arête ?",
+          "reponse": 0.58,
+          "tolerance": 0.01,
+          "explication": "$a=2(r_{Ti}+r_{Al})$ : légèrement inférieur à 0,589 nm ⇒ les atomes ne se touchent pas tout à fait.",
+          "unite": "nm"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Rayon du site octaédrique pour a = 0,589 nm ?",
+          "reponse": 0.1475,
+          "tolerance": 0.01,
+          "explication": "$r_o=a/2-r_{Ti}$ : un peu plus grand que $r_{Al}$, Al y loge sans distorsion.",
+          "unite": "nm"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Rayon du site tétraédrique (Ti, site T et site O tangents sur la diagonale d'un cube d'arête a/2) ?",
+          "reponse": 0.110044,
+          "tolerance": 0.02,
+          "explication": "$\\dfrac{a\\sqrt3}{2}=r_{Ti}+2r_t+r_{Al}$ ⇒ $r_t=\\dfrac{a\\sqrt3/2-r_{Ti}-r_{Al}}{2}$ : plus petit que $r_{Ni}$ ⇒ distorsion locale.",
+          "unite": "nm"
+        },
+        {
+          "type": "qcm",
+          "enonce": "L'inversion Ni (tétra) ↔ Al (octa) est-elle favorable ?",
+          "choix": [
+            "non : Al (plus gros) ne tient pas dans le site T, plus petit",
+            "oui, sans distorsion",
+            "oui car Ni est plus gros",
+            "la question n'a pas de sens"
+          ],
+          "reponse": 0,
+          "explication": "Le site O (≈ 0,148 nm) accueille le plus gros atome."
+        }
+      ],
+      "source": "Cours/2A FIGIM/Méthodes d_analyse - J.Dulcy/Annales"
+    }
+  ]
+}

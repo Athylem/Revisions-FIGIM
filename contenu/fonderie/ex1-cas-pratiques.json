@@ -1,0 +1,103 @@
+{
+  "chapitre": "Cas pratiques type test",
+  "genre": "exercices",
+  "questions": [
+    {
+      "id": "fon-ex-001",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**Test 2014 — Coudes en fonte ductile** pour le transport d'eau (5 bar), Ø intérieur 100 mm, brides Ø 150 mm usinées, 10 000 pièces, moulage en sable auto-durcissant (châssis 900×500×300 mm).",
+      "etapes": [
+        {
+          "type": "qcm",
+          "enonce": "Plan de joint pertinent :",
+          "choix": [
+            "le plan de symétrie du coude (contient l'axe de la pièce) : démoulage sans contre-dépouille, un seul noyau",
+            "un plan perpendiculaire à une bride",
+            "pas de plan de joint",
+            "plusieurs plans horizontaux"
+          ],
+          "reponse": 0,
+          "explication": "Le noyau (alésage du coude) repose sur ses portées aux deux extrémités."
+        },
+        {
+          "type": "qcm",
+          "enonce": "Traitement du bain à prévoir :",
+          "choix": [
+            "traitement au Mg + inoculation FeSi",
+            "affinage au Ti-B",
+            "modification au Na",
+            "dégazage seul"
+          ],
+          "reponse": 0,
+          "explication": "Fonte GS (ductile)."
+        },
+        {
+          "type": "qcm",
+          "enonce": "Pour 10 000 pièces, un procédé plus productif serait :",
+          "choix": [
+            "moulage sable à vert sur ligne automatique (moule non permanent, noyau sable)",
+            "cire perdue",
+            "moulage sous pression",
+            "sable à prise chimique manuel"
+          ],
+          "reponse": 0,
+          "explication": "Le sable auto-durcissant convient mieux aux petites séries."
+        }
+      ],
+      "source": "Cours/2A FIGIM/Fonderie - O.Kubler/Annales"
+    },
+    {
+      "id": "fon-ex-002",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**Masselottage (Chvorinov).** On compare un cube de 100 mm de côté et une plaque de 200×200×20 mm, et on dimensionne une masselotte cylindrique (H = D) pour le cube.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Module du cube (V/S) ?",
+          "reponse": 16.6667,
+          "tolerance": 0.01,
+          "explication": "$M=a/6$",
+          "unite": "mm"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Module de la plaque ?",
+          "reponse": 8.33333,
+          "tolerance": 0.01,
+          "explication": "$M=\\dfrac{abc}{2(ab+bc+ac)}$",
+          "unite": "mm"
+        },
+        {
+          "type": "qcm",
+          "enonce": "Quelle pièce solidifie en premier ?",
+          "choix": [
+            "la plaque (module plus petit)",
+            "le cube",
+            "en même temps",
+            "impossible à dire"
+          ],
+          "reponse": 0,
+          "explication": "$t\\propto M^2$ : environ 2,6 fois plus vite."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Module minimal de la masselotte du cube (facteur 1,2) ?",
+          "reponse": 20.0,
+          "tolerance": 0.01,
+          "explication": "$M_m=1{,}2\\,M_{cube}$",
+          "unite": "mm"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Diamètre D d'une masselotte cylindrique H = D (module D/6) ?",
+          "reponse": 120.0,
+          "tolerance": 0.02,
+          "explication": "Cylindre H = D : $M=\\dfrac{\\pi D^3/4}{\\pi D^2/2+\\pi D^2}=D/6$",
+          "unite": "mm"
+        }
+      ]
+    }
+  ]
+}

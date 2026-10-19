@@ -1,0 +1,150 @@
+{
+  "chapitre": "Entraînement : loi de Bragg",
+  "genre": "exercices",
+  "questions": [
+    {
+      "id": "ma-bragg-001",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**DRX.** Diffractogramme du cuivre (CFC, $a=0.3615$ nm) avec la raie Kα du cuivre, $\\lambda=0{,}15406$ nm.",
+      "etapes": [
+        {
+          "type": "qcm",
+          "enonce": "Première raie observée ?",
+          "choix": [
+            "$(1\\,1\\,1)$",
+            "$(1\\,0\\,0)$",
+            "$(1\\,1\\,0)$",
+            "$(2\\,1\\,0)$"
+          ],
+          "reponse": 0,
+          "explication": "CFC : h, k, l de même parité ⇒ 111 ; CC : h + k + l pair ⇒ 110."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Distance interréticulaire correspondante ?",
+          "reponse": 0.208712,
+          "tolerance": 0.01,
+          "explication": "$d=a/\\sqrt{h^2+k^2+l^2}$",
+          "unite": "nm"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Angle 2θ de cette raie ?",
+          "reponse": 43.3169,
+          "tolerance": 0.01,
+          "explication": "$\\sin\\theta=\\lambda/(2d)$",
+          "unite": "°"
+        }
+      ]
+    },
+    {
+      "id": "ma-bragg-002",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**DRX.** Diffractogramme du aluminium (CFC, $a=0.4049$ nm) avec la raie Kα du cuivre, $\\lambda=0{,}15406$ nm.",
+      "etapes": [
+        {
+          "type": "qcm",
+          "enonce": "Première raie observée ?",
+          "choix": [
+            "$(1\\,1\\,1)$",
+            "$(1\\,0\\,0)$",
+            "$(1\\,1\\,0)$",
+            "$(2\\,1\\,0)$"
+          ],
+          "reponse": 0,
+          "explication": "CFC : h, k, l de même parité ⇒ 111 ; CC : h + k + l pair ⇒ 110."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Distance interréticulaire correspondante ?",
+          "reponse": 0.233769,
+          "tolerance": 0.01,
+          "explication": "$d=a/\\sqrt{h^2+k^2+l^2}$",
+          "unite": "nm"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Angle 2θ de cette raie ?",
+          "reponse": 38.4785,
+          "tolerance": 0.01,
+          "explication": "$\\sin\\theta=\\lambda/(2d)$",
+          "unite": "°"
+        }
+      ]
+    },
+    {
+      "id": "ma-bragg-003",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**DRX.** Diffractogramme du fer α (CC, $a=0.2866$ nm) avec la raie Kα du cuivre, $\\lambda=0{,}15406$ nm.",
+      "etapes": [
+        {
+          "type": "qcm",
+          "enonce": "Première raie observée ?",
+          "choix": [
+            "$(1\\,1\\,0)$",
+            "$(1\\,0\\,0)$",
+            "$(1\\,1\\,1)$",
+            "$(2\\,1\\,0)$"
+          ],
+          "reponse": 0,
+          "explication": "CFC : h, k, l de même parité ⇒ 111 ; CC : h + k + l pair ⇒ 110."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Distance interréticulaire correspondante ?",
+          "reponse": 0.202657,
+          "tolerance": 0.01,
+          "explication": "$d=a/\\sqrt{h^2+k^2+l^2}$",
+          "unite": "nm"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Angle 2θ de cette raie ?",
+          "reponse": 44.6798,
+          "tolerance": 0.01,
+          "explication": "$\\sin\\theta=\\lambda/(2d)$",
+          "unite": "°"
+        }
+      ]
+    },
+    {
+      "id": "ma-bragg-004",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**DRX.** Diffractogramme du tungstène (CC, $a=0.3165$ nm) avec la raie Kα du cuivre, $\\lambda=0{,}15406$ nm.",
+      "etapes": [
+        {
+          "type": "qcm",
+          "enonce": "Première raie observée ?",
+          "choix": [
+            "$(1\\,1\\,0)$",
+            "$(1\\,0\\,0)$",
+            "$(1\\,1\\,1)$",
+            "$(2\\,1\\,0)$"
+          ],
+          "reponse": 0,
+          "explication": "CFC : h, k, l de même parité ⇒ 111 ; CC : h + k + l pair ⇒ 110."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Distance interréticulaire correspondante ?",
+          "reponse": 0.223799,
+          "tolerance": 0.01,
+          "explication": "$d=a/\\sqrt{h^2+k^2+l^2}$",
+          "unite": "nm"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Angle 2θ de cette raie ?",
+          "reponse": 40.265,
+          "tolerance": 0.01,
+          "explication": "$\\sin\\theta=\\lambda/(2d)$",
+          "unite": "°"
+        }
+      ]
+    }
+  ]
+}
