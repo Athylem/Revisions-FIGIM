@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Révisions FIGIM</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="barre">
+    <a class="logo" href="./">Révisions <span>FIGIM</span></a>
+    <nav>
+      <a href="classement.html">Classement</a>
+      <button id="joueur" class="joueur" hidden></button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Écran pseudo : affiché tant qu'aucun nom n'est enregistré -->
+    <section id="ecran-pseudo" class="carte centre" hidden>
+      <h1>Salut !</h1>
+      <p>Choisis ton pseudo pour apparaître dans le classement.<br>Pas de mot de passe : tu le retapes juste si tu changes d'appareil.</p>
+      <form id="form-pseudo">
+        <input id="champ-pseudo" maxlength="20" autocomplete="nickname" placeholder="Ton pseudo" required>
+        <button type="submit">C'est parti</button>
+      </form>
+    </section>
+
+    <!-- Accueil -->
+    <section id="ecran-accueil" hidden>
+      <h1 id="bonjour"></h1>
+      <p class="discret" id="annee"></p>
+
+      <div id="prochains-ds" class="carte" hidden>
+        <h2>Prochains DS</h2>
+        <ul id="liste-ds"></ul>
+      </div>
+
+      <div class="filtres" role="group" aria-label="Filtrer les matières">
+        <button data-filtre="toutes" class="actif">Toutes</button>
+        <button data-filtre="jouables">Jouables</button>
+      </div>
+
+      <div id="matieres"></div>
+    </section>
+  </main>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
