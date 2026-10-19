@@ -301,7 +301,7 @@
           "reponse": 4.219593,
           "tolerance": 0.05,
           "unite": "K",
-          "explication": "$\\Delta T=\frac{\\Delta\text{LMP}\times10^3}{20+\\log t}$."
+          "explication": "$\\Delta T=\\frac{\\Delta\\text{LMP}\\times10^3}{20+\\log t}$."
         },
         {
           "type": "numerique",
@@ -349,7 +349,7 @@
           "reponse": 4.219593,
           "tolerance": 0.05,
           "unite": "K",
-          "explication": "$\\Delta T=\frac{\\Delta\text{LMP}\times10^3}{20+\\log t}$."
+          "explication": "$\\Delta T=\\frac{\\Delta\\text{LMP}\\times10^3}{20+\\log t}$."
         },
         {
           "type": "numerique",
