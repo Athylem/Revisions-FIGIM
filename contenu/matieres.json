@@ -143,6 +143,27 @@
           "genre": "cours",
           "fichier": "mise-en-forme/ch3-criteres-puissances.json",
           "questions": 24
+        },
+        {
+          "id": "ch4-questions-ouvertes",
+          "nom": "Questions de cours ouvertes (test de connaissances)",
+          "genre": "cours",
+          "fichier": "mise-en-forme/ch4-questions-ouvertes.json",
+          "questions": 19
+        },
+        {
+          "id": "ex1-borne-superieure",
+          "nom": "Borne supérieure (exercice du DS)",
+          "genre": "exercices",
+          "fichier": "mise-en-forme/ex1-borne-superieure.json",
+          "questions": 5
+        },
+        {
+          "id": "ex2-calculs-td",
+          "nom": "Calculs des TD (flexion, volant, striction, critères)",
+          "genre": "exercices",
+          "fichier": "mise-en-forme/ex2-calculs-td.json",
+          "questions": 10
         }
       ]
     },

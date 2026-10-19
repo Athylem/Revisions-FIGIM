@@ -1,0 +1,158 @@
+{
+  "chapitre": "Questions de cours ouvertes (test de connaissances)",
+  "genre": "cours",
+  "questions": [
+    {
+      "id": "mef-cartes-001",
+      "type": "carte",
+      "difficulte": 1,
+      "enonce": "Définir un procédé thermomécanique.",
+      "reponse": "Mise en forme par **déformation plastique** : changement de forme important **à volume et masse constants** (à froid ou à chaud).",
+      "source": "Cours/Mise en forme/Mise en forme - Fiche de révision.md"
+    },
+    {
+      "id": "mef-cartes-002",
+      "type": "carte",
+      "difficulte": 1,
+      "enonce": "Définir le procédé SPS.",
+      "reponse": "**Spark Plasma Sintering** : frittage « flash ». La poudre est dans une matrice sous pression uniaxiale, chauffée par un **courant électrique pulsé** qui traverse la matrice et l'échantillon → frittage très rapide.",
+      "source": "Cours/Mise en forme/Mise en forme - Fiche de révision.md"
+    },
+    {
+      "id": "mef-cartes-003",
+      "type": "carte",
+      "difficulte": 2,
+      "enonce": "Qu'appelle-t-on courbe conventionnelle ? Et rationnelle ? Laquelle est intrinsèque ?",
+      "reponse": "Conventionnelle : $R=F/S_0$ en fonction de $e=(L-L_0)/L_0$ (grandeurs initiales, dépend de la géométrie).\nRationnelle : $\\sigma=R(1+e)$ en fonction de $\\varepsilon=\\ln(1+e)$ → **intrinsèque** au matériau.",
+      "source": "Cours/Mise en forme/Mise en forme - Fiche de révision.md"
+    },
+    {
+      "id": "mef-cartes-004",
+      "type": "carte",
+      "difficulte": 1,
+      "enonce": "Citer les trois zones de la courbe de traction. Laquelle exploite-t-on en mise en forme ?",
+      "reponse": "Élastique, **plastique homogène** (exploitée), striction (déformation localisée, débute au maximum de charge $R_m$), puis rupture.",
+      "source": "Cours/Mise en forme/Mise en forme - Fiche de révision.md"
+    },
+    {
+      "id": "mef-cartes-005",
+      "type": "carte",
+      "difficulte": 1,
+      "enonce": "Définir la striction.",
+      "reponse": "Déformation **localisée** : réduction locale de la section, qui commence au maximum de la charge $R_m$ et mène à la rupture.",
+      "source": "Cours/Mise en forme/Mise en forme - Fiche de révision.md"
+    },
+    {
+      "id": "mef-cartes-006",
+      "type": "carte",
+      "difficulte": 1,
+      "enonce": "Définir la ténacité.",
+      "reponse": "Travail par unité de volume nécessaire pour provoquer la rupture = **aire sous la courbe** $(\\sigma,\\varepsilon)$.",
+      "source": "Cours/Mise en forme/Mise en forme - Fiche de révision.md"
+    },
+    {
+      "id": "mef-cartes-007",
+      "type": "carte",
+      "difficulte": 2,
+      "enonce": "Rappeler les étapes pour construire la courbe d'écrouissage.",
+      "reponse": "Essai de traction → $(R,e)$ → courbe rationnelle $\\sigma=R(1+e)$, $\\varepsilon=\\ln(1+e)$ → on retire l'élastique $\\varepsilon_p=\\varepsilon-\\sigma/E$ → $\\sigma_0=g(\\varepsilon_p)$ (jusqu'à la striction).",
+      "source": "Cours/Mise en forme/Mise en forme - Fiche de révision.md"
+    },
+    {
+      "id": "mef-cartes-008",
+      "type": "carte",
+      "difficulte": 1,
+      "enonce": "Définir l'écrouissage et la contrainte d'écoulement.",
+      "reponse": "Écrouissage : augmentation de la contrainte d'écoulement avec la déformation plastique.\nContrainte d'écoulement : contrainte nécessaire pour **poursuivre** la déformation plastique, $\\sigma'_0=g(\\varepsilon_p)$ (limite élastique actuelle du matériau écroui).",
+      "source": "Cours/Mise en forme/Mise en forme - Fiche de révision.md"
+    },
+    {
+      "id": "mef-cartes-009",
+      "type": "carte",
+      "difficulte": 1,
+      "enonce": "Définir l'effet Bauschinger. Citer un matériau concerné.",
+      "reponse": "Après pré-déformation en traction, la limite d'écoulement en compression est différente (abaissée) : comportement différent en traction et en compression. Ex. **béton**, fonte.",
+      "source": "Cours/Mise en forme/Mise en forme - Fiche de révision.md"
+    },
+    {
+      "id": "mef-cartes-010",
+      "type": "carte",
+      "difficulte": 2,
+      "enonce": "Dessiner (de tête) les comportements EPE, EPP, RPE, RPP.",
+      "reponse": "EPE : droite élastique puis courbe croissante.\nEPP : droite $\\sigma=E\\varepsilon$ puis **palier** $\\sigma_0$.\nRPE : axe vertical jusqu'à $\\sigma_0$ puis courbe croissante (pas d'élasticité).\nRPP : axe vertical jusqu'à $\\sigma_0$ puis palier (**aucun retour élastique**).",
+      "source": "Cours/Mise en forme/Mise en forme - Fiche de révision.md"
+    },
+    {
+      "id": "mef-cartes-011",
+      "type": "carte",
+      "difficulte": 1,
+      "enonce": "Pourquoi la déformation plastique se fait-elle à volume constant ? Comment le traduit-on ?",
+      "reponse": "Elle se fait par **glissement de plans atomiques** (dislocations). Traduction : $\\operatorname{tr}\\dot{\\bar{\\bar\\varepsilon}}=0$, soit $\\operatorname{div}\\vec v=0$.",
+      "source": "Cours/Mise en forme/Mise en forme - Fiche de révision.md"
+    },
+    {
+      "id": "mef-cartes-012",
+      "type": "carte",
+      "difficulte": 2,
+      "enonce": "Si $(\\sigma_I,\\sigma_{II},\\sigma_{III})$ est plastique, que dire de $(\\sigma_I+p,\\sigma_{II}+p,\\sigma_{III}+p)$ ? Pourquoi ?",
+      "reponse": "C'est **aussi un état plastique** : la pression hydrostatique ne plastifie pas (c'est le déviateur qui compte). La surface d'écoulement est un **cylindre d'axe (1,1,1)**.",
+      "source": "Cours/Mise en forme/Mise en forme - Fiche de révision.md"
+    },
+    {
+      "id": "mef-cartes-013",
+      "type": "carte",
+      "difficulte": 1,
+      "enonce": "Énoncer Tresca et donner son interprétation physique.",
+      "reponse": "$\\sigma_I-\\sigma_{III}=\\sigma_0$ : plastification quand le **cisaillement maximal** $\\tau_{max}=\\frac{\\sigma_I-\\sigma_{III}}2$ atteint $\\frac{\\sigma_0}2$ (glissement des dislocations). Cylindre **hexagonal**. Critère en contrainte, pas énergétique.",
+      "source": "Cours/Mise en forme/Mise en forme - Fiche de révision.md"
+    },
+    {
+      "id": "mef-cartes-014",
+      "type": "carte",
+      "difficulte": 2,
+      "enonce": "Énoncer Von Mises, son interprétation physique et sa géométrie.",
+      "reponse": "$(\\sigma_I-\\sigma_{II})^2+(\\sigma_{II}-\\sigma_{III})^2+(\\sigma_{III}-\\sigma_I)^2=2\\sigma_0^2$. Plastification quand l'**énergie de distorsion** atteint un seuil. Cylindre **circulaire** d'axe (1,1,1), rayon $\\sqrt{2/3}\\,\\sigma_0$ ; **ellipse** en contraintes planes.",
+      "source": "Cours/Mise en forme/Mise en forme - Fiche de révision.md"
+    },
+    {
+      "id": "mef-cartes-015",
+      "type": "carte",
+      "difficulte": 2,
+      "enonce": "Que représente la loi d'écoulement ? Ses deux caractéristiques majeures ?",
+      "reponse": "Loi de comportement plastique, pendant de Hooke : $d\\varepsilon^p_{ij}=s_{ij}\\,d\\lambda$.\n1) **Incrémentale** : pas de relation biunivoque σ ↔ ε, dépend du chemin.\n2) $d\\bar{\\bar\\varepsilon}_p$ **colinéaire au déviateur** (normalité, incompressible). Pour un RPP, $d\\lambda$ est indéterminé.",
+      "source": "Cours/Mise en forme/Mise en forme - Fiche de révision.md"
+    },
+    {
+      "id": "mef-cartes-016",
+      "type": "carte",
+      "difficulte": 2,
+      "enonce": "Écrire le bilan des puissances en mise en forme et l'expression de chaque terme.",
+      "reponse": "$\\dot W_e=\\dot W_{elas}+\\dot W_f+\\dot W_i\\simeq\\dot W_f+\\dot W_i$\n$\\dot W_i=\\iiint\\sigma_0\\,\\dot{\\bar\\varepsilon}\\,dV$ (vitesse de déformation !)\n$\\dot W_f=\\iint m\\frac{\\sigma_0}{\\sqrt3}|\\Delta v_{m-o}|\\,d\\Sigma$, $m\\in[0,1]$.",
+      "source": "Cours/Mise en forme/Mise en forme - Fiche de révision.md"
+    },
+    {
+      "id": "mef-cartes-017",
+      "type": "carte",
+      "difficulte": 2,
+      "enonce": "En quoi consiste la méthode de la borne supérieure ?",
+      "reponse": "Construire un champ de vitesse **incompressible** qui respecte les conditions aux limites (souvent des blocs rigides), calculer la puissance dissipée $\\dot W_i+\\dot W_S+\\dot W_f$ : c'est un **majorant** de la puissance extérieure → effort estimé **par excès**.",
+      "source": "Cours/Mise en forme/Mise en forme - Fiche de révision.md"
+    },
+    {
+      "id": "mef-cartes-018",
+      "type": "carte",
+      "difficulte": 1,
+      "enonce": "Que représente l'hodographe ?",
+      "reponse": "Le plan des vitesses : chaque bloc est un point de coordonnées $(v_x,v_y)$. Le segment entre deux points = $\\Delta\\vec v$ entre ces blocs, **parallèle à leur frontière commune**.",
+      "source": "Cours/Mise en forme/Mise en forme - Fiche de révision.md"
+    },
+    {
+      "id": "mef-cartes-019",
+      "type": "carte",
+      "difficulte": 3,
+      "enonce": "Pourquoi une éprouvette plate large ne rompt-elle pas perpendiculairement à la traction ?",
+      "reponse": "Une bande ⊥ reste élastique quand le reste plastifie ($\\sigma_{yy}=\\sigma_0/2$, Von Mises non atteint). La striction se fait selon une bande inclinée de **≈ 35°** par rapport à la direction transverse ($\\tan^2\\theta=\\frac12$).",
+      "source": "Cours/Mise en forme/Mise en forme - Fiche de révision.md"
+    }
+  ]
+}

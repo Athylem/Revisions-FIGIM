@@ -1,0 +1,216 @@
+{
+  "chapitre": "Borne supérieure (exercice du DS)",
+  "genre": "exercices",
+  "questions": [
+    {
+      "id": "mef-bs-001",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**Forgeage d'un lopin (DS 2015).** Lopin de largeur $2a$, hauteur $h$, déformation plane, découpé en 4 blocs triangulaires par les diagonales. Les deux matrices s'approchent chacune à $v_0$ ; blocs 1 (haut) et 3 (bas) collés aux matrices, blocs 2 et 4 sur les côtés.",
+      "etapes": [
+        {
+          "type": "qcm",
+          "enonce": "Que valent $\\dot W_i$ et $\\dot W_f$ ?",
+          "choix": [
+            "$\\dot W_i=0$ (blocs rigides) et $\\dot W_f=0$ (blocs 1 et 3 solidaires des matrices)",
+            "$\\dot W_i=0$ mais $\\dot W_f\\ne0$",
+            "$\\dot W_f=0$ mais $\\dot W_i\\ne0$",
+            "Aucun des deux n'est nul"
+          ],
+          "reponse": 0,
+          "explication": "Blocs rigides : $\\dot{\\bar{\\bar\\varepsilon}}=0$. Pas de vitesse relative métal/outil ; 2 et 4 ne touchent les outils qu'en un point."
+        },
+        {
+          "type": "qcm",
+          "enonce": "Vitesse horizontale $u$ du bloc 2 (continuité de la composante normale sur la diagonale) :",
+          "choix": [
+            "$u=\\frac{2a}{h}v_0$",
+            "$u=\\frac{h}{2a}v_0$",
+            "$u=v_0$",
+            "$u=\\frac{a}{h}v_0$"
+          ],
+          "reponse": 0,
+          "explication": "$\\vec v_1\\cdot\\vec n=\\vec v_2\\cdot\\vec n$ avec $\\vec n\\propto(h/2,-a)$ : $a v_0=u\\,h/2$."
+        },
+        {
+          "type": "qcm",
+          "enonce": "Saut de vitesse $|\\Delta\\vec v_{12}|$ :",
+          "choix": [
+            "$\\frac{v_0}{h}\\sqrt{4a^2+h^2}$",
+            "$v_0\\sqrt2$",
+            "$\\frac{2a}{h}v_0$",
+            "$\\frac{v_0}{2h}\\sqrt{4a^2+h^2}$"
+          ],
+          "reponse": 0,
+          "explication": "$\\sqrt{u^2+v_0^2}$."
+        },
+        {
+          "type": "qcm",
+          "enonce": "Borne supérieure sur la pression $P$ (4 lignes de longueur $\\frac12\\sqrt{4a^2+h^2}$, $\\dot W_e=2\\cdot P\\cdot2a\\cdot v_0$) :",
+          "choix": [
+            "$P\\le\\frac{\\sigma_0}{\\sqrt3}\\left(\\frac{2a}{h}+\\frac{h}{2a}\\right)$",
+            "$P\\le\\frac{2\\sigma_0}{\\sqrt3}\\left(\\frac{2a}{h}+\\frac{h}{2a}\\right)$",
+            "$P\\le\\sigma_0\\left(\\frac{2a}{h}+\\frac{h}{2a}\\right)$",
+            "$P\\le\\frac{\\sigma_0}{\\sqrt3}\\cdot\\frac{2a}{h}$"
+          ],
+          "reponse": 0,
+          "explication": "Piège : les **deux** matrices travaillent, d'où le facteur 2 dans $\\dot W_e$."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Application : $a/h=8$, $\\sigma_0=220$ MPa. $P\\le$ ?",
+          "reponse": 2040,
+          "tolerance": 0.02,
+          "unite": "MPa",
+          "explication": "$\\frac{220}{\\sqrt3}(16+\\frac1{16})\\approx2040$ MPa, valeur **par excès**."
+        }
+      ],
+      "explication": "Bonus : la borne est minimale pour $2a/h=1$ (α = 45°) ; pour un lopin très plat, il faudrait plus de blocs.",
+      "source": "Cours/Mise en forme/Mise en forme - Méthode de la borne supérieure.md"
+    },
+    {
+      "id": "mef-bs-002",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**Forgeage, variante.** Même découpage en 4 blocs, $P\\le\\frac{\\sigma_0}{\\sqrt3}\\left(\\frac{2a}{h}+\\frac{h}{2a}\\right)$.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Lopin avec $a/h=4$ et $\\sigma_0=300$ MPa : $P\\le$ ?",
+          "reponse": 1407,
+          "tolerance": 0.02,
+          "unite": "MPa",
+          "explication": "$\\frac{300}{\\sqrt3}(8+\\frac18)=173{,}2\\times8{,}125\\approx1407$ MPa."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Pour quel rapport $2a/h$ la borne est-elle minimale ?",
+          "reponse": 1,
+          "tolerance": 0.01,
+          "explication": "$x+\\frac1x$ est minimal pour $x=1$ (diagonales à 45°)."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Que vaut alors $P/\\sigma_0$ ?",
+          "reponse": 1.1547,
+          "tolerance": 0.02,
+          "explication": "$\\frac{2}{\\sqrt3}\\approx1{,}155$ : valeur exacte de la compression plane sans frottement."
+        }
+      ],
+      "source": "Cours/Mise en forme/Mise en forme - Méthode de la borne supérieure.md"
+    },
+    {
+      "id": "mef-bs-003",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**Poinçonnement (exemple du cours).** Poinçon de largeur $2a$ enfoncé à $v_0$ dans un massif semi-infini, découpage en triangles rectangles isocèles, zone 6 immobile.",
+      "etapes": [
+        {
+          "type": "qcm",
+          "enonce": "Vitesse du bloc 2 (sous le bord, glisse horizontalement) :",
+          "choix": [
+            "$v_0$, horizontale",
+            "$v_0/\\sqrt2$, horizontale",
+            "$v_0\\sqrt2$, à 45°",
+            "nulle"
+          ],
+          "reponse": 0,
+          "explication": "Frontière 1|2 à 45° : $\\Delta\\vec v$ parallèle à AD donne $v_2=v_0$."
+        },
+        {
+          "type": "qcm",
+          "enonce": "$|\\Delta\\vec v_{12}|$ :",
+          "choix": [
+            "$v_0\\sqrt2$",
+            "$v_0$",
+            "$v_0/\\sqrt2$",
+            "$2v_0$"
+          ],
+          "reponse": 0
+        },
+        {
+          "type": "qcm",
+          "enonce": "Somme des puissances sur toutes les lignes :",
+          "choix": [
+            "$12a v_0\\,\\sigma_0/\\sqrt3$",
+            "$6a v_0\\,\\sigma_0/\\sqrt3$",
+            "$4a v_0\\,\\sigma_0/\\sqrt3$",
+            "$12a v_0\\,\\sigma_0$"
+          ],
+          "reponse": 0,
+          "explication": "AD : 4, AB : 4, BD : 2, BC : 2 (en $av_0\\sigma_0/\\sqrt3$, déjà ×2 pour la symétrie)."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Avec $\\dot W_e=P\\cdot2a\\cdot v_0$, que vaut la borne $P/\\sigma_0$ ?",
+          "reponse": 3.464,
+          "tolerance": 0.02,
+          "explication": "$P\\le\\frac{6}{\\sqrt3}\\sigma_0=2\\sqrt3\\,\\sigma_0$. (Solution exacte de Prandtl : $2{,}97\\,\\sigma_0$.)"
+        }
+      ],
+      "source": "Cours/Mise en forme/Mise en forme - Méthode de la borne supérieure.md"
+    },
+    {
+      "id": "mef-bs-004",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**Filage plan de rapport 2.** Conteneur de hauteur $2h$, sortie de hauteur $h$, filière plate, lubrification parfaite. Le lopin avance à $v$.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Vitesse de sortie $v_4$, en multiple de $v$ ?",
+          "reponse": 2,
+          "tolerance": 0.01,
+          "explication": "Conservation du débit : $v\\cdot2h=v_4\\cdot h$."
+        },
+        {
+          "type": "qcm",
+          "enonce": "Pourquoi $\\dot W_f=0$ ?",
+          "choix": [
+            "Lubrification parfaite ($m=0$)",
+            "Les blocs sont rigides",
+            "La vitesse est nulle partout",
+            "Le frottement est compté dans $\\dot W_S$"
+          ],
+          "reponse": 0
+        },
+        {
+          "type": "numerique",
+          "enonce": "Somme sur la moitié haute $\\sum S|\\Delta v|=3hv$. Avec $\\dot W_e=P\\cdot2h\\cdot v$, que vaut $P/\\sigma_0$ ?",
+          "reponse": 1.732,
+          "tolerance": 0.02,
+          "explication": "$P\\cdot2hv\\le\\frac{\\sigma_0}{\\sqrt3}6hv$, donc $P\\le\\sqrt3\\,\\sigma_0$."
+        }
+      ],
+      "source": "Cours/Mise en forme/Mise en forme - Méthode de la borne supérieure.md"
+    },
+    {
+      "id": "mef-bs-005",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**Champ de vitesse (TD1).** Compression plane d'un quart de bloc : $v_y=-v_0\\frac yh$, $v_z=0$, $v_x(0,y)=0$.",
+      "etapes": [
+        {
+          "type": "qcm",
+          "enonce": "Champ $v_x$ imposé par l'incompressibilité :",
+          "choix": [
+            "$v_x=\\frac{v_0}{h}x$",
+            "$v_x=-\\frac{v_0}{h}x$",
+            "$v_x=v_0$",
+            "$v_x=\\frac{v_0}{h}y$"
+          ],
+          "reponse": 0,
+          "explication": "$\\partial_xv_x+\\partial_yv_y=0$ ⇒ $\\partial_xv_x=\\frac{v_0}h$."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Vitesse de déformation généralisée $\\dot{\\bar\\varepsilon}$, en unités de $v_0/h$ ?",
+          "reponse": 1.1547,
+          "tolerance": 0.02,
+          "explication": "$\\sqrt{\\frac23(1+1)}=\\frac2{\\sqrt3}$."
+        }
+      ],
+      "source": "Cours/Mise en forme/Mise en forme - Méthode de la borne supérieure.md"
+    }
+  ]
+}
