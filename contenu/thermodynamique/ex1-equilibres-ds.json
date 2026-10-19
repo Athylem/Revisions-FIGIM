@@ -1,0 +1,260 @@
+{
+  "chapitre": "Exercices type DS : équilibres",
+  "genre": "exercices",
+  "questions": [
+    {
+      "id": "thermo-ds-equ-001",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**Test 2010, Ex. 1 — Conversion du méthane.** $\\mathrm{H_2O_{(g)}+CH_4{}_{(g)}\\rightleftarrows CO_{(g)}+3H_2{}_{(g)}}$ avec $\\Delta_rG^\\circ=227{,}0\\cdot10^3-253{,}9\\,T$ (J/mol). On introduit 1 mol de CH₄ et 4 mol de H₂O sous **pression constante de 30 atm**.",
+      "etapes": [
+        {
+          "type": "qcm",
+          "difficulte": 1,
+          "enonce": "La réaction est :",
+          "choix": [
+            "endothermique ($\\Delta_rH^\\circ=+227$ kJ/mol)",
+            "exothermique",
+            "athermique",
+            "impossible à dire"
+          ],
+          "reponse": 0,
+          "explication": "$\\Delta_rH^\\circ$ = terme constant de $\\Delta_rG^\\circ(T)$ = +227 kJ/mol > 0."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Température minimale pour que la réaction soit favorable ($\\Delta_rG^\\circ<0$) ?",
+          "reponse": 894.052777,
+          "tolerance": 0.005,
+          "explication": "$T>227\\,000/253{,}9$",
+          "unite": "K"
+        },
+        {
+          "type": "qcm",
+          "difficulte": 1,
+          "enonce": "Bilan à l'équilibre (avancement $x$) : quantité totale de gaz ?",
+          "choix": [
+            "$5+2x$",
+            "$5-2x$",
+            "$5$",
+            "$5+4x$"
+          ],
+          "reponse": 0,
+          "explication": "CH₄ : $1-x$, H₂O : $4-x$, CO : $x$, H₂ : $3x$ ⇒ $n_{tot}=5+2x$. $K=\\dfrac{27x^4P^2}{(5+2x)^2(4-x)(1-x)}$."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Valeur de K à 1000 K ?",
+          "reponse": 25.41924,
+          "tolerance": 0.02,
+          "explication": "$K=\\exp\\left(-\\dfrac{227\\,000-253{,}9\\times1000}{8{,}314\\times1000}\\right)$"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Taux de conversion du méthane α à 1000 K ?",
+          "reponse": 0.505528,
+          "tolerance": 0.02,
+          "explication": "Résolution numérique de $\\dfrac{27\\alpha^4\\cdot30^2}{(5+2\\alpha)^2(4-\\alpha)(1-\\alpha)}=25{,}4$."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Température pour laquelle α = 90 % ?",
+          "reponse": 1160.623399,
+          "tolerance": 0.01,
+          "explication": "$K(\\alpha=0{,}9)=1112$ puis $227\\,000-253{,}9T=-RT\\ln K$ ⇒ $T=\\dfrac{227\\,000}{253{,}9-R\\ln K}$.",
+          "unite": "K"
+        },
+        {
+          "type": "qcm",
+          "difficulte": 1,
+          "enonce": "À cette température on ajoute $10^{-2}$ mol de gaz inerte (P constante). L'équilibre :",
+          "choix": [
+            "se déplace dans le sens direct",
+            "se déplace dans le sens indirect",
+            "ne bouge pas",
+            "K diminue"
+          ],
+          "reponse": 0,
+          "explication": "$Q=\\dfrac{27x^4}{(4-x)(1-x)}\\left(\\dfrac{P}{n_{tot}}\\right)^2$ : $n_{tot}$ augmente ⇒ $Q<K$ ⇒ sens direct ($\\Delta n_{gaz}=+2$). K ne dépend que de T."
+        }
+      ],
+      "source": "Cours/2A FIGIM/Thermodynamique - JF.Pierson/Annales/Test 1/Exam Thermo 2010 n°1.pdf"
+    },
+    {
+      "id": "thermo-ds-equ-002",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**Test 2011, Ex. 2 — Dissociation de PCl₅.** $\\mathrm{PCl_5\\rightleftarrows PCl_3+Cl_2}$ (tout gazeux), $\\Delta_rH^\\circ=92{,}910$ kJ/mol. À 573 K sous 1 atm, α = 0,95. On écrit $\\ln K=\\dfrac aT+b$.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Valeur de $a$ ?",
+          "reponse": -11175.126293,
+          "tolerance": 0.01,
+          "explication": "$a=-\\Delta_rH^\\circ/R=-92\\,910/8{,}314$",
+          "unite": "K"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Valeur de K à 573 K ?",
+          "reponse": 9.25641,
+          "tolerance": 0.01,
+          "explication": "$K=\\dfrac{\\alpha^2}{1-\\alpha^2}P=\\dfrac{0{,}95^2}{1-0{,}95^2}$"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Valeur de $b$ ?",
+          "reponse": 21.728155,
+          "tolerance": 0.01,
+          "explication": "$b=\\ln K_{573}-a/573$"
+        },
+        {
+          "type": "numerique",
+          "enonce": "K à 529 K ?",
+          "reponse": 1.827871,
+          "tolerance": 0.02,
+          "explication": "$K=\\exp(a/529+b)$"
+        },
+        {
+          "type": "numerique",
+          "enonce": "À **volume constant** à 529 K, 1 mol de PCl₅, $P_0=2$ atm : degré de dissociation α ?",
+          "reponse": 0.602634,
+          "tolerance": 0.02,
+          "explication": "$P_{tot}=2(1+\\alpha)$, $P_{PCl_5}=2(1-\\alpha)$, $P_{PCl_3}=P_{Cl_2}=2\\alpha$ ⇒ $K=\\dfrac{2\\alpha^2}{1-\\alpha}$."
+        },
+        {
+          "type": "numerique",
+          "enonce": "À **pression constante** 2 atm, 529 K : α ?",
+          "reponse": 0.691026,
+          "tolerance": 0.02,
+          "explication": "$K=\\dfrac{\\alpha^2}{1-\\alpha^2}\\cdot2$."
+        },
+        {
+          "type": "qcm",
+          "difficulte": 1,
+          "enonce": "Pourquoi α est-il plus grand à P constante ?",
+          "choix": [
+            "à V constant la pression monte avec la dissociation, ce qui défavorise le sens qui crée des moles de gaz",
+            "parce que K est plus grand à P constante",
+            "parce que T change",
+            "c'est faux, α est plus petit"
+          ],
+          "reponse": 0,
+          "explication": "À V constant $P_{tot}$ passe de 2 à 3.21 atm : Le Chatelier freine la dissociation. À P constante le volume augmente librement."
+        }
+      ],
+      "source": "Cours/2A FIGIM/Thermodynamique - JF.Pierson/Annales/Test 1/Exam Thermo 2011 n°1.pdf"
+    },
+    {
+      "id": "thermo-ds-equ-003",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**Test 2023, Ex. 1 — Équilibre NO₂/N₂O₄.** À 25 °C, $K=6{,}8$ pour $\\mathrm{2NO_2\\rightleftarrows N_2O_4}$ (gaz). On introduit 3 mol de NO₂ dans un réacteur vide ; la pression vaut alors 1 atm.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Volume du réacteur ?",
+          "reponse": 73.392127,
+          "tolerance": 0.01,
+          "explication": "$V=\\dfrac{nRT}{P}=\\dfrac{3\\times8{,}314\\times298{,}15}{101\\,325}$",
+          "unite": "L"
+        },
+        {
+          "type": "numerique",
+          "enonce": "À **volume constant** : quantité de NO₂ restante à l'équilibre ?",
+          "reponse": 0.710638,
+          "tolerance": 0.02,
+          "explication": "$P_i=n_iRT/V$ donc en atm $P_i=n_i/3$. $K=\\dfrac{\\xi/3}{\\left((3-2\\xi)/3\\right)^2}=6{,}8$ ⇒ $\\xi=1.145$ mol.",
+          "unite": "mol"
+        },
+        {
+          "type": "numerique",
+          "enonce": "À **pression constante** (1 atm) : quantité de NO₂ restante ?",
+          "reponse": 0.564933,
+          "tolerance": 0.02,
+          "explication": "$P_i=\\dfrac{n_i}{3-\\xi}$ ⇒ $K=\\dfrac{\\xi(3-\\xi)}{(3-2\\xi)^2}=6{,}8$ ⇒ $\\xi=1.218$ mol.",
+          "unite": "mol"
+        },
+        {
+          "type": "qcm",
+          "difficulte": 1,
+          "enonce": "Pourquoi la dimérisation est-elle plus avancée à P constante ?",
+          "choix": [
+            "à V constant la pression chute (moins de moles), ce qui défavorise le sens qui consomme du gaz",
+            "K dépend du volume",
+            "la température change",
+            "elle est moins avancée à P constante"
+          ],
+          "reponse": 0,
+          "explication": "À V constant, $P_{tot}$ tombe à 0.62 atm : Le Chatelier freine la formation de N₂O₄ ($\\Delta n=-1$). À P = 1 atm maintenue, le volume diminue et l'équilibre va plus loin."
+        }
+      ],
+      "source": "Cours/2A FIGIM/Thermodynamique - JF.Pierson/Annales/Test 2/Partiel 2 2023.pdf"
+    },
+    {
+      "id": "thermo-ds-equ-004",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**TD 2 — Ammoniac.** $\\mathrm{N_2+3H_2\\rightleftarrows2NH_3}$, $\\Delta_fG^\\circ_{298}(\\mathrm{NH_3})=-16{,}45$ kJ/mol, $\\Delta_fH^\\circ(\\mathrm{NH_3})=-46{,}11$ kJ/mol (supposée constante).",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "K à 298 K ?",
+          "reponse": 584861.138892,
+          "tolerance": 0.03,
+          "explication": "$K=\\exp\\left(\\dfrac{2\\times16\\,450}{8{,}314\\times298}\\right)$"
+        },
+        {
+          "type": "numerique",
+          "enonce": "K à 773 K (Van't Hoff) ?",
+          "reponse": 6.818171797143403e-05,
+          "tolerance": 0.05,
+          "explication": "$\\ln K_{773}=\\ln K_{298}-\\dfrac{2\\Delta_fH^\\circ}{R}\\left(\\dfrac1{773}-\\dfrac1{298}\\right)$"
+        },
+        {
+          "type": "qcm",
+          "difficulte": 1,
+          "enonce": "Pourquoi travaille-t-on quand même vers 500 °C et sous forte pression ?",
+          "choix": [
+            "la cinétique est trop lente à basse T ; la pression compense la baisse de K (Δn = −2)",
+            "K augmente avec T",
+            "la pression augmente K",
+            "pour éviter la formation de N₂"
+          ],
+          "reponse": 0,
+          "explication": "Compromis thermodynamique/cinétique (procédé Haber-Bosch, ~200 bar)."
+        }
+      ],
+      "source": "Cours/2A FIGIM/Thermodynamique - JF.Pierson/TD/TD2 - Correction simple.pdf"
+    },
+    {
+      "id": "thermo-ds-equ-005",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**Test 2011, Question 1.** Une réaction est considérée **totale** si la quantité de réactif restant est inférieure à 0,01 % de la quantité initiale. On étudie la dismutation $\\mathrm{2A\\to B+C}$, toutes espèces gazeuses.",
+      "etapes": [
+        {
+          "type": "qcm",
+          "difficulte": 1,
+          "enonce": "Expression de K en fonction du degré d'avancement α (fraction de A consommée) ?",
+          "choix": [
+            "$K=\\dfrac{(\\alpha/2)^2}{(1-\\alpha)^2}$",
+            "$K=\\dfrac{\\alpha^2}{1-\\alpha}$",
+            "$K=\\dfrac{\\alpha}{(1-\\alpha)^2}P$",
+            "$K=\\dfrac{\\alpha^2}{1-\\alpha^2}P$"
+          ],
+          "reponse": 0,
+          "explication": "A : $n_0(1-\\alpha)$, B = C = $n_0\\alpha/2$. $\\Delta n_{gaz}=0$ ⇒ K ne dépend ni de P ni de $n_{tot}$."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Valeur minimale de K pour que la réaction soit totale ?",
+          "reponse": 24995000.25,
+          "tolerance": 0.02,
+          "explication": "$\\alpha=0{,}9999$ : $K=\\left(\\dfrac{0{,}49995}{10^{-4}}\\right)^2\\approx2{,}5\\cdot10^7$"
+        }
+      ],
+      "source": "Cours/2A FIGIM/Thermodynamique - JF.Pierson/Annales/Test 1/Exam Thermo 2011 n°1.pdf"
+    }
+  ]
+}

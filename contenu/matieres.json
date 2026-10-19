@@ -136,8 +136,65 @@
       "prof": "J.-F. Pierson",
       "groupe": "Matériaux",
       "ds": null,
-      "notes": false,
-      "chapitres": []
+      "notes": true,
+      "chapitres": [
+        {
+          "id": "ch1-ellingham",
+          "nom": "Diagrammes d'Ellingham",
+          "genre": "cours",
+          "fichier": "thermodynamique/ch1-ellingham.json",
+          "questions": 15
+        },
+        {
+          "id": "ch2-equilibres",
+          "nom": "Équilibres chimiques (K, Van't Hoff, Le Chatelier)",
+          "genre": "cours",
+          "fichier": "thermodynamique/ch2-equilibres.json",
+          "questions": 12
+        },
+        {
+          "id": "ch3-diagrammes-phases",
+          "nom": "Diagrammes de phases et courbes de Gibbs",
+          "genre": "cours",
+          "fichier": "thermodynamique/ch3-diagrammes-phases.json",
+          "questions": 12
+        },
+        {
+          "id": "ch4-solutions-regulieres",
+          "nom": "Solutions régulières, lacune de miscibilité, spinodale",
+          "genre": "cours",
+          "fichier": "thermodynamique/ch4-solutions-regulieres.json",
+          "questions": 8
+        },
+        {
+          "id": "ch5-questions-de-cours",
+          "nom": "Questions de cours des annales (à rédiger)",
+          "genre": "cours",
+          "fichier": "thermodynamique/ch5-questions-de-cours.json",
+          "questions": 14
+        },
+        {
+          "id": "ex1-equilibres-ds",
+          "nom": "Exercices type DS : équilibres",
+          "genre": "exercices",
+          "fichier": "thermodynamique/ex1-equilibres-ds.json",
+          "questions": 5
+        },
+        {
+          "id": "ex2-ellingham-ds",
+          "nom": "Exercices type DS : Ellingham",
+          "genre": "exercices",
+          "fichier": "thermodynamique/ex2-ellingham-ds.json",
+          "questions": 2
+        },
+        {
+          "id": "ex3-diagrammes-ds",
+          "nom": "Exercices type DS : diagrammes et solutions",
+          "genre": "exercices",
+          "fichier": "thermodynamique/ex3-diagrammes-ds.json",
+          "questions": 3
+        }
+      ]
     },
     {
       "id": "methodes-d-analyse",

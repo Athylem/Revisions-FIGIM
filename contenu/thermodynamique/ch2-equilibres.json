@@ -1,0 +1,168 @@
+{
+  "chapitre": "Équilibres chimiques (K, Van't Hoff, Le Chatelier)",
+  "genre": "cours",
+  "questions": [
+    {
+      "id": "thermo-equ-001",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Relation entre enthalpie libre standard et constante d'équilibre :",
+      "choix": [
+        "$\\Delta_rG^\\circ=-RT\\ln K$",
+        "$\\Delta_rG^\\circ=RT\\ln K$",
+        "$\\Delta_rG^\\circ=-R\\ln K$",
+        "$K=\\exp(\\Delta_rG^\\circ/RT)$"
+      ],
+      "reponse": 0,
+      "explication": "À l'équilibre $\\Delta_rG=\\Delta_rG^\\circ+RT\\ln Q=0$ avec $Q=K$."
+    },
+    {
+      "id": "thermo-equ-002",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Loi de **Van't Hoff** :",
+      "choix": [
+        "$\\dfrac{d\\ln K}{dT}=\\dfrac{\\Delta_rH^\\circ}{RT^2}$",
+        "$\\dfrac{d\\ln K}{dT}=\\dfrac{\\Delta_rS^\\circ}{R}$",
+        "$\\dfrac{dK}{dT}=-\\dfrac{\\Delta_rH^\\circ}{RT}$",
+        "$\\dfrac{d\\ln K}{dP}=\\dfrac{\\Delta V}{RT}$"
+      ],
+      "reponse": 0,
+      "explication": "Intégrée avec $\\Delta_rH^\\circ$ constant : $\\ln\\dfrac{K_2}{K_1}=-\\dfrac{\\Delta_rH^\\circ}{R}\\left(\\dfrac1{T_2}-\\dfrac1{T_1}\\right)$."
+    },
+    {
+      "id": "thermo-equ-003",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Pour une réaction **exothermique**, quand la température **diminue**, K :",
+      "choix": [
+        "augmente",
+        "diminue",
+        "ne change pas",
+        "change de signe"
+      ],
+      "reponse": 0,
+      "explication": "$\\Delta_rH^\\circ<0$ ⇒ $d\\ln K/dT<0$ : K croît quand T baisse. (Question de cours du test final 2015.)"
+    },
+    {
+      "id": "thermo-equ-004",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Avec les hypothèses d'Ellingham, $\\ln K$ s'écrit $\\dfrac aT+b$. Que valent $a$ et $b$ ?",
+      "choix": [
+        "$a=-\\Delta_rH^\\circ/R$, $b=\\Delta_rS^\\circ/R$",
+        "$a=\\Delta_rH^\\circ/R$, $b=-\\Delta_rS^\\circ/R$",
+        "$a=\\Delta_rS^\\circ$, $b=\\Delta_rH^\\circ$",
+        "$a=-\\Delta_rG^\\circ/R$, $b=0$"
+      ],
+      "reponse": 0,
+      "explication": "$\\ln K=-\\dfrac{\\Delta_rH^\\circ-T\\Delta_rS^\\circ}{RT}=-\\dfrac{\\Delta_rH^\\circ}{RT}+\\dfrac{\\Delta_rS^\\circ}{R}$."
+    },
+    {
+      "id": "thermo-equ-005",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Pourquoi exprime-t-on les pressions en **atm (ou bar)** plutôt qu'en Pa dans K ?",
+      "choix": [
+        "Parce que K utilise les activités $a_i=P_i/P^\\circ$ avec $P^\\circ=1$ bar ≈ 1 atm",
+        "Parce que le Pascal n'est pas une unité SI",
+        "Pour avoir des nombres plus grands",
+        "Parce que R est en atm"
+      ],
+      "reponse": 0,
+      "explication": "En atm/bar, $P_i$ en valeur numérique **est** l'activité. En Pa, il faudrait diviser chaque pression par $10^5$. (Question posée en 2011 et 2023.)"
+    },
+    {
+      "id": "thermo-equ-006",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Ajout d'un **gaz inerte à volume constant** à un équilibre gazeux :",
+      "choix": [
+        "ne modifie pas l'équilibre (pressions partielles inchangées)",
+        "déplace dans le sens qui augmente $n_{gaz}$",
+        "déplace dans le sens qui diminue $n_{gaz}$",
+        "change la valeur de K"
+      ],
+      "reponse": 0,
+      "explication": "$P_i=n_iRT/V$ ne dépend pas de l'inerte ⇒ $Q$ inchangé. (« Redémontrez » : question 2011.)"
+    },
+    {
+      "id": "thermo-equ-007",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Ajout d'un **gaz inerte à pression totale constante** pour $\\mathrm{H_2O+CH_4\\rightleftarrows CO+3H_2}$ :",
+      "choix": [
+        "l'équilibre se déplace dans le sens direct (vers plus de moles de gaz)",
+        "l'équilibre se déplace dans le sens indirect",
+        "aucun effet",
+        "K augmente"
+      ],
+      "reponse": 0,
+      "explication": "La dilution baisse toutes les $P_i$ ; $Q\\propto P_{tot}^{\\Delta n}/n_{tot}^{\\Delta n}$ avec $\\Delta n=+2$ diminue ⇒ $Q<K$ ⇒ sens direct. **K ne change pas** (il ne dépend que de T)."
+    },
+    {
+      "id": "thermo-equ-008",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Une augmentation de **pression** sur $\\mathrm{N_2+3H_2\\rightleftarrows2NH_3}$ :",
+      "choix": [
+        "favorise NH₃ (sens qui diminue le nombre de moles de gaz)",
+        "favorise N₂ et H₂",
+        "n'a pas d'effet",
+        "modifie K"
+      ],
+      "reponse": 0,
+      "explication": "Le Chatelier : $\\Delta n_{gaz}=-2$, une hausse de P déplace vers NH₃."
+    },
+    {
+      "id": "thermo-equ-009",
+      "type": "vrai-faux",
+      "difficulte": 1,
+      "enonce": "La constante d'équilibre K dépend de la pression totale.",
+      "reponse": false,
+      "explication": "K ne dépend **que de T**. C'est la composition à l'équilibre qui dépend de P (via $Q$)."
+    },
+    {
+      "id": "thermo-equ-010",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Une réaction est dite **endothermique** si :",
+      "choix": [
+        "$\\Delta_rH^\\circ>0$",
+        "$\\Delta_rH^\\circ<0$",
+        "$\\Delta_rS^\\circ>0$",
+        "$\\Delta_rG^\\circ>0$"
+      ],
+      "reponse": 0,
+      "explication": "Ex. : $\\Delta_rG^\\circ=227{,}0\\cdot10^3-253{,}9T$ ⇒ $\\Delta_rH^\\circ=+227$ kJ/mol : endothermique, favorisée à haute T."
+    },
+    {
+      "id": "thermo-equ-011",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Pour $\\Delta_rG^\\circ=227{,}0\\cdot10^3-253{,}9\\,T$ (J/mol), la réaction devient favorable ($K>1$) pour :",
+      "choix": [
+        "$T>894$ K",
+        "$T<894$ K",
+        "$T>227$ K",
+        "toute température"
+      ],
+      "reponse": 0,
+      "explication": "$\\Delta_rG^\\circ<0$ ⇔ $T>227\\,000/253{,}9=894$ K."
+    },
+    {
+      "id": "thermo-equ-012",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Le **degré de dissociation** α d'un composé est :",
+      "choix": [
+        "la quantité dissociée divisée par la quantité initiale",
+        "la fraction molaire du produit à l'équilibre",
+        "la constante d'équilibre",
+        "le rapport $P/P^\\circ$"
+      ],
+      "reponse": 0,
+      "explication": "Pour $\\mathrm{PCl_5\\to PCl_3+Cl_2}$ à P constant : $K=\\dfrac{\\alpha^2}{1-\\alpha^2}\\,\\dfrac{P}{P^\\circ}$."
+    }
+  ]
+}

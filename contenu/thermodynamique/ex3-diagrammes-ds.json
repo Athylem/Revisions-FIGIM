@@ -1,0 +1,167 @@
+{
+  "chapitre": "Exercices type DS : diagrammes et solutions",
+  "genre": "exercices",
+  "questions": [
+    {
+      "id": "thermo-ds-dia-001",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**Tests 2011 et 2015 — Verres SiO₂–B₂O₃ (solution régulière).** $G_m(x)=\\Delta E\\,x(1-x)+RT[x\\ln x+(1-x)\\ln(1-x)]$ avec $\\Delta E=18\\,300$ J/mol, $x$ = titre molaire en B₂O₃.",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Température critique de la lacune ?",
+          "reponse": 1100.553284,
+          "tolerance": 0.01,
+          "explication": "$T_c=\\Delta E/(2R)$",
+          "unite": "K"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Limite basse de la lacune de **stabilité** (spinodale) à 800 K ?",
+          "reponse": 0.238709,
+          "tolerance": 0.02,
+          "explication": "$\\dfrac{d^2G}{dx^2}=-2\\Delta E+\\dfrac{RT}{x(1-x)}=0$ ⇒ $x(1-x)=\\dfrac{RT}{2\\Delta E}=0{,}1817$ ⇒ $x=0{,}239$ et $0{,}761$."
+        },
+        {
+          "type": "numerique",
+          "enonce": "Limite basse de la lacune de **miscibilité** à 800 K ?",
+          "reponse": 0.099312,
+          "tolerance": 0.04,
+          "explication": "Courbe symétrique : la tangente commune est horizontale, $\\dfrac{dG}{dx}=\\Delta E(1-2x)+RT\\ln\\dfrac{x}{1-x}=0$ ⇒ $x\\approx0{,}10$ (et 0,90)."
+        },
+        {
+          "type": "qcm",
+          "difficulte": 1,
+          "enonce": "Un mélange $x=0{,}4$ trempé à 800 K est :",
+          "choix": [
+            "instable : décomposition spinodale, deux phases interconnectées",
+            "stable, homogène",
+            "métastable : germination de précipités isolés",
+            "entièrement cristallisé"
+          ],
+          "reponse": 0,
+          "explication": "0,239 < 0,4 < 0,761 : dans la spinodale. On obtient deux verres imbriqués (principe du verre Vycor)."
+        }
+      ],
+      "source": "Cours/2A FIGIM/Thermodynamique - JF.Pierson/Annales/Test 2/Exam Thermo 2011 n°2.pdf"
+    },
+    {
+      "id": "thermo-ds-dia-002",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**Test 2015 (décembre), Ex. 2 — Carbone.** Graphite → diamant : $\\Delta_rS^\\circ=-3{,}34$ J/K/mol, $\\Delta_rG^\\circ=2893$ J/mol ; $V_m$ graphite 5,299 cm³/mol, diamant 3,416 cm³/mol.",
+      "etapes": [
+        {
+          "type": "qcm",
+          "difficulte": 1,
+          "enonce": "Structure cristalline du diamant :",
+          "choix": [
+            "cubique type diamant (CFC + 4 sites tétraédriques), carbone hybridé sp³",
+            "hexagonale en feuillets, sp²",
+            "cubique centrée",
+            "amorphe"
+          ],
+          "reponse": 0,
+          "explication": "Graphite : feuillets hexagonaux sp² liés par Van der Waals (empilement ABAB)."
+        },
+        {
+          "type": "numerique",
+          "enonce": "En négligeant la compressibilité, pression d'équilibre graphite/diamant à 25 °C ?",
+          "reponse": 1.536378,
+          "tolerance": 0.03,
+          "explication": "$\\Delta G(P)=\\Delta_rG^\\circ+\\Delta V(P-P^\\circ)=0$ avec $\\Delta V=-1{,}883\\cdot10^{-6}$ m³/mol ⇒ $P\\approx1{,}5$ GPa.",
+          "unite": "GPa"
+        },
+        {
+          "type": "qcm",
+          "difficulte": 1,
+          "enonce": "Pente de la frontière graphite/diamant $dP/dT$ :",
+          "choix": [
+            "positive ($\\Delta S<0$ et $\\Delta V<0$)",
+            "négative",
+            "nulle",
+            "infinie"
+          ],
+          "reponse": 0,
+          "explication": "Clapeyron : $\\dfrac{dP}{dT}=\\dfrac{\\Delta S}{\\Delta V}=\\dfrac{-3{,}34}{-1{,}883\\cdot10^{-6}}>0$ (≈ 1,8 MPa/K)."
+        },
+        {
+          "type": "qcm",
+          "difficulte": 1,
+          "enonce": "Sur $G(T)$ à P fixée, quelle phase a la pente la plus négative ?",
+          "choix": [
+            "le liquide (entropie la plus grande)",
+            "le diamant",
+            "le graphite",
+            "toutes ont la même pente"
+          ],
+          "reponse": 0,
+          "explication": "$\\partial G/\\partial T=-S$ et $S_{liq}>S_{graphite}>S_{diamant}$."
+        }
+      ],
+      "source": "Cours/2A FIGIM/Thermodynamique - JF.Pierson/Annales/Test 1/thermo1_2015_18-août-2016_10-28-51[1].pdf"
+    },
+    {
+      "id": "thermo-ds-dia-003",
+      "type": "probleme",
+      "difficulte": 2,
+      "enonce": "**Test 2023, Ex. 2 — Diagramme Cu–Pb** (roulements). Lecture du diagramme : fusion de Cu 1084,87 °C ; palier à **955 °C** entre (Cu), un liquide à 37,4 % at. Pb et un liquide à 86 % at. Pb ; lacune de miscibilité liquide de sommet 995 °C (64 % mass.) ; palier à **326 °C** près de Pb pur ; fusion de Pb 327,5 °C.",
+      "etapes": [
+        {
+          "type": "qcm",
+          "difficulte": 1,
+          "enonce": "Nature de l'invariant à 955 °C ?",
+          "choix": [
+            "monotectique : $L_1\\to(\\mathrm{Cu})+L_2$",
+            "eutectique",
+            "péritectique",
+            "eutectoïde"
+          ],
+          "reponse": 0,
+          "explication": "Le liquide 1 (37,4 % at.) se décompose en solide Cu et en un second liquide riche en Pb."
+        },
+        {
+          "type": "qcm",
+          "difficulte": 1,
+          "enonce": "Nature de l'invariant à 326 °C ?",
+          "choix": [
+            "eutectique dégénéré : $L\\to(\\mathrm{Cu})+(\\mathrm{Pb})$ à 99,9 % Pb",
+            "monotectique",
+            "péritectique",
+            "fusion congruente"
+          ],
+          "reponse": 0,
+          "explication": "L'eutectique est collé à Pb pur (encart à 99,9 %)."
+        },
+        {
+          "type": "qcm",
+          "difficulte": 1,
+          "enonce": "Solubilité du cuivre dans le plomb à 320 °C ?",
+          "choix": [
+            "quasi nulle (< 0,01 %)",
+            "environ 5 %",
+            "environ 37 %",
+            "totale"
+          ],
+          "reponse": 0,
+          "explication": "Le domaine (Pb) est réduit à un trait : ~99,99 % Pb."
+        },
+        {
+          "type": "qcm",
+          "difficulte": 1,
+          "enonce": "Échantillon à 60 % mass. Pb, refroidi depuis 1200 °C jusqu'à 956 °C : état ?",
+          "choix": [
+            "deux liquides non miscibles $L_1+L_2$, séparables par décantation (densités différentes)",
+            "un seul liquide",
+            "Cu solide + liquide",
+            "entièrement solide"
+          ],
+          "reponse": 0,
+          "explication": "On est sous le dôme de la lacune liquide (sommet 995 °C) : deux liquides de compositions différentes, le plus riche en Pb, plus dense, coule au fond."
+        }
+      ],
+      "source": "Cours/2A FIGIM/Thermodynamique - JF.Pierson/Annales/Test 2/Partiel 2 2023.pdf"
+    }
+  ]
+}

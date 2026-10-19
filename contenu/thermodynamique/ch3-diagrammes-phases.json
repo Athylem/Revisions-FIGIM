@@ -1,0 +1,168 @@
+{
+  "chapitre": "Diagrammes de phases et courbes de Gibbs",
+  "genre": "cours",
+  "questions": [
+    {
+      "id": "thermo-dia-001",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Définition d'une **phase** :",
+      "choix": [
+        "partie homogène d'un système (même structure, même composition), séparée des autres par une interface",
+        "un constituant chimique pur",
+        "un domaine de température",
+        "un grain d'un polycristal"
+      ],
+      "reponse": 0,
+      "explication": "Deux grains de même structure et composition sont **la même phase**. (Question du test final 2015.)"
+    },
+    {
+      "id": "thermo-dia-002",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "À une température donnée, l'équilibre entre deux phases α et β dans un binaire se lit sur les courbes $G(x)$ par :",
+      "choix": [
+        "la **tangente commune** aux deux courbes ; les points de contact donnent les compositions",
+        "l'intersection des deux courbes",
+        "le minimum de chaque courbe",
+        "le point d'inflexion"
+      ],
+      "reponse": 0,
+      "explication": "Tangente commune ⇔ égalité des potentiels chimiques de chaque constituant dans les deux phases. Entre les deux points de contact : domaine biphasé (règle des leviers)."
+    },
+    {
+      "id": "thermo-dia-003",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Au palier **eutectique**, sur les courbes de Gibbs :",
+      "choix": [
+        "une seule tangente touche α, L et β, avec **le liquide au milieu**",
+        "la tangente touche α, β et L, avec α au milieu",
+        "la courbe du liquide est tout en dessous",
+        "les courbes ne se touchent pas"
+      ],
+      "reponse": 0,
+      "explication": "Eutectique : $L\\to\\alpha+\\beta$, le liquide a une composition **intermédiaire**. Péritectique : $L+\\alpha\\to\\beta$, c'est la phase **solide formée** qui est au milieu et le liquide est à une extrémité."
+    },
+    {
+      "id": "thermo-dia-004",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Une réaction **péritectique** s'écrit :",
+      "choix": [
+        "$L+\\alpha\\to\\beta$",
+        "$L\\to\\alpha+\\beta$",
+        "$\\gamma\\to\\alpha+\\beta$",
+        "$L_1\\to\\alpha+L_2$"
+      ],
+      "reponse": 0,
+      "explication": "$\\gamma\\to\\alpha+\\beta$ : eutectoïde ; $L_1\\to\\alpha+L_2$ : monotectique (ex. Cu–Pb à 955 °C)."
+    },
+    {
+      "id": "thermo-dia-005",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Réaction **monotectique** :",
+      "choix": [
+        "$L_1\\to\\alpha+L_2$",
+        "$L+\\alpha\\to\\beta$",
+        "$\\alpha+\\beta\\to\\gamma$",
+        "$L\\to\\alpha+\\beta$"
+      ],
+      "reponse": 0,
+      "explication": "Elle apparaît quand le liquide présente une **lacune de miscibilité** (Cu–Pb : $L_1$ à 37,4 % at. Pb → (Cu) + $L_2$ à 86 % at. Pb vers 955 °C)."
+    },
+    {
+      "id": "thermo-dia-006",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Un **point invariant** d'un diagramme binaire isobare correspond à :",
+      "choix": [
+        "trois phases en équilibre (variance nulle) : palier horizontal",
+        "deux phases en équilibre",
+        "un composé défini à fusion congruente uniquement",
+        "la fusion d'un corps pur seulement"
+      ],
+      "reponse": 0,
+      "explication": "Règle de Gibbs à P fixée : $v=c+1-\\varphi=2+1-3=0$. Eutectique, péritectique, monotectique, eutectoïde… (la fusion d'un corps pur est aussi invariante : $v=1+1-2=0$)."
+    },
+    {
+      "id": "thermo-dia-007",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Sur les courbes $G(x)$, un **composé défini** (stœchiométrique) est représenté par :",
+      "choix": [
+        "une courbe très étroite (quasi un point) à sa composition",
+        "une droite horizontale",
+        "une courbe très large",
+        "il n'apparaît pas"
+      ],
+      "reponse": 0,
+      "explication": "Sa composition varie très peu : son $G$ monte très vite dès qu'on s'écarte de la stœchiométrie (ex. ZrB₂, GaAs)."
+    },
+    {
+      "id": "thermo-dia-008",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Relation de **Clapeyron** pour l'équilibre entre deux phases d'un corps pur :",
+      "choix": [
+        "$\\dfrac{dP}{dT}=\\dfrac{\\Delta H}{T\\,\\Delta V}=\\dfrac{\\Delta S}{\\Delta V}$",
+        "$\\dfrac{dP}{dT}=\\dfrac{\\Delta V}{\\Delta S}$",
+        "$\\dfrac{dP}{dT}=\\dfrac{\\Delta H}{R T^2}$",
+        "$\\dfrac{dP}{dT}=-\\Delta S$"
+      ],
+      "reponse": 0,
+      "explication": "Obtenue en écrivant $dG_1=dG_2$ avec $dG=V\\,dP-S\\,dT$."
+    },
+    {
+      "id": "thermo-dia-009",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Pour la transformation graphite → diamant ($V_m$ = 5,299 → 3,416 cm³/mol), augmenter la pression :",
+      "choix": [
+        "favorise le diamant (plus dense)",
+        "favorise le graphite",
+        "n'a pas d'effet",
+        "favorise le liquide"
+      ],
+      "reponse": 0,
+      "explication": "$(\\partial G/\\partial P)_T=V$ : la phase de plus petit volume molaire voit son $G$ croître le moins vite. Le diamant devient stable vers 1,5 GPa à 25 °C."
+    },
+    {
+      "id": "thermo-dia-010",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Sur une courbe $G(T)$ à P fixée, la pente de chaque phase vaut :",
+      "choix": [
+        "$-S$ : la phase la plus désordonnée (liquide) a la pente la plus forte en valeur absolue",
+        "$+S$",
+        "$V$",
+        "$-H$"
+      ],
+      "reponse": 0,
+      "explication": "$(\\partial G/\\partial T)_P=-S$. Le liquide devient stable à haute T car son entropie est la plus grande."
+    },
+    {
+      "id": "thermo-dia-011",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Pourquoi la solubilité du carbone dans l'austénite diffère-t-elle entre le diagramme **stable** (Fe–graphite) et **métastable** (Fe–Fe₃C) ?",
+      "choix": [
+        "Parce que la phase en équilibre avec γ n'est pas la même (graphite vs cémentite) : la tangente commune change",
+        "Parce que la température eutectique est la même",
+        "Parce que le carbone est un gaz",
+        "Elle ne diffère pas"
+      ],
+      "reponse": 0,
+      "explication": "La cémentite est moins stable que le graphite : la tangente commune γ–Fe₃C touche γ à une teneur plus élevée ⇒ la solubilité est **plus grande** dans le diagramme métastable."
+    },
+    {
+      "id": "thermo-dia-012",
+      "type": "vrai-faux",
+      "difficulte": 3,
+      "enonce": "Lorsqu'un équilibre graphite/liquide voit sa pente $dP/dT$ changer de signe, c'est que $\\Delta V$ (liquide − graphite) change de signe : le liquide, plus compressible, devient plus dense que le graphite à haute pression.",
+      "reponse": true,
+      "explication": "Clapeyron : $\\Delta S_{fus}>0$ toujours, donc le signe de la pente est celui de $\\Delta V$. Question 2015 sur le diagramme unaire du carbone."
+    }
+  ]
+}

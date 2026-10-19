@@ -1,0 +1,118 @@
+{
+  "chapitre": "Solutions régulières, lacune de miscibilité, spinodale",
+  "genre": "cours",
+  "questions": [
+    {
+      "id": "thermo-sol-001",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Énergie de Gibbs molaire de mélange d'une **solution régulière** :",
+      "choix": [
+        "$\\Delta G_m=\\Delta E\\,x(1-x)+RT[x\\ln x+(1-x)\\ln(1-x)]$",
+        "$\\Delta G_m=RT[x\\ln x+(1-x)\\ln(1-x)]$ seulement",
+        "$\\Delta G_m=\\Delta E\\,x(1-x)$ seulement",
+        "$\\Delta G_m=-RT\\ln x$"
+      ],
+      "reponse": 0,
+      "explication": "Terme enthalpique (interactions, $\\Delta E=N_Az\\Delta\\varepsilon$) + terme d'entropie de configuration idéale (mélange aléatoire)."
+    },
+    {
+      "id": "thermo-sol-002",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Le terme dépendant de $T$, $RT[x\\ln x+(1-x)\\ln(1-x)]$, provient de :",
+      "choix": [
+        "l'entropie de configuration (nombre de façons de répartir les atomes, formule de Boltzmann)",
+        "l'enthalpie d'interaction",
+        "la capacité calorifique",
+        "l'énergie de vibration"
+      ],
+      "reponse": 0,
+      "explication": "$S=k\\ln W$ avec $W=\\dfrac{N!}{N_A!N_B!}$ et Stirling ⇒ $\\Delta S_{conf}=-R[x\\ln x+(1-x)\\ln(1-x)]$. (Question des verres SiO₂–B₂O₃.)"
+    },
+    {
+      "id": "thermo-sol-003",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Un coefficient d'échange $\\Delta\\varepsilon>0$ ($\\Delta E>0$) traduit :",
+      "choix": [
+        "une tendance à la **démixtion** (liaisons A–A et B–B préférées)",
+        "une tendance à l'ordre (composés)",
+        "une solution idéale",
+        "une solution solide totale à toute T"
+      ],
+      "reponse": 0,
+      "explication": "$\\Delta\\varepsilon=\\varepsilon_{AB}-\\frac12(\\varepsilon_{AA}+\\varepsilon_{BB})$ ; > 0 : démixtion, lacune de miscibilité à basse T ; < 0 : ordre."
+    },
+    {
+      "id": "thermo-sol-004",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Pourquoi l'entropie de configuration réelle est-elle **plus faible** quand $\\Delta\\varepsilon<0$ que pour $\\Delta\\varepsilon=0$ ?",
+      "choix": [
+        "Les atomes s'ordonnent (paires A–B privilégiées) : moins d'arrangements possibles qu'un mélange aléatoire",
+        "Parce que le mélange devient gazeux",
+        "Parce que $\\Delta H$ devient positif",
+        "Ce n'est pas vrai"
+      ],
+      "reponse": 0,
+      "explication": "Le modèle régulier suppose un mélange aléatoire ; en réalité un $\\Delta\\varepsilon<0$ crée un ordre local qui réduit le nombre de configurations. (Question 2023.)"
+    },
+    {
+      "id": "thermo-sol-005",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Température critique de la lacune de miscibilité d'une solution régulière symétrique :",
+      "choix": [
+        "$T_c=\\dfrac{\\Delta E}{2R}$",
+        "$T_c=\\dfrac{\\Delta E}{R}$",
+        "$T_c=\\dfrac{2\\Delta E}{R}$",
+        "$T_c=\\dfrac{\\Delta E}{4R}$"
+      ],
+      "reponse": 0,
+      "explication": "Spinodale : $\\dfrac{d^2G}{dx^2}=-2\\Delta E+\\dfrac{RT}{x(1-x)}=0$ ; son sommet est en $x=1/2$ ⇒ $T_c=\\Delta E/(2R)$."
+    },
+    {
+      "id": "thermo-sol-006",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Lacune de **miscibilité** (binodale) vs lacune de **stabilité** (spinodale) :",
+      "choix": [
+        "binodale : tangente commune ; spinodale : $d^2G/dx^2=0$ (points d'inflexion), la spinodale est **à l'intérieur**",
+        "binodale : points d'inflexion ; spinodale : tangente commune",
+        "elles sont confondues",
+        "la spinodale est à l'extérieur de la binodale"
+      ],
+      "reponse": 0,
+      "explication": "Entre binodale et spinodale : métastable, décomposition par **germination-croissance**. Dans la spinodale ($d^2G/dx^2<0$) : instable, **décomposition spinodale** sans barrière."
+    },
+    {
+      "id": "thermo-sol-007",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Microstructure obtenue par **décomposition spinodale** :",
+      "choix": [
+        "deux phases interconnectées, très fines et régulières (modulation de composition)",
+        "des précipités sphériques isolés aux joints de grains",
+        "une structure eutectique lamellaire",
+        "un monocristal"
+      ],
+      "reponse": 0,
+      "explication": "Fluctuations de composition qui s'amplifient partout : structure périodique interconnectée (verres Vycor, Fe–Cr, Alnico…)."
+    },
+    {
+      "id": "thermo-sol-008",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Exemples d'alliages industriels issus d'une **décomposition spinodale** :",
+      "choix": [
+        "Fe–Cr–Co et Alnico (aimants), Cu–Ni–Sn, Cu–Ni–Fe",
+        "aciers au carbone ordinaires",
+        "Al pur",
+        "fontes grises"
+      ],
+      "reponse": 0,
+      "explication": "Question du test final 2015. La fine structure biphasée donne des propriétés magnétiques ou mécaniques particulières."
+    }
+  ]
+}

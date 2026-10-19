@@ -1,0 +1,151 @@
+{
+  "chapitre": "Exercices type DS : Ellingham",
+  "genre": "exercices",
+  "questions": [
+    {
+      "id": "thermo-ds-ell-001",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**Tests 2010 et 2015 — Oxyde de thallium.** Données : $\\Delta_fH^\\circ(\\mathrm{Tl_2O})=-180$ kJ/mol ; $S^\\circ$ : Tl₂O 125, Tl 65, O₂ 206 J/K/mol ; $\\Delta_{fus}H(\\mathrm{Tl})=4$ kJ/mol, $T_f=304$ °C. Pour l'oxydation du cuivre : $\\Delta_{r3}G^\\circ=-312+0{,}192\\,T$ (kJ/mol).",
+      "etapes": [
+        {
+          "type": "numerique",
+          "enonce": "Entropie de fusion du thallium ?",
+          "reponse": 6.932409,
+          "tolerance": 0.02,
+          "explication": "$\\Delta S_f=\\dfrac{4000}{577}$ — arrondie à **7** J/K/mol pour la suite.",
+          "unite": "J/K/mol"
+        },
+        {
+          "type": "qcm",
+          "difficulte": 1,
+          "enonce": "Équation d'Ellingham :",
+          "choix": [
+            "$\\mathrm{4Tl+O_2\\to2Tl_2O}$",
+            "$\\mathrm{2Tl+\\tfrac12O_2\\to Tl_2O}$",
+            "$\\mathrm{Tl+O_2\\to TlO_2}$",
+            "$\\mathrm{2Tl_2O\\to4Tl+O_2}$"
+          ],
+          "reponse": 0,
+          "explication": "Toujours **1 mol de O₂**."
+        },
+        {
+          "type": "numerique",
+          "enonce": "$\\Delta_rH^\\circ$ pour Tl **solide** (T < 577 K) ?",
+          "reponse": -360,
+          "tolerance": 0.01,
+          "explication": "$2\\times(-180)-0$",
+          "unite": "kJ/mol"
+        },
+        {
+          "type": "numerique",
+          "enonce": "$\\Delta_rS^\\circ$ pour Tl solide ?",
+          "reponse": -216,
+          "tolerance": 0.01,
+          "explication": "$2\\times125-4\\times65-206$",
+          "unite": "J/K/mol"
+        },
+        {
+          "type": "numerique",
+          "enonce": "$\\Delta_rS^\\circ$ pour Tl **liquide** (T > 577 K) ?",
+          "reponse": -244,
+          "tolerance": 0.01,
+          "explication": "$-216-4\\times7$ : le réactif fond, $\\Delta_rS^\\circ$ devient plus négatif. ($\\Delta_rH^\\circ=-360-4\\times4=-376$ kJ/mol.)",
+          "unite": "J/K/mol"
+        },
+        {
+          "type": "numerique",
+          "enonce": "$P_{O_2}$ d'équilibre à 1500 K ?",
+          "reponse": 0.448494,
+          "tolerance": 0.03,
+          "explication": "$P_{O_2}=\\exp\\left(\\dfrac{-376\\,000+244\\times1500}{8{,}314\\times1500}\\right)$",
+          "unite": "atm"
+        },
+        {
+          "type": "qcm",
+          "difficulte": 1,
+          "enonce": "Sous $P_{O_2}=20\\,000$ Pa (≈ 0,2 atm), forme stable à 1500 K et à 300 K ?",
+          "choix": [
+            "Tl (liquide) à 1500 K, Tl₂O à 300 K",
+            "Tl₂O aux deux températures",
+            "Tl aux deux températures",
+            "Tl₂O à 1500 K, Tl à 300 K"
+          ],
+          "reponse": 0,
+          "explication": "À 1500 K : $P_{O_2}=0{,}2<P_{eq}=0.45$ atm ⇒ l'oxyde se décompose, **métal** stable. À 300 K : $P_{eq}\\approx4e-52$ atm ≪ 0,2 ⇒ **oxyde** stable. (Piège : beaucoup de copies inversent le critère.)"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Réduction $\\mathrm{2Tl_2O+2Cu\\to4Tl+2CuO}$ : à partir de quelle température est-elle possible ?",
+          "reponse": 1230.769231,
+          "tolerance": 0.01,
+          "explication": "$\\Delta G^\\circ=\\Delta_{r3}G^\\circ-\\Delta_{Tl}G^\\circ=(-312\\,000+192T)-(-376\\,000+244T)=64\\,000-52T<0$ ⇒ $T>1231$ K (domaine 1231–1500 K).",
+          "unite": "K"
+        }
+      ],
+      "source": "Cours/2A FIGIM/Thermodynamique - JF.Pierson/Annales/Test 2/Exam Thermo 2015.pdf"
+    },
+    {
+      "id": "thermo-ds-ell-002",
+      "type": "probleme",
+      "difficulte": 3,
+      "enonce": "**Test 2011, Ex. 1 — Réduction de l'alumine par le carbone.** Données (constantes de 250 à 2500 K) : $S^\\circ$ (J/K/mol) Al 28, Al₂O₃ 51, C 6, O₂ 205, CO 197 ; $\\Delta_fH^\\circ$ (kJ/mol) Al₂O₃ −1674, CO −110. $T_f(\\mathrm{Al})=660$ °C, $\\Delta_{fus}H(\\mathrm{Al})=10{,}9$ kJ/mol.",
+      "etapes": [
+        {
+          "type": "qcm",
+          "difficulte": 1,
+          "enonce": "Réaction de référence :",
+          "choix": [
+            "$\\mathrm{\\tfrac43Al+O_2\\to\\tfrac23Al_2O_3}$",
+            "$\\mathrm{2Al+\\tfrac32O_2\\to Al_2O_3}$",
+            "$\\mathrm{4Al+3O_2\\to2Al_2O_3}$",
+            "$\\mathrm{Al+O_2\\to AlO_2}$"
+          ],
+          "reponse": 0,
+          "explication": "1 mol de O₂."
+        },
+        {
+          "type": "numerique",
+          "enonce": "$\\Delta_rH^\\circ_1$ (Al solide) ?",
+          "reponse": -1116.0,
+          "tolerance": 0.01,
+          "explication": "$\\frac23\\times(-1674)$",
+          "unite": "kJ/mol"
+        },
+        {
+          "type": "numerique",
+          "enonce": "$\\Delta_rS^\\circ_1$ (Al solide) ?",
+          "reponse": -208.333333,
+          "tolerance": 0.01,
+          "explication": "$\\frac23\\times51-\\frac43\\times28-205$",
+          "unite": "J/K/mol"
+        },
+        {
+          "type": "numerique",
+          "enonce": "$\\Delta_rS^\\circ_1$ au-dessus de 933 K (Al liquide) ?",
+          "reponse": -223.907821,
+          "tolerance": 0.01,
+          "explication": "$-208{,}3-\\frac43\\times\\frac{10\\,900}{933}$",
+          "unite": "J/K/mol"
+        },
+        {
+          "type": "numerique",
+          "enonce": "$\\Delta_rS^\\circ_2$ pour $\\mathrm{2C+O_2\\to2CO}$ ?",
+          "reponse": 177,
+          "tolerance": 0.01,
+          "explication": "$2\\times197-2\\times6-205$",
+          "unite": "J/K/mol"
+        },
+        {
+          "type": "numerique",
+          "enonce": "Température à partir de laquelle C réduit Al₂O₃ ?",
+          "reponse": 2271.178773,
+          "tolerance": 0.01,
+          "explication": "$-220\\,000-177T=-1\\,130\\,533+223{,}9T$ ⇒ $T\\approx2270$ K : très haute température, d'où l'électrolyse (Hall-Héroult) en pratique.",
+          "unite": "K"
+        }
+      ],
+      "source": "Cours/2A FIGIM/Thermodynamique - JF.Pierson/Annales/Test 1/Exam Thermo 2011 n°1.pdf"
+    }
+  ]
+}

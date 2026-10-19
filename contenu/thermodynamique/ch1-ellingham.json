@@ -1,0 +1,210 @@
+{
+  "chapitre": "Diagrammes d'Ellingham",
+  "genre": "cours",
+  "questions": [
+    {
+      "id": "thermo-ell-001",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Les **hypothèses d'Ellingham** consistent à :",
+      "choix": [
+        "supposer $\\Delta_rH^\\circ$ et $\\Delta_rS^\\circ$ indépendants de $T$ (hors changement d'état), réactions écrites pour **1 mol de O₂**",
+        "supposer $\\Delta_rG^\\circ$ indépendant de $T$",
+        "supposer tous les constituants gazeux",
+        "négliger l'entropie des solides"
+      ],
+      "reponse": 0,
+      "explication": "On obtient alors des droites $\\Delta_rG^\\circ(T)=\\Delta_rH^\\circ-T\\Delta_rS^\\circ$, comparables entre elles car toutes rapportées à une mole de O₂."
+    },
+    {
+      "id": "thermo-ell-002",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Dans un diagramme d'Ellingham, la **pente** d'une droite vaut :",
+      "choix": [
+        "$-\\Delta_rS^\\circ$",
+        "$\\Delta_rH^\\circ$",
+        "$\\Delta_rS^\\circ$",
+        "$-\\Delta_rH^\\circ/T$"
+      ],
+      "reponse": 0,
+      "explication": "$\\Delta_rG^\\circ=\\Delta_rH^\\circ-T\\Delta_rS^\\circ$ : pente $-\\Delta_rS^\\circ$, ordonnée à l'origine $\\Delta_rH^\\circ$."
+    },
+    {
+      "id": "thermo-ell-003",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Pourquoi la plupart des droites métal/oxyde ont-elles une **pente positive** ?",
+      "choix": [
+        "On consomme un gaz (O₂) pour former un solide : $\\Delta_rS^\\circ<0$",
+        "Parce que les réactions sont endothermiques",
+        "Parce que l'oxyde fond avant le métal",
+        "Parce que $\\Delta_rH^\\circ>0$"
+      ],
+      "reponse": 0,
+      "explication": "$\\Delta n_{gaz}=-1$ ⇒ $\\Delta_rS^\\circ\\approx-200\\ \\mathrm{J\\,K^{-1}mol^{-1}}$ ⇒ pente $\\approx+0{,}2$ kJ/K."
+    },
+    {
+      "id": "thermo-ell-004",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "La droite $2\\mathrm{C}+\\mathrm{O_2}\\to2\\mathrm{CO}$ a une pente :",
+      "choix": [
+        "négative, car $\\Delta n_{gaz}=+1$ ($\\Delta_rS^\\circ>0$)",
+        "nulle",
+        "positive comme les métaux",
+        "verticale"
+      ],
+      "reponse": 0,
+      "explication": "1 mol de gaz donne 2 mol de gaz : $\\Delta_rS^\\circ\\approx+177$ J/K/mol, la droite descend. C'est pourquoi **le carbone réduit presque tous les oxydes à haute température**. ($\\mathrm{C+O_2\\to CO_2}$ : pente quasi nulle.)"
+    },
+    {
+      "id": "thermo-ell-005",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Un métal M peut réduire l'oxyde d'un métal M' (à une température donnée) si :",
+      "choix": [
+        "la droite de M est **en dessous** de celle de M'",
+        "la droite de M est au-dessus de celle de M'",
+        "les deux droites sont parallèles",
+        "la droite de M' coupe l'axe $\\Delta G=0$"
+      ],
+      "reponse": 0,
+      "explication": "Le couple le plus bas forme l'oxyde le plus stable : son métal réduit les oxydes des couples situés au-dessus ($\\Delta_rG^\\circ$ de la réaction = différence des deux droites < 0)."
+    },
+    {
+      "id": "thermo-ell-006",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Que se passe-t-il quand on chauffe de l'**oxyde d'argent** Ag₂O ?",
+      "choix": [
+        "Il se décompose seul en Ag + O₂ (sa droite passe au-dessus de $\\Delta G=0$ vers 460 K)",
+        "Il fond sans se décomposer",
+        "Il s'oxyde en AgO₂",
+        "Rien, il est stable à toute température"
+      ],
+      "reponse": 0,
+      "explication": "Droite Ag₂O/Ag très haute : $\\Delta_rG^\\circ>0$ dès quelques centaines de °C ⇒ décomposition thermique simple. Même chose pour HgO ; Au₂O₃ n'est stable à aucune température."
+    },
+    {
+      "id": "thermo-ell-007",
+      "type": "vrai-faux",
+      "difficulte": 1,
+      "enonce": "L'or est dit **métal noble** car sa droite Au₂O₃/Au est au-dessus de $\\Delta_rG^\\circ=0$ sur tout le domaine : l'oxyde n'est jamais stable sous 1 bar de O₂.",
+      "reponse": true,
+      "explication": "Sous $P_{O_2}\\le1$ bar, l'or ne s'oxyde pas : sa forme stable est le métal."
+    },
+    {
+      "id": "thermo-ell-008",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Peut-on fondre de l'**aluminium dans un creuset de silice** (SiO₂) ?",
+      "choix": [
+        "Non : Al₂O₃/Al est sous SiO₂/Si, l'aluminium réduit la silice",
+        "Oui, la silice fond bien plus haut",
+        "Oui, car Al est plus noble que Si",
+        "Non, car Al s'évapore"
+      ],
+      "reponse": 0,
+      "explication": "Ce n'est pas une question de température de fusion mais de **réaction chimique** : $\\mathrm{4/3\\,Al+SiO_2\\to 2/3\\,Al_2O_3+Si}$ a $\\Delta_rG^\\circ<0$."
+    },
+    {
+      "id": "thermo-ell-009",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Peut-on fondre de l'**oxyde de titane TiO₂ dans un creuset de magnésie** (MgO) ?",
+      "choix": [
+        "Oui : MgO/Mg est sous TiO₂/Ti, MgO n'est pas réduit (et Ti n'est pas libre pour réagir)",
+        "Non : MgO est réduit par TiO₂",
+        "Non : MgO fond avant TiO₂",
+        "Impossible à dire avec Ellingham"
+      ],
+      "reponse": 0,
+      "explication": "MgO est l'un des oxydes les plus stables : il ne réagit pas avec TiO₂. (Vérifier aussi $T_f$(MgO) ≈ 2850 °C > $T_f$(TiO₂) ≈ 1840 °C.)"
+    },
+    {
+      "id": "thermo-ell-010",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "L'oxydation à l'air d'un alliage **Fe–Al** forme préférentiellement :",
+      "choix": [
+        "de l'alumine Al₂O₃ (oxydation sélective de l'élément le plus avide de O₂)",
+        "de l'oxyde de fer FeO",
+        "les deux oxydes à parts égales",
+        "aucun oxyde"
+      ],
+      "reponse": 0,
+      "explication": "Al₂O₃/Al est très en dessous des oxydes de fer : c'est l'aluminium qui s'oxyde (couche protectrice, principe des aciers alumino-formeurs)."
+    },
+    {
+      "id": "thermo-ell-011",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Une pièce de fer à 1000 °C sous $P_{O_2}=10^{-5}$ bar : quel oxyde se forme ?",
+      "choix": [
+        "FeO (wüstite), celui en équilibre direct avec Fe",
+        "Fe₂O₃ seulement",
+        "Fe₃O₄ seulement",
+        "Aucun"
+      ],
+      "reponse": 0,
+      "explication": "$RT\\ln P_{O_2}=8{,}314\\times1273\\times\\ln10^{-5}\\approx-122$ kJ, au-dessus de FeO/Fe ⇒ le fer s'oxyde. Au contact du métal, c'est **FeO** qui est stable (au-dessus de 570 °C) ; Fe₃O₄ puis Fe₂O₃ se forment vers l'extérieur de la calamine."
+    },
+    {
+      "id": "thermo-ell-012",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Sur une droite d'Ellingham, un **point anguleux** où la pente augmente brusquement correspond à :",
+      "choix": [
+        "la fusion ou l'ébullition du **métal** (réactif) : $\\Delta_rS^\\circ$ devient plus négatif",
+        "la fusion de l'oxyde",
+        "un changement de signe de $\\Delta_rH^\\circ$",
+        "la température d'inversion"
+      ],
+      "reponse": 0,
+      "explication": "Si le **réactif** change d'état, son entropie augmente et $\\Delta_rS^\\circ$ diminue : pente plus forte. Si c'est le **produit** (oxyde) qui fond, la pente diminue."
+    },
+    {
+      "id": "thermo-ell-013",
+      "type": "qcm",
+      "difficulte": 2,
+      "enonce": "Pour une couche d'oxyde formée sous une pression $P_{O_2}$ imposée, l'oxyde est stable si :",
+      "choix": [
+        "$RT\\ln P_{O_2} > \\Delta_rG^\\circ(T)$ (point au-dessus de la droite)",
+        "$RT\\ln P_{O_2} < \\Delta_rG^\\circ(T)$",
+        "$P_{O_2}<P_{O_2,eq}$",
+        "$\\Delta_rG^\\circ>0$"
+      ],
+      "reponse": 0,
+      "explication": "$\\Delta_rG=\\Delta_rG^\\circ-RT\\ln P_{O_2}$ < 0 ⇔ $P_{O_2}>P_{O_2,eq}=\\exp(\\Delta_rG^\\circ/RT)$ : au-dessus de la droite, l'oxyde ; en dessous, le métal."
+    },
+    {
+      "id": "thermo-ell-014",
+      "type": "qcm",
+      "difficulte": 1,
+      "enonce": "Le diagramme d'Ellingham montre que Al est très avide d'oxygène. Pourquoi une feuille d'aluminium ne se corrode-t-elle pas à l'air ?",
+      "choix": [
+        "Il se forme une couche d'alumine compacte et adhérente qui bloque la cinétique (passivation)",
+        "Parce que $\\Delta_rG^\\circ>0$ à 25 °C",
+        "Parce que l'air ne contient pas assez de O₂",
+        "Parce que Al est noble"
+      ],
+      "reponse": 0,
+      "explication": "Ellingham dit ce qui est **thermodynamiquement** possible, pas la vitesse. La couche d'Al₂O₃ (quelques nm) protège le métal : c'est un frein **cinétique**."
+    },
+    {
+      "id": "thermo-ell-015",
+      "type": "qcm",
+      "difficulte": 3,
+      "enonce": "Comment maintenir $P_{O_2}=10^{-10}$ atm dans un four à 1250 °C ?",
+      "choix": [
+        "Avec un mélange tampon CO/CO₂ (ou H₂/H₂O) de rapport fixé, lu sur l'échelle du diagramme",
+        "En faisant le vide",
+        "Avec de l'argon pur",
+        "En ajoutant du O₂ pur"
+      ],
+      "reponse": 0,
+      "explication": "Le rapport $P_{CO}/P_{CO_2}$ (ou $P_{H_2}/P_{H_2O}$) fixe $P_{O_2}$ à l'équilibre ; un couple métal/oxyde dont la $P_{O_2,eq}$ vaut 10⁻¹⁰ atm marche aussi."
+    }
+  ]
+}
