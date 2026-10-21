@@ -1,0 +1,336 @@
+{
+ "chapitre": "Bilan fonctionnel, FRNG, BFR, TN",
+ "genre": "cours",
+ "questions": [
+  {
+   "id": "af-c4-01",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Le bilan fonctionnel est établi :",
+   "choix": [
+    "En valeurs brutes, à partir du bilan avant répartition",
+    "En valeurs nettes, après répartition",
+    "En valeurs de marché",
+    "À partir du compte de résultat"
+   ],
+   "reponse": 0,
+   "explication": "Les amortissements et dépréciations sont remis en ressources stables.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c4-02",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Dans le bilan fonctionnel, les amortissements et dépréciations sont classés :",
+   "choix": [
+    "En ressources stables",
+    "En emplois stables",
+    "En passif circulant",
+    "Ils disparaissent"
+   ],
+   "reponse": 0,
+   "explication": "D'où un total du bilan fonctionnel supérieur au total comptable.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c4-03",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Les concours bancaires courants sont classés en :",
+   "choix": [
+    "Trésorerie passive",
+    "Ressources stables",
+    "Passif circulant d'exploitation",
+    "Emplois stables"
+   ],
+   "reponse": 0,
+   "explication": "TN = trésorerie active − trésorerie passive.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c4-04",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Les dettes sur immobilisations sont classées en :",
+   "choix": [
+    "Passif circulant hors exploitation",
+    "Passif circulant d'exploitation",
+    "Ressources stables",
+    "Trésorerie passive"
+   ],
+   "reponse": 0,
+   "explication": "Comme l'IS à payer : BFR hors exploitation.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c4-05",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "FRNG (par le haut) =",
+   "choix": [
+    "Ressources stables − emplois stables",
+    "Actif circulant − dettes fournisseurs",
+    "Trésorerie active − trésorerie passive",
+    "Capitaux propres − immobilisations nettes"
+   ],
+   "reponse": 0,
+   "explication": "Par le bas : FRNG = BFR + TN.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c4-06",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "BFR =",
+   "choix": [
+    "Actif circulant hors trésorerie − passif circulant hors trésorerie",
+    "Stocks − fournisseurs",
+    "Ressources stables − emplois stables",
+    "Disponibilités − découverts"
+   ],
+   "reponse": 0,
+   "explication": "BFRE (exploitation) + BFRHE (hors exploitation).",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c4-07",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Relation fondamentale :",
+   "choix": [
+    "TN = FRNG − BFR",
+    "TN = BFR − FRNG",
+    "FRNG = TN − BFR",
+    "BFR = FRNG + TN"
+   ],
+   "reponse": 0,
+   "explication": "À vérifier systématiquement en DS.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c4-08",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Un FRNG positif signifie :",
+   "choix": [
+    "Les emplois stables sont entièrement financés par des ressources stables (équilibre minimum)",
+    "La trésorerie est forcément positive",
+    "Le BFR est négatif",
+    "L'entreprise est rentable"
+   ],
+   "reponse": 0,
+   "explication": "C'est le « matelas de sécurité ».",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c4-09",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "BFR = 168 000 ; FRNG = 220 000. La trésorerie nette vaut :",
+   "choix": [
+    "+52 000",
+    "−52 000",
+    "388 000",
+    "1,31"
+   ],
+   "reponse": 0,
+   "explication": "TN = FRNG − BFR (cas NOÉ, année N).",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c4-10",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Un BFR négatif est typique :",
+   "choix": [
+    "De la grande distribution (clients au comptant, fournisseurs à crédit)",
+    "De l'industrie lourde",
+    "D'une entreprise de BTP sans acomptes",
+    "D'une entreprise très endettée"
+   ],
+   "reponse": 0,
+   "explication": "Aussi abonnements, assurances, activités avec acomptes clients.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c4-11",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "BFR > 0, FRNG > BFR, TN > 0 (faible) :",
+   "choix": [
+    "Équilibre sain, idéal pour une entreprise industrielle",
+    "Équilibre dangereux",
+    "Crise de gestion",
+    "Insuffisance de fonds de roulement"
+   ],
+   "reponse": 0,
+   "explication": "Situation 1.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c4-12",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "BFR > 0, FRNG très inférieur au BFR, TN fortement négative :",
+   "choix": [
+    "Équilibre dangereux : risque de cessation de paiement si la banque refuse les découverts",
+    "Équilibre sain",
+    "Situation normale de la grande distribution",
+    "Excédent de trésorerie à placer"
+   ],
+   "reponse": 0,
+   "explication": "Solutions : ↑ FR (capital, réserves, emprunt LT) et ↓ BFR (stocks, délais clients/fournisseurs).",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c4-13",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "FRNG ≫ BFR, grosse TN positive :",
+   "choix": [
+    "Sain, mais il faut placer l'excédent (VMP, titres, investissements)",
+    "Dangereux",
+    "Crise de gestion",
+    "Insuffisance de fonds de roulement"
+   ],
+   "reponse": 0,
+   "explication": "« Argent qui dort ».",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c4-14",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Crise de gestion :",
+   "choix": [
+    "Le BFR croît plus vite que le FRNG et le CA → trésorerie négative ; il faut gérer stocks et délais",
+    "Le FRNG se détériore brutalement par un investissement financé sur trésorerie",
+    "Le BFR devient négatif",
+    "La CAF devient négative"
+   ],
+   "reponse": 0,
+   "explication": "L'erreur financière, elle, est une détérioration du FRNG (restructurer par des crédits spécifiques).",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c4-15",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Durée du crédit clients =",
+   "choix": [
+    "Créances clients TTC / CA TTC × 360",
+    "Créances clients HT / CA HT × 365",
+    "Clients / achats × 360",
+    "CA / clients"
+   ],
+   "reponse": 0,
+   "explication": "TTC sur TTC ; année de 360 jours.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c4-16",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Durée du crédit fournisseurs =",
+   "choix": [
+    "Dettes fournisseurs TTC / achats TTC × 360",
+    "Fournisseurs / CA × 360",
+    "Fournisseurs HT / achats HT × 365",
+    "Achats / fournisseurs"
+   ],
+   "reponse": 0,
+   "explication": "Plus le délai fournisseurs est long, plus le BFR diminue.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c4-17",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Durée moyenne de stockage des marchandises =",
+   "choix": [
+    "Stock moyen / coût d'achat des marchandises vendues × 360",
+    "Stock final / CA × 360",
+    "Coût d'achat / stock moyen",
+    "Stock moyen / ventes TTC × 360"
+   ],
+   "reponse": 0,
+   "explication": "Stock moyen = (SI + SF)/2 ; = 360 / coefficient de rotation.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c4-18",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Plus la durée du crédit clients est longue, plus la trésorerie de l'entreprise :",
+   "choix": [
+    "Est impactée négativement",
+    "Bénéficie d'une souplesse",
+    "Est inchangée",
+    "Augmente"
+   ],
+   "reponse": 0,
+   "explication": "QCM du test 2011 : le BFR augmente, la TN baisse.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c4-19",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "BFR en jours de CA =",
+   "choix": [
+    "BFR / CA HT × 360",
+    "BFR × CA / 360",
+    "CA / BFR",
+    "BFR / CA TTC × 365"
+   ],
+   "reponse": 0,
+   "explication": "Permet de comparer d'une année à l'autre malgré la croissance.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c4-20",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "BFR normatif : pour chaque poste, jours de CA =",
+   "choix": [
+    "Temps d'écoulement × coefficient de structure (flux de référence / CA HT)",
+    "Poste / CA × 360",
+    "Temps d'écoulement / coefficient",
+    "Poste × 360"
+   ],
+   "reponse": 0,
+   "explication": "Emplois en +, ressources en − ; BFRE prévisionnel = total × CA prévu / 360.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c4-21",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Les réserves constituent :",
+   "choix": [
+    "Un élément des ressources stables",
+    "Une créance sur les actionnaires",
+    "De la trésorerie",
+    "Un passif circulant"
+   ],
+   "reponse": 0,
+   "explication": "QCM du test 2011.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c4-22",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Autonomie financière (CP / dettes financières) < 1 :",
+   "choix": [
+    "Les banques financent plus que les associés : la capacité d'emprunt est limitée",
+    "La liquidité est insuffisante",
+    "Le FRNG est négatif",
+    "L'entreprise est en perte"
+   ],
+   "reponse": 0,
+   "explication": "VELORAMA N : 494 / 500 = 0,99.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  }
+ ]
+}

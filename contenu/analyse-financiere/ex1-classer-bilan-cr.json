@@ -1,0 +1,342 @@
+{
+ "chapitre": "Classer : bilan ou CR, quel bloc (AI, AC, CP, D, CE…)",
+ "genre": "exercices",
+ "questions": [
+  {
+   "id": "af-x1-01",
+   "type": "classer",
+   "difficulte": 2,
+   "enonce": "Classez chaque information avec les codes du cours : **Bilan** AI (actif immobilisé), AC (actif circulant), CP (capitaux propres), D (dettes) ; **CR** CE/CF/CEx (charges d'exploitation, financières, exceptionnelles), PE/PF/PEx (produits).",
+   "categories": [
+    "AI",
+    "AC",
+    "CP",
+    "D",
+    "CE",
+    "CF",
+    "CEx",
+    "PE",
+    "PF",
+    "PEx"
+   ],
+   "elements": [
+    {
+     "texte": "Capital social",
+     "reponse": 2
+    },
+    {
+     "texte": "Dettes fournisseurs de biens et services",
+     "reponse": 3
+    },
+    {
+     "texte": "Marque",
+     "reponse": 0
+    },
+    {
+     "texte": "Dettes envers le personnel",
+     "reponse": 3
+    },
+    {
+     "texte": "Escomptes accordés aux clients",
+     "reponse": 5,
+     "explication": "Compte 665 : charge financière."
+    },
+    {
+     "texte": "Constructions",
+     "reponse": 0
+    },
+    {
+     "texte": "Emprunt auprès des établissements de crédit",
+     "reponse": 3,
+     "explication": "Compte 164 (classe 1) mais c'est une **dette**."
+    },
+    {
+     "texte": "Matériel informatique",
+     "reponse": 0
+    }
+   ],
+   "explication": "Méthode des cas BELLESSENCE et VITAMINES. Classes 1-5 au bilan, 6-7 au CR ; PCG 2025 pour les cessions.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE (cas BELLESSENCE, VITAMINES)"
+  },
+  {
+   "id": "af-x1-02",
+   "type": "classer",
+   "difficulte": 2,
+   "enonce": "Classez chaque information avec les codes du cours : **Bilan** AI (actif immobilisé), AC (actif circulant), CP (capitaux propres), D (dettes) ; **CR** CE/CF/CEx (charges d'exploitation, financières, exceptionnelles), PE/PF/PEx (produits).",
+   "categories": [
+    "AI",
+    "AC",
+    "CP",
+    "D",
+    "CE",
+    "CF",
+    "CEx",
+    "PE",
+    "PF",
+    "PEx"
+   ],
+   "elements": [
+    {
+     "texte": "Charges sociales",
+     "reponse": 4
+    },
+    {
+     "texte": "Subventions d'exploitation reçues",
+     "reponse": 7
+    },
+    {
+     "texte": "Matériel de transport",
+     "reponse": 0
+    },
+    {
+     "texte": "Achats de matières premières",
+     "reponse": 4
+    },
+    {
+     "texte": "Indemnité reçue suite à un sinistre majeur",
+     "reponse": 9,
+     "explication": "Événement majeur et inhabituel : reste en exceptionnel."
+    },
+    {
+     "texte": "Prestations de services",
+     "reponse": 7
+    },
+    {
+     "texte": "Produits des cessions d'immobilisations corporelles (757)",
+     "reponse": 7,
+     "explication": "PCG 2025 : exploitation."
+    },
+    {
+     "texte": "Impôts et taxes",
+     "reponse": 4
+    }
+   ],
+   "explication": "Méthode des cas BELLESSENCE et VITAMINES. Classes 1-5 au bilan, 6-7 au CR ; PCG 2025 pour les cessions.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE (cas BELLESSENCE, VITAMINES)"
+  },
+  {
+   "id": "af-x1-03",
+   "type": "classer",
+   "difficulte": 2,
+   "enonce": "Classez chaque information avec les codes du cours : **Bilan** AI (actif immobilisé), AC (actif circulant), CP (capitaux propres), D (dettes) ; **CR** CE/CF/CEx (charges d'exploitation, financières, exceptionnelles), PE/PF/PEx (produits).",
+   "categories": [
+    "AI",
+    "AC",
+    "CP",
+    "D",
+    "CE",
+    "CF",
+    "CEx",
+    "PE",
+    "PF",
+    "PEx"
+   ],
+   "elements": [
+    {
+     "texte": "Ventes de marchandises",
+     "reponse": 7
+    },
+    {
+     "texte": "Dettes fiscales",
+     "reponse": 3
+    },
+    {
+     "texte": "Brevet",
+     "reponse": 0,
+     "explication": "Immobilisation incorporelle."
+    },
+    {
+     "texte": "Amendes et pénalités fiscales",
+     "reponse": 6,
+     "explication": "Classées en exceptionnel dans le corrigé VITAMINES."
+    },
+    {
+     "texte": "Dettes fournisseurs d'immobilisations",
+     "reponse": 3
+    },
+    {
+     "texte": "Matériel de manutention",
+     "reponse": 0
+    },
+    {
+     "texte": "Services extérieurs",
+     "reponse": 4
+    },
+    {
+     "texte": "Résultat de l'exercice (bénéfice)",
+     "reponse": 2
+    }
+   ],
+   "explication": "Méthode des cas BELLESSENCE et VITAMINES. Classes 1-5 au bilan, 6-7 au CR ; PCG 2025 pour les cessions.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE (cas BELLESSENCE, VITAMINES)"
+  },
+  {
+   "id": "af-x1-04",
+   "type": "classer",
+   "difficulte": 2,
+   "enonce": "Classez chaque information avec les codes du cours : **Bilan** AI (actif immobilisé), AC (actif circulant), CP (capitaux propres), D (dettes) ; **CR** CE/CF/CEx (charges d'exploitation, financières, exceptionnelles), PE/PF/PEx (produits).",
+   "categories": [
+    "AI",
+    "AC",
+    "CP",
+    "D",
+    "CE",
+    "CF",
+    "CEx",
+    "PE",
+    "PF",
+    "PEx"
+   ],
+   "elements": [
+    {
+     "texte": "Salaires",
+     "reponse": 4
+    },
+    {
+     "texte": "Intérêts reçus (placements)",
+     "reponse": 8
+    },
+    {
+     "texte": "Variation de stock de matières premières",
+     "reponse": 4,
+     "explication": "Variation SI − SF des achats : charge d'exploitation (même négative)."
+    },
+    {
+     "texte": "Production stockée",
+     "reponse": 7,
+     "explication": "Variation de stock de PF : produit d'exploitation."
+    },
+    {
+     "texte": "Caisse",
+     "reponse": 1
+    },
+    {
+     "texte": "Report à nouveau",
+     "reponse": 2
+    },
+    {
+     "texte": "Concours bancaires courants (découvert)",
+     "reponse": 3,
+     "explication": "Au passif ; ne se compense pas avec une banque positive."
+    },
+    {
+     "texte": "Créances clients",
+     "reponse": 1
+    }
+   ],
+   "explication": "Méthode des cas BELLESSENCE et VITAMINES. Classes 1-5 au bilan, 6-7 au CR ; PCG 2025 pour les cessions.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE (cas BELLESSENCE, VITAMINES)"
+  },
+  {
+   "id": "af-x1-05",
+   "type": "classer",
+   "difficulte": 2,
+   "enonce": "Classez chaque information avec les codes du cours : **Bilan** AI (actif immobilisé), AC (actif circulant), CP (capitaux propres), D (dettes) ; **CR** CE/CF/CEx (charges d'exploitation, financières, exceptionnelles), PE/PF/PEx (produits).",
+   "categories": [
+    "AI",
+    "AC",
+    "CP",
+    "D",
+    "CE",
+    "CF",
+    "CEx",
+    "PE",
+    "PF",
+    "PEx"
+   ],
+   "elements": [
+    {
+     "texte": "Autres achats et charges externes",
+     "reponse": 4
+    },
+    {
+     "texte": "Mobilier",
+     "reponse": 0
+    },
+    {
+     "texte": "Production vendue (ventes de produits finis)",
+     "reponse": 7
+    },
+    {
+     "texte": "Produits des cessions de titres de participation (767)",
+     "reponse": 8,
+     "explication": "PCG 2025 : immobilisation **financière** → financier."
+    },
+    {
+     "texte": "Terrain",
+     "reponse": 0
+    },
+    {
+     "texte": "Réserves",
+     "reponse": 2
+    },
+    {
+     "texte": "Fonds de commerce",
+     "reponse": 0
+    },
+    {
+     "texte": "Stock de marchandises (31.12)",
+     "reponse": 1
+    }
+   ],
+   "explication": "Méthode des cas BELLESSENCE et VITAMINES. Classes 1-5 au bilan, 6-7 au CR ; PCG 2025 pour les cessions.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE (cas BELLESSENCE, VITAMINES)"
+  },
+  {
+   "id": "af-x1-06",
+   "type": "classer",
+   "difficulte": 2,
+   "enonce": "Classez chaque information avec les codes du cours : **Bilan** AI (actif immobilisé), AC (actif circulant), CP (capitaux propres), D (dettes) ; **CR** CE/CF/CEx (charges d'exploitation, financières, exceptionnelles), PE/PF/PEx (produits).",
+   "categories": [
+    "AI",
+    "AC",
+    "CP",
+    "D",
+    "CE",
+    "CF",
+    "CEx",
+    "PE",
+    "PF",
+    "PEx"
+   ],
+   "elements": [
+    {
+     "texte": "Stock de produits finis (31.12)",
+     "reponse": 1,
+     "explication": "Le stock final est au bilan ; seule la variation va au CR."
+    },
+    {
+     "texte": "Créances sur l'État",
+     "reponse": 1
+    },
+    {
+     "texte": "Dotations aux amortissements sur matériels",
+     "reponse": 4
+    },
+    {
+     "texte": "Valeurs comptables des immobilisations corporelles cédées (657)",
+     "reponse": 4,
+     "explication": "PCG 2025 : exploitation (plus en exceptionnel)."
+    },
+    {
+     "texte": "Immobilisations financières (titres de participation)",
+     "reponse": 0
+    },
+    {
+     "texte": "Banque (solde débiteur)",
+     "reponse": 1
+    },
+    {
+     "texte": "Achats de marchandises",
+     "reponse": 4
+    },
+    {
+     "texte": "Intérêts versés sur l'emprunt",
+     "reponse": 5
+    }
+   ],
+   "explication": "Méthode des cas BELLESSENCE et VITAMINES. Classes 1-5 au bilan, 6-7 au CR ; PCG 2025 pour les cessions.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE (cas BELLESSENCE, VITAMINES)"
+  }
+ ]
+}

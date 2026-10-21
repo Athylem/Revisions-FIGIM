@@ -1,0 +1,160 @@
+{
+ "chapitre": "Classer : postes du bilan fonctionnel",
+ "genre": "exercices",
+ "questions": [
+  {
+   "id": "af-x3-01",
+   "type": "classer",
+   "difficulte": 2,
+   "enonce": "Où se place chaque poste dans le **bilan fonctionnel** ?",
+   "categories": [
+    "Emplois stables",
+    "Ressources stables",
+    "Actif circ. exploitation",
+    "Actif circ. hors expl.",
+    "Passif circ. exploitation",
+    "Passif circ. hors expl.",
+    "Trésorerie active",
+    "Trésorerie passive"
+   ],
+   "elements": [
+    {
+     "texte": "Disponibilités (banque, caisse)",
+     "reponse": 6
+    },
+    {
+     "texte": "Créances diverses (hors exploitation)",
+     "reponse": 3
+    },
+    {
+     "texte": "Dettes fiscales et sociales",
+     "reponse": 4
+    },
+    {
+     "texte": "Immobilisations financières (valeur brute)",
+     "reponse": 0
+    },
+    {
+     "texte": "Charges constatées d'avance",
+     "reponse": 2
+    },
+    {
+     "texte": "Impôt sur les bénéfices à payer",
+     "reponse": 5,
+     "explication": "Hors exploitation."
+    },
+    {
+     "texte": "Fournisseurs",
+     "reponse": 4
+    },
+    {
+     "texte": "Dettes sur immobilisations",
+     "reponse": 5,
+     "explication": "Hors exploitation."
+    }
+   ],
+   "explication": "Valeurs brutes ; amortissements, dépréciations, provisions → ressources stables ; découverts → trésorerie passive ; dettes sur immos et IS → hors exploitation.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE (cas VELORAMA, PITAIN FLAM)"
+  },
+  {
+   "id": "af-x3-02",
+   "type": "classer",
+   "difficulte": 2,
+   "enonce": "Où se place chaque poste dans le **bilan fonctionnel** ?",
+   "categories": [
+    "Emplois stables",
+    "Ressources stables",
+    "Actif circ. exploitation",
+    "Actif circ. hors expl.",
+    "Passif circ. exploitation",
+    "Passif circ. hors expl.",
+    "Trésorerie active",
+    "Trésorerie passive"
+   ],
+   "elements": [
+    {
+     "texte": "Provisions pour risques et charges",
+     "reponse": 1
+    },
+    {
+     "texte": "Immobilisations corporelles (valeur brute)",
+     "reponse": 0
+    },
+    {
+     "texte": "Valeurs mobilières de placement",
+     "reponse": 6
+    },
+    {
+     "texte": "Capital",
+     "reponse": 1
+    },
+    {
+     "texte": "Réserves",
+     "reponse": 1
+    },
+    {
+     "texte": "Amortissements des immobilisations",
+     "reponse": 1,
+     "explication": "Retirés de l'actif et ajoutés aux ressources stables."
+    },
+    {
+     "texte": "Dépréciations des créances clients",
+     "reponse": 1,
+     "explication": "Même traitement que les amortissements."
+    },
+    {
+     "texte": "Part à moins d'un an de l'emprunt (si isolée, cas NOÉ)",
+     "reponse": 7,
+     "explication": "Dans le corrigé NOÉ, l'emprunt à moins d'un an est en trésorerie passive."
+    }
+   ],
+   "explication": "Valeurs brutes ; amortissements, dépréciations, provisions → ressources stables ; découverts → trésorerie passive ; dettes sur immos et IS → hors exploitation.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE (cas VELORAMA, PITAIN FLAM)"
+  },
+  {
+   "id": "af-x3-03",
+   "type": "classer",
+   "difficulte": 2,
+   "enonce": "Où se place chaque poste dans le **bilan fonctionnel** ?",
+   "categories": [
+    "Emplois stables",
+    "Ressources stables",
+    "Actif circ. exploitation",
+    "Actif circ. hors expl.",
+    "Passif circ. exploitation",
+    "Passif circ. hors expl.",
+    "Trésorerie active",
+    "Trésorerie passive"
+   ],
+   "elements": [
+    {
+     "texte": "Concours bancaires courants",
+     "reponse": 7
+    },
+    {
+     "texte": "Résultat de l'exercice",
+     "reponse": 1,
+     "explication": "Bilan avant répartition."
+    },
+    {
+     "texte": "Emprunts bancaires (> 1 an)",
+     "reponse": 1
+    },
+    {
+     "texte": "Subventions d'investissement",
+     "reponse": 1
+    },
+    {
+     "texte": "Clients (valeur brute)",
+     "reponse": 2
+    },
+    {
+     "texte": "Stocks de marchandises",
+     "reponse": 2
+    }
+   ],
+   "explication": "Valeurs brutes ; amortissements, dépréciations, provisions → ressources stables ; découverts → trésorerie passive ; dettes sur immos et IS → hors exploitation.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE (cas VELORAMA, PITAIN FLAM)"
+  }
+ ]
+}

@@ -1,0 +1,1073 @@
+{
+ "chapitre": "Cas des TD : bilan fonctionnel, FRNG, BFR, TN",
+ "genre": "exercices",
+ "questions": [
+  {
+   "id": "af-x7-velorama",
+   "type": "probleme",
+   "difficulte": 3,
+   "enonce": "**Cas VELORAMA** : bilans au 31 décembre (avant répartition, en k€). Établissez les bilans fonctionnels condensés, puis FRNG, BFR et TN.",
+   "donnees": [
+    {
+     "titre": "Actif",
+     "colonnes": [
+      "Brut N-1",
+      "A&D N-1",
+      "Net N-1",
+      "Brut N",
+      "A&D N",
+      "Net N"
+     ],
+     "lignes": [
+      [
+       "Immobilisations incorporelles",
+       80,
+       0,
+       80,
+       80,
+       0,
+       80
+      ],
+      [
+       "Immobilisations corporelles",
+       820,
+       380,
+       440,
+       1000,
+       455,
+       545
+      ],
+      [
+       "Immobilisations financières",
+       90,
+       0,
+       90,
+       64,
+       5,
+       59
+      ],
+      [
+       "Stocks de marchandises",
+       210,
+       0,
+       210,
+       220,
+       0,
+       220
+      ],
+      [
+       "Stocks de matières premières",
+       45,
+       0,
+       45,
+       37,
+       0,
+       37
+      ],
+      [
+       "Stocks de produits finis",
+       60,
+       0,
+       60,
+       80,
+       0,
+       80
+      ],
+      [
+       "Clients",
+       260,
+       15,
+       245,
+       300,
+       17,
+       283
+      ],
+      [
+       "Autres créances d'exploitation",
+       30,
+       0,
+       30,
+       34,
+       0,
+       34
+      ],
+      [
+       "Créances diverses (hors exploitation)",
+       10,
+       0,
+       10,
+       6,
+       0,
+       6
+      ],
+      [
+       "Disponibilités",
+       105,
+       0,
+       105,
+       107,
+       0,
+       107
+      ],
+      [
+       "Charges constatées d'avance",
+       8,
+       0,
+       8,
+       9,
+       0,
+       9
+      ],
+      [
+       "**Total actif**",
+       null,
+       null,
+       1323,
+       null,
+       null,
+       1460
+      ]
+     ]
+    },
+    {
+     "titre": "Passif",
+     "colonnes": [
+      "N-1",
+      "N"
+     ],
+     "lignes": [
+      [
+       "Capital",
+       300,
+       300
+      ],
+      [
+       "Réserve légale",
+       20,
+       21
+      ],
+      [
+       "Autres réserves",
+       95,
+       95
+      ],
+      [
+       "Report à nouveau",
+       5,
+       5
+      ],
+      [
+       "Résultat de l'exercice",
+       13,
+       43
+      ],
+      [
+       "Subventions d'investissement",
+       36,
+       30
+      ],
+      [
+       "**Capitaux propres**",
+       469,
+       494
+      ],
+      [
+       "Provisions pour risques et charges",
+       25,
+       25
+      ],
+      [
+       "Emprunts bancaires",
+       420,
+       500
+      ],
+      [
+       "Concours bancaires courants",
+       55,
+       40
+      ],
+      [
+       "Fournisseurs",
+       240,
+       255
+      ],
+      [
+       "Dettes fiscales et sociales",
+       110,
+       120
+      ],
+      [
+       "Dettes sur immobilisations",
+       0,
+       20
+      ],
+      [
+       "Autres dettes (impôt sur les bénéfices)",
+       4,
+       6
+      ],
+      [
+       "**Total passif**",
+       1323,
+       1460
+      ]
+     ]
+    }
+   ],
+   "etapes": [
+    {
+     "type": "tableau",
+     "enonce": "Bilan fonctionnel condensé (valeurs brutes) :",
+     "colonnes": [
+      "N-1",
+      "N"
+     ],
+     "titreLignes": "Bilan fonctionnel (k€)",
+     "lignes": [
+      {
+       "titre": "Emplois"
+      },
+      {
+       "libelle": "Emplois stables (immobilisations brutes)",
+       "valeurs": [
+        990,
+        1144
+       ]
+      },
+      {
+       "libelle": "Actif circulant d'exploitation (brut)",
+       "valeurs": [
+        613,
+        680
+       ],
+       "aide": "Stocks + clients bruts + autres créances d'exploitation (+ CCA)"
+      },
+      {
+       "libelle": "Actif circulant hors exploitation",
+       "valeurs": [
+        10,
+        6
+       ]
+      },
+      {
+       "libelle": "Trésorerie active",
+       "valeurs": [
+        105,
+        107
+       ]
+      },
+      {
+       "libelle": "Total des emplois",
+       "valeurs": [
+        1718,
+        1937
+       ],
+       "total": true
+      },
+      {
+       "titre": "Ressources"
+      },
+      {
+       "libelle": "Ressources stables",
+       "valeurs": [
+        1309,
+        1496
+       ],
+       "aide": "Capitaux propres + amortissements et dépréciations + provisions + emprunts (> 1 an)"
+      },
+      {
+       "libelle": "Passif circulant d'exploitation",
+       "valeurs": [
+        350,
+        375
+       ],
+       "aide": "Fournisseurs + dettes fiscales et sociales"
+      },
+      {
+       "libelle": "Passif circulant hors exploitation",
+       "valeurs": [
+        4,
+        26
+       ],
+       "aide": "Dettes sur immobilisations, IS à payer"
+      },
+      {
+       "libelle": "Trésorerie passive",
+       "valeurs": [
+        55,
+        40
+       ],
+       "aide": "Concours bancaires courants (+ dettes financières à moins d'un an si isolées)"
+      },
+      {
+       "libelle": "Total des ressources",
+       "valeurs": [
+        1718,
+        1937
+       ],
+       "total": true
+      }
+     ],
+     "explication": ""
+    },
+    {
+     "type": "tableau",
+     "enonce": "Indicateurs de l'équilibre financier :",
+     "colonnes": [
+      "N-1",
+      "N"
+     ],
+     "titreLignes": "(k€)",
+     "lignes": [
+      {
+       "libelle": "FRNG",
+       "valeurs": [
+        319,
+        352
+       ],
+       "aide": "Ressources stables − emplois stables"
+      },
+      {
+       "libelle": "BFR d'exploitation",
+       "valeurs": [
+        263,
+        305
+       ],
+       "aide": "ACE − PCE"
+      },
+      {
+       "libelle": "BFR hors exploitation",
+       "valeurs": [
+        6,
+        -20
+       ],
+       "aide": "ACHE − PCHE"
+      },
+      {
+       "libelle": "BFR global",
+       "valeurs": [
+        269,
+        285
+       ]
+      },
+      {
+       "libelle": "Trésorerie nette",
+       "valeurs": [
+        50,
+        67
+       ],
+       "aide": "TA − TP ; vérifier TN = FRNG − BFR"
+      }
+     ],
+     "explication": ""
+    }
+   ],
+   "explication": "Total du bilan fonctionnel > total comptable : on a remis les amortissements à l'actif (brut) et au passif (ressources stables).",
+   "source": "Cours/ECONOMIE D'ENTREPRISE/0 - RAW/Cas pratiques (AF Cas VELORAMA (SUJET))"
+  },
+  {
+   "id": "af-x7-pitain",
+   "type": "probleme",
+   "difficulte": 3,
+   "enonce": "**Cas PITAIN FLAM** : bilans au 31 décembre (avant répartition, en k€). Établissez les bilans fonctionnels condensés, puis FRNG, BFR et TN.",
+   "donnees": [
+    {
+     "titre": "Actif",
+     "colonnes": [
+      "Brut N-1",
+      "A&D N-1",
+      "Net N-1",
+      "Brut N",
+      "A&D N",
+      "Net N"
+     ],
+     "lignes": [
+      [
+       "Immobilisations incorporelles",
+       160,
+       0,
+       160,
+       160,
+       0,
+       160
+      ],
+      [
+       "Immobilisations corporelles",
+       1350,
+       690,
+       660,
+       1560,
+       812,
+       748
+      ],
+      [
+       "Immobilisations financières",
+       70,
+       0,
+       70,
+       52,
+       4,
+       48
+      ],
+      [
+       "Stocks de marchandises",
+       30,
+       0,
+       30,
+       32,
+       0,
+       32
+      ],
+      [
+       "Stocks de matières premières",
+       55,
+       0,
+       55,
+       50,
+       0,
+       50
+      ],
+      [
+       "Stocks de produits finis",
+       48,
+       0,
+       48,
+       40,
+       0,
+       40
+      ],
+      [
+       "Clients",
+       260,
+       8,
+       252,
+       310,
+       10,
+       300
+      ],
+      [
+       "Autres créances d'exploitation",
+       40,
+       0,
+       40,
+       44,
+       0,
+       44
+      ],
+      [
+       "Créances diverses (hors exploitation)",
+       12,
+       0,
+       12,
+       8,
+       0,
+       8
+      ],
+      [
+       "Disponibilités",
+       161,
+       0,
+       161,
+       191,
+       0,
+       191
+      ],
+      [
+       "Charges constatées d'avance",
+       10,
+       0,
+       10,
+       12,
+       0,
+       12
+      ],
+      [
+       "**Total actif**",
+       null,
+       null,
+       1498,
+       null,
+       null,
+       1633
+      ]
+     ]
+    },
+    {
+     "titre": "Passif",
+     "colonnes": [
+      "N-1",
+      "N"
+     ],
+     "lignes": [
+      [
+       "Capital",
+       400,
+       400
+      ],
+      [
+       "Réserve légale",
+       30,
+       32
+      ],
+      [
+       "Autres réserves",
+       40,
+       40
+      ],
+      [
+       "Report à nouveau",
+       6,
+       9
+      ],
+      [
+       "Résultat de l'exercice",
+       29,
+       49
+      ],
+      [
+       "Subventions d'investissement",
+       40,
+       35
+      ],
+      [
+       "**Capitaux propres**",
+       545,
+       565
+      ],
+      [
+       "Provisions pour risques et charges",
+       30,
+       30
+      ],
+      [
+       "Emprunts bancaires",
+       470,
+       550
+      ],
+      [
+       "Concours bancaires courants",
+       60,
+       45
+      ],
+      [
+       "Fournisseurs",
+       230,
+       238
+      ],
+      [
+       "Dettes fiscales et sociales",
+       160,
+       172
+      ],
+      [
+       "Dettes sur immobilisations",
+       0,
+       25
+      ],
+      [
+       "Autres dettes (impôt sur les bénéfices)",
+       3,
+       8
+      ],
+      [
+       "**Total passif**",
+       1498,
+       1633
+      ]
+     ]
+    }
+   ],
+   "etapes": [
+    {
+     "type": "tableau",
+     "enonce": "Bilan fonctionnel condensé (valeurs brutes) :",
+     "colonnes": [
+      "N-1",
+      "N"
+     ],
+     "titreLignes": "Bilan fonctionnel (k€)",
+     "lignes": [
+      {
+       "titre": "Emplois"
+      },
+      {
+       "libelle": "Emplois stables (immobilisations brutes)",
+       "valeurs": [
+        1580,
+        1772
+       ]
+      },
+      {
+       "libelle": "Actif circulant d'exploitation (brut)",
+       "valeurs": [
+        443,
+        488
+       ],
+       "aide": "Stocks + clients bruts + autres créances d'exploitation (+ CCA)"
+      },
+      {
+       "libelle": "Actif circulant hors exploitation",
+       "valeurs": [
+        12,
+        8
+       ]
+      },
+      {
+       "libelle": "Trésorerie active",
+       "valeurs": [
+        161,
+        191
+       ]
+      },
+      {
+       "libelle": "Total des emplois",
+       "valeurs": [
+        2196,
+        2459
+       ],
+       "total": true
+      },
+      {
+       "titre": "Ressources"
+      },
+      {
+       "libelle": "Ressources stables",
+       "valeurs": [
+        1743,
+        1971
+       ],
+       "aide": "Capitaux propres + amortissements et dépréciations + provisions + emprunts (> 1 an)"
+      },
+      {
+       "libelle": "Passif circulant d'exploitation",
+       "valeurs": [
+        390,
+        410
+       ],
+       "aide": "Fournisseurs + dettes fiscales et sociales"
+      },
+      {
+       "libelle": "Passif circulant hors exploitation",
+       "valeurs": [
+        3,
+        33
+       ],
+       "aide": "Dettes sur immobilisations, IS à payer"
+      },
+      {
+       "libelle": "Trésorerie passive",
+       "valeurs": [
+        60,
+        45
+       ],
+       "aide": "Concours bancaires courants (+ dettes financières à moins d'un an si isolées)"
+      },
+      {
+       "libelle": "Total des ressources",
+       "valeurs": [
+        2196,
+        2459
+       ],
+       "total": true
+      }
+     ],
+     "explication": ""
+    },
+    {
+     "type": "tableau",
+     "enonce": "Indicateurs de l'équilibre financier :",
+     "colonnes": [
+      "N-1",
+      "N"
+     ],
+     "titreLignes": "(k€)",
+     "lignes": [
+      {
+       "libelle": "FRNG",
+       "valeurs": [
+        163,
+        199
+       ],
+       "aide": "Ressources stables − emplois stables"
+      },
+      {
+       "libelle": "BFR d'exploitation",
+       "valeurs": [
+        53,
+        78
+       ],
+       "aide": "ACE − PCE"
+      },
+      {
+       "libelle": "BFR hors exploitation",
+       "valeurs": [
+        9,
+        -25
+       ],
+       "aide": "ACHE − PCHE"
+      },
+      {
+       "libelle": "BFR global",
+       "valeurs": [
+        62,
+        53
+       ]
+      },
+      {
+       "libelle": "Trésorerie nette",
+       "valeurs": [
+        101,
+        146
+       ],
+       "aide": "TA − TP ; vérifier TN = FRNG − BFR"
+      }
+     ],
+     "explication": ""
+    }
+   ],
+   "explication": "Total du bilan fonctionnel > total comptable : on a remis les amortissements à l'actif (brut) et au passif (ressources stables).",
+   "source": "Cours/ECONOMIE D'ENTREPRISE/0 - RAW/Cas pratiques (AF Cas PITAIN FLAM)"
+  },
+  {
+   "id": "af-x7-noe",
+   "type": "probleme",
+   "difficulte": 3,
+   "enonce": "**Cas NOÉ** : bilans au 31 décembre (avant répartition, en €). Établissez les bilans fonctionnels condensés, puis FRNG, BFR et TN.",
+   "donnees": [
+    {
+     "titre": "Actif",
+     "colonnes": [
+      "Brut N",
+      "A&D N",
+      "Net N",
+      "Brut N+1",
+      "A&D N+1",
+      "Net N+1"
+     ],
+     "lignes": [
+      [
+       "Marques",
+       500000,
+       0,
+       500000,
+       500000,
+       0,
+       500000
+      ],
+      [
+       "Terrains",
+       600000,
+       0,
+       600000,
+       600000,
+       0,
+       600000
+      ],
+      [
+       "Matériel de production",
+       500000,
+       175000,
+       325000,
+       500000,
+       375000,
+       125000
+      ],
+      [
+       "Immobilisations financières",
+       307000,
+       0,
+       307000,
+       307000,
+       0,
+       307000
+      ],
+      [
+       "Stock de marchandises",
+       220000,
+       0,
+       220000,
+       140000,
+       0,
+       140000
+      ],
+      [
+       "Stock de matières premières",
+       80000,
+       0,
+       80000,
+       76000,
+       0,
+       76000
+      ],
+      [
+       "Stock de produits finis",
+       40000,
+       0,
+       40000,
+       38000,
+       0,
+       38000
+      ],
+      [
+       "Créances clients normales TTC",
+       180000,
+       0,
+       180000,
+       200000,
+       0,
+       200000
+      ],
+      [
+       "Créances clients douteuses HT",
+       15000,
+       3000,
+       12000,
+       15000,
+       1000,
+       14000
+      ],
+      [
+       "Banque (disponibilités)",
+       252000,
+       0,
+       252000,
+       269800,
+       0,
+       269800
+      ],
+      [
+       "**Total actif**",
+       null,
+       null,
+       2516000,
+       null,
+       null,
+       2269800
+      ]
+     ]
+    },
+    {
+     "titre": "Passif",
+     "colonnes": [
+      "N",
+      "N+1"
+     ],
+     "lignes": [
+      [
+       "Capital social",
+       1000000,
+       1000000
+      ],
+      [
+       "Réserves",
+       42000,
+       50000
+      ],
+      [
+       "Report à nouveau",
+       8000,
+       14000
+      ],
+      [
+       "Résultat net",
+       299000,
+       259200
+      ],
+      [
+       "Emprunt bancaire — dont à plus d'un an",
+       600000,
+       510000
+      ],
+      [
+       "Emprunt bancaire — dont à moins d'un an",
+       200000,
+       130000
+      ],
+      [
+       "Dettes fournisseurs",
+       345000,
+       290600
+      ],
+      [
+       "Dettes envers les organismes sociaux",
+       12000,
+       14000
+      ],
+      [
+       "Dettes fiscales",
+       10000,
+       2000
+      ],
+      [
+       "**Total passif**",
+       2516000,
+       2269800
+      ]
+     ]
+    }
+   ],
+   "etapes": [
+    {
+     "type": "tableau",
+     "enonce": "Bilan fonctionnel condensé (valeurs brutes) :",
+     "colonnes": [
+      "N",
+      "N+1"
+     ],
+     "titreLignes": "Bilan fonctionnel (€)",
+     "lignes": [
+      {
+       "titre": "Emplois"
+      },
+      {
+       "libelle": "Emplois stables (immobilisations brutes)",
+       "valeurs": [
+        1907000,
+        1907000
+       ]
+      },
+      {
+       "libelle": "Actif circulant d'exploitation (brut)",
+       "valeurs": [
+        535000,
+        469000
+       ],
+       "aide": "Stocks + clients bruts + autres créances d'exploitation (+ CCA)"
+      },
+      {
+       "libelle": "Actif circulant hors exploitation",
+       "valeurs": [
+        0,
+        0
+       ]
+      },
+      {
+       "libelle": "Trésorerie active",
+       "valeurs": [
+        252000,
+        269800
+       ]
+      },
+      {
+       "libelle": "Total des emplois",
+       "valeurs": [
+        2694000,
+        2645800
+       ],
+       "total": true
+      },
+      {
+       "titre": "Ressources"
+      },
+      {
+       "libelle": "Ressources stables",
+       "valeurs": [
+        2127000,
+        2209200
+       ],
+       "aide": "Capitaux propres + amortissements et dépréciations + provisions + emprunts (> 1 an)"
+      },
+      {
+       "libelle": "Passif circulant d'exploitation",
+       "valeurs": [
+        367000,
+        306600
+       ],
+       "aide": "Fournisseurs + dettes fiscales et sociales"
+      },
+      {
+       "libelle": "Passif circulant hors exploitation",
+       "valeurs": [
+        0,
+        0
+       ],
+       "aide": "Dettes sur immobilisations, IS à payer"
+      },
+      {
+       "libelle": "Trésorerie passive",
+       "valeurs": [
+        200000,
+        130000
+       ],
+       "aide": "Concours bancaires courants (+ dettes financières à moins d'un an si isolées)"
+      },
+      {
+       "libelle": "Total des ressources",
+       "valeurs": [
+        2694000,
+        2645800
+       ],
+       "total": true
+      }
+     ],
+     "explication": ""
+    },
+    {
+     "type": "tableau",
+     "enonce": "Indicateurs de l'équilibre financier :",
+     "colonnes": [
+      "N",
+      "N+1"
+     ],
+     "titreLignes": "(€)",
+     "lignes": [
+      {
+       "libelle": "FRNG",
+       "valeurs": [
+        220000,
+        302200
+       ],
+       "aide": "Ressources stables − emplois stables"
+      },
+      {
+       "libelle": "BFR d'exploitation",
+       "valeurs": [
+        168000,
+        162400
+       ],
+       "aide": "ACE − PCE"
+      },
+      {
+       "libelle": "BFR hors exploitation",
+       "valeurs": [
+        0,
+        0
+       ],
+       "aide": "ACHE − PCHE"
+      },
+      {
+       "libelle": "BFR global",
+       "valeurs": [
+        168000,
+        162400
+       ]
+      },
+      {
+       "libelle": "Trésorerie nette",
+       "valeurs": [
+        52000,
+        139800
+       ],
+       "aide": "TA − TP ; vérifier TN = FRNG − BFR"
+      }
+     ],
+     "explication": ""
+    },
+    {
+     "type": "qcm",
+     "enonce": "Comment qualifier l'équilibre financier de NOÉ (N et N+1) ?",
+     "choix": [
+      "Sain : FRNG > BFR > 0, trésorerie nette positive et en hausse",
+      "Dangereux : la trésorerie est négative",
+      "Insuffisance de fonds de roulement",
+      "BFR négatif typique de la grande distribution"
+     ],
+     "reponse": 0,
+     "explication": "Situation 1 (équilibre idéal d'une industrielle) qui évolue vers la 2 (TN plus importante, à placer)."
+    }
+   ],
+   "explication": "Total du bilan fonctionnel > total comptable : on a remis les amortissements à l'actif (brut) et au passif (ressources stables).",
+   "source": "Cours/ECONOMIE D'ENTREPRISE/0 - RAW/Cas pratiques (AF Cas NOE (SUJET) — l'emprunt à moins d'un an est classé en trésorerie passive)"
+  }
+ ]
+}

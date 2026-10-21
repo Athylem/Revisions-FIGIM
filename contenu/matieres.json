@@ -652,12 +652,132 @@
     },
     {
       "id": "analyse-financiere",
-      "nom": "Analyse financière",
+      "nom": "Économie d'entreprise (analyse financière)",
       "prof": "I. Leroyer",
       "groupe": "Gestion & management",
-      "ds": null,
-      "notes": false,
-      "chapitres": []
+      "ds": "2026-10-22",
+      "notes": true,
+      "chapitres": [
+        {
+          "id": "ch1-bilan-compte-de-resultat",
+          "nom": "Bilan, compte de résultat, stocks, PCG",
+          "genre": "cours",
+          "fichier": "analyse-financiere/ch1-bilan-compte-de-resultat.json",
+          "questions": 18
+        },
+        {
+          "id": "ch2-immobilisations",
+          "nom": "Immobilisations : acquisition, amortissement, cession",
+          "genre": "cours",
+          "fichier": "analyse-financiere/ch2-immobilisations.json",
+          "questions": 20
+        },
+        {
+          "id": "ch3-sig-caf",
+          "nom": "SIG, CAF et ratios d'activité",
+          "genre": "cours",
+          "fichier": "analyse-financiere/ch3-sig-caf.json",
+          "questions": 21
+        },
+        {
+          "id": "ch4-equilibre-financier",
+          "nom": "Bilan fonctionnel, FRNG, BFR, TN",
+          "genre": "cours",
+          "fichier": "analyse-financiere/ch4-equilibre-financier.json",
+          "questions": 22
+        },
+        {
+          "id": "ch5-questions-a-rediger",
+          "nom": "Questions de cours à rédiger (comme au DS)",
+          "genre": "cours",
+          "fichier": "analyse-financiere/ch5-questions-a-rediger.json",
+          "questions": 10
+        },
+        {
+          "id": "ds1-dossier-sig-caf",
+          "nom": "Dossier type DS : CR en liste → SIG → CAF (sans calculatrice)",
+          "genre": "ds",
+          "fichier": "analyse-financiere/ds1-dossier-sig-caf.json",
+          "questions": 8
+        },
+        {
+          "id": "ds2-dossier-equilibre",
+          "nom": "Dossier type DS : bilan → bilan fonctionnel → FRNG, BFR, TN",
+          "genre": "ds",
+          "fichier": "analyse-financiere/ds2-dossier-equilibre.json",
+          "questions": 6
+        },
+        {
+          "id": "ds3-dossier-bilan-cr",
+          "nom": "Dossier type DS : classer, bilan et compte de résultat",
+          "genre": "ds",
+          "fichier": "analyse-financiere/ds3-dossier-bilan-cr.json",
+          "questions": 5
+        },
+        {
+          "id": "ds4-dossier-immobilisations",
+          "nom": "Dossier type DS : amortissement, cession, écritures",
+          "genre": "ds",
+          "fichier": "analyse-financiere/ds4-dossier-immobilisations.json",
+          "questions": 5
+        },
+        {
+          "id": "ex1-classer-bilan-cr",
+          "nom": "Classer : bilan ou CR, quel bloc (AI, AC, CP, D, CE…)",
+          "genre": "exercices",
+          "fichier": "analyse-financiere/ex1-classer-bilan-cr.json",
+          "questions": 6
+        },
+        {
+          "id": "ex2-classer-sig-caf",
+          "nom": "Classer : place dans les SIG, dans ou hors CAF",
+          "genre": "exercices",
+          "fichier": "analyse-financiere/ex2-classer-sig-caf.json",
+          "questions": 5
+        },
+        {
+          "id": "ex3-classer-bilan-fonctionnel",
+          "nom": "Classer : postes du bilan fonctionnel",
+          "genre": "exercices",
+          "fichier": "analyse-financiere/ex3-classer-bilan-fonctionnel.json",
+          "questions": 3
+        },
+        {
+          "id": "ex4-variations-de-stocks",
+          "nom": "Calculs express : variations de stocks",
+          "genre": "exercices",
+          "fichier": "analyse-financiere/ex4-variations-de-stocks.json",
+          "questions": 8
+        },
+        {
+          "id": "ex5-amortissements-cessions",
+          "nom": "Amortissement linéaire + cession (VALIANT et variantes), dégressif",
+          "genre": "exercices",
+          "fichier": "analyse-financiere/ex5-amortissements-cessions.json",
+          "questions": 12
+        },
+        {
+          "id": "ex6-cas-td-sig-caf",
+          "nom": "Cas des TD : SIG + CAF (VELORAMA, PITAIN FLAM, NOÉ)",
+          "genre": "exercices",
+          "fichier": "analyse-financiere/ex6-cas-td-sig-caf.json",
+          "questions": 3
+        },
+        {
+          "id": "ex7-cas-td-bilan-fonctionnel",
+          "nom": "Cas des TD : bilan fonctionnel, FRNG, BFR, TN",
+          "genre": "exercices",
+          "fichier": "analyse-financiere/ex7-cas-td-bilan-fonctionnel.json",
+          "questions": 3
+        },
+        {
+          "id": "ex8-cas-td-bilan-cr",
+          "nom": "Cas des TD : bilan et compte de résultat (BELLESSENCE, VITAMINES)",
+          "genre": "exercices",
+          "fichier": "analyse-financiere/ex8-cas-td-bilan-cr.json",
+          "questions": 2
+        }
+      ]
     },
     {
       "id": "marketing",

@@ -1,0 +1,272 @@
+{
+ "chapitre": "Classer : place dans les SIG, dans ou hors CAF",
+ "genre": "exercices",
+ "questions": [
+  {
+   "id": "af-x2-01",
+   "type": "classer",
+   "difficulte": 2,
+   "enonce": "Dans le tableau des SIG, **où intervient** chaque ligne du compte de résultat ?",
+   "categories": [
+    "Marge commerciale",
+    "Production",
+    "Consommations (VA)",
+    "Entre VA et EBE",
+    "Entre EBE et RE",
+    "Résultat financier",
+    "Résultat exceptionnel",
+    "Après RCAI (IS, participation)"
+   ],
+   "elements": [
+    {
+     "texte": "Production stockée (713)",
+     "reponse": 1
+    },
+    {
+     "texte": "Impôt sur les bénéfices (695)",
+     "reponse": 7
+    },
+    {
+     "texte": "Frais de publicité",
+     "reponse": 2,
+     "explication": "Autre charge externe → consommation."
+    },
+    {
+     "texte": "Reprises sur dépréciations (781)",
+     "reponse": 4
+    },
+    {
+     "texte": "Variation de stock de marchandises (6037)",
+     "reponse": 0,
+     "explication": "Coût d'achat des marchandises vendues = 607 + 6037."
+    },
+    {
+     "texte": "Produits de cession d'un véhicule (757)",
+     "reponse": 4,
+     "explication": "PCG 2025 : exploitation."
+    },
+    {
+     "texte": "Variation de stock de matières premières (6031)",
+     "reponse": 2
+    },
+    {
+     "texte": "Quote-part de subvention d'investissement virée au résultat (747)",
+     "reponse": 4
+    }
+   ],
+   "explication": "MC → Production → VA (− consommations) → EBE (+ subventions − impôts − personnel) → RE (± reprises, dotations, autres, cessions 657/757) → financier → exceptionnel → IS/participation.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-x2-02",
+   "type": "classer",
+   "difficulte": 2,
+   "enonce": "Dans le tableau des SIG, **où intervient** chaque ligne du compte de résultat ?",
+   "categories": [
+    "Marge commerciale",
+    "Production",
+    "Consommations (VA)",
+    "Entre VA et EBE",
+    "Entre EBE et RE",
+    "Résultat financier",
+    "Résultat exceptionnel",
+    "Après RCAI (IS, participation)"
+   ],
+   "elements": [
+    {
+     "texte": "Achats de matières premières (601)",
+     "reponse": 2
+    },
+    {
+     "texte": "Production immobilisée (72)",
+     "reponse": 1
+    },
+    {
+     "texte": "Subventions d'exploitation (74)",
+     "reponse": 3
+    },
+    {
+     "texte": "Frais d'énergie",
+     "reponse": 2
+    },
+    {
+     "texte": "Intérêts d'emprunt (66)",
+     "reponse": 5
+    },
+    {
+     "texte": "Impôts et taxes (63)",
+     "reponse": 3
+    },
+    {
+     "texte": "Produits de cession de titres de participation (767)",
+     "reponse": 5,
+     "explication": "Immobilisation financière."
+    },
+    {
+     "texte": "Achats de marchandises (607)",
+     "reponse": 0
+    }
+   ],
+   "explication": "MC → Production → VA (− consommations) → EBE (+ subventions − impôts − personnel) → RE (± reprises, dotations, autres, cessions 657/757) → financier → exceptionnel → IS/participation.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-x2-03",
+   "type": "classer",
+   "difficulte": 2,
+   "enonce": "Dans le tableau des SIG, **où intervient** chaque ligne du compte de résultat ?",
+   "categories": [
+    "Marge commerciale",
+    "Production",
+    "Consommations (VA)",
+    "Entre VA et EBE",
+    "Entre EBE et RE",
+    "Résultat financier",
+    "Résultat exceptionnel",
+    "Après RCAI (IS, participation)"
+   ],
+   "elements": [
+    {
+     "texte": "Dotations financières aux provisions (686)",
+     "reponse": 5
+    },
+    {
+     "texte": "Ventes de marchandises (707)",
+     "reponse": 0
+    },
+    {
+     "texte": "Dotations aux amortissements (681)",
+     "reponse": 4
+    },
+    {
+     "texte": "Prestations de services (706)",
+     "reponse": 1,
+     "explication": "Production vendue de services."
+    },
+    {
+     "texte": "Charges sociales (645)",
+     "reponse": 3
+    },
+    {
+     "texte": "Participation des salariés (691)",
+     "reponse": 7
+    },
+    {
+     "texte": "Autres charges de gestion courante (65)",
+     "reponse": 4
+    },
+    {
+     "texte": "Perte due à un sinistre majeur non assuré (67)",
+     "reponse": 6
+    }
+   ],
+   "explication": "MC → Production → VA (− consommations) → EBE (+ subventions − impôts − personnel) → RE (± reprises, dotations, autres, cessions 657/757) → financier → exceptionnel → IS/participation.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-x2-04",
+   "type": "classer",
+   "difficulte": 2,
+   "enonce": "Dans le tableau des SIG, **où intervient** chaque ligne du compte de résultat ?",
+   "categories": [
+    "Marge commerciale",
+    "Production",
+    "Consommations (VA)",
+    "Entre VA et EBE",
+    "Entre EBE et RE",
+    "Résultat financier",
+    "Résultat exceptionnel",
+    "Après RCAI (IS, participation)"
+   ],
+   "elements": [
+    {
+     "texte": "Sous-traitance / locations / honoraires (61/62)",
+     "reponse": 2
+    },
+    {
+     "texte": "Valeur comptable d'une machine cédée (657)",
+     "reponse": 4,
+     "explication": "PCG 2025."
+    }
+   ],
+   "explication": "MC → Production → VA (− consommations) → EBE (+ subventions − impôts − personnel) → RE (± reprises, dotations, autres, cessions 657/757) → financier → exceptionnel → IS/participation.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-x2-10",
+   "type": "classer",
+   "difficulte": 2,
+   "enonce": "Pour chaque élément : est-il **pris en compte** dans la CAF ou **exclu** ?",
+   "categories": [
+    "Inclus dans la CAF",
+    "Exclu de la CAF"
+   ],
+   "elements": [
+    {
+     "texte": "Dotations aux amortissements (681)",
+     "reponse": 1,
+     "explication": "Charge calculée."
+    },
+    {
+     "texte": "Reprises sur provisions (781)",
+     "reponse": 1,
+     "explication": "Produit calculé."
+    },
+    {
+     "texte": "Produits de cession d'immobilisations (757)",
+     "reponse": 1,
+     "explication": "Opération de cession."
+    },
+    {
+     "texte": "Valeur comptable des immobilisations cédées (657)",
+     "reponse": 1
+    },
+    {
+     "texte": "Quote-part des subventions d'investissement virée au résultat (747)",
+     "reponse": 1
+    },
+    {
+     "texte": "Intérêts d'emprunt (66)",
+     "reponse": 0,
+     "explication": "Décaissé."
+    },
+    {
+     "texte": "Impôt sur les bénéfices",
+     "reponse": 0
+    },
+    {
+     "texte": "Autres produits de gestion courante (75)",
+     "reponse": 0
+    },
+    {
+     "texte": "Charges exceptionnelles (67)",
+     "reponse": 0,
+     "explication": "Décaissées."
+    },
+    {
+     "texte": "Dotations financières (686)",
+     "reponse": 1
+    },
+    {
+     "texte": "Produits financiers : intérêts reçus (76)",
+     "reponse": 0
+    },
+    {
+     "texte": "Produits de cession de titres (767)",
+     "reponse": 1
+    },
+    {
+     "texte": "Participation des salariés",
+     "reponse": 0
+    },
+    {
+     "texte": "Subvention d'exploitation (74)",
+     "reponse": 0,
+     "explication": "Déjà dans l'EBE."
+    }
+   ],
+   "explication": "Exclus : éléments calculés (68x, 78x, 747) et cessions (657/667, 757/767).",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  }
+ ]
+}

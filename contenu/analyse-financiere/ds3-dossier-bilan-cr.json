@@ -1,0 +1,730 @@
+{
+ "chapitre": "Dossier type DS : classer, bilan et compte de résultat",
+ "genre": "ds",
+ "questions": [
+  {
+   "id": "af-ds3-01",
+   "type": "probleme",
+   "difficulte": 2,
+   "enonce": "**Dossier COMPTABILITÉ — Cas ÉPEAUTRE** · (sans calculatrice) (k€, PCG 2025)\nStock de MP au 01.01.N : 5 ; au 31.12.N : 10.\nDonnées au 31.12.N : Terrain 100 · Constructions 200 · Matériel industriel 40 · Brevet 30 · Stock de matières premières (31.12) 10 · Clients 20 · Banque 10 · Capital social 280 · Emprunt auprès des établissements de crédit 100 · Fournisseurs 10 · Dettes fiscales et sociales 10 · Achats de matières premières 100 · Salaires et charges sociales 60 · Autres achats et charges externes 20 · Dotations aux amortissements 10 · Intérêts d'emprunt 5 · Production vendue 200.",
+   "etapes": [
+    {
+     "type": "classer",
+     "enonce": "Classez chaque information :",
+     "categories": [
+      "AI",
+      "AC",
+      "CP",
+      "D",
+      "CE",
+      "CF",
+      "CEx",
+      "PE",
+      "PF",
+      "PEx"
+     ],
+     "elements": [
+      {
+       "texte": "Terrain",
+       "reponse": 0
+      },
+      {
+       "texte": "Constructions",
+       "reponse": 0
+      },
+      {
+       "texte": "Matériel industriel",
+       "reponse": 0
+      },
+      {
+       "texte": "Brevet",
+       "reponse": 0
+      },
+      {
+       "texte": "Stock de matières premières (31.12)",
+       "reponse": 1
+      },
+      {
+       "texte": "Clients",
+       "reponse": 1
+      },
+      {
+       "texte": "Banque",
+       "reponse": 1
+      },
+      {
+       "texte": "Capital social",
+       "reponse": 2
+      },
+      {
+       "texte": "Emprunt auprès des établissements de crédit",
+       "reponse": 3
+      },
+      {
+       "texte": "Fournisseurs",
+       "reponse": 3
+      },
+      {
+       "texte": "Dettes fiscales et sociales",
+       "reponse": 3
+      },
+      {
+       "texte": "Achats de matières premières",
+       "reponse": 4
+      },
+      {
+       "texte": "Salaires et charges sociales",
+       "reponse": 4
+      },
+      {
+       "texte": "Autres achats et charges externes",
+       "reponse": 4
+      },
+      {
+       "texte": "Dotations aux amortissements",
+       "reponse": 4
+      },
+      {
+       "texte": "Intérêts d'emprunt",
+       "reponse": 5
+      },
+      {
+       "texte": "Production vendue",
+       "reponse": 7
+      }
+     ],
+     "explication": ""
+    },
+    {
+     "type": "numerique",
+     "enonce": "Variation de stock de matières premières (en charges) :",
+     "reponse": -5,
+     "tolerance": 0,
+     "explication": "SI − SF",
+     "unite": "k€"
+    },
+    {
+     "type": "tableau",
+     "enonce": "Totaux :",
+     "colonnes": [
+      "k€"
+     ],
+     "titreLignes": "",
+     "lignes": [
+      {
+       "libelle": "Total des charges",
+       "valeurs": [
+        190
+       ],
+       "aide": "Charges d'exploitation (avec la variation de stock) + charges financières"
+      },
+      {
+       "libelle": "Total des produits",
+       "valeurs": [
+        200
+       ]
+      },
+      {
+       "libelle": "Résultat (bénéfice +, perte −)",
+       "valeurs": [
+        10
+       ],
+       "total": true
+      },
+      {
+       "libelle": "Total du bilan",
+       "valeurs": [
+        410
+       ],
+       "aide": "Actif immobilisé + actif circulant = capitaux propres (avec le résultat) + dettes",
+       "total": true
+      }
+     ],
+     "explication": ""
+    }
+   ],
+   "explication": "Le résultat du CR se reporte en capitaux propres et équilibre le bilan.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE (format BELLESSENCE)"
+  },
+  {
+   "id": "af-ds3-02",
+   "type": "probleme",
+   "difficulte": 2,
+   "enonce": "**Dossier COMPTABILITÉ — Cas SARRASIN** · (sans calculatrice) (k€, PCG 2025)\nStock de MP au 01.01.N : 20 ; au 31.12.N : 15.\nDonnées au 31.12.N : Terrain 50 · Constructions 200 · Matériel industriel 80 · Brevet 20 · Stock de matières premières (31.12) 15 · Clients 30 · Banque 10 · Capital social 260 · Emprunt auprès des établissements de crédit 120 · Fournisseurs 10 · Dettes fiscales et sociales 10 · Achats de matières premières 100 · Salaires et charges sociales 50 · Autres achats et charges externes 20 · Dotations aux amortissements 15 · Intérêts d'emprunt 5 · Production vendue 200.",
+   "etapes": [
+    {
+     "type": "classer",
+     "enonce": "Classez chaque information :",
+     "categories": [
+      "AI",
+      "AC",
+      "CP",
+      "D",
+      "CE",
+      "CF",
+      "CEx",
+      "PE",
+      "PF",
+      "PEx"
+     ],
+     "elements": [
+      {
+       "texte": "Terrain",
+       "reponse": 0
+      },
+      {
+       "texte": "Constructions",
+       "reponse": 0
+      },
+      {
+       "texte": "Matériel industriel",
+       "reponse": 0
+      },
+      {
+       "texte": "Brevet",
+       "reponse": 0
+      },
+      {
+       "texte": "Stock de matières premières (31.12)",
+       "reponse": 1
+      },
+      {
+       "texte": "Clients",
+       "reponse": 1
+      },
+      {
+       "texte": "Banque",
+       "reponse": 1
+      },
+      {
+       "texte": "Capital social",
+       "reponse": 2
+      },
+      {
+       "texte": "Emprunt auprès des établissements de crédit",
+       "reponse": 3
+      },
+      {
+       "texte": "Fournisseurs",
+       "reponse": 3
+      },
+      {
+       "texte": "Dettes fiscales et sociales",
+       "reponse": 3
+      },
+      {
+       "texte": "Achats de matières premières",
+       "reponse": 4
+      },
+      {
+       "texte": "Salaires et charges sociales",
+       "reponse": 4
+      },
+      {
+       "texte": "Autres achats et charges externes",
+       "reponse": 4
+      },
+      {
+       "texte": "Dotations aux amortissements",
+       "reponse": 4
+      },
+      {
+       "texte": "Intérêts d'emprunt",
+       "reponse": 5
+      },
+      {
+       "texte": "Production vendue",
+       "reponse": 7
+      }
+     ],
+     "explication": ""
+    },
+    {
+     "type": "numerique",
+     "enonce": "Variation de stock de matières premières (en charges) :",
+     "reponse": 5,
+     "tolerance": 0,
+     "explication": "SI − SF",
+     "unite": "k€"
+    },
+    {
+     "type": "tableau",
+     "enonce": "Totaux :",
+     "colonnes": [
+      "k€"
+     ],
+     "titreLignes": "",
+     "lignes": [
+      {
+       "libelle": "Total des charges",
+       "valeurs": [
+        195
+       ],
+       "aide": "Charges d'exploitation (avec la variation de stock) + charges financières"
+      },
+      {
+       "libelle": "Total des produits",
+       "valeurs": [
+        200
+       ]
+      },
+      {
+       "libelle": "Résultat (bénéfice +, perte −)",
+       "valeurs": [
+        5
+       ],
+       "total": true
+      },
+      {
+       "libelle": "Total du bilan",
+       "valeurs": [
+        405
+       ],
+       "aide": "Actif immobilisé + actif circulant = capitaux propres (avec le résultat) + dettes",
+       "total": true
+      }
+     ],
+     "explication": ""
+    }
+   ],
+   "explication": "Le résultat du CR se reporte en capitaux propres et équilibre le bilan.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE (format BELLESSENCE)"
+  },
+  {
+   "id": "af-ds3-03",
+   "type": "probleme",
+   "difficulte": 2,
+   "enonce": "**Dossier COMPTABILITÉ — Cas MILLET** · (sans calculatrice) (k€, PCG 2025)\nStock de MP au 01.01.N : 10 ; au 31.12.N : 15.\nDonnées au 31.12.N : Terrain 50 · Constructions 150 · Matériel industriel 60 · Brevet 30 · Stock de matières premières (31.12) 15 · Clients 20 · Banque 10 · Capital social 60 · Emprunt auprès des établissements de crédit 100 · Fournisseurs 15 · Dettes fiscales et sociales 10 · Achats de matières premières 80 · Salaires et charges sociales 40 · Autres achats et charges externes 10 · Dotations aux amortissements 20 · Intérêts d'emprunt 5 · Production vendue 300.",
+   "etapes": [
+    {
+     "type": "classer",
+     "enonce": "Classez chaque information :",
+     "categories": [
+      "AI",
+      "AC",
+      "CP",
+      "D",
+      "CE",
+      "CF",
+      "CEx",
+      "PE",
+      "PF",
+      "PEx"
+     ],
+     "elements": [
+      {
+       "texte": "Terrain",
+       "reponse": 0
+      },
+      {
+       "texte": "Constructions",
+       "reponse": 0
+      },
+      {
+       "texte": "Matériel industriel",
+       "reponse": 0
+      },
+      {
+       "texte": "Brevet",
+       "reponse": 0
+      },
+      {
+       "texte": "Stock de matières premières (31.12)",
+       "reponse": 1
+      },
+      {
+       "texte": "Clients",
+       "reponse": 1
+      },
+      {
+       "texte": "Banque",
+       "reponse": 1
+      },
+      {
+       "texte": "Capital social",
+       "reponse": 2
+      },
+      {
+       "texte": "Emprunt auprès des établissements de crédit",
+       "reponse": 3
+      },
+      {
+       "texte": "Fournisseurs",
+       "reponse": 3
+      },
+      {
+       "texte": "Dettes fiscales et sociales",
+       "reponse": 3
+      },
+      {
+       "texte": "Achats de matières premières",
+       "reponse": 4
+      },
+      {
+       "texte": "Salaires et charges sociales",
+       "reponse": 4
+      },
+      {
+       "texte": "Autres achats et charges externes",
+       "reponse": 4
+      },
+      {
+       "texte": "Dotations aux amortissements",
+       "reponse": 4
+      },
+      {
+       "texte": "Intérêts d'emprunt",
+       "reponse": 5
+      },
+      {
+       "texte": "Production vendue",
+       "reponse": 7
+      }
+     ],
+     "explication": ""
+    },
+    {
+     "type": "numerique",
+     "enonce": "Variation de stock de matières premières (en charges) :",
+     "reponse": -5,
+     "tolerance": 0,
+     "explication": "SI − SF",
+     "unite": "k€"
+    },
+    {
+     "type": "tableau",
+     "enonce": "Totaux :",
+     "colonnes": [
+      "k€"
+     ],
+     "titreLignes": "",
+     "lignes": [
+      {
+       "libelle": "Total des charges",
+       "valeurs": [
+        150
+       ],
+       "aide": "Charges d'exploitation (avec la variation de stock) + charges financières"
+      },
+      {
+       "libelle": "Total des produits",
+       "valeurs": [
+        300
+       ]
+      },
+      {
+       "libelle": "Résultat (bénéfice +, perte −)",
+       "valeurs": [
+        150
+       ],
+       "total": true
+      },
+      {
+       "libelle": "Total du bilan",
+       "valeurs": [
+        335
+       ],
+       "aide": "Actif immobilisé + actif circulant = capitaux propres (avec le résultat) + dettes",
+       "total": true
+      }
+     ],
+     "explication": ""
+    }
+   ],
+   "explication": "Le résultat du CR se reporte en capitaux propres et équilibre le bilan.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE (format BELLESSENCE)"
+  },
+  {
+   "id": "af-ds3-04",
+   "type": "probleme",
+   "difficulte": 2,
+   "enonce": "**Dossier COMPTABILITÉ — Cas BLE** · (sans calculatrice) (k€, PCG 2025)\nStock de MP au 01.01.N : 5 ; au 31.12.N : 10.\nDonnées au 31.12.N : Terrain 100 · Constructions 200 · Matériel industriel 60 · Brevet 20 · Stock de matières premières (31.12) 10 · Clients 20 · Banque 25 · Capital social 200 · Emprunt auprès des établissements de crédit 100 · Fournisseurs 10 · Dettes fiscales et sociales 10 · Achats de matières premières 60 · Salaires et charges sociales 50 · Autres achats et charges externes 20 · Dotations aux amortissements 15 · Intérêts d'emprunt 5 · Production vendue 250 · Produits des cessions d'immobilisations corporelles (757) 10.",
+   "etapes": [
+    {
+     "type": "classer",
+     "enonce": "Classez chaque information :",
+     "categories": [
+      "AI",
+      "AC",
+      "CP",
+      "D",
+      "CE",
+      "CF",
+      "CEx",
+      "PE",
+      "PF",
+      "PEx"
+     ],
+     "elements": [
+      {
+       "texte": "Terrain",
+       "reponse": 0
+      },
+      {
+       "texte": "Constructions",
+       "reponse": 0
+      },
+      {
+       "texte": "Matériel industriel",
+       "reponse": 0
+      },
+      {
+       "texte": "Brevet",
+       "reponse": 0
+      },
+      {
+       "texte": "Stock de matières premières (31.12)",
+       "reponse": 1
+      },
+      {
+       "texte": "Clients",
+       "reponse": 1
+      },
+      {
+       "texte": "Banque",
+       "reponse": 1
+      },
+      {
+       "texte": "Capital social",
+       "reponse": 2
+      },
+      {
+       "texte": "Emprunt auprès des établissements de crédit",
+       "reponse": 3
+      },
+      {
+       "texte": "Fournisseurs",
+       "reponse": 3
+      },
+      {
+       "texte": "Dettes fiscales et sociales",
+       "reponse": 3
+      },
+      {
+       "texte": "Achats de matières premières",
+       "reponse": 4
+      },
+      {
+       "texte": "Salaires et charges sociales",
+       "reponse": 4
+      },
+      {
+       "texte": "Autres achats et charges externes",
+       "reponse": 4
+      },
+      {
+       "texte": "Dotations aux amortissements",
+       "reponse": 4
+      },
+      {
+       "texte": "Intérêts d'emprunt",
+       "reponse": 5
+      },
+      {
+       "texte": "Production vendue",
+       "reponse": 7
+      },
+      {
+       "texte": "Produits des cessions d'immobilisations corporelles (757)",
+       "reponse": 7
+      }
+     ],
+     "explication": ""
+    },
+    {
+     "type": "numerique",
+     "enonce": "Variation de stock de matières premières (en charges) :",
+     "reponse": -5,
+     "tolerance": 0,
+     "explication": "SI − SF",
+     "unite": "k€"
+    },
+    {
+     "type": "tableau",
+     "enonce": "Totaux :",
+     "colonnes": [
+      "k€"
+     ],
+     "titreLignes": "",
+     "lignes": [
+      {
+       "libelle": "Total des charges",
+       "valeurs": [
+        145
+       ],
+       "aide": "Charges d'exploitation (avec la variation de stock) + charges financières"
+      },
+      {
+       "libelle": "Total des produits",
+       "valeurs": [
+        260
+       ]
+      },
+      {
+       "libelle": "Résultat (bénéfice +, perte −)",
+       "valeurs": [
+        115
+       ],
+       "total": true
+      },
+      {
+       "libelle": "Total du bilan",
+       "valeurs": [
+        435
+       ],
+       "aide": "Actif immobilisé + actif circulant = capitaux propres (avec le résultat) + dettes",
+       "total": true
+      }
+     ],
+     "explication": ""
+    }
+   ],
+   "explication": "Le résultat du CR se reporte en capitaux propres et équilibre le bilan.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE (format BELLESSENCE)"
+  },
+  {
+   "id": "af-ds3-05",
+   "type": "probleme",
+   "difficulte": 2,
+   "enonce": "**Dossier COMPTABILITÉ — Cas ORGE** · (sans calculatrice) (k€, PCG 2025)\nStock de MP au 01.01.N : 20 ; au 31.12.N : 20.\nDonnées au 31.12.N : Terrain 80 · Constructions 150 · Matériel industriel 60 · Brevet 10 · Stock de matières premières (31.12) 20 · Clients 30 · Banque 25 · Capital social 60 · Emprunt auprès des établissements de crédit 150 · Fournisseurs 20 · Dettes fiscales et sociales 10 · Achats de matières premières 80 · Salaires et charges sociales 50 · Autres achats et charges externes 10 · Dotations aux amortissements 20 · Intérêts d'emprunt 5 · Production vendue 300.",
+   "etapes": [
+    {
+     "type": "classer",
+     "enonce": "Classez chaque information :",
+     "categories": [
+      "AI",
+      "AC",
+      "CP",
+      "D",
+      "CE",
+      "CF",
+      "CEx",
+      "PE",
+      "PF",
+      "PEx"
+     ],
+     "elements": [
+      {
+       "texte": "Terrain",
+       "reponse": 0
+      },
+      {
+       "texte": "Constructions",
+       "reponse": 0
+      },
+      {
+       "texte": "Matériel industriel",
+       "reponse": 0
+      },
+      {
+       "texte": "Brevet",
+       "reponse": 0
+      },
+      {
+       "texte": "Stock de matières premières (31.12)",
+       "reponse": 1
+      },
+      {
+       "texte": "Clients",
+       "reponse": 1
+      },
+      {
+       "texte": "Banque",
+       "reponse": 1
+      },
+      {
+       "texte": "Capital social",
+       "reponse": 2
+      },
+      {
+       "texte": "Emprunt auprès des établissements de crédit",
+       "reponse": 3
+      },
+      {
+       "texte": "Fournisseurs",
+       "reponse": 3
+      },
+      {
+       "texte": "Dettes fiscales et sociales",
+       "reponse": 3
+      },
+      {
+       "texte": "Achats de matières premières",
+       "reponse": 4
+      },
+      {
+       "texte": "Salaires et charges sociales",
+       "reponse": 4
+      },
+      {
+       "texte": "Autres achats et charges externes",
+       "reponse": 4
+      },
+      {
+       "texte": "Dotations aux amortissements",
+       "reponse": 4
+      },
+      {
+       "texte": "Intérêts d'emprunt",
+       "reponse": 5
+      },
+      {
+       "texte": "Production vendue",
+       "reponse": 7
+      }
+     ],
+     "explication": ""
+    },
+    {
+     "type": "numerique",
+     "enonce": "Variation de stock de matières premières (en charges) :",
+     "reponse": 0,
+     "tolerance": 0,
+     "explication": "SI − SF",
+     "unite": "k€"
+    },
+    {
+     "type": "tableau",
+     "enonce": "Totaux :",
+     "colonnes": [
+      "k€"
+     ],
+     "titreLignes": "",
+     "lignes": [
+      {
+       "libelle": "Total des charges",
+       "valeurs": [
+        165
+       ],
+       "aide": "Charges d'exploitation (avec la variation de stock) + charges financières"
+      },
+      {
+       "libelle": "Total des produits",
+       "valeurs": [
+        300
+       ]
+      },
+      {
+       "libelle": "Résultat (bénéfice +, perte −)",
+       "valeurs": [
+        135
+       ],
+       "total": true
+      },
+      {
+       "libelle": "Total du bilan",
+       "valeurs": [
+        375
+       ],
+       "aide": "Actif immobilisé + actif circulant = capitaux propres (avec le résultat) + dettes",
+       "total": true
+      }
+     ],
+     "explication": ""
+    }
+   ],
+   "explication": "Le résultat du CR se reporte en capitaux propres et équilibre le bilan.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE (format BELLESSENCE)"
+  }
+ ]
+}

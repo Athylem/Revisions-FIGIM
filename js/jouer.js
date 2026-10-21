@@ -9,10 +9,14 @@ import * as numerique from "./types/numerique.js";
 import * as carte from "./types/carte.js";
 import * as probleme from "./types/probleme.js";
 import * as redaction from "./types/redaction.js";
+import * as classer from "./types/classer.js";
+import * as tableau from "./types/tableau.js";
+import { afficherDonnees } from "./donnees.js";
 
 const TYPES = {
   "qcm": qcm, "vrai-faux": vraiFaux, "texte-a-trous": texteATrous,
   "numerique": numerique, "carte": carte, "probleme": probleme, "redaction": redaction,
+  "classer": classer, "tableau": tableau,
 };
 const ETOILES = { 1: "★☆☆", 2: "★★☆", 3: "★★★" };
 
@@ -31,8 +35,9 @@ function montrer(ecran) {
   window.scrollTo(0, 0);
 }
 
-// Chapitres regroupés : questions de cours d'abord, exercices type DS ensuite
-const GENRES = { cours: "Questions de cours", exercices: "Exercices type DS" };
+// Chapitres regroupés : sujets complets type DS (si la matière en a), questions de cours,
+// puis exercices type DS
+const GENRES = { ds: "Sujets complets type DS", cours: "Questions de cours", exercices: "Exercices type DS" };
 
 function afficherReglages() {
   const blocs = [];
@@ -83,6 +88,7 @@ function afficherQuestion() {
   $("#consigne").hidden = !q.consigne;
   ecrire($("#consigne"), q.consigne ?? "");
   ecrire($("#enonce"), q.enonce);
+  afficherDonnees(q.donnees, $("#donnees"));
   $("#retour").hidden = true;
 
   const zone = $("#zone-reponse");
@@ -126,6 +132,8 @@ function texteSolution(q) {
     case "numerique": return numerique.formater(q);
     case "carte": return q.reponse;
     case "probleme": return probleme.solution(q, texteSolution);
+    case "classer": return classer.solution(q);
+    case "tableau": return tableau.solution(q);
     default: return q.reponse ? "Vrai" : "Faux";
   }
 }

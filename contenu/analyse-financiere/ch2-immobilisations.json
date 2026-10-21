@@ -1,0 +1,294 @@
+{
+ "chapitre": "Immobilisations : acquisition, amortissement, cession",
+ "genre": "cours",
+ "questions": [
+  {
+   "id": "af-c2-01",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Le coût d'acquisition d'une immobilisation comprend :",
+   "choix": [
+    "Prix net (après remises) + frais directement attribuables (transport, installation, douane)",
+    "Prix TTC + frais de formation du personnel",
+    "Prix HT uniquement",
+    "Prix HT + TVA récupérable"
+   ],
+   "reponse": 0,
+   "explication": "Les frais de formation ne peuvent pas être incorporés ; la TVA récupérable va en 4456.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c2-02",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Taux d'amortissement linéaire pour une durée de 5 ans :",
+   "choix": [
+    "20 %",
+    "25 %",
+    "35 %",
+    "5 %"
+   ],
+   "reponse": 0,
+   "explication": "1/n = 1/5 = 20 %.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c2-03",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "En linéaire, le prorata temporis démarre :",
+   "choix": [
+    "À la date de mise en service (par défaut la date d'acquisition)",
+    "Au 1er janvier de l'année d'acquisition",
+    "Au 1er jour du mois d'acquisition",
+    "À la date de paiement"
+   ],
+   "reponse": 0,
+   "explication": "Le dégressif, lui, démarre au 1er jour du mois d'acquisition (prorata en mois).",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c2-04",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Convention de calcul du prorata :",
+   "choix": [
+    "Année de 360 jours (12 mois de 30 jours)",
+    "Année de 365 jours",
+    "Nombre de jours ouvrés",
+    "Nombre de mois seulement"
+   ],
+   "reponse": 0,
+   "explication": "12 × 30 = 360.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c2-05",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Mise en service le 15.03.N, clôture le 31.12 : prorata de la 1re année ?",
+   "choix": [
+    "285/360",
+    "270/360",
+    "290/360",
+    "9/12"
+   ],
+   "reponse": 0,
+   "explication": "15 jours de mars + 9 mois × 30 = 285.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c2-06",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Mise en service le 15.08, clôture le 31.12 : prorata ?",
+   "choix": [
+    "135/360",
+    "150/360",
+    "120/360",
+    "4/12"
+   ],
+   "reponse": 0,
+   "explication": "15 + 4 × 30 = 135 (cas VALIANT).",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c2-07",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Coefficient dégressif pour une durée de 5 ans :",
+   "choix": [
+    "1,75",
+    "1,25",
+    "2,25",
+    "2"
+   ],
+   "reponse": 0,
+   "explication": "3-4 ans : 1,25 ; 5-6 ans : 1,75 ; plus de 6 ans : 2,25.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c2-08",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "En dégressif, à partir de la 2e année, la dotation se calcule sur :",
+   "choix": [
+    "La VNC de début d'année",
+    "La valeur d'origine",
+    "La valeur résiduelle",
+    "Le cumul des amortissements"
+   ],
+   "reponse": 0,
+   "explication": "Dotation = VNC début × taux dégressif ; on bascule en linéaire quand 1/(années restantes) > taux dégressif.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c2-09",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "La dotation aux amortissements est :",
+   "choix": [
+    "Une charge calculée, non décaissée (compte 681)",
+    "Une charge décaissée",
+    "Un produit",
+    "Une dette"
+   ],
+   "reponse": 0,
+   "explication": "Pas de flux de trésorerie : c'est pourquoi on la rajoute dans la CAF additive.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c2-10",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Le compte d'amortissement du matériel industriel (215) est :",
+   "choix": [
+    "2815",
+    "6815",
+    "6811",
+    "215"
+   ],
+   "reponse": 0,
+   "explication": "On intercale un 8 après le 2 : 2815. La dotation va en 681(1).",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c2-11",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "VNC d'une immobilisation =",
+   "choix": [
+    "Valeur brute − amortissements cumulés",
+    "Valeur brute − dotation de l'année",
+    "Prix de cession − valeur brute",
+    "Valeur brute × taux"
+   ],
+   "reponse": 0,
+   "explication": "3e colonne de l'actif.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c2-12",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "PCG 2025 : le produit de cession d'une immobilisation **corporelle** va dans le compte :",
+   "choix": [
+    "757, en produits d'exploitation",
+    "775, en produits exceptionnels",
+    "767, en produits financiers",
+    "707, en ventes"
+   ],
+   "reponse": 0,
+   "explication": "Réforme 2025 : 675/775 supprimés ; corporelles/incorporelles → 657/757 (exploitation) ; financières → 667/767 (financier).",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c2-13",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "La valeur comptable d'une immobilisation **corporelle** cédée va en :",
+   "choix": [
+    "657, charges d'exploitation",
+    "675, charges exceptionnelles",
+    "667, charges financières",
+    "681"
+   ],
+   "reponse": 0,
+   "explication": "PCG 2025.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c2-14",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "PCG 2025 : la cession de **titres de participation** est enregistrée en :",
+   "choix": [
+    "667 / 767 (résultat financier)",
+    "657 / 757 (exploitation)",
+    "675 / 775 (exceptionnel)",
+    "Elle n'est pas enregistrée"
+   ],
+   "reponse": 0,
+   "explication": "Cas VELORAMA N : 767 = 30 ; 667 = 26.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c2-15",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Lors d'une cession, avant de calculer la VNC, il faut :",
+   "choix": [
+    "Passer la dotation complémentaire du 1er janvier à la date de cession",
+    "Annuler toutes les dotations déjà passées",
+    "Recalculer le prix de cession TTC",
+    "Rien de particulier"
+   ],
+   "reponse": 0,
+   "explication": "Sinon la VNC est fausse (cas VALIANT : 6 250 de dotation complémentaire).",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c2-16",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Prix de cession HT 25 000, VNC 34 375. Résultat de cession :",
+   "choix": [
+    "Moins-value de 9 375",
+    "Plus-value de 9 375",
+    "Moins-value de 34 375",
+    "Plus-value de 25 000"
+   ],
+   "reponse": 0,
+   "explication": "757 − 657 = 25 000 − 34 375 = −9 375 (VALIANT).",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c2-17",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Écriture de sortie de l'immobilisation cédée :",
+   "choix": [
+    "Débit 657 (VNC) + débit 28 (cumul) / crédit 2 (valeur brute)",
+    "Débit 2 / crédit 657 + crédit 28",
+    "Débit 512 / crédit 757",
+    "Débit 681 / crédit 28"
+   ],
+   "reponse": 0,
+   "explication": "On solde le compte d'immobilisation et ses amortissements.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c2-18",
+   "type": "vrai-faux",
+   "difficulte": 1,
+   "enonce": "Un terrain s'amortit sur sa durée d'utilisation.",
+   "reponse": false,
+   "explication": "Durée de vie illimitée : pas d'amortissement (sauf mines, carrières).",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c2-19",
+   "type": "vrai-faux",
+   "difficulte": 1,
+   "enonce": "En dégressif, l'année d'acquisition compte pour une année entière : il n'y a pas d'annuité complémentaire en fin de plan.",
+   "reponse": true,
+   "explication": "n annuités en dégressif (n + 1 en linéaire avec prorata).",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c2-20",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Une dotation aux amortissements augmente. Conséquence :",
+   "choix": [
+    "Le résultat et l'IS diminuent, sans effet sur la trésorerie",
+    "La trésorerie diminue",
+    "Le résultat augmente",
+    "La CAF diminue"
+   ],
+   "reponse": 0,
+   "explication": "Charge calculée : résultat ↓, impôt ↓, CAF inchangée (hors effet IS).",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  }
+ ]
+}

@@ -1,0 +1,1524 @@
+{
+ "chapitre": "Amortissement linéaire + cession (VALIANT et variantes), dégressif",
+ "genre": "exercices",
+ "questions": [
+  {
+   "id": "af-x5-valiant",
+   "type": "probleme",
+   "difficulte": 3,
+   "enonce": "**Cas VALIANT** (PCG 2025, clôture 31.12, TVA 20 %). Matériel industriel 100 000 € HT acquis le 07.08.N-3, **mis en service le 15.08.N-3**, linéaire **4 ans**. Cédé le **01.04.N** pour 25 000 € HT.",
+   "etapes": [
+    {
+     "type": "tableau",
+     "enonce": "Dotations aux amortissements :",
+     "colonnes": [
+      "Dotation",
+      "Cumul"
+     ],
+     "titreLignes": "Exercice",
+     "lignes": [
+      {
+       "libelle": "N-3 (15.08 → 31.12)",
+       "valeurs": [
+        9375,
+        9375
+       ],
+       "aide": "100 000 × 1/4 × 135/360"
+      },
+      {
+       "libelle": "N-2",
+       "valeurs": [
+        25000,
+        34375
+       ],
+       "aide": "100 000 × 1/4"
+      },
+      {
+       "libelle": "N-1",
+       "valeurs": [
+        25000,
+        59375
+       ]
+      },
+      {
+       "libelle": "N (01.01 → 01.04)",
+       "valeurs": [
+        6250,
+        65625
+       ],
+       "aide": "100 000 × 1/4 × 90/360"
+      }
+     ],
+     "explication": ""
+    },
+    {
+     "type": "numerique",
+     "enonce": "VNC à la date de cession (657) :",
+     "reponse": 34375,
+     "tolerance": 0,
+     "explication": "100 000 − 65 625",
+     "unite": "€"
+    },
+    {
+     "type": "numerique",
+     "enonce": "Résultat de cession :",
+     "reponse": -9375,
+     "tolerance": 0,
+     "explication": "25 000 − 34 375 : moins-value (« vente à perte »).",
+     "unite": "€"
+    }
+   ],
+   "explication": "Prorata depuis la **mise en service** (15.08), pas l'acquisition (07.08).",
+   "source": "Cours/ECONOMIE D'ENTREPRISE (cas VALIANT)"
+  },
+  {
+   "id": "af-x5-01",
+   "type": "probleme",
+   "difficulte": 3,
+   "enonce": "**Variante 1** (clôture au 31.12, TVA 20 %, PCG 2025). Matériel industriel acquis 36 000 € HT, **mis en service le 01.05.N**, amorti en **linéaire sur 5 ans**. Il est **cédé le 01.05.N+4** pour 28 800 € HT (chèque).",
+   "etapes": [
+    {
+     "type": "numerique",
+     "enonce": "Taux d'amortissement linéaire (en %) :",
+     "reponse": 20.0,
+     "tolerance": 0,
+     "explication": "1/5",
+     "unite": "%"
+    },
+    {
+     "type": "numerique",
+     "enonce": "Prorata temporis de la 1re année (nombre de jours sur 360) :",
+     "reponse": 240,
+     "tolerance": 0,
+     "explication": "Du 01.05.N au 31.12 : 240 jours (mois de 30 jours).",
+     "unite": "jours"
+    },
+    {
+     "type": "tableau",
+     "enonce": "Plan d'amortissement jusqu'à la date de cession :",
+     "colonnes": [
+      "Base",
+      "Dotation",
+      "Cumul",
+      "VNC fin"
+     ],
+     "titreLignes": "Exercice",
+     "lignes": [
+      {
+       "libelle": "N",
+       "valeurs": [
+        36000,
+        4800,
+        4800,
+        31200
+       ],
+       "aide": "36000 × 1/5 × 240/360 (prorata depuis la mise en service)"
+      },
+      {
+       "libelle": "N+1",
+       "valeurs": [
+        36000,
+        7200,
+        12000,
+        24000
+       ],
+       "aide": "36000 × 1/5 × 360/360"
+      },
+      {
+       "libelle": "N+2",
+       "valeurs": [
+        36000,
+        7200,
+        19200,
+        16800
+       ],
+       "aide": "36000 × 1/5 × 360/360"
+      },
+      {
+       "libelle": "N+3",
+       "valeurs": [
+        36000,
+        7200,
+        26400,
+        9600
+       ],
+       "aide": "36000 × 1/5 × 360/360"
+      },
+      {
+       "libelle": "N+4 (jusqu'au 01.05)",
+       "valeurs": [
+        36000,
+        2400,
+        28800,
+        7200
+       ],
+       "aide": "36000 × 1/5 × 120/360 (dotation complémentaire jusqu'à la cession)"
+      }
+     ],
+     "explication": "Dotation = VB × 1/n × jours/360 ; cumul = Σ dotations ; VNC = VB − cumul."
+    },
+    {
+     "type": "numerique",
+     "enonce": "Valeur comptable de l'immobilisation cédée (compte 657) :",
+     "reponse": 7200,
+     "tolerance": 0,
+     "explication": "36000 − 28800",
+     "unite": "€"
+    },
+    {
+     "type": "numerique",
+     "enonce": "Résultat de cession (positif = plus-value, négatif = moins-value) :",
+     "reponse": 21600,
+     "tolerance": 0,
+     "explication": "757 − 657 = 28800 − 7200",
+     "unite": "€"
+    },
+    {
+     "type": "classer",
+     "enonce": "Écritures du 01.05.N+4 : chaque montant est-il au **débit** ou au **crédit** ?",
+     "categories": [
+      "Débit",
+      "Crédit"
+     ],
+     "elements": [
+      {
+       "texte": "512 Banque 34 560 €",
+       "reponse": 0,
+       "explication": "Encaissement TTC."
+      },
+      {
+       "texte": "757 Produits des cessions 28 800 €",
+       "reponse": 1,
+       "explication": "Produit HT."
+      },
+      {
+       "texte": "44571 TVA collectée 5 760 €",
+       "reponse": 1
+      },
+      {
+       "texte": "681 Dotation complémentaire 2 400 €",
+       "reponse": 0,
+       "explication": "Charge."
+      },
+      {
+       "texte": "2815 Amortissement (dotation complémentaire) 2 400 €",
+       "reponse": 1
+      },
+      {
+       "texte": "657 Valeur comptable cédée 7 200 €",
+       "reponse": 0
+      },
+      {
+       "texte": "2815 Amortissements cumulés 28 800 €",
+       "reponse": 0,
+       "explication": "On solde le compte d'amortissement."
+      },
+      {
+       "texte": "215 Matériel industriel 36 000 €",
+       "reponse": 1,
+       "explication": "On sort la valeur brute."
+      }
+     ],
+     "explication": ""
+    }
+   ],
+   "explication": "Méthode VALIANT : frise, dotations, dotation complémentaire, VNC (657), résultat = 757 − 657, puis 3 écritures (cession, complément, sortie).",
+   "source": "Cours/ECONOMIE D'ENTREPRISE (cas VALIANT)"
+  },
+  {
+   "id": "af-x5-02",
+   "type": "probleme",
+   "difficulte": 3,
+   "enonce": "**Variante 2** (clôture au 31.12, TVA 20 %, PCG 2025). Matériel industriel acquis 48 000 € HT, **mis en service le 01.10.N**, amorti en **linéaire sur 4 ans**. Il est **cédé le 01.09.N+3** pour 14 400 € HT (chèque).",
+   "etapes": [
+    {
+     "type": "numerique",
+     "enonce": "Taux d'amortissement linéaire (en %) :",
+     "reponse": 25.0,
+     "tolerance": 0,
+     "explication": "1/4",
+     "unite": "%"
+    },
+    {
+     "type": "numerique",
+     "enonce": "Prorata temporis de la 1re année (nombre de jours sur 360) :",
+     "reponse": 90,
+     "tolerance": 0,
+     "explication": "Du 01.10.N au 31.12 : 90 jours (mois de 30 jours).",
+     "unite": "jours"
+    },
+    {
+     "type": "tableau",
+     "enonce": "Plan d'amortissement jusqu'à la date de cession :",
+     "colonnes": [
+      "Base",
+      "Dotation",
+      "Cumul",
+      "VNC fin"
+     ],
+     "titreLignes": "Exercice",
+     "lignes": [
+      {
+       "libelle": "N",
+       "valeurs": [
+        48000,
+        3000,
+        3000,
+        45000
+       ],
+       "aide": "48000 × 1/4 × 90/360 (prorata depuis la mise en service)"
+      },
+      {
+       "libelle": "N+1",
+       "valeurs": [
+        48000,
+        12000,
+        15000,
+        33000
+       ],
+       "aide": "48000 × 1/4 × 360/360"
+      },
+      {
+       "libelle": "N+2",
+       "valeurs": [
+        48000,
+        12000,
+        27000,
+        21000
+       ],
+       "aide": "48000 × 1/4 × 360/360"
+      },
+      {
+       "libelle": "N+3 (jusqu'au 01.09)",
+       "valeurs": [
+        48000,
+        8000,
+        35000,
+        13000
+       ],
+       "aide": "48000 × 1/4 × 240/360 (dotation complémentaire jusqu'à la cession)"
+      }
+     ],
+     "explication": "Dotation = VB × 1/n × jours/360 ; cumul = Σ dotations ; VNC = VB − cumul."
+    },
+    {
+     "type": "numerique",
+     "enonce": "Valeur comptable de l'immobilisation cédée (compte 657) :",
+     "reponse": 13000,
+     "tolerance": 0,
+     "explication": "48000 − 35000",
+     "unite": "€"
+    },
+    {
+     "type": "numerique",
+     "enonce": "Résultat de cession (positif = plus-value, négatif = moins-value) :",
+     "reponse": 1400,
+     "tolerance": 0,
+     "explication": "757 − 657 = 14400 − 13000",
+     "unite": "€"
+    },
+    {
+     "type": "classer",
+     "enonce": "Écritures du 01.09.N+3 : chaque montant est-il au **débit** ou au **crédit** ?",
+     "categories": [
+      "Débit",
+      "Crédit"
+     ],
+     "elements": [
+      {
+       "texte": "512 Banque 17 280 €",
+       "reponse": 0,
+       "explication": "Encaissement TTC."
+      },
+      {
+       "texte": "757 Produits des cessions 14 400 €",
+       "reponse": 1,
+       "explication": "Produit HT."
+      },
+      {
+       "texte": "44571 TVA collectée 2 880 €",
+       "reponse": 1
+      },
+      {
+       "texte": "681 Dotation complémentaire 8 000 €",
+       "reponse": 0,
+       "explication": "Charge."
+      },
+      {
+       "texte": "2815 Amortissement (dotation complémentaire) 8 000 €",
+       "reponse": 1
+      },
+      {
+       "texte": "657 Valeur comptable cédée 13 000 €",
+       "reponse": 0
+      },
+      {
+       "texte": "2815 Amortissements cumulés 35 000 €",
+       "reponse": 0,
+       "explication": "On solde le compte d'amortissement."
+      },
+      {
+       "texte": "215 Matériel industriel 48 000 €",
+       "reponse": 1,
+       "explication": "On sort la valeur brute."
+      }
+     ],
+     "explication": ""
+    }
+   ],
+   "explication": "Méthode VALIANT : frise, dotations, dotation complémentaire, VNC (657), résultat = 757 − 657, puis 3 écritures (cession, complément, sortie).",
+   "source": "Cours/ECONOMIE D'ENTREPRISE (cas VALIANT)"
+  },
+  {
+   "id": "af-x5-03",
+   "type": "probleme",
+   "difficulte": 3,
+   "enonce": "**Variante 3** (clôture au 31.12, TVA 20 %, PCG 2025). Matériel industriel acquis 30 000 € HT, **mis en service le 15.06.N**, amorti en **linéaire sur 5 ans**. Il est **cédé le 01.07.N+3** pour 18 000 € HT (chèque).",
+   "etapes": [
+    {
+     "type": "numerique",
+     "enonce": "Taux d'amortissement linéaire (en %) :",
+     "reponse": 20.0,
+     "tolerance": 0,
+     "explication": "1/5",
+     "unite": "%"
+    },
+    {
+     "type": "numerique",
+     "enonce": "Prorata temporis de la 1re année (nombre de jours sur 360) :",
+     "reponse": 195,
+     "tolerance": 0,
+     "explication": "Du 15.06.N au 31.12 : 195 jours (mois de 30 jours).",
+     "unite": "jours"
+    },
+    {
+     "type": "tableau",
+     "enonce": "Plan d'amortissement jusqu'à la date de cession :",
+     "colonnes": [
+      "Base",
+      "Dotation",
+      "Cumul",
+      "VNC fin"
+     ],
+     "titreLignes": "Exercice",
+     "lignes": [
+      {
+       "libelle": "N",
+       "valeurs": [
+        30000,
+        3250,
+        3250,
+        26750
+       ],
+       "aide": "30000 × 1/5 × 195/360 (prorata depuis la mise en service)"
+      },
+      {
+       "libelle": "N+1",
+       "valeurs": [
+        30000,
+        6000,
+        9250,
+        20750
+       ],
+       "aide": "30000 × 1/5 × 360/360"
+      },
+      {
+       "libelle": "N+2",
+       "valeurs": [
+        30000,
+        6000,
+        15250,
+        14750
+       ],
+       "aide": "30000 × 1/5 × 360/360"
+      },
+      {
+       "libelle": "N+3 (jusqu'au 01.07)",
+       "valeurs": [
+        30000,
+        3000,
+        18250,
+        11750
+       ],
+       "aide": "30000 × 1/5 × 180/360 (dotation complémentaire jusqu'à la cession)"
+      }
+     ],
+     "explication": "Dotation = VB × 1/n × jours/360 ; cumul = Σ dotations ; VNC = VB − cumul."
+    },
+    {
+     "type": "numerique",
+     "enonce": "Valeur comptable de l'immobilisation cédée (compte 657) :",
+     "reponse": 11750,
+     "tolerance": 0,
+     "explication": "30000 − 18250",
+     "unite": "€"
+    },
+    {
+     "type": "numerique",
+     "enonce": "Résultat de cession (positif = plus-value, négatif = moins-value) :",
+     "reponse": 6250,
+     "tolerance": 0,
+     "explication": "757 − 657 = 18000 − 11750",
+     "unite": "€"
+    },
+    {
+     "type": "classer",
+     "enonce": "Écritures du 01.07.N+3 : chaque montant est-il au **débit** ou au **crédit** ?",
+     "categories": [
+      "Débit",
+      "Crédit"
+     ],
+     "elements": [
+      {
+       "texte": "512 Banque 21 600 €",
+       "reponse": 0,
+       "explication": "Encaissement TTC."
+      },
+      {
+       "texte": "757 Produits des cessions 18 000 €",
+       "reponse": 1,
+       "explication": "Produit HT."
+      },
+      {
+       "texte": "44571 TVA collectée 3 600 €",
+       "reponse": 1
+      },
+      {
+       "texte": "681 Dotation complémentaire 3 000 €",
+       "reponse": 0,
+       "explication": "Charge."
+      },
+      {
+       "texte": "2815 Amortissement (dotation complémentaire) 3 000 €",
+       "reponse": 1
+      },
+      {
+       "texte": "657 Valeur comptable cédée 11 750 €",
+       "reponse": 0
+      },
+      {
+       "texte": "2815 Amortissements cumulés 18 250 €",
+       "reponse": 0,
+       "explication": "On solde le compte d'amortissement."
+      },
+      {
+       "texte": "215 Matériel industriel 30 000 €",
+       "reponse": 1,
+       "explication": "On sort la valeur brute."
+      }
+     ],
+     "explication": ""
+    }
+   ],
+   "explication": "Méthode VALIANT : frise, dotations, dotation complémentaire, VNC (657), résultat = 757 − 657, puis 3 écritures (cession, complément, sortie).",
+   "source": "Cours/ECONOMIE D'ENTREPRISE (cas VALIANT)"
+  },
+  {
+   "id": "af-x5-04",
+   "type": "probleme",
+   "difficulte": 3,
+   "enonce": "**Variante 4** (clôture au 31.12, TVA 20 %, PCG 2025). Matériel industriel acquis 57 600 € HT, **mis en service le 15.08.N**, amorti en **linéaire sur 8 ans**. Il est **cédé le 01.06.N+2** pour 46 080 € HT (chèque).",
+   "etapes": [
+    {
+     "type": "numerique",
+     "enonce": "Taux d'amortissement linéaire (en %) :",
+     "reponse": 12.5,
+     "tolerance": 0,
+     "explication": "1/8",
+     "unite": "%"
+    },
+    {
+     "type": "numerique",
+     "enonce": "Prorata temporis de la 1re année (nombre de jours sur 360) :",
+     "reponse": 135,
+     "tolerance": 0,
+     "explication": "Du 15.08.N au 31.12 : 135 jours (mois de 30 jours).",
+     "unite": "jours"
+    },
+    {
+     "type": "tableau",
+     "enonce": "Plan d'amortissement jusqu'à la date de cession :",
+     "colonnes": [
+      "Base",
+      "Dotation",
+      "Cumul",
+      "VNC fin"
+     ],
+     "titreLignes": "Exercice",
+     "lignes": [
+      {
+       "libelle": "N",
+       "valeurs": [
+        57600,
+        2700,
+        2700,
+        54900
+       ],
+       "aide": "57600 × 1/8 × 135/360 (prorata depuis la mise en service)"
+      },
+      {
+       "libelle": "N+1",
+       "valeurs": [
+        57600,
+        7200,
+        9900,
+        47700
+       ],
+       "aide": "57600 × 1/8 × 360/360"
+      },
+      {
+       "libelle": "N+2 (jusqu'au 01.06)",
+       "valeurs": [
+        57600,
+        3000,
+        12900,
+        44700
+       ],
+       "aide": "57600 × 1/8 × 150/360 (dotation complémentaire jusqu'à la cession)"
+      }
+     ],
+     "explication": "Dotation = VB × 1/n × jours/360 ; cumul = Σ dotations ; VNC = VB − cumul."
+    },
+    {
+     "type": "numerique",
+     "enonce": "Valeur comptable de l'immobilisation cédée (compte 657) :",
+     "reponse": 44700,
+     "tolerance": 0,
+     "explication": "57600 − 12900",
+     "unite": "€"
+    },
+    {
+     "type": "numerique",
+     "enonce": "Résultat de cession (positif = plus-value, négatif = moins-value) :",
+     "reponse": 1380,
+     "tolerance": 0,
+     "explication": "757 − 657 = 46080 − 44700",
+     "unite": "€"
+    },
+    {
+     "type": "classer",
+     "enonce": "Écritures du 01.06.N+2 : chaque montant est-il au **débit** ou au **crédit** ?",
+     "categories": [
+      "Débit",
+      "Crédit"
+     ],
+     "elements": [
+      {
+       "texte": "512 Banque 55 296 €",
+       "reponse": 0,
+       "explication": "Encaissement TTC."
+      },
+      {
+       "texte": "757 Produits des cessions 46 080 €",
+       "reponse": 1,
+       "explication": "Produit HT."
+      },
+      {
+       "texte": "44571 TVA collectée 9 216 €",
+       "reponse": 1
+      },
+      {
+       "texte": "681 Dotation complémentaire 3 000 €",
+       "reponse": 0,
+       "explication": "Charge."
+      },
+      {
+       "texte": "2815 Amortissement (dotation complémentaire) 3 000 €",
+       "reponse": 1
+      },
+      {
+       "texte": "657 Valeur comptable cédée 44 700 €",
+       "reponse": 0
+      },
+      {
+       "texte": "2815 Amortissements cumulés 12 900 €",
+       "reponse": 0,
+       "explication": "On solde le compte d'amortissement."
+      },
+      {
+       "texte": "215 Matériel industriel 57 600 €",
+       "reponse": 1,
+       "explication": "On sort la valeur brute."
+      }
+     ],
+     "explication": ""
+    }
+   ],
+   "explication": "Méthode VALIANT : frise, dotations, dotation complémentaire, VNC (657), résultat = 757 − 657, puis 3 écritures (cession, complément, sortie).",
+   "source": "Cours/ECONOMIE D'ENTREPRISE (cas VALIANT)"
+  },
+  {
+   "id": "af-x5-05",
+   "type": "probleme",
+   "difficulte": 3,
+   "enonce": "**Variante 5** (clôture au 31.12, TVA 20 %, PCG 2025). Matériel industriel acquis 12 000 € HT, **mis en service le 15.02.N**, amorti en **linéaire sur 5 ans**. Il est **cédé le 01.09.N+2** pour 7 200 € HT (chèque).",
+   "etapes": [
+    {
+     "type": "numerique",
+     "enonce": "Taux d'amortissement linéaire (en %) :",
+     "reponse": 20.0,
+     "tolerance": 0,
+     "explication": "1/5",
+     "unite": "%"
+    },
+    {
+     "type": "numerique",
+     "enonce": "Prorata temporis de la 1re année (nombre de jours sur 360) :",
+     "reponse": 315,
+     "tolerance": 0,
+     "explication": "Du 15.02.N au 31.12 : 315 jours (mois de 30 jours).",
+     "unite": "jours"
+    },
+    {
+     "type": "tableau",
+     "enonce": "Plan d'amortissement jusqu'à la date de cession :",
+     "colonnes": [
+      "Base",
+      "Dotation",
+      "Cumul",
+      "VNC fin"
+     ],
+     "titreLignes": "Exercice",
+     "lignes": [
+      {
+       "libelle": "N",
+       "valeurs": [
+        12000,
+        2100,
+        2100,
+        9900
+       ],
+       "aide": "12000 × 1/5 × 315/360 (prorata depuis la mise en service)"
+      },
+      {
+       "libelle": "N+1",
+       "valeurs": [
+        12000,
+        2400,
+        4500,
+        7500
+       ],
+       "aide": "12000 × 1/5 × 360/360"
+      },
+      {
+       "libelle": "N+2 (jusqu'au 01.09)",
+       "valeurs": [
+        12000,
+        1600,
+        6100,
+        5900
+       ],
+       "aide": "12000 × 1/5 × 240/360 (dotation complémentaire jusqu'à la cession)"
+      }
+     ],
+     "explication": "Dotation = VB × 1/n × jours/360 ; cumul = Σ dotations ; VNC = VB − cumul."
+    },
+    {
+     "type": "numerique",
+     "enonce": "Valeur comptable de l'immobilisation cédée (compte 657) :",
+     "reponse": 5900,
+     "tolerance": 0,
+     "explication": "12000 − 6100",
+     "unite": "€"
+    },
+    {
+     "type": "numerique",
+     "enonce": "Résultat de cession (positif = plus-value, négatif = moins-value) :",
+     "reponse": 1300,
+     "tolerance": 0,
+     "explication": "757 − 657 = 7200 − 5900",
+     "unite": "€"
+    },
+    {
+     "type": "classer",
+     "enonce": "Écritures du 01.09.N+2 : chaque montant est-il au **débit** ou au **crédit** ?",
+     "categories": [
+      "Débit",
+      "Crédit"
+     ],
+     "elements": [
+      {
+       "texte": "512 Banque 8 640 €",
+       "reponse": 0,
+       "explication": "Encaissement TTC."
+      },
+      {
+       "texte": "757 Produits des cessions 7 200 €",
+       "reponse": 1,
+       "explication": "Produit HT."
+      },
+      {
+       "texte": "44571 TVA collectée 1 440 €",
+       "reponse": 1
+      },
+      {
+       "texte": "681 Dotation complémentaire 1 600 €",
+       "reponse": 0,
+       "explication": "Charge."
+      },
+      {
+       "texte": "2815 Amortissement (dotation complémentaire) 1 600 €",
+       "reponse": 1
+      },
+      {
+       "texte": "657 Valeur comptable cédée 5 900 €",
+       "reponse": 0
+      },
+      {
+       "texte": "2815 Amortissements cumulés 6 100 €",
+       "reponse": 0,
+       "explication": "On solde le compte d'amortissement."
+      },
+      {
+       "texte": "215 Matériel industriel 12 000 €",
+       "reponse": 1,
+       "explication": "On sort la valeur brute."
+      }
+     ],
+     "explication": ""
+    }
+   ],
+   "explication": "Méthode VALIANT : frise, dotations, dotation complémentaire, VNC (657), résultat = 757 − 657, puis 3 écritures (cession, complément, sortie).",
+   "source": "Cours/ECONOMIE D'ENTREPRISE (cas VALIANT)"
+  },
+  {
+   "id": "af-x5-06",
+   "type": "probleme",
+   "difficulte": 3,
+   "enonce": "**Variante 6** (clôture au 31.12, TVA 20 %, PCG 2025). Matériel industriel acquis 48 000 € HT, **mis en service le 15.10.N**, amorti en **linéaire sur 5 ans**. Il est **cédé le 01.11.N+2** pour 14 400 € HT (chèque).",
+   "etapes": [
+    {
+     "type": "numerique",
+     "enonce": "Taux d'amortissement linéaire (en %) :",
+     "reponse": 20.0,
+     "tolerance": 0,
+     "explication": "1/5",
+     "unite": "%"
+    },
+    {
+     "type": "numerique",
+     "enonce": "Prorata temporis de la 1re année (nombre de jours sur 360) :",
+     "reponse": 75,
+     "tolerance": 0,
+     "explication": "Du 15.10.N au 31.12 : 75 jours (mois de 30 jours).",
+     "unite": "jours"
+    },
+    {
+     "type": "tableau",
+     "enonce": "Plan d'amortissement jusqu'à la date de cession :",
+     "colonnes": [
+      "Base",
+      "Dotation",
+      "Cumul",
+      "VNC fin"
+     ],
+     "titreLignes": "Exercice",
+     "lignes": [
+      {
+       "libelle": "N",
+       "valeurs": [
+        48000,
+        2000,
+        2000,
+        46000
+       ],
+       "aide": "48000 × 1/5 × 75/360 (prorata depuis la mise en service)"
+      },
+      {
+       "libelle": "N+1",
+       "valeurs": [
+        48000,
+        9600,
+        11600,
+        36400
+       ],
+       "aide": "48000 × 1/5 × 360/360"
+      },
+      {
+       "libelle": "N+2 (jusqu'au 01.11)",
+       "valeurs": [
+        48000,
+        8000,
+        19600,
+        28400
+       ],
+       "aide": "48000 × 1/5 × 300/360 (dotation complémentaire jusqu'à la cession)"
+      }
+     ],
+     "explication": "Dotation = VB × 1/n × jours/360 ; cumul = Σ dotations ; VNC = VB − cumul."
+    },
+    {
+     "type": "numerique",
+     "enonce": "Valeur comptable de l'immobilisation cédée (compte 657) :",
+     "reponse": 28400,
+     "tolerance": 0,
+     "explication": "48000 − 19600",
+     "unite": "€"
+    },
+    {
+     "type": "numerique",
+     "enonce": "Résultat de cession (positif = plus-value, négatif = moins-value) :",
+     "reponse": -14000,
+     "tolerance": 0,
+     "explication": "757 − 657 = 14400 − 28400",
+     "unite": "€"
+    },
+    {
+     "type": "classer",
+     "enonce": "Écritures du 01.11.N+2 : chaque montant est-il au **débit** ou au **crédit** ?",
+     "categories": [
+      "Débit",
+      "Crédit"
+     ],
+     "elements": [
+      {
+       "texte": "512 Banque 17 280 €",
+       "reponse": 0,
+       "explication": "Encaissement TTC."
+      },
+      {
+       "texte": "757 Produits des cessions 14 400 €",
+       "reponse": 1,
+       "explication": "Produit HT."
+      },
+      {
+       "texte": "44571 TVA collectée 2 880 €",
+       "reponse": 1
+      },
+      {
+       "texte": "681 Dotation complémentaire 8 000 €",
+       "reponse": 0,
+       "explication": "Charge."
+      },
+      {
+       "texte": "2815 Amortissement (dotation complémentaire) 8 000 €",
+       "reponse": 1
+      },
+      {
+       "texte": "657 Valeur comptable cédée 28 400 €",
+       "reponse": 0
+      },
+      {
+       "texte": "2815 Amortissements cumulés 19 600 €",
+       "reponse": 0,
+       "explication": "On solde le compte d'amortissement."
+      },
+      {
+       "texte": "215 Matériel industriel 48 000 €",
+       "reponse": 1,
+       "explication": "On sort la valeur brute."
+      }
+     ],
+     "explication": ""
+    }
+   ],
+   "explication": "Méthode VALIANT : frise, dotations, dotation complémentaire, VNC (657), résultat = 757 − 657, puis 3 écritures (cession, complément, sortie).",
+   "source": "Cours/ECONOMIE D'ENTREPRISE (cas VALIANT)"
+  },
+  {
+   "id": "af-x5-07",
+   "type": "probleme",
+   "difficulte": 3,
+   "enonce": "**Variante 7** (clôture au 31.12, TVA 20 %, PCG 2025). Matériel industriel acquis 60 000 € HT, **mis en service le 15.07.N**, amorti en **linéaire sur 5 ans**. Il est **cédé le 01.07.N+4** pour 24 000 € HT (chèque).",
+   "etapes": [
+    {
+     "type": "numerique",
+     "enonce": "Taux d'amortissement linéaire (en %) :",
+     "reponse": 20.0,
+     "tolerance": 0,
+     "explication": "1/5",
+     "unite": "%"
+    },
+    {
+     "type": "numerique",
+     "enonce": "Prorata temporis de la 1re année (nombre de jours sur 360) :",
+     "reponse": 165,
+     "tolerance": 0,
+     "explication": "Du 15.07.N au 31.12 : 165 jours (mois de 30 jours).",
+     "unite": "jours"
+    },
+    {
+     "type": "tableau",
+     "enonce": "Plan d'amortissement jusqu'à la date de cession :",
+     "colonnes": [
+      "Base",
+      "Dotation",
+      "Cumul",
+      "VNC fin"
+     ],
+     "titreLignes": "Exercice",
+     "lignes": [
+      {
+       "libelle": "N",
+       "valeurs": [
+        60000,
+        5500,
+        5500,
+        54500
+       ],
+       "aide": "60000 × 1/5 × 165/360 (prorata depuis la mise en service)"
+      },
+      {
+       "libelle": "N+1",
+       "valeurs": [
+        60000,
+        12000,
+        17500,
+        42500
+       ],
+       "aide": "60000 × 1/5 × 360/360"
+      },
+      {
+       "libelle": "N+2",
+       "valeurs": [
+        60000,
+        12000,
+        29500,
+        30500
+       ],
+       "aide": "60000 × 1/5 × 360/360"
+      },
+      {
+       "libelle": "N+3",
+       "valeurs": [
+        60000,
+        12000,
+        41500,
+        18500
+       ],
+       "aide": "60000 × 1/5 × 360/360"
+      },
+      {
+       "libelle": "N+4 (jusqu'au 01.07)",
+       "valeurs": [
+        60000,
+        6000,
+        47500,
+        12500
+       ],
+       "aide": "60000 × 1/5 × 180/360 (dotation complémentaire jusqu'à la cession)"
+      }
+     ],
+     "explication": "Dotation = VB × 1/n × jours/360 ; cumul = Σ dotations ; VNC = VB − cumul."
+    },
+    {
+     "type": "numerique",
+     "enonce": "Valeur comptable de l'immobilisation cédée (compte 657) :",
+     "reponse": 12500,
+     "tolerance": 0,
+     "explication": "60000 − 47500",
+     "unite": "€"
+    },
+    {
+     "type": "numerique",
+     "enonce": "Résultat de cession (positif = plus-value, négatif = moins-value) :",
+     "reponse": 11500,
+     "tolerance": 0,
+     "explication": "757 − 657 = 24000 − 12500",
+     "unite": "€"
+    },
+    {
+     "type": "classer",
+     "enonce": "Écritures du 01.07.N+4 : chaque montant est-il au **débit** ou au **crédit** ?",
+     "categories": [
+      "Débit",
+      "Crédit"
+     ],
+     "elements": [
+      {
+       "texte": "512 Banque 28 800 €",
+       "reponse": 0,
+       "explication": "Encaissement TTC."
+      },
+      {
+       "texte": "757 Produits des cessions 24 000 €",
+       "reponse": 1,
+       "explication": "Produit HT."
+      },
+      {
+       "texte": "44571 TVA collectée 4 800 €",
+       "reponse": 1
+      },
+      {
+       "texte": "681 Dotation complémentaire 6 000 €",
+       "reponse": 0,
+       "explication": "Charge."
+      },
+      {
+       "texte": "2815 Amortissement (dotation complémentaire) 6 000 €",
+       "reponse": 1
+      },
+      {
+       "texte": "657 Valeur comptable cédée 12 500 €",
+       "reponse": 0
+      },
+      {
+       "texte": "2815 Amortissements cumulés 47 500 €",
+       "reponse": 0,
+       "explication": "On solde le compte d'amortissement."
+      },
+      {
+       "texte": "215 Matériel industriel 60 000 €",
+       "reponse": 1,
+       "explication": "On sort la valeur brute."
+      }
+     ],
+     "explication": ""
+    }
+   ],
+   "explication": "Méthode VALIANT : frise, dotations, dotation complémentaire, VNC (657), résultat = 757 − 657, puis 3 écritures (cession, complément, sortie).",
+   "source": "Cours/ECONOMIE D'ENTREPRISE (cas VALIANT)"
+  },
+  {
+   "id": "af-x5-08",
+   "type": "probleme",
+   "difficulte": 3,
+   "enonce": "**Variante 8** (clôture au 31.12, TVA 20 %, PCG 2025). Matériel industriel acquis 19 200 € HT, **mis en service le 01.03.N**, amorti en **linéaire sur 4 ans**. Il est **cédé le 01.04.N+3** pour 7 680 € HT (chèque).",
+   "etapes": [
+    {
+     "type": "numerique",
+     "enonce": "Taux d'amortissement linéaire (en %) :",
+     "reponse": 25.0,
+     "tolerance": 0,
+     "explication": "1/4",
+     "unite": "%"
+    },
+    {
+     "type": "numerique",
+     "enonce": "Prorata temporis de la 1re année (nombre de jours sur 360) :",
+     "reponse": 300,
+     "tolerance": 0,
+     "explication": "Du 01.03.N au 31.12 : 300 jours (mois de 30 jours).",
+     "unite": "jours"
+    },
+    {
+     "type": "tableau",
+     "enonce": "Plan d'amortissement jusqu'à la date de cession :",
+     "colonnes": [
+      "Base",
+      "Dotation",
+      "Cumul",
+      "VNC fin"
+     ],
+     "titreLignes": "Exercice",
+     "lignes": [
+      {
+       "libelle": "N",
+       "valeurs": [
+        19200,
+        4000,
+        4000,
+        15200
+       ],
+       "aide": "19200 × 1/4 × 300/360 (prorata depuis la mise en service)"
+      },
+      {
+       "libelle": "N+1",
+       "valeurs": [
+        19200,
+        4800,
+        8800,
+        10400
+       ],
+       "aide": "19200 × 1/4 × 360/360"
+      },
+      {
+       "libelle": "N+2",
+       "valeurs": [
+        19200,
+        4800,
+        13600,
+        5600
+       ],
+       "aide": "19200 × 1/4 × 360/360"
+      },
+      {
+       "libelle": "N+3 (jusqu'au 01.04)",
+       "valeurs": [
+        19200,
+        1200,
+        14800,
+        4400
+       ],
+       "aide": "19200 × 1/4 × 90/360 (dotation complémentaire jusqu'à la cession)"
+      }
+     ],
+     "explication": "Dotation = VB × 1/n × jours/360 ; cumul = Σ dotations ; VNC = VB − cumul."
+    },
+    {
+     "type": "numerique",
+     "enonce": "Valeur comptable de l'immobilisation cédée (compte 657) :",
+     "reponse": 4400,
+     "tolerance": 0,
+     "explication": "19200 − 14800",
+     "unite": "€"
+    },
+    {
+     "type": "numerique",
+     "enonce": "Résultat de cession (positif = plus-value, négatif = moins-value) :",
+     "reponse": 3280,
+     "tolerance": 0,
+     "explication": "757 − 657 = 7680 − 4400",
+     "unite": "€"
+    },
+    {
+     "type": "classer",
+     "enonce": "Écritures du 01.04.N+3 : chaque montant est-il au **débit** ou au **crédit** ?",
+     "categories": [
+      "Débit",
+      "Crédit"
+     ],
+     "elements": [
+      {
+       "texte": "512 Banque 9 216 €",
+       "reponse": 0,
+       "explication": "Encaissement TTC."
+      },
+      {
+       "texte": "757 Produits des cessions 7 680 €",
+       "reponse": 1,
+       "explication": "Produit HT."
+      },
+      {
+       "texte": "44571 TVA collectée 1 536 €",
+       "reponse": 1
+      },
+      {
+       "texte": "681 Dotation complémentaire 1 200 €",
+       "reponse": 0,
+       "explication": "Charge."
+      },
+      {
+       "texte": "2815 Amortissement (dotation complémentaire) 1 200 €",
+       "reponse": 1
+      },
+      {
+       "texte": "657 Valeur comptable cédée 4 400 €",
+       "reponse": 0
+      },
+      {
+       "texte": "2815 Amortissements cumulés 14 800 €",
+       "reponse": 0,
+       "explication": "On solde le compte d'amortissement."
+      },
+      {
+       "texte": "215 Matériel industriel 19 200 €",
+       "reponse": 1,
+       "explication": "On sort la valeur brute."
+      }
+     ],
+     "explication": ""
+    }
+   ],
+   "explication": "Méthode VALIANT : frise, dotations, dotation complémentaire, VNC (657), résultat = 757 − 657, puis 3 écritures (cession, complément, sortie).",
+   "source": "Cours/ECONOMIE D'ENTREPRISE (cas VALIANT)"
+  },
+  {
+   "id": "af-x5-deg1",
+   "type": "probleme",
+   "difficulte": 3,
+   "enonce": "Matériel industriel neuf 120 000 € HT acquis le 15.02.N, amortissement **dégressif** sur 5 ans. (Calculatrice utile ; écart de 1 € toléré.)",
+   "etapes": [
+    {
+     "type": "numerique",
+     "enonce": "Taux dégressif (en %) :",
+     "reponse": 35.0,
+     "tolerance": 0,
+     "explication": "1/5 × 1.75",
+     "unite": "%"
+    },
+    {
+     "type": "numerique",
+     "enonce": "Prorata de la 1re année (en mois) :",
+     "reponse": 11,
+     "tolerance": 0,
+     "explication": "Du 1er jour du mois d'acquisition au 31.12.",
+     "unite": "mois"
+    },
+    {
+     "type": "tableau",
+     "enonce": "Plan d'amortissement dégressif :",
+     "colonnes": [
+      "VNC début",
+      "Dotation",
+      "VNC fin"
+     ],
+     "titreLignes": "Exercice",
+     "lignes": [
+      {
+       "libelle": "N",
+       "valeurs": [
+        120000,
+        38500.0,
+        81500.0
+       ],
+       "aide": "VO × taux × 11/12",
+       "ecart": 1
+      },
+      {
+       "libelle": "N+1",
+       "valeurs": [
+        81500.0,
+        28525.0,
+        52975.0
+       ],
+       "aide": "VNC début × taux",
+       "ecart": 1
+      },
+      {
+       "libelle": "N+2",
+       "valeurs": [
+        52975.0,
+        18541.25,
+        34433.75
+       ],
+       "aide": "VNC début × taux",
+       "ecart": 1
+      },
+      {
+       "libelle": "N+3",
+       "valeurs": [
+        34433.75,
+        17216.88,
+        17216.87
+       ],
+       "aide": "VNC restante / années restantes (bascule en linéaire)",
+       "ecart": 1
+      },
+      {
+       "libelle": "N+4",
+       "valeurs": [
+        17216.87,
+        17216.88,
+        -0.01
+       ],
+       "aide": "VNC restante / années restantes (bascule en linéaire)",
+       "ecart": 1
+      }
+     ],
+     "explication": "Bascule en linéaire dès que 1/(années restantes) > taux dégressif."
+    }
+   ],
+   "explication": "Coefficients : 1,25 (3-4 ans), 1,75 (5-6 ans), 2,25 (> 6 ans).",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-x5-deg2",
+   "type": "probleme",
+   "difficulte": 3,
+   "enonce": "Matériel industriel neuf 80 000 € HT acquis le 15.04.N, amortissement **dégressif** sur 4 ans. (Calculatrice utile ; écart de 1 € toléré.)",
+   "etapes": [
+    {
+     "type": "numerique",
+     "enonce": "Taux dégressif (en %) :",
+     "reponse": 31.25,
+     "tolerance": 0,
+     "explication": "1/4 × 1.25",
+     "unite": "%"
+    },
+    {
+     "type": "numerique",
+     "enonce": "Prorata de la 1re année (en mois) :",
+     "reponse": 9,
+     "tolerance": 0,
+     "explication": "Du 1er jour du mois d'acquisition au 31.12.",
+     "unite": "mois"
+    },
+    {
+     "type": "tableau",
+     "enonce": "Plan d'amortissement dégressif :",
+     "colonnes": [
+      "VNC début",
+      "Dotation",
+      "VNC fin"
+     ],
+     "titreLignes": "Exercice",
+     "lignes": [
+      {
+       "libelle": "N",
+       "valeurs": [
+        80000,
+        18750.0,
+        61250.0
+       ],
+       "aide": "VO × taux × 9/12",
+       "ecart": 1
+      },
+      {
+       "libelle": "N+1",
+       "valeurs": [
+        61250.0,
+        20416.67,
+        40833.33
+       ],
+       "aide": "VNC restante / années restantes (bascule en linéaire)",
+       "ecart": 1
+      },
+      {
+       "libelle": "N+2",
+       "valeurs": [
+        40833.33,
+        20416.67,
+        20416.66
+       ],
+       "aide": "VNC restante / années restantes (bascule en linéaire)",
+       "ecart": 1
+      },
+      {
+       "libelle": "N+3",
+       "valeurs": [
+        20416.66,
+        20416.67,
+        -0.01
+       ],
+       "aide": "VNC restante / années restantes (bascule en linéaire)",
+       "ecart": 1
+      }
+     ],
+     "explication": "Bascule en linéaire dès que 1/(années restantes) > taux dégressif."
+    }
+   ],
+   "explication": "Coefficients : 1,25 (3-4 ans), 1,75 (5-6 ans), 2,25 (> 6 ans).",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-x5-deg3",
+   "type": "probleme",
+   "difficulte": 3,
+   "enonce": "Matériel industriel neuf 200 000 € HT acquis le 15.07.N, amortissement **dégressif** sur 10 ans. (Calculatrice utile ; écart de 1 € toléré.)",
+   "etapes": [
+    {
+     "type": "numerique",
+     "enonce": "Taux dégressif (en %) :",
+     "reponse": 22.5,
+     "tolerance": 0,
+     "explication": "1/10 × 2.25",
+     "unite": "%"
+    },
+    {
+     "type": "numerique",
+     "enonce": "Prorata de la 1re année (en mois) :",
+     "reponse": 6,
+     "tolerance": 0,
+     "explication": "Du 1er jour du mois d'acquisition au 31.12.",
+     "unite": "mois"
+    },
+    {
+     "type": "tableau",
+     "enonce": "Plan d'amortissement dégressif :",
+     "colonnes": [
+      "VNC début",
+      "Dotation",
+      "VNC fin"
+     ],
+     "titreLignes": "Exercice",
+     "lignes": [
+      {
+       "libelle": "N",
+       "valeurs": [
+        200000,
+        22500.0,
+        177500.0
+       ],
+       "aide": "VO × taux × 6/12",
+       "ecart": 1
+      },
+      {
+       "libelle": "N+1",
+       "valeurs": [
+        177500.0,
+        39937.5,
+        137562.5
+       ],
+       "aide": "VNC début × taux",
+       "ecart": 1
+      },
+      {
+       "libelle": "N+2",
+       "valeurs": [
+        137562.5,
+        30951.56,
+        106610.94
+       ],
+       "aide": "VNC début × taux",
+       "ecart": 1
+      },
+      {
+       "libelle": "N+3",
+       "valeurs": [
+        106610.94,
+        23987.46,
+        82623.48
+       ],
+       "aide": "VNC début × taux",
+       "ecart": 1
+      },
+      {
+       "libelle": "N+4",
+       "valeurs": [
+        82623.48,
+        18590.28,
+        64033.2
+       ],
+       "aide": "VNC début × taux",
+       "ecart": 1
+      },
+      {
+       "libelle": "N+5",
+       "valeurs": [
+        64033.2,
+        14407.47,
+        49625.73
+       ],
+       "aide": "VNC début × taux",
+       "ecart": 1
+      },
+      {
+       "libelle": "N+6",
+       "valeurs": [
+        49625.73,
+        12406.43,
+        37219.3
+       ],
+       "aide": "VNC restante / années restantes (bascule en linéaire)",
+       "ecart": 1
+      },
+      {
+       "libelle": "N+7",
+       "valeurs": [
+        37219.3,
+        12406.43,
+        24812.87
+       ],
+       "aide": "VNC restante / années restantes (bascule en linéaire)",
+       "ecart": 1
+      },
+      {
+       "libelle": "N+8",
+       "valeurs": [
+        24812.87,
+        12406.43,
+        12406.44
+       ],
+       "aide": "VNC restante / années restantes (bascule en linéaire)",
+       "ecart": 1
+      },
+      {
+       "libelle": "N+9",
+       "valeurs": [
+        12406.44,
+        12406.43,
+        0.01
+       ],
+       "aide": "VNC restante / années restantes (bascule en linéaire)",
+       "ecart": 1
+      }
+     ],
+     "explication": "Bascule en linéaire dès que 1/(années restantes) > taux dégressif."
+    }
+   ],
+   "explication": "Coefficients : 1,25 (3-4 ans), 1,75 (5-6 ans), 2,25 (> 6 ans).",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  }
+ ]
+}

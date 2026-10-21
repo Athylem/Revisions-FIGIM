@@ -1,0 +1,309 @@
+{
+ "chapitre": "SIG, CAF et ratios d'activité",
+ "genre": "cours",
+ "questions": [
+  {
+   "id": "af-c3-01",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Ordre des soldes intermédiaires de gestion :",
+   "choix": [
+    "MC → Production → VA → EBE → RE → RCAI → R. exceptionnel → RN",
+    "VA → MC → EBE → RE → RN",
+    "EBE → VA → RE → RCAI → RN",
+    "Production → MC → EBE → VA → RN"
+   ],
+   "reponse": 0,
+   "explication": "Cascade du plus « économique » au plus global.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c3-02",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Marge commerciale =",
+   "choix": [
+    "Ventes de marchandises − (achats de marchandises + variation de stock de marchandises)",
+    "Chiffre d'affaires − achats",
+    "Ventes de marchandises − achats de MP",
+    "Production − consommations"
+   ],
+   "reponse": 0,
+   "explication": "Ne concerne que le négoce (revente en l'état).",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c3-03",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Valeur ajoutée =",
+   "choix": [
+    "MC + Production − Consommations en provenance des tiers",
+    "MC + Production − Charges de personnel",
+    "EBE + charges de personnel",
+    "CA − achats de marchandises"
+   ],
+   "reponse": 0,
+   "explication": "Richesse créée par l'entreprise au-delà de ce qu'elle achète aux tiers.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c3-04",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "EBE =",
+   "choix": [
+    "VA + subventions d'exploitation − impôts et taxes − charges de personnel",
+    "VA − dotations aux amortissements",
+    "RE + dotations",
+    "VA − charges financières"
+   ],
+   "reponse": 0,
+   "explication": "Avant amortissements, financement, exceptionnel et IS.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c3-05",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Résultat d'exploitation (PCG 2025) =",
+   "choix": [
+    "EBE + reprises + autres produits (75, 757) − dotations − autres charges (65, 657)",
+    "EBE − charges financières",
+    "VA − charges de personnel",
+    "EBE + résultat exceptionnel"
+   ],
+   "reponse": 0,
+   "explication": "Depuis 2025, les cessions d'immos corporelles/incorporelles sont dans le RE.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c3-06",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Le chiffre d'affaires comprend :",
+   "choix": [
+    "Ventes de marchandises + production vendue (biens et services)",
+    "Production de l'exercice + ventes",
+    "Production vendue + stockée + immobilisée",
+    "Tous les produits d'exploitation"
+   ],
+   "reponse": 0,
+   "explication": "Pas de production stockée ni immobilisée dans le CA.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c3-07",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Les consommations en provenance des tiers comprennent :",
+   "choix": [
+    "Achats de MP ± variation de stock de MP + autres achats et charges externes",
+    "Achats de marchandises + MP",
+    "Charges de personnel + impôts",
+    "Dotations + charges financières"
+   ],
+   "reponse": 0,
+   "explication": "Énergie, téléphone, publicité, sous-traitance, loyers… = charges externes (61/62).",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c3-08",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Pourquoi l'EBE est-il une mesure « objective » de la performance ?",
+   "choix": [
+    "Il est indépendant des choix d'investissement (amortissements), de financement (intérêts) et fiscaux",
+    "Il tient compte de toutes les charges",
+    "Il est toujours positif",
+    "Il est calculé après impôt"
+   ],
+   "reponse": 0,
+   "explication": "C'est aussi le point de départ de la CAF ; proche de l'EBITDA.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c3-09",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Si l'EBE est négatif, on parle :",
+   "choix": [
+    "D'insuffisance brute d'exploitation (IBE)",
+    "De perte d'exploitation",
+    "De capacité d'autofinancement négative",
+    "De besoin en fonds de roulement"
+   ],
+   "reponse": 0,
+   "explication": "EBE < 0 = IBE.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c3-10",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Les intérêts d'emprunt interviennent dans :",
+   "choix": [
+    "Le résultat financier (donc le RCAI)",
+    "L'EBE",
+    "La VA",
+    "Le résultat exceptionnel"
+   ],
+   "reponse": 0,
+   "explication": "RCAI = RE + résultat financier.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c3-11",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Depuis le PCG 2025, le résultat exceptionnel contient :",
+   "choix": [
+    "Uniquement les événements majeurs et inhabituels (sinistre, changement de méthode, corrections d'erreurs…)",
+    "Toutes les cessions d'immobilisations",
+    "Les amendes et toutes les opérations rares",
+    "Les intérêts"
+   ],
+   "reponse": 0,
+   "explication": "Les cessions sont sorties de l'exceptionnel.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c3-12",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "La CAF est :",
+   "choix": [
+    "Une ressource interne potentielle : produits encaissables − charges décaissables",
+    "Le solde de trésorerie de fin d'année",
+    "Le résultat net",
+    "L'EBE après impôt"
+   ],
+   "reponse": 0,
+   "explication": "Ce n'est pas un flux de trésorerie : décalages d'encaissement.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c3-13",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Méthode **additive** : CAF =",
+   "choix": [
+    "RN + dotations − reprises + VNC des actifs cédés − produits de cession − QP subventions virée au résultat",
+    "EBE + dotations − reprises",
+    "RN − dotations + reprises",
+    "RN + dividendes"
+   ],
+   "reponse": 0,
+   "explication": "On neutralise les éléments calculés et les cessions.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c3-14",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Méthode **soustractive** : la CAF part de :",
+   "choix": [
+    "L'EBE",
+    "Le résultat net",
+    "La valeur ajoutée",
+    "Le chiffre d'affaires"
+   ],
+   "reponse": 0,
+   "explication": "EBE + autres produits encaissables − autres charges décaissables ± financier ± exceptionnel − participation − IS.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c3-15",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Lequel de ces éléments est **exclu** du calcul de la CAF ?",
+   "choix": [
+    "Le produit de cession d'une immobilisation (757)",
+    "Les intérêts d'emprunt (66)",
+    "L'impôt sur les bénéfices",
+    "Les autres produits de gestion courante (75)"
+   ],
+   "reponse": 0,
+   "explication": "Exclus : 68x, 78x, 747, 657/667, 757/767.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c3-16",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Autofinancement =",
+   "choix": [
+    "CAF − dividendes versés",
+    "CAF + dividendes",
+    "RN − dividendes",
+    "EBE − IS"
+   ],
+   "reponse": 0,
+   "explication": "Autofinancement de maintien (renouvellement) ou d'expansion.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c3-17",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Taux de valeur ajoutée (VA / CA) élevé :",
+   "choix": [
+    "Entreprise très intégrée (fait elle-même sa production)",
+    "Entreprise qui sous-traite beaucoup",
+    "Entreprise de négoce pur",
+    "Entreprise très endettée"
+   ],
+   "reponse": 0,
+   "explication": "Taux de VA = degré d'intégration.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c3-18",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Charges de personnel / VA = 80 % :",
+   "choix": [
+    "Le personnel absorbe l'essentiel de la richesse créée : peu de marge pour investir et rembourser",
+    "La VA est trop faible pour payer le personnel",
+    "C'est le niveau idéal",
+    "Le personnel est sous-payé"
+   ],
+   "reponse": 0,
+   "explication": "Au-delà de 70-75 %, il reste peu (VELORAMA, PITAIN FLAM).",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c3-19",
+   "type": "vrai-faux",
+   "difficulte": 1,
+   "enonce": "Les SIG permettent de juger l'équilibre financier de l'entreprise.",
+   "reponse": false,
+   "explication": "QCM du test 2011 : les SIG analysent l'**activité et les résultats** ; l'équilibre financier se juge avec le bilan fonctionnel (FRNG, BFR, TN).",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c3-20",
+   "type": "vrai-faux",
+   "difficulte": 1,
+   "enonce": "La CAF soustractive et la CAF additive donnent toujours le même montant.",
+   "reponse": true,
+   "explication": "Toujours calculer les deux en DS pour se vérifier.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c3-21",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Le résultat net d'une année est gonflé par une indemnité exceptionnelle. Pour juger la performance durable, on regarde surtout :",
+   "choix": [
+    "L'EBE et le résultat d'exploitation",
+    "Le résultat net",
+    "Le résultat exceptionnel",
+    "L'IS"
+   ],
+   "reponse": 0,
+   "explication": "Corrigés VELORAMA / PITAIN FLAM : « la hausse durable se lit surtout sur l'EBE ».",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  }
+ ]
+}

@@ -1,0 +1,3162 @@
+{
+ "chapitre": "Dossier type DS : CR en liste → SIG → CAF (sans calculatrice)",
+ "genre": "ds",
+ "questions": [
+  {
+   "id": "af-ds1-01",
+   "type": "probleme",
+   "difficulte": 3,
+   "enonce": "**Dossier ANALYSE FINANCIÈRE (analyse de l'activité) — Cas BLE** · (sans calculatrice)\nLa société BLE met à votre disposition son compte de résultat de l'année N (en k€). Négatifs : tapez « - ».",
+   "donnees": [
+    {
+     "titre": "Comptes de résultat (en liste), en k€",
+     "colonnes": [
+      "au 31.12.N"
+     ],
+     "lignes": [
+      "PRODUITS D'EXPLOITATION",
+      [
+       "Ventes de marchandises (707)",
+       400
+      ],
+      [
+       "Production vendue — biens (701)",
+       500
+      ],
+      [
+       "Production vendue — services (706)",
+       100
+      ],
+      [
+       "Production stockée (SF − SI) (713)",
+       20
+      ],
+      [
+       "Production immobilisée (72)",
+       20
+      ],
+      [
+       "Autres produits de gestion courante (75)",
+       10
+      ],
+      [
+       "Produits des cessions d'immobilisations corporelles (757)",
+       20
+      ],
+      "PRODUITS FINANCIERS",
+      "PRODUITS EXCEPTIONNELS",
+      "CHARGES D'EXPLOITATION",
+      [
+       "Achats de marchandises (607)",
+       280
+      ],
+      [
+       "Variation des stocks de marchandises (SI − SF) (6037)",
+       10
+      ],
+      [
+       "Achats de matières premières (601)",
+       240
+      ],
+      [
+       "Variation des stocks de matières premières (SI − SF) (6031)",
+       20
+      ],
+      [
+       "Frais d'énergie",
+       100
+      ],
+      [
+       "Frais de téléphone",
+       20
+      ],
+      [
+       "Frais de publicité",
+       30
+      ],
+      [
+       "Autres achats et charges externes",
+       50
+      ],
+      [
+       "Impôts, taxes et versements assimilés (63)",
+       25
+      ],
+      [
+       "Salaires et traitements (641)",
+       90
+      ],
+      [
+       "Charges sociales (645)",
+       55
+      ],
+      [
+       "Dotations aux amortissements, dépréciations et provisions (681)",
+       20
+      ],
+      [
+       "Valeurs comptables des immobilisations corporelles cédées (657)",
+       20
+      ],
+      "CHARGES FINANCIÈRES",
+      [
+       "Charges d'intérêts (66)",
+       15
+      ],
+      "CHARGES EXCEPTIONNELLES",
+      [
+       "Charges exceptionnelles (67)",
+       5
+      ],
+      "IMPÔT ET PARTICIPATION",
+      [
+       "Impôt sur les bénéfices (695)",
+       20
+      ],
+      [
+       "**Total des produits**",
+       1070
+      ],
+      [
+       "**Total des charges**",
+       1000
+      ],
+      [
+       "**Résultat net de l'exercice**",
+       70
+      ]
+     ]
+    }
+   ],
+   "etapes": [
+    {
+     "type": "tableau",
+     "enonce": "Présentez le tableau des soldes intermédiaires de gestion :",
+     "colonnes": [
+      "N"
+     ],
+     "titreLignes": "SIG (k€)",
+     "lignes": [
+      {
+       "libelle": "Ventes de marchandises",
+       "valeurs": [
+        400
+       ],
+       "aide": "707"
+      },
+      {
+       "libelle": "− Coût d'achat des marchandises vendues",
+       "valeurs": [
+        290
+       ],
+       "aide": "Achats de marchandises + variation de stock (SI − SF)"
+      },
+      {
+       "libelle": "= Marge commerciale",
+       "valeurs": [
+        110
+       ],
+       "total": true
+      },
+      {
+       "libelle": "Production de l'exercice",
+       "valeurs": [
+        640
+       ],
+       "aide": "Production vendue (biens + services) + production stockée + production immobilisée"
+      },
+      {
+       "libelle": "− Consommations en provenance des tiers",
+       "valeurs": [
+        460
+       ],
+       "aide": "Achats de MP + variation de stock de MP + autres achats et charges externes"
+      },
+      {
+       "libelle": "= Valeur ajoutée",
+       "valeurs": [
+        290
+       ],
+       "aide": "MC + production − consommations",
+       "total": true
+      },
+      {
+       "libelle": "+ Subventions d'exploitation − impôts et taxes − charges de personnel",
+       "valeurs": [
+        -170
+       ],
+       "aide": "74 − 63 − (641 + 645) : saisir le montant net (souvent négatif)"
+      },
+      {
+       "libelle": "= Excédent brut d'exploitation",
+       "valeurs": [
+        120
+       ],
+       "total": true
+      },
+      {
+       "libelle": "+ Reprises et autres produits (781, 75, 747, 757)",
+       "valeurs": [
+        30
+       ]
+      },
+      {
+       "libelle": "− Dotations et autres charges (681, 65, 657)",
+       "valeurs": [
+        40
+       ]
+      },
+      {
+       "libelle": "= Résultat d'exploitation",
+       "valeurs": [
+        110
+       ],
+       "total": true
+      },
+      {
+       "libelle": "± Résultat financier",
+       "valeurs": [
+        -15
+       ],
+       "aide": "(76 + 786 + 767) − (66 + 686 + 667)"
+      },
+      {
+       "libelle": "= Résultat courant avant impôts",
+       "valeurs": [
+        95
+       ],
+       "total": true
+      },
+      {
+       "libelle": "± Résultat exceptionnel",
+       "valeurs": [
+        -5
+       ],
+       "aide": "77 − 67"
+      },
+      {
+       "libelle": "= Résultat net",
+       "valeurs": [
+        70
+       ],
+       "aide": "RCAI + R. exceptionnel − participation − IS ; vérifier : total produits − total charges",
+       "total": true
+      }
+     ],
+     "explication": ""
+    },
+    {
+     "type": "tableau",
+     "enonce": "Calculez la CAF par la méthode soustractive :",
+     "colonnes": [
+      "N"
+     ],
+     "titreLignes": "CAF (k€)",
+     "lignes": [
+      {
+       "libelle": "Excédent brut d'exploitation",
+       "valeurs": [
+        120
+       ]
+      },
+      {
+       "libelle": "+ Autres produits (75) − autres charges (65)",
+       "valeurs": [
+        10
+       ],
+       "aide": "Sans 757 ni 657"
+      },
+      {
+       "libelle": "+ Produits financiers encaissables (76) − charges d'intérêts (66)",
+       "valeurs": [
+        -15
+       ],
+       "aide": "Sans 767/667, 786/686"
+      },
+      {
+       "libelle": "+ Produits exceptionnels (77) − charges exceptionnelles (67)",
+       "valeurs": [
+        -5
+       ]
+      },
+      {
+       "libelle": "− Participation − impôt sur les bénéfices",
+       "valeurs": [
+        -20
+       ]
+      },
+      {
+       "libelle": "= Capacité d'autofinancement",
+       "valeurs": [
+        90
+       ],
+       "total": true
+      }
+     ],
+     "explication": ""
+    },
+    {
+     "type": "tableau",
+     "enonce": "Vérifiez par la méthode additive :",
+     "colonnes": [
+      "N"
+     ],
+     "titreLignes": "CAF (k€)",
+     "lignes": [
+      {
+       "libelle": "Résultat net",
+       "valeurs": [
+        70
+       ]
+      },
+      {
+       "libelle": "+ Dotations (681 + 686)",
+       "valeurs": [
+        20
+       ]
+      },
+      {
+       "libelle": "− Reprises (781 + 786)",
+       "valeurs": [
+        0
+       ],
+       "aide": "Saisir avec le signe −"
+      },
+      {
+       "libelle": "+ Valeurs comptables des actifs cédés (657 + 667)",
+       "valeurs": [
+        20
+       ]
+      },
+      {
+       "libelle": "− Produits des cessions (757 + 767)",
+       "valeurs": [
+        -20
+       ],
+       "aide": "Saisir avec le signe −"
+      },
+      {
+       "libelle": "− Quote-part des subventions d'investissement (747)",
+       "valeurs": [
+        0
+       ],
+       "aide": "Saisir avec le signe −"
+      },
+      {
+       "libelle": "= Capacité d'autofinancement",
+       "valeurs": [
+        90
+       ],
+       "total": true
+      }
+     ],
+     "explication": ""
+    },
+    {
+     "type": "numerique",
+     "enonce": "Chiffre d'affaires :",
+     "reponse": 1000,
+     "tolerance": 0,
+     "explication": "707 + 701 + 706",
+     "unite": "k€"
+    },
+    {
+     "type": "numerique",
+     "enonce": "Taux de marge d'EBE (EBE / CA, en %, à 1 décimale) :",
+     "reponse": 12.0,
+     "tolerance": 0.002,
+     "explication": "120 / 1000 × 100",
+     "unite": "%"
+    },
+    {
+     "type": "qcm",
+     "enonce": "La société a cédé un matériel (757 = 20 ; 657 = 20). Où apparaît le résultat de cession (+0 k€) depuis le PCG 2025 ?",
+     "choix": [
+      "Dans le résultat d'exploitation",
+      "Dans le résultat exceptionnel",
+      "Dans le résultat financier",
+      "Il n'apparaît pas dans les SIG"
+     ],
+     "reponse": 0,
+     "explication": "657/757 = exploitation ; et la cession est exclue de la CAF."
+    },
+    {
+     "type": "redaction",
+     "enonce": "Rédigez en 2-3 phrases ce que mesure l'EBE et pourquoi on calcule la CAF.",
+     "choix": [
+      "EBE : performance de l'exploitation avant amortissements, financement et IS ; CAF : ressource interne pour investir, rembourser, distribuer",
+      "EBE : résultat après impôt ; CAF : trésorerie au bilan",
+      "EBE : bénéfice distribuable ; CAF : montant des emprunts",
+      "EBE : valeur des stocks ; CAF : capital social"
+     ],
+     "reponse": 0,
+     "modele": "L'EBE mesure la performance du métier, indépendamment des politiques d'investissement (dotations), de financement (intérêts) et fiscale. La CAF est la ressource interne potentielle (produits encaissables − charges décaissables) qui permet de financer les investissements, rembourser les emprunts et verser des dividendes."
+    }
+   ],
+   "explication": "Format du DS 2023-2024 (dossier 4, cas BLE) : CR en liste → SIG → CAF. Vérifier RN = total produits − total charges.",
+   "source": "Cours/2A FIGIM/Analyse Financière - I.Leroyer/Partiel 2024 (format) + cours SIG CAF"
+  },
+  {
+   "id": "af-ds1-02",
+   "type": "probleme",
+   "difficulte": 3,
+   "enonce": "**Dossier ANALYSE FINANCIÈRE (analyse de l'activité) — Cas ORGE** · (sans calculatrice)\nLa société ORGE met à votre disposition son compte de résultat de l'année N (en k€). Négatifs : tapez « - ».",
+   "donnees": [
+    {
+     "titre": "Comptes de résultat (en liste), en k€",
+     "colonnes": [
+      "au 31.12.N"
+     ],
+     "lignes": [
+      "PRODUITS D'EXPLOITATION",
+      [
+       "Ventes de marchandises (707)",
+       400
+      ],
+      [
+       "Production vendue — biens (701)",
+       550
+      ],
+      [
+       "Production vendue — services (706)",
+       50
+      ],
+      [
+       "Production stockée (SF − SI) (713)",
+       10
+      ],
+      [
+       "Subventions d'exploitation (74)",
+       20
+      ],
+      [
+       "Reprises sur amortissements, dépréciations et provisions (781)",
+       10
+      ],
+      [
+       "Autres produits de gestion courante (75)",
+       10
+      ],
+      "PRODUITS FINANCIERS",
+      [
+       "Produits financiers (intérêts reçus) (76)",
+       5
+      ],
+      "PRODUITS EXCEPTIONNELS",
+      [
+       "Produits exceptionnels (77)",
+       10
+      ],
+      "CHARGES D'EXPLOITATION",
+      [
+       "Achats de marchandises (607)",
+       280
+      ],
+      [
+       "Variation des stocks de marchandises (SI − SF) (6037)",
+       5
+      ],
+      [
+       "Achats de matières premières (601)",
+       180
+      ],
+      [
+       "Variation des stocks de matières premières (SI − SF) (6031)",
+       10
+      ],
+      [
+       "Frais d'énergie",
+       100
+      ],
+      [
+       "Frais de téléphone",
+       20
+      ],
+      [
+       "Frais de publicité",
+       80
+      ],
+      [
+       "Autres achats et charges externes",
+       50
+      ],
+      [
+       "Impôts, taxes et versements assimilés (63)",
+       30
+      ],
+      [
+       "Salaires et traitements (641)",
+       130
+      ],
+      [
+       "Charges sociales (645)",
+       65
+      ],
+      [
+       "Dotations aux amortissements, dépréciations et provisions (681)",
+       50
+      ],
+      "CHARGES FINANCIÈRES",
+      [
+       "Charges d'intérêts (66)",
+       15
+      ],
+      "CHARGES EXCEPTIONNELLES",
+      [
+       "Charges exceptionnelles (67)",
+       5
+      ],
+      "IMPÔT ET PARTICIPATION",
+      [
+       "Participation des salariés (691)",
+       5
+      ],
+      [
+       "Impôt sur les bénéfices (695)",
+       10
+      ],
+      [
+       "**Total des produits**",
+       1065
+      ],
+      [
+       "**Total des charges**",
+       1035
+      ],
+      [
+       "**Résultat net de l'exercice**",
+       30
+      ]
+     ]
+    }
+   ],
+   "etapes": [
+    {
+     "type": "tableau",
+     "enonce": "Présentez le tableau des soldes intermédiaires de gestion :",
+     "colonnes": [
+      "N"
+     ],
+     "titreLignes": "SIG (k€)",
+     "lignes": [
+      {
+       "libelle": "Ventes de marchandises",
+       "valeurs": [
+        400
+       ],
+       "aide": "707"
+      },
+      {
+       "libelle": "− Coût d'achat des marchandises vendues",
+       "valeurs": [
+        285
+       ],
+       "aide": "Achats de marchandises + variation de stock (SI − SF)"
+      },
+      {
+       "libelle": "= Marge commerciale",
+       "valeurs": [
+        115
+       ],
+       "total": true
+      },
+      {
+       "libelle": "Production de l'exercice",
+       "valeurs": [
+        610
+       ],
+       "aide": "Production vendue (biens + services) + production stockée + production immobilisée"
+      },
+      {
+       "libelle": "− Consommations en provenance des tiers",
+       "valeurs": [
+        440
+       ],
+       "aide": "Achats de MP + variation de stock de MP + autres achats et charges externes"
+      },
+      {
+       "libelle": "= Valeur ajoutée",
+       "valeurs": [
+        285
+       ],
+       "aide": "MC + production − consommations",
+       "total": true
+      },
+      {
+       "libelle": "+ Subventions d'exploitation − impôts et taxes − charges de personnel",
+       "valeurs": [
+        -205
+       ],
+       "aide": "74 − 63 − (641 + 645) : saisir le montant net (souvent négatif)"
+      },
+      {
+       "libelle": "= Excédent brut d'exploitation",
+       "valeurs": [
+        80
+       ],
+       "total": true
+      },
+      {
+       "libelle": "+ Reprises et autres produits (781, 75, 747, 757)",
+       "valeurs": [
+        20
+       ]
+      },
+      {
+       "libelle": "− Dotations et autres charges (681, 65, 657)",
+       "valeurs": [
+        50
+       ]
+      },
+      {
+       "libelle": "= Résultat d'exploitation",
+       "valeurs": [
+        50
+       ],
+       "total": true
+      },
+      {
+       "libelle": "± Résultat financier",
+       "valeurs": [
+        -10
+       ],
+       "aide": "(76 + 786 + 767) − (66 + 686 + 667)"
+      },
+      {
+       "libelle": "= Résultat courant avant impôts",
+       "valeurs": [
+        40
+       ],
+       "total": true
+      },
+      {
+       "libelle": "± Résultat exceptionnel",
+       "valeurs": [
+        5
+       ],
+       "aide": "77 − 67"
+      },
+      {
+       "libelle": "= Résultat net",
+       "valeurs": [
+        30
+       ],
+       "aide": "RCAI + R. exceptionnel − participation − IS ; vérifier : total produits − total charges",
+       "total": true
+      }
+     ],
+     "explication": ""
+    },
+    {
+     "type": "tableau",
+     "enonce": "Calculez la CAF par la méthode soustractive :",
+     "colonnes": [
+      "N"
+     ],
+     "titreLignes": "CAF (k€)",
+     "lignes": [
+      {
+       "libelle": "Excédent brut d'exploitation",
+       "valeurs": [
+        80
+       ]
+      },
+      {
+       "libelle": "+ Autres produits (75) − autres charges (65)",
+       "valeurs": [
+        10
+       ],
+       "aide": "Sans 757 ni 657"
+      },
+      {
+       "libelle": "+ Produits financiers encaissables (76) − charges d'intérêts (66)",
+       "valeurs": [
+        -10
+       ],
+       "aide": "Sans 767/667, 786/686"
+      },
+      {
+       "libelle": "+ Produits exceptionnels (77) − charges exceptionnelles (67)",
+       "valeurs": [
+        5
+       ]
+      },
+      {
+       "libelle": "− Participation − impôt sur les bénéfices",
+       "valeurs": [
+        -15
+       ]
+      },
+      {
+       "libelle": "= Capacité d'autofinancement",
+       "valeurs": [
+        70
+       ],
+       "total": true
+      }
+     ],
+     "explication": ""
+    },
+    {
+     "type": "tableau",
+     "enonce": "Vérifiez par la méthode additive :",
+     "colonnes": [
+      "N"
+     ],
+     "titreLignes": "CAF (k€)",
+     "lignes": [
+      {
+       "libelle": "Résultat net",
+       "valeurs": [
+        30
+       ]
+      },
+      {
+       "libelle": "+ Dotations (681 + 686)",
+       "valeurs": [
+        50
+       ]
+      },
+      {
+       "libelle": "− Reprises (781 + 786)",
+       "valeurs": [
+        -10
+       ],
+       "aide": "Saisir avec le signe −"
+      },
+      {
+       "libelle": "+ Valeurs comptables des actifs cédés (657 + 667)",
+       "valeurs": [
+        0
+       ]
+      },
+      {
+       "libelle": "− Produits des cessions (757 + 767)",
+       "valeurs": [
+        0
+       ],
+       "aide": "Saisir avec le signe −"
+      },
+      {
+       "libelle": "− Quote-part des subventions d'investissement (747)",
+       "valeurs": [
+        0
+       ],
+       "aide": "Saisir avec le signe −"
+      },
+      {
+       "libelle": "= Capacité d'autofinancement",
+       "valeurs": [
+        70
+       ],
+       "total": true
+      }
+     ],
+     "explication": ""
+    },
+    {
+     "type": "numerique",
+     "enonce": "Chiffre d'affaires :",
+     "reponse": 1000,
+     "tolerance": 0,
+     "explication": "707 + 701 + 706",
+     "unite": "k€"
+    },
+    {
+     "type": "numerique",
+     "enonce": "Taux de marge d'EBE (EBE / CA, en %, à 1 décimale) :",
+     "reponse": 8.0,
+     "tolerance": 0.002,
+     "explication": "80 / 1000 × 100",
+     "unite": "%"
+    },
+    {
+     "type": "redaction",
+     "enonce": "Rédigez en 2-3 phrases ce que mesure l'EBE et pourquoi on calcule la CAF.",
+     "choix": [
+      "EBE : performance de l'exploitation avant amortissements, financement et IS ; CAF : ressource interne pour investir, rembourser, distribuer",
+      "EBE : résultat après impôt ; CAF : trésorerie au bilan",
+      "EBE : bénéfice distribuable ; CAF : montant des emprunts",
+      "EBE : valeur des stocks ; CAF : capital social"
+     ],
+     "reponse": 0,
+     "modele": "L'EBE mesure la performance du métier, indépendamment des politiques d'investissement (dotations), de financement (intérêts) et fiscale. La CAF est la ressource interne potentielle (produits encaissables − charges décaissables) qui permet de financer les investissements, rembourser les emprunts et verser des dividendes."
+    }
+   ],
+   "explication": "Format du DS 2023-2024 (dossier 4, cas BLE) : CR en liste → SIG → CAF. Vérifier RN = total produits − total charges.",
+   "source": "Cours/2A FIGIM/Analyse Financière - I.Leroyer/Partiel 2024 (format) + cours SIG CAF"
+  },
+  {
+   "id": "af-ds1-03",
+   "type": "probleme",
+   "difficulte": 3,
+   "enonce": "**Dossier ANALYSE FINANCIÈRE (analyse de l'activité) — Cas SEIGLE** · (sans calculatrice)\nLa société SEIGLE met à votre disposition son compte de résultat de l'année N (en k€). Négatifs : tapez « - ».",
+   "donnees": [
+    {
+     "titre": "Comptes de résultat (en liste), en k€",
+     "colonnes": [
+      "au 31.12.N"
+     ],
+     "lignes": [
+      "PRODUITS D'EXPLOITATION",
+      [
+       "Ventes de marchandises (707)",
+       360
+      ],
+      [
+       "Production vendue — biens (701)",
+       840
+      ],
+      [
+       "Production stockée (SF − SI) (713)",
+       30
+      ],
+      [
+       "Production immobilisée (72)",
+       20
+      ],
+      [
+       "Subventions d'exploitation (74)",
+       20
+      ],
+      [
+       "Autres produits de gestion courante (75)",
+       10
+      ],
+      [
+       "Produits des cessions d'immobilisations corporelles (757)",
+       30
+      ],
+      "PRODUITS FINANCIERS",
+      [
+       "Produits financiers (intérêts reçus) (76)",
+       5
+      ],
+      "PRODUITS EXCEPTIONNELS",
+      [
+       "Produits exceptionnels (77)",
+       10
+      ],
+      "CHARGES D'EXPLOITATION",
+      [
+       "Achats de marchandises (607)",
+       250
+      ],
+      [
+       "Variation des stocks de marchandises (SI − SF) (6037)",
+       10
+      ],
+      [
+       "Achats de matières premières (601)",
+       330
+      ],
+      [
+       "Variation des stocks de matières premières (SI − SF) (6031)",
+       -20
+      ],
+      [
+       "Frais d'énergie",
+       100
+      ],
+      [
+       "Frais de téléphone",
+       20
+      ],
+      [
+       "Frais de publicité",
+       80
+      ],
+      [
+       "Autres achats et charges externes",
+       70
+      ],
+      [
+       "Impôts, taxes et versements assimilés (63)",
+       40
+      ],
+      [
+       "Salaires et traitements (641)",
+       160
+      ],
+      [
+       "Charges sociales (645)",
+       90
+      ],
+      [
+       "Dotations aux amortissements, dépréciations et provisions (681)",
+       20
+      ],
+      [
+       "Autres charges de gestion courante (65)",
+       5
+      ],
+      [
+       "Valeurs comptables des immobilisations corporelles cédées (657)",
+       20
+      ],
+      "CHARGES FINANCIÈRES",
+      [
+       "Charges d'intérêts (66)",
+       20
+      ],
+      [
+       "Dotations financières (686)",
+       5
+      ],
+      "CHARGES EXCEPTIONNELLES",
+      "IMPÔT ET PARTICIPATION",
+      [
+       "Participation des salariés (691)",
+       5
+      ],
+      [
+       "Impôt sur les bénéfices (695)",
+       30
+      ],
+      [
+       "**Total des produits**",
+       1325
+      ],
+      [
+       "**Total des charges**",
+       1235
+      ],
+      [
+       "**Résultat net de l'exercice**",
+       90
+      ]
+     ]
+    }
+   ],
+   "etapes": [
+    {
+     "type": "tableau",
+     "enonce": "Présentez le tableau des soldes intermédiaires de gestion :",
+     "colonnes": [
+      "N"
+     ],
+     "titreLignes": "SIG (k€)",
+     "lignes": [
+      {
+       "libelle": "Ventes de marchandises",
+       "valeurs": [
+        360
+       ],
+       "aide": "707"
+      },
+      {
+       "libelle": "− Coût d'achat des marchandises vendues",
+       "valeurs": [
+        260
+       ],
+       "aide": "Achats de marchandises + variation de stock (SI − SF)"
+      },
+      {
+       "libelle": "= Marge commerciale",
+       "valeurs": [
+        100
+       ],
+       "total": true
+      },
+      {
+       "libelle": "Production de l'exercice",
+       "valeurs": [
+        890
+       ],
+       "aide": "Production vendue (biens + services) + production stockée + production immobilisée"
+      },
+      {
+       "libelle": "− Consommations en provenance des tiers",
+       "valeurs": [
+        580
+       ],
+       "aide": "Achats de MP + variation de stock de MP + autres achats et charges externes"
+      },
+      {
+       "libelle": "= Valeur ajoutée",
+       "valeurs": [
+        410
+       ],
+       "aide": "MC + production − consommations",
+       "total": true
+      },
+      {
+       "libelle": "+ Subventions d'exploitation − impôts et taxes − charges de personnel",
+       "valeurs": [
+        -270
+       ],
+       "aide": "74 − 63 − (641 + 645) : saisir le montant net (souvent négatif)"
+      },
+      {
+       "libelle": "= Excédent brut d'exploitation",
+       "valeurs": [
+        140
+       ],
+       "total": true
+      },
+      {
+       "libelle": "+ Reprises et autres produits (781, 75, 747, 757)",
+       "valeurs": [
+        40
+       ]
+      },
+      {
+       "libelle": "− Dotations et autres charges (681, 65, 657)",
+       "valeurs": [
+        45
+       ]
+      },
+      {
+       "libelle": "= Résultat d'exploitation",
+       "valeurs": [
+        135
+       ],
+       "total": true
+      },
+      {
+       "libelle": "± Résultat financier",
+       "valeurs": [
+        -20
+       ],
+       "aide": "(76 + 786 + 767) − (66 + 686 + 667)"
+      },
+      {
+       "libelle": "= Résultat courant avant impôts",
+       "valeurs": [
+        115
+       ],
+       "total": true
+      },
+      {
+       "libelle": "± Résultat exceptionnel",
+       "valeurs": [
+        10
+       ],
+       "aide": "77 − 67"
+      },
+      {
+       "libelle": "= Résultat net",
+       "valeurs": [
+        90
+       ],
+       "aide": "RCAI + R. exceptionnel − participation − IS ; vérifier : total produits − total charges",
+       "total": true
+      }
+     ],
+     "explication": ""
+    },
+    {
+     "type": "tableau",
+     "enonce": "Calculez la CAF par la méthode soustractive :",
+     "colonnes": [
+      "N"
+     ],
+     "titreLignes": "CAF (k€)",
+     "lignes": [
+      {
+       "libelle": "Excédent brut d'exploitation",
+       "valeurs": [
+        140
+       ]
+      },
+      {
+       "libelle": "+ Autres produits (75) − autres charges (65)",
+       "valeurs": [
+        5
+       ],
+       "aide": "Sans 757 ni 657"
+      },
+      {
+       "libelle": "+ Produits financiers encaissables (76) − charges d'intérêts (66)",
+       "valeurs": [
+        -15
+       ],
+       "aide": "Sans 767/667, 786/686"
+      },
+      {
+       "libelle": "+ Produits exceptionnels (77) − charges exceptionnelles (67)",
+       "valeurs": [
+        10
+       ]
+      },
+      {
+       "libelle": "− Participation − impôt sur les bénéfices",
+       "valeurs": [
+        -35
+       ]
+      },
+      {
+       "libelle": "= Capacité d'autofinancement",
+       "valeurs": [
+        105
+       ],
+       "total": true
+      }
+     ],
+     "explication": ""
+    },
+    {
+     "type": "tableau",
+     "enonce": "Vérifiez par la méthode additive :",
+     "colonnes": [
+      "N"
+     ],
+     "titreLignes": "CAF (k€)",
+     "lignes": [
+      {
+       "libelle": "Résultat net",
+       "valeurs": [
+        90
+       ]
+      },
+      {
+       "libelle": "+ Dotations (681 + 686)",
+       "valeurs": [
+        25
+       ]
+      },
+      {
+       "libelle": "− Reprises (781 + 786)",
+       "valeurs": [
+        0
+       ],
+       "aide": "Saisir avec le signe −"
+      },
+      {
+       "libelle": "+ Valeurs comptables des actifs cédés (657 + 667)",
+       "valeurs": [
+        20
+       ]
+      },
+      {
+       "libelle": "− Produits des cessions (757 + 767)",
+       "valeurs": [
+        -30
+       ],
+       "aide": "Saisir avec le signe −"
+      },
+      {
+       "libelle": "− Quote-part des subventions d'investissement (747)",
+       "valeurs": [
+        0
+       ],
+       "aide": "Saisir avec le signe −"
+      },
+      {
+       "libelle": "= Capacité d'autofinancement",
+       "valeurs": [
+        105
+       ],
+       "total": true
+      }
+     ],
+     "explication": ""
+    },
+    {
+     "type": "numerique",
+     "enonce": "Chiffre d'affaires :",
+     "reponse": 1200,
+     "tolerance": 0,
+     "explication": "707 + 701 + 706",
+     "unite": "k€"
+    },
+    {
+     "type": "numerique",
+     "enonce": "Taux de marge d'EBE (EBE / CA, en %, à 1 décimale) :",
+     "reponse": 11.7,
+     "tolerance": 0.002,
+     "explication": "140 / 1200 × 100",
+     "unite": "%"
+    },
+    {
+     "type": "qcm",
+     "enonce": "La société a cédé un matériel (757 = 30 ; 657 = 20). Où apparaît le résultat de cession (+10 k€) depuis le PCG 2025 ?",
+     "choix": [
+      "Dans le résultat d'exploitation",
+      "Dans le résultat exceptionnel",
+      "Dans le résultat financier",
+      "Il n'apparaît pas dans les SIG"
+     ],
+     "reponse": 0,
+     "explication": "657/757 = exploitation ; et la cession est exclue de la CAF."
+    },
+    {
+     "type": "redaction",
+     "enonce": "Rédigez en 2-3 phrases ce que mesure l'EBE et pourquoi on calcule la CAF.",
+     "choix": [
+      "EBE : performance de l'exploitation avant amortissements, financement et IS ; CAF : ressource interne pour investir, rembourser, distribuer",
+      "EBE : résultat après impôt ; CAF : trésorerie au bilan",
+      "EBE : bénéfice distribuable ; CAF : montant des emprunts",
+      "EBE : valeur des stocks ; CAF : capital social"
+     ],
+     "reponse": 0,
+     "modele": "L'EBE mesure la performance du métier, indépendamment des politiques d'investissement (dotations), de financement (intérêts) et fiscale. La CAF est la ressource interne potentielle (produits encaissables − charges décaissables) qui permet de financer les investissements, rembourser les emprunts et verser des dividendes."
+    }
+   ],
+   "explication": "Format du DS 2023-2024 (dossier 4, cas BLE) : CR en liste → SIG → CAF. Vérifier RN = total produits − total charges.",
+   "source": "Cours/2A FIGIM/Analyse Financière - I.Leroyer/Partiel 2024 (format) + cours SIG CAF"
+  },
+  {
+   "id": "af-ds1-04",
+   "type": "probleme",
+   "difficulte": 3,
+   "enonce": "**Dossier ANALYSE FINANCIÈRE (analyse de l'activité) — Cas AVOINE** · (sans calculatrice)\nLa société AVOINE met à votre disposition son compte de résultat de l'année N (en k€). Négatifs : tapez « - ».",
+   "donnees": [
+    {
+     "titre": "Comptes de résultat (en liste), en k€",
+     "colonnes": [
+      "au 31.12.N"
+     ],
+     "lignes": [
+      "PRODUITS D'EXPLOITATION",
+      [
+       "Ventes de marchandises (707)",
+       300
+      ],
+      [
+       "Production vendue — biens (701)",
+       1200
+      ],
+      [
+       "Production stockée (SF − SI) (713)",
+       -10
+      ],
+      [
+       "Production immobilisée (72)",
+       20
+      ],
+      [
+       "Subventions d'exploitation (74)",
+       20
+      ],
+      [
+       "Reprises sur amortissements, dépréciations et provisions (781)",
+       5
+      ],
+      [
+       "Autres produits de gestion courante (75)",
+       10
+      ],
+      "PRODUITS FINANCIERS",
+      "PRODUITS EXCEPTIONNELS",
+      [
+       "Produits exceptionnels (77)",
+       5
+      ],
+      "CHARGES D'EXPLOITATION",
+      [
+       "Achats de marchandises (607)",
+       180
+      ],
+      [
+       "Variation des stocks de marchandises (SI − SF) (6037)",
+       5
+      ],
+      [
+       "Achats de matières premières (601)",
+       360
+      ],
+      [
+       "Variation des stocks de matières premières (SI − SF) (6031)",
+       10
+      ],
+      [
+       "Frais d'énergie",
+       100
+      ],
+      [
+       "Frais de téléphone",
+       10
+      ],
+      [
+       "Frais de publicité",
+       50
+      ],
+      [
+       "Autres achats et charges externes",
+       70
+      ],
+      [
+       "Impôts, taxes et versements assimilés (63)",
+       40
+      ],
+      [
+       "Salaires et traitements (641)",
+       370
+      ],
+      [
+       "Charges sociales (645)",
+       185
+      ],
+      [
+       "Dotations aux amortissements, dépréciations et provisions (681)",
+       50
+      ],
+      [
+       "Autres charges de gestion courante (65)",
+       5
+      ],
+      "CHARGES FINANCIÈRES",
+      [
+       "Charges d'intérêts (66)",
+       20
+      ],
+      "CHARGES EXCEPTIONNELLES",
+      [
+       "Charges exceptionnelles (67)",
+       2
+      ],
+      "IMPÔT ET PARTICIPATION",
+      [
+       "Participation des salariés (691)",
+       5
+      ],
+      [
+       "Impôt sur les bénéfices (695)",
+       20
+      ],
+      [
+       "**Total des produits**",
+       1550
+      ],
+      [
+       "**Total des charges**",
+       1482
+      ],
+      [
+       "**Résultat net de l'exercice**",
+       68
+      ]
+     ]
+    }
+   ],
+   "etapes": [
+    {
+     "type": "tableau",
+     "enonce": "Présentez le tableau des soldes intermédiaires de gestion :",
+     "colonnes": [
+      "N"
+     ],
+     "titreLignes": "SIG (k€)",
+     "lignes": [
+      {
+       "libelle": "Ventes de marchandises",
+       "valeurs": [
+        300
+       ],
+       "aide": "707"
+      },
+      {
+       "libelle": "− Coût d'achat des marchandises vendues",
+       "valeurs": [
+        185
+       ],
+       "aide": "Achats de marchandises + variation de stock (SI − SF)"
+      },
+      {
+       "libelle": "= Marge commerciale",
+       "valeurs": [
+        115
+       ],
+       "total": true
+      },
+      {
+       "libelle": "Production de l'exercice",
+       "valeurs": [
+        1210
+       ],
+       "aide": "Production vendue (biens + services) + production stockée + production immobilisée"
+      },
+      {
+       "libelle": "− Consommations en provenance des tiers",
+       "valeurs": [
+        600
+       ],
+       "aide": "Achats de MP + variation de stock de MP + autres achats et charges externes"
+      },
+      {
+       "libelle": "= Valeur ajoutée",
+       "valeurs": [
+        725
+       ],
+       "aide": "MC + production − consommations",
+       "total": true
+      },
+      {
+       "libelle": "+ Subventions d'exploitation − impôts et taxes − charges de personnel",
+       "valeurs": [
+        -575
+       ],
+       "aide": "74 − 63 − (641 + 645) : saisir le montant net (souvent négatif)"
+      },
+      {
+       "libelle": "= Excédent brut d'exploitation",
+       "valeurs": [
+        150
+       ],
+       "total": true
+      },
+      {
+       "libelle": "+ Reprises et autres produits (781, 75, 747, 757)",
+       "valeurs": [
+        15
+       ]
+      },
+      {
+       "libelle": "− Dotations et autres charges (681, 65, 657)",
+       "valeurs": [
+        55
+       ]
+      },
+      {
+       "libelle": "= Résultat d'exploitation",
+       "valeurs": [
+        110
+       ],
+       "total": true
+      },
+      {
+       "libelle": "± Résultat financier",
+       "valeurs": [
+        -20
+       ],
+       "aide": "(76 + 786 + 767) − (66 + 686 + 667)"
+      },
+      {
+       "libelle": "= Résultat courant avant impôts",
+       "valeurs": [
+        90
+       ],
+       "total": true
+      },
+      {
+       "libelle": "± Résultat exceptionnel",
+       "valeurs": [
+        3
+       ],
+       "aide": "77 − 67"
+      },
+      {
+       "libelle": "= Résultat net",
+       "valeurs": [
+        68
+       ],
+       "aide": "RCAI + R. exceptionnel − participation − IS ; vérifier : total produits − total charges",
+       "total": true
+      }
+     ],
+     "explication": ""
+    },
+    {
+     "type": "tableau",
+     "enonce": "Calculez la CAF par la méthode soustractive :",
+     "colonnes": [
+      "N"
+     ],
+     "titreLignes": "CAF (k€)",
+     "lignes": [
+      {
+       "libelle": "Excédent brut d'exploitation",
+       "valeurs": [
+        150
+       ]
+      },
+      {
+       "libelle": "+ Autres produits (75) − autres charges (65)",
+       "valeurs": [
+        5
+       ],
+       "aide": "Sans 757 ni 657"
+      },
+      {
+       "libelle": "+ Produits financiers encaissables (76) − charges d'intérêts (66)",
+       "valeurs": [
+        -20
+       ],
+       "aide": "Sans 767/667, 786/686"
+      },
+      {
+       "libelle": "+ Produits exceptionnels (77) − charges exceptionnelles (67)",
+       "valeurs": [
+        3
+       ]
+      },
+      {
+       "libelle": "− Participation − impôt sur les bénéfices",
+       "valeurs": [
+        -25
+       ]
+      },
+      {
+       "libelle": "= Capacité d'autofinancement",
+       "valeurs": [
+        113
+       ],
+       "total": true
+      }
+     ],
+     "explication": ""
+    },
+    {
+     "type": "tableau",
+     "enonce": "Vérifiez par la méthode additive :",
+     "colonnes": [
+      "N"
+     ],
+     "titreLignes": "CAF (k€)",
+     "lignes": [
+      {
+       "libelle": "Résultat net",
+       "valeurs": [
+        68
+       ]
+      },
+      {
+       "libelle": "+ Dotations (681 + 686)",
+       "valeurs": [
+        50
+       ]
+      },
+      {
+       "libelle": "− Reprises (781 + 786)",
+       "valeurs": [
+        -5
+       ],
+       "aide": "Saisir avec le signe −"
+      },
+      {
+       "libelle": "+ Valeurs comptables des actifs cédés (657 + 667)",
+       "valeurs": [
+        0
+       ]
+      },
+      {
+       "libelle": "− Produits des cessions (757 + 767)",
+       "valeurs": [
+        0
+       ],
+       "aide": "Saisir avec le signe −"
+      },
+      {
+       "libelle": "− Quote-part des subventions d'investissement (747)",
+       "valeurs": [
+        0
+       ],
+       "aide": "Saisir avec le signe −"
+      },
+      {
+       "libelle": "= Capacité d'autofinancement",
+       "valeurs": [
+        113
+       ],
+       "total": true
+      }
+     ],
+     "explication": ""
+    },
+    {
+     "type": "numerique",
+     "enonce": "Chiffre d'affaires :",
+     "reponse": 1500,
+     "tolerance": 0,
+     "explication": "707 + 701 + 706",
+     "unite": "k€"
+    },
+    {
+     "type": "numerique",
+     "enonce": "Taux de marge d'EBE (EBE / CA, en %, à 1 décimale) :",
+     "reponse": 10.0,
+     "tolerance": 0.002,
+     "explication": "150 / 1500 × 100",
+     "unite": "%"
+    },
+    {
+     "type": "redaction",
+     "enonce": "Rédigez en 2-3 phrases ce que mesure l'EBE et pourquoi on calcule la CAF.",
+     "choix": [
+      "EBE : performance de l'exploitation avant amortissements, financement et IS ; CAF : ressource interne pour investir, rembourser, distribuer",
+      "EBE : résultat après impôt ; CAF : trésorerie au bilan",
+      "EBE : bénéfice distribuable ; CAF : montant des emprunts",
+      "EBE : valeur des stocks ; CAF : capital social"
+     ],
+     "reponse": 0,
+     "modele": "L'EBE mesure la performance du métier, indépendamment des politiques d'investissement (dotations), de financement (intérêts) et fiscale. La CAF est la ressource interne potentielle (produits encaissables − charges décaissables) qui permet de financer les investissements, rembourser les emprunts et verser des dividendes."
+    }
+   ],
+   "explication": "Format du DS 2023-2024 (dossier 4, cas BLE) : CR en liste → SIG → CAF. Vérifier RN = total produits − total charges.",
+   "source": "Cours/2A FIGIM/Analyse Financière - I.Leroyer/Partiel 2024 (format) + cours SIG CAF"
+  },
+  {
+   "id": "af-ds1-05",
+   "type": "probleme",
+   "difficulte": 3,
+   "enonce": "**Dossier ANALYSE FINANCIÈRE (analyse de l'activité) — Cas MAÏS** · (sans calculatrice)\nLa société MAÏS met à votre disposition son compte de résultat de l'année N (en k€). Négatifs : tapez « - ».",
+   "donnees": [
+    {
+     "titre": "Comptes de résultat (en liste), en k€",
+     "colonnes": [
+      "au 31.12.N"
+     ],
+     "lignes": [
+      "PRODUITS D'EXPLOITATION",
+      [
+       "Ventes de marchandises (707)",
+       1000
+      ],
+      [
+       "Production vendue — biens (701)",
+       1000
+      ],
+      [
+       "Production stockée (SF − SI) (713)",
+       30
+      ],
+      [
+       "Subventions d'exploitation (74)",
+       10
+      ],
+      [
+       "Reprises sur amortissements, dépréciations et provisions (781)",
+       5
+      ],
+      "PRODUITS FINANCIERS",
+      "PRODUITS EXCEPTIONNELS",
+      [
+       "Produits exceptionnels (77)",
+       5
+      ],
+      "CHARGES D'EXPLOITATION",
+      [
+       "Achats de marchandises (607)",
+       500
+      ],
+      [
+       "Variation des stocks de marchandises (SI − SF) (6037)",
+       10
+      ],
+      [
+       "Achats de matières premières (601)",
+       300
+      ],
+      [
+       "Variation des stocks de matières premières (SI − SF) (6031)",
+       20
+      ],
+      [
+       "Frais d'énergie",
+       60
+      ],
+      [
+       "Frais de téléphone",
+       10
+      ],
+      [
+       "Frais de publicité",
+       80
+      ],
+      [
+       "Autres achats et charges externes",
+       40
+      ],
+      [
+       "Impôts, taxes et versements assimilés (63)",
+       20
+      ],
+      [
+       "Salaires et traitements (641)",
+       500
+      ],
+      [
+       "Charges sociales (645)",
+       260
+      ],
+      [
+       "Dotations aux amortissements, dépréciations et provisions (681)",
+       20
+      ],
+      [
+       "Autres charges de gestion courante (65)",
+       5
+      ],
+      "CHARGES FINANCIÈRES",
+      [
+       "Charges d'intérêts (66)",
+       20
+      ],
+      [
+       "Dotations financières (686)",
+       5
+      ],
+      "CHARGES EXCEPTIONNELLES",
+      [
+       "Charges exceptionnelles (67)",
+       5
+      ],
+      "IMPÔT ET PARTICIPATION",
+      [
+       "Impôt sur les bénéfices (695)",
+       45
+      ],
+      [
+       "**Total des produits**",
+       2050
+      ],
+      [
+       "**Total des charges**",
+       1900
+      ],
+      [
+       "**Résultat net de l'exercice**",
+       150
+      ]
+     ]
+    }
+   ],
+   "etapes": [
+    {
+     "type": "tableau",
+     "enonce": "Présentez le tableau des soldes intermédiaires de gestion :",
+     "colonnes": [
+      "N"
+     ],
+     "titreLignes": "SIG (k€)",
+     "lignes": [
+      {
+       "libelle": "Ventes de marchandises",
+       "valeurs": [
+        1000
+       ],
+       "aide": "707"
+      },
+      {
+       "libelle": "− Coût d'achat des marchandises vendues",
+       "valeurs": [
+        510
+       ],
+       "aide": "Achats de marchandises + variation de stock (SI − SF)"
+      },
+      {
+       "libelle": "= Marge commerciale",
+       "valeurs": [
+        490
+       ],
+       "total": true
+      },
+      {
+       "libelle": "Production de l'exercice",
+       "valeurs": [
+        1030
+       ],
+       "aide": "Production vendue (biens + services) + production stockée + production immobilisée"
+      },
+      {
+       "libelle": "− Consommations en provenance des tiers",
+       "valeurs": [
+        510
+       ],
+       "aide": "Achats de MP + variation de stock de MP + autres achats et charges externes"
+      },
+      {
+       "libelle": "= Valeur ajoutée",
+       "valeurs": [
+        1010
+       ],
+       "aide": "MC + production − consommations",
+       "total": true
+      },
+      {
+       "libelle": "+ Subventions d'exploitation − impôts et taxes − charges de personnel",
+       "valeurs": [
+        -770
+       ],
+       "aide": "74 − 63 − (641 + 645) : saisir le montant net (souvent négatif)"
+      },
+      {
+       "libelle": "= Excédent brut d'exploitation",
+       "valeurs": [
+        240
+       ],
+       "total": true
+      },
+      {
+       "libelle": "+ Reprises et autres produits (781, 75, 747, 757)",
+       "valeurs": [
+        5
+       ]
+      },
+      {
+       "libelle": "− Dotations et autres charges (681, 65, 657)",
+       "valeurs": [
+        25
+       ]
+      },
+      {
+       "libelle": "= Résultat d'exploitation",
+       "valeurs": [
+        220
+       ],
+       "total": true
+      },
+      {
+       "libelle": "± Résultat financier",
+       "valeurs": [
+        -25
+       ],
+       "aide": "(76 + 786 + 767) − (66 + 686 + 667)"
+      },
+      {
+       "libelle": "= Résultat courant avant impôts",
+       "valeurs": [
+        195
+       ],
+       "total": true
+      },
+      {
+       "libelle": "± Résultat exceptionnel",
+       "valeurs": [
+        0
+       ],
+       "aide": "77 − 67"
+      },
+      {
+       "libelle": "= Résultat net",
+       "valeurs": [
+        150
+       ],
+       "aide": "RCAI + R. exceptionnel − participation − IS ; vérifier : total produits − total charges",
+       "total": true
+      }
+     ],
+     "explication": ""
+    },
+    {
+     "type": "tableau",
+     "enonce": "Calculez la CAF par la méthode soustractive :",
+     "colonnes": [
+      "N"
+     ],
+     "titreLignes": "CAF (k€)",
+     "lignes": [
+      {
+       "libelle": "Excédent brut d'exploitation",
+       "valeurs": [
+        240
+       ]
+      },
+      {
+       "libelle": "+ Autres produits (75) − autres charges (65)",
+       "valeurs": [
+        -5
+       ],
+       "aide": "Sans 757 ni 657"
+      },
+      {
+       "libelle": "+ Produits financiers encaissables (76) − charges d'intérêts (66)",
+       "valeurs": [
+        -20
+       ],
+       "aide": "Sans 767/667, 786/686"
+      },
+      {
+       "libelle": "+ Produits exceptionnels (77) − charges exceptionnelles (67)",
+       "valeurs": [
+        0
+       ]
+      },
+      {
+       "libelle": "− Participation − impôt sur les bénéfices",
+       "valeurs": [
+        -45
+       ]
+      },
+      {
+       "libelle": "= Capacité d'autofinancement",
+       "valeurs": [
+        170
+       ],
+       "total": true
+      }
+     ],
+     "explication": ""
+    },
+    {
+     "type": "tableau",
+     "enonce": "Vérifiez par la méthode additive :",
+     "colonnes": [
+      "N"
+     ],
+     "titreLignes": "CAF (k€)",
+     "lignes": [
+      {
+       "libelle": "Résultat net",
+       "valeurs": [
+        150
+       ]
+      },
+      {
+       "libelle": "+ Dotations (681 + 686)",
+       "valeurs": [
+        25
+       ]
+      },
+      {
+       "libelle": "− Reprises (781 + 786)",
+       "valeurs": [
+        -5
+       ],
+       "aide": "Saisir avec le signe −"
+      },
+      {
+       "libelle": "+ Valeurs comptables des actifs cédés (657 + 667)",
+       "valeurs": [
+        0
+       ]
+      },
+      {
+       "libelle": "− Produits des cessions (757 + 767)",
+       "valeurs": [
+        0
+       ],
+       "aide": "Saisir avec le signe −"
+      },
+      {
+       "libelle": "− Quote-part des subventions d'investissement (747)",
+       "valeurs": [
+        0
+       ],
+       "aide": "Saisir avec le signe −"
+      },
+      {
+       "libelle": "= Capacité d'autofinancement",
+       "valeurs": [
+        170
+       ],
+       "total": true
+      }
+     ],
+     "explication": ""
+    },
+    {
+     "type": "numerique",
+     "enonce": "Chiffre d'affaires :",
+     "reponse": 2000,
+     "tolerance": 0,
+     "explication": "707 + 701 + 706",
+     "unite": "k€"
+    },
+    {
+     "type": "numerique",
+     "enonce": "Taux de marge d'EBE (EBE / CA, en %, à 1 décimale) :",
+     "reponse": 12.0,
+     "tolerance": 0.002,
+     "explication": "240 / 2000 × 100",
+     "unite": "%"
+    },
+    {
+     "type": "redaction",
+     "enonce": "Rédigez en 2-3 phrases ce que mesure l'EBE et pourquoi on calcule la CAF.",
+     "choix": [
+      "EBE : performance de l'exploitation avant amortissements, financement et IS ; CAF : ressource interne pour investir, rembourser, distribuer",
+      "EBE : résultat après impôt ; CAF : trésorerie au bilan",
+      "EBE : bénéfice distribuable ; CAF : montant des emprunts",
+      "EBE : valeur des stocks ; CAF : capital social"
+     ],
+     "reponse": 0,
+     "modele": "L'EBE mesure la performance du métier, indépendamment des politiques d'investissement (dotations), de financement (intérêts) et fiscale. La CAF est la ressource interne potentielle (produits encaissables − charges décaissables) qui permet de financer les investissements, rembourser les emprunts et verser des dividendes."
+    }
+   ],
+   "explication": "Format du DS 2023-2024 (dossier 4, cas BLE) : CR en liste → SIG → CAF. Vérifier RN = total produits − total charges.",
+   "source": "Cours/2A FIGIM/Analyse Financière - I.Leroyer/Partiel 2024 (format) + cours SIG CAF"
+  },
+  {
+   "id": "af-ds1-06",
+   "type": "probleme",
+   "difficulte": 3,
+   "enonce": "**Dossier ANALYSE FINANCIÈRE (analyse de l'activité) — Cas ÉPEAUTRE** · (sans calculatrice)\nLa société ÉPEAUTRE met à votre disposition son compte de résultat de l'année N (en k€). Négatifs : tapez « - ».",
+   "donnees": [
+    {
+     "titre": "Comptes de résultat (en liste), en k€",
+     "colonnes": [
+      "au 31.12.N"
+     ],
+     "lignes": [
+      "PRODUITS D'EXPLOITATION",
+      [
+       "Ventes de marchandises (707)",
+       240
+      ],
+      [
+       "Production vendue — biens (701)",
+       910
+      ],
+      [
+       "Production vendue — services (706)",
+       50
+      ],
+      [
+       "Production stockée (SF − SI) (713)",
+       30
+      ],
+      [
+       "Production immobilisée (72)",
+       20
+      ],
+      [
+       "Subventions d'exploitation (74)",
+       20
+      ],
+      [
+       "Reprises sur amortissements, dépréciations et provisions (781)",
+       5
+      ],
+      [
+       "Autres produits de gestion courante (75)",
+       10
+      ],
+      "PRODUITS FINANCIERS",
+      "PRODUITS EXCEPTIONNELS",
+      [
+       "Produits exceptionnels (77)",
+       10
+      ],
+      "CHARGES D'EXPLOITATION",
+      [
+       "Achats de marchandises (607)",
+       165
+      ],
+      [
+       "Variation des stocks de marchandises (SI − SF) (6037)",
+       -5
+      ],
+      [
+       "Achats de matières premières (601)",
+       280
+      ],
+      [
+       "Variation des stocks de matières premières (SI − SF) (6031)",
+       20
+      ],
+      [
+       "Frais d'énergie",
+       100
+      ],
+      [
+       "Frais de téléphone",
+       20
+      ],
+      [
+       "Frais de publicité",
+       30
+      ],
+      [
+       "Autres achats et charges externes",
+       70
+      ],
+      [
+       "Impôts, taxes et versements assimilés (63)",
+       25
+      ],
+      [
+       "Salaires et traitements (641)",
+       310
+      ],
+      [
+       "Charges sociales (645)",
+       160
+      ],
+      [
+       "Dotations aux amortissements, dépréciations et provisions (681)",
+       40
+      ],
+      "CHARGES FINANCIÈRES",
+      [
+       "Charges d'intérêts (66)",
+       15
+      ],
+      "CHARGES EXCEPTIONNELLES",
+      "IMPÔT ET PARTICIPATION",
+      [
+       "Participation des salariés (691)",
+       5
+      ],
+      [
+       "Impôt sur les bénéfices (695)",
+       15
+      ],
+      [
+       "**Total des produits**",
+       1295
+      ],
+      [
+       "**Total des charges**",
+       1250
+      ],
+      [
+       "**Résultat net de l'exercice**",
+       45
+      ]
+     ]
+    }
+   ],
+   "etapes": [
+    {
+     "type": "tableau",
+     "enonce": "Présentez le tableau des soldes intermédiaires de gestion :",
+     "colonnes": [
+      "N"
+     ],
+     "titreLignes": "SIG (k€)",
+     "lignes": [
+      {
+       "libelle": "Ventes de marchandises",
+       "valeurs": [
+        240
+       ],
+       "aide": "707"
+      },
+      {
+       "libelle": "− Coût d'achat des marchandises vendues",
+       "valeurs": [
+        160
+       ],
+       "aide": "Achats de marchandises + variation de stock (SI − SF)"
+      },
+      {
+       "libelle": "= Marge commerciale",
+       "valeurs": [
+        80
+       ],
+       "total": true
+      },
+      {
+       "libelle": "Production de l'exercice",
+       "valeurs": [
+        1010
+       ],
+       "aide": "Production vendue (biens + services) + production stockée + production immobilisée"
+      },
+      {
+       "libelle": "− Consommations en provenance des tiers",
+       "valeurs": [
+        520
+       ],
+       "aide": "Achats de MP + variation de stock de MP + autres achats et charges externes"
+      },
+      {
+       "libelle": "= Valeur ajoutée",
+       "valeurs": [
+        570
+       ],
+       "aide": "MC + production − consommations",
+       "total": true
+      },
+      {
+       "libelle": "+ Subventions d'exploitation − impôts et taxes − charges de personnel",
+       "valeurs": [
+        -475
+       ],
+       "aide": "74 − 63 − (641 + 645) : saisir le montant net (souvent négatif)"
+      },
+      {
+       "libelle": "= Excédent brut d'exploitation",
+       "valeurs": [
+        95
+       ],
+       "total": true
+      },
+      {
+       "libelle": "+ Reprises et autres produits (781, 75, 747, 757)",
+       "valeurs": [
+        15
+       ]
+      },
+      {
+       "libelle": "− Dotations et autres charges (681, 65, 657)",
+       "valeurs": [
+        40
+       ]
+      },
+      {
+       "libelle": "= Résultat d'exploitation",
+       "valeurs": [
+        70
+       ],
+       "total": true
+      },
+      {
+       "libelle": "± Résultat financier",
+       "valeurs": [
+        -15
+       ],
+       "aide": "(76 + 786 + 767) − (66 + 686 + 667)"
+      },
+      {
+       "libelle": "= Résultat courant avant impôts",
+       "valeurs": [
+        55
+       ],
+       "total": true
+      },
+      {
+       "libelle": "± Résultat exceptionnel",
+       "valeurs": [
+        10
+       ],
+       "aide": "77 − 67"
+      },
+      {
+       "libelle": "= Résultat net",
+       "valeurs": [
+        45
+       ],
+       "aide": "RCAI + R. exceptionnel − participation − IS ; vérifier : total produits − total charges",
+       "total": true
+      }
+     ],
+     "explication": ""
+    },
+    {
+     "type": "tableau",
+     "enonce": "Calculez la CAF par la méthode soustractive :",
+     "colonnes": [
+      "N"
+     ],
+     "titreLignes": "CAF (k€)",
+     "lignes": [
+      {
+       "libelle": "Excédent brut d'exploitation",
+       "valeurs": [
+        95
+       ]
+      },
+      {
+       "libelle": "+ Autres produits (75) − autres charges (65)",
+       "valeurs": [
+        10
+       ],
+       "aide": "Sans 757 ni 657"
+      },
+      {
+       "libelle": "+ Produits financiers encaissables (76) − charges d'intérêts (66)",
+       "valeurs": [
+        -15
+       ],
+       "aide": "Sans 767/667, 786/686"
+      },
+      {
+       "libelle": "+ Produits exceptionnels (77) − charges exceptionnelles (67)",
+       "valeurs": [
+        10
+       ]
+      },
+      {
+       "libelle": "− Participation − impôt sur les bénéfices",
+       "valeurs": [
+        -20
+       ]
+      },
+      {
+       "libelle": "= Capacité d'autofinancement",
+       "valeurs": [
+        80
+       ],
+       "total": true
+      }
+     ],
+     "explication": ""
+    },
+    {
+     "type": "tableau",
+     "enonce": "Vérifiez par la méthode additive :",
+     "colonnes": [
+      "N"
+     ],
+     "titreLignes": "CAF (k€)",
+     "lignes": [
+      {
+       "libelle": "Résultat net",
+       "valeurs": [
+        45
+       ]
+      },
+      {
+       "libelle": "+ Dotations (681 + 686)",
+       "valeurs": [
+        40
+       ]
+      },
+      {
+       "libelle": "− Reprises (781 + 786)",
+       "valeurs": [
+        -5
+       ],
+       "aide": "Saisir avec le signe −"
+      },
+      {
+       "libelle": "+ Valeurs comptables des actifs cédés (657 + 667)",
+       "valeurs": [
+        0
+       ]
+      },
+      {
+       "libelle": "− Produits des cessions (757 + 767)",
+       "valeurs": [
+        0
+       ],
+       "aide": "Saisir avec le signe −"
+      },
+      {
+       "libelle": "− Quote-part des subventions d'investissement (747)",
+       "valeurs": [
+        0
+       ],
+       "aide": "Saisir avec le signe −"
+      },
+      {
+       "libelle": "= Capacité d'autofinancement",
+       "valeurs": [
+        80
+       ],
+       "total": true
+      }
+     ],
+     "explication": ""
+    },
+    {
+     "type": "numerique",
+     "enonce": "Chiffre d'affaires :",
+     "reponse": 1200,
+     "tolerance": 0,
+     "explication": "707 + 701 + 706",
+     "unite": "k€"
+    },
+    {
+     "type": "numerique",
+     "enonce": "Taux de marge d'EBE (EBE / CA, en %, à 1 décimale) :",
+     "reponse": 7.9,
+     "tolerance": 0.002,
+     "explication": "95 / 1200 × 100",
+     "unite": "%"
+    },
+    {
+     "type": "redaction",
+     "enonce": "Rédigez en 2-3 phrases ce que mesure l'EBE et pourquoi on calcule la CAF.",
+     "choix": [
+      "EBE : performance de l'exploitation avant amortissements, financement et IS ; CAF : ressource interne pour investir, rembourser, distribuer",
+      "EBE : résultat après impôt ; CAF : trésorerie au bilan",
+      "EBE : bénéfice distribuable ; CAF : montant des emprunts",
+      "EBE : valeur des stocks ; CAF : capital social"
+     ],
+     "reponse": 0,
+     "modele": "L'EBE mesure la performance du métier, indépendamment des politiques d'investissement (dotations), de financement (intérêts) et fiscale. La CAF est la ressource interne potentielle (produits encaissables − charges décaissables) qui permet de financer les investissements, rembourser les emprunts et verser des dividendes."
+    }
+   ],
+   "explication": "Format du DS 2023-2024 (dossier 4, cas BLE) : CR en liste → SIG → CAF. Vérifier RN = total produits − total charges.",
+   "source": "Cours/2A FIGIM/Analyse Financière - I.Leroyer/Partiel 2024 (format) + cours SIG CAF"
+  },
+  {
+   "id": "af-ds1-07",
+   "type": "probleme",
+   "difficulte": 3,
+   "enonce": "**Dossier ANALYSE FINANCIÈRE (analyse de l'activité) — Cas SARRASIN** · (sans calculatrice)\nLa société SARRASIN met à votre disposition son compte de résultat de l'année N (en k€). Négatifs : tapez « - ».",
+   "donnees": [
+    {
+     "titre": "Comptes de résultat (en liste), en k€",
+     "colonnes": [
+      "au 31.12.N"
+     ],
+     "lignes": [
+      "PRODUITS D'EXPLOITATION",
+      [
+       "Ventes de marchandises (707)",
+       400
+      ],
+      [
+       "Production vendue — biens (701)",
+       1600
+      ],
+      [
+       "Production immobilisée (72)",
+       20
+      ],
+      [
+       "Subventions d'exploitation (74)",
+       10
+      ],
+      [
+       "Produits des cessions d'immobilisations corporelles (757)",
+       10
+      ],
+      "PRODUITS FINANCIERS",
+      "PRODUITS EXCEPTIONNELS",
+      [
+       "Produits exceptionnels (77)",
+       10
+      ],
+      "CHARGES D'EXPLOITATION",
+      [
+       "Achats de marchandises (607)",
+       280
+      ],
+      [
+       "Variation des stocks de marchandises (SI − SF) (6037)",
+       10
+      ],
+      [
+       "Achats de matières premières (601)",
+       640
+      ],
+      [
+       "Variation des stocks de matières premières (SI − SF) (6031)",
+       10
+      ],
+      [
+       "Frais d'énergie",
+       100
+      ],
+      [
+       "Frais de téléphone",
+       20
+      ],
+      [
+       "Frais de publicité",
+       50
+      ],
+      [
+       "Autres achats et charges externes",
+       70
+      ],
+      [
+       "Impôts, taxes et versements assimilés (63)",
+       40
+      ],
+      [
+       "Salaires et traitements (641)",
+       400
+      ],
+      [
+       "Charges sociales (645)",
+       210
+      ],
+      [
+       "Dotations aux amortissements, dépréciations et provisions (681)",
+       20
+      ],
+      [
+       "Autres charges de gestion courante (65)",
+       5
+      ],
+      [
+       "Valeurs comptables des immobilisations corporelles cédées (657)",
+       25
+      ],
+      "CHARGES FINANCIÈRES",
+      [
+       "Charges d'intérêts (66)",
+       15
+      ],
+      "CHARGES EXCEPTIONNELLES",
+      "IMPÔT ET PARTICIPATION",
+      [
+       "Impôt sur les bénéfices (695)",
+       35
+      ],
+      [
+       "**Total des produits**",
+       2050
+      ],
+      [
+       "**Total des charges**",
+       1930
+      ],
+      [
+       "**Résultat net de l'exercice**",
+       120
+      ]
+     ]
+    }
+   ],
+   "etapes": [
+    {
+     "type": "tableau",
+     "enonce": "Présentez le tableau des soldes intermédiaires de gestion :",
+     "colonnes": [
+      "N"
+     ],
+     "titreLignes": "SIG (k€)",
+     "lignes": [
+      {
+       "libelle": "Ventes de marchandises",
+       "valeurs": [
+        400
+       ],
+       "aide": "707"
+      },
+      {
+       "libelle": "− Coût d'achat des marchandises vendues",
+       "valeurs": [
+        290
+       ],
+       "aide": "Achats de marchandises + variation de stock (SI − SF)"
+      },
+      {
+       "libelle": "= Marge commerciale",
+       "valeurs": [
+        110
+       ],
+       "total": true
+      },
+      {
+       "libelle": "Production de l'exercice",
+       "valeurs": [
+        1620
+       ],
+       "aide": "Production vendue (biens + services) + production stockée + production immobilisée"
+      },
+      {
+       "libelle": "− Consommations en provenance des tiers",
+       "valeurs": [
+        890
+       ],
+       "aide": "Achats de MP + variation de stock de MP + autres achats et charges externes"
+      },
+      {
+       "libelle": "= Valeur ajoutée",
+       "valeurs": [
+        840
+       ],
+       "aide": "MC + production − consommations",
+       "total": true
+      },
+      {
+       "libelle": "+ Subventions d'exploitation − impôts et taxes − charges de personnel",
+       "valeurs": [
+        -640
+       ],
+       "aide": "74 − 63 − (641 + 645) : saisir le montant net (souvent négatif)"
+      },
+      {
+       "libelle": "= Excédent brut d'exploitation",
+       "valeurs": [
+        200
+       ],
+       "total": true
+      },
+      {
+       "libelle": "+ Reprises et autres produits (781, 75, 747, 757)",
+       "valeurs": [
+        10
+       ]
+      },
+      {
+       "libelle": "− Dotations et autres charges (681, 65, 657)",
+       "valeurs": [
+        50
+       ]
+      },
+      {
+       "libelle": "= Résultat d'exploitation",
+       "valeurs": [
+        160
+       ],
+       "total": true
+      },
+      {
+       "libelle": "± Résultat financier",
+       "valeurs": [
+        -15
+       ],
+       "aide": "(76 + 786 + 767) − (66 + 686 + 667)"
+      },
+      {
+       "libelle": "= Résultat courant avant impôts",
+       "valeurs": [
+        145
+       ],
+       "total": true
+      },
+      {
+       "libelle": "± Résultat exceptionnel",
+       "valeurs": [
+        10
+       ],
+       "aide": "77 − 67"
+      },
+      {
+       "libelle": "= Résultat net",
+       "valeurs": [
+        120
+       ],
+       "aide": "RCAI + R. exceptionnel − participation − IS ; vérifier : total produits − total charges",
+       "total": true
+      }
+     ],
+     "explication": ""
+    },
+    {
+     "type": "tableau",
+     "enonce": "Calculez la CAF par la méthode soustractive :",
+     "colonnes": [
+      "N"
+     ],
+     "titreLignes": "CAF (k€)",
+     "lignes": [
+      {
+       "libelle": "Excédent brut d'exploitation",
+       "valeurs": [
+        200
+       ]
+      },
+      {
+       "libelle": "+ Autres produits (75) − autres charges (65)",
+       "valeurs": [
+        -5
+       ],
+       "aide": "Sans 757 ni 657"
+      },
+      {
+       "libelle": "+ Produits financiers encaissables (76) − charges d'intérêts (66)",
+       "valeurs": [
+        -15
+       ],
+       "aide": "Sans 767/667, 786/686"
+      },
+      {
+       "libelle": "+ Produits exceptionnels (77) − charges exceptionnelles (67)",
+       "valeurs": [
+        10
+       ]
+      },
+      {
+       "libelle": "− Participation − impôt sur les bénéfices",
+       "valeurs": [
+        -35
+       ]
+      },
+      {
+       "libelle": "= Capacité d'autofinancement",
+       "valeurs": [
+        155
+       ],
+       "total": true
+      }
+     ],
+     "explication": ""
+    },
+    {
+     "type": "tableau",
+     "enonce": "Vérifiez par la méthode additive :",
+     "colonnes": [
+      "N"
+     ],
+     "titreLignes": "CAF (k€)",
+     "lignes": [
+      {
+       "libelle": "Résultat net",
+       "valeurs": [
+        120
+       ]
+      },
+      {
+       "libelle": "+ Dotations (681 + 686)",
+       "valeurs": [
+        20
+       ]
+      },
+      {
+       "libelle": "− Reprises (781 + 786)",
+       "valeurs": [
+        0
+       ],
+       "aide": "Saisir avec le signe −"
+      },
+      {
+       "libelle": "+ Valeurs comptables des actifs cédés (657 + 667)",
+       "valeurs": [
+        25
+       ]
+      },
+      {
+       "libelle": "− Produits des cessions (757 + 767)",
+       "valeurs": [
+        -10
+       ],
+       "aide": "Saisir avec le signe −"
+      },
+      {
+       "libelle": "− Quote-part des subventions d'investissement (747)",
+       "valeurs": [
+        0
+       ],
+       "aide": "Saisir avec le signe −"
+      },
+      {
+       "libelle": "= Capacité d'autofinancement",
+       "valeurs": [
+        155
+       ],
+       "total": true
+      }
+     ],
+     "explication": ""
+    },
+    {
+     "type": "numerique",
+     "enonce": "Chiffre d'affaires :",
+     "reponse": 2000,
+     "tolerance": 0,
+     "explication": "707 + 701 + 706",
+     "unite": "k€"
+    },
+    {
+     "type": "numerique",
+     "enonce": "Taux de marge d'EBE (EBE / CA, en %, à 1 décimale) :",
+     "reponse": 10.0,
+     "tolerance": 0.002,
+     "explication": "200 / 2000 × 100",
+     "unite": "%"
+    },
+    {
+     "type": "qcm",
+     "enonce": "La société a cédé un matériel (757 = 10 ; 657 = 25). Où apparaît le résultat de cession (-15 k€) depuis le PCG 2025 ?",
+     "choix": [
+      "Dans le résultat d'exploitation",
+      "Dans le résultat exceptionnel",
+      "Dans le résultat financier",
+      "Il n'apparaît pas dans les SIG"
+     ],
+     "reponse": 0,
+     "explication": "657/757 = exploitation ; et la cession est exclue de la CAF."
+    },
+    {
+     "type": "redaction",
+     "enonce": "Rédigez en 2-3 phrases ce que mesure l'EBE et pourquoi on calcule la CAF.",
+     "choix": [
+      "EBE : performance de l'exploitation avant amortissements, financement et IS ; CAF : ressource interne pour investir, rembourser, distribuer",
+      "EBE : résultat après impôt ; CAF : trésorerie au bilan",
+      "EBE : bénéfice distribuable ; CAF : montant des emprunts",
+      "EBE : valeur des stocks ; CAF : capital social"
+     ],
+     "reponse": 0,
+     "modele": "L'EBE mesure la performance du métier, indépendamment des politiques d'investissement (dotations), de financement (intérêts) et fiscale. La CAF est la ressource interne potentielle (produits encaissables − charges décaissables) qui permet de financer les investissements, rembourser les emprunts et verser des dividendes."
+    }
+   ],
+   "explication": "Format du DS 2023-2024 (dossier 4, cas BLE) : CR en liste → SIG → CAF. Vérifier RN = total produits − total charges.",
+   "source": "Cours/2A FIGIM/Analyse Financière - I.Leroyer/Partiel 2024 (format) + cours SIG CAF"
+  },
+  {
+   "id": "af-ds1-08",
+   "type": "probleme",
+   "difficulte": 3,
+   "enonce": "**Dossier ANALYSE FINANCIÈRE (analyse de l'activité) — Cas MILLET** · (sans calculatrice)\nLa société MILLET met à votre disposition son compte de résultat de l'année N (en k€). Négatifs : tapez « - ».",
+   "donnees": [
+    {
+     "titre": "Comptes de résultat (en liste), en k€",
+     "colonnes": [
+      "au 31.12.N"
+     ],
+     "lignes": [
+      "PRODUITS D'EXPLOITATION",
+      [
+       "Ventes de marchandises (707)",
+       240
+      ],
+      [
+       "Production vendue — biens (701)",
+       860
+      ],
+      [
+       "Production vendue — services (706)",
+       100
+      ],
+      [
+       "Production stockée (SF − SI) (713)",
+       20
+      ],
+      [
+       "Subventions d'exploitation (74)",
+       10
+      ],
+      [
+       "Reprises sur amortissements, dépréciations et provisions (781)",
+       10
+      ],
+      [
+       "Produits des cessions d'immobilisations corporelles (757)",
+       20
+      ],
+      "PRODUITS FINANCIERS",
+      [
+       "Produits financiers (intérêts reçus) (76)",
+       5
+      ],
+      "PRODUITS EXCEPTIONNELS",
+      [
+       "Produits exceptionnels (77)",
+       10
+      ],
+      "CHARGES D'EXPLOITATION",
+      [
+       "Achats de marchandises (607)",
+       140
+      ],
+      [
+       "Variation des stocks de marchandises (SI − SF) (6037)",
+       -10
+      ],
+      [
+       "Achats de matières premières (601)",
+       280
+      ],
+      [
+       "Variation des stocks de matières premières (SI − SF) (6031)",
+       -20
+      ],
+      [
+       "Frais d'énergie",
+       40
+      ],
+      [
+       "Frais de téléphone",
+       20
+      ],
+      [
+       "Frais de publicité",
+       50
+      ],
+      [
+       "Autres achats et charges externes",
+       40
+      ],
+      [
+       "Impôts, taxes et versements assimilés (63)",
+       25
+      ],
+      [
+       "Salaires et traitements (641)",
+       350
+      ],
+      [
+       "Charges sociales (645)",
+       175
+      ],
+      [
+       "Dotations aux amortissements, dépréciations et provisions (681)",
+       30
+      ],
+      [
+       "Autres charges de gestion courante (65)",
+       5
+      ],
+      [
+       "Valeurs comptables des immobilisations corporelles cédées (657)",
+       20
+      ],
+      "CHARGES FINANCIÈRES",
+      [
+       "Charges d'intérêts (66)",
+       15
+      ],
+      [
+       "Dotations financières (686)",
+       5
+      ],
+      "CHARGES EXCEPTIONNELLES",
+      [
+       "Charges exceptionnelles (67)",
+       2
+      ],
+      "IMPÔT ET PARTICIPATION",
+      [
+       "Participation des salariés (691)",
+       5
+      ],
+      [
+       "Impôt sur les bénéfices (695)",
+       25
+      ],
+      [
+       "**Total des produits**",
+       1275
+      ],
+      [
+       "**Total des charges**",
+       1197
+      ],
+      [
+       "**Résultat net de l'exercice**",
+       78
+      ]
+     ]
+    }
+   ],
+   "etapes": [
+    {
+     "type": "tableau",
+     "enonce": "Présentez le tableau des soldes intermédiaires de gestion :",
+     "colonnes": [
+      "N"
+     ],
+     "titreLignes": "SIG (k€)",
+     "lignes": [
+      {
+       "libelle": "Ventes de marchandises",
+       "valeurs": [
+        240
+       ],
+       "aide": "707"
+      },
+      {
+       "libelle": "− Coût d'achat des marchandises vendues",
+       "valeurs": [
+        130
+       ],
+       "aide": "Achats de marchandises + variation de stock (SI − SF)"
+      },
+      {
+       "libelle": "= Marge commerciale",
+       "valeurs": [
+        110
+       ],
+       "total": true
+      },
+      {
+       "libelle": "Production de l'exercice",
+       "valeurs": [
+        980
+       ],
+       "aide": "Production vendue (biens + services) + production stockée + production immobilisée"
+      },
+      {
+       "libelle": "− Consommations en provenance des tiers",
+       "valeurs": [
+        410
+       ],
+       "aide": "Achats de MP + variation de stock de MP + autres achats et charges externes"
+      },
+      {
+       "libelle": "= Valeur ajoutée",
+       "valeurs": [
+        680
+       ],
+       "aide": "MC + production − consommations",
+       "total": true
+      },
+      {
+       "libelle": "+ Subventions d'exploitation − impôts et taxes − charges de personnel",
+       "valeurs": [
+        -540
+       ],
+       "aide": "74 − 63 − (641 + 645) : saisir le montant net (souvent négatif)"
+      },
+      {
+       "libelle": "= Excédent brut d'exploitation",
+       "valeurs": [
+        140
+       ],
+       "total": true
+      },
+      {
+       "libelle": "+ Reprises et autres produits (781, 75, 747, 757)",
+       "valeurs": [
+        30
+       ]
+      },
+      {
+       "libelle": "− Dotations et autres charges (681, 65, 657)",
+       "valeurs": [
+        55
+       ]
+      },
+      {
+       "libelle": "= Résultat d'exploitation",
+       "valeurs": [
+        115
+       ],
+       "total": true
+      },
+      {
+       "libelle": "± Résultat financier",
+       "valeurs": [
+        -15
+       ],
+       "aide": "(76 + 786 + 767) − (66 + 686 + 667)"
+      },
+      {
+       "libelle": "= Résultat courant avant impôts",
+       "valeurs": [
+        100
+       ],
+       "total": true
+      },
+      {
+       "libelle": "± Résultat exceptionnel",
+       "valeurs": [
+        8
+       ],
+       "aide": "77 − 67"
+      },
+      {
+       "libelle": "= Résultat net",
+       "valeurs": [
+        78
+       ],
+       "aide": "RCAI + R. exceptionnel − participation − IS ; vérifier : total produits − total charges",
+       "total": true
+      }
+     ],
+     "explication": ""
+    },
+    {
+     "type": "tableau",
+     "enonce": "Calculez la CAF par la méthode soustractive :",
+     "colonnes": [
+      "N"
+     ],
+     "titreLignes": "CAF (k€)",
+     "lignes": [
+      {
+       "libelle": "Excédent brut d'exploitation",
+       "valeurs": [
+        140
+       ]
+      },
+      {
+       "libelle": "+ Autres produits (75) − autres charges (65)",
+       "valeurs": [
+        -5
+       ],
+       "aide": "Sans 757 ni 657"
+      },
+      {
+       "libelle": "+ Produits financiers encaissables (76) − charges d'intérêts (66)",
+       "valeurs": [
+        -10
+       ],
+       "aide": "Sans 767/667, 786/686"
+      },
+      {
+       "libelle": "+ Produits exceptionnels (77) − charges exceptionnelles (67)",
+       "valeurs": [
+        8
+       ]
+      },
+      {
+       "libelle": "− Participation − impôt sur les bénéfices",
+       "valeurs": [
+        -30
+       ]
+      },
+      {
+       "libelle": "= Capacité d'autofinancement",
+       "valeurs": [
+        103
+       ],
+       "total": true
+      }
+     ],
+     "explication": ""
+    },
+    {
+     "type": "tableau",
+     "enonce": "Vérifiez par la méthode additive :",
+     "colonnes": [
+      "N"
+     ],
+     "titreLignes": "CAF (k€)",
+     "lignes": [
+      {
+       "libelle": "Résultat net",
+       "valeurs": [
+        78
+       ]
+      },
+      {
+       "libelle": "+ Dotations (681 + 686)",
+       "valeurs": [
+        35
+       ]
+      },
+      {
+       "libelle": "− Reprises (781 + 786)",
+       "valeurs": [
+        -10
+       ],
+       "aide": "Saisir avec le signe −"
+      },
+      {
+       "libelle": "+ Valeurs comptables des actifs cédés (657 + 667)",
+       "valeurs": [
+        20
+       ]
+      },
+      {
+       "libelle": "− Produits des cessions (757 + 767)",
+       "valeurs": [
+        -20
+       ],
+       "aide": "Saisir avec le signe −"
+      },
+      {
+       "libelle": "− Quote-part des subventions d'investissement (747)",
+       "valeurs": [
+        0
+       ],
+       "aide": "Saisir avec le signe −"
+      },
+      {
+       "libelle": "= Capacité d'autofinancement",
+       "valeurs": [
+        103
+       ],
+       "total": true
+      }
+     ],
+     "explication": ""
+    },
+    {
+     "type": "numerique",
+     "enonce": "Chiffre d'affaires :",
+     "reponse": 1200,
+     "tolerance": 0,
+     "explication": "707 + 701 + 706",
+     "unite": "k€"
+    },
+    {
+     "type": "numerique",
+     "enonce": "Taux de marge d'EBE (EBE / CA, en %, à 1 décimale) :",
+     "reponse": 11.7,
+     "tolerance": 0.002,
+     "explication": "140 / 1200 × 100",
+     "unite": "%"
+    },
+    {
+     "type": "qcm",
+     "enonce": "La société a cédé un matériel (757 = 20 ; 657 = 20). Où apparaît le résultat de cession (+0 k€) depuis le PCG 2025 ?",
+     "choix": [
+      "Dans le résultat d'exploitation",
+      "Dans le résultat exceptionnel",
+      "Dans le résultat financier",
+      "Il n'apparaît pas dans les SIG"
+     ],
+     "reponse": 0,
+     "explication": "657/757 = exploitation ; et la cession est exclue de la CAF."
+    },
+    {
+     "type": "redaction",
+     "enonce": "Rédigez en 2-3 phrases ce que mesure l'EBE et pourquoi on calcule la CAF.",
+     "choix": [
+      "EBE : performance de l'exploitation avant amortissements, financement et IS ; CAF : ressource interne pour investir, rembourser, distribuer",
+      "EBE : résultat après impôt ; CAF : trésorerie au bilan",
+      "EBE : bénéfice distribuable ; CAF : montant des emprunts",
+      "EBE : valeur des stocks ; CAF : capital social"
+     ],
+     "reponse": 0,
+     "modele": "L'EBE mesure la performance du métier, indépendamment des politiques d'investissement (dotations), de financement (intérêts) et fiscale. La CAF est la ressource interne potentielle (produits encaissables − charges décaissables) qui permet de financer les investissements, rembourser les emprunts et verser des dividendes."
+    }
+   ],
+   "explication": "Format du DS 2023-2024 (dossier 4, cas BLE) : CR en liste → SIG → CAF. Vérifier RN = total produits − total charges.",
+   "source": "Cours/2A FIGIM/Analyse Financière - I.Leroyer/Partiel 2024 (format) + cours SIG CAF"
+  }
+ ]
+}

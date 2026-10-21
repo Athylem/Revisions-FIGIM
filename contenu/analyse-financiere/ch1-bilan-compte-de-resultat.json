@@ -1,0 +1,264 @@
+{
+ "chapitre": "Bilan, compte de résultat, stocks, PCG",
+ "genre": "cours",
+ "questions": [
+  {
+   "id": "af-c1-01",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Le bilan est :",
+   "choix": [
+    "Une photographie du patrimoine à une date donnée",
+    "Le film de l'activité sur l'exercice",
+    "La liste des charges et produits de l'année",
+    "Le tableau des flux de trésorerie"
+   ],
+   "reponse": 0,
+   "explication": "Bilan = **photo** du patrimoine (date donnée) ; compte de résultat = **film** de l'activité sur l'exercice.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c1-02",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "À l'actif du bilan, les postes sont classés par :",
+   "choix": [
+    "Liquidité croissante",
+    "Exigibilité croissante",
+    "Montant décroissant",
+    "Ordre alphabétique des comptes"
+   ],
+   "reponse": 0,
+   "explication": "Actif : liquidité croissante (immobilisations en haut, trésorerie en bas). Passif : exigibilité croissante.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c1-03",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Les capitaux propres comprennent :",
+   "choix": [
+    "Capital, réserves, report à nouveau, résultat de l'exercice (et subventions d'investissement)",
+    "Capital, réserves et emprunts à plus d'un an",
+    "Capital, réserves, résultat et cumul des amortissements",
+    "Capital uniquement"
+   ],
+   "reponse": 0,
+   "explication": "Question tombée au test 2011 : le résultat de l'exercice fait partie des capitaux propres ; les amortissements non (ils sont à l'actif en déduction).",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c1-04",
+   "type": "vrai-faux",
+   "difficulte": 1,
+   "enonce": "Un résultat écrit entre parenthèses ou précédé d'un signe « − » au passif représente une perte.",
+   "reponse": true,
+   "explication": "Convention de présentation du bilan.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c1-05",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Une **charge** est :",
+   "choix": [
+    "Une consommation (emploi définitif) qui appauvrit l'entreprise",
+    "Une dette envers un fournisseur",
+    "Un bien durable inscrit à l'actif",
+    "Une ressource créée par l'activité"
+   ],
+   "reponse": 0,
+   "explication": "Charges (classe 6) = consommations ; produits (classe 7) = ressources créées par l'activité (ventes…).",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c1-06",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Variation de stock de **marchandises** (ou de MP) inscrite en charges :",
+   "choix": [
+    "SI − SF",
+    "SF − SI",
+    "SI + SF",
+    "(SI + SF) / 2"
+   ],
+   "reponse": 0,
+   "explication": "Consommation = Achats + (SI − SF). Si SF > SI, la variation est négative : on a stocké, on a moins consommé.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c1-07",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Production stockée (variation de stock de **produits finis**) inscrite en produits :",
+   "choix": [
+    "SF − SI",
+    "SI − SF",
+    "SI + SF",
+    "SF"
+   ],
+   "reponse": 0,
+   "explication": "Sens inverse des achats : production stockée = SF − SI. Positive : on a fabriqué plus que vendu.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c1-08",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Stock de PF : SI = 3 000, SF = 2 800. La production (dé)stockée vaut :",
+   "choix": [
+    "−200 (déstockage)",
+    "+200",
+    "−5 800",
+    "2 800"
+   ],
+   "reponse": 0,
+   "explication": "SF − SI = 2 800 − 3 000 = −200 (cas VITAMINES).",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c1-09",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Stock de matières premières : SI = 2 000, SF = 2 500. La variation de stock (en charges) vaut :",
+   "choix": [
+    "−500",
+    "+500",
+    "4 500",
+    "2 500"
+   ],
+   "reponse": 0,
+   "explication": "SI − SF = 2 000 − 2 500 = −500 (cas VITAMINES) : on a stocké, la consommation est inférieure aux achats.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c1-10",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Les comptes de classe 1 à 5 :",
+   "choix": [
+    "Sont des comptes de bilan, cumulés d'un exercice à l'autre",
+    "Sont des comptes de gestion remis à zéro chaque année",
+    "Sont des comptes de charges",
+    "N'apparaissent pas dans les états financiers"
+   ],
+   "reponse": 0,
+   "explication": "Classes 1-5 = comptes de **situation** (bilan, mémoire 🐘) ; classes 6-7 = comptes de **gestion** (CR, remis à zéro 🐟).",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c1-11",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Un emprunt auprès d'un établissement de crédit est enregistré en classe :",
+   "choix": [
+    "1 (capitaux stables), au passif en dettes",
+    "2 (immobilisations)",
+    "5 (comptes financiers)",
+    "4 (tiers)"
+   ],
+   "reponse": 0,
+   "explication": "Compte 164 : classe 1. Au bilan : poste « Dettes » (code D) dans les classements des cas BELLESSENCE/VITAMINES.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c1-12",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Les intérêts versés sur un emprunt sont :",
+   "choix": [
+    "Une charge financière",
+    "Une charge d'exploitation",
+    "Une charge exceptionnelle",
+    "Une diminution de la dette au bilan"
+   ],
+   "reponse": 0,
+   "explication": "Compte 661 : charge financière (CF). Le remboursement du capital, lui, n'est pas une charge.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c1-13",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Un découvert bancaire (concours bancaires courants) apparaît :",
+   "choix": [
+    "Au passif, en dettes",
+    "À l'actif, en trésorerie",
+    "En charges financières",
+    "Il se compense avec le solde positif d'une autre banque"
+   ],
+   "reponse": 0,
+   "explication": "Cas VITAMINES : banque SG positive à l'actif (4 300), découvert BNP au passif (2 000) ; on ne compense pas.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c1-14",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Les trois documents de synthèse (comptes annuels) sont :",
+   "choix": [
+    "Bilan, compte de résultat, annexe",
+    "Bilan, journal, grand livre",
+    "Compte de résultat, balance, annexe",
+    "Bilan, tableau de financement, SIG"
+   ],
+   "reponse": 0,
+   "explication": "Art. L123-12 C. com. : ensemble indissociable bilan + CR + annexe.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c1-15",
+   "type": "vrai-faux",
+   "difficulte": 1,
+   "enonce": "Le bilan est toujours équilibré : total actif = total passif.",
+   "reponse": true,
+   "explication": "À tout emploi correspond une ressource.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c1-16",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Dans le compte de résultat, un **bénéfice** s'inscrit :",
+   "choix": [
+    "Du côté des charges, pour équilibrer",
+    "Du côté des produits",
+    "Au bas de l'actif",
+    "Il n'apparaît pas dans le CR"
+   ],
+   "reponse": 0,
+   "explication": "Produits > charges ⇒ le résultat (bénéfice) équilibre côté charges ; une perte s'inscrit côté produits.",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c1-17",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Le fonds de commerce est :",
+   "choix": [
+    "Une immobilisation incorporelle non amortissable",
+    "Une immobilisation corporelle amortissable",
+    "Une charge exceptionnelle",
+    "Un actif circulant"
+   ],
+   "reponse": 0,
+   "explication": "Durée de vie illimitée : non amortissable (comme les terrains et les actions).",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c1-18",
+   "type": "qcm",
+   "difficulte": 1,
+   "enonce": "Production de l'exercice =",
+   "choix": [
+    "Production vendue + production stockée + production immobilisée",
+    "Ventes de marchandises + production vendue",
+    "Production vendue − consommations",
+    "Chiffre d'affaires"
+   ],
+   "reponse": 0,
+   "explication": "La production immobilisée = ce que l'entreprise produit pour elle-même (ex. construction d'un bâtiment).",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  }
+ ]
+}

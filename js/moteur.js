@@ -23,8 +23,9 @@ export async function chargerQuestions(chapitres) {
 }
 
 // Bonne réponse : 10 points × difficulté, +10 % par bonne réponse d'affilée (max +50 %).
-// Carte auto-évaluée : moitié moins (on ne peut pas vérifier). Problème : ×2 (plusieurs étapes).
-const COEF_TYPE = { carte: 0.5, probleme: 2 };
+// Carte auto-évaluée : moitié moins (on ne peut pas vérifier). Problème et tableau : ×2
+// (plusieurs étapes ou cases). Classement : ×1,5 (plusieurs éléments).
+const COEF_TYPE = { carte: 0.5, probleme: 2, tableau: 2, classer: 1.5 };
 
 export function points(question, serie) {
   const coef = COEF_TYPE[question.type] ?? 1;

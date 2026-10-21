@@ -8,8 +8,13 @@ import * as numerique from "./numerique.js";
 import * as carte from "./carte.js";
 import * as vraiFaux from "./vrai-faux.js";
 import * as redaction from "./redaction.js";
+import * as classer from "./classer.js";
+import * as tableau from "./tableau.js";
 
-const ETAPES = { "qcm": redaction, "redaction": redaction, "numerique": numerique, "carte": carte, "vrai-faux": vraiFaux };
+const ETAPES = {
+  "qcm": redaction, "redaction": redaction, "numerique": numerique, "carte": carte, "vrai-faux": vraiFaux,
+  "classer": classer, "tableau": tableau,
+};
 
 export function afficher(question, zone, repondre) {
   const total = question.etapes.length;

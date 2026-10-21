@@ -1,0 +1,166 @@
+{
+ "chapitre": "Questions de cours à rédiger (comme au DS)",
+ "genre": "cours",
+ "questions": [
+  {
+   "id": "af-c5-01",
+   "type": "redaction",
+   "difficulte": 2,
+   "enonce": "Qu'est-ce que l'EBE ? Comment le calcule-t-on ? En quoi renseigne-t-il utilement sur la performance de l'entreprise ? (question du DS 2013)",
+   "choix": [
+    "Solde intermédiaire de gestion = VA + subventions d'exploitation − impôts et taxes − charges de personnel ; mesure la performance de l'exploitation indépendamment des choix d'investissement, de financement et fiscaux",
+    "Résultat de l'exercice avant impôt ; mesure la rentabilité pour les associés",
+    "VA − dotations aux amortissements ; mesure l'usure des équipements",
+    "Produits encaissables − charges décaissables ; mesure la trésorerie disponible"
+   ],
+   "reponse": 0,
+   "modele": "**EBE (excédent brut d'exploitation)** = VA + subventions d'exploitation − impôts, taxes et versements assimilés − charges de personnel.\nC'est la ressource dégagée par l'exploitation **avant** dotations, charges financières, éléments exceptionnels et IS : performance « objective » du métier, comparable entre entreprises aux politiques d'investissement et de financement différentes. Point de départ de la CAF ; suivi par les banquiers (capacité à rembourser). Négatif : IBE.",
+   "explication": "",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c5-02",
+   "type": "redaction",
+   "difficulte": 2,
+   "enonce": "Qu'est-ce que la capacité d'autofinancement ? Donnez les deux méthodes de calcul.",
+   "choix": [
+    "Ressource interne potentielle (produits encaissables − charges décaissables) ; soustractive depuis l'EBE, additive depuis le RN en neutralisant dotations, reprises et cessions",
+    "Trésorerie de fin d'exercice ; elle se lit directement au bilan",
+    "Résultat net après distribution des dividendes",
+    "EBE − dotations aux amortissements ; une seule méthode"
+   ],
+   "reponse": 0,
+   "modele": "**CAF** = ressource interne potentielle dégagée par l'activité (produits encaissables − charges décaissables), qui sert à investir, rembourser et distribuer.\n• Soustractive : EBE + autres produits encaissables − autres charges décaissables + produits financiers − charges financières + produits exceptionnels − charges exceptionnelles − participation − IS.\n• Additive : RN + dotations − reprises + VNC des actifs cédés − produits de cession − QP des subventions d'investissement.\nLes deux donnent le même montant. Autofinancement = CAF − dividendes.",
+   "explication": "",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c5-03",
+   "type": "redaction",
+   "difficulte": 2,
+   "enonce": "Qu'est-ce que le fonds de roulement net global ? Comment le calcule-t-on et comment l'interpréter ?",
+   "choix": [
+    "Ressources stables − emplois stables (= BFR + TN) ; positif, il montre que les investissements sont financés par des ressources stables et qu'il reste un matelas pour financer le BFR",
+    "Actif circulant − dettes fournisseurs ; il mesure les stocks",
+    "Disponibilités − découverts ; il mesure la trésorerie",
+    "Capitaux propres − dettes ; il mesure l'endettement"
+   ],
+   "reponse": 0,
+   "modele": "**FRNG** = ressources stables (CP + amortissements et dépréciations + provisions + emprunts) − emplois stables (immobilisations brutes). Par le bas : BFR + TN.\nPositif : règle de l'équilibre financier minimum respectée, « matelas de sécurité » qui finance le cycle d'exploitation. Négatif : des immobilisations sont financées par du court terme (risqué pour une industrielle).",
+   "explication": "",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c5-04",
+   "type": "redaction",
+   "difficulte": 2,
+   "enonce": "Qu'est-ce que le besoin en fonds de roulement ? D'où vient-il ?",
+   "choix": [
+    "Besoin de financement né des décalages du cycle d'exploitation : stocks + créances − dettes d'exploitation (hors trésorerie)",
+    "Le montant des emprunts nécessaires pour investir",
+    "La différence entre CA et charges",
+    "Le solde du compte banque"
+   ],
+   "reponse": 0,
+   "modele": "**BFR** = actif circulant hors trésorerie − passif circulant hors trésorerie (BFRE + BFRHE). Il vient du décalage entre décaissements (achats, stockage, production) et encaissements (règlements clients) : argent « gelé » dans le cycle. Il augmente avec l'activité, les stocks et le crédit clients ; il diminue avec le crédit fournisseurs.",
+   "explication": "",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c5-05",
+   "type": "redaction",
+   "difficulte": 2,
+   "enonce": "Que se passe-t-il pour la trésorerie quand le BFR augmente plus vite que le FRNG ? Quelles solutions ?",
+   "choix": [
+    "La trésorerie nette baisse (TN = FRNG − BFR) et peut devenir négative ; il faut réduire le BFR (stocks, délais clients/fournisseurs) ou augmenter le FRNG (capital, réserves, emprunt LT)",
+    "La trésorerie augmente car le BFR est une ressource",
+    "Rien, la trésorerie ne dépend que du résultat",
+    "Le FRNG diminue automatiquement"
+   ],
+   "reponse": 0,
+   "modele": "TN = FRNG − BFR : si le BFR croît plus vite, la TN se dégrade → **crise de gestion**, dépendance aux découverts (agios, risque de cessation de paiement).\nSolutions : ↓ BFR (mieux gérer les stocks, réduire le délai clients, escomptes, allonger le crédit fournisseurs) ; ↑ FRNG (augmentation de capital, mise en réserve des bénéfices, emprunt à long terme si peu endetté).",
+   "explication": "",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c5-06",
+   "type": "redaction",
+   "difficulte": 2,
+   "enonce": "Pourquoi retraite-t-on le bilan comptable en bilan fonctionnel ? Citez les principaux retraitements.",
+   "choix": [
+    "Pour classer les postes par fonction (investissement, financement, exploitation, trésorerie) ; valeurs brutes, amortissements et provisions en ressources stables, découverts en trésorerie passive",
+    "Pour calculer l'impôt sur les sociétés",
+    "Pour passer en valeurs de marché",
+    "Pour présenter le bilan après répartition du résultat"
+   ],
+   "reponse": 0,
+   "modele": "Le bilan comptable (logique juridique, liquidité/exigibilité) est réorganisé selon les **fonctions** : investissement (emplois stables), financement (ressources stables), exploitation (actif et passif circulants), trésorerie.\nRetraitements : actif en **valeurs brutes** ; amortissements, dépréciations et provisions → **ressources stables** ; concours bancaires courants (et dettes financières CT) → **trésorerie passive** ; distinction exploitation / hors exploitation.",
+   "explication": "",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c5-07",
+   "type": "redaction",
+   "difficulte": 2,
+   "enonce": "Quels changements le PCG 2025 apporte-t-il au compte de résultat ?",
+   "choix": [
+    "Le résultat exceptionnel est limité aux événements majeurs et inhabituels ; les cessions d'immobilisations corporelles/incorporelles passent en exploitation (657/757), les financières en financier (667/767)",
+    "Les dotations aux amortissements passent en résultat financier",
+    "Le résultat exceptionnel inclut désormais toutes les cessions",
+    "Rien ne change pour le CR"
+   ],
+   "reponse": 0,
+   "modele": "Réforme au 1er janvier 2025 : nouvelle définition du **résultat exceptionnel** (événements majeurs et inhabituels, changements de méthode, amortissements dérogatoires, corrections d'erreurs) ; suppression des transferts de charges ; comptes **675/775 supprimés** → **657/757** (exploitation) et **667/767** (financier).",
+   "explication": "",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c5-08",
+   "type": "redaction",
+   "difficulte": 2,
+   "enonce": "Qu'est-ce que l'amortissement ? Quel est son double effet ?",
+   "choix": [
+    "Constatation de la perte de valeur irréversible d'une immobilisation (usure, obsolescence) ; c'est une charge (681) qui réduit le résultat et une diminution de l'actif (28)",
+    "Le remboursement d'un emprunt ; il réduit la dette",
+    "Une provision pour risque ; elle augmente le passif",
+    "Une sortie de trésorerie annuelle"
+   ],
+   "reponse": 0,
+   "modele": "Amortissement = répartition systématique du montant amortissable d'un actif selon son utilisation (perte de valeur irréversible).\nDouble effet : **charge** de l'exercice (681, diminue le résultat et l'IS, sans décaissement) et **diminution de la valeur de l'actif** (28, actif soustractif ; VNC = VB − cumul).",
+   "explication": "",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c5-09",
+   "type": "redaction",
+   "difficulte": 2,
+   "enonce": "À quoi servent les SIG ? Pour qui ?",
+   "choix": [
+    "Décomposer le résultat en étapes pour isoler la performance commerciale, productive, économique et financière ; utiles aux dirigeants, banquiers, associés, analystes",
+    "Juger l'équilibre financier du bilan",
+    "Calculer le BFR",
+    "Calculer l'impôt sur les sociétés"
+   ],
+   "reponse": 0,
+   "modele": "Le résultat net mélange activité, financement, exceptionnel et fiscalité. Les **SIG** le décomposent (MC, production, VA, EBE, RE, RCAI, R. exceptionnel, RN) pour voir où la performance se crée ou se dégrade, comparer dans le temps (N-1/N, % du CA) et avec le secteur, et calculer CAF et ratios.\nUtilisateurs : dirigeants, banquiers (EBE, CAF → capacité de remboursement), associés, analystes.",
+   "explication": "",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  },
+  {
+   "id": "af-c5-10",
+   "type": "redaction",
+   "difficulte": 2,
+   "enonce": "Commentez : CA +10 %, EBE +42 %, RN +230 %, mais résultat exceptionnel positif en N et charges de personnel = 75 % de la VA.",
+   "choix": [
+    "Activité et performance opérationnelle en nette progression (EBE) ; le RN est gonflé par un élément exceptionnel non reconductible ; structure de coûts lourde (personnel) qui laisse peu de marge",
+    "L'entreprise est en difficulté car l'exceptionnel est positif",
+    "La hausse du RN est entièrement durable",
+    "Le personnel est trop peu payé"
+   ],
+   "reponse": 0,
+   "modele": "Méthode de commentaire (corrigés VELORAMA/PITAIN FLAM) : 1) constater (« vend plus et vend mieux ») ; 2) expliquer avec les chiffres (VA et EBE progressent plus vite que le CA car les charges de personnel augmentent moins vite) ; 3) nuancer (exceptionnel non reconductible : la hausse durable se lit sur l'EBE ; personnel = ¾ de la VA, peu de marge de sécurité).",
+   "explication": "",
+   "source": "Cours/ECONOMIE D'ENTREPRISE"
+  }
+ ]
+}

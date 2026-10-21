@@ -14,9 +14,11 @@ sys.stdout.reconfigure(encoding="utf-8")
 
 RACINE = Path(__file__).resolve().parent.parent
 CONTENU = RACINE / "contenu"
-TYPES = {"qcm", "vrai-faux", "texte-a-trous", "numerique", "carte", "probleme", "redaction"}
+TYPES = {"qcm", "vrai-faux", "texte-a-trous", "numerique", "carte", "probleme", "redaction", "classer", "tableau"}
 CONTROLE = "\f\t\b\v\a\r"  # caractères de contrôle interdits dans les textes
-TYPES_ETAPE = {"qcm", "vrai-faux", "numerique", "carte", "redaction"}
+TYPES_ETAPE = {"qcm", "vrai-faux", "numerique", "carte", "redaction", "classer", "tableau"}
+# Champ qui porte la réponse selon le type (« reponse » par défaut)
+CHAMP_REPONSE = {"probleme": "etapes", "classer": "elements", "tableau": "lignes"}
 
 erreurs = []
 ids_vus = {}
@@ -37,6 +39,28 @@ def verifier_reponse(q, ou):
         erreurs.append(f"{ou} : reponse doit être un nombre")
     elif t == "carte" and not isinstance(q.get("reponse"), str):
         erreurs.append(f"{ou} : reponse doit être un texte")
+    elif t == "classer":
+        n = len(q.get("categories", []))
+        if n < 2:
+            erreurs.append(f"{ou} : il faut au moins 2 catégories")
+        for el in q.get("elements", []):
+            if "texte" not in el or not isinstance(el.get("reponse"), int) or not 0 <= el["reponse"] < n:
+                erreurs.append(f"{ou} : élément « {el.get('texte', '?')} » sans texte ou reponse hors catégories")
+    elif t == "tableau":
+        largeur = len(q.get("colonnes", ["Montant"]))
+        a_remplir = 0
+        for ligne in q.get("lignes", []):
+            if "titre" in ligne:
+                continue
+            valeurs = ligne.get("valeurs")
+            if "libelle" not in ligne or not isinstance(valeurs, list) or len(valeurs) != largeur:
+                erreurs.append(f"{ou} : ligne « {ligne.get('libelle', '?')} » sans libellé ou avec {len(valeurs or [])} valeurs au lieu de {largeur}")
+            elif any(v is not None and (isinstance(v, bool) or not isinstance(v, (int, float))) for v in valeurs):
+                erreurs.append(f"{ou} : ligne « {ligne['libelle']} » : valeurs numériques ou null attendues")
+            elif not ligne.get("donne"):
+                a_remplir += sum(v is not None for v in valeurs)
+        if a_remplir == 0:
+            erreurs.append(f"{ou} : aucune case à remplir")
 
 
 def textes(valeur):
@@ -56,7 +80,7 @@ def verifier_question(q, fichier):
     # \frac, \times, \bar… écrits sans r'' dans un générateur Python deviennent \f, \t, \b
     if any(c in t for t in textes(q) for c in CONTROLE):
         erreurs.append(f"{ou} : caractère de contrôle (formule LaTeX mal échappée ?)")
-    obligatoires = ("id", "type", "difficulte", "enonce") + (("etapes",) if q.get("type") == "probleme" else ("reponse",))
+    obligatoires = ("id", "type", "difficulte", "enonce", CHAMP_REPONSE.get(q.get("type"), "reponse"))
     for champ in obligatoires:
         if champ not in q:
             erreurs.append(f"{ou} : champ « {champ} » manquant")
@@ -69,7 +93,7 @@ def verifier_question(q, fichier):
         erreurs.append(f"{ou} : difficulte doit valoir 1, 2 ou 3")
     if q.get("type") == "probleme":
         for i, e in enumerate(q.get("etapes", []), 1):
-            if e.get("type") not in TYPES_ETAPE or "enonce" not in e or "reponse" not in e:
+            if e.get("type") not in TYPES_ETAPE or "enonce" not in e or CHAMP_REPONSE.get(e.get("type"), "reponse") not in e:
                 erreurs.append(f"{ou} étape {i} : type, enonce ou reponse manquant/invalide")
             verifier_reponse(e, f"{ou} étape {i}")
     else:

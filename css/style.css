@@ -204,3 +204,39 @@ button.secondaire { background: var(--surface); color: var(--texte); border: 1px
 
 .brouillon { display: block; width: 100%; box-sizing: border-box; resize: vertical; margin-bottom: 0.6rem; }
 .brouillon[readonly] { opacity: 0.8; }
+
+/* ---------- Annexes de données, tableaux à remplir, classement ---------- */
+.defile { overflow-x: auto; }
+.donnees { display: grid; gap: 1rem; margin-bottom: 1.25rem; }
+.annexe { padding: 0.8rem; border: 1px solid var(--bord); border-radius: 10px; background: var(--fond); }
+.annexe-titre { margin: 0 0 0.5rem; font-weight: 700; }
+.annexe .discret { margin-top: 0.5rem; font-size: 0.9rem; }
+.tableau-donnees, .tableau-saisie { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
+.tableau-donnees th, .tableau-saisie th { text-align: right; padding: 0.3rem 0.5rem; color: var(--discret); font-weight: 600; border-bottom: 2px solid var(--bord); }
+.tableau-donnees th:first-child, .tableau-saisie th:first-child { text-align: left; }
+.tableau-donnees td, .tableau-saisie td { padding: 0.25rem 0.5rem; border-bottom: 1px solid var(--bord); }
+.tableau-donnees td.case, .tableau-saisie td.case { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.ligne-titre td { font-weight: 700; background: var(--surface); padding-top: 0.6rem; }
+.ligne-total td { font-weight: 700; }
+.tableau-saisie td.case { width: 9rem; }
+.tableau-saisie td.donnee { color: var(--discret); }
+.tableau-saisie input { width: 100%; min-width: 5.5rem; padding: 0.35rem 0.5rem; text-align: right; border-radius: 8px; }
+.tableau-saisie input:disabled { opacity: 1; }
+.tableau-saisie input.bon { border: 2px solid var(--bon); background: var(--bon-fond); }
+.tableau-saisie input.faux { border: 2px solid var(--faux); background: var(--faux-fond); }
+.attendu { display: block; font-size: 0.85rem; font-weight: 700; color: var(--bon); }
+.aides { margin: 0.8rem 0 0; padding-left: 1.2rem; font-size: 0.92rem; }
+.aides li { margin-bottom: 0.25rem; }
+.tableau-saisie + button, .defile + button { margin-top: 0.8rem; }
+
+.classer-ligne { padding: 0.6rem 0; border-bottom: 1px solid var(--bord); }
+.classer-ligne.rate { background: var(--faux-fond); border-radius: 8px; padding: 0.6rem; }
+.classer-texte { margin: 0 0 0.4rem; font-weight: 600; }
+.classer-options { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+.classer-bouton { font-weight: 500; font-size: 0.85rem; padding: 0.3rem 0.6rem; border-radius: 8px; background: var(--fond); color: var(--texte); border: 2px solid var(--bord); }
+.classer-bouton.choisi { border-color: var(--accent); background: var(--accent); color: var(--accent-texte); }
+.classer-bouton:disabled { cursor: default; opacity: 0.5; }
+.classer-bouton.bon { border-color: var(--bon); background: var(--bon-fond); color: var(--texte); opacity: 1; }
+.classer-bouton.faux { border-color: var(--faux); background: var(--faux-fond); color: var(--texte); opacity: 1; }
+.classer-expl { margin-top: 0.4rem; font-size: 0.9rem; }
+.classer-ligne + button { margin-top: 0.8rem; }

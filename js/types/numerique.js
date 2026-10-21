@@ -1,7 +1,7 @@
 // Numérique : on tape un nombre, accepté à ±tolerance (relative, 2 % par défaut)
 // Saisies acceptées : 2040 · 2 040 · 0,138 · 1.4e7 · 1,4×10^7 · 1,4·10^-8
 
-function lireNombre(texte) {
+export function lireNombre(texte) {
   const t = texte
     .replace(/\s/g, "")
     .replace(/,/g, ".")
