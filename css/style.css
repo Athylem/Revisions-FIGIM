@@ -240,3 +240,64 @@ button.secondaire { background: var(--surface); color: var(--texte); border: 1px
 .classer-bouton.faux { border-color: var(--faux); background: var(--faux-fond); color: var(--texte); opacity: 1; }
 .classer-expl { margin-top: 0.4rem; font-size: 0.9rem; }
 .classer-ligne + button { margin-top: 0.8rem; }
+
+/* ---------- Ateliers (économie d'entreprise) ---------- */
+.page-atelier main { max-width: 1400px; }
+.choix-cas { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.8rem; }
+.choix-cas button { font-size: 0.9rem; }
+.espace-atelier { display: grid; grid-template-columns: minmax(300px, 5fr) 7fr; gap: 1rem; margin-top: 1rem; align-items: start; }
+@media (max-width: 900px) { .espace-atelier { grid-template-columns: 1fr; } }
+.panneau-donnees { position: sticky; top: 0.5rem; max-height: calc(100vh - 1rem); overflow-y: auto; }
+@media (max-width: 900px) { .panneau-donnees { position: static; max-height: none; } }
+.panneau-donnees, .panneau-copie { background: var(--surface); border: 1px solid var(--bord); border-radius: 14px; padding: 1rem; min-width: 0; }
+.panneau-titre { margin: 0 0 0.6rem; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--discret); font-weight: 700; }
+#donnees { display: grid; gap: 0.8rem; }
+.rappel { margin: 0; padding: 0.6rem 0.8rem; border-radius: 10px; background: var(--fond); border: 1px dashed var(--accent); }
+.lien-cours { margin-top: 1.5rem; }
+
+.phase { padding: 1rem 0 1.25rem; border-top: 1px solid var(--bord); }
+.phase:first-child { border-top: 0; padding-top: 0; }
+.phase-titre { margin: 0 0 0.3rem; font-size: 1.1rem; }
+.phase-consigne { margin: 0 0 0.8rem; color: var(--discret); }
+
+.placement > .discret { font-size: 0.9rem; margin-bottom: 0.6rem; }
+.reserve { display: flex; flex-wrap: wrap; gap: 0.4rem; padding: 0.7rem; border: 2px dashed var(--bord); border-radius: 12px; margin-bottom: 0.8rem; min-height: 3rem; }
+.jeton { display: inline-flex; gap: 0.5rem; align-items: baseline; font-weight: 500; font-size: 0.88rem; padding: 0.35rem 0.6rem; border-radius: 8px;
+  background: var(--fond); color: var(--texte); border: 2px solid var(--bord); text-align: left; }
+.jeton:hover { border-color: var(--accent); }
+.jeton.choisi { border-color: var(--accent); background: var(--accent); color: var(--accent-texte); }
+.jeton-montant { font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.jeton.bloque { border-color: var(--bon); background: var(--bon-fond); cursor: default; }
+.jeton.faux { border-color: var(--faux); background: var(--faux-fond); }
+.zones { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 0.6rem; }
+.zone { border: 1px solid var(--bord); border-radius: 10px; padding: 0.5rem; background: var(--surface); cursor: pointer; min-height: 3.2rem; }
+.zone:hover { border-color: var(--accent); }
+.zone-unique { min-width: 12rem; }
+.zone-titre { margin: 0 0 0.35rem; font-size: 0.82rem; font-weight: 700; color: var(--discret); }
+.zone-depot { display: flex; flex-wrap: wrap; gap: 0.35rem; min-height: 1.6rem; }
+.squelette, .journal { display: grid; gap: 0.6rem; margin-bottom: 0.8rem; }
+.groupe-solde, .ecriture { border-left: 4px solid var(--accent); padding: 0.4rem 0 0.4rem 0.7rem; }
+.groupe-titre { margin: 0 0 0.4rem; font-weight: 800; }
+.sous-zones { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.5rem; }
+.bilan-fonctionnel { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; margin-bottom: 0.8rem; }
+@media (max-width: 640px) { .bilan-fonctionnel { grid-template-columns: 1fr; } }
+.colonne-bf { display: grid; gap: 0.5rem; align-content: start; }
+.placement .zones:empty { display: none; }
+.cascade-ordre { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+
+.actions-atelier { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; margin-top: 0.8rem; }
+.actions-atelier button:disabled { opacity: 0.45; cursor: not-allowed; }
+.verdict-ok { margin: 0; font-weight: 700; color: var(--bon); }
+.verdict-ko { font-weight: 700; color: var(--faux); list-style: none; margin-left: -1.2rem; }
+.remarques { margin: 0.6rem 0 0; padding-left: 1.2rem; font-size: 0.92rem; }
+.remarques li { margin-bottom: 0.25rem; }
+.grille-calcul .tableau-saisie td.case { width: 10rem; }
+
+.schema { display: flex; gap: 0.5rem; align-items: flex-end; margin-top: 1rem; }
+.pile { display: flex; flex-direction: column; width: 9rem; }
+.barre-schema { display: flex; align-items: center; justify-content: center; text-align: center; white-space: pre-line; font-weight: 700;
+  font-size: 0.85rem; border-radius: 6px; color: #fff; }
+.barre-schema.bfr { background: #2b8a8a; }
+.barre-schema.frng { background: #8a8f9e; }
+.barre-schema.tn-pos, .barre-schema.tn-neg { background: #d94f9c; }
+.bilan-atelier ul { padding-left: 1.2rem; }

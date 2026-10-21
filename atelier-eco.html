@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Économie d'entreprise — Révisions FIGIM</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-atelier">
+  <header class="barre">
+    <a class="logo" href="./">Révisions <span>FIGIM</span></a>
+    <nav>
+      <a href="classement.html">Classement</a>
+    </nav>
+  </header>
+
+  <main>
+    <p><a href="./">← Matières</a></p>
+    <h1>Économie d'entreprise</h1>
+    <p class="discret">On ne répond pas à des questions : on <strong>construit sa copie</strong>, comme au DS (sans calculatrice).
+      Le document de départ est à gauche, ta copie à droite : d'abord la structure, puis le placement de chaque ligne, puis les calculs.
+      Refais chaque atelier avec « Nouveau cas » jusqu'à tout réussir du premier coup.</p>
+
+    <div class="filtres" id="onglets" role="tablist"></div>
+
+    <section class="carte">
+      <h2 id="titre-atelier"></h2>
+      <p class="discret" id="dossier-atelier"></p>
+      <div class="choix-cas" id="choix-cas"></div>
+    </section>
+
+    <div id="espace" class="espace-atelier">
+      <aside class="panneau-donnees">
+        <p class="panneau-titre">Document de départ</p>
+        <div id="donnees"></div>
+      </aside>
+      <section class="panneau-copie">
+        <p class="panneau-titre">Ta copie</p>
+        <div id="copie"></div>
+      </section>
+    </div>
+
+    <p class="discret lien-cours">Pour les questions de cours à rédiger (EBE, CAF, FRNG, BFR…) :
+      <a href="jouer.html?matiere=analyse-financiere">questions de cours</a>.</p>
+  </main>
+
+  <script type="module" src="js/eco/page.js"></script>
+</body>
+</html>

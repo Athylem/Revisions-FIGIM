@@ -17,6 +17,10 @@ def fm(n):
 
 
 def ecrire(nom, chapitre, genre, questions):
+    # Les exercices type DS de cette matière sont maintenant des ateliers (atelier-eco.html) ;
+    # seules les questions de cours restent sous forme de quiz.
+    if genre != "cours":
+        return
     ids = [q["id"] for q in questions]
     assert len(ids) == len(set(ids)), nom
     (SORTIE / nom).write_text(json.dumps({"chapitre": chapitre, "genre": genre, "questions": questions},

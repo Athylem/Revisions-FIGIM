@@ -64,7 +64,8 @@ function carteMatiere(m) {
   const n = nbQuestions(m);
   const el = document.createElement(n > 0 ? "a" : "div");
   el.className = "matiere" + (n > 0 ? "" : " verrouillee");
-  if (n > 0) el.href = `jouer.html?matiere=${encodeURIComponent(m.id)}`;
+  // Une matière peut avoir sa propre page d'entraînement (« page ») au lieu du quiz
+  if (n > 0) el.href = m.page ?? `jouer.html?matiere=${encodeURIComponent(m.id)}`;
 
   const nom = document.createElement("h3");
   nom.textContent = m.nom;
@@ -73,7 +74,7 @@ function carteMatiere(m) {
   prof.textContent = m.prof;
   const etat = document.createElement("p");
   etat.className = "etat";
-  etat.textContent = n > 0 ? `${n} questions` : m.notes ? "Questions en préparation" : "Bientôt";
+  etat.textContent = m.page && n > 0 ? (m.etat ?? `${n} questions`) : n > 0 ? `${n} questions` : m.notes ? "Questions en préparation" : "Bientôt";
 
   el.append(nom, prof, etat);
   return el;
