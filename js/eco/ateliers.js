@@ -5,7 +5,9 @@ import { el, fmt, placement, grilleCalcul, choix, Phases } from "./composants.js
 import { COMPTES, soldes, lignesCR, BF, agregats, planAmort, CODES, totauxListe, variation } from "./cas.js";
 
 // ---------- Affichage des documents de départ ----------
-function tableau(titre, colonnes, lignes, note) {
+// lignes : texte (intertitre), [libellé, valeurs…] ou { cells: [libellé, valeurs…], ref } ;
+// refs (Map) reçoit ref → <tr> pour rendre les lignes cliquables dans les ateliers.
+function tableau(titre, colonnes, lignes, note, refs) {
   const bloc = el("div", "annexe");
   if (titre) bloc.append(el("p", "annexe-titre", titre));
   const t = el("table", "tableau-donnees");
@@ -17,7 +19,8 @@ function tableau(titre, colonnes, lignes, note) {
   for (const l of lignes) {
     const tr = corps.insertRow();
     if (typeof l === "string") { tr.className = "ligne-titre"; const td = tr.insertCell(); td.colSpan = (colonnes?.length ?? 1) + 1; td.textContent = l; continue; }
-    const [lib, ...vals] = l;
+    const [lib, ...vals] = Array.isArray(l) ? l : l.cells;
+    if (!Array.isArray(l)) refs?.set(l.ref, tr);
     tr.insertCell().append(el("span", "", lib));
     for (const v of vals) { const td = tr.insertCell(); td.className = "case"; td.textContent = typeof v === "number" ? fmt(v) : (v ?? ""); }
   }
@@ -31,29 +34,32 @@ function tableau(titre, colonnes, lignes, note) {
 const BLOCS_CR = [["PRODUITS D'EXPLOITATION", "P"], ["PRODUITS FINANCIERS", "PF"], ["PRODUITS EXCEPTIONNELS", "PX"],
   ["CHARGES D'EXPLOITATION", "C"], ["CHARGES FINANCIÈRES", "CF"], ["CHARGES EXCEPTIONNELLES", "CX"], ["IMPÔT ET PARTICIPATION", "CI"]];
 
-function afficherCR(cas, zone) {
+// Affiche le CR « en liste » et renvoie la correspondance ligne du CR → ligne du tableau
+function afficherCR(cas, zone, toutes) {
   const s = soldes(cas.c);
   const lignes = [];
-  const toutes = lignesCR(cas);
+  const refs = new Map();
   for (const [titre, cote] of BLOCS_CR) {
     const du = toutes.filter((l) => l.cote === cote);
     if (!du.length) continue;
-    lignes.push(titre, ...du.map((l) => [l.libelle, l.montant]));
+    lignes.push(titre, ...du.map((l) => ({ cells: [l.libelle, l.montant], ref: l })));
   }
   lignes.push(["**Total des produits**", s.produits], ["**Total des charges**", s.charges], ["**Résultat net de l'exercice**", s.RN]);
-  zone.replaceChildren(tableau(`Compte de résultat (en liste) — ${cas.nom}, en ${cas.unite}`, ["Montant"], lignes, cas.source));
+  zone.replaceChildren(tableau(`Compte de résultat (en liste) — ${cas.nom}, en ${cas.unite}`, ["Montant"], lignes, cas.source, refs));
+  return refs;
 }
 
 // ---------- 1. SIG ----------
+// [solde, [[id de zone, titre, étiquette courte affichée sur la ligne du document]]]
 const CASCADE = [
-  ["Marge commerciale", [["mc+", "+ Ventes de marchandises"], ["mc-", "− Coût d'achat des marchandises vendues"]]],
-  ["Production de l'exercice", [["prod", "+ Production vendue, stockée, immobilisée"]]],
-  ["Valeur ajoutée", [["va-", "MC + Production − consommations en provenance des tiers"]]],
-  ["Excédent brut d'exploitation", [["ebe+", "VA +"], ["ebe-", "VA −"]]],
-  ["Résultat d'exploitation", [["re+", "EBE +"], ["re-", "EBE −"]]],
-  ["Résultat courant avant impôts", [["rf+", "RE + produits financiers"], ["rf-", "RE − charges financières"]]],
-  ["Résultat exceptionnel", [["rx+", "+"], ["rx-", "−"]]],
-  ["Résultat net", [["rn-", "RCAI ± R. exceptionnel −"]]],
+  ["Marge commerciale", [["mc+", "+ Ventes de marchandises", "MC +"], ["mc-", "− Coût d'achat des marchandises vendues", "MC −"]]],
+  ["Production de l'exercice", [["prod", "+ Production vendue, stockée, immobilisée", "Production +"]]],
+  ["Valeur ajoutée", [["va-", "MC + Production − consommations en provenance des tiers", "VA −"]]],
+  ["Excédent brut d'exploitation", [["ebe+", "VA +", "EBE +"], ["ebe-", "VA −", "EBE −"]]],
+  ["Résultat d'exploitation", [["re+", "EBE +", "RE +"], ["re-", "EBE −", "RE −"]]],
+  ["Résultat courant avant impôts", [["rf+", "RE + produits financiers", "RCAI +"], ["rf-", "RE − charges financières", "RCAI −"]]],
+  ["Résultat exceptionnel", [["rx+", "+", "Exc. +"], ["rx-", "−", "Exc. −"]]],
+  ["Résultat net", [["rn-", "RCAI ± R. exceptionnel −", "RN −"]]],
 ];
 const ZONE_SIG = {
   "707": "mc+", "607": "mc-", "6037": "mc-", "701": "prod", "706": "prod", "713": "prod", "72": "prod",
@@ -86,7 +92,8 @@ const AIDES = {
 };
 
 export function atelierSIG(cas, donnees, copie, suivi) {
-  afficherCR(cas, donnees);
+  const lignes = lignesCR(cas);
+  const refs = afficherCR(cas, donnees, lignes);
   const c = cas.c, s = soldes(c);
   const P = new Phases(copie, suivi);
   let squelette;
@@ -100,7 +107,7 @@ export function atelierSIG(cas, donnees, copie, suivi) {
       consigne: "Clique un solde, puis la case de son rang." }));
   });
 
-  P.ajouter("② Répartir le compte de résultat dans la cascade", "Chaque ligne du compte de résultat sert dans un seul solde, avec un signe + ou −. Place-les toutes.", (sec, fini) => {
+  P.ajouter("② Répartir le compte de résultat dans la cascade", "Chaque ligne du compte de résultat (à gauche) sert dans un seul solde, avec un signe + ou −. Clique la ligne dans le document, puis le bloc de la cascade.", (sec, fini) => {
     squelette = el("div", "squelette");
     const zones = [];
     for (const [nom, sous] of CASCADE) {
@@ -109,9 +116,9 @@ export function atelierSIG(cas, donnees, copie, suivi) {
       const z = el("div", "sous-zones");
       g.append(z);
       squelette.append(g);
-      for (const [id, titre] of sous) zones.push({ id, titre, conteneur: z });
+      for (const [id, titre, court] of sous) zones.push({ id, titre, court, conteneur: z });
     }
-    const jetons = lignesCR(cas).map((l) => ({ texte: l.libelle, montant: l.montant, cible: ZONE_SIG[l.code], aide: AIDES[l.code] }));
+    const jetons = lignes.map((l) => ({ texte: l.libelle, montant: l.montant, cible: ZONE_SIG[l.code], aide: AIDES[l.code], ancre: refs.get(l) }));
     const p = placement({ jetons, zones, suivi, nom: "Répartition des lignes", quandFini: fini });
     p.insertBefore(squelette, p.querySelector(".actions-atelier"));
     sec.append(p);
@@ -156,16 +163,16 @@ const AIDES_CAF = {
 };
 
 export function atelierCAF(cas, donnees, copie, suivi) {
-  afficherCR(cas, donnees);
+  const lignes = lignesCR(cas);
+  const refs = afficherCR(cas, donnees, lignes);
   const c = cas.c, s = soldes(c);
   donnees.append(el("p", "rappel", `Donnés (calculés dans l'atelier SIG) : **EBE = ${fmt(s.EBE)}** ; **résultat net = ${fmt(s.RN)}** ${cas.unite}.`));
-  const lignes = lignesCR(cas);
   const P = new Phases(copie, suivi);
 
   P.ajouter("① Méthode soustractive : que faire de chaque ligne ?", "On part de l'EBE. Pour chaque ligne du CR : à ajouter, à retirer, déjà comptée dans l'EBE, ou exclue de la CAF (élément calculé ou cession) ?", (sec, fini) => {
-    const zones = [["plus", "+ Produit encaissable à ajouter"], ["moins", "− Charge décaissable à retirer"],
-      ["ebe", "Déjà compté dans l'EBE"], ["exclu", "Exclu : calculé ou cession"]].map(([id, titre]) => ({ id, titre }));
-    const jetons = lignes.map((l) => ({ texte: l.libelle, montant: l.montant,
+    const zones = [["plus", "+ Produit encaissable à ajouter", "+ CAF"], ["moins", "− Charge décaissable à retirer", "− CAF"],
+      ["ebe", "Déjà compté dans l'EBE", "dans l'EBE"], ["exclu", "Exclu : calculé ou cession", "exclu"]].map(([id, titre, court]) => ({ id, titre, court }));
+    const jetons = lignes.map((l) => ({ texte: l.libelle, montant: l.montant, ancre: refs.get(l),
       cible: DANS_EBE.has(l.code) ? "ebe" : CAF_S[l.code] ?? "exclu",
       aide: DANS_EBE.has(l.code) ? "cette ligne est au-dessus de l'EBE : elle y est déjà." : AIDES_CAF[l.code] }));
     sec.append(placement({ jetons, zones, suivi, nom: "Tri pour la CAF soustractive", quandFini: fini }));
@@ -183,11 +190,14 @@ export function atelierCAF(cas, donnees, copie, suivi) {
   });
 
   P.ajouter("③ Méthode additive : que faire de chaque ligne ?", "On part du résultat net, qui contient déjà tout. On neutralise les éléments calculés et les cessions : à rajouter, à retirer, ou rien à faire ?", (sec, fini) => {
-    const zones = [["plus", "+ À rajouter au résultat net"], ["moins", "− À retirer du résultat net"], ["rien", "Rien à faire (encaissé ou décaissé)"]].map(([id, titre]) => ({ id, titre }));
-    const jetons = lignes.filter((l) => !DANS_EBE.has(l.code)).map((l) => ({ texte: l.libelle, montant: l.montant, cible: CAF_A[l.code] ?? "rien",
+    const zones = [["plus", "+ À rajouter au résultat net", "+ RN"], ["moins", "− À retirer du résultat net", "− RN"],
+      ["rien", "Rien à faire (encaissé ou décaissé)", "rien"]].map(([id, titre, court]) => ({ id, titre, court }));
+    const inactives = lignes.filter((l) => DANS_EBE.has(l.code)).map((l) => refs.get(l));
+    const jetons = lignes.filter((l) => !DANS_EBE.has(l.code)).map((l) => ({ texte: l.libelle, montant: l.montant, ancre: refs.get(l), cible: CAF_A[l.code] ?? "rien",
       aide: CAF_A[l.code] === "plus" ? "charge non décaissée (calculée ou valeur d'un actif cédé) : on la rajoute." :
         CAF_A[l.code] === "moins" ? "produit non encaissé dans l'activité (calculé ou prix de cession) : on le retire." : "vrai flux : déjà correct dans le résultat net." }));
-    sec.append(placement({ jetons, zones, suivi, nom: "Tri pour la CAF additive", quandFini: fini }));
+    sec.append(placement({ jetons, zones, inactives, suivi, nom: "Tri pour la CAF additive", quandFini: fini,
+      consigne: "Les lignes grisées (au-dessus de l'EBE) ne changent rien. Clique les autres lignes du **document de départ**, puis le bloc." }));
   });
 
   P.ajouter("④ Calculer la CAF (additive) et comparer", "Les deux méthodes doivent donner exactement la même CAF.", (sec, fini) => {
@@ -236,31 +246,33 @@ function schema(g, unite) {
 
 export function atelierBilan(cas, donnees, copie, suivi) {
   const net = cas.actif.reduce((n, [, b, a]) => n + b - a, 0);
+  const refs = new Map();
   donnees.replaceChildren(
     tableau(`Bilan au 31.12 (avant répartition) — ${cas.nom}, en ${cas.unite}`, ["Brut", "Amort. & dépréc.", "Net"],
-      ["ACTIF", ...cas.actif.map(([l, b, a]) => [l, b, a, b - a]), ["**Total actif**", null, null, net]]),
-    tableau(null, ["Montant"], ["PASSIF", ...cas.passif.map(([l, m]) => [l, m]), ["**Total passif**", cas.passif.reduce((n, [, m]) => n + m, 0)]], cas.note),
+      ["ACTIF", ...cas.actif.map((l) => ({ cells: [l[0], l[1], l[2], l[1] - l[2]], ref: l })), ["**Total actif**", null, null, net]], null, refs),
+    tableau(null, ["Montant"], ["PASSIF", ...cas.passif.map((l) => ({ cells: [l[0], l[1]], ref: l })),
+      ["**Total passif**", cas.passif.reduce((n, [, m]) => n + m, 0)]], cas.note, refs),
   );
   const g = agregats(cas);
   const P = new Phases(copie, suivi);
 
-  P.ajouter("① Reclasser le bilan comptable", "Place chaque montant dans le bon bloc du bilan fonctionnel. Attention : on prend l'actif en **brut**, et les amortissements/dépréciations deviennent une ressource.", (sec, fini) => {
+  P.ajouter("① Reclasser le bilan comptable", "Dans le bilan de gauche, clique un montant (actif : la case **Brut**, puis la case **Amort. & dépréc.** séparément ; passif : la ligne), puis le bloc du bilan fonctionnel où il va. Les amortissements/dépréciations deviennent une ressource.", (sec, fini) => {
     const plan = el("div", "bilan-fonctionnel");
     const colE = el("div", "colonne-bf"), colR = el("div", "colonne-bf");
     colE.append(el("p", "groupe-titre", "EMPLOIS (actif)"));
     colR.append(el("p", "groupe-titre", "RESSOURCES (passif)"));
     plan.append(colE, colR);
-    const zones = ["ES", "ACE", "ACHE", "TA"].map((id) => ({ id, titre: BF[id], conteneur: colE }))
-      .concat(["RS", "PCE", "PCHE", "TP"].map((id) => ({ id, titre: BF[id], conteneur: colR })));
+    const zones = ["ES", "ACE", "ACHE", "TA"].map((id) => ({ id, titre: BF[id], court: id, conteneur: colE }))
+      .concat(["RS", "PCE", "PCHE", "TP"].map((id) => ({ id, titre: BF[id], court: id, conteneur: colR })));
     const AIDE_BF = { ES: "immobilisation, en valeur brute.", ACE: "élément du cycle d'exploitation (stocks, clients bruts, créances d'exploitation, charges constatées d'avance).",
       ACHE: "créance hors exploitation.", TA: "disponibilités.", RS: "capitaux propres (résultat compris), provisions, emprunts, et tous les amortissements/dépréciations.",
       PCE: "dette d'exploitation (fournisseurs, fiscales et sociales).", PCHE: "dette hors exploitation (dettes sur immobilisations, IS à payer).",
       TP: "trésorerie passive : concours bancaires courants (et dettes financières à court terme isolées)." };
     const jetons = [
-      ...cas.actif.map(([l, b, , bloc]) => ({ texte: `${l} (brut)`, montant: b, cible: bloc, aide: AIDE_BF[bloc] })),
-      ...cas.actif.filter(([, , a]) => a).map(([l, , a]) => ({ texte: `Amortissements / dépréciations — ${l}`, montant: a, cible: "RS",
-        aide: "retirés de l'actif (on travaille en brut), ils sont ajoutés aux ressources stables." })),
-      ...cas.passif.map(([l, m, bloc]) => ({ texte: l, montant: m, cible: bloc, aide: AIDE_BF[bloc] })),
+      ...cas.actif.map((l) => ({ texte: `${l[0]} (brut)`, montant: l[1], cible: l[3], aide: AIDE_BF[l[3]], ancre: refs.get(l).cells[1] })),
+      ...cas.actif.filter((l) => l[2]).map((l) => ({ texte: `Amort. / dépréc. — ${l[0]}`, montant: l[2], cible: "RS",
+        aide: "retirés de l'actif (on travaille en brut), ils sont ajoutés aux ressources stables.", ancre: refs.get(l).cells[2] })),
+      ...cas.passif.map((l) => ({ texte: l[0], montant: l[1], cible: l[2], aide: AIDE_BF[l[2]], ancre: refs.get(l) })),
     ];
     const p = placement({ jetons, zones, suivi, nom: "Reclassement", quandFini: fini });
     p.insertBefore(plan, p.querySelector(".actions-atelier"));
@@ -373,30 +385,34 @@ const AIDE_CODES = { AI: "bien durable (classe 2) ; les amortissements s'en déd
   CEx: "événement majeur et inhabituel, amendes (corrigé VITAMINES).", PE: "ventes, production, 757 (PCG 2025).", PF: "intérêts reçus.", PEx: "produit exceptionnel." };
 
 export function atelierListe(cas, donnees, copie, suivi) {
+  const refs = new Map();
   donnees.replaceChildren(
-    tableau(`Stocks — ${cas.nom}, en ${cas.unite}`, ["SI (01.01)", "SF (31.12)"], cas.stocks.map((s) => [`Stock de ${s.nom}`, s.si, s.sf])),
-    tableau(`Données au 31.12.N, en ${cas.unite}`, ["Montant"], cas.postes.map(([l, m]) => [l, m]), cas.note),
+    tableau(`Stocks — ${cas.nom}, en ${cas.unite}`, ["SI (01.01)", "SF (31.12)", "Variation"],
+      cas.stocks.map((s) => ({ cells: [`Stock de ${s.nom}`, s.si, s.sf, "à calculer"], ref: s })), null, refs),
+    tableau(`Données au 31.12.N, en ${cas.unite}`, ["Montant"], cas.postes.map((p) => ({ cells: [p[0], p[1]], ref: p })), cas.note, refs),
   );
   const t = totauxListe(cas);
   const P = new Phases(copie, suivi);
 
   P.ajouter("① Les variations de stocks", "Achats (marchandises, MP) : SI − SF, en charges. Produits finis : SF − SI (production stockée), en produits.", (sec, fini) => {
-    sec.append(grilleCalcul({ colonnes: [cas.unite], suivi, nom: "Variations de stocks", quandFini: fini,
+    // Une fois calculées, les variations apparaissent dans le document (on les classe à l'étape suivante)
+    const montrer = () => { for (const s of cas.stocks) refs.get(s).cells[3].textContent = fmt(variation(s)); fini(); };
+    sec.append(grilleCalcul({ colonnes: [cas.unite], suivi, nom: "Variations de stocks", quandFini: montrer,
       lignes: cas.stocks.map((s) => ({ libelle: s.sens === "achat" ? `Variation de stock de ${s.nom} (SI − SF)` : "Production stockée (SF − SI)",
         attendu: variation(s), aide: s.sens === "achat" ? `${fmt(s.si)} − ${fmt(s.sf)}` : `${fmt(s.sf)} − ${fmt(s.si)}` })) }));
   });
 
-  P.ajouter("② Classer chaque information", "Bilan (AI, AC, CP, D) ou compte de résultat (charges / produits d'exploitation, financiers, exceptionnels) ?", (sec, fini) => {
+  P.ajouter("② Classer chaque information", "Clique chaque ligne des données (à gauche), variations de stocks comprises, puis son bloc : bilan (AI, AC, CP, D) ou compte de résultat (charges / produits d'exploitation, financiers, exceptionnels).", (sec, fini) => {
     const plan = el("div", "bilan-fonctionnel");
     const bilan = el("div", "colonne-bf"), cr = el("div", "colonne-bf");
     bilan.append(el("p", "groupe-titre", "BILAN"));
     cr.append(el("p", "groupe-titre", "COMPTE DE RÉSULTAT"));
     plan.append(bilan, cr);
-    const zones = CODES.map((id) => ({ id, titre: `${id} — ${NOMS_CODES[id]}`, conteneur: ["AI", "AC", "CP", "D"].includes(id) ? bilan : cr }));
+    const zones = CODES.map((id) => ({ id, titre: `${id} — ${NOMS_CODES[id]}`, court: id, conteneur: ["AI", "AC", "CP", "D"].includes(id) ? bilan : cr }));
     const jetons = [
-      ...cas.postes.map(([l, m, code]) => ({ texte: l, montant: m, cible: code, aide: AIDE_CODES[code] })),
+      ...cas.postes.map((p) => ({ texte: p[0], montant: p[1], cible: p[2], aide: AIDE_CODES[p[2]], ancre: refs.get(p) })),
       ...cas.stocks.map((s) => ({ texte: s.sens === "achat" ? `Variation de stock de ${s.nom}` : "Production stockée", montant: variation(s),
-        cible: s.sens === "achat" ? "CE" : "PE", aide: "la variation va au compte de résultat ; le stock final, au bilan." })),
+        cible: s.sens === "achat" ? "CE" : "PE", aide: "la variation va au compte de résultat ; le stock final, au bilan.", ancre: refs.get(s) })),
     ];
     const p = placement({ jetons, zones, suivi, nom: "Classement", quandFini: fini });
     p.insertBefore(plan, p.querySelector(".actions-atelier"));

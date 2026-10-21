@@ -30,103 +30,163 @@ export class Suivi {
 }
 
 // ---------- Placement ----------
-// jetons : [{ texte, montant?, cible: id | [ids], aide? }]
-// zones  : [{ id, titre, conteneur? (élément où dessiner la zone), unique? (un seul jeton) }]
-export function placement({ jetons, zones, suivi, nom, quandFini, consigne }) {
+// jetons : [{ texte, montant?, cible: id | [ids], aide?, ancre? }]
+//   ancre : élément du document de départ (ligne ou case) sur lequel on clique pour prendre la ligne ;
+//   sans ancre, le jeton est une étiquette dans une réserve au-dessus des blocs (ordre de la cascade, journal).
+// zones  : [{ id, titre, court?, conteneur?, unique? }] ; « court » = étiquette affichée dans le document
+// inactives : éléments du document à griser (lignes qui ne servent pas dans cette étape)
+export function placement({ jetons, zones, suivi, nom, quandFini, consigne, inactives = [] }) {
+  const parDocument = jetons.some((j) => j.ancre);
   const racine = el("div", "placement");
-  const aideTxt = el("p", "discret", consigne ?? "Clique une ligne, puis le bloc où elle va. Clique une ligne déjà placée pour la remettre en haut.");
+  const aideTxt = el("p", "discret", consigne ?? (parDocument
+    ? "Clique une ligne du **document de départ** (à gauche), puis le bloc de ta copie où elle va. Reclique une ligne pour la déplacer."
+    : "Clique une étiquette, puis la case où elle va. Clique une étiquette placée pour la remettre en haut."));
   const reserve = el("div", "reserve");
   const zonesParDefaut = el("div", "zones");
   const remarques = el("ul", "remarques");
+  const ecoute = new AbortController();
   let choisi = null;
   let fini = false;
   let premierEssai = true;
   const position = new Map();   // jeton → id de zone
   const depots = new Map();     // id de zone → élément de dépôt
+  const zonesParId = new Map(zones.map((z) => [z.id, z]));
   const uniques = new Set(zones.filter((z) => z.unique).map((z) => z.id));
+
+  // Le document repart propre (une étape précédente a pu le marquer)
+  const doc = jetons.find((j) => j.ancre)?.ancre.closest("#donnees");
+  if (doc) {
+    doc.querySelectorAll(".badge-zone").forEach((b) => b.remove());
+    doc.querySelectorAll(".cliquable, .placee, .choisie, .bon, .faux, .inactive")
+      .forEach((e) => e.classList.remove("cliquable", "placee", "choisie", "bon", "faux", "inactive"));
+  }
+  inactives.forEach((e) => e.classList.add("inactive"));
 
   for (const z of zones) {
     const boite = el("div", "zone" + (z.unique ? " zone-unique" : ""));
     boite.append(el("p", "zone-titre", z.titre));
     const depot = el("div", "zone-depot");
     boite.append(depot);
-    boite.addEventListener("click", (e) => {
-      if (fini || !choisi || e.target.closest(".jeton")) return;
+    // Un clic n'importe où dans le bloc (même sur une étiquette déjà posée) y pose la ligne choisie
+    boite.addEventListener("click", () => {
+      if (fini || !choisi) return;
       poser(choisi, z.id);
     });
     depots.set(z.id, depot);
     (z.conteneur ?? zonesParDefaut).append(boite);
   }
 
-  const elements = new Map();
-  for (const j of melanger(jetons)) {
-    const b = bouton("", "jeton");
-    b.append(el("span", "jeton-texte", j.texte));
-    if (j.montant !== undefined) b.append(el("span", "jeton-montant", typeof j.montant === "number" ? fmt(j.montant) : j.montant));
-    b.addEventListener("click", () => {
-      if (fini || b.classList.contains("bloque")) return;
-      if (position.has(j)) {
-        position.delete(j);
-        b.classList.remove("faux");
-        reserve.append(b);
-        choisir(null);
-      } else {
-        choisir(choisi === j ? null : j);
-      }
-      majBouton();
+  const puces = new Map();   // jeton → étiquette (dans la réserve ou dans un bloc)
+  const badges = new Map();  // jeton → badge affiché sur la ligne du document
+  for (const j of j_ordre()) {
+    const puce = bouton("", "jeton");
+    puce.append(el("span", "jeton-texte", j.texte));
+    if (j.montant !== undefined) puce.append(el("span", "jeton-montant", typeof j.montant === "number" ? fmt(j.montant) : j.montant));
+    puce.addEventListener("click", (e) => {
+      if (fini) return;
+      // Une autre ligne est choisie : le clic sert à la poser dans ce bloc (géré par le bloc)
+      if (choisi && choisi !== j && position.has(j)) return;
+      e.stopPropagation();
+      if (puce.classList.contains("bloque")) return;
+      if (position.has(j)) retirer(j);
+      else choisir(choisi === j ? null : j);
     });
-    elements.set(j, b);
-    reserve.append(b);
+    puces.set(j, puce);
+    if (j.ancre) {
+      j.ancre.classList.add("cliquable");
+      const badge = el("span", "badge-zone");
+      (j.ancre.tagName === "TR" ? j.ancre.cells[0] : j.ancre).append(badge);
+      badges.set(j, badge);
+      j.ancre.addEventListener("click", () => {
+        if (fini || puce.classList.contains("bloque")) return;
+        if (position.has(j)) retirer(j);
+        choisir(choisi === j ? null : j);
+      }, { signal: ecoute.signal });
+    } else {
+      reserve.append(puce);
+    }
   }
+  function j_ordre() { return parDocument ? jetons : melanger(jetons); }
 
   function choisir(j) {
     choisi = j;
-    for (const [jj, b] of elements) b.classList.toggle("choisi", jj === j);
+    for (const [jj, p] of puces) {
+      p.classList.toggle("choisi", jj === j);
+      jj.ancre?.classList.toggle("choisie", jj === j);
+    }
+  }
+
+  function retirer(j) {
+    position.delete(j);
+    const p = puces.get(j);
+    p.classList.remove("faux");
+    if (j.ancre) {
+      p.remove();
+      j.ancre.classList.remove("placee", "faux");
+      badges.get(j).textContent = "";
+    } else {
+      reserve.append(p);
+    }
+    choisir(null);
+    majBouton();
   }
 
   function poser(j, zoneId) {
     if (uniques.has(zoneId)) {
-      for (const [autre, z] of position) {
-        if (z === zoneId) { position.delete(autre); elements.get(autre).classList.remove("faux"); reserve.append(elements.get(autre)); }
-      }
+      for (const [autre, z] of [...position]) if (z === zoneId) retirer(autre);
     }
     position.set(j, zoneId);
-    depots.get(zoneId).append(elements.get(j));
-    elements.get(j).classList.remove("faux");
+    const p = puces.get(j);
+    depots.get(zoneId).append(p);
+    p.classList.remove("faux");
+    if (j.ancre) {
+      j.ancre.classList.remove("faux");
+      j.ancre.classList.add("placee");
+      const z = zonesParId.get(zoneId);
+      badges.get(j).textContent = `→ ${z.court ?? z.titre}`;
+    }
     choisir(null);
     majBouton();
   }
 
   const verifier = bouton("Vérifier le placement");
   const solution = bouton("Voir la solution", "secondaire");
+  const reste = el("span", "discret");
   const actions = el("div", "actions-atelier");
-  actions.append(verifier, solution);
-  function majBouton() { verifier.disabled = position.size < jetons.length; }
+  actions.append(verifier, solution, reste);
+  function majBouton() {
+    const n = jetons.length - position.size;
+    verifier.disabled = n > 0;
+    reste.textContent = n > 0 ? `${n} ligne(s) à placer` : "";
+  }
   majBouton();
 
   const ok = (j, z) => [j.cible].flat().includes(z);
+  const marquer = (j, bien) => {
+    puces.get(j).classList.toggle("faux", !bien);
+    j.ancre?.classList.toggle("faux", !bien);
+    j.ancre?.classList.toggle("bon", bien);
+    if (bien) puces.get(j).classList.add("bloque");
+  };
 
   verifier.addEventListener("click", () => {
     let bons = 0;
-    remarques.replaceChildren(...lesAides([...elements.keys()].filter((j) => !ok(j, position.get(j)))));
-    for (const [j, b] of elements) {
+    remarques.replaceChildren(...lesAides(jetons.filter((j) => !ok(j, position.get(j)))));
+    for (const j of jetons) {
       const bien = ok(j, position.get(j));
-      b.classList.toggle("faux", !bien);
-      if (bien) { bons++; b.classList.add("bloque"); }
+      marquer(j, bien);
+      if (bien) bons++;
     }
     if (premierEssai) { suivi?.noter(nom, bons, jetons.length); premierEssai = false; }
     if (bons === jetons.length) terminer("Tout est bien placé ✔");
-    else remarques.prepend(el("li", "verdict-ko", `${jetons.length - bons} ligne(s) mal placée(s), en rouge : corrige-les puis revérifie.`));
+    else remarques.prepend(el("li", "verdict-ko", `${jetons.length - bons} ligne(s) mal placée(s), en rouge : reclique-les pour les déplacer, puis revérifie.`));
   });
 
   solution.addEventListener("click", () => {
     if (premierEssai) { suivi?.noter(nom, 0, jetons.length); premierEssai = false; }
-    for (const [j, b] of elements) {
-      const cible = [j.cible].flat()[0];
-      position.set(j, cible);
-      depots.get(cible).append(b);
-      b.classList.remove("faux", "choisi");
-      b.classList.add("bloque");
+    for (const j of jetons) {
+      if (position.get(j) !== [j.cible].flat()[0] || !ok(j, position.get(j))) poser(j, [j.cible].flat()[0]);
+      marquer(j, true);
     }
     remarques.replaceChildren(...lesAides(jetons));
     terminer("Solution affichée");
@@ -141,12 +201,17 @@ export function placement({ jetons, zones, suivi, nom, quandFini, consigne }) {
 
   function terminer(message) {
     fini = true;
+    ecoute.abort();
+    choisir(null);
+    jetons.forEach((j) => j.ancre?.classList.remove("cliquable"));
+    inactives.forEach((e) => e.classList.remove("inactive"));
     actions.replaceChildren(el("p", "verdict-ok", message));
     reserve.remove();
     quandFini?.();
   }
 
-  racine.append(aideTxt, reserve);
+  racine.append(aideTxt);
+  if (reserve.childElementCount) racine.append(reserve);
   if (zonesParDefaut.childElementCount) racine.append(zonesParDefaut);
   racine.append(actions, remarques);
   return racine;

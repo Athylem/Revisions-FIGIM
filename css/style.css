@@ -301,3 +301,16 @@ button.secondaire { background: var(--surface); color: var(--texte); border: 1px
 .barre-schema.frng { background: #8a8f9e; }
 .barre-schema.tn-pos, .barre-schema.tn-neg { background: #d94f9c; }
 .bilan-atelier ul { padding-left: 1.2rem; }
+
+/* Lignes du document de départ qu'on clique pour les placer */
+#donnees .cliquable { cursor: pointer; }
+#donnees tr.cliquable:hover td, #donnees td.cliquable:hover { background: color-mix(in srgb, var(--accent) 12%, transparent); }
+#donnees tr.choisie td, #donnees td.choisie { background: var(--accent); color: var(--accent-texte); }
+#donnees tr.placee td, #donnees td.placee { color: var(--discret); }
+#donnees tr.bon td, #donnees td.bon { background: var(--bon-fond); color: var(--texte); }
+#donnees tr.faux td, #donnees td.faux { background: var(--faux-fond); color: var(--texte); }
+#donnees tr.inactive { opacity: 0.35; }
+.badge-zone { margin-left: 0.4rem; font-size: 0.75rem; font-weight: 700; color: var(--accent); white-space: nowrap; }
+.badge-zone:empty { display: none; }
+#donnees tr.choisie .badge-zone, #donnees td.choisie .badge-zone { color: var(--accent-texte); }
+#donnees td.case .badge-zone { display: block; margin: 0; }
