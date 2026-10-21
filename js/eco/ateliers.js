@@ -5,8 +5,8 @@ import { el, fmt, placement, grilleCalcul, choix, Phases } from "./composants.js
 import { COMPTES, soldes, lignesCR, BF, agregats, planAmort, CODES, totauxListe, variation } from "./cas.js";
 
 // ---------- Affichage des documents de départ ----------
-// lignes : texte (intertitre), [libellé, valeurs…] ou { cells: [libellé, valeurs…], ref } ;
-// refs (Map) reçoit ref → <tr> pour rendre les lignes cliquables dans les ateliers.
+// lignes : texte (intertitre), [libellé, valeurs…] ou { cells: [libellé, valeurs…], ref, num } ;
+// refs (Map) reçoit ref → <tr> pour rendre les lignes cliquables dans les ateliers ; num = numéro de compte.
 function tableau(titre, colonnes, lignes, note, refs) {
   const bloc = el("div", "annexe");
   if (titre) bloc.append(el("p", "annexe-titre", titre));
@@ -21,7 +21,9 @@ function tableau(titre, colonnes, lignes, note, refs) {
     if (typeof l === "string") { tr.className = "ligne-titre"; const td = tr.insertCell(); td.colSpan = (colonnes?.length ?? 1) + 1; td.textContent = l; continue; }
     const [lib, ...vals] = Array.isArray(l) ? l : l.cells;
     if (!Array.isArray(l)) refs?.set(l.ref, tr);
-    tr.insertCell().append(el("span", "", lib));
+    const td = tr.insertCell();
+    if (!Array.isArray(l) && l.num) td.append(el("span", "num-compte", l.num));
+    td.append(el("span", "", lib));
     for (const v of vals) { const td = tr.insertCell(); td.className = "case"; td.textContent = typeof v === "number" ? fmt(v) : (v ?? ""); }
   }
   const d = el("div", "defile");
@@ -42,7 +44,7 @@ function afficherCR(cas, zone, toutes) {
   for (const [titre, cote] of BLOCS_CR) {
     const du = toutes.filter((l) => l.cote === cote);
     if (!du.length) continue;
-    lignes.push(titre, ...du.map((l) => ({ cells: [l.libelle, l.montant], ref: l })));
+    lignes.push(titre, ...du.map((l) => ({ cells: [l.libelle, l.montant], ref: l, num: l.num })));
   }
   lignes.push(["**Total des produits**", s.produits], ["**Total des charges**", s.charges], ["**Résultat net de l'exercice**", s.RN]);
   zone.replaceChildren(tableau(`Compte de résultat (en liste) — ${cas.nom}, en ${cas.unite}`, ["Montant"], lignes, cas.source, refs));
@@ -118,7 +120,7 @@ export function atelierSIG(cas, donnees, copie, suivi) {
       squelette.append(g);
       for (const [id, titre, court] of sous) zones.push({ id, titre, court, conteneur: z });
     }
-    const jetons = lignes.map((l) => ({ texte: l.libelle, montant: l.montant, cible: ZONE_SIG[l.code], aide: AIDES[l.code], ancre: refs.get(l) }));
+    const jetons = lignes.map((l) => ({ texte: `${l.num} ${l.libelle}`, montant: l.montant, cible: ZONE_SIG[l.code], aide: AIDES[l.code], ancre: refs.get(l) }));
     const p = placement({ jetons, zones, suivi, nom: "Répartition des lignes", quandFini: fini });
     p.insertBefore(squelette, p.querySelector(".actions-atelier"));
     sec.append(p);
@@ -126,24 +128,24 @@ export function atelierSIG(cas, donnees, copie, suivi) {
 
   P.ajouter("③ Calculer les soldes", `Calcule chaque ligne (en ${cas.unite}). Montants à retrancher : tape-les sans signe ; seuls les soldes (et les variations) peuvent être négatifs. Contrôle final : le résultat net doit être celui du CR.`, (sec, fini) => {
     sec.append(grilleCalcul({ suivi, nom: "Calcul des SIG", quandFini: fini, colonnes: [cas.unite], lignes: [
-      { libelle: "Ventes de marchandises", attendu: c["707"] },
-      { libelle: "− Coût d'achat des marchandises vendues", attendu: s.cout, aide: "achats de marchandises + variation de stock (SI − SF)" },
+      { libelle: "Ventes de marchandises (707)", attendu: c["707"] },
+      { libelle: "− Coût d'achat des marchandises vendues (607 + 6037)", attendu: s.cout, aide: "achats de marchandises + variation de stock (SI − SF)" },
       { libelle: "= Marge commerciale", attendu: s.MC, total: true },
-      { libelle: "Production de l'exercice", attendu: s.prod, aide: "production vendue (biens + services) + production stockée + immobilisée" },
-      { libelle: "− Consommations en provenance des tiers", attendu: s.conso, aide: "achats de MP + variation de stock de MP + toutes les charges externes" },
+      { libelle: "Production de l'exercice (701 + 706 + 713 + 72)", attendu: s.prod, aide: "production vendue (biens + services) + production stockée + immobilisée" },
+      { libelle: "− Consommations en provenance des tiers (601 + 6031 + 61/62)", attendu: s.conso, aide: "achats de MP + variation de stock de MP + toutes les charges externes" },
       { libelle: "= Valeur ajoutée", attendu: s.VA, total: true, aide: "MC + production − consommations" },
-      { libelle: "+ Subventions d'exploitation", attendu: c["74"] },
-      { libelle: "− Impôts, taxes et versements assimilés", attendu: c["63"] },
-      { libelle: "− Charges de personnel", attendu: s.perso, aide: "salaires + charges sociales" },
+      { libelle: "+ Subventions d'exploitation (74)", attendu: c["74"] },
+      { libelle: "− Impôts, taxes et versements assimilés (63)", attendu: c["63"] },
+      { libelle: "− Charges de personnel (641 + 645)", attendu: s.perso, aide: "salaires + charges sociales" },
       { libelle: "= Excédent brut d'exploitation", attendu: s.EBE, total: true },
-      { libelle: "+ Reprises et autres produits", attendu: s.plus, aide: "781 + 75 + 747 + 757 (cessions d'immos corporelles)" },
-      { libelle: "− Dotations et autres charges", attendu: s.moins, aide: "681 + 65 + 657" },
+      { libelle: "+ Reprises et autres produits (781 + 75 + 747 + 757)", attendu: s.plus, aide: "781 + 75 + 747 + 757 (cessions d'immos corporelles)" },
+      { libelle: "− Dotations et autres charges (681 + 65 + 657)", attendu: s.moins, aide: "681 + 65 + 657" },
       { libelle: "= Résultat d'exploitation", attendu: s.RE, total: true },
-      { libelle: "+ Produits financiers", attendu: s.pf, aide: "76 + 786 + 767" },
-      { libelle: "− Charges financières", attendu: s.cf, aide: "66 + 686 + 667" },
+      { libelle: "+ Produits financiers (76 + 767 + 786)", attendu: s.pf, aide: "76 + 786 + 767" },
+      { libelle: "− Charges financières (66 + 667 + 686)", attendu: s.cf, aide: "66 + 686 + 667" },
       { libelle: "= Résultat courant avant impôts", attendu: s.RCAI, total: true },
-      { libelle: "± Résultat exceptionnel", attendu: s.RX, aide: "77 − 67" },
-      { libelle: "− Participation et impôt sur les bénéfices", attendu: s.impot },
+      { libelle: "± Résultat exceptionnel (77 − 67)", attendu: s.RX, aide: "77 − 67" },
+      { libelle: "− Participation et impôt sur les bénéfices (691 + 695)", attendu: s.impot },
       { libelle: "= Résultat net", attendu: s.RN, total: true, aide: "doit être égal à total produits − total charges" },
     ] }));
   });
@@ -172,7 +174,7 @@ export function atelierCAF(cas, donnees, copie, suivi) {
   P.ajouter("① Méthode soustractive : que faire de chaque ligne ?", "On part de l'EBE. Pour chaque ligne du CR : à ajouter, à retirer, déjà comptée dans l'EBE, ou exclue de la CAF (élément calculé ou cession) ?", (sec, fini) => {
     const zones = [["plus", "+ Produit encaissable à ajouter", "+ CAF"], ["moins", "− Charge décaissable à retirer", "− CAF"],
       ["ebe", "Déjà compté dans l'EBE", "dans l'EBE"], ["exclu", "Exclu : calculé ou cession", "exclu"]].map(([id, titre, court]) => ({ id, titre, court }));
-    const jetons = lignes.map((l) => ({ texte: l.libelle, montant: l.montant, ancre: refs.get(l),
+    const jetons = lignes.map((l) => ({ texte: `${l.num} ${l.libelle}`, montant: l.montant, ancre: refs.get(l),
       cible: DANS_EBE.has(l.code) ? "ebe" : CAF_S[l.code] ?? "exclu",
       aide: DANS_EBE.has(l.code) ? "cette ligne est au-dessus de l'EBE : elle y est déjà." : AIDES_CAF[l.code] }));
     sec.append(placement({ jetons, zones, suivi, nom: "Tri pour la CAF soustractive", quandFini: fini }));
@@ -181,10 +183,10 @@ export function atelierCAF(cas, donnees, copie, suivi) {
   P.ajouter("② Calculer la CAF (soustractive)", `En ${cas.unite} ; montants retranchés tapés sans signe.`, (sec, fini) => {
     const l = [{ libelle: "Excédent brut d'exploitation", attendu: s.EBE, donne: true }];
     const ajout = (code, lib) => { if (c[code]) l.push({ libelle: lib, attendu: c[code] }); };
-    ajout("75", "+ Autres produits de gestion courante"); ajout("65", "− Autres charges de gestion courante");
-    ajout("76", "+ Produits financiers encaissables"); ajout("66", "− Charges d'intérêts");
-    ajout("77", "+ Produits exceptionnels"); ajout("67", "− Charges exceptionnelles");
-    ajout("691", "− Participation des salariés"); ajout("695", "− Impôt sur les bénéfices");
+    ajout("75", "+ Autres produits de gestion courante (75)"); ajout("65", "− Autres charges de gestion courante (65)");
+    ajout("76", "+ Produits financiers encaissables (76)"); ajout("66", "− Charges d'intérêts (66)");
+    ajout("77", "+ Produits exceptionnels (77)"); ajout("67", "− Charges exceptionnelles (67)");
+    ajout("691", "− Participation des salariés (691)"); ajout("695", "− Impôt sur les bénéfices (695)");
     l.push({ libelle: "= Capacité d'autofinancement", attendu: s.CAF, total: true, aide: "EBE + produits encaissables − charges décaissables" });
     sec.append(grilleCalcul({ lignes: l, colonnes: [cas.unite], suivi, nom: "CAF soustractive", quandFini: fini }));
   });
@@ -193,7 +195,7 @@ export function atelierCAF(cas, donnees, copie, suivi) {
     const zones = [["plus", "+ À rajouter au résultat net", "+ RN"], ["moins", "− À retirer du résultat net", "− RN"],
       ["rien", "Rien à faire (encaissé ou décaissé)", "rien"]].map(([id, titre, court]) => ({ id, titre, court }));
     const inactives = lignes.filter((l) => DANS_EBE.has(l.code)).map((l) => refs.get(l));
-    const jetons = lignes.filter((l) => !DANS_EBE.has(l.code)).map((l) => ({ texte: l.libelle, montant: l.montant, ancre: refs.get(l), cible: CAF_A[l.code] ?? "rien",
+    const jetons = lignes.filter((l) => !DANS_EBE.has(l.code)).map((l) => ({ texte: `${l.num} ${l.libelle}`, montant: l.montant, ancre: refs.get(l), cible: CAF_A[l.code] ?? "rien",
       aide: CAF_A[l.code] === "plus" ? "charge non décaissée (calculée ou valeur d'un actif cédé) : on la rajoute." :
         CAF_A[l.code] === "moins" ? "produit non encaissé dans l'activité (calculé ou prix de cession) : on le retire." : "vrai flux : déjà correct dans le résultat net." }));
     sec.append(placement({ jetons, zones, inactives, suivi, nom: "Tri pour la CAF additive", quandFini: fini,
@@ -203,11 +205,11 @@ export function atelierCAF(cas, donnees, copie, suivi) {
   P.ajouter("④ Calculer la CAF (additive) et comparer", "Les deux méthodes doivent donner exactement la même CAF.", (sec, fini) => {
     sec.append(grilleCalcul({ colonnes: [cas.unite], suivi, nom: "CAF additive", quandFini: fini, lignes: [
       { libelle: "Résultat net", attendu: s.RN, donne: true },
-      { libelle: "+ Dotations (exploitation et financières)", attendu: c["681"] + c["686"] },
-      { libelle: "− Reprises", attendu: c["781"] + c["786"] },
-      { libelle: "+ Valeurs comptables des actifs cédés", attendu: c["657"] + c["667"] },
-      { libelle: "− Produits des cessions", attendu: c["757"] + c["767"] },
-      { libelle: "− Quote-part des subventions d'investissement", attendu: c["747"] },
+      { libelle: "+ Dotations (681 + 686)", attendu: c["681"] + c["686"] },
+      { libelle: "− Reprises (781 + 786)", attendu: c["781"] + c["786"] },
+      { libelle: "+ Valeurs comptables des actifs cédés (657 + 667)", attendu: c["657"] + c["667"] },
+      { libelle: "− Produits des cessions (757 + 767)", attendu: c["757"] + c["767"] },
+      { libelle: "− Quote-part des subventions d'investissement (747)", attendu: c["747"] },
       { libelle: "= Capacité d'autofinancement", attendu: s.CAF, total: true, aide: `même valeur que la méthode soustractive (${fmt(s.CAF)})` },
     ] }));
   });
@@ -384,12 +386,35 @@ const AIDE_CODES = { AI: "bien durable (classe 2) ; les amortissements s'en déd
   CE: "consommation liée à l'activité (achats, variation de stock, personnel, impôts, dotations, 657).", CF: "intérêts.",
   CEx: "événement majeur et inhabituel, amendes (corrigé VITAMINES).", PE: "ventes, production, 757 (PCG 2025).", PF: "intérêts reçus.", PEx: "produit exceptionnel." };
 
+// Numéros de compte des postes des listes (TD et cas générés)
+const NUM_POSTES = {
+  "Terrain": "211", "Constructions": "213", "Matériel industriel": "215", "Matériel de production (brut)": "215",
+  "Matériel de manutention": "215", "Matériel de conditionnement": "215", "Brevet": "205", "Marque": "205", "Fonds de commerce": "207",
+  "Matériel de transport": "2182", "Matériel de transport (brut)": "2182", "Matériel informatique": "2183", "Matériel informatique (brut)": "2183",
+  "Mobilier": "2184", "Mobilier (brut)": "2184", "Amortissements (à déduire de l'actif immobilisé)": "28",
+  "Clients": "411", "Créances sur l'État": "44", "Créances État": "44", "Banque": "512", "Banque (Société Générale)": "512", "Caisse": "53",
+  "Capital social": "101", "Emprunt auprès des établissements de crédit": "164", "Emprunts auprès des établissements de crédit": "164",
+  "Fournisseurs": "401", "Fournisseurs de biens et services": "401", "Fournisseurs d'immobilisations": "404",
+  "Dettes fiscales": "44", "Dettes envers le personnel": "421", "Dettes personnel": "421", "Dettes fiscales et sociales": "42/43/44",
+  "Concours bancaires courants (BNP)": "519",
+  "Achats de matières premières": "601", "Achats de marchandises": "607", "Autres achats et charges externes": "61/62", "Services extérieurs": "61",
+  "Impôts et taxes": "63", "Salaires": "641", "Charges sociales": "645", "Salaires et charges sociales": "641/645",
+  "Dotations aux amortissements": "681", "Valeurs comptables des immobilisations cédées": "657", "Intérêts versés sur l'emprunt": "661",
+  "Intérêts d'emprunt": "661", "Amendes et pénalités fiscales": "67", "Perte due à un sinistre majeur non assuré": "67",
+  "Production vendue": "701", "Prestations de services": "706", "Ventes de marchandises": "707",
+  "Produits des cessions d'immobilisations": "757", "Produits des cessions d'immobilisations corporelles": "757", "Intérêts reçus": "76",
+  "Stock de matières premières (31.12)": "31", "Stock de produits finis (31.12)": "355", "Stock de marchandises (31.12)": "37",
+};
+// Stock (bilan) et variation (compte de résultat) selon la nature du stock
+const NUM_STOCKS = { "matières premières": ["31", "6031"], "produits finis": ["355", "713"], "marchandises": ["37", "6037"] };
+const avecNum = (lib) => (NUM_POSTES[lib] ? `${NUM_POSTES[lib]} ${lib}` : lib);
+
 export function atelierListe(cas, donnees, copie, suivi) {
   const refs = new Map();
   donnees.replaceChildren(
     tableau(`Stocks — ${cas.nom}, en ${cas.unite}`, ["SI (01.01)", "SF (31.12)", "Variation"],
-      cas.stocks.map((s) => ({ cells: [`Stock de ${s.nom}`, s.si, s.sf, "à calculer"], ref: s })), null, refs),
-    tableau(`Données au 31.12.N, en ${cas.unite}`, ["Montant"], cas.postes.map((p) => ({ cells: [p[0], p[1]], ref: p })), cas.note, refs),
+      cas.stocks.map((s) => ({ cells: [`Stock de ${s.nom}`, s.si, s.sf, "à calculer"], ref: s, num: NUM_STOCKS[s.nom]?.join(" / ") })), null, refs),
+    tableau(`Données au 31.12.N, en ${cas.unite}`, ["Montant"], cas.postes.map((p) => ({ cells: [p[0], p[1]], ref: p, num: NUM_POSTES[p[0]] })), cas.note, refs),
   );
   const t = totauxListe(cas);
   const P = new Phases(copie, suivi);
@@ -410,8 +435,8 @@ export function atelierListe(cas, donnees, copie, suivi) {
     plan.append(bilan, cr);
     const zones = CODES.map((id) => ({ id, titre: `${id} — ${NOMS_CODES[id]}`, court: id, conteneur: ["AI", "AC", "CP", "D"].includes(id) ? bilan : cr }));
     const jetons = [
-      ...cas.postes.map((p) => ({ texte: p[0], montant: p[1], cible: p[2], aide: AIDE_CODES[p[2]], ancre: refs.get(p) })),
-      ...cas.stocks.map((s) => ({ texte: s.sens === "achat" ? `Variation de stock de ${s.nom}` : "Production stockée", montant: variation(s),
+      ...cas.postes.map((p) => ({ texte: avecNum(p[0]), montant: p[1], cible: p[2], aide: AIDE_CODES[p[2]], ancre: refs.get(p) })),
+      ...cas.stocks.map((s) => ({ texte: `${NUM_STOCKS[s.nom][1]} ${s.sens === "achat" ? `Variation de stock de ${s.nom}` : "Production stockée"}`, montant: variation(s),
         cible: s.sens === "achat" ? "CE" : "PE", aide: "la variation va au compte de résultat ; le stock final, au bilan.", ancre: refs.get(s) })),
     ];
     const p = placement({ jetons, zones, suivi, nom: "Classement", quandFini: fini });

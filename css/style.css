@@ -314,3 +314,4 @@ button.secondaire { background: var(--surface); color: var(--texte); border: 1px
 .badge-zone:empty { display: none; }
 #donnees tr.choisie .badge-zone, #donnees td.choisie .badge-zone { color: var(--accent-texte); }
 #donnees td.case .badge-zone { display: block; margin: 0; }
+.num-compte { display: inline-block; min-width: 3.4rem; margin-right: 0.3rem; font-variant-numeric: tabular-nums; font-weight: 700; color: var(--discret); }

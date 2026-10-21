@@ -70,14 +70,18 @@ export function soldes(c) {
   return s;
 }
 
-// Lignes du CR « en liste » (le détail des charges externes remplace la ligne 61/62)
+// Numéros affichés pour le détail des charges externes (tous rangés comme 61/62)
+const NUM_EXTERNES = { "Frais d'énergie": "6061", "Frais de téléphone": "626", "Frais de publicité": "623" };
+
+// Lignes du CR « en liste » (le détail des charges externes remplace la ligne 61/62) ;
+// code = compte servant au calcul, num = numéro affiché
 export function lignesCR(cas) {
   const lignes = [];
   for (const [code, libelle, cote] of COMPTES) {
     if (code === "61/62" && cas.externes) {
-      for (const [lib, v] of cas.externes) lignes.push({ code, libelle: lib, montant: v, cote });
+      for (const [lib, v] of cas.externes) lignes.push({ code, num: NUM_EXTERNES[lib] ?? code, libelle: lib, montant: v, cote });
     } else if (cas.c[code] !== 0) {
-      lignes.push({ code, libelle, montant: cas.c[code], cote });
+      lignes.push({ code, num: code, libelle, montant: cas.c[code], cote });
     }
   }
   return lignes;
@@ -293,11 +297,11 @@ export const LISTES_TD = {
       { nom: "produits finis", si: 3000, sf: 2800, sens: "production" }],
     postes: [["Marque", 25000, "AI"], ["Créances État", 3000, "AC"], ["Intérêts versés sur l'emprunt", 1800, "CF"], ["Fonds de commerce", 30000, "AI"],
       ["Amendes et pénalités fiscales", 1200, "CEx"], ["Fournisseurs d'immobilisations", 5000, "D"],
-      ["Valeurs comptables des immobilisations cédées (657)", 2000, "CE"], ["Services extérieurs", 4000, "CE"], ["Constructions", 400000, "AI"],
+      ["Valeurs comptables des immobilisations cédées", 2000, "CE"], ["Services extérieurs", 4000, "CE"], ["Constructions", 400000, "AI"],
       ["Salaires", 85000, "CE"], ["Mobilier (brut)", 2200, "AI"], ["Fournisseurs", 4500, "D"], ["Clients", 13000, "AC"], ["Banque (Société Générale)", 4300, "AC"],
       ["Concours bancaires courants (BNP)", 2000, "D"], ["Dettes fiscales", 2700, "D"], ["Capital social", 500000, "CP"], ["Dettes personnel", 2000, "D"],
       ["Emprunts auprès des établissements de crédit", 300000, "D"], ["Achats de marchandises", 50000, "CE"],
-      ["Produits des cessions d'immobilisations (757)", 3000, "PE"], ["Prestations de services", 45000, "PE"], ["Achats de matières premières", 140000, "CE"],
+      ["Produits des cessions d'immobilisations", 3000, "PE"], ["Prestations de services", 45000, "PE"], ["Achats de matières premières", 140000, "CE"],
       ["Matériel de production (brut)", 130000, "AI"], ["Autres achats et charges externes", 3500, "CE"], ["Terrain", 150000, "AI"],
       ["Impôts et taxes", 1900, "CE"], ["Amortissements (à déduire de l'actif immobilisé)", -33000, "AI"], ["Matériel informatique (brut)", 14000, "AI"],
       ["Charges sociales", 40000, "CE"], ["Ventes de marchandises", 110000, "PE"], ["Caisse", 300, "AC"], ["Matériel de transport (brut)", 70000, "AI"],
@@ -319,7 +323,7 @@ export function genererListe(graine) {
       ["Salaires et charges sociales", r.choix([40, 50, 60]), "CE"], ["Autres achats et charges externes", r.choix([10, 20]), "CE"],
       ["Dotations aux amortissements", r.choix([10, 15, 20]), "CE"], ["Intérêts d'emprunt", r.choix([2, 5]), "CF"],
       ["Production vendue", r.choix([200, 250, 300]), "PE"], ["Intérêts reçus", r.choix([0, 2]), "PF"]];
-    if (r() < 0.5) postes.push(["Produits des cessions d'immobilisations corporelles (757)", 10, "PE"], ["Valeurs comptables des immobilisations cédées (657)", 6, "CE"]);
+    if (r() < 0.5) postes.push(["Produits des cessions d'immobilisations corporelles", 10, "PE"], ["Valeurs comptables des immobilisations cédées", 6, "CE"]);
     if (r() < 0.4) postes.push(["Perte due à un sinistre majeur non assuré", 5, "CEx"]);
     const liste = { nom: `${r.choix(NOMS)} (cas n° ${graine})`, unite: "k€", stocks, postes: postes.filter((p) => p[1]) };
     liste.postes.push(["Stock de matières premières (31.12)", sf, "AC"]);
