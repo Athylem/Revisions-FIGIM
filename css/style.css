@@ -355,3 +355,10 @@ button.secondaire { background: var(--surface); color: var(--texte); border: 1px
 .navigation-cours { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-top: 1.25rem; }
 .navigation-cours .suivant { grid-column: 2; text-align: right; }
 @media (max-width: 640px) { .navigation-cours { grid-template-columns: 1fr; } .navigation-cours .suivant { grid-column: 1; } }
+.onglets { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.5rem; }
+.onglets a { padding: 0.4rem 0.9rem; border-radius: 999px; border: 1px solid var(--bord); background: var(--surface); color: var(--texte); text-decoration: none; font-weight: 500; }
+.onglets a:hover { border-color: var(--accent); }
+.onglets a.actif { background: var(--accent); border-color: var(--accent); color: var(--accent-texte); }
+.matiere.double .liens-carte { display: flex; gap: 0.6rem; flex-wrap: wrap; }
+.liens-carte a { padding: 0.25rem 0.7rem; border-radius: 999px; border: 1px solid var(--accent); text-decoration: none; }
+.liens-carte a:hover { background: var(--accent); color: var(--accent-texte); }

@@ -1,5 +1,5 @@
-// Lecture d'un chapitre de cours : Markdown (copié du vault par outils/gen_cours.py)
-// rendu avec marked, formules KaTeX, encadrés façon Obsidian (> [!tip] Titre)
+// Lecture d'un chapitre de cours ou de son résumé (&vue=resume) : Markdown (copié du vault
+// par outils/gen_cours.py) rendu avec marked, formules KaTeX, encadrés façon Obsidian (> [!tip] Titre)
 
 import { chargerMatieres } from "./moteur.js";
 import { formules } from "./texte.js";
@@ -72,11 +72,33 @@ function sommaire(article) {
   $("#sommaire").hidden = titres.length === 0;
 }
 
-function navigation(matiere, position) {
+function adresse(matiere, ch, vue) {
+  const base = `cours.html?matiere=${encodeURIComponent(matiere.id)}&chapitre=${encodeURIComponent(ch.id)}`;
+  return vue === "resume" && ch.resume ? `${base}&vue=resume` : base;
+}
+
+function onglets(matiere, chapitre, vue) {
+  const nav = $("#onglets");
+  nav.hidden = !chapitre.resume;
+  if (!chapitre.resume) return;
+  nav.replaceChildren(...[["cours", "Cours complet"], ["resume", "Résumé"]].map(([v, texte]) => {
+    const a = document.createElement("a");
+    a.href = adresse(matiere, chapitre, v);
+    a.textContent = texte;
+    if (v === vue) {
+      a.className = "actif";
+      a.setAttribute("aria-current", "page");
+    }
+    return a;
+  }));
+}
+
+// Précédent / suivant : on reste dans la même vue (résumé → résumé) quand le chapitre en a une
+function navigation(matiere, position, vue) {
   const lien = (ch, sens) => {
     const a = document.createElement("a");
     a.className = `matiere ${sens}`;
-    a.href = `cours.html?matiere=${encodeURIComponent(matiere.id)}&chapitre=${encodeURIComponent(ch.id)}`;
+    a.href = adresse(matiere, ch, vue);
     const p = document.createElement("p");
     p.className = "discret";
     p.textContent = sens === "precedent" ? "← Précédent" : "Suivant →";
@@ -103,11 +125,14 @@ async function afficher() {
     return;
   }
   const chapitre = matiere.cours[position];
-  document.title = `${chapitre.nom} — ${matiere.nom}`;
+  const vue = params.get("vue") === "resume" && chapitre.resume ? "resume" : "cours";
+  document.title = `${vue === "resume" ? "Résumé — " : ""}${chapitre.nom} — ${matiere.nom}`;
   $("#retour-matiere").href = `matiere.html?matiere=${encodeURIComponent(matiere.id)}`;
   $("#retour-matiere").textContent = `← ${matiere.nom}`;
 
-  const md = await fetch(`contenu/${chapitre.fichier}`).then((r) => r.text());
+  onglets(matiere, chapitre, vue);
+
+  const md = await fetch(`contenu/${vue === "resume" ? chapitre.resume : chapitre.fichier}`).then((r) => r.text());
   article.innerHTML = versHtml(md);
   encadres(article);
   for (const table of article.querySelectorAll("table")) {
@@ -119,7 +144,7 @@ async function afficher() {
   sommaire(article);
   formules(article);
   formules($("#sommaire"));
-  navigation(matiere, position);
+  navigation(matiere, position, vue);
 
   // Le contenu arrive après le chargement : on rejoue le saut vers l'ancre (#2-1-5-shannon),
   // une fois les figures chargées pour qu'elles ne décalent plus la page

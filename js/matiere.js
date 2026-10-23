@@ -39,7 +39,22 @@ function dessinerCours(m) {
     // « Chapitre 1 — Signaux et systèmes » → surtitre « Chapitre 1 », titre « Signaux et systèmes »
     const [numero, titre] = ch.nom.includes(" — ") ? ch.nom.split(" — ", 2) : ["Cours", ch.nom];
     const href = `cours.html?matiere=${encodeURIComponent(m.id)}&chapitre=${encodeURIComponent(ch.id)}`;
-    return carte(href, numero, titre, "Lire le cours");
+    if (!ch.resume) return carte(href, numero, titre, "Lire le cours");
+    // Deux liens dans la carte : le cours complet et son résumé
+    const el = carte(href, numero, titre);
+    const div = document.createElement("div");
+    div.className = el.className + " double";
+    div.append(...el.childNodes);
+    const liens = document.createElement("p");
+    liens.className = "etat liens-carte";
+    for (const [lien, texte] of [[href, "Cours"], [`${href}&vue=resume`, "Résumé"]]) {
+      const a = document.createElement("a");
+      a.href = lien;
+      a.textContent = texte;
+      liens.append(a);
+    }
+    div.append(liens);
+    return div;
   }));
 }
 

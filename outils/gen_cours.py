@@ -3,7 +3,8 @@
     python outils/gen_cours.py
 
 Pour chaque matière de COURS, chaque note est convertie en Markdown standard dans
-contenu/<id-matiere>/cours/<id-chapitre>.md, et les figures qu'elle utilise sont copiées
+contenu/<id-matiere>/cours/<id-chapitre>.md (et son résumé, s'il y en a un, dans
+contenu/<id-matiere>/cours/resumes/<id-chapitre>.md), et les figures qu'elle utilise sont copiées
 dans contenu/<id-matiere>/cours/img/. Puis lancer outils/verifier.py, qui inscrit les
 chapitres de cours dans matieres.json.
 
@@ -25,13 +26,14 @@ RACINE = Path(__file__).resolve().parent.parent
 CONTENU = RACINE / "contenu"
 VAULT = Path.home() / "Documents" / "obsidian_vault"
 
-# Matière du site → dossier du vault et chapitres publiés (id sur le site, note source), dans l'ordre
+# Matière du site → dossier du vault et chapitres publiés (id sur le site, note source, note résumé
+# ou None), dans l'ordre
 COURS = {
     "automatique": {
         "dossier": "Cours/Automatique",
         "chapitres": [
-            ("ch1-signaux-systemes", "Ch1 - Signaux et systèmes"),
-            ("ch2-modelisation-signaux", "Ch2 - Modélisation des signaux"),
+            ("ch1-signaux-systemes", "Ch1 - Signaux et systèmes", "Résumé Ch1 - Signaux et systèmes"),
+            ("ch2-modelisation-signaux", "Ch2 - Modélisation des signaux", "Résumé Ch2 - Modélisation des signaux"),
         ],
     },
 }
@@ -79,20 +81,25 @@ for id_matiere, cours in COURS.items():
     if sortie.exists():
         shutil.rmtree(sortie)
     (sortie / "img").mkdir(parents=True)
+    (sortie / "resumes").mkdir()
 
     # Les figures peuvent être n'importe où sous le dossier du cours (pages web du prof…)
     figures = {f.name: f for f in source.rglob("*") if f.suffix.lower() in IMAGES}
-    notes_publiees = {note: id_ch for id_ch, note in cours["chapitres"]}
+    notes_publiees = {note: id_ch for id_ch, note, _ in cours["chapitres"]}
 
-    for id_ch, note in cours["chapitres"]:
-        manquantes = []
-        md = convertir((source / f"{note}.md").read_text(encoding="utf-8"), id_matiere, notes_publiees, figures, manquantes)
-        (sortie / f"{id_ch}.md").write_text(md, encoding="utf-8")
-        utilisees = re.findall(rf"contenu/{id_matiere}/cours/img/([^)]+)\)", md)
-        for nom in utilisees:
-            shutil.copy2(figures[nom], sortie / "img" / nom)
-        print(f"{id_matiere}/{id_ch} : {len(utilisees)} figures")
-        for nom in manquantes:
-            print(f"  ⚠ figure introuvable : {nom}")
+    for id_ch, note, resume in cours["chapitres"]:
+        pages = [(note, sortie / f"{id_ch}.md")]
+        if resume:
+            pages.append((resume, sortie / "resumes" / f"{id_ch}.md"))
+        for source_note, destination in pages:
+            manquantes = []
+            md = convertir((source / f"{source_note}.md").read_text(encoding="utf-8"), id_matiere, notes_publiees, figures, manquantes)
+            destination.write_text(md, encoding="utf-8")
+            utilisees = re.findall(rf"contenu/{id_matiere}/cours/img/([^)]+)\)", md)
+            for nom in utilisees:
+                shutil.copy2(figures[nom], sortie / "img" / nom)
+            print(f"{id_matiere}/{destination.relative_to(sortie).as_posix()} : {len(utilisees)} figures")
+            for nom in manquantes:
+                print(f"  ⚠ figure introuvable : {nom}")
 
 print("OK — lancer maintenant python outils/verifier.py")

@@ -124,10 +124,15 @@ for matiere in donnees["matieres"]:
     for fichier in sorted((CONTENU / matiere["id"] / "cours").glob("*.md")):
         md = fichier.read_text(encoding="utf-8")
         titre = next((l[2:].strip() for l in md.splitlines() if l.startswith("# ")), fichier.stem)
+        chapitre = {"id": fichier.stem, "nom": titre, "fichier": f"{matiere['id']}/cours/{fichier.name}"}
+        resume = fichier.parent / "resumes" / fichier.name
+        if resume.exists():
+            chapitre["resume"] = f"{matiere['id']}/cours/resumes/{fichier.name}"
+            md += resume.read_text(encoding="utf-8")
         for image in re.findall(r"!\[[^\]]*\]\(([^)]+)\)", md):
             if not (RACINE / image).exists():
                 erreurs.append(f"{fichier.name} : figure manquante {image}")
-        cours.append({"id": fichier.stem, "nom": titre, "fichier": f"{matiere['id']}/cours/{fichier.name}"})
+        cours.append(chapitre)
     if cours:
         matiere["cours"] = cours
     else:

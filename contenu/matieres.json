@@ -599,12 +599,14 @@
         {
           "id": "ch1-signaux-systemes",
           "nom": "Chapitre 1 — Signaux et systèmes",
-          "fichier": "automatique/cours/ch1-signaux-systemes.md"
+          "fichier": "automatique/cours/ch1-signaux-systemes.md",
+          "resume": "automatique/cours/resumes/ch1-signaux-systemes.md"
         },
         {
           "id": "ch2-modelisation-signaux",
           "nom": "Chapitre 2 — Modélisation des signaux",
-          "fichier": "automatique/cours/ch2-modelisation-signaux.md"
+          "fichier": "automatique/cours/ch2-modelisation-signaux.md",
+          "resume": "automatique/cours/resumes/ch2-modelisation-signaux.md"
         }
       ]
     },
