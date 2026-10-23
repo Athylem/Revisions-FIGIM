@@ -46,18 +46,18 @@ function afficherReglages() {
     if (chapitres.length === 0) continue;
     const h = document.createElement("h3");
     h.textContent = titre;
-    blocs.push(h, ...casesChapitres(chapitres));
+    blocs.push(h, ...casesChapitres(chapitres, !genreChoisi || genre === genreChoisi));
   }
   $("#liste-chapitres").replaceChildren(...blocs);
   montrer("ecran-reglages");
 }
 
-function casesChapitres(chapitres) {
+function casesChapitres(chapitres, coches) {
   return chapitres.map((ch) => {
     const label = document.createElement("label");
     const box = document.createElement("input");
     box.type = "checkbox";
-    box.checked = true;
+    box.checked = coches;
     box.value = ch.id;
     label.append(box, ` ${ch.nom} `);
     const n = document.createElement("span");
@@ -183,7 +183,11 @@ document.querySelectorAll("[data-nombre]").forEach((bouton) => {
   });
 });
 
-const id = new URLSearchParams(location.search).get("matiere");
+const params = new URLSearchParams(location.search);
+const id = params.get("matiere");
+// Venant de la page de la matière (« Exercices type DS »…) : seuls ces chapitres sont cochés
+const genreChoisi = params.get("genre");
+$("#retour-matiere").href = `matiere.html?matiere=${encodeURIComponent(id)}`;
 chargerMatieres().then((donnees) => {
   matiere = donnees.matieres.find((m) => m.id === id);
   if (!matiere || matiere.chapitres.length === 0) {

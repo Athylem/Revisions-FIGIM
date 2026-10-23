@@ -315,3 +315,43 @@ button.secondaire { background: var(--surface); color: var(--texte); border: 1px
 #donnees tr.choisie .badge-zone, #donnees td.choisie .badge-zone { color: var(--accent-texte); }
 #donnees td.case .badge-zone { display: block; margin: 0; }
 .num-compte { display: inline-block; min-width: 3.4rem; margin-right: 0.3rem; font-variant-numeric: tabular-nums; font-weight: 700; color: var(--discret); }
+
+/* ---------- Cours (cours.html) ---------- */
+.page-cours { max-width: 820px; }
+.sommaire { background: var(--surface); border: 1px solid var(--bord); border-radius: 14px; padding: 0.8rem 1.25rem; margin-top: 1rem; }
+.sommaire summary { cursor: pointer; font-weight: 700; }
+.sommaire ol { margin: 0.4rem 0 0; padding-left: 1.2rem; }
+.sommaire ol ol { margin: 0.1rem 0 0.3rem; font-size: 0.92rem; }
+.sommaire a { text-decoration: none; }
+.sommaire a:hover { text-decoration: underline; }
+
+.cours { background: var(--surface); border: 1px solid var(--bord); border-radius: 14px; padding: 1.5rem; margin-top: 1rem; overflow-wrap: break-word; }
+@media (max-width: 640px) { .cours { padding: 1rem; } }
+.cours h1 { font-size: 1.6rem; margin-bottom: 1rem; }
+.cours h2 { text-transform: none; letter-spacing: 0; color: var(--texte); font-size: 1.35rem; margin: 2.2rem 0 0.6rem; padding-bottom: 0.3rem; border-bottom: 2px solid var(--bord); }
+.cours h3 { font-size: 1.12rem; margin: 1.6rem 0 0.4rem; color: var(--accent); }
+.cours h4 { font-size: 1rem; margin: 1.2rem 0 0.3rem; }
+.cours h2, .cours h3, .cours h4 { scroll-margin-top: 1rem; }
+.cours p { overflow-x: auto; overflow-y: hidden; position: relative; }
+.cours ul, .cours ol { padding-left: 1.3rem; }
+.cours hr { border: 0; border-top: 1px solid var(--bord); margin: 2rem 0; }
+.cours img { display: block; max-width: 100%; height: auto; margin: 1rem auto; padding: 0.4rem; background: #fff; border-radius: 8px; border: 1px solid var(--bord); }
+/* position: relative pour que le MathML caché de KaTeX (en absolute) reste dans la zone qui défile */
+.cours .defile { margin: 1rem 0; position: relative; }
+.cours table { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
+.cours th, .cours td { padding: 0.45rem 0.6rem; border: 1px solid var(--bord); text-align: left; vertical-align: top; }
+.cours th { background: var(--fond); }
+.cours .katex-display { overflow-x: auto; overflow-y: hidden; padding: 0.2rem 0; }
+
+.encadre { margin: 1.2rem 0; padding: 0.8rem 1rem; border-left: 4px solid var(--c); border-radius: 0 10px 10px 0;
+  background: color-mix(in srgb, var(--c) 9%, var(--surface)); --c: var(--accent); }
+.encadre.info { --c: var(--discret); }
+.encadre.bon { --c: var(--bon); }
+.encadre.moyen { --c: var(--moyen); }
+.encadre > :first-child { margin-top: 0; }
+.encadre > :last-child { margin-bottom: 0; }
+.encadre-titre { font-weight: 700; color: var(--c); }
+
+.navigation-cours { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-top: 1.25rem; }
+.navigation-cours .suivant { grid-column: 2; text-align: right; }
+@media (max-width: 640px) { .navigation-cours { grid-template-columns: 1fr; } .navigation-cours .suivant { grid-column: 1; } }

@@ -7,6 +7,7 @@ Pour chaque matière, les chapitres sont les fichiers contenu/<id-matiere>/*.jso
 dans l'ordre alphabétique (d'où les préfixes ch1-, ch2-…).
 """
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -118,10 +119,23 @@ for matiere in donnees["matieres"]:
             "questions": len(banque["questions"]),
         })
     matiere["chapitres"] = chapitres
+    # Chapitres de cours (contenu/<id>/cours/*.md, copiés depuis le vault par gen_cours.py)
+    cours = []
+    for fichier in sorted((CONTENU / matiere["id"] / "cours").glob("*.md")):
+        md = fichier.read_text(encoding="utf-8")
+        titre = next((l[2:].strip() for l in md.splitlines() if l.startswith("# ")), fichier.stem)
+        for image in re.findall(r"!\[[^\]]*\]\(([^)]+)\)", md):
+            if not (RACINE / image).exists():
+                erreurs.append(f"{fichier.name} : figure manquante {image}")
+        cours.append({"id": fichier.stem, "nom": titre, "fichier": f"{matiere['id']}/cours/{fichier.name}"})
+    if cours:
+        matiere["cours"] = cours
+    else:
+        matiere.pop("cours", None)
     n = sum(c["questions"] for c in chapitres)
     total += n
-    if n:
-        print(f"{matiere['nom']} : {n} questions ({len(chapitres)} chapitres)")
+    if n or cours:
+        print(f"{matiere['nom']} : {n} questions ({len(chapitres)} chapitres), {len(cours)} chapitres de cours")
 
 if erreurs:
     print("\n".join(["", "ERREURS :"] + erreurs))

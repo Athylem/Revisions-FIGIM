@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cours — Révisions FIGIM</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+</head>
+<body>
+  <header class="barre">
+    <a class="logo" href="./">Révisions <span>FIGIM</span></a>
+    <nav>
+      <a href="classement.html">Classement</a>
+    </nav>
+  </header>
+
+  <main class="page-cours">
+    <p><a id="retour-matiere" href="./">← Matières</a></p>
+
+    <details id="sommaire" class="sommaire" hidden>
+      <summary>Sommaire</summary>
+      <ol id="liste-sommaire"></ol>
+    </details>
+
+    <article id="cours" class="cours">
+      <p class="discret">Chargement…</p>
+    </article>
+
+    <nav id="navigation-cours" class="navigation-cours" hidden></nav>
+  </main>
+
+  <script type="module" src="js/cours.js"></script>
+</body>
+</html>

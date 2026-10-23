@@ -60,12 +60,19 @@ function dessinerDS() {
   }));
 }
 
+// Une matière est ouverte dès qu'elle a des questions ou des chapitres de cours
+function disponible(m) {
+  return nbQuestions(m) > 0 || (m.cours?.length ?? 0) > 0;
+}
+
 function carteMatiere(m) {
   const n = nbQuestions(m);
-  const el = document.createElement(n > 0 ? "a" : "div");
-  el.className = "matiere" + (n > 0 ? "" : " verrouillee");
-  // Une matière peut avoir sa propre page d'entraînement (« page ») au lieu du quiz
-  if (n > 0) el.href = m.page ?? `jouer.html?matiere=${encodeURIComponent(m.id)}`;
+  const nbCours = m.cours?.length ?? 0;
+  const ouverte = disponible(m);
+  const el = document.createElement(ouverte ? "a" : "div");
+  el.className = "matiere" + (ouverte ? "" : " verrouillee");
+  // La page de la matière propose ses cours et ses entraînements (quiz ou page dédiée « page »)
+  if (ouverte) el.href = `matiere.html?matiere=${encodeURIComponent(m.id)}`;
 
   const nom = document.createElement("h3");
   nom.textContent = m.nom;
@@ -74,7 +81,10 @@ function carteMatiere(m) {
   prof.textContent = m.prof;
   const etat = document.createElement("p");
   etat.className = "etat";
-  etat.textContent = m.page && n > 0 ? (m.etat ?? `${n} questions`) : n > 0 ? `${n} questions` : m.notes ? "Questions en préparation" : "Bientôt";
+  const morceaux = [];
+  if (nbCours) morceaux.push(`${nbCours} chapitre${nbCours > 1 ? "s" : ""} de cours`);
+  if (n) morceaux.push(m.page ? (m.etat ?? `${n} questions`) : `${n} questions`);
+  etat.textContent = morceaux.join(" · ") || (m.notes ? "Questions en préparation" : "Bientôt");
 
   el.append(nom, prof, etat);
   return el;
@@ -84,7 +94,7 @@ function dessinerMatieres() {
   $("#annee").textContent = donnees.annee;
   dessinerDS();
 
-  const visibles = donnees.matieres.filter((m) => filtre === "toutes" || nbQuestions(m) > 0);
+  const visibles = donnees.matieres.filter((m) => filtre === "toutes" || disponible(m));
   const groupes = Map.groupBy(visibles, (m) => m.groupe);
 
   const conteneur = $("#matieres");
@@ -92,7 +102,7 @@ function dessinerMatieres() {
   if (visibles.length === 0) {
     const vide = document.createElement("p");
     vide.className = "discret";
-    vide.textContent = "Aucune matière jouable pour l'instant — les premières questions arrivent bientôt.";
+    vide.textContent = "Aucune matière disponible pour l'instant — les premières questions arrivent bientôt.";
     conteneur.append(vide);
     return;
   }
